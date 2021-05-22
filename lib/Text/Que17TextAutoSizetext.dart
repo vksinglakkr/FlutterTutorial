@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
+//import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que17AutoSizeText extends StatelessWidget {
   @override
@@ -31,6 +32,18 @@ class Que17AutoSizeText extends StatelessWidget {
                 ],
               ),
             ),
+            // YoutubePlayer(
+            //   controller: YoutubePlayerController(
+            //     initialVideoId: 'zn2GwbPG-tc', //Add videoID.
+            //     flags: YoutubePlayerFlags(
+            //       hideControls: false,
+            //       controlsVisibleAtStart: true,
+            //       autoPlay: false,
+            //       mute: false,
+            //     ),
+            //   ),
+            //   showVideoProgressIndicator: true,
+            // ),
             SizedBox(height: 10),
             Container(
                 padding: EdgeInsets.all(20),

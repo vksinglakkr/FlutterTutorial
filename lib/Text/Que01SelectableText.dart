@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'dart:async';
 
 class Que01Text extends StatefulWidget {
   @override
@@ -6,6 +8,17 @@ class Que01Text extends StatefulWidget {
 }
 
 class _Que01TextState extends State<Que01Text> {
+  var data;
+
+  // This function is triggered when the user presses the floating button
+  Future<void> _loadData() async {
+    final _loadedData =
+        await rootBundle.loadString('../Text/Que01SelectableText.dart');
+    setState(() {
+      data = _loadedData;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +48,15 @@ class _Que01TextState extends State<Que01Text> {
               textAlign: TextAlign.justify,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             )),
+        ElevatedButton(
+          onPressed: () {
+            // ignore: unnecessary_statements
+            _loadData;
+          },
+          child: Text(
+            data != null ? data : 'Nothing to show',
+          ),
+        ),
       ]),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:radio_button/InkWell/Que02ClickonTextToggle.dart';
+import '../InkWell/Que02ClickonTextToggle.dart';
 import 'Que01ClickonText.dart';
 import 'Que02ClickonTextToggle.dart';
 

@@ -24,6 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   auto_size_text: ^2.1.0
+
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0
 
@@ -46,6 +47,7 @@ flutter:
     - assets/
     - assets/images/ListView/
     - assets/images/
+    - lib/Text/Que01SelectableText.dart
   #  - assets/images/loading.gif
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

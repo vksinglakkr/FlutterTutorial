@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
-
-class MyApp extends StatefulWidget {
+class Que02 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<MyApp> {
+class _State extends State<Que02> {
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -44,9 +38,9 @@ class _State extends State<MyApp> {
                 ),
               ),
             ),
-            RaisedButton(
-              textColor: Colors.white,
-              color: Colors.blue,
+            ElevatedButton(
+//              textColor: Colors.white,
+//              color: Colors.blue,
               child: Text('Login'),
               onPressed: () {
                 print(nameController.text);

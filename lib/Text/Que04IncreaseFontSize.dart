@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
-
-class MyApp extends StatefulWidget {
+class Que04 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<MyApp> {
-  double custFontSize = 20;
+class _State extends State<Que04> {
+  double custFontSize = 12;
 
   void changeFontSize() async {
     setState(() {
-      custFontSize += 2;
+      custFontSize += 1;
     });
   }
 
@@ -24,21 +18,28 @@ class _State extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - NIC, KKR'),
+        title: Text('Text=>fontSize Property'),
       ),
       body: Center(
           child: Column(children: <Widget>[
         Text(
-          'Welcome to Flutter Tutorial',
+          'TextStyle(fontSize: custFontSize)',
           style: TextStyle(fontSize: custFontSize),
         ),
-        RaisedButton(
+        ElevatedButton(
           onPressed: () {
             changeFontSize();
           },
           child: Text('Change size'),
         ),
       ])),
+      floatingActionButton: FloatingActionButton(
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
     );
   }
 }

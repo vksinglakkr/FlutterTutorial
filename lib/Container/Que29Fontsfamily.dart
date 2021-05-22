@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
-
 // fonts:
 //     - family: Font1
 //       fonts:
@@ -14,12 +8,12 @@ void main() {
 //       fonts:
 //         - asset: assets/font/font2.ttf
 
-class MyApp extends StatefulWidget {
+class Que29 extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que29State createState() => _Que29State();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que29State extends State<Que29> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

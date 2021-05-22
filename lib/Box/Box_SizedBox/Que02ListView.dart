@@ -1,19 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: 'Flutter Tutorial',
-    home: MyApp(),
-    debugShowCheckedModeBanner: false,
-  ));
-}
-
-class MyApp extends StatefulWidget {
+class Que02Sized extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<MyApp> {
+class _State extends State<Que02Sized> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

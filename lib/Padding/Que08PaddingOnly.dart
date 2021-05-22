@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyHomePage());
-
-class MyHomePage extends StatefulWidget {
+class Que08 extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _Que08State createState() => _Que08State();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _Que08State extends State<Que08> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,23 +20,23 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(children: <Widget>[
             Container(
                 margin: EdgeInsets.all(5),
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {},
-                  child: Text('Raised Button - Default Padding'),
+                  child: Text('Elevated Button - Default Padding'),
                 )),
             Container(
                 margin: EdgeInsets.all(5),
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {},
-                  child: Text('Raised Button'),
-                  padding: EdgeInsets.only(left: 50, right: 50),
+                  child: Text('Elevated Button'),
+//                  padding: EdgeInsets.only(left: 50, right: 50),
                 )),
             Container(
                 margin: EdgeInsets.all(5),
-                child: RaisedButton(
+                child: ElevatedButton(
                   onPressed: () {},
-                  child: Text('Raised Button'),
-                  padding: EdgeInsets.only(top: 20),
+                  child: Text('Elevated Button'),
+//                  padding: EdgeInsets.only(top: 20),
                 )),
           ])),
         ));

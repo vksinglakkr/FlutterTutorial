@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
-
-class MyApp extends StatefulWidget {
+class Que01 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<MyApp> {
+class _State extends State<Que01> {
   double _opacity = 1.0;
   @override
   Widget build(BuildContext context) {

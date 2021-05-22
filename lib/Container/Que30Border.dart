@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatefulWidget {
+class Que30 extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que30State createState() => _Que30State();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que30State extends State<Que30> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatefulWidget {
+class Que99 extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que99State createState() => _Que99State();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que99State extends State<Que99> {
   bool _visible = false;
   @override
   Widget build(BuildContext context) {

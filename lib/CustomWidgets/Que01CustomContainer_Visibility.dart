@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatefulWidget {
+class Que01 extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que01State createState() => _Que01State();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que01State extends State<Que01> {
   var _visible1 = true;
   var _visible2 = true;
   @override
@@ -44,14 +42,14 @@ class _MyAppState extends State<MyApp> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      RaisedButton(
+                      ElevatedButton(
                           child: Text('Show/Hide Orange'),
                           onPressed: () {
                             setState(() {
                               _visible1 = !_visible1;
                             });
                           }),
-                      RaisedButton(
+                      ElevatedButton(
                           child: Text('Show/Hide Blue\n(Maintainsize)'),
                           onPressed: () {
                             setState(() {

@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
-
-class MyApp extends StatefulWidget {
+class Que01 extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que01State createState() => _Que01State();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que01State extends State<Que01> {
   Icon fab = Icon(
     Icons.refresh,
   );

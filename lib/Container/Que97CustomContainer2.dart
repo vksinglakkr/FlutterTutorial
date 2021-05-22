@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(CustomContainerApp());
-
-class CustomContainerApp extends StatefulWidget {
+class Que97 extends StatefulWidget {
   @override
-  _CustomContainerAppState createState() => _CustomContainerAppState();
+  _Que97State createState() => _Que97State();
 }
 
-class _CustomContainerAppState extends State<CustomContainerApp> {
+class _Que97State extends State<Que97> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatefulWidget {
+class Que01Flat extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que01FlatState createState() => _Que01FlatState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que01FlatState extends State<Que01Flat> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,7 +25,7 @@ class _MyAppState extends State<MyApp> {
                   colors: [Colors.blue, Colors.indigo],
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: new Text(
                   'Login',
                   style: TextStyle(color: Colors.white),
@@ -47,7 +43,7 @@ class _MyAppState extends State<MyApp> {
                   colors: [Colors.yellowAccent, Colors.orange],
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: new Text(
                   'Login',
                 ),
@@ -65,7 +61,7 @@ class _MyAppState extends State<MyApp> {
                   colors: [Colors.lightGreenAccent, Colors.orange],
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: new Text(
                   'Login',
                 ),
@@ -88,7 +84,7 @@ class _MyAppState extends State<MyApp> {
                   ],
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: new Text(
                   'Login',
                   style: TextStyle(color: Colors.white),

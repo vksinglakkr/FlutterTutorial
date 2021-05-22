@@ -1,14 +1,12 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 
-void main() => runApp(AnimatedContainerApp());
-
-class AnimatedContainerApp extends StatefulWidget {
+class Que98 extends StatefulWidget {
   @override
-  _AnimatedContainerAppState createState() => _AnimatedContainerAppState();
+  _Que98State createState() => _Que98State();
 }
 
-class _AnimatedContainerAppState extends State<AnimatedContainerApp> {
+class _Que98State extends State<Que98> {
   double _width = 50;
   double _height = 50;
   Color _color = Colors.green;

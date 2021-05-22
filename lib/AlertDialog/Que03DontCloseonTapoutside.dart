@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class Que03Alert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +21,7 @@ class MyView extends StatelessWidget {
         title: Text('Flutter AlertDialog - NIC KKR'),
       ),
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Alert Dialog'),
           onPressed: () {
             _showDialog(context);
@@ -43,7 +41,7 @@ void _showDialog(BuildContext context) {
         title: new Text("Alert!!"),
         content: new Text("You are awesome!"),
         actions: <Widget>[
-          new FlatButton(
+          new TextButton(
             child: new Text("OK"),
             onPressed: () {
               Navigator.of(context).pop();

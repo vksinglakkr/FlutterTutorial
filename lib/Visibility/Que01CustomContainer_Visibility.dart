@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatefulWidget {
+class Que01 extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que01State createState() => _Que01State();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que01State extends State<Que01> {
   var _visible1 = true;
   var _visible2 = true;
   @override
@@ -44,16 +42,11 @@ class _MyAppState extends State<MyApp> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      RaisedButton(
+                      ElevatedButton(
                         child: Text('Show/Hide Orange'),
                         onPressed: () => setState(() => _visible1 = !_visible1),
-                        // onPressed: () {
-                        //   setState(() {
-                        //     _visible1 = !_visible1;
-                        //   });
-                        // },
                       ),
-                      RaisedButton(
+                      ElevatedButton(
                           child: Text('Show/Hide Blue\n(Maintainsize)'),
                           //onPressed: () => setState(()=>_visible2=!_visible2),
                           onPressed: () {
@@ -63,6 +56,15 @@ class _MyAppState extends State<MyApp> {
                           }),
                     ],
                   ),
+                  SizedBox(
+                    height: 10.0,
+                  ),
+                  Center(
+                    child: Image(
+                      image: AssetImage('assets/Visibility/Que01.png'),
+                    ),
+                  ),
+                  Text("Visibility/Que01CustomContainer_Visibility.dart")
                 ],
               ))),
     );
@@ -81,7 +83,7 @@ class CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 80,
       width: 400,
       color: colorName,
       child: Center(

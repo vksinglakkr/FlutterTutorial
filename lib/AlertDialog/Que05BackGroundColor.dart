@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class Que05Alert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +21,7 @@ class MyView extends StatelessWidget {
         title: Text('Flutter AlertDialog - NIC KKR'),
       ),
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           child: Text('Alert Dialog'),
           onPressed: () {
             _showDialog(context);
@@ -49,8 +47,8 @@ void _showDialog(BuildContext context) {
           style: TextStyle(color: Colors.white),
         ),
         actions: <Widget>[
-          new FlatButton(
-            color: Colors.green[200],
+          new TextButton(
+            //color: Colors.green[200],
             child: new Text(
               "OK",
               style: TextStyle(color: Colors.black),

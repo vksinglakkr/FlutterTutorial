@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatefulWidget {
+class Que02Flat extends StatefulWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  _Que02FlatState createState() => _Que02FlatState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _Que02FlatState extends State<Que02Flat> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +26,7 @@ class _MyAppState extends State<MyApp> {
                   end: FractionalOffset.centerRight,
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   'Login',
                   style: TextStyle(color: Colors.white),
@@ -49,7 +45,7 @@ class _MyAppState extends State<MyApp> {
                   end: FractionalOffset.bottomRight,
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   'Login',
                   style: TextStyle(color: Colors.white),
@@ -68,7 +64,7 @@ class _MyAppState extends State<MyApp> {
                   end: FractionalOffset.bottomLeft,
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   'Login',
                   style: TextStyle(color: Colors.white),
@@ -87,7 +83,7 @@ class _MyAppState extends State<MyApp> {
                   end: FractionalOffset.bottomRight,
                 ),
               ),
-              child: FlatButton(
+              child: TextButton(
                 child: Text(
                   'Login',
                   style: TextStyle(color: Colors.white),

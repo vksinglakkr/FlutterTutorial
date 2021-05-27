@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'Que11TextMarquee.dart';
 import 'Que01SelectableText.dart';
-import 'Que01aProperties.dart';
+//import 'Que01aProperties.dart';
 import 'Que02textColor.dart';
 import 'Que03UnderLine.dart';
 import 'Que03aUnderLine.dart';
@@ -50,24 +51,28 @@ class HomeText extends StatelessWidget {
                                 builder: (context) => Que01Text()));
                       }),
                 ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 22,
-                  child: ElevatedButton(
-                      child: Text('Text=>Properties'),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que01a()));
-                      }),
-                ),
+                // Container(
+                //   margin: EdgeInsets.all(2),
+                //   height: 22,
+                //   child: ElevatedButton(
+                //       child: Text('Text=>Properties'),
+                //       onPressed: () {
+                //         Navigator.push(
+                //             context,
+                //             MaterialPageRoute(
+                //                 builder: (context) => Que01aText()));
+                //       }),
+                // ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
                       child: Text('How to change the Color of Text?'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que02()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que02Text()));
                       }),
                 ),
                 Container(
@@ -445,6 +450,46 @@ class HomeText extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que02Text extends StatefulWidget {
+  @override
+  _Que02TextState createState() => _Que02TextState();
+}
+
+class _Que02TextState extends State<Que02Text> {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Text11(),
+      sourceFilePath: 'lib/Text/Que02textColor.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que02textColor.dart',
+    );
+  }
+}
+
+class Que01Text extends StatefulWidget {
+  @override
+  _Que01TextState createState() => _Que01TextState();
+}
+
+class _Que01TextState extends State<Que01Text> {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Text11(),
+      sourceFilePath: 'lib/Text/Que01SelectableText.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
     );
   }
 }

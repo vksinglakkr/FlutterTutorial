@@ -78,6 +78,18 @@ class _Que12TextShapeState extends State<Que12TextShape> {
                     )),
               ),
             ),
+            Container(
+              margin: EdgeInsets.all(30),
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: Colors.yellow,
+                border: Border.all(color: Colors.black),
+              ),
+              child: Text(
+                "Flutter",
+                style: TextStyle(fontSize: 50.0),
+              ),
+            ),
           ],
         ),
       ),

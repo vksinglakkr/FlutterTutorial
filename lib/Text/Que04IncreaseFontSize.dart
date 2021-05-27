@@ -8,7 +8,7 @@ class Que04 extends StatefulWidget {
 class _State extends State<Que04> {
   double custFontSize = 12;
 
-  void changeFontSize() async {
+  void changeFontSize() {
     setState(() {
       custFontSize += 1;
     });

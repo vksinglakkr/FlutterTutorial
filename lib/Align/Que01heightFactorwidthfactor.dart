@@ -16,6 +16,9 @@ class Que01Align extends StatelessWidget {
             heightFactor: 0.7,
             widthFactor: 0.8,
             //alignment: Alignment.topLeft,
+            //Difference between Start/End & Left/Right.
+            //In Right to left (e.g. Urdu Start==Right, end==Left)
+            //In Left to Right (e.g. English Start==Left, end==Right)
             child: Image.network(
               "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
               height: 400,

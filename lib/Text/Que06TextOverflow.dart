@@ -48,7 +48,7 @@ class _State extends State<Que06Overflow> {
                 height: 100,
                 child: Text(
                   'Text in Row or Container=>Kurukshetra has been described in the first verse of Shrimad bhagvadgita, in the form of Dharmakshetra Kurukshetra. Kurukshetra is a place of great historical and religious significance which is seen with reverence in all the countries due to its association with Vedas and Vedic culture. This is the land on which the battle of Mahabharata was fought and Lord Krishna gave Arjuna a fair knowledge of the philosophy of karma in the Jyotisar. ',
-                  overflow: TextOverflow.visible,
+                  //  overflow: TextOverflow.visible,
                 ),
               ),
             ]),

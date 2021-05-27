@@ -20,6 +20,9 @@ import '../GesterDetector/Que01ClickonText.dart';
 import '../GesterDetector/Que02ClickonTextToggle.dart';
 import 'Que12TextShape.dart';
 import 'Que13TextFormatting.dart';
+import 'Que14forground.dart';
+import 'Que15DefaulttextStyle.dart';
+import 'Que15GradientForeground.dart';
 import 'Que17TextAutoSizetext.dart';
 
 class HomeText extends StatelessWidget {
@@ -348,6 +351,85 @@ class HomeText extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => Que17AutoSizeText()));
+                    },
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                    child: Text('text manipulation'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Que17AutoSizeText()));
+                    },
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                    child: Text(
+                        'Parsing of data with the help of Package flutter_parsed_text 2.2.0'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Que17AutoSizeText()));
+                    },
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                    child: Text('Setting of color, fontsize using themedata.'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Que17AutoSizeText()));
+                    },
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                    child: Text('Styling of text with foreground: Paint()'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Que14Forground()));
+                    },
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                    child: Text('Gradient foreground'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Que14Gradient()));
+                    },
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                    child: Text('DefaultTextStyle'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Que15DeafulttextStyle()));
                     },
                   ),
                 ),

@@ -46,7 +46,9 @@ import '../Tab/HomeScreen.dart';
 import '../Text/HomeScreen.dart';
 import '../TextField/HomeScreen.dart';
 import '../Transform/HomeScreen.dart';
+import '../Video_Player.dart';
 import '../Visibility/HomeScreen.dart';
+//import '../testdartFile/Que01.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -406,6 +408,22 @@ class HomeScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (BuildContext context) => HomeVisibility(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Video Player', style: TextStyle(fontSize: 10)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => VideoPlayerApp(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Testdart', style: TextStyle(fontSize: 10)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => VideoPlayerApp(),
                 )),
           ),
         ],

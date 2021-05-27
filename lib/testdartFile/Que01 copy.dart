@@ -19,16 +19,27 @@ class _MyAppTestState extends State<MyAppTest> {
         appBar: AppBar(
           title: Text('Material App Bar'),
         ),
-        body: WidgetWithCodeView(
-          child: Que01Text(),
-          sourceFilePath: 'lib/Text/Que01SelectableText.dart',
-
-          /// [codeLinkPrefix] is optional. When it's specified, two more buttons
-          /// (open-code-in-browser, copy-code-link) will be added in the code view.
-          codeLinkPrefix:
-              'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
-        ),
+        body: NewWidgetWithCodeView(),
       ),
+    );
+  }
+}
+
+class NewWidgetWithCodeView extends StatelessWidget {
+  const NewWidgetWithCodeView({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Text(),
+      sourceFilePath: 'lib/Text/Que01SelectableText.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
     );
   }
 }

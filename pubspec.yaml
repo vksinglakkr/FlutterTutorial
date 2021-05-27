@@ -27,6 +27,7 @@ dependencies:
   marquee: ^2.1.0
   widget_with_codeview: ^1.0.5
   video_player:
+  url_launcher: ^5.4.0
  
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0

@@ -1,13 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-class Que02 extends StatefulWidget {
+class Que0211 extends StatefulWidget {
   @override
   _State createState() => new _State();
 }
 
-class _State extends State<Que02> {
+class _State extends State<Que0211> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -131,6 +132,25 @@ class _State extends State<Que02> {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que02 extends StatelessWidget {
+  const Que02({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/Text/Que01SelectableText.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
     );
   }
 }

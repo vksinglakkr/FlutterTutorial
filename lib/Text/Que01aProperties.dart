@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-class Que01a extends StatefulWidget {
+class Que01a11 extends StatefulWidget {
   @override
-  _Que01aState createState() => _Que01aState();
+  _Que01a11State createState() => _Que01a11State();
 }
 
-class _Que01aState extends State<Que01a> {
+class _Que01a11State extends State<Que01a11> {
+  launchURL() {
+    launch('https://youtube.com/watch?v=ZSU3ZXOs6hc');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,6 +30,11 @@ class _Que01aState extends State<Que01a> {
               Text(
                 '',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+              IconButton(
+                icon: const Icon(Icons.play_arrow),
+                color: Colors.white,
+                onPressed: launchURL,
               ),
             ],
           ),
@@ -108,6 +119,25 @@ class _Que01aState extends State<Que01a> {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01a extends StatelessWidget {
+  const Que01a({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01a11(),
+      sourceFilePath: 'lib/Text/Que01SelectableText.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
     );
   }
 }

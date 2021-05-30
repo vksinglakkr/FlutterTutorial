@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Que04 extends StatefulWidget {
+class Que04Text11 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que04> {
+class _State extends State<Que04Text11> {
   double custFontSize = 12;
 
   void changeFontSize() {

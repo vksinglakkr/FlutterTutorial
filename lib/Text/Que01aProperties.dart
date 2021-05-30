@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Que01a extends StatefulWidget {
+class Que01aText11 extends StatefulWidget {
   @override
-  _Que01aState createState() => _Que01aState();
+  _Que01aText11State createState() => _Que01aText11State();
 }
 
-class _Que01aState extends State<Que01a> {
+class _Que01aText11State extends State<Que01aText11> {
   launchURL() {
     launch('https://youtube.com/watch?v=ZSU3ZXOs6hc');
   }

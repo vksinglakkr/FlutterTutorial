@@ -2,12 +2,12 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class Que03a extends StatefulWidget {
+class Que03aText11 extends StatefulWidget {
   @override
   _State createState() => new _State();
 }
 
-class _State extends State<Que03a> {
+class _State extends State<Que03aText11> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

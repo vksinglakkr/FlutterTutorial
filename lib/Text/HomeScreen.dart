@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
+import 'Que01aProperties.dart';
 import 'Que11TextMarquee.dart';
 import 'Que01SelectableText.dart';
-//import 'Que01aProperties.dart';
 import 'Que02textColor.dart';
 import 'Que03UnderLine.dart';
 import 'Que03aUnderLine.dart';
@@ -25,6 +25,12 @@ import 'Que14forground.dart';
 import 'Que15DefaulttextStyle.dart';
 import 'Que15GradientForeground.dart';
 import 'Que17TextAutoSizetext.dart';
+import 'Que18TextLocale.dart';
+import 'Que19DecorationImageOvertext.dart';
+import 'Que19Marquee.dart';
+import 'Que20AutoSizeTextwithMarquee.dart';
+import 'Que21TransformSkewtext.dart';
+import 'Que25ShowContent_of_TextFileWithoutWidget.dart';
 
 class HomeText extends StatelessWidget {
   @override
@@ -51,18 +57,18 @@ class HomeText extends StatelessWidget {
                                 builder: (context) => Que01Text()));
                       }),
                 ),
-                // Container(
-                //   margin: EdgeInsets.all(2),
-                //   height: 22,
-                //   child: ElevatedButton(
-                //       child: Text('Text=>Properties'),
-                //       onPressed: () {
-                //         Navigator.push(
-                //             context,
-                //             MaterialPageRoute(
-                //                 builder: (context) => Que01aText()));
-                //       }),
-                // ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Text=>Properties'),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que01aText()));
+                      }),
+                ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
@@ -81,8 +87,10 @@ class HomeText extends StatelessWidget {
                   child: ElevatedButton(
                       child: Text('How to Underline/Overline a text?'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que03()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que03Text()));
                       }),
                 ),
                 Container(
@@ -91,8 +99,10 @@ class HomeText extends StatelessWidget {
                   child: ElevatedButton(
                       child: Text('Control distance between Text & Underline?'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que03a()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que03aText()));
                       }),
                 ),
                 Container(
@@ -101,8 +111,10 @@ class HomeText extends StatelessWidget {
                   child: ElevatedButton(
                       child: Text('Shadow of Text?'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que03b()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que03bText()));
                       }),
                 ),
                 Container(
@@ -112,8 +124,10 @@ class HomeText extends StatelessWidget {
                       child:
                           Text('Assignment: Dynamically change the fontsize.'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que04()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que04Text()));
                       }),
                 ),
                 Container(
@@ -122,8 +136,10 @@ class HomeText extends StatelessWidget {
                   child: ElevatedButton(
                       child: Text('How to insert imojis in text?'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que05()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que05Text()));
                       }),
                 ),
                 Container(
@@ -132,8 +148,10 @@ class HomeText extends StatelessWidget {
                   child: ElevatedButton(
                       child: Text('How to adjust spacing in between letters?'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que05()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que05Text()));
                       }),
                 ),
                 Container(
@@ -142,8 +160,10 @@ class HomeText extends StatelessWidget {
                   child: ElevatedButton(
                       child: Text('How to adjust spacing in between words?'),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que05()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que05Text()));
                       }),
                 ),
                 Container(
@@ -405,10 +425,8 @@ class HomeText extends StatelessWidget {
                   child: ElevatedButton(
                     child: Text('Styling of text with foreground: Paint()'),
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Que14Forground()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Que14Text()));
                     },
                   ),
                 ),
@@ -421,7 +439,7 @@ class HomeText extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Que14Gradient()));
+                              builder: (context) => Que15Gradient()));
                     },
                   ),
                 ),
@@ -434,7 +452,7 @@ class HomeText extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Que15DeafulttextStyle()));
+                              builder: (context) => Que15Defaulttext()));
                     },
                   ),
                 ),
@@ -454,32 +472,7 @@ class HomeText extends StatelessWidget {
   }
 }
 
-class Que02Text extends StatefulWidget {
-  @override
-  _Que02TextState createState() => _Que02TextState();
-}
-
-class _Que02TextState extends State<Que02Text> {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02Text11(),
-      sourceFilePath: 'lib/Text/Que02textColor.dart',
-
-      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
-      /// (open-code-in-browser, copy-code-link) will be added in the code view.
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que02textColor.dart',
-    );
-  }
-}
-
-class Que01Text extends StatefulWidget {
-  @override
-  _Que01TextState createState() => _Que01TextState();
-}
-
-class _Que01TextState extends State<Que01Text> {
+class Que01Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
@@ -490,6 +483,321 @@ class _Que01TextState extends State<Que01Text> {
       /// (open-code-in-browser, copy-code-link) will be added in the code view.
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
+    );
+  }
+}
+
+class Que01aText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01aText11(),
+      sourceFilePath: 'lib/Text/Que01aProperties.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01aProperties.dart',
+    );
+  }
+}
+
+class Que02Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Text11(),
+      sourceFilePath: 'lib/Text/Que02textColor.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que02textColor.dart',
+    );
+  }
+}
+
+class Que03Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que03Text11(),
+      sourceFilePath: 'lib/Text/Que03UnderLine.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que03UnderLine.dart',
+    );
+  }
+}
+
+class Que03aText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que03aText11(),
+      sourceFilePath: 'lib/Text/Que03aUnderLine.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que03aUnderLine.dart',
+    );
+  }
+}
+
+class Que03bText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que03bText11(),
+      sourceFilePath: 'lib/Text/Que03bShadow.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que03bShadow.dart',
+    );
+  }
+}
+
+class Que04Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que04Text11(),
+      sourceFilePath: 'lib/Text/Que04IncreaseFontSize.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que04IncreaseFontSize.dart',
+    );
+  }
+}
+
+class Que05Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que05Text11(),
+      sourceFilePath: 'lib/Text/Que05ImageinText.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que05ImageinText.dart',
+    );
+  }
+}
+
+class Que06Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que06Overflow(),
+      sourceFilePath: 'lib/Text/Que06TextOveflow.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que06TextOveflow.dart',
+    );
+  }
+}
+
+class Que06aText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que06aOverflow(),
+      sourceFilePath: 'lib/Text/Que06aTextOveflowVisible.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que06aTextOveflowVisible.dart',
+    );
+  }
+}
+
+class Que07Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que07TextSpan(),
+      sourceFilePath: 'lib/Text/Que07TextRich.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que07TextRich.dart',
+    );
+  }
+}
+
+class Que08Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que08TextScale(),
+      sourceFilePath: 'lib/Text/Que08TextScalefactor.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que08TextScalefactor.dart',
+    );
+  }
+}
+
+class Que09Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que09TextSemantics(),
+      sourceFilePath: 'lib/Text/Que09TextSemanticsLabel.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que09TextSemanticsLabel.dart',
+    );
+  }
+}
+
+class Que10Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que10Text11(),
+      sourceFilePath: 'lib/Text/Que10TextConditional.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que10TextConditional.dart',
+    );
+  }
+}
+
+class Que11Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que11Marquee(),
+      sourceFilePath: 'lib/Text/Que11TextMarquee.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que11TextMarquee.dart',
+    );
+  }
+}
+
+class Que12Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que12TextShape(),
+      sourceFilePath: 'lib/Text/Que12TextShape.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que12TextShape.dart',
+    );
+  }
+}
+
+class Que13Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que13TextFormatting(),
+      sourceFilePath: 'lib/Text/Que13TextFormatting.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que13TextFormatting.dart',
+    );
+  }
+}
+
+class Que14Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que14Forground(),
+      sourceFilePath: 'lib/Text/Que14forground.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que14foreground.dart',
+    );
+  }
+}
+
+class Que15Defaulttext extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que15Default(),
+      sourceFilePath: 'lib/Text/Que15DefaulttextStyle.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que15DefaulttextStyle.dart',
+    );
+  }
+}
+
+class Que15Gradient extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que15Gradient11(),
+      sourceFilePath: 'lib/Text/Que15GradientForeground.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que15GradientForeground.dart',
+    );
+  }
+}
+
+class Que17Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que17AutoSizeText(),
+      sourceFilePath: 'lib/Text/Que17TextAutoSizetext.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que17TextAutoSizetext.dart',
+    );
+  }
+}
+
+class Que18Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que18Locale(),
+      sourceFilePath: 'lib/Text/Que18TextLocale.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que18TextLocale.dart',
+    );
+  }
+}
+
+class Que19DecoraText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que19Deco(),
+      sourceFilePath: 'lib/Text/Que19DecorationImageOvertext.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que19DecorationImageOvertext.dart',
+    );
+  }
+}
+
+class Que19MargueeText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que19marquee(),
+      sourceFilePath: 'lib/Text/Que19Marquee.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que19Marquee.dart',
+    );
+  }
+}
+
+class Que20Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que20Auto(),
+      sourceFilePath: 'lib/Text/Que20AutoSizeTextwithMarquee.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que20AutoSizeTextwithMarquee.dart',
+    );
+  }
+}
+
+class Que21Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que21Trans(),
+      sourceFilePath: 'lib/Text/Que21TransformSkewtext.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que21TransformSkewtext.dart',
+    );
+  }
+}
+
+class Que25Text extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que25Show(),
+      sourceFilePath: 'lib/Text/Que25ShowContent_of_textFileWithoutWidget.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que25ShowContent_of_textFileWithoutWidget.dart',
     );
   }
 }

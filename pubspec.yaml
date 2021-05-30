@@ -28,6 +28,7 @@ dependencies:
   widget_with_codeview: ^1.0.5
   video_player:
   url_launcher: ^5.4.0
+  youtube_player_flutter: ^7.0.0+7
  
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0
@@ -51,7 +52,8 @@ flutter:
     - assets/
     - assets/images/ListView/
     - assets/images/
-    - lib/Text/Que01SelectableText.dart
+    - lib/Text/
+    - assets/help/Text/
   #  - assets/images/loading.gif
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

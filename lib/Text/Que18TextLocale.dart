@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyAppTest extends StatelessWidget {
+class Que18Locale extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextStyle selectedStyle = TextStyle(color: Theme.of(context).accentColor);

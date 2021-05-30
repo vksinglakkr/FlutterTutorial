@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'FlatButton/Que01withGradient.dart';
-import 'FlatButton/Que02LinearGradient.dart';
+import '../FlatButton/Que01withGradient.dart';
+import '../FlatButton/Que02LinearGradient.dart';
 
 class HomeFlat extends StatelessWidget {
   @override

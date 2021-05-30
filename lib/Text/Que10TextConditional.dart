@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Que10Text extends StatefulWidget {
+class Que10Text11 extends StatefulWidget {
   @override
-  _Que10TextState createState() => new _Que10TextState();
+  _Que10Text11State createState() => new _Que10Text11State();
 }
 
-class _Que10TextState extends State<Que10Text> {
+class _Que10Text11State extends State<Que10Text11> {
   int _counter = 0;
   @override
   Widget build(BuildContext context) {

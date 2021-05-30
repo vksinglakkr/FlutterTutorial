@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyAppTest extends StatelessWidget {
+class Que19Deco extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

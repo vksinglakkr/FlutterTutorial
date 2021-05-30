@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:async';
 
-class Que01Text extends StatefulWidget {
+class Que25Show extends StatefulWidget {
   @override
-  _Que01TextState createState() => _Que01TextState();
+  _Que25ShowState createState() => _Que25ShowState();
 }
 
-class _Que01TextState extends State<Que01Text> {
+class _Que25ShowState extends State<Que25Show> {
   var data;
 
   // This function is triggered when the user presses the floating button

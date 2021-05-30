@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que01Text11 extends StatefulWidget {
   @override
@@ -8,7 +9,8 @@ class Que01Text11 extends StatefulWidget {
 
 class _Que01Text11State extends State<Que01Text11> {
   launchURL() {
-    launch('https://youtube.com/watch?v=ZSU3ZXOs6hc');
+    launch(
+        'https://api.flutter.dev/flutter/material/SelectableText-class.html');
   }
 
   @override
@@ -26,16 +28,36 @@ class _Que01Text11State extends State<Que01Text11> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                SizedBox(height: 50),
-                Text(
-                  'SelectableText("text to be display")',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                ),
+                //  SizedBox(height: 10),
+                // Text(
+                //   'SelectableText("text to be display")',
+                //   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                // ),
                 IconButton(
-                  icon: const Icon(Icons.play_arrow),
-                  color: Colors.white,
+                  icon: const Icon(Icons.info),
+                  color: Colors.black,
                   onPressed: launchURL,
                 ),
+
+                IconButton(
+                    icon: const Icon(Icons.image),
+                    color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppImage()),
+                      );
+                    }),
+                IconButton(
+                    icon: const Icon(Icons.play_arrow),
+                    color: Colors.black,
+//                  onPressed: launchURL,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppVideo()),
+                      );
+                    }),
               ],
             ),
           ),
@@ -55,6 +77,51 @@ class _Que01Text11State extends State<Que01Text11> {
           },
           child: Icon(Icons.first_page),
         ),
+      ),
+    );
+  }
+}
+
+class MyAppVideo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Material App Bar'),
+      ),
+      body: YoutubePlayer(
+        controller: YoutubePlayerController(
+          initialVideoId: 'ZSU3ZXOs6hc',
+          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppImage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Material App Bar'),
+      ),
+      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

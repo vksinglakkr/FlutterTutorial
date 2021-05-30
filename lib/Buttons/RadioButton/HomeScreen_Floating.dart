@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'ElevatedButton/Que01AllProperties.dart';
-import 'ElevatedButton/Que02Snackbar.dart';
-import 'ElevatedButton/Que03onPressed.dart';
-import 'ElevatedButton/Que04LongPress.dart';
-import 'ElevatedButton/Que05FontSize.dart';
-import 'ElevatedButton/Que06usingPadding.dart';
-import 'ElevatedButton/Que07PaddingLRTB.dart';
-import 'ElevatedButton/Que08PaddingOnly.dart';
+import '../FloatingActionButton/Que01onPressed.dart';
+import '../FloatingActionButton/Que02CenterFloatLocation.dart';
+import '../FloatingActionButton/Que03Color.dart';
+import '../FloatingActionButton/Que04CustomShape.dart';
+import '../FloatingActionButton/Que05ImageinText.dart';
+import '../FloatingActionButton/Que06RectangleShape.dart';
+import '../FloatingActionButton/Que07MiniButton.dart';
+import '../FloatingActionButton/Que08Iconwithlabel.dart';
+import '../FloatingActionButton/Que09DiamondShape.dart';
+import '../FloatingActionButton/Que10SwitchIcon.dart';
+import '../FloatingActionButton/Que11RectangleShapeRoundedCorner.dart';
 
-class HomeElevated extends StatelessWidget {
+class HomeFloating extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Elevated '),
+        title: Text('Floating Action Button '),
       ),
       body: SafeArea(
         child: Container(
@@ -25,104 +28,142 @@ class HomeElevated extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated-All Properties'),
+                      child: Text('Basic Code'),
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que01Elevated()));
+                                builder: (context) => Que01Floating()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated - Snackbar'),
+                      child: Text('Location'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que02Elevated()));
+                                builder: (context) => Que02Floating()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated - onPressed',
-                          style: TextStyle(fontSize: 12.0)),
+                      child: Text('Color', style: TextStyle(fontSize: 12.0)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que03Elevated()));
+                                builder: (context) => Que03Floating()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated - LongPress'),
+                      child: Text('Custom Shape'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que04Elevated()));
+                                builder: (context) => Que04Floating()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated - FontSize'),
+                      child: Text('Display Image'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que05Elevated()));
+                                builder: (context) => Que05Floating()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated - Padding'),
+                      child: Text('Rectangle Shape'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que06Elevated()));
+                                builder: (context) => Que06Floating()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated - Padding LRTB'),
+                      child: Text('Mini Size'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que07Elevated()));
+                                builder: (context) => Que07Floating()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Elevated - Padding only'),
+                      child: Text('Icon with Label'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que08Elevated()));
+                                builder: (context) => Que08Floating()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Diamond Shape'),
+//                      color: Colors.orangeAccent,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que09Floating()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Switch Icon'),
+//                      color: Colors.orangeAccent,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que10Floating()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Rectangle Shape Rounded Corner'),
+//                      color: Colors.orangeAccent,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que11Floating()));
                       }),
                 ),
               ],

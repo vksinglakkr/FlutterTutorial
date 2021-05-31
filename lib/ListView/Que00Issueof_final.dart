@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 //if number of class are more than 1 then we have two ways to declare List
 //a) List may be declared outside class with/without mentioning final
@@ -29,6 +31,10 @@ final List<String> course = <String>[
 ];
 
 class Que00 extends StatelessWidget {
+  launchURL() {
+    launch('https://flutter.dev/');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,10 +42,48 @@ class Que00 extends StatelessWidget {
         appBar: AppBar(
           title: Text("Issue of mentioning final or not"),
         ),
-        body: Container(
-            color: Colors.white10,
-            padding: EdgeInsets.all(16.0),
-            child: HomePage(course)),
+        body: Column(
+          children: [
+            Card(
+              elevation: 5,
+              color: Colors.black38,
+              margin: EdgeInsets.all(2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                  IconButton(
+                      icon: const Icon(Icons.image),
+                      color: Colors.black,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
+                        );
+                      }),
+                  IconButton(
+                      icon: const Icon(Icons.play_arrow),
+                      color: Colors.black,
+//                  onPressed: launchURL,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                        );
+                      }),
+                ],
+              ),
+            ),
+            Container(
+                color: Colors.white10,
+                padding: EdgeInsets.all(16.0),
+                child: HomePage(course)),
+          ],
+        ),
         floatingActionButton: FloatingActionButton(
           tooltip: "Go Back",
           onPressed: () {

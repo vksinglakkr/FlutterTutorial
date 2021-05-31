@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que31 extends StatelessWidget {
+  launchURL() {
+    launch('https://flutter.dev/');
+  }
+
   final List<String> course = [
     "c",
     "c++",
@@ -17,10 +23,48 @@ class Que31 extends StatelessWidget {
         appBar: AppBar(
           title: Text("Custom ListView.builder"),
         ),
-        body: Container(
-            color: Colors.white10,
-            padding: EdgeInsets.all(16.0),
-            child: CustomListBuild(course)),
+        body: Column(
+          children: [
+            Card(
+              elevation: 5,
+              color: Colors.black38,
+              margin: EdgeInsets.all(2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                  IconButton(
+                      icon: const Icon(Icons.image),
+                      color: Colors.black,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
+                        );
+                      }),
+                  IconButton(
+                      icon: const Icon(Icons.play_arrow),
+                      color: Colors.black,
+//                  onPressed: launchURL,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                        );
+                      }),
+                ],
+              ),
+            ),
+            Container(
+                color: Colors.white10,
+                padding: EdgeInsets.all(16.0),
+                child: CustomListBuild(course)),
+          ],
+        ),
         floatingActionButton: FloatingActionButton(
           tooltip: "Go Back",
           onPressed: () {

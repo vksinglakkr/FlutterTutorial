@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que22 extends StatelessWidget {
+  launchURL() {
+    launch('');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -9,18 +15,64 @@ class Que22 extends StatelessWidget {
         appBar: AppBar(
           title: Text('borderRadius Demo'),
         ),
-        body: Center(
-          child: Container(
-            decoration: BoxDecoration(
-              color: Colors.red,
-              borderRadius: BorderRadius.circular(5),
-              //borderRadius: BorderRadius.all(Radius.circular(10.0)),
-              //borderRadius: BorderRadius.only(topLeft: Radius.circular(25.0),topRight: Radius.circular(25.0),bottomRight: Radius.circular(25.0),bottomLeft: Radius.circular(25.0)),
-              //borderRadius: BorderRadius.horizontal(left:Radius.circular(25.0),right:Radius.circular(25.0))
-              //borderRadius: BorderRadius.vertical(top:Radius.circular(25.0),bottom:Radius.circular(25.0))
+        body: Column(
+          children: [
+            Card(
+              elevation: 5,
+              color: Colors.black38,
+              margin: EdgeInsets.all(2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                  IconButton(
+                      icon: const Icon(Icons.image),
+                      color: Colors.black,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
+                        );
+                      }),
+                  IconButton(
+                      icon: const Icon(Icons.play_arrow),
+                      color: Colors.black,
+//                  onPressed: launchURL,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                        );
+                      }),
+                ],
+              ),
             ),
-            child: Text('NIC Kurukshetra'),
-          ),
+            Center(
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(5),
+                  //borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  //borderRadius: BorderRadius.only(topLeft: Radius.circular(25.0),topRight: Radius.circular(25.0),bottomRight: Radius.circular(25.0),bottomLeft: Radius.circular(25.0)),
+                  //borderRadius: BorderRadius.horizontal(left:Radius.circular(25.0),right:Radius.circular(25.0))
+                  //borderRadius: BorderRadius.vertical(top:Radius.circular(25.0),bottom:Radius.circular(25.0))
+                ),
+                child: Text('NIC Kurukshetra'),
+              ),
+            ),
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black45,
+          tooltip: "Go Back",
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.first_page),
         ),
       ),
     );

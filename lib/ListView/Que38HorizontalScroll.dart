@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que38 extends StatelessWidget {
   final List<int> numbers = [1, 2, 3, 5, 8, 13, 21, 34, 55];
+  launchURL() {
+    launch('https://flutter.dev/');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +16,40 @@ class Que38 extends StatelessWidget {
       ),
       body: Column(
         children: [
+          Card(
+            elevation: 5,
+            color: Colors.black38,
+            margin: EdgeInsets.all(2),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.info),
+                  color: Colors.black,
+                  onPressed: launchURL,
+                ),
+                IconButton(
+                    icon: const Icon(Icons.image),
+                    color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppImage()),
+                      );
+                    }),
+                IconButton(
+                    icon: const Icon(Icons.play_arrow),
+                    color: Colors.black,
+//                  onPressed: launchURL,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppVideo()),
+                      );
+                    }),
+              ],
+            ),
+          ),
           Container(
             padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
             height: MediaQuery.of(context).size.height * 0.35,

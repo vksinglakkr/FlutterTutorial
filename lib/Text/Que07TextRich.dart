@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que07TextSpan extends StatefulWidget {
   @override
@@ -8,6 +10,9 @@ class Que07TextSpan extends StatefulWidget {
 }
 
 class _Que07TextSpanState extends State<Que07TextSpan> {
+    launchURL() {
+    launch('https://flutter.dev/');
+  }
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

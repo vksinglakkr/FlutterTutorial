@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 void main() {
   runApp(MyDemo());
 }
 
 class MyDemo extends StatelessWidget {
+  launchURL() {
+    launch('https://flutter.dev/');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: MyDemotab());
@@ -27,16 +33,62 @@ class MyDemotab extends StatelessWidget {
             tabs: myTabs,
           ),
         ),
-        body: TabBarView(
-          children: myTabs.map((Tab tab) {
-            final String label = tab.text.toLowerCase();
-            return Center(
-              child: Text(
-                'This is the $label tab',
-                style: const TextStyle(fontSize: 36),
+        body: Column(
+          children: [
+            Card(
+              elevation: 5,
+              color: Colors.black38,
+              margin: EdgeInsets.all(2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                  IconButton(
+                      icon: const Icon(Icons.image),
+                      color: Colors.black,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
+                        );
+                      }),
+                  IconButton(
+                      icon: const Icon(Icons.play_arrow),
+                      color: Colors.black,
+//                  onPressed: launchURL,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                        );
+                      }),
+                ],
               ),
-            );
-          }).toList(),
+            ),
+            TabBarView(
+              children: myTabs.map((Tab tab) {
+                final String label = tab.text.toLowerCase();
+                return Center(
+                  child: Text(
+                    'This is the $label tab',
+                    style: const TextStyle(fontSize: 36),
+                  ),
+                );
+              }).toList(),
+            ),
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black45,
+          tooltip: "Go Back",
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.first_page),
         ),
       ),
     );

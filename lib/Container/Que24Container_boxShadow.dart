@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que24 extends StatelessWidget {
+  launchURL() {
+    launch('');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -9,26 +15,72 @@ class Que24 extends StatelessWidget {
         appBar: AppBar(
           title: Text('Container/boxShadow Demo'),
         ),
-        body: Center(
-          child: Container(
-            width: 300.0,
-            height: 300.0,
-            decoration: BoxDecoration(color: Colors.redAccent, boxShadow: [
-              BoxShadow(
-                color: Colors.blue,
-                blurRadius: 8,
-                spreadRadius: 20,
-                offset: Offset(0, 3),
+        body: Column(
+          children: [
+            Card(
+              elevation: 5,
+              color: Colors.black38,
+              margin: EdgeInsets.all(2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                  IconButton(
+                      icon: const Icon(Icons.image),
+                      color: Colors.black,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
+                        );
+                      }),
+                  IconButton(
+                      icon: const Icon(Icons.play_arrow),
+                      color: Colors.black,
+//                  onPressed: launchURL,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                        );
+                      }),
+                ],
               ),
-              BoxShadow(
-                color: Colors.black,
-                blurRadius: 18,
-                spreadRadius: 10,
-                offset: Offset(0, 3),
+            ),
+            Center(
+              child: Container(
+                width: 300.0,
+                height: 300.0,
+                decoration: BoxDecoration(color: Colors.redAccent, boxShadow: [
+                  BoxShadow(
+                    color: Colors.blue,
+                    blurRadius: 8,
+                    spreadRadius: 20,
+                    offset: Offset(0, 3),
+                  ),
+                  BoxShadow(
+                    color: Colors.black,
+                    blurRadius: 18,
+                    spreadRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                ]),
+                child: Center(child: Text('NIC Kurukshetra')),
               ),
-            ]),
-            child: Center(child: Text('NIC Kurukshetra')),
-          ),
+            ),
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black45,
+          tooltip: "Go Back",
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.first_page),
         ),
       ),
     );

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que01Floating extends StatefulWidget {
   @override
@@ -6,11 +8,53 @@ class Que01Floating extends StatefulWidget {
 }
 
 class _State extends State<Que01Floating> {
+  launchURL() {
+    launch('');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: new Text("Simple Floating Action Button"),
+      ),
+      body: Column(
+        children: [
+          Card(
+            elevation: 5,
+            color: Colors.black38,
+            margin: EdgeInsets.all(2),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.info),
+                  color: Colors.black,
+                  onPressed: launchURL,
+                ),
+                IconButton(
+                    icon: const Icon(Icons.image),
+                    color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppImage()),
+                      );
+                    }),
+                IconButton(
+                    icon: const Icon(Icons.play_arrow),
+                    color: Colors.black,
+//                  onPressed: launchURL,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppVideo()),
+                      );
+                    }),
+              ],
+            ),
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.refresh),

@@ -1,5 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que98 extends StatefulWidget {
   @override
@@ -7,6 +9,10 @@ class Que98 extends StatefulWidget {
 }
 
 class _Que98State extends State<Que98> {
+  launchURL() {
+    launch('https://flutter.dev/');
+  }
+
   double _width = 50;
   double _height = 50;
   Color _color = Colors.green;
@@ -19,23 +25,61 @@ class _Que98State extends State<Que98> {
         appBar: AppBar(
           title: Text('Animated Container Demo'),
         ),
-        body: Center(
-          child: AnimatedContainer(
-            duration: Duration(seconds: 1),
-            curve: Curves.fastOutSlowIn,
-            width: _width,
-            height: _height,
-            decoration: BoxDecoration(
-              color: _color,
-              borderRadius: _borderRadius,
+        body: Column(
+          children: [
+            Card(
+              elevation: 5,
+              color: Colors.black38,
+              margin: EdgeInsets.all(2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                  IconButton(
+                      icon: const Icon(Icons.image),
+                      color: Colors.black,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
+                        );
+                      }),
+                  IconButton(
+                      icon: const Icon(Icons.play_arrow),
+                      color: Colors.black,
+//                  onPressed: launchURL,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                        );
+                      }),
+                ],
+              ),
             ),
-            child: Center(
-              child: Text('Demo',
-                  style: TextStyle(
-                    fontSize: 15.0,
-                  )),
+            Center(
+              child: AnimatedContainer(
+                duration: Duration(seconds: 1),
+                curve: Curves.fastOutSlowIn,
+                width: _width,
+                height: _height,
+                decoration: BoxDecoration(
+                  color: _color,
+                  borderRadius: _borderRadius,
+                ),
+                child: Center(
+                  child: Text('Demo',
+                      style: TextStyle(
+                        fontSize: 15.0,
+                      )),
+                ),
+              ),
             ),
-          ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -51,6 +95,14 @@ class _Que98State extends State<Que98> {
           },
           tooltip: 'Play',
           child: Icon(Icons.play_arrow),
+        ),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.black45,
+          tooltip: "Go Back",
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.first_page),
         ),
       ),
     );

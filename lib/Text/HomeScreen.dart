@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
+import 'Que01Overflow.dart';
 import 'Que01aProperties.dart';
+import 'Que01bStyle.dart';
+import 'Que01strutStyle.dart';
 import 'Que11TextMarquee.dart';
 import 'Que01SelectableText.dart';
 import 'Que02textColor.dart';
@@ -9,8 +12,6 @@ import 'Que03aUnderLine.dart';
 import 'Que03bShadow.dart';
 import 'Que04IncreaseFontSize.dart';
 import 'Que05ImageinText.dart';
-import 'Que06TextOverflow.dart';
-import 'Que06aTextoverflowVisible.dart';
 import 'Que07TextRich.dart';
 import 'Que08TextScalefactor.dart';
 import 'Que09TextSemanticsLabel.dart';
@@ -31,6 +32,8 @@ import 'Que19Marquee.dart';
 import 'Que20AutoSizeTextwithMarquee.dart';
 import 'Que21TransformSkewtext.dart';
 import 'Que25ShowContent_of_TextFileWithoutWidget.dart';
+import 'QueManipulation.dart';
+import 'QueShowMoreShowless.dart';
 
 class HomeText extends StatelessWidget {
   @override
@@ -49,24 +52,60 @@ class HomeText extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('How to make text Selectable?'),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 22,
-                  child: ElevatedButton(
                       child: Text('Text=>Properties'),
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => Que01aText()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Text=>Properties=>overflow'),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que01overFlow()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Text=>Properties=>strutStyle'),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que01strutStyle()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Text=>Style'),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que01bStyle()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('How to make text Selectable?'),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que01Text()));
                       }),
                 ),
                 Container(
@@ -140,54 +179,6 @@ class HomeText extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => Que05Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 22,
-                  child: ElevatedButton(
-                      child: Text('How to adjust spacing in between letters?'),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que05Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 22,
-                  child: ElevatedButton(
-                      child: Text('How to adjust spacing in between words?'),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que05Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 22,
-                  child: ElevatedButton(
-                      child: Text('How to tackle Overflow of text?'),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que06Overflow()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 22,
-                  child: ElevatedButton(
-                      child: Text('Example to show the overflow text?'),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que06aOverflow()));
                       }),
                 ),
                 Container(
@@ -388,7 +379,7 @@ class HomeText extends StatelessWidget {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Que17AutoSizeText()));
+                              builder: (context) => QueManipulation()));
                     },
                   ),
                 ),
@@ -456,6 +447,19 @@ class HomeText extends StatelessWidget {
                     },
                   ),
                 ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                    child: Text('Expandable Text (Show More/Show Less)'),
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => QueShowMoreShowless()));
+                    },
+                  ),
+                ),
               ],
             ),
           ),
@@ -472,15 +476,24 @@ class HomeText extends StatelessWidget {
   }
 }
 
+class QueManipulation extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: QueManipulation11(),
+      sourceFilePath: 'lib/Text/QueManipulation.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/QueManipulation.dart',
+    );
+  }
+}
+
 class Que01Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que01Text11(),
       sourceFilePath: 'lib/Text/Que01SelectableText.dart',
-
-      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
-      /// (open-code-in-browser, copy-code-link) will be added in the code view.
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
     );
@@ -498,6 +511,33 @@ class Que01aText extends StatelessWidget {
       /// (open-code-in-browser, copy-code-link) will be added in the code view.
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01aProperties.dart',
+    );
+  }
+}
+
+class Que01strutStyle extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01strut(),
+      sourceFilePath: 'lib/Text/Que01aProperties.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01aProperties.dart',
+    );
+  }
+}
+
+class Que01overFlow extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01over(),
+      sourceFilePath: 'lib/Text/Que01Overflow.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01Overflow.dart',
     );
   }
 }
@@ -570,30 +610,6 @@ class Que05Text extends StatelessWidget {
       sourceFilePath: 'lib/Text/Que05ImageinText.dart',
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que05ImageinText.dart',
-    );
-  }
-}
-
-class Que06Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que06Overflow(),
-      sourceFilePath: 'lib/Text/Que06TextOveflow.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que06TextOveflow.dart',
-    );
-  }
-}
-
-class Que06aText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que06aOverflow(),
-      sourceFilePath: 'lib/Text/Que06aTextOveflowVisible.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que06aTextOveflowVisible.dart',
     );
   }
 }
@@ -798,6 +814,21 @@ class Que25Text extends StatelessWidget {
       sourceFilePath: 'lib/Text/Que25ShowContent_of_textFileWithoutWidget.dart',
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que25ShowContent_of_textFileWithoutWidget.dart',
+    );
+  }
+}
+
+class QueShowMoreShowless extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: QueDynamic11(),
+      sourceFilePath: 'lib/Text/Que01ShowMoreShowless.dart',
+
+      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
+      /// (open-code-in-browser, copy-code-link) will be added in the code view.
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01ShowMoreShowless.dart',
     );
   }
 }

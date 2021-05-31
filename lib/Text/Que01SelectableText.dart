@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que01Text11 extends StatefulWidget {
-  @override
-  _Que01Text11State createState() => _Que01Text11State();
-}
-
-class _Que01Text11State extends State<Que01Text11> {
+class Que01Text11 extends StatelessWidget {
   launchURL() {
     launch(
         'https://api.flutter.dev/flutter/material/SelectableText-class.html');
@@ -28,17 +23,11 @@ class _Que01Text11State extends State<Que01Text11> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                //  SizedBox(height: 10),
-                // Text(
-                //   'SelectableText("text to be display")',
-                //   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                // ),
                 IconButton(
                   icon: const Icon(Icons.info),
                   color: Colors.black,
                   onPressed: launchURL,
                 ),
-
                 IconButton(
                     icon: const Icon(Icons.image),
                     color: Colors.black,

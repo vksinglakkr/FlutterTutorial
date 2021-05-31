@@ -2,24 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que01aText11 extends StatelessWidget {
+class Que01bStyle extends StatelessWidget {
   launchURL() {
     launch(
-        'https://flutter.dev/?gclsrc=aw.ds&gclid=EAIaIQobChMI8t3I3Mvw8AIVQUwrCh3DUgfCEAAYASAAEgIlhvD_BwE');
+        'https://api.flutter.dev/flutter/material/SelectableText-class.html');
   }
 
-//final String '$$'; semanticsLabel;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Text => Properties'),
+        title: Text('Text => Style'),
       ),
       body: ListView(children: <Widget>[
         Card(
           elevation: 5,
-          color: Colors.black12,
-          margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
+          color: Colors.black38,
+          margin: EdgeInsets.all(2),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
@@ -52,56 +51,42 @@ class Que01aText11 extends StatelessWidget {
         ),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
         Container(
-            margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
+            padding: EdgeInsets.all(5),
             child: Text(
-              'Normal Text',
-            )),
-        Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
-        Container(
-            margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
-            child: Text(
-              'textAlign: TextAlign.center',
-              textAlign: TextAlign.center,
-              //center/end/justify/left/right/start
-              //in right to left Start==Right, end==Left i.e. TextDirection.RTL
-              //in Left to Right Start==Left, end==Right i.e. TextDirection.LTR
+              'fontWeight: FontWeight.w900',
+              style: TextStyle(fontWeight: FontWeight.w900),
             )),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
         Container(
             padding: EdgeInsets.all(5),
             child: Text(
-              'textDirection: TextDirection.rtl',
-              textDirection: TextDirection.rtl,
+              'backgroundColor: Colors.red',
+              style: TextStyle(backgroundColor: Colors.red),
             )),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
         Container(
             padding: EdgeInsets.all(5),
             child: Text(
-              "textScaleFactor: 1.1 //if you wanted the text to be 110% of it’s normal size then you’d set your textScaleFactor to 1.5 .",
-              textScaleFactor: 1.2,
+              'fontFamily: "Raleway"',
+              style: TextStyle(fontFamily: "Raleway"),
             )),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
-        Container(
-            padding: EdgeInsets.all(5),
-            child: Text(
-              "SoftWrap: It is used to determine whether or not to show all text widget content when there is not enough space available. If it is true, it will show all content. Otherwise, it will not show all content.",
-              // softWrap: ,
+        Text(
+            "height:2.0=>(Line Spacing)Kurukshetra has been described in the first verse of Shrimad bhagvadgita,",
+            style: TextStyle(
+              height: 2.0, //You can set your custom height here
             )),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
-        Container(
-            padding: EdgeInsets.all(5),
-            child: Text(
-              "TextWidthBasis: It is used to control how the text width is defined.",
-              // textWidthBasis: ,
+        Text(
+            "letterSpacing:3.0=>Kurukshetra has been described in the first verse ",
+            style: TextStyle(
+              letterSpacing: 3, //You can set your custom height here
             )),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
-        Container(
-            padding: EdgeInsets.all(5),
-            child: Text(
-              "TextHeightBehavior: It is used to control how the paragraph appears between the first line and descent of the last line.",
-              textHeightBehavior:
-                  TextHeightBehavior(applyHeightToFirstAscent: false),
-              //  textHeightBehavior: TextHeightBehavior(applyHeightToLastDescent: false),
+        Text(
+            "wordSpacing: 5.0=>Kurukshetra has been described in the first verse ",
+            style: TextStyle(
+              wordSpacing: 5, //You can set your custom height here
             )),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
       ]),

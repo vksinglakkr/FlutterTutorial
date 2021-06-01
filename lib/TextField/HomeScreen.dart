@@ -62,3 +62,39 @@ class HomeTextField extends StatelessWidget {
     );
   }
 }
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/TextField/Que01SingleTextField.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/TextField/Que01SingleTextField.dart',
+    );
+  }
+}
+
+class Que02 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/TextField/Que02UsernamePassword.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/TextField/Que02UsernamePassword.dart',
+    );
+  }
+}
+
+class Que03 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0311(),
+      sourceFilePath: 'lib/TextField/Que03CursorColor.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/TextField/Que03CursorColor.dart',
+    );
+  }
+}

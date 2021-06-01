@@ -50,7 +50,7 @@ class MyAppTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: MyAppTest11(),
+      child: MyAppBoxFitted11(),
       sourceFilePath: 'lib/Box/Box_FittedBox/Que19DecorationImageOvertext.dart',
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_FittedBox/Que19DecorationImageOvertext.dart',

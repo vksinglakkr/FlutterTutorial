@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que36 extends StatefulWidget {
+class Que3611 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que36> {
+class _State extends State<Que3611> {
   final List<String> names = <String>[
     'Bharti',
     'Rajiv',

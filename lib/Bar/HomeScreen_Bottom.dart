@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
+//import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 //import 'BottomNavigationBar/';
 
@@ -45,3 +45,15 @@ class HomeBottom extends StatelessWidget {
     );
   }
 }
+
+// class Que01 extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return WidgetWithCodeView(
+//       child: Que01SnackBar11(),
+//       sourceFilePath: 'lib/Bar/Snackbar/Que01Basic.dart',
+//       codeLinkPrefix:
+//           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/Snackbar/Que01Basic.dart',
+//     );
+//   }
+// }

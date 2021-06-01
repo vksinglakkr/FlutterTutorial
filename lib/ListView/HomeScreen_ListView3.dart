@@ -214,3 +214,15 @@ class HomeListView3 extends StatelessWidget {
     );
   }
 }
+
+class Que39 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que3911(),
+      sourceFilePath: 'lib/ListView/Que39NavigatorListTile.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/ListView/Que39NavigatorListTile.dart',
+    );
+  }
+}

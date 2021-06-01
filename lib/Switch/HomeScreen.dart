@@ -141,3 +141,111 @@ class HomeSwitch extends StatelessWidget {
     );
   }
 }
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/Switch/Que01Switch.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que01Switch.dart',
+    );
+  }
+}
+
+class Que02 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/Switch/Que02SwitchOn_OffLight_Bulb.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que02SwitchOn_OffLight_Bulb.dart',
+    );
+  }
+}
+
+class Que03 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0311(),
+      sourceFilePath: 'lib/Switch/Que03SwitchActiveTrackColor.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que03SwitchActiveTrackColor.dart',
+    );
+  }
+}
+
+class Que04 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0411(),
+      sourceFilePath: 'lib/Switch/Que04SwitchListTile_BulbOnOff.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que04SwitchListTile_BulbOnOff.dart',
+    );
+  }
+}
+
+class Que05 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0511(),
+      sourceFilePath: 'lib/Switch/Que05SwitchActiveThumbPage.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que05SwitchActiveThumbPage.dart',
+    );
+  }
+}
+
+class Que06 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0611(),
+      sourceFilePath: 'lib/Switch/Que06Switch.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que06Switch.dart',
+    );
+  }
+}
+
+class Que07 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0711(),
+      sourceFilePath: 'lib/Switch/Que07Switch.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que07Switch.dart',
+    );
+  }
+}
+
+class Que08 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0811(),
+      sourceFilePath: 'lib/Switch/Que08Switch.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que08Switch.dart',
+    );
+  }
+}
+
+class Que09 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0911(),
+      sourceFilePath: 'lib/Switch/Que09Switch.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Switch/Que09Switch.dart',
+    );
+  }
+}

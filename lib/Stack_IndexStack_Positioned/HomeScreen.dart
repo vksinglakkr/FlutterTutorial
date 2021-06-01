@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 //import 'Que01.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
+//import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeStack extends StatelessWidget {
   @override
@@ -27,3 +27,15 @@ class HomeStack extends StatelessWidget {
     );
   }
 }
+
+// class Que01 extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return WidgetWithCodeView(
+//       child: Que0111(),
+//       sourceFilePath: 'lib/Slider/Que01.dart',
+//       codeLinkPrefix:
+//           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Slider/Que01.dart',
+//     );
+//   }
+// }

@@ -5,12 +5,12 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 //import './SecondScreen.dart';
 
-class Que04 extends StatefulWidget {
+class Que0411 extends StatefulWidget {
   @override
-  _Que04State createState() => _Que04State();
+  _Que0411State createState() => _Que0411State();
 }
 
-class _Que04State extends State<Que04> {
+class _Que0411State extends State<Que0411> {
   bool _toggle1 = false;
   bool _toggle2 = false;
   bool _toggle3 = false;

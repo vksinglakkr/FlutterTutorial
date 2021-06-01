@@ -95,3 +95,75 @@ class HomeTransform extends StatelessWidget {
     );
   }
 }
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/Transform/Que01Transform_translate.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Transform/Que01Transform_translate.dart',
+    );
+  }
+}
+
+class Que02 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/Transform/Que02Transform_scale.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Transform/Que02Transform_scale.dart',
+    );
+  }
+}
+
+class Que03 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0311(),
+      sourceFilePath: 'lib/Transform/Que03Transform_skew.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Transform/Que03Transform_skew.dart',
+    );
+  }
+}
+
+class Que04 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0411(),
+      sourceFilePath: 'lib/Transform/Que04Transform_rotate.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Transform/Que04Transform_rotate.dart',
+    );
+  }
+}
+
+class Que05 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0511(),
+      sourceFilePath: 'lib/Transform/Que05Transform_3D.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Transform/Que05Transform_3D.dart',
+    );
+  }
+}
+
+class Que06 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0611(),
+      sourceFilePath: 'lib/Transform/Que06AllwithSlider.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Transform/Que06AllwithSlider.dart',
+    );
+  }
+}

@@ -38,3 +38,15 @@ class HomeSpacer extends StatelessWidget {
     );
   }
 }
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/Slider/Que01.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Slider/Que01.dart',
+    );
+  }
+}

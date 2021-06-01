@@ -237,3 +237,15 @@ class HomeListView2 extends StatelessWidget {
     );
   }
 }
+
+class Que36 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que3611(),
+      sourceFilePath: 'lib/ListView/Que36ListAddItem.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/ListView/Que36ListAddItem.dart',
+    );
+  }
+}

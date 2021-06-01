@@ -794,6 +794,30 @@ class Que20Text extends StatelessWidget {
   }
 }
 
+class Que01InkWell extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01InkWell11(),
+      sourceFilePath: 'lib/InkWell/Que01ClickonText.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que01ClickonText.dart',
+    );
+  }
+}
+
+class Que02InkWell extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02InkWell11(),
+      sourceFilePath: 'lib/InkWell/Que02ClickonTextToggle.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que02ClickonTextToggle.dart',
+    );
+  }
+}
+
 class Que21Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -829,6 +853,30 @@ class QueShowMoreShowless extends StatelessWidget {
       /// (open-code-in-browser, copy-code-link) will be added in the code view.
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01ShowMoreShowless.dart',
+    );
+  }
+}
+
+class Que01Gester extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Gester11(),
+      sourceFilePath: 'lib/GesterDetector/Que01ClickonText.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que01ClickonText.dart',
+    );
+  }
+}
+
+class Que02Gester extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Gester11(),
+      sourceFilePath: 'lib/GesterDetector/Que02ClickonTextToggle.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que02ClickonTextToggle.dart',
     );
   }
 }

@@ -61,14 +61,38 @@ class HomeRow extends StatelessWidget {
   }
 }
 
-class Que08 extends StatelessWidget {
+class Que01 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: Que0811(),
+      child: Que0111(),
       sourceFilePath: 'lib/Row/Que01Basic.dart',
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Row/Que01Basic.dart',
+    );
+  }
+}
+
+class Que02 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/Row/Que02Expanded.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Row/Que02Expanded.dart',
+    );
+  }
+}
+
+class Que03 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0311(),
+      sourceFilePath: 'lib/Row/Que03Simple.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Row/Que03Simple.dart',
     );
   }
 }

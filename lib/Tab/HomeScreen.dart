@@ -117,3 +117,15 @@ class HomeTabBar extends StatelessWidget {
     );
   }
 }
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/Tab/Que01Basic.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que01Basic.dart',
+    );
+  }
+}

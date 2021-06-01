@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que08 extends StatefulWidget {
+class Que0811 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que08> {
+class _State extends State<Que0811> {
   bool isSwitched = false;
   launchURL() {
     launch('https://flutter.dev/');

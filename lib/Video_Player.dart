@@ -6,10 +6,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class VideoPlayerApp extends StatelessWidget {
-  launchURL() {
-    launch('https://flutter.dev/');
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -29,6 +25,9 @@ class VideoPlayerScreen extends StatefulWidget {
 class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   VideoPlayerController _controller;
   Future<void> _initializeVideoPlayerFuture;
+  launchURL() {
+    launch('https://flutter.dev/');
+  }
 
   @override
   void initState() {
@@ -138,6 +137,51 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
         child: Icon(
           _controller.value.isPlaying ? Icons.pause : Icons.play_arrow,
         ),
+      ),
+    );
+  }
+}
+
+class MyAppVideo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: YoutubePlayer(
+        controller: YoutubePlayerController(
+          initialVideoId: 'ZSU3ZXOs6hc',
+          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppImage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

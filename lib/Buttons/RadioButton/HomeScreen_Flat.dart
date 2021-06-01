@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../FlatButton/Que01withGradient.dart';
 import '../FlatButton/Que02LinearGradient.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeFlat extends StatelessWidget {
   @override
@@ -52,6 +53,30 @@ class HomeFlat extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01Flat extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Flat11(),
+      sourceFilePath: 'lib/Buttons/FlatButton/Que01withGradient.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/FlatButton/Que01withGradient.dart',
+    );
+  }
+}
+
+class Que02Flat extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Flat11(),
+      sourceFilePath: 'lib/Buttons/FlatButton/Que02LinearGradient.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/FlatButton/Que02LinearGradient.dart',
     );
   }
 }

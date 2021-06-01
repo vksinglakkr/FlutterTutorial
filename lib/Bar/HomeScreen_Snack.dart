@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'Snackbar/Que01Basic.dart';
 import 'Snackbar/Que02ColorSnackBar.dart';
 import 'Snackbar/Que03Duration.dart';
@@ -83,6 +83,54 @@ class HomeSnack extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01SnackBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01SnackBar11(),
+      sourceFilePath: 'lib/Bar/Snackbar/Que01Basic.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/Snackbar/Que01Basic.dart',
+    );
+  }
+}
+
+class Que02SnackBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02SnackBar11(),
+      sourceFilePath: 'lib/Bar/Snackbar/Que02ColorSnackBar.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/Snackbar/Que02ColorSnackBar.dart',
+    );
+  }
+}
+
+class Que03SnackBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que03SnackBar11(),
+      sourceFilePath: 'lib/Bar/Snackbar/Que03Duration.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/Snackbar/Que03Duration.dart',
+    );
+  }
+}
+
+class Que04SnackBar extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que04SnackBar11(),
+      sourceFilePath: 'lib/Bar/Snackbar/Que04Action.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/Snackbar/Que04Action.dart',
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:radio_button/Box/Box_FittedBox/Que19DecorationImageOvertext.dart';
 import 'Que01ContainerOpacityGesterDetector.dart';
 import 'Que02ContainerWithinContainer.dart';
 import 'Que03CustomContainer_Visibility.dart';
@@ -30,6 +31,7 @@ import 'QueAssignment1.dart';
 import 'QueAssignment2.dart';
 import 'QueAssignment3.dart';
 import 'QueAssignmentHowtofix2containersatcorners.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeContainer extends StatelessWidget {
   @override
@@ -378,6 +380,391 @@ class HomeContainer extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01Container extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Container11(),
+      sourceFilePath: 'lib/Container/Que01ContainerOpacityGesterDetector.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que01ContainerOpacityGesterDetector.dart',
+    );
+  }
+}
+
+class Que02Container extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Container11(),
+      sourceFilePath: 'lib/Container/Que02ContainerWithinContainer.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que02ContainerWithinContainer.dart',
+    );
+  }
+}
+
+class Que03 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0311(),
+      sourceFilePath: 'lib/Container/Que03CustomContainer.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que03CustomContainer.dart',
+    );
+  }
+}
+
+class Que12 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1211(),
+      sourceFilePath: 'lib/Container/Que12WidthHeightConstraints.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que12WidthHeightConstraints.dart',
+    );
+  }
+}
+
+class Que13 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1311(),
+      sourceFilePath: 'lib/Container/Que13MediaQuery.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que13MediaQuery.dart',
+    );
+  }
+}
+
+class Que14 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1411(),
+      sourceFilePath: 'lib/Container/Que14checkwidthheightwithcolumn.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que14checkwidthheightwithcolumn.dart',
+    );
+  }
+}
+
+class Que15 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1511(),
+      sourceFilePath: 'lib/Container/Que15Transform.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que15Transform.dart',
+    );
+  }
+}
+
+class Que16 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1611(),
+      sourceFilePath: 'lib/Container/Que16alignment.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que16alignment.dart',
+    );
+  }
+}
+
+class Que16a extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que16a11(),
+      sourceFilePath: 'lib/Container/Que16a_Align.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que16a_Align.dart',
+    );
+  }
+}
+
+class Que17 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1711(),
+      sourceFilePath: 'lib/Container/Que17padding.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que17padding.dart',
+    );
+  }
+}
+
+class Que18 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1811(),
+      sourceFilePath: 'lib/Container/Que18color.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que18color.dart',
+    );
+  }
+}
+
+class MyAppTest extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: MyAppTest11(),
+      sourceFilePath: 'lib/Container/Que19DecorationImageOvertext.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que19DecorationImageOvertext.dart',
+    );
+  }
+}
+
+class Que19 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que1911(),
+      sourceFilePath: 'lib/Container/Que19margin.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que19margin.dart',
+    );
+  }
+}
+
+class Que20 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2011(),
+      sourceFilePath: 'lib/Container/Que20decoration_border.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que19margin.dart',
+    );
+  }
+}
+
+class Que21 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2111(),
+      sourceFilePath: 'lib/Container/Que21ContainerStackPositioned.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que21ContainerStackPositioned.dart',
+    );
+  }
+}
+
+class Que22 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2211(),
+      sourceFilePath: 'lib/Container/Que22decoration_borderradius.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que22decoration_borderradius.dart',
+    );
+  }
+}
+
+class Que23 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2311(),
+      sourceFilePath: 'lib/Container/Que23shape.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que23shape.dart',
+    );
+  }
+}
+
+class Que24 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2411(),
+      sourceFilePath: 'lib/Container/Que24Container_boxShadow.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que24Container_boxShadow.dart',
+    );
+  }
+}
+
+class Que25 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2511(),
+      sourceFilePath: 'lib/Container/Que25ContainerFlutterLogo.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que25ContainerFlutterLogo.dart',
+    );
+  }
+}
+
+class Que26 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2611(),
+      sourceFilePath: 'lib/Container/Que26dart_forLoop.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que26dart_forLoop.dart',
+    );
+  }
+}
+
+class Que27 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2711(),
+      sourceFilePath: 'lib/Container/Que27customContainer.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que27customContainer.dart',
+    );
+  }
+}
+
+class Que28 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2811(),
+      sourceFilePath: 'lib/Container/Que28gradient.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que28gradient.dart',
+    );
+  }
+}
+
+class Que29 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que2911(),
+      sourceFilePath: 'lib/Container/Fontsfamily.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Fontsfamily.dart',
+    );
+  }
+}
+
+class Que30 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que3011(),
+      sourceFilePath: 'lib/Container/Que30Border.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que30Border.dart',
+    );
+  }
+}
+
+class Que32 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que3211(),
+      sourceFilePath: 'lib/Container/Que32ContainerBorder.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que32ContainerBorder.dart',
+    );
+  }
+}
+
+class Que97 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que9711(),
+      sourceFilePath: 'lib/Container/Que97CustomContainer2.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que32ContainerBorder.dart',
+    );
+  }
+}
+
+class Que98 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que9811(),
+      sourceFilePath: 'lib/Container/Que98AnimatedContainer.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que98AnimatedContainer.dart',
+    );
+  }
+}
+
+class Que99 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que9911(),
+      sourceFilePath: 'lib/Container/Que99AnimatedOpacity.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que99AnimatedOpacity.dart',
+    );
+  }
+}
+
+class QueAssign1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: QueAssign111(),
+      sourceFilePath: 'lib/Container/QueAssignment1.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignment1.dart',
+    );
+  }
+}
+
+class QueAssign2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: QueAssign211(),
+      sourceFilePath: 'lib/Container/QueAssignment2.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignment2.dart',
+    );
+  }
+}
+
+class QueAssign3 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: QueAssign311(),
+      sourceFilePath: 'lib/Container/QueAssignment3.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignment3.dart',
+    );
+  }
+}
+
+class QueAssign4 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: QueAssign411(),
+      sourceFilePath:
+          'lib/Container/QueAssignmentHowtofix2containersatcorners.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignmentHowtofix2containersatcorners.dart',
     );
   }
 }

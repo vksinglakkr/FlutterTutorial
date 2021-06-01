@@ -7,6 +7,7 @@ import '../ElevatedButton/Que05FontSize.dart';
 import '../ElevatedButton/Que06usingPadding.dart';
 import '../ElevatedButton/Que07PaddingLRTB.dart';
 import '../ElevatedButton/Que08PaddingOnly.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeElevated extends StatelessWidget {
   @override
@@ -137,6 +138,102 @@ class HomeElevated extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que01AllProperties.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que01AllProperties.dart',
+    );
+  }
+}
+
+class Que02Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que02Snackbar.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que02Snackbar.dart',
+    );
+  }
+}
+
+class Que03Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que03Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que03onPressed.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que03onPressed.dart',
+    );
+  }
+}
+
+class Que04Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que04Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que04LongPress.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que04LongPress.dart',
+    );
+  }
+}
+
+class Que05Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que05Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que05FontSize.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que05FontSize.dart',
+    );
+  }
+}
+
+class Que06Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que06Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que06usingPadding.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que06usingPadding.dart',
+    );
+  }
+}
+
+class Que07Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que07Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que07PaddingLRTB.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que07PaddingLRTB.dart',
+    );
+  }
+}
+
+class Que08Elevated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que08Elevated11(),
+      sourceFilePath: 'lib/Buttons/ElevatedButton/Que08PaddingOnly.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/ElevatedButton/Que08PaddingOnly.dart',
     );
   }
 }

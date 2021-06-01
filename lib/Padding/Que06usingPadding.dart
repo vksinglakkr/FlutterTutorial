@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que06 extends StatefulWidget {
+class Que0611 extends StatefulWidget {
+  @override
+  _Que0611State createState() => _Que0611State();
+}
+
+class _Que0611State extends State<Que0611> {
   launchURL() {
     launch('https://flutter.dev/');
   }
 
-  @override
-  _Que06State createState() => _Que06State();
-}
-
-class _Que06State extends State<Que06> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -94,5 +94,50 @@ class _Que06State extends State<Que06> {
             child: Icon(Icons.first_page),
           ),
         ));
+  }
+}
+
+class MyAppVideo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: YoutubePlayer(
+        controller: YoutubePlayerController(
+          initialVideoId: 'ZSU3ZXOs6hc',
+          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppImage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
   }
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Box_DecoratedBox/Que01Box_DecoratedBox.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeDecorated extends StatelessWidget {
   @override
@@ -39,6 +40,18 @@ class HomeDecorated extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01Decorated extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Decorated11(),
+      sourceFilePath: 'lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
     );
   }
 }

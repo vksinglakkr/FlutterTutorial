@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
+// ignore: must_be_immutable
 class QueManipulation11 extends StatelessWidget {
   String str1 = "national informatics center, kurukshetra";
   launchURL() {

@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que98 extends StatefulWidget {
+class Que9811 extends StatefulWidget {
   @override
-  _Que98State createState() => _Que98State();
+  _Que9811State createState() => _Que9811State();
 }
 
-class _Que98State extends State<Que98> {
-  launchURL() {
-    launch('https://flutter.dev/');
-  }
-
+class _Que9811State extends State<Que9811> {
   double _width = 50;
   double _height = 50;
   Color _color = Colors.green;
   BorderRadiusGeometry _borderRadius = BorderRadius.circular(8);
+  launchURL() {
+    launch('https://flutter.dev/');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -96,14 +96,51 @@ class _Que98State extends State<Que98> {
           tooltip: 'Play',
           child: Icon(Icons.play_arrow),
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black45,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppVideo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: YoutubePlayer(
+        controller: YoutubePlayerController(
+          initialVideoId: 'ZSU3ZXOs6hc',
+          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppImage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

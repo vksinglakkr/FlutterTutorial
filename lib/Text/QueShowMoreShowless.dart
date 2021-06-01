@@ -2,6 +2,7 @@ import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+// ignore: must_be_immutable
 class QueDynamic11 extends StatelessWidget {
   launchURL() {
     launch('https://pub.dev/packages/expandable_text');

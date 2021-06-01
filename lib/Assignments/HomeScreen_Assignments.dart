@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'Que01Assignment1.dart';
 import 'Que02GridView_ClipRRect_Material.dart';
 import 'Que03IncreaseFontSize.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeAssignments extends StatelessWidget {
   @override
@@ -58,6 +59,42 @@ class HomeAssignments extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/Assignments/Que01Assignments.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Assignments/Que01Assignments.dart',
+    );
+  }
+}
+
+class Que02 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/Assignments/Que02GridView_ClipRRect_Material.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Assignments/Que02GridView_ClipRRect_Material.dart',
+    );
+  }
+}
+
+class Que03 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0311(),
+      sourceFilePath: 'lib/Assignments/Que03IncreaseFontSize.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Assignments/Que03IncreaseFontSize.dart',
     );
   }
 }

@@ -4,6 +4,7 @@ import 'Que02RoundedCorner.dart';
 import 'Que03DontCloseonTapoutside.dart';
 import 'Que04Elevation.dart';
 import 'Que05BackGroundColor.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeAlert extends StatelessWidget {
   @override
@@ -95,6 +96,66 @@ class HomeAlert extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01Alert extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Alert11(),
+      sourceFilePath: 'lib/AlertDialog/Que01Basic.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/AlertDialog/Que01Basic.dart',
+    );
+  }
+}
+
+class Que02Alert extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Alert11(),
+      sourceFilePath: 'lib/AlertDialog/Que02RoundedCorner.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/AlertDialog/Que02RoundedCorner.dart',
+    );
+  }
+}
+
+class Que03Alert extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que03Alert11(),
+      sourceFilePath: 'lib/AlertDialog/Que03DontCloseonTapoutside.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/AlertDialog/Que03DontCloseonTapoutside.dart',
+    );
+  }
+}
+
+class Que04Alert extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que04Alert11(),
+      sourceFilePath: 'lib/AlertDialog/Que04Elevation.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/AlertDialog/Que04Elevation.dart',
+    );
+  }
+}
+
+class Que05Alert extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que05Alert11(),
+      sourceFilePath: 'lib/AlertDialog/Que05BackGroundColor.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/AlertDialog/Que05BackGroundColor.dart',
     );
   }
 }

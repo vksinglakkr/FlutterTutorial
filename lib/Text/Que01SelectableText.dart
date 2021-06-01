@@ -77,7 +77,7 @@ class MyAppVideo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text(''),
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
@@ -102,7 +102,7 @@ class MyAppImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text(''),
       ),
       body: Container(child: Image.asset("assets/help/Text/Que01.png")),
       floatingActionButton: FloatingActionButton(

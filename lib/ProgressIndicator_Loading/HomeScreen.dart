@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Que01.dart';
 import 'Que02.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeProgress extends StatelessWidget {
   @override
@@ -45,6 +46,30 @@ class HomeProgress extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/ProgressIndicator/Que01.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/ProgressIndicator/Que01.dart',
+    );
+  }
+}
+
+class Que02 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/ProgressIndicator/Que02.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/ProgressIndicator/Que02.dart',
     );
   }
 }

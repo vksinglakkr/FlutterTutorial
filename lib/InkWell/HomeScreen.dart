@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../InkWell/Que02ClickonTextToggle.dart';
 import 'Que01ClickonText.dart';
 import 'Que02ClickonTextToggle.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeInkWell extends StatelessWidget {
   @override
@@ -50,6 +51,30 @@ class HomeInkWell extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01InkWell extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01InkWell11(),
+      sourceFilePath: 'lib/InkWell/Que01ClickonText.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que01ClickonText.dart',
+    );
+  }
+}
+
+class Que02InkWell extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02InkWell11(),
+      sourceFilePath: 'lib/InkWell/Que02ClickonTextToggle.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que02ClickonTextToggle.dart',
     );
   }
 }

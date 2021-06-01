@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Que01Drawer1.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeDrawer extends StatelessWidget {
   @override
@@ -34,6 +35,18 @@ class HomeDrawer extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/Drawer/Que01Drawer1.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Drawer/Que01Drawer1.dart',
     );
   }
 }

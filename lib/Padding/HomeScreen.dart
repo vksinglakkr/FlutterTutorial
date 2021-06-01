@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:radio_button/Box/Box_FittedBox/Que19DecorationImageOvertext.dart';
 import 'Que06usingPadding.dart';
 import 'Que07PaddingLRTB.dart';
 import 'Que08PaddingOnly.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomePadding extends StatelessWidget {
   @override
@@ -56,6 +58,54 @@ class HomePadding extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class MyAppTest extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: MyAppTest11(),
+      sourceFilePath: 'lib/Padding/Que01EdgeInsetsDirectional.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Padding/Que01EdgeInsetsDirectional.dart',
+    );
+  }
+}
+
+class Que06 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0611(),
+      sourceFilePath: 'lib/Padding/Que06usingPadding.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Padding/Que06usingPadding.dart',
+    );
+  }
+}
+
+class Que07 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0711(),
+      sourceFilePath: 'lib/Padding/Que07usingPadding.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Padding/Que07usingPadding.dart',
+    );
+  }
+}
+
+class Que08 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0811(),
+      sourceFilePath: 'lib/Padding/Que08usingPadding.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Padding/Que08usingPadding.dart',
     );
   }
 }

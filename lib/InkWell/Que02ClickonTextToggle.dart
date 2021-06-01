@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que02InkWell extends StatefulWidget {
+class Que02InkWell11 extends StatefulWidget {
   @override
-  _Que02InkWellState createState() => _Que02InkWellState();
+  _Que02InkWell11State createState() => _Que02InkWell11State();
 }
 
-class _Que02InkWellState extends State<Que02InkWell> {
+class _Que02InkWell11State extends State<Que02InkWell11> {
   String name1 = "NIC Kurukshetra";
   launchURL() {
     launch('https://flutter.dev/');
@@ -72,6 +72,51 @@ class _Que02InkWellState extends State<Que02InkWell> {
               }),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppVideo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: YoutubePlayer(
+        controller: YoutubePlayerController(
+          initialVideoId: 'ZSU3ZXOs6hc',
+          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppImage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

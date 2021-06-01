@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'Que01ClickonText.dart';
 import 'Que02ClickonTextToggle.dart';
 import 'Que03ContainerOpacityGesterDetector.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeGesterDetector extends StatelessWidget {
   @override
@@ -56,6 +57,43 @@ class HomeGesterDetector extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01Gester extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Gester11(),
+      sourceFilePath: 'lib/GesterDetector/Que01ClickonText.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que01ClickonText.dart',
+    );
+  }
+}
+
+class Que02Gester extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que02Gester11(),
+      sourceFilePath: 'lib/GesterDetector/Que02ClickonTextToggle.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que02ClickonTextToggle.dart',
+    );
+  }
+}
+
+class Que03Gester extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que03Gester11(),
+      sourceFilePath:
+          'lib/GesterDetector/Que03ContainerOpacityGesterDetector.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que03ContainerOpacityGesterDetector.dart',
     );
   }
 }

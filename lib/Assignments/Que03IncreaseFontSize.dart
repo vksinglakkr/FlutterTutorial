@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:radio_button/AlertDialog/Que03DontCloseonTapoutside.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que03 extends StatefulWidget {
+class Que0311 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que03> {
+class _State extends State<Que0311> {
   double custFontSize = 20;
 
   void changeFontSize() async {
@@ -77,6 +78,51 @@ class _State extends State<Que03> {
           ])),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppVideo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: YoutubePlayer(
+        controller: YoutubePlayerController(
+          initialVideoId: 'ZSU3ZXOs6hc',
+          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
+      ),
+    );
+  }
+}
+
+class MyAppImage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(''),
+      ),
+      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

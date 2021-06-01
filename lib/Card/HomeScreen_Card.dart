@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Que01CardContainer.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeCard extends StatelessWidget {
   @override
@@ -38,6 +39,18 @@ class HomeCard extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01Card extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que01Card11(),
+      sourceFilePath: 'lib/Card/Que01CardContainer.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Card/Que01CardContainer.dart',
     );
   }
 }

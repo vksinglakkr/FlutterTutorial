@@ -31,8 +31,6 @@ import '../Icons/HomeScreen.dart';
 import '../Image/HomeScreen_Image.dart';
 import '../InkWell/HomeScreen.dart';
 import '../ListView/HomeScreen_ListView1.dart';
-import '../ListView/HomeScreen_ListView2.dart';
-import '../ListView/HomeScreen_ListView3.dart';
 import '../Material/HomeScreen.dart';
 import '../Opacity/HomeScreen.dart';
 import '../Padding/HomeScreen.dart';
@@ -292,7 +290,7 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (BuildContext context) => HomeListView2(),
+                      builder: (BuildContext context) => HomeListView1(),
                     ))),
             ElevatedButton(
                 child: Text('ListView (3)', style: TextStyle(fontSize: 10)),
@@ -301,7 +299,7 @@ class HomeScreen extends StatelessWidget {
                 onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (BuildContext context) => HomeListView3(),
+                      builder: (BuildContext context) => HomeListView1(),
                     ))),
             ElevatedButton(
               child: Text('Material', style: TextStyle(fontSize: 10)),

@@ -19,7 +19,7 @@ class HomeAlign extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Basic Alert Dialig Box'),
+                      child: Text('Basic Alert Dialog Box'),
                       onPressed: () {
                         Navigator.push(
                             context,

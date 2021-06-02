@@ -129,3 +129,87 @@ class Que01 extends StatelessWidget {
     );
   }
 }
+
+class Que02 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0211(),
+      sourceFilePath: 'lib/Tab/Que02WithoutTabBar.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que02WithoutTabBar.dart',
+    );
+  }
+}
+
+class Que03 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0311(),
+      sourceFilePath: 'lib/Tab/Que03OnlyDefaultTabController.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que03OnlyDefaultTabController.dart',
+    );
+  }
+}
+
+class Que04 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0411(),
+      sourceFilePath: 'lib/Tab/Que04WithoutTabBarView.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que04WithoutTabBarView.dart',
+    );
+  }
+}
+
+class Que05 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0511(),
+      sourceFilePath: 'lib/Tab/Que05WithoutDefaultTabController.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que05WithoutDefaultTabController.dart',
+    );
+  }
+}
+
+class Que06 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0611(),
+      sourceFilePath: 'lib/Tab/Que06OnlyTabBarView.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que06OnlyTabBarView.dart',
+    );
+  }
+}
+
+class Que07 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0711(),
+      sourceFilePath: 'lib/Tab/Que07OnlyTabBar.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que07OnlyTabBar.dart',
+    );
+  }
+}
+
+class Que08 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0811(),
+      sourceFilePath: 'lib/Tab/Que08List.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que08List.dart',
+    );
+  }
+}

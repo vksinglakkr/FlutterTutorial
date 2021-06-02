@@ -21,10 +21,15 @@ class HomeCard extends StatelessWidget {
                   child: ElevatedButton(
                       child: Text('Card/Container'),
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Card()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) {
+                          return WidgetWithCodeView(
+                            child: Que01Card11(),
+                            sourceFilePath: 'lib/Card/Que01CardContainer.dart',
+                            codeLinkPrefix:
+                                'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Card/Que01CardContainer.dart',
+                          );
+                        }));
                       }),
                 ),
               ],
@@ -43,14 +48,14 @@ class HomeCard extends StatelessWidget {
   }
 }
 
-class Que01Card extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Card11(),
-      sourceFilePath: 'lib/Card/Que01CardContainer.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Card/Que01CardContainer.dart',
-    );
-  }
-}
+// class Que01Card extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return WidgetWithCodeView(
+//       child: Que01Card11(),
+//       sourceFilePath: 'lib/Card/Que01CardContainer.dart',
+//       codeLinkPrefix:
+//           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Card/Que01CardContainer.dart',
+//     );
+//   }
+// }

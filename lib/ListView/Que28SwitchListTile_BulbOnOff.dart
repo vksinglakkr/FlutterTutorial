@@ -5,12 +5,12 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 //import './SecondScreen.dart';
 
-class Que28 extends StatefulWidget {
+class Que2811 extends StatefulWidget {
   @override
-  _Que28State createState() => _Que28State();
+  _Que2811State createState() => _Que2811State();
 }
 
-class _Que28State extends State<Que28> {
+class _Que2811State extends State<Que2811> {
   bool _toggle1 = false;
   bool _toggle2 = false;
   bool _toggle3 = false;
@@ -134,7 +134,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: 'ZSU3ZXOs6hc',
+          initialVideoId: '',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
@@ -157,7 +157,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      body: Container(child: Image.asset("")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

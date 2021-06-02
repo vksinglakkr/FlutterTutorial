@@ -42,7 +42,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: 'ZSU3ZXOs6hc',
+          initialVideoId: '',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
@@ -65,7 +65,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      body: Container(child: Image.asset("")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

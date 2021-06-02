@@ -54,7 +54,61 @@ flutter:
     - assets/images/ListView/
     - assets/images/
     - lib/Text/
+    - lib/AlertDialog/
+    - lib/Align/
+    - lib/Assignments/
+    - lib/Bar/AppBar/
+    - lib/Bar/BottomNavigationBar/
+    - lib/Bar/Navigationbar/
+    - lib/Bar/Snackbar/
+    - lib/Box/Box_ConstrainedBox/
+    - lib/Box/Box_DecoratedBox/
+    - lib/Box/Box_FittedBox/
+    - lib/Box/Box_FractionallySizedBox/
+    - lib/Box/Box_LimitedBox/
+    - lib/Box/Box_RotatedBox/
+    - lib/Box/Box_SizedBox/
+    - lib/Buttons/ElevatedButton/
+    - lib/Buttons/FlatButton/
+    - lib/Buttons/FloatingActionButton/
+    - lib/Buttons/RadioButton/
+    - lib/Card/
+    - lib/Comments/
+    - lib/Container/
+    - lib/CustomWidgets/
+    - lib/DART/
+    - lib/Divider/
+    - lib/Drawer/
+    - lib/General/
+    - lib/GesterDetector/
+    - lib/GridView/
+    - lib/GridView/StaggeredGridView/
+    - lib/Icons/
+    - lib/Image/
+    - lib/Image/Clipping/
+    - lib/InkWell/
+    - lib/Interface/
+    - lib/ListView/
+    - lib/Material/
+    - lib/models/
+    - lib/Opacity/
+    - lib/Padding/
+    - lib/Placeholder/
+    - lib/ProgressIndicator_Loading/
+    - lib/Row/
+    - lib/Slider/
+    - lib/Spacer/
+    - lib/Stack_IndexStack_Positioned/
+    - lib/Switch/
+    - lib/Tab/
+    - lib/TextField/
+    - lib/Transform/
+    - lib/Visibility/
     - assets/help/Text/
+    - assets/help/AlertDialog/Que01.png
+
+
+
   #  - assets/images/loading.gif
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

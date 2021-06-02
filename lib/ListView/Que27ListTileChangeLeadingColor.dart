@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que27 extends StatefulWidget {
+class Que2711 extends StatefulWidget {
   @override
-  _Que27State createState() => _Que27State();
+  _Que2711State createState() => _Que2711State();
 }
 
-class _Que27State extends State<Que27> {
+class _Que2711State extends State<Que2711> {
   bool _toggle1 = false;
   bool _toggle2 = false;
   bool _toggle3 = false;
@@ -116,7 +116,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: 'ZSU3ZXOs6hc',
+          initialVideoId: '',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
@@ -139,7 +139,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      body: Container(child: Image.asset("")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

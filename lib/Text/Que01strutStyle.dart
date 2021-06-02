@@ -162,7 +162,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: 'ZSU3ZXOs6hc',
+          initialVideoId: '',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),

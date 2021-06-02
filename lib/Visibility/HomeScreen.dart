@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'Que01CustomContainer_Visibility.dart';
 
 class HomeVisibility extends StatelessWidget {
@@ -36,6 +37,18 @@ class HomeVisibility extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
+    );
+  }
+}
+
+class Que01 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: Que0111(),
+      sourceFilePath: 'lib/Visibility/Que01CustomContainer_Visibility.dart',
+      codeLinkPrefix:
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Visibility/Que01CustomContainer_Visibility.dart',
     );
   }
 }

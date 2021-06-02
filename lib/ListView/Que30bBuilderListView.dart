@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que30b extends StatefulWidget {
+class Que30b11 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que30b> {
+class _State extends State<Que30b11> {
   final List names = ['Bike', 'Boat', 'Bus'];
   final iconsVar = [
     Icons.directions_bike,
@@ -93,7 +93,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: 'ZSU3ZXOs6hc',
+          initialVideoId: '',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
@@ -116,7 +116,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      body: Container(child: Image.asset("")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

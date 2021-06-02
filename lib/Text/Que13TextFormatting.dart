@@ -99,6 +99,7 @@ class _Que13TextFormattingState extends State<Que13TextFormatting> {
     );
   }
 }
+
 class MyAppVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -108,7 +109,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: 'ZSU3ZXOs6hc',
+          initialVideoId: '',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
@@ -131,7 +132,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      body: Container(child: Image.asset("")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

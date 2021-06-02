@@ -3,19 +3,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que01Alert11 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Alert',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyView(),
-    );
-  }
-}
-
-class MyView extends StatelessWidget {
   launchURL() {
     launch('');
   }
@@ -91,8 +78,8 @@ void _showDialog(BuildContext context) {
       return AlertDialog(
         title: new Text("Alert!!"),
         content: new Text("You are awesome!"),
-        actions: <Widget>[
-          new TextButton(
+        actions: [
+          TextButton(
             child: new Text("OK"),
             onPressed: () {
               Navigator.of(context).pop();
@@ -113,7 +100,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: 'ZSU3ZXOs6hc',
+          initialVideoId: '',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
@@ -136,7 +123,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
+      body: Container(child: Image.asset("assets/help/AlertDialog/Que01.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

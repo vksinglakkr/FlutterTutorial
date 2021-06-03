@@ -3,19 +3,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que02Alert11 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Alert',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyView(),
-    );
-  }
-}
-
-class MyView extends StatelessWidget {
   launchURL() {
     launch('');
   }
@@ -24,7 +11,7 @@ class MyView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter AlertDialog - NIC KKR'),
+        title: Text('Alert Dialog Box'),
       ),
       body: Column(
         children: [
@@ -139,7 +126,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("")),
+      body: Container(child: Image.asset("assets/help/AlertDialog/Que02.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

@@ -135,9 +135,9 @@ class MyAppImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(''),
+        title: Text('assets/help/AlertDialog/Que03.png'),
       ),
-      body: Container(child: Image.asset("")),
+      body: Container(child: Image.asset("assets/help/AlertDialog/Que03.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

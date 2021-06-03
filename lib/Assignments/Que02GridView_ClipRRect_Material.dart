@@ -94,21 +94,22 @@ class Que0211 extends StatelessWidget {
                       child: Padding(
                         padding: EdgeInsets.all(8.0),
                         child: ClipRRect(
-                            borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(25.0),
-                                topRight: Radius.circular(25.0),
-                                bottomLeft: Radius.circular(25.0),
-                                bottomRight: Radius.circular(25.0)),
-                            child: Align(
-                                alignment: Alignment.bottomRight,
-                                heightFactor: 1,
-                                widthFactor: 1,
-                                child: Container(
-                                    color: Color(0xfff32595),
-                                    width: 60,
-                                    height: 50,
-                                    child: Icon(Icons.access_alarm,
-                                        color: Colors.white, size: 30.0)))),
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(25.0),
+                              topRight: Radius.circular(25.0),
+                              bottomLeft: Radius.circular(25.0),
+                              bottomRight: Radius.circular(25.0)),
+                          child: Align(
+                              alignment: Alignment.bottomRight,
+                              heightFactor: 1,
+                              widthFactor: 1,
+                              child: Container(
+                                  color: Color(0xfff32595),
+                                  width: 60,
+                                  height: 50,
+                                  child: Icon(Icons.access_alarm,
+                                      color: Colors.white, size: 30.0))),
+                        ),
                       ),
                     ),
                   ),
@@ -162,7 +163,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("")),
+      body: Container(child: Image.asset("assets/help/Assignments/Que02.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black45,
         tooltip: "Go Back",

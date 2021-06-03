@@ -1,17 +1,9 @@
+// lib\QueURL_Launcher.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class MyAppURL extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: DemoPage(),
-    );
-  }
-}
-
-class DemoPage extends StatelessWidget {
   launchURL() {
     launch('https://www.youtube.com/watch?v=ktTajqbhIcY');
   }

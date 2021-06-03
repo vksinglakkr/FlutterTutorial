@@ -1,3 +1,4 @@
+// lib\Switch\Que02SwitchOn_OffLight_Bulb.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -15,77 +16,73 @@ class _Que02State extends State<Que0211> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-            title: Text(
-                'Switch \n  How to change the Color of Icon at run time',
-                style: TextStyle(fontSize: 16.0))),
-        body: Column(
-          children: [
-            Card(
-              elevation: 5,
-              color: Colors.black38,
-              margin: EdgeInsets.all(2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.info),
-                    color: Colors.black,
-                    onPressed: launchURL,
-                  ),
-                  IconButton(
-                      icon: const Icon(Icons.image),
-                      color: Colors.black,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppImage()),
-                        );
-                      }),
-                  IconButton(
-                      icon: const Icon(Icons.play_arrow),
-                      color: Colors.black,
-//                  onPressed: launchURL,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppVideo()),
-                        );
-                      }),
-                ],
-              ),
-            ),
-            Center(
-              child: Container(
-                child: Icon(
-                  Icons.lightbulb_outline,
-                  color: _toggle ? Colors.orange : null,
-                  size: 200,
+    return Scaffold(
+      appBar: AppBar(
+          title: Text('Switch \n  How to change the Color of Icon at run time',
+              style: TextStyle(fontSize: 16.0))),
+      body: Column(
+        children: [
+          Card(
+            elevation: 5,
+            color: Colors.black38,
+            margin: EdgeInsets.all(2),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.info),
+                  color: Colors.black,
+                  onPressed: launchURL,
                 ),
-              ),
-            ),
-            Center(
-              child: Container(
-                child: Switch(
-                    value: _toggle,
-                    onChanged: (bool value) {
-                      setState(() => _toggle = value);
+                IconButton(
+                    icon: const Icon(Icons.image),
+                    color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppImage()),
+                      );
                     }),
+                IconButton(
+                    icon: const Icon(Icons.play_arrow),
+                    color: Colors.black,
+//                  onPressed: launchURL,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppVideo()),
+                      );
+                    }),
+              ],
+            ),
+          ),
+          Center(
+            child: Container(
+              child: Icon(
+                Icons.lightbulb_outline,
+                color: _toggle ? Colors.orange : null,
+                size: 200,
               ),
             ),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black45,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+          ),
+          Center(
+            child: Container(
+              child: Switch(
+                  value: _toggle,
+                  onChanged: (bool value) {
+                    setState(() => _toggle = value);
+                  }),
+            ),
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

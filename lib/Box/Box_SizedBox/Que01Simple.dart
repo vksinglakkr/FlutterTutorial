@@ -9,66 +9,63 @@ class Que01Sized11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Column(
-          children: [
-            Card(
-              elevation: 5,
-              color: Colors.black38,
-              margin: EdgeInsets.all(2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.info),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Material App Bar'),
+      ),
+      body: Column(
+        children: [
+          Card(
+            elevation: 5,
+            color: Colors.black38,
+            margin: EdgeInsets.all(2),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.info),
+                  color: Colors.black,
+                  onPressed: launchURL,
+                ),
+                IconButton(
+                    icon: const Icon(Icons.image),
                     color: Colors.black,
-                    onPressed: launchURL,
-                  ),
-                  IconButton(
-                      icon: const Icon(Icons.image),
-                      color: Colors.black,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppImage()),
-                        );
-                      }),
-                  IconButton(
-                      icon: const Icon(Icons.play_arrow),
-                      color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppImage()),
+                      );
+                    }),
+                IconButton(
+                    icon: const Icon(Icons.play_arrow),
+                    color: Colors.black,
 //                  onPressed: launchURL,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppVideo()),
-                        );
-                      }),
-                ],
-              ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppVideo()),
+                      );
+                    }),
+              ],
             ),
-            Center(
-              child: SizedBox(
-                height: 100.0,
-                width: 100,
-                child: Image.network(
-                    "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg"),
-              ),
+          ),
+          Center(
+            child: SizedBox(
+              height: 100.0,
+              width: 100,
+              child: Image.network(
+                  "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg"),
             ),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black45,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

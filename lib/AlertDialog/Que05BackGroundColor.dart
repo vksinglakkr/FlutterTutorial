@@ -1,21 +1,9 @@
+//  \lib\AlertDialog\Que05BackGroundColor.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que05Alert11 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Alert',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyView(),
-    );
-  }
-}
-
-class MyView extends StatelessWidget {
   launchURL() {
     launch('');
   }

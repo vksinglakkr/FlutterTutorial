@@ -1,3 +1,4 @@
+// lib\main.dart
 import 'package:flutter/material.dart';
 
 import './pages/HomeScreen.dart';

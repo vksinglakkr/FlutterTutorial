@@ -1,3 +1,4 @@
+// lib\Text\Que19Marquee.dart
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -18,82 +19,79 @@ class _Que19marqueeState extends State<Que19marquee> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Column(
-          children: [
-            Card(
-              elevation: 5,
-              color: Colors.black38,
-              margin: EdgeInsets.all(2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.info),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Material App Bar'),
+      ),
+      body: Column(
+        children: [
+          Card(
+            elevation: 5,
+            color: Colors.black38,
+            margin: EdgeInsets.all(2),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.info),
+                  color: Colors.black,
+                  onPressed: launchURL,
+                ),
+                IconButton(
+                    icon: const Icon(Icons.image),
                     color: Colors.black,
-                    onPressed: launchURL,
-                  ),
-                  IconButton(
-                      icon: const Icon(Icons.image),
-                      color: Colors.black,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppImage()),
-                        );
-                      }),
-                  IconButton(
-                      icon: const Icon(Icons.play_arrow),
-                      color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppImage()),
+                      );
+                    }),
+                IconButton(
+                    icon: const Icon(Icons.play_arrow),
+                    color: Colors.black,
 //                  onPressed: launchURL,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppVideo()),
-                        );
-                      }),
-                ],
-              ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppVideo()),
+                      );
+                    }),
+              ],
             ),
-            Marquee(
-              text: str1,
-              blankSpace: 20,
-              accelerationCurve: Curves.easeOutCubic,
-              //accelerationCurve: Curves.linear,
-              velocity: 100,
-              startPadding: 10.0,
-              pauseAfterRound: Duration(seconds: 1),
-              startAfter: Duration(seconds: 1),
-              scrollAxis: Axis.horizontal,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              showFadingOnlyWhenScrolling: true,
-              fadingEdgeStartFraction: 0.1,
-              fadingEdgeEndFraction: 0.1,
-              numberOfRounds: 3,
-              accelerationDuration: Duration(seconds: 1),
-              decelerationDuration: Duration(milliseconds: 500),
-              decelerationCurve: Curves.easeOut,
+          ),
+          Marquee(
+            text: str1,
+            blankSpace: 20,
+            accelerationCurve: Curves.easeOutCubic,
+            //accelerationCurve: Curves.linear,
+            velocity: 100,
+            startPadding: 10.0,
+            pauseAfterRound: Duration(seconds: 1),
+            startAfter: Duration(seconds: 1),
+            scrollAxis: Axis.horizontal,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            showFadingOnlyWhenScrolling: true,
+            fadingEdgeStartFraction: 0.1,
+            fadingEdgeEndFraction: 0.1,
+            numberOfRounds: 3,
+            accelerationDuration: Duration(seconds: 1),
+            decelerationDuration: Duration(milliseconds: 500),
+            decelerationCurve: Curves.easeOut,
 
-              style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.normal,
-              ),
+            style: TextStyle(
+              fontSize: 12,
+              fontWeight: FontWeight.normal,
             ),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black45,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+          ),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

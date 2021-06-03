@@ -1,3 +1,4 @@
+// lib\ListView\Que90Assignment.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -7,13 +8,6 @@ void main() {
 }
 
 class MyDemo11 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(home: MyDemotab());
-  }
-}
-
-class MyDemotab extends StatelessWidget {
   final List<Tab> myTabs = <Tab>[
     Tab(text: 'LEFT'),
     Tab(text: 'RIGHT'),

@@ -1,25 +1,16 @@
+// lib\Drawer\Que01Drawer1.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que0111 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Drawer Demo',
-      home: MyHomePage(title: 'Drawer Demo'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class Que0111 extends StatefulWidget {
+  Que0111({Key key, this.title}) : super(key: key);
   final String title;
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _Que0111State createState() => _Que0111State();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _Que0111State extends State<Que0111> {
   launchURL() {
     launch('https://flutter.dev/');
   }

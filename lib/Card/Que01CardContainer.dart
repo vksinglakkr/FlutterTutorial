@@ -1,3 +1,4 @@
+// lib\Card\Que01CardContainer.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -5,10 +6,7 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 class Que01Card11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Card Demo',
-      home: MyHomePage(title: 'Card Demo'),
-    );
+    return MyHomePage(title: 'Card Demo');
   }
 }
 

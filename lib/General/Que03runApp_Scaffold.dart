@@ -1,3 +1,4 @@
+// lib\General\Que03runApp_Scaffold.dart
 import 'package:flutter/material.dart';
 
 void main() => runApp(
@@ -16,4 +17,4 @@ void main() => runApp(
       ),
     );
 
-//Error MaterialApp should be
+//Error  should be

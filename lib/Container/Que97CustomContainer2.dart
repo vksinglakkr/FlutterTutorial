@@ -1,3 +1,4 @@
+// lib\Container\Que97CustomContainer2.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -14,74 +15,69 @@ class _Que9711State extends State<Que9711> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Custom Container App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Custom Container App Bar'),
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [
-              Card(
-                elevation: 5,
-                color: Colors.black38,
-                margin: EdgeInsets.all(2),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    IconButton(
-                      icon: const Icon(Icons.info),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Custom Container App Bar'),
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Card(
+              elevation: 5,
+              color: Colors.black38,
+              margin: EdgeInsets.all(2),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                  IconButton(
+                      icon: const Icon(Icons.image),
                       color: Colors.black,
-                      onPressed: launchURL,
-                    ),
-                    IconButton(
-                        icon: const Icon(Icons.image),
-                        color: Colors.black,
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => MyAppImage()),
-                          );
-                        }),
-                    IconButton(
-                        icon: const Icon(Icons.play_arrow),
-                        color: Colors.black,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
+                        );
+                      }),
+                  IconButton(
+                      icon: const Icon(Icons.play_arrow),
+                      color: Colors.black,
 //                  onPressed: launchURL,
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => MyAppVideo()),
-                          );
-                        }),
-                  ],
-                ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                        );
+                      }),
+                ],
               ),
-              CustomContainer(
-                color1: Colors.deepOrange,
-                color2: Colors.yellow,
-                containerNumber: '1',
-                containerHeight: 300.0,
-              ),
-              CustomContainer(
-                color1: Colors.blue,
-                color2: Colors.red,
-                containerNumber: '2',
-                containerHeight: 300.0,
-              ),
-            ],
-          ),
+            ),
+            CustomContainer(
+              color1: Colors.deepOrange,
+              color2: Colors.yellow,
+              containerNumber: '1',
+              containerHeight: 300.0,
+            ),
+            CustomContainer(
+              color1: Colors.blue,
+              color2: Colors.red,
+              containerNumber: '2',
+              containerHeight: 300.0,
+            ),
+          ],
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black45,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.black45,
+        tooltip: "Go Back",
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

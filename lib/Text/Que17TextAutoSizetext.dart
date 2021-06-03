@@ -1,3 +1,4 @@
+// lib\Text\Que17TextAutoSizetext.dart
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -10,8 +11,7 @@ class Que17AutoSizeText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
+    return Scaffold(
       body: Container(
         margin: EdgeInsets.all(8),
         child: ListView(
@@ -126,12 +126,13 @@ class Que17AutoSizeText extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
+        backgroundColor: Colors.black45,
         onPressed: () {
           Navigator.pop(context);
         },
         child: Icon(Icons.first_page),
       ),
-    ));
+    );
   }
 }
 

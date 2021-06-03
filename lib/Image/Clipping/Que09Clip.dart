@@ -1,3 +1,4 @@
+// lib\Image\Clipping\Que09Clip.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -9,51 +10,49 @@ class Que09Clip11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'ClipPath',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('ClipPath Assignment2'),
-        ),
-        body: Column(
-          children: [
-            Center(
-              child: ClipPath(
-                clipper: CustomClipPath(),
-                child: Image.network(
-                  "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
-                  height: 200,
-                  width: 250,
-                  fit: BoxFit.cover,
-                ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ClipPath Assignment2'),
+      ),
+      body: Column(
+        children: [
+          Center(
+            child: ClipPath(
+              clipper: CustomClipPath(),
+              child: Image.network(
+                "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
+                height: 200,
+                width: 250,
+                fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
-              height: 5.0,
+          ),
+          SizedBox(
+            height: 5.0,
+          ),
+          Center(
+            child: Image(
+              image: AssetImage('assets/images/Que10aClip.jpg'),
             ),
-            Center(
-              child: Image(
-                image: AssetImage('assets/images/Que10aClip.jpg'),
-              ),
+          ),
+          SizedBox(
+            height: 5.0,
+          ),
+          Center(
+            child: Image(
+              image: AssetImage('assets/images/Que09bClip.jpg'),
             ),
-            SizedBox(
-              height: 5.0,
-            ),
-            Center(
-              child: Image(
-                image: AssetImage('assets/images/Que09bClip.jpg'),
-              ),
-            ),
-            Text("Image/Clipping/Que09Clip.dart")
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+          ),
+          Text("Image/Clipping/Que09Clip.dart")
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        tooltip: "Go Back",
+        backgroundColor: Colors.black45,
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

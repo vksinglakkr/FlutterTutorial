@@ -1,3 +1,4 @@
+// lib\Image\Que03Image.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -9,72 +10,70 @@ class Que03Image11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Image.network() App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Image.network() Demo'),
-        ),
-        body: Column(
-          children: [
-            Card(
-              elevation: 5,
-              color: Colors.black38,
-              margin: EdgeInsets.all(2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.info),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Image.network() Demo'),
+      ),
+      body: Column(
+        children: [
+          Card(
+            elevation: 5,
+            color: Colors.black38,
+            margin: EdgeInsets.all(2),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.info),
+                  color: Colors.black,
+                  onPressed: launchURL,
+                ),
+                IconButton(
+                    icon: const Icon(Icons.image),
                     color: Colors.black,
-                    onPressed: launchURL,
-                  ),
-                  IconButton(
-                      icon: const Icon(Icons.image),
-                      color: Colors.black,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppImage()),
-                        );
-                      }),
-                  IconButton(
-                      icon: const Icon(Icons.play_arrow),
-                      color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppImage()),
+                      );
+                    }),
+                IconButton(
+                    icon: const Icon(Icons.play_arrow),
+                    color: Colors.black,
 //                  onPressed: launchURL,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppVideo()),
-                        );
-                      }),
-                ],
-              ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => MyAppVideo()),
+                      );
+                    }),
+              ],
             ),
+          ),
 
-            Image.network(
-              'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
-            ),
+          Image.network(
+            'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
+          ),
 
-            //Image.asset('assets/images/Kurukshetra.jpg'),
-            //Image(image:NetworkImage('https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg'),),
-            //Image(image: AssetImage('assets/images/Kurukshetra.jpg')),
-            SizedBox(height: 50.0),
-            Image(
-              image: AssetImage('assets/images/Que03Image.jpg'),
-              height: 100,
-              fit: BoxFit.fill,
-            ),
-            Text("Image/Que03Image.dart")
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+          //Image.asset('assets/images/Kurukshetra.jpg'),
+          //Image(image:NetworkImage('https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg'),),
+          //Image(image: AssetImage('assets/images/Kurukshetra.jpg')),
+          SizedBox(height: 50.0),
+          Image(
+            image: AssetImage('assets/images/Que03Image.jpg'),
+            height: 100,
+            fit: BoxFit.fill,
+          ),
+          Text("Image/Que03Image.dart")
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        tooltip: "Go Back",
+        backgroundColor: Colors.black45,
+        onPressed: () {
+          Navigator.pop(context);
+        },
+        child: Icon(Icons.first_page),
       ),
     );
   }

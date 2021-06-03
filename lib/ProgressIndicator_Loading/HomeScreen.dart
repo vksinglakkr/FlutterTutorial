@@ -21,7 +21,7 @@ class HomeProgress extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Circular Progress Indicator'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
@@ -31,7 +31,7 @@ class HomeProgress extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('FadeInImage_Loading bar'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que02()));
@@ -42,7 +42,7 @@ class HomeProgress extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

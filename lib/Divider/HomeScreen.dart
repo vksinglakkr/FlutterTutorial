@@ -1,7 +1,6 @@
 //  \lib\Divider\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'Que01DividerTheme2.dart';
-import 'Que02DividerTheme.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeDivider extends StatelessWidget {
@@ -9,7 +8,7 @@ class HomeDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Placeholder'),
+        title: Text('Divider'),
       ),
       body: SafeArea(
           child: Container(
@@ -21,20 +20,10 @@ class HomeDivider extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Divider using ThemeData'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 22,
-              child: ElevatedButton(
-                  child: Text('Card/Container'),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que02()));
                   }),
             ),
           ],
@@ -42,7 +31,7 @@ class HomeDivider extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
@@ -60,18 +49,6 @@ class Que01 extends StatelessWidget {
       sourceFilePath: 'lib/Divider/Que01DividerTheme.dart',
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Divider/Que01DividerTheme.dart',
-    );
-  }
-}
-
-class Que02 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0211(),
-      sourceFilePath: 'lib/Divider/Que01DividerTheme2.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Divider/Que01DividerTheme2.dart',
     );
   }
 }

@@ -82,21 +82,21 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Container(
-              width: 200,
-              height: 200,
+              width: 180,
+              height: 180,
               color: Colors.red,
             ),
             Divider(),
             Container(
-              width: 200,
-              height: 200,
+              width: 180,
+              height: 180,
               color: Colors.blue,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -121,7 +121,7 @@ class MyAppVideo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -141,7 +141,7 @@ class MyAppImage extends StatelessWidget {
       ),
       body: Container(child: Image.asset("assets/help/Divider/Que01.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

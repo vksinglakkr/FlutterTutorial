@@ -12,7 +12,7 @@ class MyAppDecoration11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('Box=>Decoration Image over text'),
       ),
       body: Column(
         children: [
@@ -76,7 +76,7 @@ class MyAppDecoration11 extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -101,7 +101,7 @@ class MyAppVideo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -121,7 +121,7 @@ class MyAppImage extends StatelessWidget {
       ),
       body: Container(child: Image.asset("assets/help/Container/Que19.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

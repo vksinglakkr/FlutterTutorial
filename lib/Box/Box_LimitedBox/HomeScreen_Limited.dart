@@ -1,14 +1,13 @@
-// lib\Box\HomeScreen_Rotated.dart
+// lib\Box\HomeScreen_Limited.dart
 import 'package:flutter/material.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
-import 'Box_RotatedBox/Que01.dart';
+//import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-class HomeRotated extends StatelessWidget {
+class HomeLimited extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rotated Box'),
+        title: Text('Limited Box'),
       ),
       body: SafeArea(
         child: Container(
@@ -20,13 +19,13 @@ class HomeRotated extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Rotated Box'),
+                      child: Text('Pending'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Rotated()));
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => Que03SnackBar()));
                       }),
                 ),
               ],
@@ -36,24 +35,12 @@ class HomeRotated extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
         child: Icon(Icons.first_page),
       ),
-    );
-  }
-}
-
-class Que01Rotated extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Rotated11(),
-      sourceFilePath: 'lib/Box/Box_RotatedBox/Que01.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_RotatedBox/Que01.dart',
     );
   }
 }

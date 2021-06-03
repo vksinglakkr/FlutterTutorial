@@ -8,7 +8,7 @@ class HomeVisibility extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Card'),
+        title: Text('Visibility'),
       ),
       body: SafeArea(
         child: Container(
@@ -20,7 +20,8 @@ class HomeVisibility extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child:
+                          Text('How to set Visibility with Space Management.'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que01()));
@@ -33,7 +34,7 @@ class HomeVisibility extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

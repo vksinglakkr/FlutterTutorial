@@ -4,13 +4,6 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que0811 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(home: MyDemotab());
-  }
-}
-
-class MyDemotab extends StatelessWidget {
   final List<Tab> myTabs = <Tab>[
     Tab(text: 'LEFT'),
     Tab(text: 'RIGHT'),
@@ -79,7 +72,7 @@ class MyDemotab extends StatelessWidget {
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.black45,
+          backgroundColor: Colors.orange.shade300,
           tooltip: "Go Back",
           onPressed: () {
             Navigator.pop(context);
@@ -105,7 +98,7 @@ class MyAppVideo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -125,7 +118,7 @@ class MyAppImage extends StatelessWidget {
       ),
       body: Container(child: Image.asset("assets/help/Tab/Que08.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

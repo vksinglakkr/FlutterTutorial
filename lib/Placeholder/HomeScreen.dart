@@ -20,7 +20,7 @@ class HomePlaceholder extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Basic Placeholder'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
@@ -31,7 +31,7 @@ class HomePlaceholder extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

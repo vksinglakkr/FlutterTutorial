@@ -21,7 +21,7 @@ class _Que20AutoState extends State<Que20Auto> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('AutoSize Text with Marquee'),
       ),
       body: Column(
         children: [
@@ -96,7 +96,7 @@ class _Que20AutoState extends State<Que20Auto> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -121,7 +121,7 @@ class MyAppVideo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -141,7 +141,7 @@ class MyAppImage extends StatelessWidget {
       ),
       body: Container(child: Image.asset("assets/help/Text/Que20.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

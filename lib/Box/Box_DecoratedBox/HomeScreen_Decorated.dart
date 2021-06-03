@@ -1,16 +1,14 @@
-// lib\Box\HomeScreen_Fitted.dart
+// lib\Box\HomeScreen_Decorated.dart
 import 'package:flutter/material.dart';
-import 'package:radio_button/Box/Box_FittedBox/Que19DecorationImageOvertext.dart';
+import 'Que01Box_DecoratedBox.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-//import 'Box_FittedBox.dart';
-
-class HomeFitted extends StatelessWidget {
+class HomeDecorated extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Fitted'),
+        title: Text('Decorated Box'),
       ),
       body: SafeArea(
         child: Container(
@@ -22,13 +20,13 @@ class HomeFitted extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Pending', style: TextStyle(fontSize: 12.0)),
+                      child: Text('Decorated Box'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => Que01Fitted()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que01Decorated()));
                       }),
                 ),
               ],
@@ -38,7 +36,7 @@ class HomeFitted extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
@@ -48,14 +46,14 @@ class HomeFitted extends StatelessWidget {
   }
 }
 
-class MyAppTest extends StatelessWidget {
+class Que01Decorated extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: MyAppBoxFitted11(),
-      sourceFilePath: 'lib/Box/Box_FittedBox/Que19DecorationImageOvertext.dart',
+      child: Que01Decorated11(),
+      sourceFilePath: 'lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_FittedBox/Que19DecorationImageOvertext.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
     );
   }
 }

@@ -1,15 +1,15 @@
-// lib\Box\HomeScreen_Sized.dart
+// lib\Buttons\RadioButton\HomeScreen_Flat.dart
 import 'package:flutter/material.dart';
+import 'Que01withGradient.dart';
+import 'Que02LinearGradient.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
-import 'Box_SizedBox/Que01Simple.dart';
-import 'Box_SizedBox/Que02ListView.dart';
 
-class HomeSized extends StatelessWidget {
+class HomeFlat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sized'),
+        title: Text('Flat Button '),
       ),
       body: SafeArea(
         child: Container(
@@ -21,26 +21,25 @@ class HomeSized extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Sized Box - Simple'),
-//                      color: Colors.orangeAccent,
+                      child: Text('Gradient'),
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que01Sized()));
+                                builder: (context) => Que01Flat()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Sized Box - ListView'),
+                      child: Text('Linear Gradient'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que02Sized()));
+                                builder: (context) => Que02Flat()));
                       }),
                 ),
               ],
@@ -50,7 +49,7 @@ class HomeSized extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
@@ -60,26 +59,26 @@ class HomeSized extends StatelessWidget {
   }
 }
 
-class Que01Sized extends StatelessWidget {
+class Que01Flat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: Que01Sized11(),
-      sourceFilePath: 'lib/Box/Box_SizedBox/Que01Simple.dart',
+      child: Que01Flat11(),
+      sourceFilePath: 'lib/Buttons/FlatButton/Que01withGradient.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_SizedBox/Que01Simple.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/FlatButton/Que01withGradient.dart',
     );
   }
 }
 
-class Que02Sized extends StatelessWidget {
+class Que02Flat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: Que02Sized11(),
-      sourceFilePath: 'lib/Box/Box_SizedBox/Que02ListView.dart',
+      child: Que02Flat11(),
+      sourceFilePath: 'lib/Buttons/FlatButton/Que02LinearGradient.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_SizedBox/Que02ListView.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/FlatButton/Que02LinearGradient.dart',
     );
   }
 }

@@ -17,20 +17,20 @@ class HomeBottom extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 22,
-                  child: ElevatedButton(
-                      child: Text('Pending-Tutorial yet to be updated',
-                          style: TextStyle(fontSize: 12.0)),
-//                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => Que01SnackBar()));
-                      }),
-                ),
+//                 Container(
+//                   margin: EdgeInsets.all(2),
+//                   height: 22,
+//                   child: ElevatedButton(
+//                       child: Text('Pending-Tutorial yet to be updated',
+//                           style: TextStyle(fontSize: 12.0)),
+// //                      color: Colors.orangeAccent,
+//                       onPressed: () {
+//                         // Navigator.push(
+//                         //     context,
+//                         //     MaterialPageRoute(
+//                         //         builder: (context) => Que01SnackBar()));
+//                       }),
+//                 ),
               ],
             ),
           ),
@@ -38,7 +38,7 @@ class HomeBottom extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

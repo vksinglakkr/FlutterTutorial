@@ -13,7 +13,7 @@ class HomeTransform extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Card'),
+        title: Text('Transform'),
       ),
       body: SafeArea(
         child: Container(
@@ -25,7 +25,7 @@ class HomeTransform extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Translate'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que01()));
@@ -35,7 +35,7 @@ class HomeTransform extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Scale'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que02()));
@@ -45,7 +45,7 @@ class HomeTransform extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Skew'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que03()));
@@ -55,7 +55,7 @@ class HomeTransform extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Rotate'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que04()));
@@ -65,7 +65,7 @@ class HomeTransform extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('3D'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que05()));
@@ -75,7 +75,7 @@ class HomeTransform extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Assignment - All with Slider'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que06()));
@@ -88,7 +88,7 @@ class HomeTransform extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

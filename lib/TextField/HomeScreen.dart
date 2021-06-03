@@ -10,7 +10,7 @@ class HomeTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Card'),
+        title: Text('TextField'),
       ),
       body: SafeArea(
         child: Container(
@@ -22,7 +22,7 @@ class HomeTextField extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Single Text Field'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que01()));
@@ -32,7 +32,7 @@ class HomeTextField extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Login Page - Username & Password'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que02()));
@@ -42,7 +42,7 @@ class HomeTextField extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Cursor Color'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que03()));
@@ -55,7 +55,7 @@ class HomeTextField extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

@@ -8,7 +8,7 @@ class HomeSpacer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Card'),
+        title: Text('Spacer'),
       ),
       body: SafeArea(
           child: Container(
@@ -20,7 +20,7 @@ class HomeSpacer extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Basic Spacer with Flex'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
@@ -31,7 +31,7 @@ class HomeSpacer extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

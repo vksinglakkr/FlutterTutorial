@@ -28,7 +28,7 @@ class HomeSwitch extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Basic'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que01()));
@@ -49,7 +49,7 @@ class HomeSwitch extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Active Track Color'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que03()));
@@ -59,7 +59,7 @@ class HomeSwitch extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('List Tile (Bulb On/Off)'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que04()));
@@ -69,7 +69,7 @@ class HomeSwitch extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Card/Container'),
+                      child: Text('Active ThumbPage'),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que05()));
@@ -134,7 +134,7 @@ class HomeSwitch extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

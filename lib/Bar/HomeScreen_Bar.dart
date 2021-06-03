@@ -1,15 +1,17 @@
 // lib\Bar\HomeScreen_Bar.dart
 import 'package:flutter/material.dart';
-import 'AppBar/Que01BackGroundColor.dart';
-import 'Appbar/Que02CenterText.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
+
+import 'AppBar/HomeScreen_AppBar.dart';
+import 'BottomNavigationBar/HomeScreen_Bottom.dart';
+import 'Navigationbar/HomeScreen_Navigation.dart';
+import 'Snackbar/HomeScreen_Snack.dart';
 
 class HomeBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - Alert Dialog'),
+        title: Text('Flutter Tutorial - Bar'),
       ),
       body: SafeArea(
         child: Container(
@@ -21,25 +23,51 @@ class HomeBar extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('AppBar - BackGroundColor'),
+                      child: Text('AppBar'),
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que01AppBar()));
+                                builder: (context) => HomeAppBar()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('AppBar - CenterText'),
+                      child: Text('Bottom Navigation Bar'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que02AppBar()));
+                                builder: (context) => HomeBottom()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Navigation Bar'),
+//                      color: Colors.orangeAccent,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeNavigation()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 22,
+                  child: ElevatedButton(
+                      child: Text('Snack Bar'),
+//                      color: Colors.orangeAccent,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeSnack()));
                       }),
                 ),
               ],
@@ -49,36 +77,12 @@ class HomeBar extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
         child: Icon(Icons.first_page),
       ),
-    );
-  }
-}
-
-class Que01AppBar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01AppBar11(),
-      sourceFilePath: 'lib/Bar/AppBar/Que01BackGroundColor.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/AppBar/Que01BackGroundColor.dart',
-    );
-  }
-}
-
-class Que02AppBar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02AppBar11(),
-      sourceFilePath: 'lib/Bar/AppBar/Que02CenterText.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/AppBar/Que02CenterText.dart',
     );
   }
 }

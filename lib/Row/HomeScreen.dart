@@ -10,7 +10,7 @@ class HomeRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Card'),
+        title: Text('Row'),
       ),
       body: SafeArea(
           child: Container(
@@ -22,7 +22,7 @@ class HomeRow extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Basic'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
@@ -32,7 +32,7 @@ class HomeRow extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Expanded'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que02()));
@@ -42,7 +42,7 @@ class HomeRow extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Icons adjustment in Row'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que03()));
@@ -53,7 +53,7 @@ class HomeRow extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

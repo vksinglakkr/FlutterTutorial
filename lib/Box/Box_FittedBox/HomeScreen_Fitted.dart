@@ -1,14 +1,16 @@
-// lib\Box\HomeScreen_FractionallySized.dart
+// lib\Box\HomeScreen_Fitted.dart
 import 'package:flutter/material.dart';
+import 'package:radio_button/Box/Box_FittedBox/Que19DecorationImageOvertext.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
-import 'Box_FractionallySizedBox/Que01.dart';
 
-class HomeFractionallySized extends StatelessWidget {
+//import 'Box_FittedBox.dart';
+
+class HomeFitted extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FractionallySized ..'),
+        title: Text('Fitted'),
       ),
       body: SafeArea(
         child: Container(
@@ -20,13 +22,13 @@ class HomeFractionallySized extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('All Properties'),
+                      child: Text('Pending', style: TextStyle(fontSize: 12.0)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Fraction()));
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) => Que01Fitted()));
                       }),
                 ),
               ],
@@ -36,7 +38,7 @@ class HomeFractionallySized extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
@@ -46,14 +48,14 @@ class HomeFractionallySized extends StatelessWidget {
   }
 }
 
-class Que01Fraction extends StatelessWidget {
+class MyAppTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: Que01Fraction11(),
-      sourceFilePath: 'lib/Box/Box_FractionallySizeBox/Que01.dart',
+      child: MyAppBoxFitted11(),
+      sourceFilePath: 'lib/Box/Box_FittedBox/Que19DecorationImageOvertext.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_FractionallySizeBox/Que01.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_FittedBox/Que19DecorationImageOvertext.dart',
     );
   }
 }

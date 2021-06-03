@@ -3,12 +3,14 @@ import 'package:flutter/material.dart';
 import 'Que01Drawer1.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
+import 'Que02AppbarWithDrawerActionButton.dart';
+
 class HomeDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Placeholder'),
+        title: Text('Drawer'),
       ),
       body: SafeArea(
           child: Container(
@@ -20,10 +22,20 @@ class HomeDrawer extends StatelessWidget {
               margin: EdgeInsets.all(2),
               height: 22,
               child: ElevatedButton(
-                  child: Text('Card/Container'),
+                  child: Text('Basic Drawer'),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
+                  }),
+            ),
+            Container(
+              margin: EdgeInsets.all(2),
+              height: 22,
+              child: ElevatedButton(
+                  child: Text('Drawer & ActionButton in Appbar'),
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Que02()));
                   }),
             ),
           ],
@@ -31,7 +43,7 @@ class HomeDrawer extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

@@ -1,14 +1,14 @@
-// lib\Box\HomeScreen_Decorated.dart
+// lib\Box\HomeScreen_FractionallySized.dart
 import 'package:flutter/material.dart';
-import 'Box_DecoratedBox/Que01Box_DecoratedBox.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
+import 'Que01.dart';
 
-class HomeDecorated extends StatelessWidget {
+class HomeFractionallySized extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Decorated Box'),
+        title: Text('FractionallySized ..'),
       ),
       body: SafeArea(
         child: Container(
@@ -20,13 +20,13 @@ class HomeDecorated extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 22,
                   child: ElevatedButton(
-                      child: Text('Decorated Box'),
+                      child: Text('All Properties'),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que01Decorated()));
+                                builder: (context) => Que01Fraction()));
                       }),
                 ),
               ],
@@ -36,7 +36,7 @@ class HomeDecorated extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
@@ -46,14 +46,14 @@ class HomeDecorated extends StatelessWidget {
   }
 }
 
-class Que01Decorated extends StatelessWidget {
+class Que01Fraction extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: Que01Decorated11(),
-      sourceFilePath: 'lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
+      child: Que01Fraction11(),
+      sourceFilePath: 'lib/Box/Box_FractionallySizeBox/Que01.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_FractionallySizeBox/Que01.dart',
     );
   }
 }

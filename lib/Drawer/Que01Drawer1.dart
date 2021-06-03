@@ -3,14 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que0111 extends StatefulWidget {
-  Que0111({Key key, this.title}) : super(key: key);
-  final String title;
-  @override
-  _Que0111State createState() => _Que0111State();
-}
-
-class _Que0111State extends State<Que0111> {
+class Que0111 extends StatelessWidget {
   launchURL() {
     launch('https://flutter.dev/');
   }
@@ -20,8 +13,8 @@ class _Que0111State extends State<Que0111> {
     return Scaffold(
       drawer: Drawer(),
       appBar: AppBar(
-        title: Text(widget.title),
-        backgroundColor: Colors.green,
+        title: Text("Home"),
+//        backgroundColor: Colors.green,
         // leading: BackButton(
         //   color: Colors.purple,
         // ),
@@ -66,7 +59,7 @@ class _Que0111State extends State<Que0111> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -91,7 +84,7 @@ class MyAppVideo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -111,7 +104,7 @@ class MyAppImage extends StatelessWidget {
       ),
       body: Container(child: Image.asset("assets/help/Drawer/Que01.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.orange.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

@@ -18,9 +18,11 @@ class HomeDivider extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.all(2),
-              height: 22,
+              height: 32,
               child: ElevatedButton(
-                  child: Text('Divider using ThemeData'),
+                  child: Text('Divider using ThemeData',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
@@ -31,7 +33,7 @@ class HomeDivider extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

@@ -29,7 +29,7 @@ class HomeFloating extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Basic Code'),
                       onPressed: () {
@@ -41,7 +41,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Location'),
 //                      color: Colors.orangeAccent,
@@ -54,7 +54,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Color', style: TextStyle(fontSize: 12.0)),
 //                      color: Colors.orangeAccent,
@@ -67,7 +67,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Custom Shape'),
 //                      color: Colors.orangeAccent,
@@ -80,7 +80,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Display Image'),
 //                      color: Colors.orangeAccent,
@@ -93,7 +93,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Rectangle Shape'),
 //                      color: Colors.orangeAccent,
@@ -106,7 +106,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Mini Size'),
 //                      color: Colors.orangeAccent,
@@ -119,7 +119,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Icon with Label'),
 //                      color: Colors.orangeAccent,
@@ -132,7 +132,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Diamond Shape'),
 //                      color: Colors.orangeAccent,
@@ -145,7 +145,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Switch Icon'),
 //                      color: Colors.orangeAccent,
@@ -158,7 +158,7 @@ class HomeFloating extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Rectangle Shape Rounded Corner'),
 //                      color: Colors.orangeAccent,
@@ -176,7 +176,7 @@ class HomeFloating extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

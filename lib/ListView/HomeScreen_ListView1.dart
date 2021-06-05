@@ -42,7 +42,7 @@ class HomeListView1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - ListView(1)'),
+        title: Text('ListView'),
       ),
       body: SafeArea(
         child: Container(
@@ -55,7 +55,9 @@ class HomeListView1 extends StatelessWidget {
                   height: 20,
                   child: ElevatedButton(
 //                      color: Colors.orangeAccent,
-                      child: Text('Compare ListView with Other'),
+                      child: Text('Compare ListView with Other',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que01()));
@@ -66,7 +68,9 @@ class HomeListView1 extends StatelessWidget {
                   height: 20,
                   child: ElevatedButton(
 //                      color: Colors.orangeAccent,
-                      child: Text('Issue of mentioning final or not'),
+                      child: Text('Issue of mentioning final or not',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que00()));
@@ -76,7 +80,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Container - ListView (1)'),
+                      child: Text('Container - ListView',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -87,7 +93,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Container - ListView (2)'),
+                      child: Text('Container - ListView',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -98,7 +106,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Card - ListView'),
+                      child: Text('Card - ListView',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -109,7 +119,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Text/Container/Card .. - ListView'),
+                      child: Text('Text/Container/Card .. - ListView',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -120,7 +132,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Leading or Trailing Icon'),
+                      child: Text('Leading or Trailing Icon',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         Navigator.push(context,
@@ -131,7 +145,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Leading or Trailing Text'),
+                      child: Text('Leading or Trailing Text',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         Navigator.push(context,
@@ -142,7 +158,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Leading or Trailing Iconic Button'),
+                      child: Text('Leading or Trailing Iconic Button',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         Navigator.push(context,
@@ -153,7 +171,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Leading or Trailing Radio Button'),
+                      child: Text('Leading or Trailing Radio Button',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -164,7 +184,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Horizontal/Vertical Scroll'),
+                      child: Text('Horizontal/Vertical Scroll',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -175,7 +197,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Disable Horizontal/Vertical Scroll'),
+                      child: Text('Disable Horizontal/Vertical Scroll',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -186,7 +210,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Limit Height'),
+                      child: Text('Limit Height',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -197,7 +223,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListTile.divideTiles Demo'),
+                      child: Text('ListTile.divideTiles Demo',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -208,7 +236,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListTile - Properties'),
+                      child: Text('ListTile - Properties',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -219,7 +249,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('List<int> varDeclaration = [ , , , ]'),
+                      child: Text('List<int> varDeclaration = [ , , , ]',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -230,7 +262,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListView Builder - 1 List'),
+                      child: Text('ListView Builder - 1 List',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -241,7 +275,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListTile - Bulb On Off'),
+                      child: Text('ListTile - Bulb On Off',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -252,7 +288,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('SwitchListTile - Bulb On Off'),
+                      child: Text('SwitchListTile - Bulb On Off',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -263,7 +301,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListView Builder - 2 List Example1'),
+                      child: Text('ListView Builder - 2 List Example1',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -274,7 +314,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListView Builder - 2 List Example2'),
+                      child: Text('ListView Builder - 2 List Example2',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -285,7 +327,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListView Builder - 2 List Example3'),
+                      child: Text('ListView Builder - 2 List Example3',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -296,7 +340,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Generate List'),
+                      child: Text('Generate List',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -307,7 +353,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Conditional Operator if..else..'),
+                      child: Text('Conditional Operator if..else..',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -318,7 +366,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Conditional Operator if..else if..else'),
+                      child: Text('Conditional Operator if..else if..else',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -329,7 +379,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Show Selected Records Conditional Operator'),
+                      child: Text('Show Selected Records Conditional Operator',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -340,7 +392,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Custom ListView.builder'),
+                      child: Text('Custom ListView.builder',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -352,7 +406,9 @@ class HomeListView1 extends StatelessWidget {
                   height: 20,
                   child: ElevatedButton(
                       child: Text(
-                          'ListView.builder without List declaration Container'),
+                          'ListView.builder without List declaration Container',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.blue,
                       onPressed: () {
                         Navigator.push(context,
@@ -364,7 +420,9 @@ class HomeListView1 extends StatelessWidget {
                   height: 20,
                   child: ElevatedButton(
                       child: Text(
-                          'ListView.builder without List declaration (image)'),
+                          'ListView.builder without List declaration (image)',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.blue,
                       onPressed: () {
                         Navigator.push(context,
@@ -376,7 +434,9 @@ class HomeListView1 extends StatelessWidget {
                   height: 20,
                   child: ElevatedButton(
                       child: Text(
-                          'ListView.builder without List declaration (int)'),
+                          'ListView.builder without List declaration (int)',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.blue,
                       onPressed: () {
                         Navigator.push(context,
@@ -388,7 +448,9 @@ class HomeListView1 extends StatelessWidget {
                   height: 20,
                   child: ElevatedButton(
                       child: Text(
-                          'itemBuilder: (_, index) i.e. without BuildContext'),
+                          'itemBuilder: (_, index) i.e. without BuildContext',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -399,7 +461,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Add Item in List'),
+                      child: Text('Add Item in List',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -410,7 +474,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Navigator (ListTile)'),
+                      child: Text('Navigator (ListTile)',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.brown,
                       onPressed: () {
                         Navigator.push(context,
@@ -421,7 +487,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Navigator (trailing - Icon)'),
+                      child: Text('Navigator (trailing - Icon)',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.brown,
                       onPressed: () {
                         Navigator.push(context,
@@ -432,7 +500,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListView.builder inside ListView.builder)'),
+                      child: Text('ListView.builder inside ListView.builder)',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.brown,
                       onPressed: () {
                         Navigator.push(context,
@@ -443,7 +513,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('(...) spread operator)'),
+                      child: Text('(...) spread operator)',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orange,
                       onPressed: () {
                         Navigator.push(context,
@@ -454,7 +526,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Map?'),
+                      child: Text('Map?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //  Navigator.push(context,
@@ -465,7 +539,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListView- addAutomaticKeepAlives:false'),
+                      child: Text('ListView- addAutomaticKeepAlives:false',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //    Navigator.push(context,
@@ -477,7 +553,9 @@ class HomeListView1 extends StatelessWidget {
                   height: 20,
                   child: ElevatedButton(
                       child: Text(
-                          'ListView- physics: NeverScrollableScrollPhysics()'),
+                          'ListView- physics: NeverScrollableScrollPhysics()',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //    Navigator.push(context,
@@ -488,7 +566,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('ListView.Seperated'),
+                      child: Text('ListView.Seperated',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -499,8 +579,10 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child:
-                          Text('Divider using ThemeData & ListView.Seperated'),
+                      child: Text(
+                          'Divider using ThemeData & ListView.Seperated',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(context,
@@ -511,7 +593,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Reverse'),
+                      child: Text('Reverse',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //  Navigator.push(context,
@@ -522,7 +606,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Set the url to make the list'),
+                      child: Text('Set the url to make the list',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //  Navigator.push(context,
@@ -533,7 +619,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Multi Column list View'),
+                      child: Text('Multi Column list View',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //  Navigator.push(context,
@@ -544,7 +632,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Use of Inkwell instead of ListTile'),
+                      child: Text('Use of Inkwell instead of ListTile',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //  Navigator.push(context,
@@ -555,7 +645,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Add/Delete/Sort in ListView'),
+                      child: Text('Add/Delete/Sort in ListView',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //  Navigator.push(context,
@@ -566,7 +658,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('List with Instances & key'),
+                      child: Text('List with Instances & key',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.red,
                       onPressed: () {
                         //  Navigator.push(context,
@@ -577,7 +671,9 @@ class HomeListView1 extends StatelessWidget {
                   margin: EdgeInsets.all(3),
                   height: 20,
                   child: ElevatedButton(
-                      child: Text('Generate Random List'),
+                      child: Text('Generate Random List',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orange,
                       onPressed: () {
                         Navigator.push(context,
@@ -591,7 +687,7 @@ class HomeListView1 extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

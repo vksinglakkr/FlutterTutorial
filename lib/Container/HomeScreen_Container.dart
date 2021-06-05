@@ -49,9 +49,11 @@ class HomeContainer extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('OpacityGesterDetector'),
+                      child: Text('OpacityGesterDetector',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -61,9 +63,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Container within Container'),
+                      child: Text('Container within Container',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -73,9 +77,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Container Visibility'),
+                      child: Text('Container Visibility',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que03()));
@@ -83,9 +89,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Width, Height Constraints'),
+                      child: Text('Width, Height Constraints',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que12()));
@@ -93,9 +101,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Media Query'),
+                      child: Text('Media Query',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que13()));
@@ -103,9 +113,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Check width height with column'),
+                      child: Text('Check width height with column',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que14()));
@@ -113,9 +125,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Transform'),
+                      child: Text('Transform',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que15()));
@@ -123,9 +137,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Align'),
+                      child: Text('Align',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que16()));
@@ -133,9 +149,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Alignment'),
+                      child: Text('Alignment',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que16a()));
@@ -143,9 +161,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('PAdding'),
+                      child: Text('Padding',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que17()));
@@ -153,9 +173,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Color'),
+                      child: Text('Color',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que18()));
@@ -163,9 +185,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('margin'),
+                      child: Text('margin',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que19()));
@@ -173,9 +197,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Decoration Border'),
+                      child: Text('Decoration Border',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que20()));
@@ -183,9 +209,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Container Stack Positioned'),
+                      child: Text('Container Stack Positioned',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que21()));
@@ -193,9 +221,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('decoration.. border radius'),
+                      child: Text('decoration.. border radius',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que22()));
@@ -203,9 +233,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('shape'),
+                      child: Text('shape',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que23()));
@@ -213,9 +245,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('boxShadow'),
+                      child: Text('boxShadow',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que24()));
@@ -223,9 +257,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('FlutterLogo'),
+                      child: Text('FlutterLogo',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que25()));
@@ -233,9 +269,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('dart..forLoop'),
+                      child: Text('dart..forLoop',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que26()));
@@ -243,9 +281,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Custom Container'),
+                      child: Text('Custom Container',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que27()));
@@ -253,9 +293,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('gradient'),
+                      child: Text('gradient',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que28()));
@@ -263,9 +305,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('fontFamily'),
+                      child: Text('fontFamily',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que29()));
@@ -273,9 +317,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Border'),
+                      child: Text('Border',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que30()));
@@ -283,9 +329,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Container border'),
+                      child: Text('Container border',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que32()));
@@ -293,9 +341,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Custom COntainer2'),
+                      child: Text('Custom COntainer2',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que97()));
@@ -303,9 +353,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Animated Container'),
+                      child: Text('Animated Container',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que98()));
@@ -313,9 +365,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Animated Opacity'),
+                      child: Text('Animated Opacity',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => Que99()));
@@ -323,9 +377,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Assignment1'),
+                      child: Text('Assignment1',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -335,9 +391,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Assignment2'),
+                      child: Text('Assignment2',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -347,9 +405,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Assignment3'),
+                      child: Text('Assignment3',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -359,9 +419,11 @@ class HomeContainer extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to fix two Containers at Corner'),
+                      child: Text('How to fix two Containers at Corner',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -376,7 +438,7 @@ class HomeContainer extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

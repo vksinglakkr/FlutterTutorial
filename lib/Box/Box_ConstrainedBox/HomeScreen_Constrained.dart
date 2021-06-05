@@ -17,9 +17,11 @@ class HomeConstrained extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Pending - Yet to be prepared.'),
+                      child: Text('Pending - Tutorial yet to be prepared.',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         // Navigator.push(
                         //     context,
@@ -34,7 +36,7 @@ class HomeConstrained extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

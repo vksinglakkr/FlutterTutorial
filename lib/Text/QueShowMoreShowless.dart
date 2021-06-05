@@ -62,7 +62,7 @@ class QueDynamic11 extends StatelessWidget {
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -83,7 +83,7 @@ class MyAppImage extends StatelessWidget {
       body:
           Container(child: Image.asset("assets/help/Text/Expandabletext.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

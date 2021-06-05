@@ -12,7 +12,7 @@ class HomeAlert extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - Alert Dialog'),
+        title: Text('Alert Dialog'),
       ),
       body: SafeArea(
         child: Container(
@@ -22,9 +22,11 @@ class HomeAlert extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Basic Alert Dialog Box'),
+                      child: Text('Basic Alert Dialog Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -34,9 +36,11 @@ class HomeAlert extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Rounded Corner'),
+                      child: Text('Rounded Corner',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -47,10 +51,11 @@ class HomeAlert extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Don\'t Close on tap outside',
-                          style: TextStyle(fontSize: 12.0)),
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -61,9 +66,11 @@ class HomeAlert extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Elevated Alert Dialog Box'),
+                      child: Text('Elevated Alert Dialog Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -74,9 +81,11 @@ class HomeAlert extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Back Ground Color'),
+                      child: Text('Back Ground Color',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -91,7 +100,7 @@ class HomeAlert extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

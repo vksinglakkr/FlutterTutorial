@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'Box_ConstrainedBox/HomeScreen_Constrained.dart';
 import 'Box_DecoratedBox/HomeScreen_Decorated.dart';
-import 'Box_DecoratedBox/HomeScreen_Rotated.dart';
+import 'Box_RotatedBox/HomeScreen_Rotated.dart';
 import 'Box_FittedBox/HomeScreen_Fitted.dart';
 import 'Box_FractionallySizedBox/HomeScreen_FractionallySized.dart';
 import 'Box_LimitedBox/HomeScreen_Limited.dart';
@@ -24,9 +24,11 @@ class HomeBox extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Sized Box'),
+                      child: Text('Sized Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -37,9 +39,11 @@ class HomeBox extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Constrained Box'),
+                      child: Text('Constrained Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -50,9 +54,11 @@ class HomeBox extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Decorated Box'),
+                      child: Text('Decorated Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -63,9 +69,11 @@ class HomeBox extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Fitted Box'),
+                      child: Text('Fitted Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -76,9 +84,11 @@ class HomeBox extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Fractionally Sized Box'),
+                      child: Text('Fractionally Sized Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -89,9 +99,11 @@ class HomeBox extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Limited Box'),
+                      child: Text('Limited Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -102,9 +114,11 @@ class HomeBox extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Rotated Box'),
+                      child: Text('Rotated Box',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -120,7 +134,7 @@ class HomeBox extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

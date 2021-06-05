@@ -10,7 +10,7 @@ class HomeAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - Alert Dialog'),
+        title: Text('AppBar'),
       ),
       body: SafeArea(
         child: Container(
@@ -20,9 +20,11 @@ class HomeAppBar extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('AppBar - BackGroundColor'),
+                      child: Text('AppBar - BackGroundColor',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -32,9 +34,11 @@ class HomeAppBar extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('AppBar - CenterText'),
+                      child: Text('AppBar - CenterText',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -50,7 +54,7 @@ class HomeAppBar extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

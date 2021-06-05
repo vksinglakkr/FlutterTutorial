@@ -10,7 +10,7 @@ class HomeButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Radio Button'),
+        title: Text('Buttons'),
       ),
       body: SafeArea(
         child: Container(
@@ -20,9 +20,11 @@ class HomeButton extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Elevated Button'),
+                      child: Text('Elevated Button',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -32,9 +34,11 @@ class HomeButton extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Radio Button'),
+                      child: Text('Radio Button',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -44,9 +48,11 @@ class HomeButton extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Floating Action Button'),
+                      child: Text('Floating Action Button',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -56,9 +62,11 @@ class HomeButton extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Flat Button'),
+                      child: Text('Flat Button',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -73,7 +81,7 @@ class HomeButton extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

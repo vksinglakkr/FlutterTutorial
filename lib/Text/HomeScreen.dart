@@ -1,5 +1,8 @@
 // lib\Text\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:radio_button/Others/GesterDetector/Que01ClickonText.dart';
+import 'package:radio_button/Others/GesterDetector/Que02ClickonTextToggle.dart';
+import 'package:radio_button/Others/InkWell/HomeScreen.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'Que01Overflow.dart';
 import 'Que01aProperties.dart';
@@ -17,10 +20,6 @@ import 'Que07TextRich.dart';
 import 'Que08TextScalefactor.dart';
 import 'Que09TextSemanticsLabel.dart';
 import 'Que10TextConditional.dart';
-import '../InkWell/Que01ClickonText.dart';
-import '../InkWell/Que02ClickonTextToggle.dart';
-import '../GesterDetector/Que01ClickonText.dart';
-import '../GesterDetector/Que02ClickonTextToggle.dart';
 import 'Que12TextShape.dart';
 import 'Que13TextFormatting.dart';
 import 'Que14forground.dart';
@@ -51,9 +50,11 @@ class HomeText extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Text=>Properties'),
+                      child: Text('Text=>Properties',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -63,9 +64,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Text=>Properties=>overflow'),
+                      child: Text('Text=>Properties=>overflow',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -75,9 +78,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Text=>Properties=>strutStyle'),
+                      child: Text('Text=>Properties=>strutStyle',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -87,9 +92,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Text=>Style'),
+                      child: Text('Text=>Style',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -99,9 +106,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to make text Selectable?'),
+                      child: Text('How to make text Selectable?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -111,9 +120,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to change the Color of Text?'),
+                      child: Text('How to change the Color of Text?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -123,9 +134,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to Underline/Overline a text?'),
+                      child: Text('How to Underline/Overline a text?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -135,9 +148,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Control distance between Text & Underline?'),
+                      child: Text('Control distance between Text & Underline?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -147,9 +162,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Shadow of Text?'),
+                      child: Text('Shadow of Text?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -159,10 +176,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child:
-                          Text('Assignment: Dynamically change the fontsize.'),
+                      child: Text('Dynamically change the fontsize.',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -172,9 +190,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to insert imojis in text?'),
+                      child: Text('How to insert imojis in text?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -184,9 +204,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to make text clickable using InkWell?'),
+                      child: Text('How to make text clickable using InkWell?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -196,10 +218,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text(
-                          'How to make text clickable using GesterDetector?'),
+                      child: Text('Clickable text using GesterDetector?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -209,10 +232,12 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text(
-                          'How to make text as toggle button using InkWell?'),
+                          'How to make text as toggle button using InkWell?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -222,10 +247,12 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text(
-                          'How to make text as toggle using GesterDector?'),
+                          'How to make text as toggle using GesterDector?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -235,9 +262,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to apply style on part of text?'),
+                      child: Text('How to apply style on part of text?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -247,9 +276,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('How to adjust height of text?'),
+                      child: Text('How to adjust height of text?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -259,9 +290,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('What is SemanticsLabel?'),
+                      child: Text('What is SemanticsLabel?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -271,9 +304,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Conditional statement within Text?'),
+                      child: Text('Conditional statement within Text?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -283,9 +318,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('marquee'),
+                      child: Text('marquee',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -295,9 +332,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Shape of Text'),
+                      child: Text('Shape of Text',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -307,9 +346,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Formatting of Text'),
+                      child: Text('Formatting of Text',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -319,10 +360,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child:
-                        Text('Highlight every occurance of particular text.'),
+                    child: Text('Highlight every occurance of particular text.',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {},
                     //                       Navigator.push(
                     //                          context,
@@ -333,9 +375,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('Responsive Text.'),
+                    child: Text('Responsive Text.',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {},
                     //                       Navigator.push(
                     //                          context,
@@ -346,10 +390,12 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                     child: Text(
-                        'How to get text usign API from textfile on local directory?'),
+                        'How to get text usign API from textfile on local directory?',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {},
                     //                       Navigator.push(
                     //                          context,
@@ -360,9 +406,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('auto_size_text: ^2.1.0'),
+                    child: Text('auto_size_text: ^2.1.0',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -373,9 +421,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('text manipulation'),
+                    child: Text('text manipulation',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -386,10 +436,12 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                     child: Text(
-                        'Parsing of data with the help of Package flutter_parsed_text 2.2.0'),
+                        'Parsing of data with the help of Package flutter_parsed_text 2.2.0',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -400,9 +452,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('Setting of color, fontsize using themedata.'),
+                    child: Text('Setting of color, fontsize using themedata.',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -413,9 +467,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('Styling of text with foreground: Paint()'),
+                    child: Text('Styling of text with foreground: Paint()',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => Que14Text()));
@@ -424,9 +480,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('Gradient foreground'),
+                    child: Text('Gradient foreground',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -437,9 +495,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('DefaultTextStyle'),
+                    child: Text('DefaultTextStyle',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -450,9 +510,11 @@ class HomeText extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                    child: Text('Expandable Text (Show More/Show Less)'),
+                    child: Text('Expandable Text (Show More/Show Less)',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -468,7 +530,7 @@ class HomeText extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },
@@ -792,30 +854,6 @@ class Que20Text extends StatelessWidget {
       sourceFilePath: 'lib/Text/Que20AutoSizeTextwithMarquee.dart',
       codeLinkPrefix:
           'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que20AutoSizeTextwithMarquee.dart',
-    );
-  }
-}
-
-class Que01InkWell extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01InkWell11(),
-      sourceFilePath: 'lib/InkWell/Que01ClickonText.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que01ClickonText.dart',
-    );
-  }
-}
-
-class Que02InkWell extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02InkWell11(),
-      sourceFilePath: 'lib/InkWell/Que02ClickonTextToggle.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que02ClickonTextToggle.dart',
     );
   }
 }

@@ -70,7 +70,7 @@ class _Que02State extends State<Que02> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -95,7 +95,7 @@ class MyAppVideo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -116,7 +116,7 @@ class MyAppImage extends StatelessWidget {
       body: Container(
           child: Image.asset("assets/help/Properties/onChanged/Que02.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

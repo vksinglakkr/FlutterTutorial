@@ -27,7 +27,7 @@ class HomeImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - Image'),
+        title: Text('Image'),
       ),
       body: SafeArea(
         child: Container(
@@ -37,9 +37,11 @@ class HomeImage extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('General Notes'),
+                      child: Text('General Notes',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -49,9 +51,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Image(image: AssetImage())'),
+                      child: Text('Image(image: AssetImage())',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -62,10 +66,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Image.asset())',
-                          style: TextStyle(fontSize: 12.0)),
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -76,9 +81,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Image.network()'),
+                      child: Text('Image.network()',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -89,9 +96,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Image(image:NetworkImage())'),
+                      child: Text('Image(image:NetworkImage())',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
@@ -102,9 +111,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('fit: BoxFit.cover'),
+                      child: Text('fit: BoxFit.cover',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -114,9 +125,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('FadeInImage.assetNetwork()'),
+                      child: Text('FadeInImage.assetNetwork()',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -126,9 +139,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('repeat: ImageRepeat.repeat'),
+                      child: Text('repeat: ImageRepeat.repeat',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -138,9 +153,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('final urlImage1 = ""'),
+                      child: Text('final urlImage1 = ""',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -150,9 +167,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('CircleAvatar'),
+                      child: Text('CircleAvatar',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -162,9 +181,11 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
-                      child: Text('Container(decoration..'),
+                      child: Text('Container(decoration..',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -174,10 +195,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('ClipRRect/BorderRadius'),
+                      child: Text('ClipRRect/BorderRadius',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -187,10 +210,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('ClipRRect/BorderRadius/BoxFit'),
+                      child: Text('ClipRRect/BorderRadius/BoxFit',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -200,10 +225,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('ClipOval..ImageRepeat'),
+                      child: Text('ClipOval..ImageRepeat',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -213,10 +240,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('ClipOval/Align'),
+                      child: Text('ClipOval/Align',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -226,10 +255,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('FadeInImage.assetNetwork()'),
+                      child: Text('FadeInImage.assetNetwork()',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -239,10 +270,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('ClipPath Assignment1'),
+                      child: Text('ClipPath Assignment1',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -252,10 +285,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('ClipPath Assignment2'),
+                      child: Text('ClipPath Assignment2',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -265,10 +300,12 @@ class HomeImage extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
 //                      color: Colors.pinkAccent,
-                      child: Text('ClipPath Assignment3'),
+                      child: Text('ClipPath Assignment3',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
@@ -283,7 +320,7 @@ class HomeImage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

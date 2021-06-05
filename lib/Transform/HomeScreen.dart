@@ -23,7 +23,7 @@ class HomeTransform extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Translate'),
                       onPressed: () {
@@ -33,7 +33,7 @@ class HomeTransform extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Scale'),
                       onPressed: () {
@@ -43,7 +43,7 @@ class HomeTransform extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Skew'),
                       onPressed: () {
@@ -53,7 +53,7 @@ class HomeTransform extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Rotate'),
                       onPressed: () {
@@ -63,7 +63,7 @@ class HomeTransform extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('3D'),
                       onPressed: () {
@@ -73,7 +73,7 @@ class HomeTransform extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Assignment - All with Slider'),
                       onPressed: () {
@@ -88,7 +88,7 @@ class HomeTransform extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

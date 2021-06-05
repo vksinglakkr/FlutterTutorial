@@ -26,7 +26,7 @@ class HomeSwitch extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Basic'),
                       onPressed: () {
@@ -36,7 +36,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child:
                           Text('How to change the Color of Icon at run time'),
@@ -47,7 +47,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Active Track Color'),
                       onPressed: () {
@@ -57,7 +57,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('List Tile (Bulb On/Off)'),
                       onPressed: () {
@@ -67,7 +67,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Active ThumbPage'),
                       onPressed: () {
@@ -77,7 +77,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child:
                           Text('How we can increase the width of the Switch'),
@@ -88,7 +88,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text(
                           'How we can increase the width & height of Switch'),
@@ -99,7 +99,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Diff. between Switch & Switch.adaptive'),
                       onPressed: () {
@@ -109,7 +109,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Difference between Android & iOS Switch'),
                       onPressed: () {
@@ -119,7 +119,7 @@ class HomeSwitch extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Difference between Android & iOS Switch'),
                       onPressed: () {
@@ -134,7 +134,7 @@ class HomeSwitch extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

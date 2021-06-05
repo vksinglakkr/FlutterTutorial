@@ -70,7 +70,7 @@ class Que0311 extends StatelessWidget {
         //  ],
         //),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.orange.shade300,
+          backgroundColor: Colors.purple.shade300,
           tooltip: "Go Back",
           onPressed: () {
             Navigator.pop(context);
@@ -96,7 +96,7 @@ class MyAppVideo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
@@ -116,7 +116,7 @@ class MyAppImage extends StatelessWidget {
       ),
       body: Container(child: Image.asset("assets/help/Tab/Que03.png")),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);

@@ -20,7 +20,7 @@ class HomeRow extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.all(2),
-              height: 22,
+              height: 32,
               child: ElevatedButton(
                   child: Text('Basic'),
                   onPressed: () {
@@ -30,7 +30,7 @@ class HomeRow extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(2),
-              height: 22,
+              height: 32,
               child: ElevatedButton(
                   child: Text('Expanded'),
                   onPressed: () {
@@ -40,7 +40,7 @@ class HomeRow extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(2),
-              height: 22,
+              height: 32,
               child: ElevatedButton(
                   child: Text('Icons adjustment in Row'),
                   onPressed: () {
@@ -53,7 +53,7 @@ class HomeRow extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

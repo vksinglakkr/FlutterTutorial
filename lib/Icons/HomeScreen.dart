@@ -9,7 +9,7 @@ class HomeIcons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Padding'),
+        title: Text('Icons'),
       ),
       body: SafeArea(
           child: Container(
@@ -19,9 +19,11 @@ class HomeIcons extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.all(2),
-              height: 22,
+              height: 32,
               child: ElevatedButton(
-                  child: Text('Padding'),
+                  child: Text('Padding',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que01()));
@@ -29,9 +31,11 @@ class HomeIcons extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(2),
-              height: 22,
+              height: 32,
               child: ElevatedButton(
-                  child: Text('PaddingLRTB'),
+                  child: Text('PaddingLRTB',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => Que02()));
@@ -42,7 +46,7 @@ class HomeIcons extends StatelessWidget {
       ))),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

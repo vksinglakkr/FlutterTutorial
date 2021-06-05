@@ -56,7 +56,7 @@ flutter:
     - lib/Text/
     - lib/AlertDialog/
     - lib/Align/
-    - lib/Assignments/
+    - lib/Others/Assignments/
     - lib/Bar/AppBar/
     - lib/Bar/BottomNavigationBar/
     - lib/Bar/Navigationbar/
@@ -80,32 +80,77 @@ flutter:
     - lib/Divider/
     - lib/Drawer/
     - lib/General/
-    - lib/GesterDetector/
+    - lib/Others/GesterDetector/
     - lib/GridView/
     - lib/GridView/StaggeredGridView/
     - lib/Icons/
     - lib/Image/
     - lib/Image/Clipping/
-    - lib/InkWell/
-    - lib/Interface/
+    - lib/Others/InkWell/
+    - lib/Others/Interface/
     - lib/ListView/
-    - lib/Material/
+    - lib/Others/Material/
     - lib/models/
-    - lib/Opacity/
+    - lib/Others/Opacity/
     - lib/Padding/
-    - lib/Placeholder/
-    - lib/ProgressIndicator_Loading/
+    - lib/Others/Placeholder/
+    - lib/Others/ProgressIndicator_Loading/
     - lib/Row/
     - lib/Slider/
-    - lib/Spacer/
-    - lib/Stack_IndexStack_Positioned/
+    - lib/Others/Spacer/
+    - lib/Others/Stack_IndexStack_Positioned/
     - lib/Switch/
+    - lib/SetUpAPK/
     - lib/Tab/
     - lib/TextField/
     - lib/Transform/
-    - lib/Visibility/
+    - lib/Others/Visibility/
+    - assets/help/AlertDialog/ 
+    - assets/help/Align/ 
+    - assets/help/Others/Assignments/ 
+    - assets/help/Bar/AppBar/ 
+    - assets/help/Bar/Snackbar/ 
+    - assets/help/Box/
+    - assets/help/Box/Box_DecoratedBox/
+    - assets/help/Box/Box_FittedBox/
+    - assets/help/Box/Box_FractionallySizedBox/
+    - assets/help/Box/Box_SizedBox/
+    - assets/help/Buttons/ElevatedButton/
+    - assets/help/Buttons/FlatButton/
+    - assets/help/Buttons/FloatingActionButton/
+    - assets/help/Buttons/RadioButton/
+    - assets/help/Card/
+    - assets/help/Comments/
+    - assets/help/Container/
+    - assets/help/Others/CustomWidgets/
+    - assets/help/Dart/
+    - assets/help/Divider/
+    - assets/help/Drawer/
+    - assets/help/Box/Box_FractionallySizedBox/
+    - assets/help/Others/GesterDetector/
+    - assets/help/Others/GridView/
+    - assets/help/Icon/
+    - assets/help/Image/
+    - assets/help/Others/InkWell/
+    - assets/help/Others/Material/
+    - assets/help/Others/Opacity/
+    - assets/help/Others/Placeholder/
+    - assets/help/Others/ProgressIndicator_Loading/
+    - assets/help/Others/Spacer/
+    - assets/help/Others/Stack_IndexStack_Positioned/
+    - assets/help/Others/Visibility/
+    - assets/help/Padding/
+    - assets/help/Properties/
+    - assets/help/Row/
+    - assets/help/Slider/
+    - assets/help/Switch/
+    - assets/help/SetUpAPK/
+    - assets/help/Tab/
     - assets/help/Text/
-    - assets/help/AlertDialog/
+    - assets/help/TextField/
+    - assets/help/Transform/
+
+   
 
 
 

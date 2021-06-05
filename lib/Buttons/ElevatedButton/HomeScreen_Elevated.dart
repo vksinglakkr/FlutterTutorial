@@ -25,7 +25,7 @@ class HomeElevated extends StatelessWidget {
               children: [
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated-All Properties'),
                       onPressed: () {
@@ -37,7 +37,7 @@ class HomeElevated extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated - Snackbar'),
 //                      color: Colors.orangeAccent,
@@ -50,7 +50,7 @@ class HomeElevated extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated - onPressed',
                           style: TextStyle(fontSize: 12.0)),
@@ -64,7 +64,7 @@ class HomeElevated extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated - LongPress'),
 //                      color: Colors.orangeAccent,
@@ -77,7 +77,7 @@ class HomeElevated extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated - FontSize'),
 //                      color: Colors.orangeAccent,
@@ -90,7 +90,7 @@ class HomeElevated extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated - Padding'),
 //                      color: Colors.orangeAccent,
@@ -103,7 +103,7 @@ class HomeElevated extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated - Padding LRTB'),
 //                      color: Colors.orangeAccent,
@@ -116,7 +116,7 @@ class HomeElevated extends StatelessWidget {
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
-                  height: 22,
+                  height: 32,
                   child: ElevatedButton(
                       child: Text('Elevated - Padding only'),
 //                      color: Colors.orangeAccent,
@@ -134,7 +134,7 @@ class HomeElevated extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
-        backgroundColor: Colors.orange.shade300,
+        backgroundColor: Colors.purple.shade300,
         onPressed: () {
           Navigator.pop(context);
         },

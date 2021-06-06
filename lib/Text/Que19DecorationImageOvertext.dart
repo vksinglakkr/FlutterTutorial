@@ -12,7 +12,7 @@ class Que19Deco extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Decoration Image Over text'),
+        title: Text('Text on Image'),
       ),
       body: Column(
         children: [

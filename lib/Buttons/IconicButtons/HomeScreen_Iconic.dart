@@ -1,17 +1,20 @@
 // lib\Bar\HomeScreen_Bar.dart
 import 'package:flutter/material.dart';
+import 'package:radio_button/Bar/AppBar/Que01Actions.dart';
+import 'package:radio_button/Bar/AppBar/Que02CenterText.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-import 'Que01Actions.dart';
-import 'Que01BackGroundColor.dart';
-import 'Que02CenterText.dart';
+import 'Que01IconicButtoninBody.dart';
 
-class HomeAppBar extends StatelessWidget {
+class HomeIconic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AppBar'),
+        title: Text(
+          'Iconic \nButtons',
+          style: TextStyle(fontSize: 16),
+        ),
       ),
       body: SafeArea(
         child: Container(
@@ -23,21 +26,21 @@ class HomeAppBar extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('AppBar - BackGroundColor',
+                      child: Text('Iconic Buttons in AppBar',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que01AppBar()));
+                                builder: (context) => Que01Actions()));
                       }),
                 ),
                 Container(
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('AppBar - CenterText',
+                      child: Text('Iconic Buttons in Body',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
@@ -45,35 +48,7 @@ class HomeAppBar extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que02AppBar()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('AppBar - Iconic Buttons',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Actions()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('AppBar - 3 Dot Popup Menu',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Actions()));
+                                builder: (context) => Que01Iconic()));
                       }),
                 ),
               ],
@@ -93,14 +68,14 @@ class HomeAppBar extends StatelessWidget {
   }
 }
 
-class Que01AppBar extends StatelessWidget {
+class Que01Iconic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
-      child: Que01AppBar11(),
-      sourceFilePath: 'lib/Bar/AppBar/Que01BackGroundColor.dart',
+      child: Que01Iconic11(),
+      sourceFilePath: 'lib/Buttons/IconicButtons/Que01IconicButtoninBody.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/AppBar/Que01BackGroundColor.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/IconicButtons/Que01IconicButtoninBody.dart',
     );
   }
 }

@@ -11,7 +11,7 @@ class Que0211 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('How to create APK?'),
+        title: Text('Setting of minSDKVersion?'),
       ),
       body: Column(
         children: [

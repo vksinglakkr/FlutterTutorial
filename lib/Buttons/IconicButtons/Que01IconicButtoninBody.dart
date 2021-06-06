@@ -1,21 +1,25 @@
-// lib\Container\Que19DecorationImageOvertext.dart
+// lib\Text\Que01SelectableText.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class MyAppDecoration11 extends StatelessWidget {
+class Que01Iconic11 extends StatelessWidget {
   launchURL() {
-    launch('');
+    launch(
+        'https://api.flutter.dev/flutter/material/SelectableText-class.html');
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Box=>Decoration Image over text'),
-      ),
-      body: Column(
-        children: [
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'Iconic Buttons \nin Body',
+            style: TextStyle(fontSize: 16),
+          ),
+        ),
+        body: ListView(children: <Widget>[
           Card(
             elevation: 5,
             color: Colors.black38,
@@ -50,38 +54,22 @@ class MyAppDecoration11 extends StatelessWidget {
               ],
             ),
           ),
-          Center(
-            child: Container(
-              padding: const EdgeInsetsDirectional.fromSTEB(10, 5, 10, 5),
-              width: 250,
-              height: 200,
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.black,
-                  width: 5,
-                ),
-                image: const DecorationImage(
-                  image: NetworkImage(
-                      'https://www.pinclipart.com/picdir/big/211-2119839_snowflakes-transparent-background-free-snowflakes-png-clipart.png'),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: Text(
-                'Kurukshetra has been described in the first verse of Shrimadbhagvadgita, in the form of Dharmakshetra Kurukshetra. Kurukshetra is a place of great historical and religious significance which is seen with reverence in all the countries due to its association with Vedas and Vedic culture. This is the land on which the battle of Mahabharata was fought and Lord Krishna gave Arjuna a fair knowledge of the philosophy of karma in the Jyotisar. According to the Hindu mythology, Kurukshetra is a vast area spread over 48 kos, which includes many pilgrimage places, temples and sacred ponds, with which many events/rituals associated with the Pandavas and the Kauravas and Mahabharata war have been related. Kurukshetra is closely related to its development with the rise of Aryan civilization and the sacred Saraswati. ',
-                //   style: (TextStyle(decoration: TextDecoration.combine(under))),
+          Container(
+              padding: EdgeInsets.all(20),
+              child: SelectableText(
+                'Kurukshetra has been described in the first verse of Shrimad bhagvadgita, in the form of Dharmakshetra Kurukshetra. Kurukshetra is a place of great historical and religious significance which is seen with reverence in all the countries due to its association with Vedas and Vedic culture. This is the land on which the battle of Mahabharata was fought and Lord Krishna gave Arjuna a fair knowledge of the philosophy of karma in the Jyotisar. ',
                 textAlign: TextAlign.justify,
-              ),
-            ),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              )),
+        ]),
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.purple.shade300,
+          tooltip: "Go Back",
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.first_page),
+        ),
       ),
     );
   }
@@ -119,7 +107,7 @@ class MyAppImage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/Container/Que19.png")),
+      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",

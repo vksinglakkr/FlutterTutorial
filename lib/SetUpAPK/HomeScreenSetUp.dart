@@ -2,6 +2,7 @@
 // HomeScreen.dart
 
 import 'package:flutter/material.dart';
+import 'package:radio_button/SetUpAPK/Que03.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
 import 'Que01.dart';
@@ -66,6 +67,15 @@ class HomeSetUp extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) => Que0211(),
+                    ))),
+            ElevatedButton(
+                child: Text('How to change the project name.?',
+                    style:
+                        TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => Que0311(),
                     ))),
           ],
         ),

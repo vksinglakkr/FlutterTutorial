@@ -192,6 +192,20 @@ class HomeText extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
+                      child: Text('Text on Image?',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Que19DecoraText()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 32,
+                  child: ElevatedButton(
                       child: Text('How to insert imojis in text?',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),

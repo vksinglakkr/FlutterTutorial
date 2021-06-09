@@ -2,9 +2,10 @@
 // HomeScreen.dart
 
 import 'package:flutter/material.dart';
-import 'package:radio_button/CustomWidgets/HomeScreen.dart';
+import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
 //import '../Stack_IndexStack_Positioned/HomeScreen.dart';import 'Assignments/HomeScreen_Assignments.dart';
 import 'Assignments/HomeScreen_Assignments.dart';
+import 'General/HomeScreen.dart';
 import 'GesterDetector/HomeScreen.dart';
 import 'InkWell/HomeScreen.dart';
 import 'Material/HomeScreen.dart';
@@ -13,6 +14,7 @@ import 'Placeholder/HomeScreen.dart';
 import 'ProgressIndicator_Loading/HomeScreen.dart';
 import 'QueURL_Launcher.dart';
 import 'Spacer/HomeScreen.dart';
+import 'Theme/HomeScreen.dart';
 import 'Video_Player.dart';
 import 'Visibility/HomeScreen.dart';
 import 'YouTubePlayer.dart';
@@ -29,10 +31,10 @@ class HomeScreenOthers extends StatelessWidget {
         ),
         body: GridView.count(
           padding: EdgeInsets.all(5),
-          crossAxisCount: 1,
+          crossAxisCount: 2,
           mainAxisSpacing: 4,
           crossAxisSpacing: 4,
-          childAspectRatio: 10.0,
+          childAspectRatio: 3.0,
           children: [
             ElevatedButton(
               child: Text('Custom Widgets',
@@ -159,6 +161,24 @@ class HomeScreenOthers extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) => HomeAssignments(),
+                    ))),
+            ElevatedButton(
+                child: Text('Theme',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeTheme(),
+                    ))),
+            ElevatedButton(
+                child: Text('General',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeGeneral(),
                     ))),
           ],
         ),

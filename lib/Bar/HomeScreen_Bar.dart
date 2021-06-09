@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'AppBar/HomeScreen_AppBar.dart';
 import 'BottomNavigationBar/HomeScreen_Bottom.dart';
+import 'ButtonBar/HomeScreen_ButtonBar.dart';
 import 'Navigationbar/HomeScreen_Navigation.dart';
 import 'Snackbar/HomeScreen_Snack.dart';
 
@@ -76,6 +77,21 @@ class HomeBar extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => HomeSnack()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 32,
+                  child: ElevatedButton(
+                      child: Text('Button Bar',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
+//                      color: Colors.orangeAccent,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeButtonBar()));
                       }),
                 ),
               ],

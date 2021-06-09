@@ -1,9 +1,21 @@
-// \lib\AlertDialog\Que03DontCloseonTapoutside.dart
+// lib\Bar\Snackbar\Que01Basic.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que03Alert11 extends StatelessWidget {
+class Que01ButtonBar11 extends StatefulWidget {
+  @override
+  _State createState() => _State();
+}
+
+class _State extends State<Que01ButtonBar11> {
+  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
+
+  void _showMessageInScaffold(String message) {
+    //  _scaffoldKey.currentState.showSnackBar(SnackBar(
+    //    content: Text(message),
+    //   ));
+  }
   launchURL() {
     launch('');
   }
@@ -11,8 +23,9 @@ class Que03Alert11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       appBar: AppBar(
-        title: Text("Don't close \noutside Alert Dialog Box"),
+        title: Text('Flutter Tutorial - NIC KKR'),
       ),
       body: Column(
         children: [
@@ -51,13 +64,14 @@ class Que03Alert11 extends StatelessWidget {
             ),
           ),
           Center(
-            child: ElevatedButton(
-              child: Text('Alert Dialog'),
-              onPressed: () {
-                _showDialog(context);
-              },
-            ),
-          ),
+              child: ElevatedButton(
+            //textColor: Colors.white,
+            //color: Colors.blue,
+            child: Text('Show SnackBar'),
+            onPressed: () {
+              _showMessageInScaffold("Hello dear! I'm SnackBar.");
+            },
+          )),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -70,27 +84,6 @@ class Que03Alert11 extends StatelessWidget {
       ),
     );
   }
-}
-
-void _showDialog(BuildContext context) {
-  showDialog(
-    barrierDismissible: false,
-    context: context,
-    builder: (BuildContext context) {
-      return AlertDialog(
-        title: new Text("Alert!!"),
-        content: new Text("You are awesome!"),
-        actions: <Widget>[
-          new TextButton(
-            child: new Text("OK"),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
-        ],
-      );
-    },
-  );
 }
 
 class MyAppVideo extends StatelessWidget {
@@ -123,9 +116,9 @@ class MyAppImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('assets/help/AlertDialog/Que03.png'),
+        title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/AlertDialog/Que03.png")),
+      body: Container(child: Image.asset("assets/help/Bar/Snackbar/Que01.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",

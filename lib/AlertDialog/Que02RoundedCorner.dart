@@ -12,7 +12,7 @@ class Que02Alert11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Alert Dialog Box'),
+        title: Text('Rounded Corner \nAlert Dialog Box'),
       ),
       body: Column(
         children: [

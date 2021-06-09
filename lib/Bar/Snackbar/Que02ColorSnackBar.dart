@@ -31,7 +31,7 @@ class _State extends State<Que02SnackBar11> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('Flutter Tutorial - NIC KKR'),
+        title: Text('Elevated Alert Dialog Box'),
       ),
       body: Column(
         children: [

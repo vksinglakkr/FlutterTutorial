@@ -2,8 +2,8 @@
 // HomeScreen.dart
 
 import 'package:flutter/material.dart';
-import 'package:radio_button/Buttons/HomeScreen_Buttons.dart';
-import 'package:radio_button/Others/HomeScreenOthers.dart';
+import 'package:flutter_tutorial/Buttons/HomeScreen_Buttons.dart';
+import 'package:flutter_tutorial/Others/HomeScreenOthers.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
 import '../Align/HomeScreen_Align.dart';
 import '../Bar/HomeScreen_Bar.dart';

@@ -25,7 +25,7 @@ class _State extends State<Que01SnackBar11> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('Flutter Tutorial - NIC KKR'),
+        title: Text("Don't Close on tap outside"),
       ),
       body: Column(
         children: [

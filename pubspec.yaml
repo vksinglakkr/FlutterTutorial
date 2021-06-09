@@ -1,4 +1,4 @@
-name: radio_button
+name: flutter_tutorial
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -80,7 +80,8 @@ flutter:
     - lib/DART/
     - lib/Divider/
     - lib/Drawer/
-    - lib/General/
+    - lib/Others/General/
+    - lib/Others/Theme/
     - lib/Others/GesterDetector/
     - lib/GridView/
     - lib/GridView/StaggeredGridView/

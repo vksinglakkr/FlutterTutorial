@@ -1,9 +1,11 @@
 // lib\Buttons\RadioButton\HomeScreen_Radio.dart
 import 'package:flutter/material.dart';
-import 'package:radio_button/Buttons/IconicButtons/HomeScreen_Iconic.dart';
+import 'package:flutter_tutorial/Bar/AppBar/HomeScreen_AppBar.dart';
+import 'package:flutter_tutorial/Bar/ButtonBar/HomeScreen_ButtonBar.dart';
 import 'ElevatedButton/HomeScreen_Elevated.dart';
 import 'FlatButton/HomeScreen_Flat.dart';
 import 'FloatingActionButton/HomeScreen_Floating.dart';
+import 'IconicButtons/HomeScreen_Iconic.dart';
 import 'RadioButton/HomeScreen_Radio.dart';
 
 class HomeButton extends StatelessWidget {
@@ -87,6 +89,34 @@ class HomeButton extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) => HomeFlat()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 32,
+                  child: ElevatedButton(
+                      child: Text('3 Dot Popup menu Button',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeAppBar()));
+                      }),
+                ),
+                Container(
+                  margin: EdgeInsets.all(2),
+                  height: 32,
+                  child: ElevatedButton(
+                      child: Text('Button Bar',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeButtonBar()));
                       }),
                 ),
               ],

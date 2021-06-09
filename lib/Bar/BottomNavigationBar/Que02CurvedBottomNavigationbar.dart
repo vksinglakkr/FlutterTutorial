@@ -1,15 +1,15 @@
-// lib\Bar\BottomNavigationBar\Que03CustomShaped.dart
+// lib\Bar\BottomNavigationBar\Que02CurvedBottomNavigationbar.dart
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que02Curved extends StatefulWidget {
+class Que02Curved11 extends StatefulWidget {
   @override
-  _Que02CurvedState createState() => _Que02CurvedState();
+  _Que02Curved11State createState() => _Que02Curved11State();
 }
 
-class _Que02CurvedState extends State<Que02Curved> {
+class _Que02Curved11State extends State<Que02Curved11> {
   int _selectedIndex = 0;
   launchURL() {
     launch('https://pub.dev/packages/curved_navigation_bar');

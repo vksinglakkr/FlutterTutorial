@@ -12,7 +12,7 @@ class Que05Alert11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter AlertDialog - NIC KKR'),
+        title: Text('Changed Background\nAlert Dialog Box'),
       ),
       body: Column(
         children: [

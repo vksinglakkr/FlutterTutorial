@@ -19,7 +19,7 @@ class _State extends State<Que01AppBar11> {
       appBar: AppBar(
         backgroundColor: Color(0xff885566),
         title: Text(
-          'Flutter Tutorial - NIC KKR',
+          'AppBar - BackGroundColor',
         ),
       ),
       body: Column(

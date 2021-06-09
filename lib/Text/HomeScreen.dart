@@ -1,8 +1,8 @@
 // lib\Text\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:radio_button/Others/GesterDetector/Que01ClickonText.dart';
-import 'package:radio_button/Others/GesterDetector/Que02ClickonTextToggle.dart';
-import 'package:radio_button/Others/InkWell/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/GesterDetector/Que01ClickonText.dart';
+import 'package:flutter_tutorial/Others/GesterDetector/Que02ClickonTextToggle.dart';
+import 'package:flutter_tutorial/Others/InkWell/HomeScreen.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'Que01Overflow.dart';
 import 'Que01aProperties.dart';
@@ -901,12 +901,12 @@ class QueShowMoreShowless extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: QueDynamic11(),
-      sourceFilePath: 'lib/Text/Que01ShowMoreShowless.dart',
+      sourceFilePath: 'lib/Text/QueShowMoreShowless.dart',
 
       /// [codeLinkPrefix] is optional. When it's specified, two more buttons
       /// (open-code-in-browser, copy-code-link) will be added in the code view.
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01ShowMoreShowless.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/QueShowMoreShowless.dart',
     );
   }
 }

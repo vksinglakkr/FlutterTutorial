@@ -19,7 +19,7 @@ class _State extends State<Que02AppBar11> {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          'Flutter Tutorial',
+          'AppBar - CenterText',
         ),
       ),
       body: Column(

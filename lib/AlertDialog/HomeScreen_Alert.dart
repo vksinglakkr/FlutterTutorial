@@ -12,7 +12,7 @@ class HomeAlert extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Alert Dialog'),
+        title: Text('Alert Dialog Box'),
       ),
       body: SafeArea(
         child: Container(
@@ -24,7 +24,7 @@ class HomeAlert extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('Basic Alert Dialog Box',
+                      child: Text('Basic Example',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
@@ -38,7 +38,7 @@ class HomeAlert extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('Rounded Corner',
+                      child: Text('Rounded Corner Alert Dialog Box',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
@@ -83,7 +83,7 @@ class HomeAlert extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('Back Ground Color',
+                      child: Text('Changed Back Ground Color',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,

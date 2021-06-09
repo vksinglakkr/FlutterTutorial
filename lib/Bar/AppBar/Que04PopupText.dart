@@ -1,9 +1,14 @@
-// \lib\AlertDialog\Que03DontCloseonTapoutside.dart
+// lib\Bar\AppBar\Que04PopupText.dart
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que03Alert11 extends StatelessWidget {
+class Que04Popup11 extends StatefulWidget {
+  @override
+  _Que04Popup11State createState() => _Que04Popup11State();
+}
+
+class _Que04Popup11State extends State<Que04Popup11> {
   launchURL() {
     launch('');
   }
@@ -12,7 +17,22 @@ class Que03Alert11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Don't close \noutside Alert Dialog Box"),
+        title: Text("3 Dot Popup Menu(Text)"),
+        actions: [
+          PopupMenuButton(
+            itemBuilder: (BuildContext bc) => [
+              PopupMenuItem(child: Text("New Chat"), value: "/newchat"),
+              PopupMenuItem(
+                  child: Text("New Group Chat"), value: "/new-group-chat"),
+              PopupMenuItem(child: Text("Settings"), value: "/settings"),
+            ],
+            onSelected: (route) {
+              print(route);
+              // Note You must create respective pages for navigation
+              Navigator.pushNamed(context, route);
+            },
+          ),
+        ],
       ),
       body: Column(
         children: [
@@ -50,14 +70,7 @@ class Que03Alert11 extends StatelessWidget {
               ],
             ),
           ),
-          Center(
-            child: ElevatedButton(
-              child: Text('Alert Dialog'),
-              onPressed: () {
-                _showDialog(context);
-              },
-            ),
-          ),
+          Container(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -72,27 +85,6 @@ class Que03Alert11 extends StatelessWidget {
   }
 }
 
-void _showDialog(BuildContext context) {
-  showDialog(
-    barrierDismissible: false,
-    context: context,
-    builder: (BuildContext context) {
-      return AlertDialog(
-        title: new Text("Alert!!"),
-        content: new Text("You are awesome!"),
-        actions: <Widget>[
-          new TextButton(
-            child: new Text("OK"),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
-        ],
-      );
-    },
-  );
-}
-
 class MyAppVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -102,7 +94,7 @@ class MyAppVideo extends StatelessWidget {
       ),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
-          initialVideoId: '',
+          initialVideoId: 'IYDVcriKjsw',
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
@@ -123,9 +115,10 @@ class MyAppImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('assets/help/AlertDialog/Que03.png'),
+        title: Text(''),
       ),
-      body: Container(child: Image.asset("assets/help/AlertDialog/Que03.png")),
+      body: Container(
+          child: Image.asset("assets/help/Box/Box_RotatedBox/Que01.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
@@ -137,3 +130,7 @@ class MyAppImage extends StatelessWidget {
     );
   }
 }
+
+
+
+//Note https://www.youtube.com/watch?v=BFE6_UglLfQ

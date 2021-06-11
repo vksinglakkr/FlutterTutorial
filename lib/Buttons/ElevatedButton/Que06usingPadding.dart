@@ -17,7 +17,7 @@ class _Que06ElevatedState extends State<Que06Elevated11> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - NIC KKR'),
+        title: Text('Elevated - Padding'),
       ),
       body: Column(
         children: [

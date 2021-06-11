@@ -12,7 +12,7 @@ class Que0411 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Transform rotate'),
+        title: Text('Rotate'),
       ),
       body: Column(
         children: [

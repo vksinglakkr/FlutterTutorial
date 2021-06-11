@@ -21,7 +21,7 @@ class HomeButtonBar extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('',
+                      child: Text('Button Bar',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,

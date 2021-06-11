@@ -18,6 +18,7 @@ class Que0811 extends StatelessWidget {
       length: myTabs.length,
       child: Scaffold(
         appBar: AppBar(
+          title: Text('List'),
           bottom: TabBar(
             tabs: myTabs,
           ),

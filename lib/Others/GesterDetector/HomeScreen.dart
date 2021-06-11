@@ -74,9 +74,9 @@ class Que01Gester extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que01Gester11(),
-      sourceFilePath: 'lib/GesterDetector/Que01ClickonText.dart',
+      sourceFilePath: 'lib/Others/GesterDetector/Que01ClickonText.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que01ClickonText.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/GesterDetector/Que01ClickonText.dart',
     );
   }
 }
@@ -86,9 +86,9 @@ class Que02Gester extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que02Gester11(),
-      sourceFilePath: 'lib/GesterDetector/Que02ClickonTextToggle.dart',
+      sourceFilePath: 'lib/Others/GesterDetector/Que02ClickonTextToggle.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que02ClickonTextToggle.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/GesterDetector/Que02ClickonTextToggle.dart',
     );
   }
 }
@@ -99,9 +99,9 @@ class Que03Gester extends StatelessWidget {
     return WidgetWithCodeView(
       child: Que03Gester11(),
       sourceFilePath:
-          'lib/GesterDetector/Que03ContainerOpacityGesterDetector.dart',
+          'lib/Others/GesterDetector/Que03ContainerOpacityGesterDetector.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que03ContainerOpacityGesterDetector.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/GesterDetector/Que03ContainerOpacityGesterDetector.dart',
     );
   }
 }

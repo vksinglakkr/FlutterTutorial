@@ -8,14 +8,14 @@ void main() => runApp(
         title: 'Material App',
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Material App Bar'),
+            title: Text('MaterialApp Scaffold'),
           ),
-          body: MyApp(),
+          body: Que12MaterialApp011(),
         ),
       ),
     );
 
-class MyApp extends StatelessWidget {
+class Que12MaterialApp011 extends StatelessWidget {
   launchURL() {
     launch('https://flutter.dev/');
   }

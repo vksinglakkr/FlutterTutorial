@@ -343,7 +343,7 @@ class HomeContainer extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('Custom COntainer2',
+                      child: Text('Custom Container 2',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
@@ -355,7 +355,7 @@ class HomeContainer extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('Decoration=>DecorationImage',
+                      child: Text('Decoration Image',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {
@@ -491,9 +491,9 @@ class Que03 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0311(),
-      sourceFilePath: 'lib/Container/Que03CustomContainer.dart',
+      sourceFilePath: 'lib/Container/Que03CustomContainer_Visibility.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que03CustomContainer.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que03CustomContainer_Visibility.dart',
     );
   }
 }

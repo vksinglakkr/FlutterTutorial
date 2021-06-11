@@ -19,7 +19,7 @@ class _State extends State<Que0211> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('NIC Kurukshetra'),
+        title: Text('Login Page- Username & Password'),
       ),
       body: Column(
         children: <Widget>[

@@ -18,7 +18,7 @@ class _Que03State extends State<Que03> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('activeTrackColor: Colors.amber'),
+        title: Text('ActiveTrackColor'),
       ),
       body: Column(
         children: [

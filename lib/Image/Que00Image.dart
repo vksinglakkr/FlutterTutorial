@@ -1,60 +1,27 @@
 // lib\Image\Que00Image.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'BottomNavigationBar.dart';
 
-class Que00Image11 extends StatelessWidget {
-  launchURL() {
-    launch('https://flutter.dev/');
-  }
+class Que00Image11 extends StatefulWidget {
+  @override
+  _Que00Image11State createState() => _Que00Image11State();
+}
 
+class _Que00Image11State extends State<Que00Image11> {
+  final String url1 =
+      "https://www.developerlibs.com/2019/08/flutter-draw-custom-shaps-clip-path.html";
+  final String image1 = "assets/help/Image/Que01.png";
+  final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Image Notes'),
+        title: Text('Various ways \nfor obtaining an Image?'),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(
         children: [
-          Card(
-            elevation: 5,
-            color: Colors.black38,
-            margin: EdgeInsets.all(2),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.info),
-                  color: Colors.black,
-                  onPressed: launchURL,
-                ),
-                IconButton(
-                    icon: const Icon(Icons.image),
-                    color: Colors.black,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppImage()),
-                      );
-                    }),
-                IconButton(
-                    icon: const Icon(Icons.play_arrow),
-                    color: Colors.black,
-//                  onPressed: launchURL,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppVideo()),
-                      );
-                    }),
-              ],
-            ),
-          ),
-          SizedBox(height: 10.0),
-          Text("Asset, Network, File, Memory - Johannes Milke"),
-          SizedBox(height: 5.0),
-          Text("Image( Constructor, image: Loader, AssetImage('') Provider",
-              style: TextStyle(fontSize: 12)),
           SizedBox(height: 5.0),
           Image(
             image: AssetImage('assets/images/ImageGenNotes.jpg'),
@@ -63,11 +30,29 @@ class Que00Image11 extends StatelessWidget {
           Image(
             image: AssetImage('assets/images/Que01Image.jpg'),
           ),
-          Text("Image/Que00Image.dart"),
-          SizedBox(height: 10.0),
           Text(
-              "https://www.developerlibs.com/2019/08/flutter-draw-custom-shaps-clip-path.html"),
-          SizedBox(height: 5.0),
+            "Several constructors are provided for the various ways that an image can be specified:",
+            style: TextStyle(
+              fontSize: 10,
+            ),
+            textAlign: TextAlign.left,
+          ),
+          Text(
+            "new Image, for obtaining an image from an ImageProvider.",
+            style: TextStyle(fontSize: 10),
+            textAlign: TextAlign.left,
+          ),
+          Text(
+            "new Image.asset, for obtaining an image from an AssetBundle using a key.",
+            style: TextStyle(fontSize: 10),
+            textAlign: TextAlign.left,
+          ),
+          Text("new Image.network, for obtaining an image from a URL.",
+              style: TextStyle(fontSize: 10)),
+          Text("new Image.file, for obtaining an image from a File.",
+              style: TextStyle(fontSize: 10)),
+          Text("new Image.memory, for obtaining an image from a Uint8List.",
+              style: TextStyle(fontSize: 10)),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -88,47 +73,3 @@ class Que00Image11 extends StatelessWidget {
 //
 //  assets:
 //    - assets/tablet.png    //No comma, No semicolon, No apostrophe
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(child: Image.asset("assets/help/Image/Que01.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}

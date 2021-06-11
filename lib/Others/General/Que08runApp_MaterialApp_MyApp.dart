@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class MyApp extends StatelessWidget {
+class Que08MyAppRun011 extends StatelessWidget {
   launchURL() {
     launch('https://flutter.dev/');
   }
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('RunApp MaterialApp?'),
       ),
       body: Column(
         children: [

@@ -21,7 +21,7 @@ class Que0311 extends StatelessWidget {
           //     Tab(icon: Icon(Icons.directions_bike)),
           //   ],
           // ),
-          title: Text('Tabs Demo'),
+          title: Text('Tab Only Default Tab Controller'),
         ),
         body:
             //TabBarView(

@@ -37,6 +37,15 @@ class HomeScreenOthers extends StatelessWidget {
           childAspectRatio: 3.0,
           children: [
             ElevatedButton(
+              child: Text('General',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HomeGeneral(),
+                  )),
+            ),
+            ElevatedButton(
               child: Text('Custom Widgets',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(

@@ -31,6 +31,8 @@ dependencies:
   youtube_player_flutter: ^7.0.0+7
   expandable_text: ^2.2.0
   curved_navigation_bar: ^0.3.7
+  animated_splash_screen: ^1.1.0
+
  
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0
@@ -141,6 +143,7 @@ flutter:
     - assets/help/Others/Spacer/
     - assets/help/Others/Stack_IndexStack_Positioned/
     - assets/help/Others/Visibility/
+    - assets/help/Others/General/
     - assets/help/Padding/
     - assets/help/Properties/
     - assets/help/Row/

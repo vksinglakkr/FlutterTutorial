@@ -1,7 +1,7 @@
 // lib\main.dart
 import 'package:flutter/material.dart';
 
-import './pages/HomeScreen.dart';
+import 'splashscreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,6 +11,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.deepPurple),
-        home: HomeScreen());
+        home: Splash());
   }
 }

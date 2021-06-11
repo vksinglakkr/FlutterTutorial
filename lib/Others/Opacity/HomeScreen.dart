@@ -48,9 +48,10 @@ class Que01 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0111(),
-      sourceFilePath: 'lib/Opacity/Que01ContainerOpacityGesterDetector.dart',
+      sourceFilePath:
+          'lib/Others/Opacity/Que01ContainerOpacityGesterDetector.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Opacity/Que01ContainerOpacityGesterDetector.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/Opacity/Que01ContainerOpacityGesterDetector.dart',
     );
   }
 }

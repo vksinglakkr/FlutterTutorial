@@ -12,7 +12,7 @@ class Que0611 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tabs Demo'),
+        title: Text('Only TabBar View'),
       ),
       body: Column(
         children: [

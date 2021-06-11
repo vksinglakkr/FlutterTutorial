@@ -48,9 +48,10 @@ class Que01 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0111(),
-      sourceFilePath: 'lib/Material/Que01GridView_Material_ClipRRect.dart',
+      sourceFilePath:
+          'lib/Others/Material/Que01GridView_Material_ClipRRect.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que01GridView_Material_ClipRRect.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/InkWell/Que01GridView_Material_ClipRRect.dart',
     );
   }
 }

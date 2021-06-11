@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class MyHomePage extends StatefulWidget {
+class Que09MyHomePage011 extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _Que09MyHomePage011State createState() => _Que09MyHomePage011State();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _Que09MyHomePage011State extends State<Que09MyHomePage011> {
   launchURL() {
     launch('https://flutter.dev/');
   }

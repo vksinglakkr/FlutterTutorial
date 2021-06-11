@@ -56,14 +56,15 @@ class HomeProgress extends StatelessWidget {
   }
 }
 
+//lib\Others\ProgressIndicator_Loading\Que01.dart
 class Que01 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0111(),
-      sourceFilePath: 'lib/ProgressIndicator/Que01.dart',
+      sourceFilePath: 'lib/Others/ProgressIndicator_Loading/Que01.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/ProgressIndicator/Que01.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/ProgressIndicator_Loading/Que01.dart',
     );
   }
 }
@@ -73,9 +74,9 @@ class Que02 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0211(),
-      sourceFilePath: 'lib/ProgressIndicator/Que02.dart',
+      sourceFilePath: 'lib/Others/ProgressIndicator_Loading/Que02.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/ProgressIndicator/Que02.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/ProgressIndicator_Loading/Que02.dart',
     );
   }
 }

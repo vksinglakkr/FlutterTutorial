@@ -66,9 +66,9 @@ class Que01InkWell extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que01InkWell11(),
-      sourceFilePath: 'lib/InkWell/Que01ClickonText.dart',
+      sourceFilePath: 'lib/Others/InkWell/Que01ClickonText.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/InkWell/Que01ClickonText.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/InkWell/Que01ClickonText.dart',
     );
   }
 }

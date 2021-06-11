@@ -18,7 +18,7 @@ class _Que0511State extends State<Que0511> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('Active ThumbPage'),
       ),
       body: Column(
         children: [

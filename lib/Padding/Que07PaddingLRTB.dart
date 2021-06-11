@@ -19,7 +19,7 @@ class _Que0711State extends State<Que0711> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Tutorial - NIC KKR'),
+          title: Text('PaddingLRTB'),
         ),
         body: Column(
           children: [

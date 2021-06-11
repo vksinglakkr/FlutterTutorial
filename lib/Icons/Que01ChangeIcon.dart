@@ -22,7 +22,7 @@ class _Que0111State extends State<Que0111> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: new Text("Flutter Tutorial - NIC KKR"),
+        title: new Text("Padding"),
       ),
       floatingActionButton: FloatingActionButton(
         child: fab,

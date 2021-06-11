@@ -20,7 +20,7 @@ class HomeAlign extends StatelessWidget {
                   margin: EdgeInsets.all(2),
                   height: 32,
                   child: ElevatedButton(
-                      child: Text('Basic Alert Dialog Box',
+                      child: Text('ClipOval/ Align',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
                       onPressed: () {

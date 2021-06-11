@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class MyApp extends StatelessWidget {
+class ReturnMaterialApp11 extends StatelessWidget {
   launchURL() {
     launch('https://flutter.dev/');
   }

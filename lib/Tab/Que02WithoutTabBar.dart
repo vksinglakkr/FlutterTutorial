@@ -14,7 +14,7 @@ class Que0211 extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Tabs Demo'),
+          title: Text('Without TabBar'),
           // bottom: TabBar(
           //   tabs: [
           //     Tab(icon: Icon(Icons.directions_car)),

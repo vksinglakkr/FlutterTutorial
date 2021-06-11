@@ -48,9 +48,10 @@ class Que01 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0111(),
-      sourceFilePath: 'lib/Placeholder/Que01.dart',
+      sourceFilePath: 'lib/Others/Placeholder/Que01.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Placeholder/Que01.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/Placeholder/Que01.dart',
     );
   }
 }
+//lib\Others\Placeholder\HomeScreen.dart

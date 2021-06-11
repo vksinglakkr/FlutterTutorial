@@ -48,9 +48,9 @@ class Que01 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0111(),
-      sourceFilePath: 'lib/Divider/Que01DividerTheme.dart',
+      sourceFilePath: 'lib/Divider/Que01DividerTheme2.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Divider/Que01DividerTheme.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Divider/Que01DividerTheme2.dart',
     );
   }
 }

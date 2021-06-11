@@ -18,7 +18,7 @@ class _Que01InkWell11State extends State<Que01InkWell11> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('InkWell=>Click'),
+        title: Text('Click'),
       ),
       body: Column(
         children: [

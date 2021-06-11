@@ -17,7 +17,7 @@ class _State extends State<Que0211> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Tutorial - NIC KKR'),
+        title: Text('Expanded'),
       ),
       body: Column(
         children: [

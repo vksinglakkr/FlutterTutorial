@@ -18,7 +18,7 @@ class _Que02State extends State<Que02> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Material App Bar'),
+        title: Text('Switch Active ThumbPage'),
       ),
       body: Column(
         children: [

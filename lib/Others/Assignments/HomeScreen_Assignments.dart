@@ -77,9 +77,9 @@ class Que01 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0111(),
-      sourceFilePath: 'lib/Assignments/Que01Assignments.dart',
+      sourceFilePath: 'lib/Others/Assignments/Que01Assignments.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Assignments/Que01Assignments.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/Assignments/Que01Assignments.dart',
     );
   }
 }
@@ -89,9 +89,10 @@ class Que02 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0211(),
-      sourceFilePath: 'lib/Assignments/Que02GridView_ClipRRect_Material.dart',
+      sourceFilePath:
+          'lib/Others/Assignments/Que02GridView_ClipRRect_Material.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Assignments/Que02GridView_ClipRRect_Material.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/Assignments/Que02GridView_ClipRRect_Material.dart',
     );
   }
 }
@@ -101,9 +102,9 @@ class Que03 extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que0311(),
-      sourceFilePath: 'lib/Assignments/Que03IncreaseFontSize.dart',
+      sourceFilePath: 'lib/Others/Assignments/Que03IncreaseFontSize.dart',
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Assignments/Que03IncreaseFontSize.dart',
+          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Others/Assignments/Que03IncreaseFontSize.dart',
     );
   }
 }

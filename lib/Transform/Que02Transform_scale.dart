@@ -12,7 +12,7 @@ class Que0211 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Transform Scale'),
+        title: Text(' Scale'),
       ),
       body: Column(
         children: [

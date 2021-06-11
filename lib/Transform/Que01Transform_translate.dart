@@ -12,7 +12,7 @@ class Que0111 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Transform => Translate'),
+        title: Text(' Translate'),
       ),
       body: Column(
         children: [

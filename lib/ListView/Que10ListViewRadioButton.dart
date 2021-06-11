@@ -18,7 +18,7 @@ class _Que1011State extends State<Que1011> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Radio Button - Demo'),
+        title: Text('Leading or Trailling Text '),
       ),
       body: Column(
         children: [

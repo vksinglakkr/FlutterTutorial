@@ -30,7 +30,7 @@ class Que0111 extends StatelessWidget {
               ),
             ],
           ),
-          title: Text('Tabs Demo'),
+          title: Text('Tabs '),
         ),
         body: Column(
           children: [

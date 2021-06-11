@@ -12,7 +12,7 @@ class Que0511 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Transform => 3D'),
+        title: Text(' 3D'),
       ),
       body: Column(
         children: [

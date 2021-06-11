@@ -12,7 +12,7 @@ class Que0511 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tabs Demo'),
+        title: Text('Without Default Tab Controller '),
         bottom: TabBar(
           tabs: [
             Tab(icon: Icon(Icons.directions_car)),

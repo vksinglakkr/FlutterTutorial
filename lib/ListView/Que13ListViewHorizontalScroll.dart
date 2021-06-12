@@ -1,7 +1,7 @@
 // lib\ListView\Que13ListViewHorizontalScroll.dart
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que1311 extends StatelessWidget {
   final String url1 = "";
@@ -11,9 +11,7 @@ class Que1311 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Card - ListView'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Card - ListView")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

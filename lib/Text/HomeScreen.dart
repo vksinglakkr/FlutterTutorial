@@ -1,6 +1,6 @@
 // lib\Text\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Others/GesterDetector/Que01ClickonText.dart';
 import 'package:flutter_tutorial/Others/GesterDetector/Que02ClickonTextToggle.dart';
 import 'package:flutter_tutorial/Others/InkWell/HomeScreen.dart';
@@ -40,9 +40,7 @@ class HomeText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text Property Demo'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text Property Demo")),
       body: SafeArea(
         child: Container(
           child: Builder(

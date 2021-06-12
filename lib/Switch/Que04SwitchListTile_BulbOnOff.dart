@@ -1,7 +1,7 @@
 // lib\Switch\Que04SwitchListTile_BulbOnOff.dart
 
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0411 extends StatefulWidget {
   @override
@@ -19,9 +19,7 @@ class _Que0411State extends State<Que0411> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('List Tile (Bulb on/Off'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("List Tile (Bulb on/Off)")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

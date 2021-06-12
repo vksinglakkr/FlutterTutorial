@@ -1,6 +1,6 @@
 // lib\Buttons\FloatingActionButton\Que00BasicFAB.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 void main() {
   runApp(MyApp());

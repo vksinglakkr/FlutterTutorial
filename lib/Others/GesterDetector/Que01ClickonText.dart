@@ -1,6 +1,6 @@
 // lib\GesterDetector\Que01ClickonText.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Gester11 extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _Que01Gester11State extends State<Que01Gester11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('GesterDetector=>Click'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("GesterDetector=>Click")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

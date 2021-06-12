@@ -1,6 +1,6 @@
 // lib\Text\Que05ImageinText.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que05Text11 extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _State extends State<Que05Text11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: new Text("Flutter Tutorial"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Flutter Tutorial")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(

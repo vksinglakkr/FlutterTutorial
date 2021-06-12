@@ -1,6 +1,6 @@
 // lib\Buttons\ElevatedButton\Que07PaddingLRTB.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que07Elevated11 extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _Que07Elevated11State extends State<Que07Elevated11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Elevated - Padding LRTB'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Elevated - Padding LRTB")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

@@ -1,6 +1,6 @@
 // lib\Container\Que32ContainerBorder.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que3211 extends StatefulWidget {
   @override
@@ -15,6 +15,7 @@ class _Que3211State extends State<Que3211> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Container Border'),
       ),

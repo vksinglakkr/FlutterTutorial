@@ -2,7 +2,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que1211 extends StatelessWidget {
   final random = Random();
@@ -13,6 +13,7 @@ class Que1211 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Width, Height Constraints '),
       ),

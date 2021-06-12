@@ -1,6 +1,6 @@
 // lib\Text\Que21TransformSkewtext.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que21Trans extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _Que21TransState extends State<Que21Trans> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => Transform (Skew)'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text => Transform (Skew)")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

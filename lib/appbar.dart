@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import '../Image/BottomNavigationBar.dart';
+import 'pages/BottomNavigationBar.dart';
 
 class MyAppBar extends StatefulWidget {
   final String title;
@@ -15,9 +15,7 @@ class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => ${widget.title}'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text => ${widget.title}")),
       body: Container(child: Image.asset('${widget.image}')),
       floatingActionButton: WidgetFab(),
     );

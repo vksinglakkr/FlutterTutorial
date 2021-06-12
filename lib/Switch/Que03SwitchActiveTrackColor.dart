@@ -1,6 +1,6 @@
 // lib\Switch\Que03SwitchActiveTrackColor.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0311 extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _Que0311State extends State<Que0311> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Active TrackC olor'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Active TrackColor")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

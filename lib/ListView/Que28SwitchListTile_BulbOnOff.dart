@@ -2,7 +2,7 @@
 // HomeScreen.dart
 
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 //import './SecondScreen.dart';
 
 class Que2811 extends StatefulWidget {
@@ -21,9 +21,7 @@ class _Que2811State extends State<Que2811> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Light on/Off'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Light on/Off")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

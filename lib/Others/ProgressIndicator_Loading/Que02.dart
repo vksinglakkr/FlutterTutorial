@@ -1,6 +1,6 @@
 // lib\ProgressIndicator_Loading\Que02.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0211 extends StatelessWidget {
   final String url1 = "";
@@ -10,9 +10,7 @@ class Que0211 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('FadeInImage_Loading Bar'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("FadeInImage_Loading Bar")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

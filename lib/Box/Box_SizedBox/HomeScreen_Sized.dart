@@ -1,6 +1,6 @@
 // lib\Box\HomeScreen_Sized.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 import 'Que01Simple.dart';
@@ -10,9 +10,7 @@ class HomeSized extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Sized'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Sized")),
       body: SafeArea(
         child: Container(
           child: Builder(

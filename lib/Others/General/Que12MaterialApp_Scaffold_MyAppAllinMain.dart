@@ -1,13 +1,12 @@
 // lib\General\Que12MaterialApp_Scaffold_MyAppAllinMain.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 void main() => runApp(
       MaterialApp(
         title: 'Material App',
         home: Scaffold(
-          appBar: AppBar(
-            title: Text('MaterialApp Scaffold'),
-          ),
+          appBar: AppBar(title: WidgetAppBar("MaterialApp Scaffold")),
           body: Que12MaterialApp011(),
         ),
       ),

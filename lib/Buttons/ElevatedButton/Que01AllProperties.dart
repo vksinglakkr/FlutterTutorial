@@ -1,6 +1,6 @@
 // lib\Buttons\ElevatedButton\Que01AllProperties.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Elevated11 extends StatefulWidget {
   @override

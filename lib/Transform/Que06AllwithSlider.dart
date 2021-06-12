@@ -1,7 +1,7 @@
 // lib\Transform\Que06AllwithSlider.dart
 import 'package:flutter/material.dart';
-import '../Image/BottomNavigationBar.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0611 extends StatelessWidget {
   @override

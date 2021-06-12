@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:async';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que25Show extends StatefulWidget {
   @override
@@ -28,9 +28,7 @@ class _Que25ShowState extends State<Que25Show> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => SelectableText'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text => SelectableText")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: ListView(children: <Widget>[

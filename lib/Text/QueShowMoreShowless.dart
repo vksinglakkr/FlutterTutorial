@@ -1,7 +1,7 @@
 // lib\Text\QueShowMoreShowless.dart
 import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 // ignore: must_be_immutable
 class QueDynamic11 extends StatelessWidget {
@@ -13,9 +13,8 @@ class QueDynamic11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Expandable Text'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Expandable Text")),
+
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

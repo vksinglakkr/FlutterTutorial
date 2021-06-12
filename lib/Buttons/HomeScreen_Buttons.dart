@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Bar/AppBar/HomeScreen_AppBar.dart';
 import 'package:flutter_tutorial/Bar/ButtonBar/HomeScreen_ButtonBar.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'ElevatedButton/HomeScreen_Elevated.dart';
 import 'FlatButton/HomeScreen_Flat.dart';
 import 'FloatingActionButton/HomeScreen_Floating.dart';
@@ -13,6 +13,7 @@ class HomeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Buttons'),
       ),

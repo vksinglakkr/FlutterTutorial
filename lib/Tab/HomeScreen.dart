@@ -1,6 +1,6 @@
 // lib\Tab\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Basic.dart';
 import 'Que02WithoutTabBar.dart';
 import 'Que03OnlyDefaultTabController.dart';
@@ -20,9 +20,7 @@ class _HomeTabBarState extends State<HomeTabBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Tab'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Tab")),
       body: SafeArea(
         child: Container(
           child: Builder(

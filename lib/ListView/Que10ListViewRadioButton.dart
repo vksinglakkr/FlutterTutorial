@@ -1,6 +1,6 @@
 // lib\ListView\Que10ListViewRadioButton.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que1011 extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _Que1011State extends State<Que1011> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Leading or Trailling Text '),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Leading or Trailling Text")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

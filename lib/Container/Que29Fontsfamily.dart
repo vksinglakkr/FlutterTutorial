@@ -1,6 +1,6 @@
 // lib\Container\Que29Fontsfamily.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 // fonts:
 //     - family: Font1
 //       fonts:
@@ -22,6 +22,7 @@ class _Que2911State extends State<Que2911> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: new Text("Fonts Family"),
       ),

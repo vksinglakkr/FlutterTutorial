@@ -1,6 +1,6 @@
 // lib\InkWell\Que02ClickonTextToggle.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que02InkWell11 extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _Que02InkWell11State extends State<Que02InkWell11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Toggle'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Toggle")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

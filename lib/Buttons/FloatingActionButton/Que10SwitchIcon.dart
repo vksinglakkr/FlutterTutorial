@@ -1,6 +1,6 @@
 // lib\Buttons\FloatingActionButton\Que10SwitchIcon.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que10Floating11 extends StatefulWidget {
   @override
@@ -19,6 +19,7 @@ class _Que10Floating11State extends State<Que10Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: new Text("Switch Icon"),
       ),

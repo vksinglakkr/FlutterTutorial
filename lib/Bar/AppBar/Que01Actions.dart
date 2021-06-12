@@ -1,6 +1,6 @@
 // lib\Bar\AppBar\Que01Actions.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
@@ -17,10 +17,7 @@ class Que01Actions11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Iconic Buttons \nin AppBar',
-          style: TextStyle(fontSize: 16),
-        ),
+        title: WidgetAppBar("Iconic Buttons \nin AppBar"),
         actions: [
           IconButton(
             icon: const Icon(Icons.info),
@@ -58,9 +55,7 @@ class MyAppVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
+      appBar: AppBar(title: WidgetAppBar("")),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
           initialVideoId: 'IYDVcriKjsw',

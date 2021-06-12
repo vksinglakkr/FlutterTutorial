@@ -1,6 +1,6 @@
 // lib\ListView\Que27ListTileChangeLeadingColor.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que2711 extends StatefulWidget {
   @override
@@ -18,9 +18,7 @@ class _Que2711State extends State<Que2711> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Light on/Off'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Light on/Off")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: ListView(

@@ -1,6 +1,6 @@
 // lib\QueURL_Launcher.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyAppURL extends StatelessWidget {
@@ -14,9 +14,7 @@ class MyAppURL extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
+      appBar: AppBar(title: WidgetAppBar("")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

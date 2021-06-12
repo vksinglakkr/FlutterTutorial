@@ -1,6 +1,6 @@
 //  \lib\ListView\HomeScreen_ListView1.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01ListViewBasic.dart';
 import 'Que00Issueof_final.dart';
 import 'Que06ListViewBasic.dart';
@@ -43,9 +43,7 @@ class HomeListView1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('ListView'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("ListView")),
       body: SafeArea(
         child: Container(
           child: Builder(

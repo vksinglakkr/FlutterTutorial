@@ -1,6 +1,6 @@
 // lib\Switch\Que02SwitchOn_OffLight_Bulb.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0211 extends StatefulWidget {
   @override
@@ -17,8 +17,8 @@ class _Que02State extends State<Que0211> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Switch \n  How to change the Color of Icon at run time',
-              style: TextStyle(fontSize: 16.0))),
+          title: WidgetAppBar(
+              "Switch \n  How to change the Color of Icon at run time")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

@@ -1,6 +1,6 @@
 // lib\ListView\Que38HorizontalScroll.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que3811 extends StatelessWidget {
   final List<int> numbers = [1, 2, 3, 5, 8, 13, 21, 34, 55];
@@ -11,9 +11,8 @@ class Que3811 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('List<int> varDeclaration = [ , , , ]'),
-      ),
+      appBar:
+          AppBar(title: WidgetAppBar("List<int> varDeclaration = [ , , , ]")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

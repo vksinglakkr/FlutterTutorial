@@ -1,6 +1,6 @@
 // lib\ListView\Que20ListTileDivideTiles.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que2011 extends StatelessWidget {
   @override

@@ -1,6 +1,6 @@
 // lib\ListView\Que00Issueof_final.dart
 import 'package:flutter/material.dart';
-import '../Image/BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
 
 //if number of class are more than 1 then we have two ways to declare List
 //a) List may be declared outside class with/without mentioning final
@@ -43,9 +43,7 @@ class _Que0011State extends State<Que0011> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Issue of mentioning final or not"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Issue of mentioning final or not")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

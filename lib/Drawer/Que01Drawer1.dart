@@ -1,7 +1,7 @@
 // lib\Drawer\Que01Drawer1.dart
 import 'package:flutter/material.dart';
 
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0111 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -12,6 +12,7 @@ class Que0111 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(),
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text("Home"),
 //        backgroundColor: Colors.green,

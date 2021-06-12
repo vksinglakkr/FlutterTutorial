@@ -1,6 +1,6 @@
 // lib\Tab\Que04WithoutTabBarView.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0411 extends StatelessWidget {
   final String url1 = "";
@@ -12,6 +12,7 @@ class Que0411 extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
+          title: WidgetAppBar("Tabs Demo"),
           bottom: TabBar(
             tabs: [
               Tab(icon: Icon(Icons.directions_car)),
@@ -19,7 +20,6 @@ class Que0411 extends StatelessWidget {
               Tab(icon: Icon(Icons.directions_bike)),
             ],
           ),
-          title: Text('Tabs Demo'),
         ),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
@@ -36,14 +36,7 @@ class Que0411 extends StatelessWidget {
         //    Icon(Icons.directions_bike),
         //  ],
         //),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple.shade300,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+        floatingActionButton: WidgetFab(),
       ),
     );
   }

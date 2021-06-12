@@ -1,6 +1,6 @@
 // lib\ListView\Que30BuilderListView.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que3011 extends StatefulWidget {
   @override
@@ -26,9 +26,7 @@ class _State extends State<Que3011> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('ListView Builder - 2 List'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("ListView Builder - 2 List")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(children: <Widget>[

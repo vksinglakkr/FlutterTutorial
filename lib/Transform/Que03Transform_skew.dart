@@ -1,6 +1,6 @@
 // lib\Transform\Que03Transform_skew.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0311 extends StatelessWidget {
   final String url1 = "https://www.youtube.com/watch?v=4h5q5jfkdYg";
@@ -10,9 +10,7 @@ class Que0311 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(' Skew'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Skew")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(

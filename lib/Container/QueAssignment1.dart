@@ -1,6 +1,6 @@
 // lib\Container\QueAssignment1.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class QueAssign111 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -10,6 +10,7 @@ class QueAssign111 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Assignment 1'),
       ),

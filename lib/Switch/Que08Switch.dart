@@ -1,6 +1,6 @@
 // lib\Switch\Que08Switch.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0811 extends StatefulWidget {
   @override
@@ -16,9 +16,8 @@ class _State extends State<Que0811> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Diff. between Switch & Switch.adaptive'),
-      ),
+      appBar:
+          AppBar(title: WidgetAppBar("Diff. between Switch & Switch.adaptive")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

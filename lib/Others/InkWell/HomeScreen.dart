@@ -1,6 +1,6 @@
 // lib\InkWell\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import '../InkWell/Que02ClickonTextToggle.dart';
 import 'Que01ClickonText.dart';
 import 'Que02ClickonTextToggle.dart';
@@ -10,9 +10,7 @@ class HomeInkWell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('InkWell'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("InkWell")),
       body: SafeArea(
           child: Container(
               child: Builder(

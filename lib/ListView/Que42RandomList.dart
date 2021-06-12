@@ -1,6 +1,6 @@
 // lib\ListView\Que42RandomList.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 final List<String> course1 = [
   "c",
@@ -25,10 +25,8 @@ class Que4211 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Random List Generation (Error Exist)",
-            style: TextStyle(fontSize: 14)),
-      ),
+      appBar:
+          AppBar(title: WidgetAppBar("Random List Generation (Error Exist)")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

@@ -1,6 +1,6 @@
 // lib\Text\Que01SelectableText.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Iconic11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -11,6 +11,7 @@ class Que01Iconic11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("")),
         appBar: AppBar(
           title: Text(
             'Iconic Buttons \nin Body',
@@ -28,14 +29,7 @@ class Que01Iconic11 extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               )),
         ]),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple.shade300,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+        floatingActionButton: WidgetFab(),
       ),
     );
   }

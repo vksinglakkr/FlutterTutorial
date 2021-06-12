@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que02Sized11 extends StatefulWidget {
   @override
@@ -14,9 +14,7 @@ class _State extends State<Que02Sized11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Size Box- ListView"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Size Box- ListView")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

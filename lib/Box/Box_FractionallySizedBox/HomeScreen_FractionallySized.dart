@@ -1,6 +1,6 @@
 // lib\Box\HomeScreen_FractionallySized.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'Que01.dart';
 
@@ -8,9 +8,7 @@ class HomeFractionallySized extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('FractionallySized ..'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("FractionallySized ..")),
       body: SafeArea(
         child: Container(
           child: Builder(

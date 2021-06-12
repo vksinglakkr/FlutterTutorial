@@ -1,6 +1,6 @@
 // lib\Text\Que15DefaulttextStyle.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que15Default extends StatelessWidget {
   final String url1 = "";
@@ -10,9 +10,7 @@ class Que15Default extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => DefaultTextStyle'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text => DefaultTextStyle")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(

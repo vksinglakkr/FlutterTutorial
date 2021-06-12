@@ -1,6 +1,6 @@
 // lib\Opacity\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 import 'Que01.dart';
 import 'Que02.dart';
@@ -11,9 +11,7 @@ class HomeOpacity extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('OOPs'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("OOPs")),
       body: SafeArea(
           child: Container(
               child: Builder(

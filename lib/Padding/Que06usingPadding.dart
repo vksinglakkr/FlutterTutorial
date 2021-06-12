@@ -1,6 +1,6 @@
 // lib\Padding\Que06usingPadding.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0611 extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _Que0611State extends State<Que0611> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Padding'),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Padding")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(

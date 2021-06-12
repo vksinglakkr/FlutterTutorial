@@ -1,7 +1,7 @@
 // lib\Image\Que01Image.dart
 import 'package:flutter/material.dart';
 
-import 'BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
 
 class Que01Image11 extends StatelessWidget {
   final String url1 =
@@ -12,6 +12,7 @@ class Que01Image11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Image(image: AssetImage())'),
       ),

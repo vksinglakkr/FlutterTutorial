@@ -1,6 +1,6 @@
 // lib\Switch\Que01Switch.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0111 extends StatefulWidget {
   @override
@@ -23,9 +23,7 @@ class _State extends State<Que0111> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Switch'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Switch")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: ListView(

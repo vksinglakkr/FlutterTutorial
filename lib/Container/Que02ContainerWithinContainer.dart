@@ -1,6 +1,6 @@
 // lib\Container\Que02ContainerWithinContainer.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que02Container11 extends StatefulWidget {
   @override
@@ -15,6 +15,7 @@ class _Que02Container11State extends State<Que02Container11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Container within Container'),
       ),

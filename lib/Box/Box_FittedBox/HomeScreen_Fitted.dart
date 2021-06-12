@@ -1,6 +1,6 @@
 // lib\Box\HomeScreen_Fitted.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
@@ -14,9 +14,7 @@ class HomeFitted extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Fitted Box'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Fitted Box")),
       body: SafeArea(
         child: Container(
           child: Builder(

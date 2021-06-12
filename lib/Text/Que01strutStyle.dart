@@ -1,6 +1,6 @@
 // lib\Text\Que01strutStyle.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01strut extends StatelessWidget {
   final String url1 =
@@ -16,9 +16,7 @@ class Que01strut extends StatelessWidget {
     String str1 =
         "Setting the strutStyle property gives you the ability to fine-tune the separation between rows of text. For example, if you have a number of Text widgets that have differing font style and sizes, you can specify the strutStyle to ensure the same spacing between each row.";
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text=>Properties=>strutStyle'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text=>Properties=>strutStyle")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(

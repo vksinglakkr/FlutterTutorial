@@ -1,6 +1,6 @@
 // lib\ListView\Que14aListViewSeperated.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que14a11 extends StatefulWidget {
   @override
@@ -26,9 +26,7 @@ class _State extends State<Que14a11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('ListView.separated'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("ListView.separated")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

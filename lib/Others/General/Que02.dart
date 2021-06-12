@@ -1,6 +1,6 @@
 // lib\Others\General\Que02.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0211 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -9,9 +9,7 @@ class Que0211 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('BuildContext '),
-      ),
+      appBar: AppBar(title: WidgetAppBar("BuildContext ")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

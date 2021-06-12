@@ -1,6 +1,6 @@
 // lib\General\Que11StateLessStateLess.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que11Stateless011 extends StatelessWidget {
   @override
@@ -17,9 +17,7 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Material App Bar'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Material App Bar")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

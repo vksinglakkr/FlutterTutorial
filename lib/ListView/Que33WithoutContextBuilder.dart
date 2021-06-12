@@ -1,6 +1,6 @@
 // lib\ListView\Que33WithoutContextBuilder.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 List<String> course = [
   "c",
@@ -21,9 +21,8 @@ class Que3311 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("itemBuilder: (_, index) i.e. without BuildContext",
-            style: TextStyle(fontSize: 14)),
-      ),
+          title: WidgetAppBar(
+              "itemBuilder: (_, index) i.e. without BuildContext")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

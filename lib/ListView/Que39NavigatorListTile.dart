@@ -1,6 +1,6 @@
 // lib\ListView\Que39NavigatorListTile.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que3911 extends StatelessWidget {
   final String url1 = "";
@@ -11,11 +11,7 @@ class Que3911 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ListView.builder without List declaration',
-            style: TextStyle(
-              fontSize: 16,
-            )),
-      ),
+          title: WidgetAppBar("ListView.builder without List declaration")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

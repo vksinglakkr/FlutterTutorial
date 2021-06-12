@@ -1,6 +1,6 @@
 // lib\Text\Que10TextConditional.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que10Text11 extends StatefulWidget {
   @override

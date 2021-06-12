@@ -1,6 +1,6 @@
 // lib\ListView\Que36ListAddItem.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que3611 extends StatefulWidget {
   @override
@@ -36,9 +36,7 @@ class _State extends State<Que3611> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Add Item in List'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Add Item in List")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(children: <Widget>[

@@ -1,6 +1,6 @@
 // lib\Bar\AppBar\Que04PopupText.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que04Popup11 extends StatefulWidget {
   @override
@@ -16,7 +16,7 @@ class _Que04Popup11State extends State<Que04Popup11> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("3 Dot Popup Menu(Text)"),
+        title: WidgetAppBar("3 Dot Popup Menu(Text)"),
         actions: [
           PopupMenuButton(
             itemBuilder: (BuildContext bc) => [

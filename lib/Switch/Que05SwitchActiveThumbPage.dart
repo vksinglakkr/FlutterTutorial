@@ -1,6 +1,6 @@
 // lib\Switch\Que05SwitchActiveThumbPage.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0511 extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _Que0511State extends State<Que0511> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Active ThumbPage'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Active ThumbPage")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

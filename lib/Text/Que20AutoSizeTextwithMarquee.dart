@@ -2,7 +2,7 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que20Auto extends StatefulWidget {
   @override
@@ -19,9 +19,7 @@ class _Que20AutoState extends State<Que20Auto> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('AutoSize Text with Marquee'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("AutoSize Text with Marquee")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

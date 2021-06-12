@@ -1,7 +1,7 @@
 // lib\Image\HomeScreen_Image.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
-import 'BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
 import 'Que00Image.dart';
 import 'Que01Image.dart';
 import 'Que02Image.dart';
@@ -27,6 +27,7 @@ class HomeImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Image'),
       ),

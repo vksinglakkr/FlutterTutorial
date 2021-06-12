@@ -1,6 +1,6 @@
 // lib\Box\HomeScreen_Sized.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 import 'Box_ConstrainedBox/HomeScreen_Constrained.dart';
 import 'Box_DecoratedBox/HomeScreen_Decorated.dart';
@@ -14,9 +14,7 @@ class HomeBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Box'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Box")),
       body: SafeArea(
         child: Container(
           child: Builder(

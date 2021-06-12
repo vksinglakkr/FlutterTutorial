@@ -1,6 +1,6 @@
 // lib\Text\Que14forground.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que14Forground extends StatelessWidget {
   final String url1 = "";
@@ -10,9 +10,7 @@ class Que14Forground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => foreground: Paint()'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text => foreground: Paint()")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(

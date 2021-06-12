@@ -1,6 +1,6 @@
 // lib\Transform\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Transform_translate.dart';
 import 'Que02Transform_scale.dart';
 import 'Que03Transform_skew.dart';
@@ -13,9 +13,7 @@ class HomeTransform extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Transform'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Transform")),
       body: SafeArea(
         child: Container(
           child: Builder(

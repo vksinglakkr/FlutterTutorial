@@ -1,6 +1,6 @@
 // lib\ListView\Que41spreadOperator.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 final List<String> course1 = [
   "c",
@@ -24,9 +24,7 @@ class Que4111 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("('  ','  ','  ',...list1) spread operator",
-            style: TextStyle(fontSize: 14)),
-      ),
+          title: WidgetAppBar("('  ','  ','  ',...list1) spread operator")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

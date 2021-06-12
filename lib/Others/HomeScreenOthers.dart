@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 //import '../Stack_IndexStack_Positioned/HomeScreen.dart';import 'Assignments/HomeScreen_Assignments.dart';
 import 'Assignments/HomeScreen_Assignments.dart';
 import 'General/HomeScreen.dart';
@@ -26,9 +27,7 @@ class HomeScreenOthers extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: Text('Others'),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Others")),
         body: GridView.count(
           padding: EdgeInsets.all(5),
           crossAxisCount: 2,

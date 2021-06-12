@@ -2,6 +2,7 @@
 // HomeScreen.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
 import 'Que01.dart';
@@ -13,9 +14,7 @@ class HomeSetUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: Text('Setup/APK/Shortcut Keys', style: TextStyle()),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Setup/APK/Shortcut Keys")),
         body: GridView.count(
           padding: EdgeInsets.all(6),
           crossAxisCount: 3,

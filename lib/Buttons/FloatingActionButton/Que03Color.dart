@@ -1,6 +1,6 @@
 // lib\Buttons\FloatingActionButton\Que03Color.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que03Floating11 extends StatefulWidget {
   @override
@@ -14,9 +14,7 @@ class _Que03Floating11State extends State<Que03Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: new Text("Color"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Color")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Text(""),

@@ -1,6 +1,6 @@
 // lib\Bar\Snackbar\Que01Basic.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01SnackBar11 extends StatefulWidget {
   @override
@@ -23,9 +23,7 @@ class _State extends State<Que01SnackBar11> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: AppBar(
-        title: Text("Don't Close on tap outside"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Don't Close on tap outside")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

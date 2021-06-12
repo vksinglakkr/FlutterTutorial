@@ -1,6 +1,6 @@
 // lib\Box\HomeScreen_Decorated.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Box_DecoratedBox.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
@@ -8,9 +8,7 @@ class HomeDecorated extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Decorated Box'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Decorated Box")),
       body: SafeArea(
         child: Container(
           child: Builder(

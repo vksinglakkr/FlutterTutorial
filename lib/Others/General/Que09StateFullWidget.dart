@@ -1,6 +1,6 @@
 // lib\General\Que09StateFullWidget.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que09MyHomePage011 extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _Que09MyHomePage011State extends State<Que09MyHomePage011> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Material App Bar'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Material App Bar")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

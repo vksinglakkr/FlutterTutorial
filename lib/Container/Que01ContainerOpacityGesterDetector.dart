@@ -1,6 +1,6 @@
 // lib\Container\Que01ContainerOpacityGesterDetector.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Container11 extends StatefulWidget {
   @override
@@ -16,6 +16,7 @@ class _State extends State<Que01Container11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('OpacityGesterDetector'),
       ),

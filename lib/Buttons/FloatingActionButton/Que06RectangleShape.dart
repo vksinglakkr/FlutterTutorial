@@ -1,6 +1,6 @@
 // lib\Buttons\FloatingActionButton\Que06RectangleShape.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que06Floating11 extends StatefulWidget {
   @override
@@ -14,9 +14,7 @@ class _Que06Floating11State extends State<Que06Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: new Text("Rectangle Shape"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Rectangle Shape")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(

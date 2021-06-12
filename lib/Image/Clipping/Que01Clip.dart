@@ -1,6 +1,6 @@
 // lib\Image\Clipping\Que01Clip.dart
 import 'package:flutter/material.dart';
-import '../BottomNavigationBar.dart';
+import '../../pages/BottomNavigationBar.dart';
 
 class Que01Clip11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -10,6 +10,7 @@ class Que01Clip11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('ClipRRect/BorderRadius'),
       ),

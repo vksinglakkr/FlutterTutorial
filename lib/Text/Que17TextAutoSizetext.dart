@@ -1,7 +1,7 @@
 // lib\Text\Que17TextAutoSizetext.dart
 import 'package:flutter/material.dart';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que17AutoSizeText extends StatelessWidget {
   final String url1 = "";

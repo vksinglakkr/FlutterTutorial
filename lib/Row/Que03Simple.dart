@@ -1,6 +1,6 @@
 // lib\Row\Que03Simple.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0311 extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _State extends State<Que0311> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Icons adjustment in Row'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Icons adjustment in Row")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

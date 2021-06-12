@@ -1,6 +1,6 @@
 // lib\Bar\Snackbar\Que02ColorSnackBar.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que02SnackBar11 extends StatefulWidget {
   @override
@@ -29,9 +29,7 @@ class _State extends State<Que02SnackBar11> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: AppBar(
-        title: Text('Elevated Alert Dialog Box'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Elevated Alert Dialog Box")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

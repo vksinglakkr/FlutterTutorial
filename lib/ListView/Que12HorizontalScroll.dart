@@ -1,6 +1,6 @@
 // lib\ListView\Que12HorizontalScroll.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que1211 extends StatelessWidget {
   final String url1 = "";

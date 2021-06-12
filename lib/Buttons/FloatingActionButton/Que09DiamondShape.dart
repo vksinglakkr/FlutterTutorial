@@ -1,6 +1,6 @@
 //  lib\Buttons\FloatingActionButton\Que09DiamondShape.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que09Floating11 extends StatefulWidget {
   @override
@@ -14,6 +14,7 @@ class _Que09Floating11State extends State<Que09Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: new Text("Diamond Shape"),
       ),

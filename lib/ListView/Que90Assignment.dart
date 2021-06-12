@@ -1,6 +1,6 @@
 // lib\ListView\Que90Assignment.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 void main() {
   runApp(MyDemo11());
@@ -21,6 +21,7 @@ class MyDemo11 extends StatelessWidget {
       length: myTabs.length,
       child: Scaffold(
         appBar: AppBar(
+          title: WidgetAppBar(""),
           bottom: TabBar(
             tabs: myTabs,
           ),
@@ -42,14 +43,7 @@ class MyDemo11 extends StatelessWidget {
             ),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple.shade300,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+        floatingActionButton: WidgetFab(),
       ),
     );
   }

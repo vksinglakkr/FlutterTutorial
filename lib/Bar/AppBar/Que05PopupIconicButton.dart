@@ -1,6 +1,6 @@
 // lib\Bar\AppBar\Que05PopupIconicButton.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Que05Popup11 extends StatefulWidget {
@@ -21,7 +21,7 @@ class _Que05Popup11State extends State<Que05Popup11> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("3 Dot Popup Menu(iconicButton)"),
+        title: WidgetAppBar("3 Dot Popup Menu(iconicButton)"),
         actions: [
           PopupMenuButton(
             itemBuilder: (BuildContext bc) => [

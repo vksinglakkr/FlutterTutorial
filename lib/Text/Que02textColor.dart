@@ -1,6 +1,6 @@
 // lib\Text\Que02textColor.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que02Text11 extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _Que02Text11State extends State<Que02Text11> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: Text('Text => Color Property'),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Text => Color Property")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: ListView(
@@ -131,14 +129,7 @@ class _Que02Text11State extends State<Que02Text11> {
             )),
           ],
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple.shade300,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+        floatingActionButton: WidgetFab(),
       ),
     );
   }

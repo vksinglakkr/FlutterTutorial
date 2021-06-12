@@ -1,6 +1,6 @@
 // lib\Assignments\HomeScreen_Assignments.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Assignment1.dart';
 import 'Que02GridView_ClipRRect_Material.dart';
 import 'Que03IncreaseFontSize.dart';
@@ -10,10 +10,7 @@ class HomeAssignments extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Assignments',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Assignments")),
       body: SafeArea(
         child: Container(
           child: Builder(

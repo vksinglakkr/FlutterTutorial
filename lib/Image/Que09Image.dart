@@ -1,7 +1,7 @@
 // lib\Image\Que09Image.dart
 //CircleAvtar
 import 'package:flutter/material.dart';
-import 'BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
 
 class Que09Image11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -13,6 +13,7 @@ class Que09Image11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('CircleAvatar'),
       ),

@@ -1,6 +1,6 @@
 // lib\Bar\Snackbar\Que03Duration.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que03SnackBar11 extends StatefulWidget {
   @override
@@ -29,9 +29,7 @@ class _State extends State<Que03SnackBar11> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: AppBar(
-        title: Text('Back Ground Color'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Back Ground Color")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

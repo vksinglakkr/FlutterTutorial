@@ -1,6 +1,6 @@
 // lib\YouTubePlayer.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class QueYouTube extends StatefulWidget {
@@ -16,9 +16,7 @@ class _QueYouTubeState extends State<QueYouTube> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => SelectableText'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Text => SelectableText")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

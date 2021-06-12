@@ -1,7 +1,7 @@
 // lib\Bar\BottomNavigationBar\Que02CurvedBottomNavigationbar.dart
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
@@ -20,12 +20,7 @@ class _Que02Curved11State extends State<Que02Curved11> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Curved Navigation Bar',
-            style: TextStyle(fontSize: 16),
-          ),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Curved \nNavigation Bar")),
         bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: Colors.blueAccent,
           items: [
@@ -51,14 +46,7 @@ class _Que02Curved11State extends State<Que02Curved11> {
             );
           },
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple.shade300,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+        floatingActionButton: WidgetFab(),
       ),
     );
   }
@@ -68,9 +56,7 @@ class MyAppImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
+      appBar: AppBar(title: WidgetAppBar("")),
       body: Container(child: Image.asset("assets/help/Bar/AppBar/Que02.png")),
       floatingActionButton: WidgetFab(),
     );
@@ -81,9 +67,7 @@ class MyAppVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Curved Navigation Bar'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Curved Navigation Bar")),
       body: YoutubePlayer(
         controller: YoutubePlayerController(
           initialVideoId: 'JhqxNk8ry3A',

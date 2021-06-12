@@ -1,6 +1,6 @@
 // lib\Row\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Basic.dart';
 import 'Que02Expanded.dart';
 import 'Que03Simple.dart';
@@ -10,9 +10,7 @@ class HomeRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Row'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Row")),
       body: SafeArea(
           child: Container(
               child: Builder(

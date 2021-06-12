@@ -1,6 +1,6 @@
 // lib\Text\Que12TextShape.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que12TextShape extends StatefulWidget {
   @override

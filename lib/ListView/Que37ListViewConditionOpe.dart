@@ -1,6 +1,6 @@
 // lib\ListView\Que37ListViewConditionOpe.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que3711 extends StatefulWidget {
   @override
@@ -27,9 +27,7 @@ class _State extends State<Que3711> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Conditional Operator if..else if..else..',
-            style: TextStyle(fontSize: 16)),
-      ),
+          title: WidgetAppBar("Conditional Operator if..else if..else..")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(children: <Widget>[

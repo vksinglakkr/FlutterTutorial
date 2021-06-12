@@ -1,7 +1,7 @@
 // lib\Container\Que98AnimatedContainer.dart
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que9811 extends StatefulWidget {
   @override
@@ -20,6 +20,7 @@ class _Que9811State extends State<Que9811> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Animated Container'),
       ),

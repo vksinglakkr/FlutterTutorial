@@ -25,231 +25,219 @@ import '../Text/HomeScreen.dart';
 import '../TextField/HomeScreen.dart';
 import '../Transform/HomeScreen.dart';
 import '../SetUpAPK/HomeScreenSetUp.dart';
+import 'BottomNavigationBar.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter Tutorial - NIC Kurukshetra', style: TextStyle()),
-        ),
-        body: GridView.count(
-          padding: EdgeInsets.all(6),
-          crossAxisCount: 3,
-          mainAxisSpacing: 4,
-          crossAxisSpacing: 4,
-          childAspectRatio: 1.92,
-          children: [
-            ElevatedButton(
-                child: Text('AlertDialog',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeAlert(),
-                    ))),
-            ElevatedButton(
-                child: Text('Align',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeAlign(),
-                    ))),
-            ElevatedButton(
-                child: Text('Bar',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeBar(),
-                    ))),
-            ElevatedButton(
-                child: Text('Box',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeBox(),
-                    ))),
-            ElevatedButton(
-                child: Text('Buttons',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeButton(),
-                    ))),
-            ElevatedButton(
-                child: Text('Card',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeCard(),
-                    ))),
-            ElevatedButton(
-                child: Text('Container',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeContainer(),
-                    ))),
-            ElevatedButton(
-              child: Text('Divider',
+    return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
+      body: GridView.count(
+        padding: EdgeInsets.all(6),
+        crossAxisCount: 3,
+        mainAxisSpacing: 4,
+        crossAxisSpacing: 4,
+        childAspectRatio: 1.92,
+        children: [
+          ElevatedButton(
+              child: Text('AlertDialog',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeDivider(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Drawer',
+                    builder: (BuildContext context) => HomeAlert(),
+                  ))),
+          ElevatedButton(
+              child: Text('Align',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeDrawer(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Grid View',
+                    builder: (BuildContext context) => HomeAlign(),
+                  ))),
+          ElevatedButton(
+              child: Text('Bar',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeGridView(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Icons',
+                    builder: (BuildContext context) => HomeBar(),
+                  ))),
+          ElevatedButton(
+              child: Text('Box',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeIcons(),
-                  )),
-            ),
-            ElevatedButton(
-                child: Text('Image',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeImage(),
-                    ))),
-            ElevatedButton(
-                child: Text('ListView',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeListView1(),
-                    ))),
-            ElevatedButton(
-              child: Text('Padding',
+                    builder: (BuildContext context) => HomeBox(),
+                  ))),
+          ElevatedButton(
+              child: Text('Buttons',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomePadding(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Row',
+                    builder: (BuildContext context) => HomeButton(),
+                  ))),
+          ElevatedButton(
+              child: Text('Card',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeRow(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Slider',
+                    builder: (BuildContext context) => HomeCard(),
+                  ))),
+          ElevatedButton(
+              child: Text('Container',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeSlider(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Switch',
+                    builder: (BuildContext context) => HomeContainer(),
+                  ))),
+          ElevatedButton(
+            child: Text('Divider',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeDivider(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Drawer',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeDrawer(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Grid View',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeGridView(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Icons',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeIcons(),
+                )),
+          ),
+          ElevatedButton(
+              child: Text('Image',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeSwitch(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Tab',
+                    builder: (BuildContext context) => HomeImage(),
+                  ))),
+          ElevatedButton(
+              child: Text('ListView',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeTabBar(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Text',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => HomeText(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('TextField',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => HomeTextField(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Transform',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => HomeTransform(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Others',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => HomeScreenOthers(),
-                  )),
-            ),
-            ElevatedButton(
-              child: Text('Setup/App Dev.',
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-              onPressed: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) => HomeSetUp(),
-                  )),
-            ),
-          ],
-        ),
+                    builder: (BuildContext context) => HomeListView1(),
+                  ))),
+          ElevatedButton(
+            child: Text('Padding',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomePadding(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Row',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeRow(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Slider',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeSlider(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Switch',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeSwitch(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Tab',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeTabBar(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Text',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeText(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('TextField',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeTextField(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Transform',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeTransform(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Others',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeScreenOthers(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Setup/App Dev.',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeSetUp(),
+                )),
+          ),
+        ],
       ),
     );
   }

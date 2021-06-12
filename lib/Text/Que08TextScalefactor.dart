@@ -1,6 +1,6 @@
 // lib\Text\Que08TextScalefactor.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que08TextScale extends StatefulWidget {
   @override

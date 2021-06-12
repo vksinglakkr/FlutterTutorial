@@ -1,6 +1,6 @@
 // lib\Switch\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Switch.dart';
 import 'Que02SwitchOn_OffLight_Bulb.dart';
 import 'Que03SwitchActiveTrackColor.dart';
@@ -16,9 +16,7 @@ class HomeSwitch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Switch'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Switch")),
       body: SafeArea(
         child: Container(
           child: Builder(

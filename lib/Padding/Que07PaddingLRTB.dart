@@ -1,6 +1,6 @@
 // lib\Padding\Que07PaddingLRTB.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 void main() => runApp(Que0711());
 
@@ -16,9 +16,7 @@ class _Que0711State extends State<Que0711> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('PaddingLRTB'),
-        ),
+        appBar: AppBar(title: WidgetAppBar("PaddingLRTB")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(

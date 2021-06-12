@@ -1,6 +1,6 @@
 // lib\SetUpAPK\Que01.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0111 extends StatelessWidget {
   final String url1 = "";
@@ -10,9 +10,7 @@ class Que0111 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('How to create APK?'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("How to create APK?")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

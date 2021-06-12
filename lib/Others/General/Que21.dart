@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que2111 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -8,9 +8,7 @@ class Que2111 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('// TODO?'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("// TODO?")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(
@@ -28,7 +26,7 @@ class Nextpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Next page")),
+        appBar: AppBar(title: WidgetAppBar("Next page")),
         body: Container(child: Text("Welcome to next page $name")));
   }
 }
@@ -41,7 +39,7 @@ class Nextpage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Next page")),
+        appBar: AppBar(title: WidgetAppBar("Next page")),
         body: Container(child: Text("Welcome to next page $name")));
   }
 }
@@ -52,7 +50,7 @@ class Nextpage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Next page")),
+        appBar: AppBar(title: WidgetAppBar("Next page")),
         body: Container(
             child: Text(
                 "For this first we have to set the SDK version in pubspec.yaml i.e. sdk: '>=2.12.0 <3.0.0' but when we set it, other dart files start giving error of null.")));
@@ -66,7 +64,7 @@ class Nextpage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text("Next page")),
+        appBar: AppBar(title: WidgetAppBar("Next page")),
         body: Container(
             child: Text("It will show the error while compile the apk")));
   }

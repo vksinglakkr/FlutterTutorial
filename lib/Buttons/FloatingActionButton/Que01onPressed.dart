@@ -1,6 +1,6 @@
 // lib\Buttons\FloatingActionButton\Que01onPressed.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Floating11 extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _State extends State<Que01Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: new Text("Simple Floating Action Button"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Simple Floating Action Button")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

@@ -1,6 +1,6 @@
 // lib\Padding\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01EdgeInsetsDirectional.dart';
 import 'Que06usingPadding.dart';
 import 'Que07PaddingLRTB.dart';
@@ -11,9 +11,7 @@ class HomePadding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Padding'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Padding")),
       body: SafeArea(
           child: Container(
               child: Builder(

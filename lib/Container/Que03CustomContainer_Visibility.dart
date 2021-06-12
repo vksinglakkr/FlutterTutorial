@@ -1,6 +1,6 @@
 // lib\Container\Que03CustomContainer_Visibility.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0311 extends StatefulWidget {
   @override
@@ -17,6 +17,7 @@ class _Que0311State extends State<Que0311> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Container Visibility '),
       ),

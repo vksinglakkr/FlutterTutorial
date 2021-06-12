@@ -1,6 +1,6 @@
 // lib\Bar\HomeScreen_Bottom.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 import 'Que01BottomNavigationbar.dart';
@@ -14,9 +14,7 @@ class HomeBottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Bottom \nNavigation Bar'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Bottom \nNavigation Bar")),
       body: SafeArea(
         child: Container(
           child: Builder(

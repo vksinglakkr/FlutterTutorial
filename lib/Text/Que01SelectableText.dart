@@ -1,6 +1,6 @@
 // lib\Text\Que01SelectableText.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Text11 extends StatelessWidget {
   final String url1 =
@@ -11,9 +11,7 @@ class Que01Text11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-          appBar: AppBar(
-            title: Text('Text => SelectableText'),
-          ),
+          appBar: AppBar(title: WidgetAppBar("Text => SelectableText")),
           bottomNavigationBar:
               QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
           body: ListView(children: <Widget>[

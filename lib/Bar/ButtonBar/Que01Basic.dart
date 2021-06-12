@@ -1,6 +1,6 @@
 // lib\Bar\Snackbar\Que01Basic.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01ButtonBar11 extends StatefulWidget {
   @override
@@ -23,9 +23,7 @@ class _State extends State<Que01ButtonBar11> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      appBar: AppBar(
-        title: Text('Flutter Tutorial - NIC KKR'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

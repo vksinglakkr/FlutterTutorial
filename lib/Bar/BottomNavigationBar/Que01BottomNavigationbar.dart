@@ -1,6 +1,6 @@
 //lib\Bar\BottomNavigationBar\Que01BottomNavigationbar.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Que01Bottom11 extends StatefulWidget {
@@ -19,12 +19,7 @@ class _Que01Bottom11State extends State<Que01Bottom11> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Bottom Navigation Bar',
-            style: TextStyle(fontSize: 16),
-          ),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Bottom Navigation Bar")),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           //type: BottomNavigationBarType.shifting,
@@ -68,14 +63,7 @@ class _Que01Bottom11State extends State<Que01Bottom11> {
             );
           },
         ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple.shade300,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ),
+        floatingActionButton: WidgetFab(),
       ),
     );
   }
@@ -85,9 +73,7 @@ class MyAppImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
+      appBar: AppBar(title: WidgetAppBar("")),
       body: Container(child: Image.asset("assets/help/Bar/AppBar/Que02.png")),
       floatingActionButton: WidgetFab(),
     );

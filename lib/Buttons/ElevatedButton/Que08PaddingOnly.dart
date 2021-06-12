@@ -1,6 +1,6 @@
 // lib\Buttons\ElevatedButton\Que08PaddingOnly.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que08Elevated11 extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _Que08Elevated11State extends State<Que08Elevated11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Elevated - Padding only'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Elevated - Padding only")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

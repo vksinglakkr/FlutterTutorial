@@ -1,11 +1,10 @@
 // lib\General\Que03runApp_Scaffold.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 void main() => runApp(
       Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Material App Bar")),
         body: Center(
           child: Container(
             child: Text(

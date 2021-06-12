@@ -1,6 +1,6 @@
 // lib\Image\Que04Image.dart
 import 'package:flutter/material.dart';
-import 'BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
 
 //https://flutter.dev/
 class Que04Image11 extends StatelessWidget {
@@ -11,6 +11,7 @@ class Que04Image11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: Text('Image(image:NetworkImage())'),
       ),

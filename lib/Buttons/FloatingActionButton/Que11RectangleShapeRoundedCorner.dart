@@ -1,6 +1,6 @@
 // lib\Buttons\FloatingActionButton\Que11RectangleShapeRoundedCorner.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que11Floating11 extends StatefulWidget {
   @override
@@ -14,6 +14,7 @@ class _Que11Floating11State extends State<Que11Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
         title: new Text(
           "Rectangle Shape Rounded Corner",

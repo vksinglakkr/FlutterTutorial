@@ -6,15 +6,13 @@ import 'Que03DontCloseonTapoutside.dart';
 import 'Que04Elevation.dart';
 import 'Que05BackGroundColor.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
-import '../Image/BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
 
 class HomeAlert extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Alert Dialog Box'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Alert Dialog Box")),
       body: SafeArea(
         child: Container(
           child: Builder(

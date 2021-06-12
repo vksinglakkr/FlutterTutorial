@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que03Custom extends StatelessWidget {
   // This widget is the root of your application.
@@ -37,12 +37,7 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Iconic Buttons \nin AppBar',
-          style: TextStyle(fontSize: 16),
-        ),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Iconic Buttons \nin AppBar")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       backgroundColor: Colors.white.withAlpha(55),

@@ -36,14 +36,7 @@ class _Que02Container11State extends State<Que02Container11> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

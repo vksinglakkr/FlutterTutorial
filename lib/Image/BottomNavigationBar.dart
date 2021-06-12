@@ -81,14 +81,7 @@ class MyAppVideo extends StatelessWidget {
           flags: YoutubePlayerFlags(autoPlay: true, mute: false),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }
@@ -103,14 +96,25 @@ class MyAppImage extends StatelessWidget {
         title: Text(''),
       ),
       body: Container(child: Image.asset(this.image1)),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
+    );
+  }
+}
+
+class WidgetFab extends StatelessWidget {
+  const WidgetFab({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      backgroundColor: Colors.purple.shade300,
+      tooltip: "Go Back",
+      onPressed: () {
+        Navigator.pop(context);
+      },
+      child: Icon(Icons.first_page),
     );
   }
 }

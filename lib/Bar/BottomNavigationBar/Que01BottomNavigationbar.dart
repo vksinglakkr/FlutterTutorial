@@ -89,14 +89,7 @@ class MyAppImage extends StatelessWidget {
         title: Text(''),
       ),
       body: Container(child: Image.asset("assets/help/Bar/AppBar/Que02.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -24,14 +24,7 @@ class Que2711 extends StatelessWidget {
           customContainer(),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 

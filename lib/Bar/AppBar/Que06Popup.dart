@@ -42,14 +42,7 @@ class _Que06Popup11State extends State<Que06Popup11> {
       body: Center(
         child: Text("Selected Day: $_selectedItem"),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

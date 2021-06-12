@@ -6,6 +6,7 @@ import 'Que03DontCloseonTapoutside.dart';
 import 'Que04Elevation.dart';
 import 'Que05BackGroundColor.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
+import '../Image/BottomNavigationBar.dart';
 
 class HomeAlert extends StatelessWidget {
   @override
@@ -99,14 +100,7 @@ class HomeAlert extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -38,14 +38,7 @@ class QueDynamic11 extends StatelessWidget {
           ),
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

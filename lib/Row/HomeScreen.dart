@@ -1,5 +1,6 @@
 // lib\Row\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'Que01Basic.dart';
 import 'Que02Expanded.dart';
 import 'Que03Simple.dart';
@@ -51,14 +52,7 @@ class HomeRow extends StatelessWidget {
           ],
         ),
       ))),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

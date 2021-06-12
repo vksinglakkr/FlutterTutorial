@@ -43,14 +43,7 @@ class Que3511 extends StatelessWidget {
           Center(child: Text("ListView/Que35ListViewBuilder.dart"))
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

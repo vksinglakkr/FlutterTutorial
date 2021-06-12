@@ -50,14 +50,7 @@ class _State extends State<Que3011> {
                 })),
         Center(child: Text("ListView/Que30BuilderListView.dart")),
       ]),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

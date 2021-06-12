@@ -50,14 +50,7 @@ class _Que09TextSemanticsState extends State<Que09TextSemantics> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

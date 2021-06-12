@@ -1,5 +1,6 @@
 // lib\Theme\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Others/General/Que01General_Base.dart';
 import 'package:flutter_tutorial/Others/General/Que05return_MaterialApp_Container.dart';
 import 'package:flutter_tutorial/Others/General/Que06return_Container.dart';
@@ -232,14 +233,7 @@ class HomeGeneral extends StatelessWidget {
           ],
         ),
       ))),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

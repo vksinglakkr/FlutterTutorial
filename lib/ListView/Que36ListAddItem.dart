@@ -81,14 +81,7 @@ class _State extends State<Que3611> {
         SizedBox(height: 5),
         Center(child: Text("ListView/Que36ListAddItem.dart"))
       ]),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -1,5 +1,6 @@
 // lib\Assignments\HomeScreen_Assignments.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'Que01Assignment1.dart';
 import 'Que02GridView_ClipRRect_Material.dart';
 import 'Que03IncreaseFontSize.dart';
@@ -60,14 +61,7 @@ class HomeAssignments extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

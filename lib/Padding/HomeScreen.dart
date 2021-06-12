@@ -1,5 +1,6 @@
 // lib\Padding\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'Que01EdgeInsetsDirectional.dart';
 import 'Que06usingPadding.dart';
 import 'Que07PaddingLRTB.dart';
@@ -52,14 +53,7 @@ class HomePadding extends StatelessWidget {
           ],
         ),
       ))),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

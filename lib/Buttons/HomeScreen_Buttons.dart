@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Bar/AppBar/HomeScreen_AppBar.dart';
 import 'package:flutter_tutorial/Bar/ButtonBar/HomeScreen_ButtonBar.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'ElevatedButton/HomeScreen_Elevated.dart';
 import 'FlatButton/HomeScreen_Flat.dart';
 import 'FloatingActionButton/HomeScreen_Floating.dart';
@@ -124,14 +125,7 @@ class HomeButton extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

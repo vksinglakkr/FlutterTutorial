@@ -1,5 +1,6 @@
 // lib\Tab\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'Que01Basic.dart';
 import 'Que02WithoutTabBar.dart';
 import 'Que03OnlyDefaultTabController.dart';
@@ -129,14 +130,7 @@ class _HomeTabBarState extends State<HomeTabBar> {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

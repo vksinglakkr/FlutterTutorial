@@ -62,14 +62,7 @@ class Que1111 extends StatelessWidget {
           Center(child: Text("ListView/Que11MixListView.dart"))
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

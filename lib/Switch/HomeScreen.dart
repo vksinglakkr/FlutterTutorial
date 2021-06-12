@@ -1,5 +1,6 @@
 // lib\Switch\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'Que01Switch.dart';
 import 'Que02SwitchOn_OffLight_Bulb.dart';
 import 'Que03SwitchActiveTrackColor.dart';
@@ -132,14 +133,7 @@ class HomeSwitch extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: "Go Back",
-        backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

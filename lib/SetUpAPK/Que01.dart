@@ -1,12 +1,11 @@
 // lib\SetUpAPK\Que01.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que0111 extends StatelessWidget {
-  launchURL() {
-    launch('https://morioh.com/p/5615675eecdd');
-  }
+  final String url1 = "";
+  final String image1 = "assets/help/SetUpAPK/APK.png";
+  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {
@@ -14,41 +13,10 @@ class Que0111 extends StatelessWidget {
       appBar: AppBar(
         title: Text('How to create APK?'),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(
         children: [
-          Card(
-            elevation: 5,
-            color: Colors.orange[800],
-            margin: EdgeInsets.all(2),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.info),
-                  color: Colors.white,
-                  onPressed: launchURL,
-                ),
-                IconButton(
-                    icon: const Icon(Icons.image),
-                    color: Colors.white,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppImage()),
-                      );
-                    }),
-                IconButton(
-                    icon: const Icon(Icons.play_arrow),
-                    color: Colors.white,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppVideo()),
-                      );
-                    }),
-              ],
-            ),
-          ),
           SizedBox(
             height: 60,
             child: Card(
@@ -64,54 +32,6 @@ class Que0111 extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('How to create APK?'),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: 'GqUv-t9LlQ8',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Setting of Internet..'),
-      ),
-      body: Center(
-          child: Container(
-        child: Image.asset("assets/help/SetUpAPK/APK.png"),
-      )),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",

@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que0211 extends StatelessWidget {
+  final String url1 = "https://flutter.dev/";
+  final String image1 = "";
+  final String video1 = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +29,8 @@ class Que0211 extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       drawer: Drawer(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade300,

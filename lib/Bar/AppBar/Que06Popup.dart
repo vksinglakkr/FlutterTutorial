@@ -1,5 +1,6 @@
 // lib\Bar\AppBar\Que06Popup.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que06Popup11 extends StatefulWidget {
   @override
@@ -7,6 +8,9 @@ class Que06Popup11 extends StatefulWidget {
 }
 
 class _Que06Popup11State extends State<Que06Popup11> {
+  final String url1 = "";
+  final String image1 = "assets/help/";
+  final String video1 = "";
   String _selectedItem = 'Sun';
   List _options = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -33,6 +37,8 @@ class _Que06Popup11State extends State<Que06Popup11> {
           ),
         ],
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(
         child: Text("Selected Day: $_selectedItem"),
       ),

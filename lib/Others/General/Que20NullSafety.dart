@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que20NullSafety11 extends StatelessWidget {
+  final String url1 = "";
+  final String image1 = "";
+  final String video1 = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Null Safety?'),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(
         child: Column(
           children: [

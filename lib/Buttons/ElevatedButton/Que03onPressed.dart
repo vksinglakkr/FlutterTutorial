@@ -48,24 +48,3 @@ class _State extends State<Que03Elevated11> {
     );
   }
 }
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(
-          child: Image.asset("assets/help/Buttons/ElevatedButton/Que03.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}

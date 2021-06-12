@@ -1,14 +1,11 @@
 // lib\Text\Que01aProperties.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que01aText11 extends StatelessWidget {
-  launchURL() {
-    launch(
-        'https://flutter.dev/?gclsrc=aw.ds&gclid=EAIaIQobChMI8t3I3Mvw8AIVQUwrCh3DUgfCEAAYASAAEgIlhvD_BwE');
-  }
-
+  final String url1 = "";
+  final String image1 = "assets/help/Text/Que01a.png";
+  final String video1 = "";
 //final String '$$'; semanticsLabel;
   @override
   Widget build(BuildContext context) {
@@ -16,41 +13,9 @@ class Que01aText11 extends StatelessWidget {
       appBar: AppBar(
         title: Text('Text => Properties'),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: ListView(children: <Widget>[
-        Card(
-          elevation: 5,
-          color: Colors.black12,
-          margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.info),
-                color: Colors.black,
-                onPressed: launchURL,
-              ),
-              IconButton(
-                  icon: const Icon(Icons.image),
-                  color: Colors.black,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => MyAppImage()),
-                    );
-                  }),
-              IconButton(
-                  icon: const Icon(Icons.play_arrow),
-                  color: Colors.black,
-//                  onPressed: launchURL,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => MyAppVideo()),
-                    );
-                  }),
-            ],
-          ),
-        ),
         Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
         Container(
             margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
@@ -109,56 +74,6 @@ class Que01aText11 extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
         backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  launchURL() {
-    launch(
-        'https://api.flutter.dev/flutter/material/SelectableText-class.html');
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => Properties'),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Text => Properties'),
-      ),
-      body: Container(child: Image.asset("assets/help/Text/Que01a.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
         },

@@ -2,8 +2,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que07TextSpan extends StatefulWidget {
   @override
@@ -11,9 +10,9 @@ class Que07TextSpan extends StatefulWidget {
 }
 
 class _Que07TextSpanState extends State<Que07TextSpan> {
-  launchURL() {
-    launch('https://flutter.dev/');
-  }
+  final String url1 = "";
+  final String image1 = "assets/help/Text/Que07.png";
+  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +20,8 @@ class _Que07TextSpanState extends State<Que07TextSpan> {
       appBar: new AppBar(
         title: new Text('Text => TextSpan Property'),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Container(
         margin: EdgeInsets.all(8),
         child: ListView(
@@ -80,51 +81,6 @@ class _Que07TextSpanState extends State<Que07TextSpan> {
       floatingActionButton: FloatingActionButton(
         tooltip: "Go Back",
         backgroundColor: Colors.purple.shade300,
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(child: Image.asset("assets/help/Text/Que07.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
         onPressed: () {
           Navigator.pop(context);
         },

@@ -1,11 +1,16 @@
 // lib\Bar\AppBar\Que01Actions.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que01Actions11 extends StatelessWidget {
+  final String url1 = "";
+  final String image1 = "assets/help/Box/Box_RotatedBox/Que01.png";
+  final String video1 = "";
   launchURL() {
-    launch('');
+    launch(
+        'https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html');
   }
 
   @override
@@ -42,6 +47,8 @@ class Que01Actions11 extends StatelessWidget {
               }),
         ],
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",
@@ -78,28 +85,3 @@ class MyAppVideo extends StatelessWidget {
     );
   }
 }
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(
-          child: Image.asset("assets/help/Box/Box_RotatedBox/Que01.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-
-
-//Note https://www.youtube.com/watch?v=BFE6_UglLfQ

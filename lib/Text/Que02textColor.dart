@@ -1,7 +1,6 @@
 // lib\Text\Que02textColor.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que02Text11 extends StatefulWidget {
   @override
@@ -9,9 +8,9 @@ class Que02Text11 extends StatefulWidget {
 }
 
 class _Que02Text11State extends State<Que02Text11> {
-  launchURL() {
-    launch('https://youtube.com/watch?v=');
-  }
+  final String url1 = "";
+  final String image1 = "assets/help/Text/Que02.png";
+  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +19,8 @@ class _Que02Text11State extends State<Que02Text11> {
         appBar: AppBar(
           title: Text('Text => Color Property'),
         ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: ListView(
           children: [
             Card(
@@ -44,11 +45,6 @@ class _Que02Text11State extends State<Que02Text11> {
                   Text(
                     'style:TextStyle(color: Color.red,)',
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.play_arrow),
-                    color: Colors.white,
-                    onPressed: launchURL,
                   ),
                 ],
               ),
@@ -143,51 +139,6 @@ class _Que02Text11State extends State<Que02Text11> {
           },
           child: Icon(Icons.first_page),
         ),
-      ),
-    );
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(child: Image.asset("assets/help/Text/Que02.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
       ),
     );
   }

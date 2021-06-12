@@ -1,7 +1,6 @@
 // lib\Padding\Que06usingPadding.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que0611 extends StatefulWidget {
   @override
@@ -9,9 +8,9 @@ class Que0611 extends StatefulWidget {
 }
 
 class _Que0611State extends State<Que0611> {
-  launchURL() {
-    launch('https://flutter.dev/');
-  }
+  final String url1 = "";
+  final String image1 = "assets/help/Padding/Que06.png";
+  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {
@@ -19,42 +18,10 @@ class _Que0611State extends State<Que0611> {
         appBar: AppBar(
           title: Text('Padding'),
         ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(
           children: [
-            Card(
-              elevation: 5,
-              color: Colors.black38,
-              margin: EdgeInsets.all(2),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.info),
-                    color: Colors.black,
-                    onPressed: launchURL,
-                  ),
-                  IconButton(
-                      icon: const Icon(Icons.image),
-                      color: Colors.black,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppImage()),
-                        );
-                      }),
-                  IconButton(
-                      icon: const Icon(Icons.play_arrow),
-                      color: Colors.black,
-//                  onPressed: launchURL,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => MyAppVideo()),
-                        );
-                      }),
-                ],
-              ),
-            ),
             Center(
                 child: Column(children: <Widget>[
               Container(
@@ -88,50 +55,5 @@ class _Que0611State extends State<Que0611> {
           },
           child: Icon(Icons.first_page),
         ));
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(child: Image.asset("assets/help/Padding/Que06.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
   }
 }

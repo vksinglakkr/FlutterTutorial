@@ -1,7 +1,6 @@
 // lib\Buttons\FloatingActionButton\Que00BasicFAB.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 void main() {
   runApp(MyApp());
@@ -62,9 +61,9 @@ class _MyHomePage11State extends State<MyHomePage11> {
     });
   }
 
-  launchURL() {
-    launch('');
-  }
+  final String url1 = "";
+  final String image1 = "assets/help/Buttons/FloatingActionButton/Que00.png";
+  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {
@@ -80,42 +79,11 @@ class _MyHomePage11State extends State<MyHomePage11> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+
       body: Column(
         children: [
-          Card(
-            elevation: 5,
-            color: Colors.black38,
-            margin: EdgeInsets.all(2),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.info),
-                  color: Colors.black,
-                  onPressed: launchURL,
-                ),
-                IconButton(
-                    icon: const Icon(Icons.image),
-                    color: Colors.black,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppImage()),
-                      );
-                    }),
-                IconButton(
-                    icon: const Icon(Icons.play_arrow),
-                    color: Colors.black,
-//                  onPressed: launchURL,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppVideo()),
-                      );
-                    }),
-              ],
-            ),
-          ),
           Center(
             // Center is a layout widget. It takes a single child and positions it
             // in the middle of the parent.
@@ -154,53 +122,6 @@ class _MyHomePage11State extends State<MyHomePage11> {
         child: Icon(Icons.add),
       ),
       // This trailing comma makes auto-formatting nicer for build methods.
-    );
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(
-          child: Image.asset(
-              "assets/help/Buttons/FloatingActionButton/Que00.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
     );
   }
 }

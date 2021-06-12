@@ -1,17 +1,15 @@
 // lib\Text\Que01strutStyle.dart
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que01strut extends StatelessWidget {
-  launchURL() {
-    launch('https://nicksnettravels.builttoroam.com/flutter-text-widget/');
-  }
-
-  launchURL1() {
-    launch(
-        'https://medium.com/@najeira/control-text-height-using-strutstyle-4b9b5151668b');
-  }
+  final String url1 =
+      "https://medium.com/@najeira/control-text-height-using-strutstyle-4b9b5151668b";
+  final String image1 = "assets/help/Text/Que01strutStyle.png";
+  final String video1 = "9z_YNlRlWfA";
+  // launchURL() {
+  //  launch('https://nicksnettravels.builttoroam.com/flutter-text-widget/');
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +19,8 @@ class Que01strut extends StatelessWidget {
       appBar: AppBar(
         title: Text('Text=>Properties=>strutStyle'),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(
         child: Column(children: [
           //Setting the strutStyle property gives you the ability to fine-tune the
@@ -28,45 +28,6 @@ class Que01strut extends StatelessWidget {
           //Text widgets that have differing font style and sizes, you can specify
           //the strutStyle to ensure the same spacing between each row.
           //https://nicksnettravels.builttoroam.com/flutter-text-widget/
-          Card(
-            elevation: 5,
-            color: Colors.black38,
-            margin: EdgeInsets.all(2),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                IconButton(
-                  icon: const Icon(Icons.info),
-                  color: Colors.black,
-                  onPressed: launchURL,
-                ),
-                IconButton(
-                  icon: const Icon(Icons.info),
-                  color: Colors.black,
-                  onPressed: launchURL1,
-                ),
-                IconButton(
-                    icon: const Icon(Icons.image),
-                    color: Colors.black,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppImage()),
-                      );
-                    }),
-                IconButton(
-                    icon: const Icon(Icons.play_arrow),
-                    color: Colors.black,
-//                  onPressed: launchURL,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppVideo()),
-                      );
-                    }),
-              ],
-            ),
-          ),
           Text(str1,
               style: TextStyle(fontSize: 12),
               strutStyle: StrutStyle(fontSize: 13)),
@@ -142,52 +103,6 @@ class Que01strut extends StatelessWidget {
           ),
         ]),
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('StruStyle'),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('StruStyle'),
-      ),
-      body:
-          Container(child: Image.asset("assets/help/Text/Que01strutStyle.png")),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.purple.shade300,
         tooltip: "Go Back",

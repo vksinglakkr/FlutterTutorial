@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:flutter_tutorial/Image/BottomNavigationBar.dart';
 
 class Que03Custom extends StatelessWidget {
   // This widget is the root of your application.
@@ -25,15 +24,13 @@ class BottomNavBarV2 extends StatefulWidget {
 
 class _BottomNavBarV2State extends State<BottomNavBarV2> {
   int currentIndex = 0;
-
+  final String url1 = "https://morioh.com/p/69fabbe896f7";
+  final String image1 = "assets/help/";
+  final String video1 = "1ToqYMSnNhA";
   setBottomBarIndex(index) {
     setState(() {
       currentIndex = index;
     });
-  }
-
-  launchURL() {
-    launch('https://morioh.com/p/69fabbe896f7');
   }
 
   @override
@@ -45,33 +42,9 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
           'Iconic Buttons \nin AppBar',
           style: TextStyle(fontSize: 16),
         ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.info),
-            color: Colors.black,
-            onPressed: launchURL,
-          ),
-          IconButton(
-              icon: const Icon(Icons.image),
-              color: Colors.black,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyAppImage()),
-                );
-              }),
-          IconButton(
-              icon: const Icon(Icons.play_arrow),
-              color: Colors.black,
-//                  onPressed: launchURL,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyAppVideo()),
-                );
-              }),
-        ],
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       backgroundColor: Colors.white.withAlpha(55),
       body: Stack(
         children: [
@@ -187,50 +160,5 @@ class BNBCustomPainter extends CustomPainter {
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
     return false;
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: '1ToqYMSnNhA',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
-  }
-}
-
-class MyAppImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
-      ),
-      body: Container(child: Image.asset("assets/help/Text/Que01.png")),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.purple.shade300,
-        tooltip: "Go Back",
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        child: Icon(Icons.first_page),
-      ),
-    );
   }
 }

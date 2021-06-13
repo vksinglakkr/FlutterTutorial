@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+//import 'package:flutter_tutorial/Image/Que03Image.dart';
+import 'package:widget_with_codeview/widget_with_codeview.dart';
+
 
 class QueBottom extends StatefulWidget {
   final String urlName, imageName, videoUrlId;
@@ -127,3 +130,19 @@ class WidgetAppBar extends StatelessWidget {
     );
   }
 }
+
+class WidgetCode extends StatelessWidget {
+  final Widget a1;
+  final String s1;
+   WidgetCode(this.a1,this.s1);
+  @override
+  Widget build(BuildContext context) {
+    return WidgetWithCodeView(
+      child: a1,
+      sourceFilePath: s1,
+      codeLinkPrefix:
+          "https://github.com/vksinglakkr/FlutterTutorial/blob/master/" + s1,
+    );
+  }
+}
+

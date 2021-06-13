@@ -1,7 +1,8 @@
 // lib\Image\HomeScreen_Image.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
+
 import 'Que00Image.dart';
 import 'Que01Image.dart';
 import 'Que02Image.dart';
@@ -14,6 +15,7 @@ import 'Que08Image.dart';
 import 'Que09Image.dart';
 import 'Que10Image.dart';
 import 'Clipping/Que01Clip.dart';
+import 'Clipping/Que04Clip.dart';
 
 import 'Clipping/Que05Clip.dart';
 import 'Clipping/Que06Clip.dart';
@@ -21,7 +23,6 @@ import 'Clipping/Que07Clip.dart';
 import 'Clipping/Que08Clip.dart';
 import 'Clipping/Que09Clip.dart';
 import 'Clipping/Que10Clip.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 //String s1 = "lib/Image/Que03Image.dart";
 
@@ -47,7 +48,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que00Image()));
+                                builder: (context) =>  WidgetCode(Que00Image11(),"lib/Image/Que00Image.dart")));
                       }),
                 ),
                 Container(
@@ -57,12 +58,11 @@ class HomeImage extends StatelessWidget {
                       child: Text('Image(image: AssetImage())',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que01Image()));
+                                builder: (context) =>  WidgetCode(Que01Image11(),"lib/Image/Que01Image.dart")));
                       }),
                 ),
                 Container(
@@ -77,7 +77,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que02Image()));
+                                builder: (context) =>  WidgetCode(Que02Image11(),"lib/Image/Que02Image.dart")));
                       }),
                 ),
                 Container(
@@ -87,12 +87,11 @@ class HomeImage extends StatelessWidget {
                       child: Text('Image.network()',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que03Image()));
+                                builder: (context) => WidgetCode(Que03Image11(),"lib/Image/Que03Image.dart")));
                       }),
                 ),
                 Container(
@@ -102,12 +101,11 @@ class HomeImage extends StatelessWidget {
                       child: Text('Image(image:NetworkImage())',
                           style: TextStyle(
                               fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
                       onPressed: () {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que04Image()));
+                                builder: (context) => WidgetCode(Que04Image11(),"lib/Image/Que04Image.dart")));
                       }),
                 ),
                 Container(
@@ -121,7 +119,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que05Image()));
+                                builder: (context) =>  WidgetCode(Que05Image11(),"lib/Image/Que05Image.dart")));
                       }),
                 ),
                 Container(
@@ -135,7 +133,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que06Image()));
+                                builder: (context) =>  WidgetCode(Que06Image11(),"lib/Image/Que06Image.dart")));
                       }),
                 ),
                 Container(
@@ -149,7 +147,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que07Image()));
+                                builder: (context) =>  WidgetCode(Que07Image11(),"lib/Image/Que07Image.dart")));
                       }),
                 ),
                 Container(
@@ -163,7 +161,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que08Image()));
+                                builder: (context) =>  WidgetCode(Que08Image11(),"lib/Image/Que08Image.dart")));
                       }),
                 ),
                 Container(
@@ -177,7 +175,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que19DecoraText()));
+                                builder: (context) => WidgetCode(Que19Deco(),"lib/Text/Que19DecorationImageOvertext.dart")));
                       }),
                 ),
                 Container(
@@ -191,7 +189,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que09Image()));
+                                builder: (context) => WidgetCode(Que09Image11(),"lib/Image/Que09Image.dart")));
                       }),
                 ),
                 Container(
@@ -205,7 +203,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que10Image()));
+                                builder: (context) => WidgetCode(Que10Image11(),"lib/Image/Que10Image.dart")));
                       }),
                 ),
                 Container(
@@ -220,7 +218,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que01Clip()));
+                                builder: (context) => WidgetCode(Que01Clip11(),"lib/Image/Clipping/Que01Clip.dart")));
                       }),
                 ),
                 Container(
@@ -235,7 +233,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que07Clip()));
+                                builder: (context) => WidgetCode(Que07Clip11(),"lib/Image/Clipping/Que07Clip.dart")));
                       }),
                 ),
                 Container(
@@ -250,7 +248,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que04Image()));
+                                builder: (context) => WidgetCode(Que04Clip11(),"lib/Image/Clipping/Que04Clip.dart")));
                       }),
                 ),
                 Container(
@@ -265,7 +263,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que05Clip()));
+                                builder: (context) => WidgetCode(Que05Clip11(),"lib/Image/Clipping/Que05Clip.dart")));
                       }),
                 ),
                 Container(
@@ -280,7 +278,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que06Clip()));
+                                builder: (context) => WidgetCode(Que06Clip11(),"lib/Image/Clipping/Que06Clip.dart")));
                       }),
                 ),
                 Container(
@@ -295,7 +293,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que08Clip()));
+                                builder: (context) => WidgetCode(Que08Clip11(),"lib/Image/Clipping/Que08Clip.dart")));
                       }),
                 ),
                 Container(
@@ -310,7 +308,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que09Clip()));
+                                builder: (context) => WidgetCode(Que09Clip11(),"lib/Image/Clipping/Que09Clip.dart")));
                       }),
                 ),
                 Container(
@@ -325,7 +323,7 @@ class HomeImage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Que10Clip()));
+                                builder: (context) => WidgetCode(Que10Clip11(),"lib/Image/Clipping/Que10Clip.dart")));
                       }),
                 ),
               ],
@@ -338,231 +336,3 @@ class HomeImage extends StatelessWidget {
   }
 }
 
-class Que01Clip extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Clip11(),
-      sourceFilePath: 'lib/Image/Clipping/Que01Clip.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Clipping/Que01Clip.dart',
-    );
-  }
-}
-
-class Que04Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que04Image11(),
-      sourceFilePath: 'lib/Image/Que04Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que04Image.dart',
-    );
-  }
-}
-
-class Que05Clip extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que05Clip11(),
-      sourceFilePath: 'lib/Image/Clipping/Que05Clip.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que05Clip.dart',
-    );
-  }
-}
-
-class Que06Clip extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que06Clip11(),
-      sourceFilePath: 'lib/Image/Clipping/Que06Clip.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que06Clip.dart',
-    );
-  }
-}
-
-class Que07Clip extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que07Clip11(),
-      sourceFilePath: 'lib/Image/Clipping/Que07Clip.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que07Clip.dart',
-    );
-  }
-}
-
-class Que08Clip extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que08Clip11(),
-      sourceFilePath: 'lib/Image/Clipping/Que08Clip.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Clipping/Que08Clip.dart',
-    );
-  }
-}
-
-class Que09Clip extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que09Clip11(),
-      sourceFilePath: 'lib/Image/Clipping/Que09Clip.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Clipping/Que09Clip.dart',
-    );
-  }
-}
-
-class Que10Clip extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que10Clip11(),
-      sourceFilePath: 'lib/Image/Clipping/Que10Clip.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Clipping/Que10Clip.dart',
-    );
-  }
-}
-
-class Que00Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que00Image11(),
-      sourceFilePath: 'lib/Image/Que00Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que00Image.dart',
-    );
-  }
-}
-
-class Que01Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Image11(),
-      sourceFilePath: 'lib/Image/Que01Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que01Image.dart',
-    );
-  }
-}
-
-class Que02Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02Image11(),
-      sourceFilePath: 'lib/Image/Que02Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que02Image.dart',
-    );
-  }
-}
-
-class Que03Image extends StatelessWidget {
-  final String s1 = "lib/Image/Que03Image.dart";
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que03Image11(),
-      sourceFilePath: s1,
-      codeLinkPrefix:
-          "https://github.com/vksinglakkr/FlutterTutorial/blob/master/" + s1,
-    );
-  }
-}
-
-class Que05Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que05Image11(),
-      sourceFilePath: 'lib/Image/Que05Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que05Image.dart',
-    );
-  }
-}
-
-class Que06Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que06Image11(),
-      sourceFilePath: 'lib/Image/Que06Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que06Image.dart',
-    );
-  }
-}
-
-class Que07Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que07Image11(),
-      sourceFilePath: 'lib/Image/Que07Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que07Image.dart',
-    );
-  }
-}
-
-class Que08Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que08Image11(),
-      sourceFilePath: 'lib/Image/Que08Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que08Image.dart',
-    );
-  }
-}
-
-class Que09Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que09Image11(),
-      sourceFilePath: 'lib/Image/Que09Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que09Image.dart',
-    );
-  }
-}
-
-class Que10Image extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que10Image11(),
-      sourceFilePath: 'lib/Image/Que10Image.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que10Image.dart',
-    );
-  }
-}
-
-class Que19DecoraText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que19Deco(),
-      sourceFilePath: 'lib/Text/Que19DecorationImageOvertext.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que19DecorationImageOvertext.dart',
-    );
-  }
-}

@@ -22,10 +22,7 @@ class _Que2911State extends State<Que2911> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: new Text("Fonts Family"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Fonts Family")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

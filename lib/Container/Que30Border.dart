@@ -15,10 +15,8 @@ class _Que3011State extends State<Que3011> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Border'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Border")),
+  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

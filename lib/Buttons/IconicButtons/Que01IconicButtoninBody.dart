@@ -11,13 +11,7 @@ class Que01Iconic11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("")),
-        appBar: AppBar(
-          title: Text(
-            'Iconic Buttons \nin Body',
-            style: TextStyle(fontSize: 16),
-          ),
-        ),
+        appBar: AppBar(title: WidgetAppBar("Iconic Buttons \nin Body")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: ListView(children: <Widget>[

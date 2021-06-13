@@ -11,10 +11,8 @@ class Que03Image11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Image.network()'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Image.network()")),
+     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

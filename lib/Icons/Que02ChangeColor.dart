@@ -15,10 +15,7 @@ class _Que0211State extends State<Que0211> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('PaddingLRTB'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Icons-ChangeColor")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(

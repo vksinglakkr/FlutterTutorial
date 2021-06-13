@@ -10,10 +10,8 @@ class Que1811 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Color '),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Color ")),
+  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

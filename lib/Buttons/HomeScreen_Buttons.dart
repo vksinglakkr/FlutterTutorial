@@ -13,10 +13,7 @@ class HomeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Buttons'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Buttons")),
       body: SafeArea(
         child: Container(
           child: Builder(

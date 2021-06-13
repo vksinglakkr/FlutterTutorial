@@ -14,10 +14,7 @@ class _Que09Floating11State extends State<Que09Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: new Text("Diamond Shape"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Diamond Shape")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(

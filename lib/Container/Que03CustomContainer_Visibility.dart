@@ -17,10 +17,8 @@ class _Que0311State extends State<Que0311> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Container Visibility '),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Container Visibility ")),
+     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

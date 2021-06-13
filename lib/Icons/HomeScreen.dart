@@ -9,10 +9,7 @@ class HomeIcons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Icons'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Icons")),
       body: SafeArea(
           child: Container(
               child: Builder(

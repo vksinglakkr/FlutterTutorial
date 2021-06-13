@@ -8,10 +8,7 @@ class HomeDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Drawer'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Drawer")),
       body: SafeArea(
           child: Container(
               child: Builder(

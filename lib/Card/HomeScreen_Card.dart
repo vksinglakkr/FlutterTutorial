@@ -8,10 +8,7 @@ class HomeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Card'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Card")),
       body: SafeArea(
         child: Container(
           child: Builder(

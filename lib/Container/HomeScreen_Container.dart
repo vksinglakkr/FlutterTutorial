@@ -39,10 +39,7 @@ class HomeContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Container'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Container")),
       body: SafeArea(
         child: Container(
           child: Builder(

@@ -12,14 +12,7 @@ class Que0111 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(),
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text("Home"),
-//        backgroundColor: Colors.green,
-        // leading: BackButton(
-        //   color: Colors.purple,
-        // ),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Home")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

@@ -16,10 +16,8 @@ class _Que9911State extends State<Que9911> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Animated Opacity'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Animated Opacity")),
+  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

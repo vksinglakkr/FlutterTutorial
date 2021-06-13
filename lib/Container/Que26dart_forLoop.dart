@@ -10,10 +10,8 @@ class Que2611 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('for..loop'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("for..loop")),
+  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: ListView(

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+import '../pages/BottomNavigationBar.dart';
 
 class Que0211 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -8,13 +8,8 @@ class Que0211 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
       appBar: AppBar(
-        title: Text(
-          "Home",
-          style: TextStyle(fontSize: 18, color: Colors.white70),
-        ),
-        elevation: 10,
+        title: WidgetAppBar("Home"),
         actions: [
           Padding(
             padding: EdgeInsets.all(8.0),

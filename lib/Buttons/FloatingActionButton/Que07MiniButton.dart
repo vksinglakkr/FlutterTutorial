@@ -14,10 +14,7 @@ class _Que07Floating11State extends State<Que07Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: new Text("Mini Size"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Mini Size")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(

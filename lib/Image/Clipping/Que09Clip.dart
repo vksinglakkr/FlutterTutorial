@@ -11,10 +11,8 @@ class Que09Clip11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('ClipPath Assignment2'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("ClipPath Assignment2")),
+     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

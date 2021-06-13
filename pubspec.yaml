@@ -75,6 +75,7 @@ flutter:
     - lib/Buttons/FlatButton/
     - lib/Buttons/FloatingActionButton/
     - lib/Buttons/RadioButton/
+    - lib/Buttons/IconicButtons/
     - lib/Card/
     - lib/Comments/
     - lib/Container/
@@ -123,6 +124,7 @@ flutter:
     - assets/help/Buttons/FlatButton/
     - assets/help/Buttons/FloatingActionButton/
     - assets/help/Buttons/RadioButton/
+    - assets/help/Buttons/IconicButtons/
     - assets/help/Card/
     - assets/help/Comments/
     - assets/help/Container/
@@ -145,6 +147,7 @@ flutter:
     - assets/help/Others/Visibility/
     - assets/help/Others/General/
     - assets/help/Padding/
+    - assets/help/ListView/
     - assets/help/Properties/
     - assets/help/Row/
     - assets/help/Slider/

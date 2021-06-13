@@ -14,13 +14,7 @@ class _Que11Floating11State extends State<Que11Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: new Text(
-          "Rectangle Shape Rounded Corner",
-          style: TextStyle(fontSize: 16),
-        ),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Rectangle Shape Rounded Corner")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(

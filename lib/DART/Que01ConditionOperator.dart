@@ -27,10 +27,8 @@ class _State extends State<Que01> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('ListView Builder'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("ListView Builder")),
+
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(children: <Widget>[

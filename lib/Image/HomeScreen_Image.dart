@@ -27,10 +27,8 @@ class HomeImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Image'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Image")),
+     
       body: SafeArea(
         child: Container(
           child: Builder(

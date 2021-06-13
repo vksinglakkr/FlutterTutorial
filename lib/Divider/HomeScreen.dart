@@ -8,10 +8,7 @@ class HomeDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Divider'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Divider")),
       body: SafeArea(
           child: Container(
               child: Builder(

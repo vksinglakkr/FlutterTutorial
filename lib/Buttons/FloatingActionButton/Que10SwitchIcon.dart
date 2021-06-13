@@ -19,10 +19,7 @@ class _Que10Floating11State extends State<Que10Floating11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: new Text("Switch Icon"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Switch Icon")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(

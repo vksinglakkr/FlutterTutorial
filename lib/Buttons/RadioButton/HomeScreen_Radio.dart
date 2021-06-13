@@ -8,10 +8,7 @@ class HomeRadio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Radio Button'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Radio Button")),
       body: SafeArea(
         child: Container(
           child: Builder(

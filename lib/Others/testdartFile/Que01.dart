@@ -3,31 +3,18 @@ import 'package:flutter/material.dart';
 class Que01Test extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text(
-          "Home",
-          style: TextStyle(fontSize: 18, color: Colors.white70),
+    return MaterialApp(
+      title: 'Material App',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Material App Bar'),
         ),
-        elevation: 10,
-        backgroundColor: Colors.blue,
-        actions: [
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Icon(Icons.search),
+        body: Center(
+          child: Container(
+            child: Text('Hello World'),
           ),
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Icon(Icons.notifications),
-          ),
-          Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Icon(Icons.more_vert),
-          ),
-        ],
+        ),
       ),
-      drawer: Drawer(),
     );
   }
 }

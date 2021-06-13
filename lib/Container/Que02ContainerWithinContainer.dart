@@ -15,10 +15,8 @@ class _Que02Container11State extends State<Que02Container11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Container within Container'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Container within Container")),
+     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

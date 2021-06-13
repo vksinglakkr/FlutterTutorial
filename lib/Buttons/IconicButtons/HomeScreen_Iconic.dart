@@ -11,13 +11,7 @@ class HomeIconic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text(
-          'Iconic \nButtons',
-          style: TextStyle(fontSize: 16),
-        ),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Iconic \nButtons")),
       body: SafeArea(
         child: Container(
           child: Builder(

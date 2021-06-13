@@ -11,10 +11,8 @@ class Que07Clip11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('ClipRRect/BorderRadius/BoxFit'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("ClipRRect/BorderRadius/BoxFit")),
+     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

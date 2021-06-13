@@ -8,10 +8,7 @@ class HomeCustomWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('CustomWidgets'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("CustomWidgets")),
       body: SafeArea(
           child: Container(
               child: Builder(

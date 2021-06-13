@@ -15,10 +15,8 @@ class _Que9711State extends State<Que9711> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: Text('Custom Container 2'),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Custom Container 2")),
+  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: SingleChildScrollView(

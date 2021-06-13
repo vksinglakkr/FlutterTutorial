@@ -20,10 +20,7 @@ class _Que0111State extends State<Que0111> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      appBar: AppBar(
-        title: new Text("Padding"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("Change Icon")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: FloatingActionButton(

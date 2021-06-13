@@ -40,414 +40,400 @@ class HomeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Container")),
-      body: SafeArea(
-        child: Container(
-          child: Builder(
-            builder: (context) => ListView(
-              padding: EdgeInsets.all(3.0),
-              children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('OpacityGesterDetector',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Container()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Container within Container',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que02Container()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Container Visibility',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que03()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Width, Height Constraints',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que12()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Media Query',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que13()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Check width height with column',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que14()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Transform',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que15()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Align',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que16()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Alignment',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que16a()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Padding',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que17()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Color',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que18()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('margin',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que19()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Decoration Border',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que20()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Container Stack Positioned',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que21()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('decoration.. border radius',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que22()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('shape',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que23()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('boxShadow',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que24()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('FlutterLogo',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que25()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('dart..forLoop',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que26()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Custom Container',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que27()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('gradient',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que28()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('fontFamily',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que29()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Border',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que30()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Container border',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que32()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Custom Container 2',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que97()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Decoration Image',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que19DecoraText()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Animated Container',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que98()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Animated Opacity',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que99()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Assignment1',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => QueAssign1()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Assignment2',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => QueAssign2()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Assignment3',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => QueAssign3()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to fix two Containers at Corner',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => QueAssign4()));
-                      }),
-                ),
-              ],
-            ),
+      body: ListView(
+        padding: EdgeInsets.all(3.0),
+        children: [
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('OpacityGesterDetector',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Que01Container()));
+                }),
           ),
-        ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Container within Container',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Que02Container()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Container Visibility',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que03()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Width, Height Constraints',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que12()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Media Query',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que13()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Check width height with column',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que14()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Transform',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que15()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Align',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que16()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Alignment',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que16a()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Padding',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que17()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Color',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que18()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('margin',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que19()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Decoration Border',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que20()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Container Stack Positioned',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que21()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('decoration.. border radius',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que22()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('shape',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que23()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('boxShadow',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que24()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('FlutterLogo',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que25()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('dart..forLoop',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que26()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Custom Container',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que27()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('gradient',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que28()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('fontFamily',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que29()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Border',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que30()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Container border',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que32()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Custom Container 2',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que97()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Decoration Image',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Que19DecoraText()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Animated Container',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que98()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Animated Opacity',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Que99()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Assignment1',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => QueAssign1()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Assignment2',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => QueAssign2()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('Assignment3',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => QueAssign3()));
+                }),
+          ),
+          Container(
+            margin: EdgeInsets.all(2),
+            height: 32,
+            child: ElevatedButton(
+                child: Text('How to fix two Containers at Corner',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => QueAssign4()));
+                }),
+          ),
+        ],
       ),
       floatingActionButton: WidgetFab(),
     );

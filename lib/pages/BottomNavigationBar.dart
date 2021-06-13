@@ -4,7 +4,6 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 //import 'package:flutter_tutorial/Image/Que03Image.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
-
 class QueBottom extends StatefulWidget {
   final String urlName, imageName, videoUrlId;
   const QueBottom({key, this.urlName, this.imageName, this.videoUrlId});
@@ -134,7 +133,7 @@ class WidgetAppBar extends StatelessWidget {
 class WidgetCode extends StatelessWidget {
   final Widget a1;
   final String s1;
-   WidgetCode(this.a1,this.s1);
+  WidgetCode(this.a1, this.s1);
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
@@ -146,3 +145,20 @@ class WidgetCode extends StatelessWidget {
   }
 }
 
+class ButtonsCode extends StatelessWidget {
+  final Widget a1;
+  final String s1;
+  final String s2;
+  ButtonsCode(this.a1, this.s1, this.s2);
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: ElevatedButton(
+          child: Text(s2),
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => WidgetCode(a1, s1)));
+          }),
+    );
+  }
+}

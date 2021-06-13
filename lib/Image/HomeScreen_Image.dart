@@ -32,302 +32,55 @@ class HomeImage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Image")),
       body: SafeArea(
-        child: Container(
-          child: Builder(
-            builder: (context) => ListView(
-              padding: EdgeInsets.all(3.0),
-              children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Various ways for obtaining an Image?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  WidgetCode(Que00Image11(),"lib/Image/Que00Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Image(image: AssetImage())',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  WidgetCode(Que01Image11(),"lib/Image/Que01Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Image.asset())',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  WidgetCode(Que02Image11(),"lib/Image/Que02Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Image.network()',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que03Image11(),"lib/Image/Que03Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Image(image:NetworkImage())',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que04Image11(),"lib/Image/Que04Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('fit: BoxFit.cover',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  WidgetCode(Que05Image11(),"lib/Image/Que05Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('FadeInImage.assetNetwork()',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  WidgetCode(Que06Image11(),"lib/Image/Que06Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('repeat: ImageRepeat.repeat',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  WidgetCode(Que07Image11(),"lib/Image/Que07Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('final urlImage1 = ""',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  WidgetCode(Que08Image11(),"lib/Image/Que08Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Text on Image?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que19Deco(),"lib/Text/Que19DecorationImageOvertext.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('CircleAvatar',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que09Image11(),"lib/Image/Que09Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Container(decoration..',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que10Image11(),"lib/Image/Que10Image.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('ClipRRect/BorderRadius',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que01Clip11(),"lib/Image/Clipping/Que01Clip.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('ClipRRect/BorderRadius/BoxFit',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que07Clip11(),"lib/Image/Clipping/Que07Clip.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('ClipOval..ImageRepeat',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que04Clip11(),"lib/Image/Clipping/Que04Clip.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('ClipOval/Align',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que05Clip11(),"lib/Image/Clipping/Que05Clip.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('FadeInImage.assetNetwork()',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que06Clip11(),"lib/Image/Clipping/Que06Clip.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('ClipPath Assignment1',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que08Clip11(),"lib/Image/Clipping/Que08Clip.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('ClipPath Assignment2',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que09Clip11(),"lib/Image/Clipping/Que09Clip.dart")));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-//                      color: Colors.pinkAccent,
-                      child: Text('ClipPath Assignment3',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => WidgetCode(Que10Clip11(),"lib/Image/Clipping/Que10Clip.dart")));
-                      }),
-                ),
-              ],
-            ),
+        child: Builder(
+          builder: (context) => ListView(
+            padding: EdgeInsets.all(3.0),
+            children: [
+                ButtonsCode(Que00Image11(), "lib/Image/Que00Image.dart",
+                    "Various ways for obtaining an Image?"),
+                ButtonsCode(Que01Image11(), "lib/Image/Que01Image.dart",
+                    "Image(image: AssetImage())"),
+                ButtonsCode(Que02Image11(), "lib/Image/Que02Image.dart",
+                    "Image.asset()"),
+                ButtonsCode(Que03Image11(), "lib/Image/Que03Image.dart",
+                    "Image.network()"),
+                ButtonsCode(Que04Image11(), "lib/Image/Que04Image.dart",
+                    "Image(image:NetworkImage())"),
+                ButtonsCode(Que05Image11(), "lib/Image/Que05Image.dart",
+                    "fit: BoxFit.cover"),
+                ButtonsCode(Que06Image11(), "lib/Image/Que06Image.dart",
+                    "FadeInImage.assetNetwork()"),
+                ButtonsCode(Que07Image11(), "lib/Image/Que07Image.dart",
+                    "repeat: ImageRepeat.repeat"),
+                ButtonsCode(Que08Image11(), "lib/Image/Que08Image.dart",
+                    "final urlImage1 = ''"),
+                ButtonsCode(
+                    Que19Deco(),
+                    "lib/Text/Que19DecorationImageOvertext.dart",
+                    "Text on Image?"),
+                ButtonsCode(Que09Image11(), "lib/Image/Que09Image.dart",
+                    "CircleAvatar"),
+                ButtonsCode(Que10Image11(), "lib/Image/Que10Image.dart",
+                    "Container(decoration.."),
+                ButtonsCode(Que01Clip11(), "lib/Image/Clipping/Que01Clip.dart",
+                    "ClipRRect/BorderRadius"),
+                ButtonsCode(Que01Clip11(), "lib/Image/Clipping/Que01Clip.dart",
+                    "ClipRRect/BorderRadius"),
+                ButtonsCode(Que07Clip11(), "lib/Image/Clipping/Que07Clip.dart",
+                    "ClipRRect/BorderRadius/BoxFit"),
+                ButtonsCode(Que04Clip11(), "lib/Image/Clipping/Que04Clip.dart",
+                    "ClipOval..ImageRepeat"),
+                ButtonsCode(Que05Clip11(), "lib/Image/Clipping/Que05Clip.dart",
+                    "ClipOval/Align"),
+                ButtonsCode(Que06Clip11(), "lib/Image/Clipping/Que06Clip.dart",
+                    "FadeInImage.assetNetwork()"),
+                ButtonsCode(Que08Clip11(), "lib/Image/Clipping/Que08Clip.dart",
+                    "ClipPath Assignment1"),
+                ButtonsCode(Que09Clip11(), "lib/Image/Clipping/Que09Clip.dart",
+                    "ClipPath Assignment2"),
+                ButtonsCode(Que10Clip11(), "lib/Image/Clipping/Que10Clip.dart",
+                    "ClipPath Assignment3"),
+            ],
           ),
         ),
       ),
@@ -335,4 +88,3 @@ class HomeImage extends StatelessWidget {
     );
   }
 }
-

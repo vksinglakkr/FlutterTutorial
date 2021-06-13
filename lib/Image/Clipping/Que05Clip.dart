@@ -1,6 +1,6 @@
 // lib\Image\Clipping\Que05Clip.dart
 import 'package:flutter/material.dart';
-import '../../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que05Clip11 extends StatelessWidget {
   final String url1 =
@@ -12,7 +12,6 @@ class Que05Clip11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("ClipOval/Align ")),
-     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

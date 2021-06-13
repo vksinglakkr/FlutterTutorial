@@ -1,6 +1,6 @@
 //    lib\AlertDialog\Que01Basic.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Alert11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";

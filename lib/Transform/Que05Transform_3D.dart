@@ -1,6 +1,5 @@
 // lib\Transform\Que05Transform_3D.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0511 extends StatelessWidget {

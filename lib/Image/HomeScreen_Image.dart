@@ -1,7 +1,7 @@
 // lib\Image\HomeScreen_Image.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que00Image.dart';
 import 'Que01Image.dart';
 import 'Que02Image.dart';
@@ -23,12 +23,13 @@ import 'Clipping/Que09Clip.dart';
 import 'Clipping/Que10Clip.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
+//String s1 = "lib/Image/Que03Image.dart";
+
 class HomeImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Image")),
-     
       body: SafeArea(
         child: Container(
           child: Builder(
@@ -470,13 +471,14 @@ class Que02Image extends StatelessWidget {
 }
 
 class Que03Image extends StatelessWidget {
+  final String s1 = "lib/Image/Que03Image.dart";
   @override
   Widget build(BuildContext context) {
     return WidgetWithCodeView(
       child: Que03Image11(),
-      sourceFilePath: 'lib/Image/Que03Image.dart',
+      sourceFilePath: s1,
       codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Image/Que03Image.dart',
+          "https://github.com/vksinglakkr/FlutterTutorial/blob/master/" + s1,
     );
   }
 }

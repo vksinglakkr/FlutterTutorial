@@ -1,7 +1,7 @@
 // lib\Image\Que10Image.dart
 //Image using Container
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que10Image11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -14,7 +14,6 @@ class Que10Image11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Container(decoration..")),
-     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

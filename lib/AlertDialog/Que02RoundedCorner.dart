@@ -1,6 +1,6 @@
 //   \lib\AlertDialog\Que02RoundedCorner.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que02Alert11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";

@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
+      appBar: AppBar(title: WidgetAppBar("Flutter Tutorials")),
       body: GridView.count(
         padding: EdgeInsets.all(6),
         crossAxisCount: 3,

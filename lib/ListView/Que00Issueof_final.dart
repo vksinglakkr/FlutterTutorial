@@ -1,6 +1,6 @@
 // lib\ListView\Que00Issueof_final.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 //if number of class are more than 1 then we have two ways to declare List
 //a) List may be declared outside class with/without mentioning final

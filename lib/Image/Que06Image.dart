@@ -1,6 +1,6 @@
 // lib\Image\Que06Image.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que06Image11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -11,7 +11,6 @@ class Que06Image11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("FadeInImage.assetNetwork()")),
-     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

@@ -1,6 +1,6 @@
 //  \lib\AlertDialog\Que05BackGroundColor.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que05Alert11 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";

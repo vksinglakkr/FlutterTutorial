@@ -6,7 +6,7 @@ import 'Que03DontCloseonTapoutside.dart';
 import 'Que04Elevation.dart';
 import 'Que05BackGroundColor.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAlert extends StatelessWidget {
   @override

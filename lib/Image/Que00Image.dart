@@ -1,6 +1,6 @@
 // lib\Image\Que00Image.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que00Image11 extends StatefulWidget {
   @override
@@ -15,8 +15,8 @@ class _Que00Image11State extends State<Que00Image11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Various ways \nfor obtaining an Image?")),
-     
+      appBar:
+          AppBar(title: WidgetAppBar("Various ways \nfor obtaining an Image?")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

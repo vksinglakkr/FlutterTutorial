@@ -1,6 +1,5 @@
 // lib\Transform\Que06AllwithSlider.dart
 import 'package:flutter/material.dart';
-import '../pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que0611 extends StatelessWidget {
@@ -96,7 +95,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar(widget.title)),
-
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(

@@ -82,7 +82,7 @@ flutter:
     - lib/Container/
     - lib/CustomWidgets/
     - lib/DART/
-    - lib/Divider/
+    - lib/Divider/Que02.dart
     - lib/Drawer/
     - lib/Others/General/
     - lib/Others/Theme/

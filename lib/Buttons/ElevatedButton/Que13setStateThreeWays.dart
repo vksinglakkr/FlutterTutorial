@@ -12,7 +12,7 @@ class _Que13TextFormattingState extends State<Que13TextFormatting> {
   int _counter2 = 0;
   int _counter3 = 0;
   final String url1 = "";
-  final String image1 = "assets/help/Properties/onPressed/Que13.png";
+  final String image1 = "";
   final String video1 = "";
   void incrementCounter() {
     setState(() {
@@ -24,7 +24,7 @@ class _Que13TextFormattingState extends State<Que13TextFormatting> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Text => result as per Conditional Statement'),
+        title: new Text('setState in 3 Ways'),
       ),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),

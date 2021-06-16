@@ -1,21 +1,14 @@
 // lib\Buttons\ElevatedButton\Que03onPressed.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+import 'package:url_launcher/url_launcher.dart';
 
-class Que03Elevated11 extends StatefulWidget {
+class Que02Elevated11 extends StatefulWidget {
   @override
   _State createState() => new _State();
 }
 
-class _State extends State<Que03Elevated11> {
-  int count = 0;
-
-  void incrementCounter() {
-    setState(() {
-      count++;
-    });
-  }
-
+class _State extends State<Que02Elevated11> {
   final String url1 = "";
   final String image1 = "assets/help/Buttons/ElevatedButton/Que03.png";
   final String video1 = "";
@@ -31,8 +24,8 @@ class _State extends State<Que03Elevated11> {
         children: [
           new Center(
             child: new ElevatedButton(
-              onPressed: () => {incrementCounter()},
-              child: new Text('Button Clicks - $count'),
+              onPressed: () => {launch('https://kurukshetra.gov.in')},
+              child: Text('District Kurukshetra website'),
             ),
           ),
         ],

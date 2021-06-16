@@ -23,20 +23,25 @@ class _QueBottomState extends State<QueBottom> {
 
       backgroundColor: Colors.deepPurple,
       items: [
+        //  if (widget.urlName.length > 0)
+        //    if (widget.imageName.length > 0)
+        //      if (widget.videoUrlId.length > 0)
         BottomNavigationBarItem(
           icon: Icon(Icons.info),
           label: 'Info',
           backgroundColor: Colors.white,
         ),
-//        if (false)
+        //   if (widget.imageName.length > 0)
+        //     if (widget.videoUrlId.length > 0)
         BottomNavigationBarItem(
           icon: const Icon(Icons.image),
           label: 'Image',
         ),
-        BottomNavigationBarItem(
-          icon: const Icon(Icons.play_arrow),
-          label: 'Video',
-        ),
+        if (widget.videoUrlId.length > 0)
+          BottomNavigationBarItem(
+            icon: const Icon(Icons.play_arrow),
+            label: 'Video',
+          ),
       ],
       currentIndex: _selectedIndex,
       selectedItemColor: Colors.white,
@@ -145,6 +150,25 @@ class WidgetCode extends StatelessWidget {
   }
 }
 
+// class ButtonsCode extends StatelessWidget {
+//   final Widget a1;
+//   final String s1;
+//   final String s2;
+//   ButtonsCode(this.a1, this.s1, this.s2);
+//   @override
+//   Widget build(BuildContext context) {
+//     return Card(
+//       color: Colors.orange,
+//       child: ListTile(
+//           title: Text(s2),
+//           subtitle: Text("Properties"),
+//           onTap: () {
+//             Navigator.push(context,
+//                 MaterialPageRoute(builder: (context) => WidgetCode(a1, s1)));
+//           }),
+//     );
+//   }
+// }
 class ButtonsCode extends StatelessWidget {
   final Widget a1;
   final String s1;

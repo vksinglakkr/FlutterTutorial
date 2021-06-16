@@ -16,24 +16,22 @@ class _Que01InkWell11State extends State<Que01InkWell11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Click")),
+      appBar: AppBar(title: WidgetAppBar("InkWell \nChange text on Click")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          InkWell(
-            child: Center(
-              child: Container(
-                child: Text("$name"),
-              ),
+      body: Center(
+        child: InkWell(
+          child: Center(
+            child: Container(
+              child: Text("$name"),
             ),
-            onTap: () {
-              setState(() {
-                name = "Clicked on Text using InkWell";
-              });
-            },
           ),
-        ],
+          onTap: () {
+            setState(() {
+              name = "Clicked on Text using InkWell";
+            });
+          },
+        ),
       ),
       floatingActionButton: WidgetFab(),
     );

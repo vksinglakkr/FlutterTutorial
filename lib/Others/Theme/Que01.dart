@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que0111 extends StatelessWidget {
+class Que01Theme11 extends StatelessWidget {
   final String url1 = "";
   final String image1 = "";
   final String video1 = "";

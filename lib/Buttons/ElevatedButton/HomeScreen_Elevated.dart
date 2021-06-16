@@ -1,16 +1,13 @@
 //  lib\Buttons\RadioButton\HomeScreen_Elevated.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Buttons/ElevatedButton/Que09Color.dart';
-import 'package:flutter_tutorial/Buttons/ElevatedButton/Que10BorderColor.dart';
+import 'package:flutter_tutorial/Buttons/ElevatedButton/Que01BasicProperties.dart';
+import 'package:flutter_tutorial/Buttons/ElevatedButton/Que02onPressedlaunchURL.dart';
+import 'package:flutter_tutorial/Buttons/ElevatedButton/Que06ElevatedButtonTheme.dart';
+import 'package:flutter_tutorial/Buttons/ElevatedButton/Que10makeCircularButton.dart';
+import 'package:flutter_tutorial/Buttons/ElevatedButton/Que13setStateThreeWays.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
-import 'Que01AllProperties.dart';
-import 'Que02Snackbar.dart';
 import 'Que03onPressed.dart';
 import 'Que04LongPress.dart';
-import 'Que05FontSize.dart';
-import 'Que06usingPadding.dart';
-import 'Que07PaddingLRTB.dart';
-import 'Que08PaddingOnly.dart';
 
 class HomeElevated extends StatelessWidget {
   @override
@@ -24,45 +21,33 @@ class HomeElevated extends StatelessWidget {
               padding: EdgeInsets.all(3.0),
               children: [
                 ButtonsCode(
-                    Que01Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que01AllProperties.dart",
-                    "Elevated-All Properties"),
+                    Que09Elevated11(),
+                    "lib\Buttons\ElevatedButton\Que09BasicProperties.dart",
+                    "Basic Properties?"),
                 ButtonsCode(
-                    Que02Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que02Snackbar.dart",
-                    "Elevated - Snackbar"),
+                    Que10Elevated11(),
+                    "lib\Buttons\ElevatedButton\Que10makeCircularButton.dart",
+                    "How to make Circular Button?"),
+                ButtonsCode(
+                    Que06Elevated11(),
+                    "lib\Divider\Que06ElevatedButtonTheme.dart",
+                    "set properties using Theme"),
                 ButtonsCode(
                     Que03Elevated11(),
                     "lib\Buttons\ElevatedButton\Que03onPressed.dart",
-                    "Elevated - onPressed"),
+                    "onPressed - call fn (Increment Counter)"),
+                ButtonsCode(
+                    Que02Elevated11(),
+                    "lib\Buttons\ElevatedButton\Que02onPressed.dart",
+                    "onPressed - launch url"),
                 ButtonsCode(
                     Que04Elevated11(),
                     "lib\Buttons\ElevatedButton\Que04LongPress.dart",
                     "Elevated - LongPress"),
                 ButtonsCode(
-                    Que05Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que05FontSize.dart",
-                    "Elevated - FontSize"),
-                ButtonsCode(
-                    Que06Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que06usingPadding.dart",
-                    "Elevated - Padding"),
-                ButtonsCode(
-                    Que07Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que07PaddingLRTB.dart",
-                    "Elevated - Padding LRTB"),
-                ButtonsCode(
-                    Que08Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que08PaddingOnly.dart",
-                    "Elevated - Padding only"),
-                ButtonsCode(
-                    Que09Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que09Color.dart",
-                    "How to change BackGround Color?"),
-                ButtonsCode(
-                    Que10Elevated11(),
-                    "lib\Buttons\ElevatedButton\Que10Color.dart",
-                    "How to change Border Color?"),
+                    Que13TextFormatting(),
+                    "lib\Buttons\ElevatedButton\Que13setStateThreeWays.dart",
+                    "setState in 3 Ways"),
               ],
             ),
           ),

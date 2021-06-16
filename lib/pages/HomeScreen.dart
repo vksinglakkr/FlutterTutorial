@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Buttons/HomeScreen_Buttons.dart';
+import 'package:flutter_tutorial/Expanded/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/HomeScreenOthers.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
 import '../Align/HomeScreen_Align.dart';
@@ -111,6 +112,15 @@ class HomeScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (BuildContext context) => HomeDrawer(),
+                )),
+          ),
+          ElevatedButton(
+            child: Text('Expanded',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            onPressed: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => HomeExpanded(),
                 )),
           ),
           ElevatedButton(

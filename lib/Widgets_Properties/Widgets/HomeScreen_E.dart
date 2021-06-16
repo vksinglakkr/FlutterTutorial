@@ -1,5 +1,6 @@
 //     ..\lib\AlertDialog\HomeScreen_Alert.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Expanded/QueExpanded.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAlert extends StatelessWidget {
@@ -13,8 +14,10 @@ class HomeAlert extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-//                ButtonsCode(Que01Alert11(), "lib/AlertDialog/Que01Basic.dart",
-//                    "Basic Example"),
+                ButtonsCode(
+                    QueExpanded11(),
+                    "lib/Widgets_Properties/Widgets/QueExpanded.dart",
+                    "Expanded"),
               ],
             ),
           ),

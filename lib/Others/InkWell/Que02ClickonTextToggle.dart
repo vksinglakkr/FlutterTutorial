@@ -16,27 +16,25 @@ class _Que02InkWell11State extends State<Que02InkWell11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Toggle")),
+      appBar: AppBar(title: WidgetAppBar("InkWell\nToggle Text")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          InkWell(
-              child: Center(
-                child: Container(
-                  child: Text("$name1"),
-                ),
+      body: Center(
+        child: InkWell(
+            child: Center(
+              child: Container(
+                child: Text("$name1"),
               ),
-              onTap: () {
-                setState(() {
-                  if (name1 == "NIC Kurukshetra") {
-                    name1 = "Clicked on Text using Inkwell";
-                  } else {
-                    name1 = "NIC Kurukshetra";
-                  }
-                });
-              }),
-        ],
+            ),
+            onTap: () {
+              setState(() {
+                if (name1 == "NIC Kurukshetra") {
+                  name1 = "Clicked on Text using Inkwell";
+                } else {
+                  name1 = "NIC Kurukshetra";
+                }
+              });
+            }),
       ),
       floatingActionButton: WidgetFab(),
     );

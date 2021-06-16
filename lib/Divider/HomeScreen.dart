@@ -1,5 +1,6 @@
 //  \lib\Divider\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Divider/Que02.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01DividerTheme2.dart';
 
@@ -14,7 +15,8 @@ class HomeDivider extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            ButtonsCode(Que0111(), "lib\CustomWidgets\Que01DividerTheme2.dart",
+            ButtonsCode(Que0211(), "lib\Divider\Que02.dart", "Divider"),
+            ButtonsCode(Que0111(), "lib\Divider\Que01DividerTheme2.dart",
                 "Divider using ThemeData"),
           ],
         ),

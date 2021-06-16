@@ -1,8 +1,8 @@
 // lib\Drawer\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Drawer/Que02AppbarWithDrawerActionButton.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Drawer1.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeDrawer extends StatelessWidget {
   @override
@@ -15,58 +15,16 @@ class HomeDrawer extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('Basic Drawer',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que01()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('Drawer & ActionButton in Appbar',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que02()));
-                  }),
-            ),
+            ButtonsCode(
+                Que0111(), "lib\Drawer\Que01Drawer1.dart", "Basic Drawer"),
+            ButtonsCode(
+                Que0211(),
+                "lib\Drawer\Que02AppbarWithDrawerActionButton.dart",
+                "Drawer in ActionBar & AppBar"),
           ],
         ),
       ))),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0111(),
-      sourceFilePath: 'lib/Drawer/Que01Drawer1.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Drawer/Que01Drawer1.dart',
-    );
-  }
-}
-
-class Que02 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0111(),
-      sourceFilePath: 'lib/Drawer/Que01Drawer1.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Drawer/Que01Drawer1.dart',
     );
   }
 }

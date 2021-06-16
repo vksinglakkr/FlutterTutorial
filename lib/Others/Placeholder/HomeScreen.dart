@@ -15,6 +15,8 @@ class HomePlaceholder extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
+            ButtonsCode(
+                Que0111(), "lib\Placeholder\Que01.dart", "Basic Placeholder"),
             Container(
               margin: EdgeInsets.all(2),
               height: 32,

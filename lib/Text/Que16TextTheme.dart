@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class MyApp extends StatelessWidget {
+class Que16Theme11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final appName = 'Custom Themes';

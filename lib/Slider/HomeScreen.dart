@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeSlider extends StatelessWidget {
   @override
@@ -15,32 +14,12 @@ class HomeSlider extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('Assignment: Slider to Transform Container'),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que01()));
-                  }),
-            ),
+            ButtonsCode(Que0111(), "lib\Slider\Que01.dart",
+                "Assignment: Slider to Transform Container"),
           ],
         ),
       ))),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0111(),
-      sourceFilePath: 'lib/Slider/Que01.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Slider/Que01.dart',
     );
   }
 }

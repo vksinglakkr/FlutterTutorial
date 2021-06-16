@@ -1,7 +1,7 @@
 // lib\Visibility\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
+
 import 'Que01CustomContainer_Visibility.dart';
 
 class HomeVisibility extends StatelessWidget {
@@ -15,37 +15,28 @@ class HomeVisibility extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text(
-                          'How to set Visibility with Space Management.',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que01()));
-                      }),
-                ),
+                ButtonsCode(
+                    Que0111(),
+                    "lib\Visibility\Que01CustomContainer_Visibility.dart",
+                    "How to set Visibility with Space Management."),
+                ButtonsCode(
+                    Que0111(),
+                    "lib\Visibility\Que01CustomContainer_Visibility.dart",
+                    "How to set Visibility of a Widget with Widget Visibility. But by this method we can not set visibility of Item of Bottom Navigationbar. for this we have to use if statement"),
+                ButtonsCode(
+                    Que0111(),
+                    "lib\Visibility\Que01CustomContainer_Visibility.dart",
+                    "How to set Visibility of a Widget with if statement"),
+                ButtonsCode(
+                    Que0111(),
+                    "lib\Visibility\Que01CustomContainer_Visibility.dart",
+                    "How to toggle/visibility of properties of a widget e.g. Textdata, Buttons,Icon,Color etc."),
               ],
             ),
           ),
         ),
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0111(),
-      sourceFilePath: 'lib/Visibility/Que01CustomContainer_Visibility.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Visibility/Que01CustomContainer_Visibility.dart',
     );
   }
 }

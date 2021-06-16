@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
-//import 'package:flutter_tutorial/Image/Que03Image.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class QueBottom extends StatefulWidget {
@@ -26,9 +25,10 @@ class _QueBottomState extends State<QueBottom> {
       items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.info),
-          label: 'Info1',
+          label: 'Info',
           backgroundColor: Colors.white,
         ),
+//        if (false)
         BottomNavigationBarItem(
           icon: const Icon(Icons.image),
           label: 'Image',
@@ -107,7 +107,7 @@ class WidgetFab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: Colors.purple.shade300,
+      backgroundColor: Colors.deepOrange,
       tooltip: "Go Back",
       onPressed: () {
         Navigator.pop(context);

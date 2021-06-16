@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que03 extends StatelessWidget {
+class Que0311 extends StatelessWidget {
   final String url1 = "https://www.youtube.com/watch?v=4h5q5jfkdYg";
   final String image1 = "";
   final String video1 = "vvBJTyn6LZM";

@@ -18,54 +18,10 @@ class HomeOpacity extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('runApp?',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que04()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('Inheritance?',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que01()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('abstract?',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que02()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('constructor?',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que03()));
-                  }),
-            ),
+            ButtonsCode(Que0111(), "lib\OOPs\Que01.dart", "runApp?"),
+            ButtonsCode(Que0211(), "lib\OOPs\Que02.dart", "Inheritance?"),
+            ButtonsCode(Que0311(), "lib\OOPs\Que03.dart", "abstract?"),
+            ButtonsCode(Que0411(), "lib\OOPs\Que04.dart", "constructor?"),
           ],
         ),
       ))),

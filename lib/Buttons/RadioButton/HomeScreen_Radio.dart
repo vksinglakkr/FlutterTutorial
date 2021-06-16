@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01RadioButton.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeRadio extends StatelessWidget {
   @override
@@ -15,36 +14,16 @@ class HomeRadio extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Bulb On/Off'),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Radio()));
-                      }),
-                ),
+                ButtonsCode(
+                    Que01Radio11(),
+                    "lib\Buttons\RadioButton\Que01RadioButton.dart",
+                    "Bulb On/Off"),
               ],
             ),
           ),
         ),
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01Radio extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Radio11(),
-      sourceFilePath: 'lib/Buttons/RadioButton/Que01RadioButton.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Buttons/RadioButton/Que01RadioButton.dart',
     );
   }
 }

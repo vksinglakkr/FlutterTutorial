@@ -1,10 +1,10 @@
 // lib\Text\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Text/Que16TextTheme.dart';
+import 'package:flutter_tutorial/Text/Que22Animated.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Others/GesterDetector/Que01ClickonText.dart';
 import 'package:flutter_tutorial/Others/GesterDetector/Que02ClickonTextToggle.dart';
-import 'package:flutter_tutorial/Others/InkWell/HomeScreen.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'Que01Overflow.dart';
 import 'Que01aProperties.dart';
 import 'Que01bStyle.dart';
@@ -47,882 +47,117 @@ class HomeText extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Text=>Properties',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01aText()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Text=>Properties=>overflow',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01overFlow()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Text=>Properties=>strutStyle',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01strutStyle()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Text=>Style',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01bStyle()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to make text Selectable?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to change the Color of Text?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que02Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to Underline/Overline a text?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que03Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Control distance between Text & Underline?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que03aText()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Shadow of Text?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que03bText()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Dynamically change the fontsize.',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que04Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Text on Image?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que19DecoraText()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to insert imojis in text?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que05Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to make text clickable using InkWell?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01InkWell()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Clickable text using GesterDetector?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Gester()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text(
-                          'How to make text as toggle button using InkWell?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que02InkWell()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text(
-                          'How to make text as toggle using GesterDector?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que02Gester()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to apply style on part of text?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que07TextSpan()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('How to adjust height of text?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que08TextScale()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('What is SemanticsLabel?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que09TextSemantics()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Conditional statement within Text?',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que10Text()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('marquee',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que11Marquee()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Shape of Text',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que12TextShape()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Formatting of Text',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que13TextFormatting()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('Highlight every occurance of particular text.',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {},
-                    //                       Navigator.push(
-                    //                          context,
-                    //                         MaterialPageRoute(
-                    //                            builder: (context) => Que13TextFormatting()));
-                    //                  }
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('Responsive Text.',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {},
-                    //                       Navigator.push(
-                    //                          context,
-                    //                         MaterialPageRoute(
-                    //                            builder: (context) => Que13TextFormatting()));
-                    //                  }
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text(
-                        'How to get text usign API from textfile on local directory?',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {},
-                    //                       Navigator.push(
-                    //                          context,
-                    //                         MaterialPageRoute(
-                    //                            builder: (context) => Que13TextFormatting()));
-                    //                  }
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('auto_size_text: ^2.1.0',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Que17AutoSizeText()));
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('text manipulation',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => QueManipulation()));
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text(
-                        'Parsing of data with the help of Package flutter_parsed_text 2.2.0',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Que17AutoSizeText()));
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('Setting of color, fontsize using themedata.',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Que17AutoSizeText()));
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('Styling of text with foreground: Paint()',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Que14Text()));
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('Gradient foreground',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Que15Gradient()));
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('DefaultTextStyle',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => Que15Defaulttext()));
-                    },
-                  ),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                    child: Text('Expandable Text (Show More/Show Less)',
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold)),
-                    onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => QueShowMoreShowless()));
-                    },
-                  ),
-                ),
+                ButtonsCode(Que01aText11(), "lib/Text/Que01aProperties.dart",
+                    "Text=>Properties"),
+                ButtonsCode(Que01over(), "lib/Text/Que01Overflow.dart",
+                    "Text=>Properties=>overflow"),
+                ButtonsCode(Que01strut(), "lib/Text/Que01strutStyle.dart",
+                    "Text=>Properties=>strutStyle"),
+                ButtonsCode(
+                    Que01bStyle(), "lib/Text/Que01bStyle.dart", "Text=>Style"),
+                ButtonsCode(Que01Text11(), "lib/Text/Que01SelectableText.dart",
+                    "How to make text Selectable?"),
+                ButtonsCode(Que02Text11(), "lib/Text/Que02textColor.dart",
+                    "How to change the Color of Text?"),
+                ButtonsCode(Que03Text11(), "lib/Text/Que03UnderLine.dart",
+                    "How to Underline/Overline a text?"),
+                ButtonsCode(Que03aText11(), "lib/Text/Que03aUnderLine.dart",
+                    "Control distance between Text & Underline?"),
+                ButtonsCode(Que03bText11(), "lib/Text/Que03bShadow.dart",
+                    "Shadow of Text?"),
+                ButtonsCode(
+                    Que04Text11(),
+                    "lib/Text/Que04IncreaseFontSize.dart",
+                    "Dynamically change the fontsize."),
+                // ButtonsCode(
+                //     Que19DecoraText11(),
+                //     "lib/Text/Que19DecorationImageOvertext.dart",
+                //     "Text on Image?"),
+                ButtonsCode(Que05Text11(), "lib/Text/Que05ImageinText.dart",
+                    "How to insert imojis in text?"),
+                ButtonsCode(
+                    Que01Gester11(),
+                    "lib/GesterDetector/Que01ClickonText.dart",
+                    "Clickable text using GesterDetector?"),
+                ButtonsCode(
+                    Que02Gester11(),
+                    "lib/GesterDetector/Que01ClickonText.dart",
+                    "Clickable text using GesterDetector?"),
+                ButtonsCode(
+                    Que02Gester11(),
+                    "lib/GesterDetector/Que01ClickonText.dart",
+                    "How to make text as toggle using GesterDector?"),
+                ButtonsCode(Que07TextSpan(), "lib\Text\Que07TextRich.dart",
+                    "How to apply style on part of text?"),
+                ButtonsCode(
+                    Que08TextScale(),
+                    "lib\Text\Que08TextScalefactor.dart",
+                    "How to adjust height of text?"),
+                ButtonsCode(
+                    Que09TextSemantics(),
+                    "lib\Text\Que09TextSemanticsLabel.dart",
+                    "What is SemanticsLabel?"),
+                ButtonsCode(Que10Text11(), "lib\Text\Que10TextConditional.dart",
+                    "Conditional statement within Text?"),
+                ButtonsCode(Que11Marquee(), "lib\Text\Que11TextMarquee.dart",
+                    "marquee"),
+                ButtonsCode(Que12TextShape(), "lib\Text\Que12TextShape.dart",
+                    "Shape of Text"),
+                ButtonsCode(Que13TextFormatting(),
+                    "lib\Text\Que13TextFormatting.dart", "Formatting of Text"),
+                ButtonsCode(Que13TextFormatting(), "",
+                    "Highlight every occurance of particular text."),
+                ButtonsCode(Que14Forground(), "lib\Text\Que14forground.dart",
+                    "Responsive Text."),
+                ButtonsCode(
+                    Que17AutoSizeText(),
+                    "lib\Text\Que17TextAutoSizetext.dart",
+                    "auto_size_text: ^2.1.0'"),
+                ButtonsCode(QueManipulation11(),
+                    "lib\Text\Que17TextAutoSizetext.dart", "text manipulation"),
+                ButtonsCode(
+                    Que17AutoSizeText(),
+                    "lib\Text\Que17TextAutoSizetext.dart",
+                    "Parsing of data with the help of Package flutter_parsed_text 2.2.0"),
+                ButtonsCode(Que16Theme11(), "lib\Text\Que16TextTheme.dart",
+                    "Setting of color, fontsize using themedata."),
+                ButtonsCode(Que18Locale(), "lib\Text\Que18TextLocale.dart",
+                    "Text=>Locale"),
+                ButtonsCode(
+                    Que15Gradient11(),
+                    "lib\Text\Que15GradientForeground.dart",
+                    "Gradient foreground"),
+                ButtonsCode(Que15Default(),
+                    "lib\Text\Que15DefaulttextStyle.dart", "DefaultTextStyle"),
+                ButtonsCode(
+                    Que20Auto(),
+                    "lib\Text\Que20AutoSizeTextwithMarquee.dart",
+                    "AutoSizetextwithmarquee"),
+                ButtonsCode(
+                    Que19Deco(),
+                    "lib\Text\Que19DecorationImageOvertext.dart",
+                    "Image over text"),
+                ButtonsCode(
+                    Que19marquee(), "lib\Text\Que19Marquee.dart", "Marquee"),
+                ButtonsCode(QueDynamic11(), "lib\Text\QueShowMoreShowless.dart",
+                    "Expandable Text (Show More/Show Less)"),
+                ButtonsCode(
+                    Que21Trans(),
+                    "lib\Text\Que21TransformSkewtext.dart",
+                    "Transform Skew text"),
+                ButtonsCode(Que2211(), "lib\Text\Que22Animated.dart",
+                    "Text Animation?"),
+                ButtonsCode(
+                    Que25Show(),
+                    "lib\Text\Que25ShowContent_of_TextFileWithoutWidget.dart",
+                    "Show Content of text File without Widget"),
+                ButtonsCode(Que25Show(), "", "Animated_text_kit (Pending)"),
               ],
             ),
           ),
         ),
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class QueManipulation extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: QueManipulation11(),
-      sourceFilePath: 'lib/Text/QueManipulation.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/QueManipulation.dart',
-    );
-  }
-}
-
-class Que01Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Text11(),
-      sourceFilePath: 'lib/Text/Que01SelectableText.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01SelectableText.dart',
-    );
-  }
-}
-
-class Que01aText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01aText11(),
-      sourceFilePath: 'lib/Text/Que01aProperties.dart',
-
-      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
-      /// (open-code-in-browser, copy-code-link) will be added in the code view.
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01aProperties.dart',
-    );
-  }
-}
-
-class Que01strutStyle extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01strut(),
-      sourceFilePath: 'lib/Text/Que01aProperties.dart',
-
-      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
-      /// (open-code-in-browser, copy-code-link) will be added in the code view.
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01aProperties.dart',
-    );
-  }
-}
-
-class Que01overFlow extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01over(),
-      sourceFilePath: 'lib/Text/Que01Overflow.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que01Overflow.dart',
-    );
-  }
-}
-
-class Que02Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02Text11(),
-      sourceFilePath: 'lib/Text/Que02textColor.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que02textColor.dart',
-    );
-  }
-}
-
-class Que03Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que03Text11(),
-      sourceFilePath: 'lib/Text/Que03UnderLine.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que03UnderLine.dart',
-    );
-  }
-}
-
-class Que03aText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que03aText11(),
-      sourceFilePath: 'lib/Text/Que03aUnderLine.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que03aUnderLine.dart',
-    );
-  }
-}
-
-class Que03bText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que03bText11(),
-      sourceFilePath: 'lib/Text/Que03bShadow.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que03bShadow.dart',
-    );
-  }
-}
-
-class Que04Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que04Text11(),
-      sourceFilePath: 'lib/Text/Que04IncreaseFontSize.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que04IncreaseFontSize.dart',
-    );
-  }
-}
-
-class Que05Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que05Text11(),
-      sourceFilePath: 'lib/Text/Que05ImageinText.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que05ImageinText.dart',
-    );
-  }
-}
-
-class Que07Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que07TextSpan(),
-      sourceFilePath: 'lib/Text/Que07TextRich.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que07TextRich.dart',
-    );
-  }
-}
-
-class Que08Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que08TextScale(),
-      sourceFilePath: 'lib/Text/Que08TextScalefactor.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que08TextScalefactor.dart',
-    );
-  }
-}
-
-class Que09Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que09TextSemantics(),
-      sourceFilePath: 'lib/Text/Que09TextSemanticsLabel.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que09TextSemanticsLabel.dart',
-    );
-  }
-}
-
-class Que10Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que10Text11(),
-      sourceFilePath: 'lib/Text/Que10TextConditional.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que10TextConditional.dart',
-    );
-  }
-}
-
-class Que11Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que11Marquee(),
-      sourceFilePath: 'lib/Text/Que11TextMarquee.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que11TextMarquee.dart',
-    );
-  }
-}
-
-class Que12Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que12TextShape(),
-      sourceFilePath: 'lib/Text/Que12TextShape.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que12TextShape.dart',
-    );
-  }
-}
-
-class Que13Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que13TextFormatting(),
-      sourceFilePath: 'lib/Text/Que13TextFormatting.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que13TextFormatting.dart',
-    );
-  }
-}
-
-class Que14Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que14Forground(),
-      sourceFilePath: 'lib/Text/Que14forground.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que14foreground.dart',
-    );
-  }
-}
-
-class Que15Defaulttext extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que15Default(),
-      sourceFilePath: 'lib/Text/Que15DefaulttextStyle.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que15DefaulttextStyle.dart',
-    );
-  }
-}
-
-class Que15Gradient extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que15Gradient11(),
-      sourceFilePath: 'lib/Text/Que15GradientForeground.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que15GradientForeground.dart',
-    );
-  }
-}
-
-class Que17Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que17AutoSizeText(),
-      sourceFilePath: 'lib/Text/Que17TextAutoSizetext.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que17TextAutoSizetext.dart',
-    );
-  }
-}
-
-class Que18Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que18Locale(),
-      sourceFilePath: 'lib/Text/Que18TextLocale.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que18TextLocale.dart',
-    );
-  }
-}
-
-class Que19DecoraText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que19Deco(),
-      sourceFilePath: 'lib/Text/Que19DecorationImageOvertext.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que19DecorationImageOvertext.dart',
-    );
-  }
-}
-
-class Que19MargueeText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que19marquee(),
-      sourceFilePath: 'lib/Text/Que19Marquee.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que19Marquee.dart',
-    );
-  }
-}
-
-class Que20Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que20Auto(),
-      sourceFilePath: 'lib/Text/Que20AutoSizeTextwithMarquee.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que20AutoSizeTextwithMarquee.dart',
-    );
-  }
-}
-
-class Que21Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que21Trans(),
-      sourceFilePath: 'lib/Text/Que21TransformSkewtext.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que21TransformSkewtext.dart',
-    );
-  }
-}
-
-class Que25Text extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que25Show(),
-      sourceFilePath: 'lib/Text/Que25ShowContent_of_textFileWithoutWidget.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que25ShowContent_of_textFileWithoutWidget.dart',
-    );
-  }
-}
-
-class QueShowMoreShowless extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: QueDynamic11(),
-      sourceFilePath: 'lib/Text/QueShowMoreShowless.dart',
-
-      /// [codeLinkPrefix] is optional. When it's specified, two more buttons
-      /// (open-code-in-browser, copy-code-link) will be added in the code view.
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/QueShowMoreShowless.dart',
-    );
-  }
-}
-
-class Que01Gester extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Gester11(),
-      sourceFilePath: 'lib/GesterDetector/Que01ClickonText.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que01ClickonText.dart',
-    );
-  }
-}
-
-class Que02Gester extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02Gester11(),
-      sourceFilePath: 'lib/GesterDetector/Que02ClickonTextToggle.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/GesterDetector/Que02ClickonTextToggle.dart',
     );
   }
 }

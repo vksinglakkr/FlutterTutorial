@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01CardContainer.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeCard extends StatelessWidget {
   @override
@@ -15,25 +14,8 @@ class HomeCard extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Simple Card',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) {
-                          return WidgetWithCodeView(
-                            child: Que01Card11(),
-                            sourceFilePath: 'lib/Card/Que01CardContainer.dart',
-                            codeLinkPrefix:
-                                'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Card/Que01CardContainer.dart',
-                          );
-                        }));
-                      }),
-                ),
+                ButtonsCode(Que01Card11(), "lib/Card/Que01CardContainer.dart",
+                    "Simple Card'"),
               ],
             ),
           ),

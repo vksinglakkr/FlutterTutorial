@@ -2,9 +2,8 @@
 // HomeScreen.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/SetUpAPK/Que04BestChannels.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
-import '../AlertDialog/HomeScreen_Alert.dart';
 import 'Que01.dart';
 import 'Que02.dart';
 import 'Que03.dart';
@@ -22,75 +21,20 @@ class HomeSetUp extends StatelessWidget {
           crossAxisSpacing: 4,
           childAspectRatio: 1.92,
           children: [
-            ElevatedButton(
-                child: Text('How to build APK?',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeSetUp01(),
-                    ))),
-            ElevatedButton(
-                child: Text('Upload APK on Play Store?',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeAlert(),
-                    ))),
-            ElevatedButton(
-                child: Text('How to generate API Pin?',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeAlert(),
-                    ))),
-            ElevatedButton(
-                child: Text('add plugin in build.gradle?',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeAlert(),
-                    ))),
-            ElevatedButton(
-                child: Text('fix minSDKVersion?',
-                    style:
-                        TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => Que0211(),
-                    ))),
-            ElevatedButton(
-                child: Text('How to change the project name.?',
-                    style:
-                        TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => Que0311(),
-                    ))),
+            ButtonsCode(
+                Que0111(), " lib\SetUpAPK\Que01.dart", "How to build APK?"),
+            ButtonsCode(Que0211(), " lib\SetUpAPK\Que02.dart",
+                "Upload APK on Play Store?"),
+            ButtonsCode(Que0311(), " lib\SetUpAPK\Que03.dart",
+                "How to generate API Pin?"),
+            ButtonsCode(Que0411(), " lib\SetUpAPK\Que04.dart",
+                "add plugin in build.gradle?"),
+            ButtonsCode(Que0111(), " ", "fix minSDKVersion?"),
+            ButtonsCode(Que0111(), " ", "How to change the project name.??"),
+            ButtonsCode(Que0111(), " ", "Best Channels"),
           ],
         ),
       ),
-    );
-  }
-}
-
-class HomeSetUp01 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0111(),
-      sourceFilePath: 'lib/SetUpAPK/Que01.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/SetUpAPK/Que01.dart',
     );
   }
 }

@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Box_DecoratedBox.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeDecorated extends StatelessWidget {
   @override
@@ -15,39 +14,16 @@ class HomeDecorated extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Decorated Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Decorated()));
-                      }),
-                ),
+                ButtonsCode(
+                    Que01Decorated11(),
+                    "lib\Box\Box_DecoratedBox\Que01Box_DecoratedBox.dart",
+                    "Decorated Box"),
               ],
             ),
           ),
         ),
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01Decorated extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Decorated11(),
-      sourceFilePath: 'lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart',
     );
   }
 }

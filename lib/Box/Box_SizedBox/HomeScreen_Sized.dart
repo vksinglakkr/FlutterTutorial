@@ -1,10 +1,10 @@
 // lib\Box\HomeScreen_Sized.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 import 'Que01Simple.dart';
 import 'Que02ListView.dart';
+import 'Que03.dart';
 
 class HomeSized extends StatelessWidget {
   @override
@@ -17,66 +17,22 @@ class HomeSized extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Sized Box - Simple',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Sized()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Sized Box - ListView',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que02Sized()));
-                      }),
-                ),
+                ButtonsCode(
+                    Que01Sized11(),
+                    "lib\Box\Box_SizedBox\Que01Simple.dart",
+                    "Sized Box - Simple"),
+                ButtonsCode(
+                    Que02Sized11(),
+                    "lib\Box\Box_SizedBox\Que02ListView.dart",
+                    "Sized Box - ListView"),
+                ButtonsCode(Que03Sized11(), "lib\Box\Box_SizedBox\Que03.dart",
+                    "SizedBox, SizedBox.expand, SizedBox.shrink, SizedBox.fromSize"),
               ],
             ),
           ),
         ),
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01Sized extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Sized11(),
-      sourceFilePath: 'lib/Box/Box_SizedBox/Que01Simple.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_SizedBox/Que01Simple.dart',
-    );
-  }
-}
-
-class Que02Sized extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02Sized11(),
-      sourceFilePath: 'lib/Box/Box_SizedBox/Que02ListView.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Box/Box_SizedBox/Que02ListView.dart',
     );
   }
 }

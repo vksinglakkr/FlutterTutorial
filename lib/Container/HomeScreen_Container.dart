@@ -1,7 +1,6 @@
 // lib\Container\HomeScreen_Container.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
-import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
 import 'Que01ContainerOpacityGesterDetector.dart';
 import 'Que02ContainerWithinContainer.dart';
 import 'Que03CustomContainer_Visibility.dart';
@@ -33,7 +32,6 @@ import 'QueAssignment1.dart';
 import 'QueAssignment2.dart';
 import 'QueAssignment3.dart';
 import 'QueAssignmentHowtofix2containersatcorners.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeContainer extends StatelessWidget {
   @override
@@ -43,784 +41,81 @@ class HomeContainer extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(3.0),
         children: [
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('OpacityGesterDetector',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Que01Container()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Container within Container',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Que02Container()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Container Visibility',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que03()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Width, Height Constraints',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que12()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Media Query',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que13()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Check width height with column',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que14()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Transform',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que15()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Align',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que16()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Alignment',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que16a()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Padding',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que17()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Color',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que18()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('margin',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que19()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Decoration Border',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que20()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Container Stack Positioned',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que21()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('decoration.. border radius',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que22()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('shape',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que23()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('boxShadow',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que24()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('FlutterLogo',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que25()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('dart..forLoop',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que26()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Custom Container',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que27()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('gradient',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que28()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('fontFamily',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que29()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Border',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que30()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Container border',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que32()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Custom Container 2',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que97()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Decoration Image',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => Que19DecoraText()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Animated Container',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que98()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Animated Opacity',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Que99()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Assignment1',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => QueAssign1()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Assignment2',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => QueAssign2()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('Assignment3',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => QueAssign3()));
-                }),
-          ),
-          Container(
-            margin: EdgeInsets.all(2),
-            height: 32,
-            child: ElevatedButton(
-                child: Text('How to fix two Containers at Corner',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => QueAssign4()));
-                }),
-          ),
+          ButtonsCode(
+              Que01Container11(),
+              "lib\Container\Que01ContainerOpacityGesterDetector.dart",
+              "OpacityGesterDetector"),
+          ButtonsCode(
+              Que02Container11(),
+              "lib\Container\Que02ContainerWithinContainer.dart",
+              "Container within Container"),
+          ButtonsCode(
+              Que0311(),
+              "lib\Container\Que03CustomContainer_Visibility.dart",
+              "Container Visibility"),
+          ButtonsCode(
+              Que1211(),
+              "lib\Container\Que12WidthHeightConstraints.dart",
+              "Width, Height Constraints"),
+          ButtonsCode(
+              Que1311(), "lib\Container\MediaQuery.dart", "Media Query"),
+          ButtonsCode(
+              Que1411(),
+              "lib\Container\Que14checkwidthheightwithcolumn.dart",
+              "Check width height with column"),
+          ButtonsCode(
+              Que1511(), "lib\Container\Que15Transform.dart", "Transform"),
+          ButtonsCode(Que16a11(), "lib\Container\Que16a_Align.dart", "Align"),
+          ButtonsCode(
+              Que1611(), "lib\Container\Que16alignment.dart", "Alignment"),
+          ButtonsCode(Que1711(), "lib\Container\Que17padding.dart", "Padding"),
+          ButtonsCode(Que1811(), "lib\Container\Que18color.dart", "Color"),
+          ButtonsCode(Que1911(), "lib\Container\Que119margin.dart", "margin"),
+          ButtonsCode(Que2011(), "lib\Container\Que20decoration_border.dart",
+              "Decoration Border"),
+          ButtonsCode(
+              Que2111(),
+              "lib\Container\Que21ContainerStackPositioned.dart",
+              "Container Stack Positioned"),
+          ButtonsCode(
+              Que2211(),
+              "lib\Container\Que22decoration_borderradius.dart",
+              "decoration.. border radius"),
+          ButtonsCode(Que2311(), "lib\Container\Que23shape.dart", "shape"),
+          ButtonsCode(Que2411(), "lib\Container\Que24Container_boxShadow.dart",
+              "boxShadow"),
+          ButtonsCode(Que2511(), "lib\Container\Que25ContainerFlutterLogo.dart",
+              "FlutterLogo"),
+          ButtonsCode(Que2611(), "lib\Container\Que26dart_forLoop.dart",
+              "dart..forLoop"),
+          ButtonsCode(Que2711(), "lib\Container\Que27customContainer.dart",
+              "Custom Container"),
+          ButtonsCode(
+              Que2811(), "lib\Container\Que28gradient.dart", "gradient"),
+          ButtonsCode(
+              Que2911(), "lib\Container\Que29Fontsfamily.dart", "fontFamily"),
+          ButtonsCode(Que3011(), "lib\Container\Que30Border.dart", "Border"),
+          ButtonsCode(Que3211(), "lib\Container\Que32ContainerBorder.dart",
+              "Container border"),
+          ButtonsCode(Que9711(), "lib\Container\Que97CustomContainer2.dart",
+              "Custom Container 2"),
+          ButtonsCode(Que9811(), "lib\Container\Que98AnimatedContainer.dart",
+              "Animated Container"),
+          ButtonsCode(Que9911(), "lib\Container\Que99AnimatedOpacity.dart",
+              "Animated Opacity"),
+          ButtonsCode(QueAssign111(), "lib\Container\QueAssignment1.dart",
+              "Assignment1"),
+          ButtonsCode(QueAssign211(), "lib\Container\QueAssignment2.dart",
+              "Assignment2"),
+          ButtonsCode(QueAssign311(), "lib\Container\QueAssignment3.dart",
+              "Assignment3"),
+          ButtonsCode(
+              QueAssign411(),
+              "lib\Container\QueAssignmentHowtofix2containersatcorners.dart",
+              "How to fix two Containers at Corner"),
         ],
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01Container extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Container11(),
-      sourceFilePath: 'lib/Container/Que01ContainerOpacityGesterDetector.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que01ContainerOpacityGesterDetector.dart',
-    );
-  }
-}
-
-class Que02Container extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02Container11(),
-      sourceFilePath: 'lib/Container/Que02ContainerWithinContainer.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que02ContainerWithinContainer.dart',
-    );
-  }
-}
-
-class Que03 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0311(),
-      sourceFilePath: 'lib/Container/Que03CustomContainer_Visibility.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que03CustomContainer_Visibility.dart',
-    );
-  }
-}
-
-class Que12 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1211(),
-      sourceFilePath: 'lib/Container/Que12WidthHeightConstraints.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que12WidthHeightConstraints.dart',
-    );
-  }
-}
-
-class Que13 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1311(),
-      sourceFilePath: 'lib/Container/Que13MediaQuery.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que13MediaQuery.dart',
-    );
-  }
-}
-
-class Que14 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1411(),
-      sourceFilePath: 'lib/Container/Que14checkwidthheightwithcolumn.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que14checkwidthheightwithcolumn.dart',
-    );
-  }
-}
-
-class Que15 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1511(),
-      sourceFilePath: 'lib/Container/Que15Transform.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que15Transform.dart',
-    );
-  }
-}
-
-class Que16 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1611(),
-      sourceFilePath: 'lib/Container/Que16alignment.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que16alignment.dart',
-    );
-  }
-}
-
-class Que16a extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que16a11(),
-      sourceFilePath: 'lib/Container/Que16a_Align.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que16a_Align.dart',
-    );
-  }
-}
-
-class Que17 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1711(),
-      sourceFilePath: 'lib/Container/Que17padding.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que17padding.dart',
-    );
-  }
-}
-
-class Que18 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1811(),
-      sourceFilePath: 'lib/Container/Que18color.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que18color.dart',
-    );
-  }
-}
-
-class Que19 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que1911(),
-      sourceFilePath: 'lib/Container/Que19margin.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que19margin.dart',
-    );
-  }
-}
-
-class Que20 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2011(),
-      sourceFilePath: 'lib/Container/Que20decoration_border.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que19margin.dart',
-    );
-  }
-}
-
-class Que21 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2111(),
-      sourceFilePath: 'lib/Container/Que21ContainerStackPositioned.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que21ContainerStackPositioned.dart',
-    );
-  }
-}
-
-class Que22 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2211(),
-      sourceFilePath: 'lib/Container/Que22decoration_borderradius.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que22decoration_borderradius.dart',
-    );
-  }
-}
-
-class Que23 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2311(),
-      sourceFilePath: 'lib/Container/Que23shape.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que23shape.dart',
-    );
-  }
-}
-
-class Que24 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2411(),
-      sourceFilePath: 'lib/Container/Que24Container_boxShadow.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que24Container_boxShadow.dart',
-    );
-  }
-}
-
-class Que25 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2511(),
-      sourceFilePath: 'lib/Container/Que25ContainerFlutterLogo.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que25ContainerFlutterLogo.dart',
-    );
-  }
-}
-
-class Que26 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2611(),
-      sourceFilePath: 'lib/Container/Que26dart_forLoop.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que26dart_forLoop.dart',
-    );
-  }
-}
-
-class Que27 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2711(),
-      sourceFilePath: 'lib/Container/Que27customContainer.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que27customContainer.dart',
-    );
-  }
-}
-
-class Que28 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2811(),
-      sourceFilePath: 'lib/Container/Que28gradient.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que28gradient.dart',
-    );
-  }
-}
-
-class Que29 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que2911(),
-      sourceFilePath: 'lib/Container/Fontsfamily.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Fontsfamily.dart',
-    );
-  }
-}
-
-class Que30 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que3011(),
-      sourceFilePath: 'lib/Container/Que30Border.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que30Border.dart',
-    );
-  }
-}
-
-class Que32 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que3211(),
-      sourceFilePath: 'lib/Container/Que32ContainerBorder.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que32ContainerBorder.dart',
-    );
-  }
-}
-
-class Que97 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que9711(),
-      sourceFilePath: 'lib/Container/Que97CustomContainer2.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que32ContainerBorder.dart',
-    );
-  }
-}
-
-class Que98 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que9811(),
-      sourceFilePath: 'lib/Container/Que98AnimatedContainer.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que98AnimatedContainer.dart',
-    );
-  }
-}
-
-class Que99 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que9911(),
-      sourceFilePath: 'lib/Container/Que99AnimatedOpacity.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/Que99AnimatedOpacity.dart',
-    );
-  }
-}
-
-class QueAssign1 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: QueAssign111(),
-      sourceFilePath: 'lib/Container/QueAssignment1.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignment1.dart',
-    );
-  }
-}
-
-class QueAssign2 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: QueAssign211(),
-      sourceFilePath: 'lib/Container/QueAssignment2.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignment2.dart',
-    );
-  }
-}
-
-class QueAssign3 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: QueAssign311(),
-      sourceFilePath: 'lib/Container/QueAssignment3.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignment3.dart',
-    );
-  }
-}
-
-class QueAssign4 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: QueAssign411(),
-      sourceFilePath:
-          'lib/Container/QueAssignmentHowtofix2containersatcorners.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Container/QueAssignmentHowtofix2containersatcorners.dart',
-    );
-  }
-}
-
-class Que19DecoraText extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que19Deco(),
-      sourceFilePath: 'lib/Text/Que19DecorationImageOvertext.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Text/Que19DecorationImageOvertext.dart',
     );
   }
 }

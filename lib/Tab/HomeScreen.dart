@@ -9,7 +9,6 @@ import 'Que05WithoutDefaultTabController.dart';
 import 'Que06OnlyTabBarView.dart';
 import 'Que07OnlyTabBar.dart';
 import 'Que08List.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 class HomeTabBar extends StatefulWidget {
   @override
@@ -27,204 +26,30 @@ class _HomeTabBarState extends State<HomeTabBar> {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Basic',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que01()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Without TabBar',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que02()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('With only Default tab Controller',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que03()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Without tabBar View',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que04()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Without Default Tab Controller',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que05()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Only TabBar View',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que06()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Only TabBar',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que07()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('List',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Que08()));
-                      }),
-                ),
+                ButtonsCode(Que0111(), "lib\Tab\Que01Basic.dart", "Basic"),
+                ButtonsCode(Que0211(), "lib\Tab\Que02WithoutTabBar.dart",
+                    "Without TabBar"),
+                ButtonsCode(
+                    Que0311(),
+                    "lib\Tab\Que03OnlyDefaultTabController.dart",
+                    "With only Default tab Controller"),
+                ButtonsCode(Que0411(), "lib\Tab\Que04WithoutTabBarView.dart",
+                    "Without tabBar View"),
+                ButtonsCode(
+                    Que0511(),
+                    "lib\Tab\Que05WithoutDefaultTabController.dart",
+                    "Without Default Tab Controller"),
+                ButtonsCode(Que0611(), "lib\Tab\Que06OnlyTabBarView.dart",
+                    "Only TabBar View"),
+                ButtonsCode(
+                    Que0711(), "lib\Tab\Que07OnlyTabBar.dart", "Only TabBar"),
+                ButtonsCode(Que0811(), "lib\Tab\Que08List.dart", "List"),
               ],
             ),
           ),
         ),
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0111(),
-      sourceFilePath: 'lib/Tab/Que01Basic.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que01Basic.dart',
-    );
-  }
-}
-
-class Que02 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0211(),
-      sourceFilePath: 'lib/Tab/Que02WithoutTabBar.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que02WithoutTabBar.dart',
-    );
-  }
-}
-
-class Que03 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0311(),
-      sourceFilePath: 'lib/Tab/Que03OnlyDefaultTabController.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que03OnlyDefaultTabController.dart',
-    );
-  }
-}
-
-class Que04 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0411(),
-      sourceFilePath: 'lib/Tab/Que04WithoutTabBarView.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que04WithoutTabBarView.dart',
-    );
-  }
-}
-
-class Que05 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0511(),
-      sourceFilePath: 'lib/Tab/Que05WithoutDefaultTabController.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que05WithoutDefaultTabController.dart',
-    );
-  }
-}
-
-class Que06 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0611(),
-      sourceFilePath: 'lib/Tab/Que06OnlyTabBarView.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que06OnlyTabBarView.dart',
-    );
-  }
-}
-
-class Que07 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0711(),
-      sourceFilePath: 'lib/Tab/Que07OnlyTabBar.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que07OnlyTabBar.dart',
-    );
-  }
-}
-
-class Que08 extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que0811(),
-      sourceFilePath: 'lib/Tab/Que08List.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Tab/Que08List.dart',
     );
   }
 }

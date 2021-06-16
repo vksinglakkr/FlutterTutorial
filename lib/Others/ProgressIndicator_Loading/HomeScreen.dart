@@ -16,30 +16,10 @@ class HomeProgress extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('Circular Progress Indicator',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que01()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('FadeInImage_Loading bar',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que02()));
-                  }),
-            ),
+            ButtonsCode(Que0111(), "lib\ProgressIndicator_Loading\Que01.dart",
+                "Circular Progress Indicator"),
+            ButtonsCode(Que0211(), "lib\ProgressIndicator_Loading\Que02.dart",
+                "FadeInImage_Loading bar"),
           ],
         ),
       ))),

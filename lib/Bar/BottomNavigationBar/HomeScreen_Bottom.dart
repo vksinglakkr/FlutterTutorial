@@ -1,7 +1,6 @@
 // lib\Bar\HomeScreen_Bottom.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
-import 'package:widget_with_codeview/widget_with_codeview.dart';
 
 import 'Que01BottomNavigationbar.dart';
 import 'Que02CurvedBottomNavigationbar.dart';
@@ -21,77 +20,24 @@ class HomeBottom extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Bottom Navigation Bar',
-                          style: TextStyle(fontSize: 12.0)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que01Bottom()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Curved Navigation Bar',
-                          style: TextStyle(fontSize: 12.0)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que02Curved()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Custom Shaped Navigation Bar',
-                          style: TextStyle(fontSize: 12.0)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => Que03Custom()));
-                      }),
-                ),
+                ButtonsCode(
+                    Que01Bottom11(),
+                    "lib\Bar\BottomNavigationBar\Que01BottomNavigationbar.dart",
+                    "Bottom Navigation Bar"),
+                ButtonsCode(
+                    Que02Curved11(),
+                    "lib\Bar\BottomNavigationBar\Que02CurvedBottomNavigationbar.dart",
+                    "Curved Navigation Bar"),
+                ButtonsCode(
+                    Que03Custom(),
+                    "lib\Bar\BottomNavigationBar\Que03CustomShaped.dart",
+                    "Custom Shaped Navigation Bar"),
               ],
             ),
           ),
         ),
       ),
       floatingActionButton: WidgetFab(),
-    );
-  }
-}
-
-class Que01Bottom extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que01Bottom11(),
-      sourceFilePath:
-          'lib/Bar/BottomNavigationBar/Que01BottomNavigationbar.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/BottomNavigationBar/Que01BottomNavigationbar.dart',
-    );
-  }
-}
-
-class Que02Curved extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return WidgetWithCodeView(
-      child: Que02Curved11(),
-      sourceFilePath:
-          'lib/Bar/BottomNavigationBar/Que02CurvedBottomNavigationbar.dart',
-      codeLinkPrefix:
-          'https://github.com/vksinglakkr/FlutterTutorial/blob/master/lib/Bar/BottomNavigationBar/Que02CurvedBottomNavigationbar.dart',
     );
   }
 }

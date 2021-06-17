@@ -16,33 +16,35 @@ class _Que06Popup11State extends State<Que06Popup11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: WidgetAppBar("3 Dot Popup Menu(List)"),
-        actions: [
-          PopupMenuButton(
-            itemBuilder: (BuildContext bc) {
-              return _options
-                  .map((day) => PopupMenuItem(
-                        child: Text(day),
-                        value: day,
-                      ))
-                  .toList();
-            },
-            onSelected: (value) {
-              setState(() {
-                _selectedItem = value;
-              });
-            },
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: WidgetAppBar("3 Dot Popup Menu(List)"),
+          actions: [
+            PopupMenuButton(
+              itemBuilder: (BuildContext bc) {
+                return _options
+                    .map((day) => PopupMenuItem(
+                          child: Text(day),
+                          value: day,
+                        ))
+                    .toList();
+              },
+              onSelected: (value) {
+                setState(() {
+                  _selectedItem = value;
+                });
+              },
+            ),
+          ],
+        ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Center(
+          child: Text("Selected Day: $_selectedItem"),
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Center(
-        child: Text("Selected Day: $_selectedItem"),
-      ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

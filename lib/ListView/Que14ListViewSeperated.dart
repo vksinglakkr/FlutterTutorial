@@ -38,23 +38,25 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar(widget.title)),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          ListView.separated(
-              itemBuilder: (context, index) {
-                return Text(animal[index]);
-              },
-              separatorBuilder: (context, index) {
-                return Divider();
-              },
-              itemCount: animal.length),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar(widget.title)),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            ListView.separated(
+                itemBuilder: (context, index) {
+                  return Text(animal[index]);
+                },
+                separatorBuilder: (context, index) {
+                  return Divider();
+                },
+                itemCount: animal.length),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

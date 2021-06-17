@@ -15,52 +15,54 @@ class _Que1011State extends State<Que1011> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Leading or Trailling Text")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(
-            height: 180,
-            child: ListView(
-              children: [
-                ListTile(
-                  title: Text('List item 1'),
-                  subtitle: Text('Subtitle Item 1'),
-                  leading: Icon(Icons.label),
-                  trailing: Radio(
-                    value: 1,
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      // Update value.
-                    },
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Leading or Trailling Text")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(
+              height: 180,
+              child: ListView(
+                children: [
+                  ListTile(
+                    title: Text('List item 1'),
+                    subtitle: Text('Subtitle Item 1'),
+                    leading: Icon(Icons.label),
+                    trailing: Radio(
+                      value: 1,
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        // Update value.
+                      },
+                    ),
                   ),
-                ),
-                ListTile(
-                  title: Text('List item 2'),
-                  subtitle: Text('Subtitle item 2'),
-                  leading: Icon(Icons.label),
-                  trailing: Radio(
-                    value: 1,
-                    groupValue: groupValue,
-                    onChanged: (value) {
-                      // Update value.
-                    },
+                  ListTile(
+                    title: Text('List item 2'),
+                    subtitle: Text('Subtitle item 2'),
+                    leading: Icon(Icons.label),
+                    trailing: Radio(
+                      value: 1,
+                      groupValue: groupValue,
+                      onChanged: (value) {
+                        // Update value.
+                      },
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/ListView/Que10.png'),
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/ListView/Que10.png'),
+              ),
             ),
-          ),
-          Center(child: Text("ListView/Que10ListViewRadioButton.dart"))
-        ],
+            Center(child: Text("ListView/Que10ListViewRadioButton.dart"))
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

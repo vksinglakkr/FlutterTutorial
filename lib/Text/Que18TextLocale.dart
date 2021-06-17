@@ -11,33 +11,36 @@ class Que18Locale extends StatelessWidget {
   Widget build(BuildContext context) {
     TextStyle selectedStyle = TextStyle(color: Theme.of(context).accentColor);
 
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      drawer: Drawer(
-        child: ListView(
-          children: <Widget>[
-            ListTile(
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              ListTile(
+                  title: Text(
+                'العربية', // which means Arabic
+                style: _getLanguageCode(context) == 'ar' ? selectedStyle : null,
+              )),
+              ListTile(
                 title: Text(
-              'العربية', // which means Arabic
-              style: _getLanguageCode(context) == 'ar' ? selectedStyle : null,
-            )),
-            ListTile(
-              title: Text(
-                'English',
-                style: _getLanguageCode(context) == 'en' ? selectedStyle : null,
+                  'English',
+                  style:
+                      _getLanguageCode(context) == 'en' ? selectedStyle : null,
+                ),
               ),
-            ),
+            ],
+          ),
+        ),
+        body: Column(
+          children: [
+            Center(child: Text('Managing your locale')),
           ],
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      body: Column(
-        children: [
-          Center(child: Text('Managing your locale')),
-        ],
-      ),
-      floatingActionButton: WidgetFab(),
     );
   }
 

@@ -15,25 +15,27 @@ class _Que03State extends State<Que03> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ActiveTrackColor")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              child: Switch(
-                  value: _toggle,
-                  activeTrackColor: Colors.amber,
-                  onChanged: (bool value) {
-                    setState(() => _toggle = value);
-                  }),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("ActiveTrackColor")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                child: Switch(
+                    value: _toggle,
+                    activeTrackColor: Colors.amber,
+                    onChanged: (bool value) {
+                      setState(() => _toggle = value);
+                    }),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

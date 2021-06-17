@@ -16,45 +16,47 @@ class _State extends State<Que0211> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Login Page- Username & Password")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: TextField(
-              controller: nameController,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'User Name',
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Login Page- Username & Password")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                controller: nameController,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'User Name',
+                ),
               ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(10),
-            child: TextField(
-              obscureText: true,
-              controller: passwordController,
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Password',
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: TextField(
+                obscureText: true,
+                controller: passwordController,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Password',
+                ),
               ),
             ),
-          ),
-          ElevatedButton(
+            ElevatedButton(
 //              textColor: Colors.white,
 //              color: Colors.blue,
-            child: Text('Login'),
-            onPressed: () {
-              print(nameController.text);
-              print(passwordController.text);
-            },
-          )
-        ],
+              child: Text('Login'),
+              onPressed: () {
+                print(nameController.text);
+                print(passwordController.text);
+              },
+            )
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

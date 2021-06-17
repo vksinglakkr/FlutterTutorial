@@ -9,19 +9,21 @@ class Que0411 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Change \nof Project Name")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Text("The Growing Developer"),
-          Text("FlutterToday"),
-          Text("Smarthead"),
-          Text("Desi programmer"),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Change \nof Project Name")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Text("The Growing Developer"),
+            Text("FlutterToday"),
+            Text("Smarthead"),
+            Text("Desi programmer"),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

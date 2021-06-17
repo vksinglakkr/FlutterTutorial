@@ -14,14 +14,16 @@ class _Que04Floating11State extends State<Que04Floating11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Custom Shape")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.settings_voice),
-        shape: _CustomBorder(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Custom Shape")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.settings_voice),
+          shape: _CustomBorder(),
+        ),
       ),
     );
   }

@@ -19,57 +19,60 @@ class _Que05Popup11State extends State<Que05Popup11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: WidgetAppBar("3 Dot Popup Menu(iconicButton)"),
-        actions: [
-          PopupMenuButton(
-            itemBuilder: (BuildContext bc) => [
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: WidgetAppBar("3 Dot Popup Menu(iconicButton)"),
+          actions: [
+            PopupMenuButton(
+              itemBuilder: (BuildContext bc) => [
 //              PopupMenuItem(child: Text("New Chat"), value: "/newchat"),
-              PopupMenuItem(
-                child: IconButton(
-                  icon: const Icon(Icons.info),
-                  color: Colors.black,
-                  onPressed: launchURL,
-                ),
-              ),
-//              PopupMenuItem(child: PopupMenuDivider(height: 1)),
-              PopupMenuItem(
-                child: IconButton(
-                    icon: const Icon(Icons.image),
-                    color: Colors.black,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => MyAppImage()),
-                      );
-                    }),
-              ),
-              PopupMenuItem(
+                PopupMenuItem(
                   child: IconButton(
-                      icon: const Icon(Icons.play_arrow),
+                    icon: const Icon(Icons.info),
+                    color: Colors.black,
+                    onPressed: launchURL,
+                  ),
+                ),
+//              PopupMenuItem(child: PopupMenuDivider(height: 1)),
+                PopupMenuItem(
+                  child: IconButton(
+                      icon: const Icon(Icons.image),
                       color: Colors.black,
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MyAppVideo()),
+                          MaterialPageRoute(builder: (context) => MyAppImage()),
                         );
-                      })),
-            ],
-            onSelected: (route) {
-              print(route);
-              // Note You must create respective pages for navigation
-              Navigator.pushNamed(context, route);
-            },
-          ),
-        ],
-      ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(),
-        ],
+                      }),
+                ),
+                PopupMenuItem(
+                    child: IconButton(
+                        icon: const Icon(Icons.play_arrow),
+                        color: Colors.black,
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MyAppVideo()),
+                          );
+                        })),
+              ],
+              onSelected: (route) {
+                print(route);
+                // Note You must create respective pages for navigation
+                Navigator.pushNamed(context, route);
+              },
+            ),
+          ],
+        ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(),
+          ],
+        ),
       ),
     );
   }

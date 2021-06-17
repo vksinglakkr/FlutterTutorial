@@ -14,19 +14,21 @@ class _State extends State<Que01AppBar11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: WidgetAppBar("AppBar - BackGroundColor"),
-        backgroundColor: Color(0xff885566),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: WidgetAppBar("AppBar - BackGroundColor"),
+          backgroundColor: Color(0xff885566),
+        ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(),
-        ],
-      ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

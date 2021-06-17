@@ -9,27 +9,29 @@ class Que0311 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Skew")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Center(
-        child: Column(
-          children: [
-            Transform(
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Skew")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Center(
+          child: Column(
+            children: [
+              Transform(
 //            transform: Matrix4.skewY(10),
 //            transform: Matrix4.skewX(10),
-              transform: Matrix4.skew(10, 20),
-              child: Container(
-                height: 100.0,
-                width: 100.0,
-                color: Colors.red,
+                transform: Matrix4.skew(10, 20),
+                child: Container(
+                  height: 100.0,
+                  width: 100.0,
+                  color: Colors.red,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -18,49 +18,51 @@ class _Que20AutoState extends State<Que20Auto> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("AutoSize Text with Marquee")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          AutoSizeText(
-            str1,
-            minFontSize: 16,
-            maxFontSize: 32,
-            maxLines: 25,
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-            overflowReplacement: Marquee(
-              text: str1,
-              blankSpace: 20,
-              accelerationCurve: Curves.easeOutCubic,
-              //accelerationCurve: Curves.linear,
-              velocity: 100,
-              startPadding: 10.0,
-              pauseAfterRound: Duration(seconds: 1),
-              startAfter: Duration(seconds: 1),
-              scrollAxis: Axis.horizontal,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              showFadingOnlyWhenScrolling: true,
-              fadingEdgeStartFraction: 0.1,
-              fadingEdgeEndFraction: 0.1,
-              numberOfRounds: 3,
-              accelerationDuration: Duration(seconds: 1),
-              decelerationDuration: Duration(milliseconds: 500),
-              decelerationCurve: Curves.easeOut,
-
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("AutoSize Text with Marquee")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            AutoSizeText(
+              str1,
+              minFontSize: 16,
+              maxFontSize: 32,
+              maxLines: 25,
               style: TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.normal,
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+              overflowReplacement: Marquee(
+                text: str1,
+                blankSpace: 20,
+                accelerationCurve: Curves.easeOutCubic,
+                //accelerationCurve: Curves.linear,
+                velocity: 100,
+                startPadding: 10.0,
+                pauseAfterRound: Duration(seconds: 1),
+                startAfter: Duration(seconds: 1),
+                scrollAxis: Axis.horizontal,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                showFadingOnlyWhenScrolling: true,
+                fadingEdgeStartFraction: 0.1,
+                fadingEdgeEndFraction: 0.1,
+                numberOfRounds: 3,
+                accelerationDuration: Duration(seconds: 1),
+                decelerationDuration: Duration(milliseconds: 500),
+                decelerationCurve: Curves.easeOut,
+
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

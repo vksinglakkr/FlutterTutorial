@@ -19,35 +19,37 @@ class Que3311 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: WidgetAppBar(
-              "itemBuilder: (_, index) i.e. without BuildContext")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(
-            height: 300,
-            child: ListView.builder(
-              itemCount: course.length,
-              itemBuilder: (_, position) {
-                String dataElement = course[position];
-                return Padding(
-                    padding: EdgeInsets.all(8.0), child: Text(dataElement));
-              },
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+            title: WidgetAppBar(
+                "itemBuilder: (_, index) i.e. without BuildContext")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(
+              height: 300,
+              child: ListView.builder(
+                itemCount: course.length,
+                itemBuilder: (_, position) {
+                  String dataElement = course[position];
+                  return Padding(
+                      padding: EdgeInsets.all(8.0), child: Text(dataElement));
+                },
+              ),
             ),
-          ),
-          SizedBox(height: 5),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/ListView/Que33.png'),
+            SizedBox(height: 5),
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/ListView/Que33.png'),
+              ),
             ),
-          ),
-          Center(child: Text("ListView/Que33WithoutContextBuilder.dart"))
-        ],
+            Center(child: Text("ListView/Que33WithoutContextBuilder.dart"))
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

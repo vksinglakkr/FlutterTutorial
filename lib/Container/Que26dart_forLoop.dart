@@ -9,24 +9,26 @@ class Que2611 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("for..loop")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: ListView(
-        children: [
-          for (var i = 1; i < 50; i = i + 8)
-            Container(
-                child: SizedBox(
-                    width: i * 3.0,
-                    height: i * 4.0,
-                    child: Text(
-                      "NIC Kurukshetra",
-                      style: TextStyle(fontSize: 20.0),
-                    ))),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("for..loop")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: ListView(
+          children: [
+            for (var i = 1; i < 50; i = i + 8)
+              Container(
+                  child: SizedBox(
+                      width: i * 3.0,
+                      height: i * 4.0,
+                      child: Text(
+                        "NIC Kurukshetra",
+                        style: TextStyle(fontSize: 20.0),
+                      ))),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

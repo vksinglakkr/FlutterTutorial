@@ -10,17 +10,19 @@ class Que0111 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: Drawer(),
-      appBar: AppBar(title: WidgetAppBar("Home")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Text("Drawer Demo"),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        drawer: Drawer(),
+        appBar: AppBar(title: WidgetAppBar("Home")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Text("Drawer Demo"),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -19,46 +19,48 @@ class _Que9811State extends State<Que9811> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Animated Container")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: AnimatedContainer(
-              duration: Duration(seconds: 1),
-              curve: Curves.fastOutSlowIn,
-              width: _width,
-              height: _height,
-              decoration: BoxDecoration(
-                color: _color,
-                borderRadius: _borderRadius,
-              ),
-              child: Center(
-                child: Text('Demo',
-                    style: TextStyle(
-                      fontSize: 15.0,
-                    )),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Animated Container")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: AnimatedContainer(
+                duration: Duration(seconds: 1),
+                curve: Curves.fastOutSlowIn,
+                width: _width,
+                height: _height,
+                decoration: BoxDecoration(
+                  color: _color,
+                  borderRadius: _borderRadius,
+                ),
+                child: Center(
+                  child: Text('Demo',
+                      style: TextStyle(
+                        fontSize: 15.0,
+                      )),
+                ),
               ),
             ),
-          ),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          setState(() {
-            final random = Random();
-            _width = random.nextInt(300).toDouble();
-            _height = random.nextInt(300).toDouble();
-            _color = Color.fromRGBO(random.nextInt(256), random.nextInt(256),
-                random.nextInt(256), 1);
-            _borderRadius =
-                BorderRadius.circular(random.nextInt(100).toDouble());
-          });
-        },
-        tooltip: 'Play',
-        child: Icon(Icons.play_arrow),
+          ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            setState(() {
+              final random = Random();
+              _width = random.nextInt(300).toDouble();
+              _height = random.nextInt(300).toDouble();
+              _color = Color.fromRGBO(random.nextInt(256), random.nextInt(256),
+                  random.nextInt(256), 1);
+              _borderRadius =
+                  BorderRadius.circular(random.nextInt(100).toDouble());
+            });
+          },
+          tooltip: 'Play',
+          child: Icon(Icons.play_arrow),
+        ),
       ),
     );
   }

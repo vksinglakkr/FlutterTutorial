@@ -9,36 +9,38 @@ class Que2411 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("boxShadow ")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              width: 300.0,
-              height: 300.0,
-              decoration: BoxDecoration(color: Colors.redAccent, boxShadow: [
-                BoxShadow(
-                  color: Colors.blue,
-                  blurRadius: 8,
-                  spreadRadius: 20,
-                  offset: Offset(0, 3),
-                ),
-                BoxShadow(
-                  color: Colors.black,
-                  blurRadius: 18,
-                  spreadRadius: 10,
-                  offset: Offset(0, 3),
-                ),
-              ]),
-              child: Center(child: Text('NIC Kurukshetra')),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("boxShadow ")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                width: 300.0,
+                height: 300.0,
+                decoration: BoxDecoration(color: Colors.redAccent, boxShadow: [
+                  BoxShadow(
+                    color: Colors.blue,
+                    blurRadius: 8,
+                    spreadRadius: 20,
+                    offset: Offset(0, 3),
+                  ),
+                  BoxShadow(
+                    color: Colors.black,
+                    blurRadius: 18,
+                    spreadRadius: 10,
+                    offset: Offset(0, 3),
+                  ),
+                ]),
+                child: Center(child: Text('NIC Kurukshetra')),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

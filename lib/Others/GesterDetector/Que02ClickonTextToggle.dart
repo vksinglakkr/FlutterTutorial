@@ -15,30 +15,32 @@ class _Que02Gester11State extends State<Que02Gester11> {
   String name1 = "NIC Kurukshetra";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("GestureDetector=>Toggle")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          GestureDetector(
-              child: Center(
-                child: Container(
-                  child: Text("$name1"),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("GestureDetector=>Toggle")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            GestureDetector(
+                child: Center(
+                  child: Container(
+                    child: Text("$name1"),
+                  ),
                 ),
-              ),
-              onTap: () {
-                setState(() {
-                  if (name1 == "NIC Kurukshetra") {
-                    name1 = "Clicked on Text using GestureDetector";
-                  } else {
-                    name1 = "NIC Kurukshetra";
-                  }
-                });
-              }),
-        ],
+                onTap: () {
+                  setState(() {
+                    if (name1 == "NIC Kurukshetra") {
+                      name1 = "Clicked on Text using GestureDetector";
+                    } else {
+                      name1 = "NIC Kurukshetra";
+                    }
+                  });
+                }),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -28,20 +28,24 @@ class _QueBottomState extends State<QueBottom> {
         //      if (widget.videoUrlId.length > 0)
         BottomNavigationBarItem(
           icon: Icon(Icons.info),
-          label: 'Info',
+          label: widget.urlName.length > 0 ? 'Info' : "Not Available",
+          // icon: widget.urlName.length > 0
+          //     ? Icon(Icons.info)
+          //     : Icon(Icons.unpublished_rounded),
+          // label: widget.urlName.length > 0 ? 'Info' : "",
           backgroundColor: Colors.white,
         ),
 //           if (widget.imageName.length > 0)
 //             if (widget.videoUrlId.length > 0)
         BottomNavigationBarItem(
           icon: const Icon(Icons.image),
-          label: 'Image',
+          label: widget.imageName.length > 0 ? 'Image' : "Not Available",
         ),
-        if (widget.videoUrlId.length > 0)
-          BottomNavigationBarItem(
-            icon: const Icon(Icons.play_arrow),
-            label: 'Video',
-          ),
+//        if (widget.videoUrlId.length > 0)
+        BottomNavigationBarItem(
+          icon: const Icon(Icons.play_arrow),
+          label: widget.videoUrlId.length > 0 ? 'Video' : "Not Available",
+        ),
       ],
       currentIndex: _selectedIndex,
       selectedItemColor: Colors.white,
@@ -78,15 +82,17 @@ class MyAppVideo extends StatelessWidget {
   const MyAppVideo({key, this.video1});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: this.video1,
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("")),
+        body: YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: this.video1,
+            flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+          ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }
@@ -96,10 +102,12 @@ class MyAppImage extends StatelessWidget {
   const MyAppImage({key, this.image1});
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      body: Container(child: Image.asset(this.image1)),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("")),
+        body: Container(child: Image.asset(this.image1)),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }
@@ -129,7 +137,7 @@ class WidgetAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       appBarTitle,
-      style: TextStyle(fontSize: 24),
+      style: TextStyle(fontSize: 21),
       textAlign: TextAlign.left,
     );
   }

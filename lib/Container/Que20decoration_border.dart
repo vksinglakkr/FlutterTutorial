@@ -9,25 +9,27 @@ class Que2011 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Decoration Border")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              decoration: BoxDecoration(
-                border: Border.all(
-                    color: Colors.red, width: 10.0, style: BorderStyle.solid),
-                //border: Border(right:10.0,left:20.0,bottom:25.0,top:5.0),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Decoration Border")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                      color: Colors.red, width: 10.0, style: BorderStyle.solid),
+                  //border: Border(right:10.0,left:20.0,bottom:25.0,top:5.0),
+                ),
+                child: Text('Hello World'),
               ),
-              child: Text('Hello World'),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

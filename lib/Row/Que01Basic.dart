@@ -14,31 +14,33 @@ class _State extends State<Que0111> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Basic")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Row(
-            children: <Widget>[
-              Icon(
-                Icons.access_alarm,
-                size: 80,
-              ),
-              Icon(
-                Icons.account_circle,
-                size: 80,
-              ),
-              Icon(
-                Icons.save,
-                size: 80,
-              ),
-            ],
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Basic")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.access_alarm,
+                  size: 80,
+                ),
+                Icon(
+                  Icons.account_circle,
+                  size: 80,
+                ),
+                Icon(
+                  Icons.save,
+                  size: 80,
+                ),
+              ],
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

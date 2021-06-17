@@ -9,25 +9,27 @@ class Que0111 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("CircularProgressIndicator Demo")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Center(
-        child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              CircularProgressIndicator(),
-              CircularProgressIndicator(
-                backgroundColor: Colors.red,
-              ),
-              CircularProgressIndicator(
-                strokeWidth: 10.0,
-              ),
-            ]),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("CircularProgressIndicator Demo")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Center(
+          child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                CircularProgressIndicator(),
+                CircularProgressIndicator(
+                  backgroundColor: Colors.red,
+                ),
+                CircularProgressIndicator(
+                  strokeWidth: 10.0,
+                ),
+              ]),
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

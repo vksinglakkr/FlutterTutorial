@@ -16,62 +16,64 @@ class _Que0211State extends State<Que0211> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Visibility Demo")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Padding(
-          padding: EdgeInsets.all(15.0),
-          child: Column(
-            children: [
-              CustomContainer(txtData: 'Red', colorName: Colors.red),
-              SizedBox(
-                height: 8.0,
-              ),
-              Visibility(
-                  visible: _visible1,
-                  child: CustomContainer(
-                      txtData: 'Orange', colorName: Colors.orange)),
-              SizedBox(
-                height: 8.0,
-              ),
-              Visibility(
-                  visible: _visible2,
-                  maintainAnimation: true,
-                  maintainState: true,
-                  maintainSize: true,
-                  child:
-                      CustomContainer(txtData: 'Blue', colorName: Colors.blue)),
-              SizedBox(height: 15.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  ElevatedButton(
-                    child: Text('Show/Hide Orange'),
-                    onPressed: () => setState(() => _visible1 = !_visible1),
-                  ),
-                  ElevatedButton(
-                      child: Text('Show/Hide Bluen(Maintainsize)'),
-                      //onPressed: () => setState(()=>_visible2=!_visible2),
-                      onPressed: () {
-                        setState(() {
-                          _visible2 = !_visible2;
-                        });
-                      }),
-                ],
-              ),
-              SizedBox(
-                height: 10.0,
-              ),
-              Center(
-                child: Image(
-                  image: AssetImage('assets/Visibility/Que01.png'),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Visibility Demo")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Column(
+              children: [
+                CustomContainer(txtData: 'Red', colorName: Colors.red),
+                SizedBox(
+                  height: 8.0,
                 ),
-              ),
-              Text("Visibility/Que01CustomContainer_Visibility.dart")
-            ],
-          )),
-      floatingActionButton: WidgetFab(),
+                Visibility(
+                    visible: _visible1,
+                    child: CustomContainer(
+                        txtData: 'Orange', colorName: Colors.orange)),
+                SizedBox(
+                  height: 8.0,
+                ),
+                Visibility(
+                    visible: _visible2,
+                    maintainAnimation: true,
+                    maintainState: true,
+                    maintainSize: true,
+                    child: CustomContainer(
+                        txtData: 'Blue', colorName: Colors.blue)),
+                SizedBox(height: 15.0),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    ElevatedButton(
+                      child: Text('Show/Hide Orange'),
+                      onPressed: () => setState(() => _visible1 = !_visible1),
+                    ),
+                    ElevatedButton(
+                        child: Text('Show/Hide Bluen(Maintainsize)'),
+                        //onPressed: () => setState(()=>_visible2=!_visible2),
+                        onPressed: () {
+                          setState(() {
+                            _visible2 = !_visible2;
+                          });
+                        }),
+                  ],
+                ),
+                SizedBox(
+                  height: 10.0,
+                ),
+                Center(
+                  child: Image(
+                    image: AssetImage('assets/Visibility/Que01.png'),
+                  ),
+                ),
+                Text("Visibility/Que01CustomContainer_Visibility.dart")
+              ],
+            )),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

@@ -27,25 +27,27 @@ class _State extends State<Que03SnackBar11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      key: _scaffoldKey,
-      appBar: AppBar(title: WidgetAppBar("Back Ground Color")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-              child: ElevatedButton(
+    return SafeArea(
+      child: Scaffold(
+        key: _scaffoldKey,
+        appBar: AppBar(title: WidgetAppBar("Back Ground Color")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+                child: ElevatedButton(
 //          textColor: Colors.white,
 //          color: Colors.blue,
-            child: Text('Show SnackBar'),
-            onPressed: () {
-              _showMessageInScaffold("Hello dear! I'm SnackBar.");
-            },
-          )),
-        ],
+              child: Text('Show SnackBar'),
+              onPressed: () {
+                _showMessageInScaffold("Hello dear! I'm SnackBar.");
+              },
+            )),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

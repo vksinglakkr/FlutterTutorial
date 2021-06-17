@@ -15,23 +15,25 @@ class _Que21TransState extends State<Que21Trans> {
   final String video1 = "";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Text => Transform (Skew)")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Transform(
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Text => Transform (Skew)")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Transform(
 //            transform: Matrix4.skewY(10),
 //            transform: Matrix4.skewX(10),
-              transform: Matrix4.skew(.5, .3),
-              child: Text(str1, style: TextStyle(fontSize: 60)),
+                transform: Matrix4.skew(.5, .3),
+                child: Text(str1, style: TextStyle(fontSize: 60)),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

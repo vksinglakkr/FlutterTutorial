@@ -14,29 +14,31 @@ class _Que9711State extends State<Que9711> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Custom Container 2")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            CustomContainer(
-              color1: Colors.deepOrange,
-              color2: Colors.yellow,
-              containerNumber: '1',
-              containerHeight: 300.0,
-            ),
-            CustomContainer(
-              color1: Colors.blue,
-              color2: Colors.red,
-              containerNumber: '2',
-              containerHeight: 300.0,
-            ),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Custom Container 2")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              CustomContainer(
+                color1: Colors.deepOrange,
+                color2: Colors.yellow,
+                containerNumber: '1',
+                containerHeight: 300.0,
+              ),
+              CustomContainer(
+                color1: Colors.blue,
+                color2: Colors.red,
+                containerNumber: '2',
+                containerHeight: 300.0,
+              ),
+            ],
+          ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

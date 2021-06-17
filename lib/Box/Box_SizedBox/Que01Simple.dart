@@ -7,23 +7,25 @@ class Que01Sized11 extends StatelessWidget {
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("SizedBox- Simple")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: SizedBox(
-              height: 100.0,
-              width: 100,
-              child: Image.network(
-                  "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg"),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("SizedBox- Simple")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: SizedBox(
+                height: 100.0,
+                width: 100,
+                child: Image.network(
+                    "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg"),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -23,22 +23,24 @@ class _State extends State<Que04Elevated11> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Elevated - LongPress'),
-      ),
-      body: Column(
-        children: [
-          Center(
-            child: ElevatedButton(
-              onLongPress: () => {incrementCounter()},
-              onPressed: () {},
-              child: new Text('Button Clicks - $count'),
+    return SafeArea(
+      child: Scaffold(
+        appBar: new AppBar(
+          title: new Text('Elevated - LongPress'),
+        ),
+        body: Column(
+          children: [
+            Center(
+              child: ElevatedButton(
+                onLongPress: () => {incrementCounter()},
+                onPressed: () {},
+                child: new Text('Button Clicks - $count'),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

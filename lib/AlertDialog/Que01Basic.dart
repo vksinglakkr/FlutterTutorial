@@ -9,23 +9,25 @@ class Que01Alert11 extends StatelessWidget {
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Basic Code \nAlert Dialog Box")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: ElevatedButton(
-              child: Text('Alert Dialog'),
-              onPressed: () {
-                _showDialog(context);
-              },
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Basic Code \nAlert Dialog Box")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: ElevatedButton(
+                child: Text('Alert Dialog'),
+                onPressed: () {
+                  _showDialog(context);
+                },
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

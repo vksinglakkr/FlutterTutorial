@@ -15,24 +15,26 @@ class _QueYouTubeState extends State<QueYouTube> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Text => SelectableText")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          YoutubePlayer(
-            controller: YoutubePlayerController(
-              initialVideoId: 'dFKhWe2bBkM',
-              flags: YoutubePlayerFlags(
-                autoPlay: true,
-                mute: false,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Text => SelectableText")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            YoutubePlayer(
+              controller: YoutubePlayerController(
+                initialVideoId: 'dFKhWe2bBkM',
+                flags: YoutubePlayerFlags(
+                  autoPlay: true,
+                  mute: false,
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

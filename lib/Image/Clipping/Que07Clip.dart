@@ -10,30 +10,32 @@ class Que07Clip11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ClipRRect/BorderRadius/BoxFit")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          ClipRRect(
-            //borderRadius: BorderRadius.circular(120.0),
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(120.0),
-              topRight: Radius.circular(120.0),
-              bottomRight: Radius.circular(120.0),
-              bottomLeft: Radius.circular(220.0),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("ClipRRect/BorderRadius/BoxFit")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            ClipRRect(
+              //borderRadius: BorderRadius.circular(120.0),
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(120.0),
+                topRight: Radius.circular(120.0),
+                bottomRight: Radius.circular(120.0),
+                bottomLeft: Radius.circular(220.0),
+              ),
+              child: Image.network(
+                "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
+                height: 300,
+                width: 300,
+                fit: BoxFit.cover,
+              ),
             ),
-            child: Image.network(
-              "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
-              height: 300,
-              width: 300,
-              fit: BoxFit.cover,
-            ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

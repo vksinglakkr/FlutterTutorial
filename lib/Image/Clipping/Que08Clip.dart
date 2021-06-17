@@ -10,41 +10,43 @@ class Que08Clip11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ClipPath Assignment1")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          ClipPath(
-            clipper: CustomClipPath(),
-            child: Image.network(
-              "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
-              height: 200,
-              width: 300,
-              fit: BoxFit.cover,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("ClipPath Assignment1")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            ClipPath(
+              clipper: CustomClipPath(),
+              child: Image.network(
+                "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
+                height: 200,
+                width: 300,
+                fit: BoxFit.cover,
+              ),
             ),
-          ),
-          SizedBox(
-            height: 5.0,
-          ),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/Que10aClip.jpg'),
+            SizedBox(
+              height: 5.0,
             ),
-          ),
-          SizedBox(
-            height: 5.0,
-          ),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/Que08bClip.jpg'),
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/Que10aClip.jpg'),
+              ),
             ),
-          ),
-          Text("Image/Clipping/Que08Clip.dart")
-        ],
+            SizedBox(
+              height: 5.0,
+            ),
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/Que08bClip.jpg'),
+              ),
+            ),
+            Text("Image/Clipping/Que08Clip.dart")
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

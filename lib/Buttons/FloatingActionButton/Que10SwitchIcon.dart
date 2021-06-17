@@ -18,23 +18,25 @@ class _Que10Floating11State extends State<Que10Floating11> {
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Switch Icon")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: FloatingActionButton(
-        child: fab,
-        onPressed: () => setState(() {
-          if (fabIconNumber == 0) {
-            fab = Icon(
-              Icons.stop,
-            );
-            fabIconNumber = 1;
-          } else {
-            fab = Icon(Icons.refresh);
-            fabIconNumber = 0;
-          }
-        }),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Switch Icon")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: FloatingActionButton(
+          child: fab,
+          onPressed: () => setState(() {
+            if (fabIconNumber == 0) {
+              fab = Icon(
+                Icons.stop,
+              );
+              fabIconNumber = 1;
+            } else {
+              fab = Icon(Icons.refresh);
+              fabIconNumber = 0;
+            }
+          }),
+        ),
       ),
     );
   }

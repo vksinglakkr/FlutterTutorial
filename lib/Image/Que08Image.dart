@@ -10,31 +10,33 @@ class Que08Image11 extends StatelessWidget {
   final urlImage2 = 'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("final urlImage1 = " "")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          //Image.network(urlImage2),
-          //Image.asset(urlImage1),
-          //Image(image:NetworkImage(urlImage2),),
-          Image(image: AssetImage(urlImage1)),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("final urlImage1 = " "")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            //Image.network(urlImage2),
+            //Image.asset(urlImage1),
+            //Image(image:NetworkImage(urlImage2),),
+            Image(image: AssetImage(urlImage1)),
 
-          SizedBox(
-            height: 100.0,
-          ),
-          Text("final urlImage1 = 'assets/images/Kurukshetra.jpg';"),
-          Text("final urlImage2 = 'https://i.ytimg.com/maxresdefault.jpg';"),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/Que08Image.jpg'),
+            SizedBox(
+              height: 100.0,
             ),
-          ),
-          Text("Image/Que08Image.dart")
-        ],
+            Text("final urlImage1 = 'assets/images/Kurukshetra.jpg';"),
+            Text("final urlImage2 = 'https://i.ytimg.com/maxresdefault.jpg';"),
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/Que08Image.jpg'),
+              ),
+            ),
+            Text("Image/Que08Image.dart")
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -9,27 +9,29 @@ class Que3211 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: WidgetAppBar("ListView.builder without List declaration")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: 10,
-            itemBuilder: (context, pos) {
-              return Container(
-                width: 80,
-                color: Colors.pink,
-                margin: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-              );
-            },
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+            title: WidgetAppBar("ListView.builder without List declaration")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            ListView.builder(
+              scrollDirection: Axis.horizontal,
+              itemCount: 10,
+              itemBuilder: (context, pos) {
+                return Container(
+                  width: 80,
+                  color: Colors.pink,
+                  margin: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+                );
+              },
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

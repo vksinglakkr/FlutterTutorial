@@ -8,11 +8,13 @@ class Que0411 extends StatelessWidget {
   final String video1 = "HLIQXZ9BMtE";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("runApp?")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("runApp?")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

@@ -8,11 +8,13 @@ class Que0111 extends StatelessWidget {
   final String video1 = "JRDQUaYHRrg";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Inheritance?")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Inheritance?")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

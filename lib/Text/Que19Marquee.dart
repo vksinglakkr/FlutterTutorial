@@ -18,39 +18,41 @@ class _Que19marqueeState extends State<Que19marquee> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Marquee")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Marquee(
-            text: str1,
-            blankSpace: 20,
-            accelerationCurve: Curves.easeOutCubic,
-            //accelerationCurve: Curves.linear,
-            velocity: 100,
-            startPadding: 10.0,
-            pauseAfterRound: Duration(seconds: 1),
-            startAfter: Duration(seconds: 1),
-            scrollAxis: Axis.horizontal,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            showFadingOnlyWhenScrolling: true,
-            fadingEdgeStartFraction: 0.1,
-            fadingEdgeEndFraction: 0.1,
-            numberOfRounds: 3,
-            accelerationDuration: Duration(seconds: 1),
-            decelerationDuration: Duration(milliseconds: 500),
-            decelerationCurve: Curves.easeOut,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Marquee")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Marquee(
+              text: str1,
+              blankSpace: 20,
+              accelerationCurve: Curves.easeOutCubic,
+              //accelerationCurve: Curves.linear,
+              velocity: 100,
+              startPadding: 10.0,
+              pauseAfterRound: Duration(seconds: 1),
+              startAfter: Duration(seconds: 1),
+              scrollAxis: Axis.horizontal,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              showFadingOnlyWhenScrolling: true,
+              fadingEdgeStartFraction: 0.1,
+              fadingEdgeEndFraction: 0.1,
+              numberOfRounds: 3,
+              accelerationDuration: Duration(seconds: 1),
+              decelerationDuration: Duration(milliseconds: 500),
+              decelerationCurve: Curves.easeOut,
 
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.normal,
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.normal,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

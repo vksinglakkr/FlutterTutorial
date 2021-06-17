@@ -6,22 +6,24 @@ import 'Que01CustomContainer_Visibility.dart';
 class HomeCustomWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("CustomWidgets")),
-      body: SafeArea(
-          child: Container(
-              child: Builder(
-        builder: (context) => ListView(
-          padding: EdgeInsets.all(3.0),
-          children: [
-            ButtonsCode(
-                Que0111(),
-                "lib/CustomWidgets/Que01CustomContainer_Visibility.dart",
-                "Custom Container"),
-          ],
-        ),
-      ))),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("CustomWidgets")),
+        body: SafeArea(
+            child: Container(
+                child: Builder(
+          builder: (context) => ListView(
+            padding: EdgeInsets.all(3.0),
+            children: [
+              ButtonsCode(
+                  Que0111(),
+                  "lib/CustomWidgets/Que01CustomContainer_Visibility.dart",
+                  "Custom Container"),
+            ],
+          ),
+        ))),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

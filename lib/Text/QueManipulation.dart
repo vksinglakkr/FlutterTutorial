@@ -11,48 +11,57 @@ class QueManipulation11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Text => Manipulation")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Center(
-        child: ListView(children: [
-          Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
-            child: Text(
-              "To convert the text to UPPERCASE we just need to add .toUpperCase()."
-                  .toUpperCase(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Text => Manipulation")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Center(
+          child: ListView(children: [
+            Divider(
+                color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
+              child: Text(
+                "To convert the text to UPPERCASE we just need to add .toUpperCase()."
+                    .toUpperCase(),
+              ),
             ),
-          ),
-          Divider(color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
-            child: Text(
-              "To convert the text to lowercase we just need to add .toLowerCase()."
-                  .toLowerCase(),
+            Divider(
+                color: Colors.black, thickness: 2, indent: 20, endIndent: 20),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
+              child: Text(
+                "To convert the text to lowercase we just need to add .toLowerCase()."
+                    .toLowerCase(),
+              ),
             ),
-          ),
-          Divider(color: Colors.black, thickness: 3, indent: 20, endIndent: 20),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
-            child: Text(
-                str1.split(" ").map((str1) => str1[0].toUpperCase()).join(" ")),
-          ),
-          Divider(color: Colors.black, thickness: 3, indent: 20, endIndent: 20),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
-            child: Text(
-                str1.split(" ").map((str1) => str1.toUpperCase()).join(" ")),
-          ),
-          Divider(color: Colors.black, thickness: 3, indent: 20, endIndent: 20),
-          Container(
-            margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
-            child: Text('${str1[0].toUpperCase()}${str1.substring(1)}'),
-          ),
-        ]),
+            Divider(
+                color: Colors.black, thickness: 3, indent: 20, endIndent: 20),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
+              child: Text(str1
+                  .split(" ")
+                  .map((str1) => str1[0].toUpperCase())
+                  .join(" ")),
+            ),
+            Divider(
+                color: Colors.black, thickness: 3, indent: 20, endIndent: 20),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
+              child: Text(
+                  str1.split(" ").map((str1) => str1.toUpperCase()).join(" ")),
+            ),
+            Divider(
+                color: Colors.black, thickness: 3, indent: 20, endIndent: 20),
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 1, 10, 1),
+              child: Text('${str1[0].toUpperCase()}${str1.substring(1)}'),
+            ),
+          ]),
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

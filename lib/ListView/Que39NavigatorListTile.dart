@@ -9,37 +9,39 @@ class Que3911 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: WidgetAppBar("ListView.builder without List declaration")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          ListView.builder(
-            shrinkWrap: true,
-            physics: ClampingScrollPhysics(),
-            itemCount: 5,
-            itemBuilder: (BuildContext context, int index) {
-              return ListTile(
-                title: Text('the List Item #$index'),
-                subtitle: Text('The SubTitle'),
-                leading: Icon(Icons.thumb_up),
-                trailing: Icon(Icons.arrow_forward),
-                onTap: () {
-                  // Navigator.push(
-                  // context,
-                  // MaterialPageRoute(
-                  // builder: (context) => DetailsPage(index)));
-                },
-              );
-            },
-          ),
-          SizedBox(height: 5),
-          Center(child: Text("ListView/Que39NavigatorListTile.dart"))
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+            title: WidgetAppBar("ListView.builder without List declaration")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            ListView.builder(
+              shrinkWrap: true,
+              physics: ClampingScrollPhysics(),
+              itemCount: 5,
+              itemBuilder: (BuildContext context, int index) {
+                return ListTile(
+                  title: Text('the List Item #$index'),
+                  subtitle: Text('The SubTitle'),
+                  leading: Icon(Icons.thumb_up),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap: () {
+                    // Navigator.push(
+                    // context,
+                    // MaterialPageRoute(
+                    // builder: (context) => DetailsPage(index)));
+                  },
+                );
+              },
+            ),
+            SizedBox(height: 5),
+            Center(child: Text("ListView/Que39NavigatorListTile.dart"))
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

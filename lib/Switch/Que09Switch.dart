@@ -15,29 +15,31 @@ class _State extends State<Que0911> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("How to show text on Track")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Transform.scale(
-              scale: 3,
-              child: Switch.adaptive(
-                value: isSwitched,
-                onChanged: (value) {
-                  setState(() => isSwitched = value);
-                },
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("How to show text on Track")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Transform.scale(
+                scale: 3,
+                child: Switch.adaptive(
+                  value: isSwitched,
+                  onChanged: (value) {
+                    setState(() => isSwitched = value);
+                  },
+                ),
               ),
             ),
-          ),
-          SizedBox(height: 20),
-          Text("May be set its own as per Android or iOS")
-        ],
+            SizedBox(height: 20),
+            Text("May be set its own as per Android or iOS")
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

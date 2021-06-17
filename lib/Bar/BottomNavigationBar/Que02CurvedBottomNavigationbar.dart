@@ -55,10 +55,12 @@ class _Que02Curved11State extends State<Que02Curved11> {
 class MyAppImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      body: Container(child: Image.asset("assets/help/Bar/AppBar/Que02.png")),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("")),
+        body: Container(child: Image.asset("assets/help/Bar/AppBar/Que02.png")),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }
@@ -66,15 +68,17 @@ class MyAppImage extends StatelessWidget {
 class MyAppVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Curved Navigation Bar")),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: 'JhqxNk8ry3A',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Curved Navigation Bar")),
+        body: YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'JhqxNk8ry3A',
+            flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+          ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

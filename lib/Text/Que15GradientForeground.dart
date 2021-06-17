@@ -12,21 +12,23 @@ class Que15Gradient11 extends StatelessWidget {
   ).createShader(Rect.fromLTWH(10.0, 200.0, 200.0, 20.0));
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Text => foreground: Paint()")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-              child: Text('Greetings, planet!',
-                  style: TextStyle(
-                    fontSize: 40,
-                    foreground: Paint()..shader = linearGradient,
-                  ))),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Text => foreground: Paint()")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+                child: Text('Greetings, planet!',
+                    style: TextStyle(
+                      fontSize: 40,
+                      foreground: Paint()..shader = linearGradient,
+                    ))),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

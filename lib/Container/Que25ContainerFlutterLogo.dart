@@ -9,31 +9,33 @@ class Que2511 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Flutter Logo")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              Positioned(
-                top: 100,
-                right: 50,
-                child: Container(
-                  color: Colors.red,
-                  width: 200.0,
-                  height: 200.0,
-                  child: FlutterLogo(
-                    size: 50,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Flutter Logo")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Stack(
+              children: [
+                Positioned(
+                  top: 100,
+                  right: 50,
+                  child: Container(
+                    color: Colors.red,
+                    width: 200.0,
+                    height: 200.0,
+                    child: FlutterLogo(
+                      size: 50,
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -12,40 +12,42 @@ class Que1211 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Width, Height Constraints ")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              color: Colors.red,
-              //   width: 200.0,
-              height: 200.0,
-              //media query
-              //width: double.infinity,
-              //width: MediaQuery.of(context).size, //error
-              //Random Number
-              //width: random.nextInt(200).toDouble(),
-              //constraints: BoxConstraints.expand(height: 100, width: 150),
-              //constraints: BoxConstraints.expand(width: 150),
-              //constraints: BoxConstraints.expand(),
-              //constraints: BoxConstraints.tightForFinite(width:200.0),
-              //constraints: BoxConstraints(
-              //     maxHeight: 200.0,
-              //     minHeight: 50.0,
-              //     maxWidth: 200.0,
-              //     minWidth: 100.0),
-              //alignment: Alignment.topLeft,
-              child: Center(
-                  child: Text("NIC Kurukshetra",
-                      style: TextStyle(fontSize: 30.0))),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Width, Height Constraints ")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                color: Colors.red,
+                //   width: 200.0,
+                height: 200.0,
+                //media query
+                //width: double.infinity,
+                //width: MediaQuery.of(context).size, //error
+                //Random Number
+                //width: random.nextInt(200).toDouble(),
+                //constraints: BoxConstraints.expand(height: 100, width: 150),
+                //constraints: BoxConstraints.expand(width: 150),
+                //constraints: BoxConstraints.expand(),
+                //constraints: BoxConstraints.tightForFinite(width:200.0),
+                //constraints: BoxConstraints(
+                //     maxHeight: 200.0,
+                //     minHeight: 50.0,
+                //     maxWidth: 200.0,
+                //     minWidth: 100.0),
+                //alignment: Alignment.topLeft,
+                child: Center(
+                    child: Text("NIC Kurukshetra",
+                        style: TextStyle(fontSize: 30.0))),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -13,16 +13,18 @@ class _State extends State<Que05Floating11> {
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Image")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: FloatingActionButton(
-          onPressed: () => print('Clicked'),
-          foregroundColor: Colors.white,
-          backgroundColor: Colors.black,
-          child: Text('👻', style: TextStyle(fontSize: 28.0))),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Image")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: FloatingActionButton(
+            onPressed: () => print('Clicked'),
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.black,
+            child: Text('👻', style: TextStyle(fontSize: 28.0))),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      ),
     );
   }
 }

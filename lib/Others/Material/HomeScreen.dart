@@ -8,32 +8,34 @@ import 'package:widget_with_codeview/widget_with_codeview.dart';
 class HomeMaterial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Material Widget")),
-      body: SafeArea(
-          child: Container(
-              child: Builder(
-        builder: (context) => ListView(
-          padding: EdgeInsets.all(3.0),
-          children: [
-            ButtonsCode(Que02InkWell11(),
-                "lib/InkWell/Que02ClickonTextToggle.dart", "InkWell"),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('Material',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que01()));
-                  }),
-            ),
-          ],
-        ),
-      ))),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Material Widget")),
+        body: SafeArea(
+            child: Container(
+                child: Builder(
+          builder: (context) => ListView(
+            padding: EdgeInsets.all(3.0),
+            children: [
+              ButtonsCode(Que02InkWell11(),
+                  "lib/InkWell/Que02ClickonTextToggle.dart", "InkWell"),
+              Container(
+                margin: EdgeInsets.all(2),
+                height: 32,
+                child: ElevatedButton(
+                    child: Text('Material',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Que01()));
+                    }),
+              ),
+            ],
+          ),
+        ))),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

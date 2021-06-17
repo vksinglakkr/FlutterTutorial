@@ -10,48 +10,50 @@ import 'package:widget_with_codeview/widget_with_codeview.dart';
 class HomePadding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Padding")),
-      body: SafeArea(
-          child: Container(
-              child: Builder(
-        builder: (context) => ListView(
-          padding: EdgeInsets.all(3.0),
-          children: [
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('Padding'),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que06()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('PaddingLRTB'),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que07()));
-                  }),
-            ),
-            Container(
-              margin: EdgeInsets.all(2),
-              height: 32,
-              child: ElevatedButton(
-                  child: Text('PaddingOnly'),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Que08()));
-                  }),
-            ),
-          ],
-        ),
-      ))),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Padding")),
+        body: SafeArea(
+            child: Container(
+                child: Builder(
+          builder: (context) => ListView(
+            padding: EdgeInsets.all(3.0),
+            children: [
+              Container(
+                margin: EdgeInsets.all(2),
+                height: 32,
+                child: ElevatedButton(
+                    child: Text('Padding'),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Que06()));
+                    }),
+              ),
+              Container(
+                margin: EdgeInsets.all(2),
+                height: 32,
+                child: ElevatedButton(
+                    child: Text('PaddingLRTB'),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Que07()));
+                    }),
+              ),
+              Container(
+                margin: EdgeInsets.all(2),
+                height: 32,
+                child: ElevatedButton(
+                    child: Text('PaddingOnly'),
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Que08()));
+                    }),
+              ),
+            ],
+          ),
+        ))),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

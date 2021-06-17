@@ -2,20 +2,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que0111 extends StatefulWidget {
+class Que01a11 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que0111> {
+class _State extends State<Que01a11> {
   final String url1 = "";
   final String image1 = "assets/help/TextField/Que01.png";
-  final String video1 = "DMkkF_lVnpo"; //final TextField Que01
+  final String video1 = "DMkkF_lVnpo"; //final TextField Que01a
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("TextField & Properties(1)")),
+        appBar: AppBar(title: WidgetAppBar("TextField & Properties(2)")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: SingleChildScrollView(
@@ -24,38 +24,44 @@ class _State extends State<Que0111> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Text('Basic Example'),
-                  TextField(),
-//                  Divider(indent: 16, endIndent: 16, thickness: 3),
-                  Text('hintText'),
+                  Text('Input border (none)'),
                   TextField(
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "Enter user name",
+                    ),
+                  ),
+                  Text('OutlineBorder & set Width of Border'),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(width: 3, color: Colors.red)),
+                      hintText: "Enter user name",
+                    ),
+                  ),
+                  Text('change KeyBoard'),
+                  TextField(
+                    keyboardType: TextInputType.number,
                     decoration: InputDecoration(
                       hintText: "Enter user name",
                     ),
                   ),
-                  Text('labelText & hintText'),
+                  Text('max. length (5)'),
                   TextField(
+                    maxLength: 5,
+                    keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                      labelText: "User Name",
                       hintText: "Enter user name",
                     ),
                   ),
-                  Text('labelText, labelStyle & hintText'),
+                  Text('max. Lines (2) with keyboardType multiline'),
                   TextField(
+                    maxLines: 2,
+                    maxLength: 20,
+                    keyboardType: TextInputType.multiline,
                     decoration: InputDecoration(
-                      labelText: "User Name",
-                      labelStyle: TextStyle(
-                        color: Colors.red,
-                        fontSize: 20,
-                      ),
                       hintText: "Enter user name",
-                    ),
-                  ),
-                  Text('Password'),
-                  TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: "Password",
                     ),
                   ),
                 ],

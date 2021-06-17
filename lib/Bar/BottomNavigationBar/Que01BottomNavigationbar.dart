@@ -72,10 +72,12 @@ class _Que01Bottom11State extends State<Que01Bottom11> {
 class MyAppImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      body: Container(child: Image.asset("assets/help/Bar/AppBar/Que02.png")),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("")),
+        body: Container(child: Image.asset("assets/help/Bar/AppBar/Que02.png")),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

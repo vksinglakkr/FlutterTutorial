@@ -25,30 +25,32 @@ class _State extends State<Que30a11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ListView Builder - 2 List")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(children: <Widget>[
-        Expanded(
-            child: ListView.builder(
-                padding: const EdgeInsets.all(8),
-                itemCount: names.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return Container(
-                    height: 50,
-                    margin: EdgeInsets.all(2),
-                    color: Colors.blue[colorCodes[index]],
-                    child: Center(
-                        child: Text(
-                      '${names[index]}',
-                      style: TextStyle(fontSize: 18),
-                    )),
-                  );
-                })),
-        Center(child: Text("ListView/Que30aBuilderListView.dart")),
-      ]),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("ListView Builder - 2 List")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(children: <Widget>[
+          Expanded(
+              child: ListView.builder(
+                  padding: const EdgeInsets.all(8),
+                  itemCount: names.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Container(
+                      height: 50,
+                      margin: EdgeInsets.all(2),
+                      color: Colors.blue[colorCodes[index]],
+                      child: Center(
+                          child: Text(
+                        '${names[index]}',
+                        style: TextStyle(fontSize: 18),
+                      )),
+                    );
+                  })),
+          Center(child: Text("ListView/Que30aBuilderListView.dart")),
+        ]),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

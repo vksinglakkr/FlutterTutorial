@@ -10,21 +10,23 @@ class Que03aImage11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Image.network()")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Image.network(
-            'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
-            loadingBuilder: (context, child, progress) {
-              return progress == null ? child : LinearProgressIndicator();
-            },
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Image.network()")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Image.network(
+              'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
+              loadingBuilder: (context, child, progress) {
+                return progress == null ? child : LinearProgressIndicator();
+              },
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

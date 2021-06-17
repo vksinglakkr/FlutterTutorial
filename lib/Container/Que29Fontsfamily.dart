@@ -21,37 +21,39 @@ class _Que2911State extends State<Que2911> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Fonts Family")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-              child: Column(children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(20),
-              child: Text(
-                'Welcome to NIC, Kurukshetra',
-                style: TextStyle(
-                    fontFamily: "Font1",
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-            Container(
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Fonts Family")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+                child: Column(children: <Widget>[
+              Container(
                 padding: EdgeInsets.all(20),
                 child: Text(
                   'Welcome to NIC, Kurukshetra',
                   style: TextStyle(
-                      fontFamily: "Font2",
+                      fontFamily: "Font1",
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
-                )),
-          ])),
-        ],
+                ),
+              ),
+              Container(
+                  padding: EdgeInsets.all(20),
+                  child: Text(
+                    'Welcome to NIC, Kurukshetra',
+                    style: TextStyle(
+                        fontFamily: "Font2",
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold),
+                  )),
+            ])),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

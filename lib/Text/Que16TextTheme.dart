@@ -37,31 +37,34 @@ class MyHomePage extends StatelessWidget {
   final String video1 = "";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Title")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              color: Theme.of(context).accentColor,
-              child: Text(
-                'Text with a background color',
-                style: Theme.of(context).textTheme.headline6,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Title")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                color: Theme.of(context).accentColor,
+                child: Text(
+                  'Text with a background color',
+                  style: Theme.of(context).textTheme.headline6,
+                ),
               ),
             ),
-          ),
-        ],
-      ),
-      floatingActionButton: Theme(
-        data: Theme.of(context).copyWith(
-          colorScheme:
-              Theme.of(context).colorScheme.copyWith(secondary: Colors.yellow),
+          ],
         ),
-        child: FloatingActionButton(
-          onPressed: null,
-          child: Icon(Icons.add),
+        floatingActionButton: Theme(
+          data: Theme.of(context).copyWith(
+            colorScheme: Theme.of(context)
+                .colorScheme
+                .copyWith(secondary: Colors.yellow),
+          ),
+          child: FloatingActionButton(
+            onPressed: null,
+            child: Icon(Icons.add),
+          ),
         ),
       ),
     );

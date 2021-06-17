@@ -8,19 +8,21 @@ class Que0111 extends StatelessWidget {
   final String video1 = "9z_YNlRlWfA";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Translate")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Transform.translate(
-        offset: Offset(0.0, 0.0),
-        child: Container(
-          height: 100.0,
-          width: 100.0,
-          color: Colors.red,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Translate")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Transform.translate(
+          offset: Offset(0.0, 0.0),
+          child: Container(
+            height: 100.0,
+            width: 100.0,
+            color: Colors.red,
+          ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

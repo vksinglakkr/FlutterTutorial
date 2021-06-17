@@ -7,15 +7,17 @@ import 'pages/HomeScreen.dart';
 class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return AnimatedSplashScreen(
-      duration: 2000,
-      splash: FlutterLogo(
-        size: 300,
+    return SafeArea(
+      child: AnimatedSplashScreen(
+        duration: 2000,
+        splash: FlutterLogo(
+          size: 300,
+        ),
+        nextScreen: MainScreen(),
+        splashTransition: SplashTransition.scaleTransition,
+        pageTransitionType: PageTransitionType.leftToRightWithFade,
+        backgroundColor: Colors.deepPurple,
       ),
-      nextScreen: MainScreen(),
-      splashTransition: SplashTransition.scaleTransition,
-      pageTransitionType: PageTransitionType.leftToRightWithFade,
-      backgroundColor: Colors.deepPurple,
     );
 //      debugShowCheckedModeBanner: false,
   }

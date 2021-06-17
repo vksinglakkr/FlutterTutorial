@@ -20,26 +20,28 @@ class _State extends State<Que30b11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ListView Builder - 2 List")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(children: <Widget>[
-        Expanded(
-            child: ListView.builder(
-                padding: const EdgeInsets.all(8),
-                itemCount: names.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return ListTile(
-                      leading: Icon(iconsVar[index]),
-                      title: Text(
-                        '${names[index]}',
-                        style: TextStyle(fontSize: 18),
-                      ));
-                })),
-        Center(child: Text("ListView/Que30bBuilderListView.dart")),
-      ]),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("ListView Builder - 2 List")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(children: <Widget>[
+          Expanded(
+              child: ListView.builder(
+                  padding: const EdgeInsets.all(8),
+                  itemCount: names.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return ListTile(
+                        leading: Icon(iconsVar[index]),
+                        title: Text(
+                          '${names[index]}',
+                          style: TextStyle(fontSize: 18),
+                        ));
+                  })),
+          Center(child: Text("ListView/Que30bBuilderListView.dart")),
+        ]),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

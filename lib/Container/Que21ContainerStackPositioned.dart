@@ -8,28 +8,30 @@ class Que2111 extends StatelessWidget {
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Container, Stack, Positioned")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Stack(
-            children: [
-              Positioned(
-                top: 100,
-                right: 50,
-                child: Container(
-                  color: Colors.red,
-                  width: 200.0,
-                  height: 200.0,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Container, Stack, Positioned")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Stack(
+              children: [
+                Positioned(
+                  top: 100,
+                  right: 50,
+                  child: Container(
+                    color: Colors.red,
+                    width: 200.0,
+                    height: 200.0,
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ],
+              ],
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

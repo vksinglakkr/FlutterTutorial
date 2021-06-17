@@ -31,77 +31,79 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar(widget.title)),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.lightbulb_outline,
-              size: 100,
-              color: bulbColor,
-            ),
-            Container(
-              width: 150,
-              child: Row(
-                children: [
-                  Radio(
-                      value: Colors.red,
-                      groupValue: bulbColor,
-                      onChanged: (val) {
-                        bulbColor = val;
-                        setState(() {});
-                      }),
-                  Text(
-                    "Red",
-                    style: TextStyle(fontSize: 24, color: Colors.red),
-                  ),
-                ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar(widget.title)),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.lightbulb_outline,
+                size: 100,
+                color: bulbColor,
               ),
-            ),
-            Container(
-              width: 150,
-              child: Row(
-                children: [
-                  Radio(
-                      value: Colors.blue,
-                      groupValue: bulbColor,
-                      onChanged: (val) {
-                        bulbColor = val;
-                        setState(() {});
-                      }),
-                  Text(
-                    "Blue",
-                    style: TextStyle(fontSize: 24, color: Colors.blue),
-                  ),
-                ],
+              Container(
+                width: 150,
+                child: Row(
+                  children: [
+                    Radio(
+                        value: Colors.red,
+                        groupValue: bulbColor,
+                        onChanged: (val) {
+                          bulbColor = val;
+                          setState(() {});
+                        }),
+                    Text(
+                      "Red",
+                      style: TextStyle(fontSize: 24, color: Colors.red),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            Container(
-              width: 150,
-              child: Row(
-                children: [
-                  Radio(
-                      value: Colors.green,
-                      groupValue: bulbColor,
-                      onChanged: (val) {
-                        bulbColor = val;
-                        setState(() {});
-                      }),
-                  Text(
-                    "Green",
-                    style: TextStyle(fontSize: 24, color: Colors.green),
-                  ),
-                ],
+              Container(
+                width: 150,
+                child: Row(
+                  children: [
+                    Radio(
+                        value: Colors.blue,
+                        groupValue: bulbColor,
+                        onChanged: (val) {
+                          bulbColor = val;
+                          setState(() {});
+                        }),
+                    Text(
+                      "Blue",
+                      style: TextStyle(fontSize: 24, color: Colors.blue),
+                    ),
+                  ],
+                ),
               ),
-            )
-          ],
+              Container(
+                width: 150,
+                child: Row(
+                  children: [
+                    Radio(
+                        value: Colors.green,
+                        groupValue: bulbColor,
+                        onChanged: (val) {
+                          bulbColor = val;
+                          setState(() {});
+                        }),
+                    Text(
+                      "Green",
+                      style: TextStyle(fontSize: 24, color: Colors.green),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

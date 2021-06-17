@@ -14,11 +14,14 @@ class _State extends State<QueExpanded11> {
   final String video1 = "rgIcf9YfSOs"; //final
 
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Handle changes \nusing Controller?")),
-      body: InkWell(
-          onTap: () => launch("https://kurukshetra.gov.in"),
-          child: Text("RetroPortal Studio")),
+    return SafeArea(
+      child: Scaffold(
+        appBar:
+            AppBar(title: WidgetAppBar("Handle changes \nusing Controller?")),
+        body: InkWell(
+            onTap: () => launch("https://kurukshetra.gov.in"),
+            child: Text("RetroPortal Studio")),
+      ),
     );
   }
 }

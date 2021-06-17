@@ -13,125 +13,128 @@ import 'Box_SizedBox/HomeScreen_Sized.dart';
 class HomeBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Box")),
-      body: SafeArea(
-        child: Container(
-          child: Builder(
-            builder: (context) => ListView(
-              padding: EdgeInsets.all(3.0),
-              children: [
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Sized Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Box")),
+        body: SafeArea(
+          child: Container(
+            child: Builder(
+              builder: (context) => ListView(
+                padding: EdgeInsets.all(3.0),
+                children: [
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Sized Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeSized()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Constrained Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeSized()));
+                        }),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Constrained Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeConstrained()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Decorated Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeConstrained()));
+                        }),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Decorated Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeDecorated()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Fitted Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeDecorated()));
+                        }),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Fitted Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeFitted()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Fractionally Sized Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeFitted()));
+                        }),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Fractionally Sized Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeFractionallySized()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Limited Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      HomeFractionallySized()));
+                        }),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Limited Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeLimited()));
-                      }),
-                ),
-                Container(
-                  margin: EdgeInsets.all(2),
-                  height: 32,
-                  child: ElevatedButton(
-                      child: Text('Rotated Box',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeLimited()));
+                        }),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Rotated Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeRotated()));
-                      }),
-                ),
-              ],
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeRotated()));
+                        }),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

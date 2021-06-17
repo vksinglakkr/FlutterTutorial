@@ -15,25 +15,27 @@ class _State extends State<Que03Gester11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Flutter Tutorial")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          GestureDetector(
-              child: Opacity(
-                opacity: _opacity,
-                child: Container(height: 100, width: 100, color: Colors.red),
-              ),
-              onTap: () {
-                setState(() {
-                  _opacity = _opacity - .1;
-                });
-              }),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Flutter Tutorial")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            GestureDetector(
+                child: Opacity(
+                  opacity: _opacity,
+                  child: Container(height: 100, width: 100, color: Colors.red),
+                ),
+                onTap: () {
+                  setState(() {
+                    _opacity = _opacity - .1;
+                  });
+                }),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

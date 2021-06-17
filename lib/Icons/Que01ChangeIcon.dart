@@ -19,23 +19,25 @@ class _Que0111State extends State<Que0111> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Change Icon")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: FloatingActionButton(
-        child: fab,
-        onPressed: () => setState(() {
-          if (fabIconNumber == 0) {
-            fab = Icon(
-              Icons.stop,
-            );
-            fabIconNumber = 1;
-          } else {
-            fab = Icon(Icons.refresh);
-            fabIconNumber = 0;
-          }
-        }),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Change Icon")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: FloatingActionButton(
+          child: fab,
+          onPressed: () => setState(() {
+            if (fabIconNumber == 0) {
+              fab = Icon(
+                Icons.stop,
+              );
+              fabIconNumber = 1;
+            } else {
+              fab = Icon(Icons.refresh);
+              fabIconNumber = 0;
+            }
+          }),
+        ),
       ),
     );
   }

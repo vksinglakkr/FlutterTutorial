@@ -14,44 +14,46 @@ class _Que0611State extends State<Que0611> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Padding")),
-        bottomNavigationBar:
-            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            Center(
-                child: Column(children: <Widget>[
-              Container(
-                  margin: EdgeInsets.all(5),
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text('Elevated Button - Default Padding'),
-                  )),
-              Container(
-                  margin: EdgeInsets.all(5),
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text('Elevated Button - Padding 25'),
+    return SafeArea(
+      child: Scaffold(
+          appBar: AppBar(title: WidgetAppBar("Padding")),
+          bottomNavigationBar:
+              QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+          body: Column(
+            children: [
+              Center(
+                  child: Column(children: <Widget>[
+                Container(
+                    margin: EdgeInsets.all(5),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Elevated Button - Default Padding'),
+                    )),
+                Container(
+                    margin: EdgeInsets.all(5),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Elevated Button - Padding 25'),
 //                  padding: EdgeInsets.all(25),
-                  )),
-              Container(
-                  margin: EdgeInsets.all(5),
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    child: Text('Elevated Button - Padding 50'),
+                    )),
+                Container(
+                    margin: EdgeInsets.all(5),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text('Elevated Button - Padding 50'),
 //                  padding: EdgeInsets.all(50),
-                  )),
-            ])),
-          ],
-        ),
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.purple.shade300,
-          tooltip: "Go Back",
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: Icon(Icons.first_page),
-        ));
+                    )),
+              ])),
+            ],
+          ),
+          floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.purple.shade300,
+            tooltip: "Go Back",
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: Icon(Icons.first_page),
+          )),
+    );
   }
 }

@@ -9,34 +9,36 @@ class Que01Fitted11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Fitted Box=>Stretch Image")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Text(
-              "Flutter code sample for FittedBox\nIn this example, the image is stretched to fill the entire [Container], which would\nnot happen normally without using FittedBox."),
-          Container(
-            height: 180,
-            width: 250,
-            color: Colors.red,
-            child: Image.network(
-                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-          ),
-          Container(
-            height: 180,
-            width: 250,
-            color: Colors.red,
-            child: FittedBox(
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Fitted Box=>Stretch Image")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Text(
+                "Flutter code sample for FittedBox\nIn this example, the image is stretched to fill the entire [Container], which would\nnot happen normally without using FittedBox."),
+            Container(
+              height: 180,
+              width: 250,
+              color: Colors.red,
               child: Image.network(
                   'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
-              fit: BoxFit.fill,
             ),
-          ),
-        ],
+            Container(
+              height: 180,
+              width: 250,
+              color: Colors.red,
+              child: FittedBox(
+                child: Image.network(
+                    'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
+                fit: BoxFit.fill,
+              ),
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

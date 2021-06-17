@@ -14,39 +14,41 @@ class _Que0211State extends State<Que0211> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Icons-ChangeColor")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Center(
-        child: Column(children: <Widget>[
-          Container(
-            margin: EdgeInsets.all(10),
-            child: Icon(
-              Icons.cake,
-              color: Colors.red,
-              size: 100,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Icons-ChangeColor")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Center(
+          child: Column(children: <Widget>[
+            Container(
+              margin: EdgeInsets.all(10),
+              child: Icon(
+                Icons.cake,
+                color: Colors.red,
+                size: 100,
+              ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.all(10),
-            child: Icon(
-              Icons.settings,
-              color: Colors.green,
-              size: 100,
+            Container(
+              margin: EdgeInsets.all(10),
+              child: Icon(
+                Icons.settings,
+                color: Colors.green,
+                size: 100,
+              ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.all(10),
-            child: Icon(
-              Icons.voice_chat,
-              color: Colors.purple,
-              size: 100,
+            Container(
+              margin: EdgeInsets.all(10),
+              child: Icon(
+                Icons.voice_chat,
+                color: Colors.purple,
+                size: 100,
+              ),
             ),
-          ),
-        ]),
+          ]),
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

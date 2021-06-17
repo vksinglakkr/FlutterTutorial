@@ -14,23 +14,25 @@ class _State extends State<Que02Elevated11> {
   final String video1 = "";
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('onPressed \nCall fn (Increment Counter)'),
-      ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          new Center(
-            child: new ElevatedButton(
-              onPressed: () => {launch('https://kurukshetra.gov.in')},
-              child: Text('District Kurukshetra website'),
+    return SafeArea(
+      child: Scaffold(
+        appBar: new AppBar(
+          title: new Text('onPressed \nCall fn (Increment Counter)'),
+        ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            new Center(
+              child: new ElevatedButton(
+                onPressed: () => {launch('https://kurukshetra.gov.in')},
+                child: Text('District Kurukshetra website'),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

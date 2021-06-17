@@ -13,20 +13,22 @@ class _State extends State<Que07Custom11> {
   final String video1 = "";
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Elevated Button \nusing Extract Widget'),
-      ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: new Center(
-        child: Column(
-          children: [
-            CustomElevated("Elevated Button \nUsing Extract Widget"),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: new AppBar(
+          title: new Text('Elevated Button \nusing Extract Widget'),
         ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: new Center(
+          child: Column(
+            children: [
+              CustomElevated("Elevated Button \nUsing Extract Widget"),
+            ],
+          ),
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

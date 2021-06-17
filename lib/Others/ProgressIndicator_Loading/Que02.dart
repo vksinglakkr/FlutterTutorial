@@ -9,21 +9,23 @@ class Que0211 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("FadeInImage_Loading Bar")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: FadeInImage.assetNetwork(
-              placeholder: 'assets/images/loading.gif',
-              image: 'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("FadeInImage_Loading Bar")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: FadeInImage.assetNetwork(
+                placeholder: 'assets/images/loading.gif',
+                image: 'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

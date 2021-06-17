@@ -10,45 +10,48 @@ class Que3811 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:
-          AppBar(title: WidgetAppBar("List<int> varDeclaration = [ , , , ]")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(
-            padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
-            height: MediaQuery.of(context).size.height * 0.35,
-            child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: numbers.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: MediaQuery.of(context).size.width * 0.6,
-                    child: Card(
-                      color: Colors.blue,
-                      child: Container(
-                        child: Center(
-                            child: Text(
-                          numbers[index].toString(),
-                          style: TextStyle(color: Colors.white, fontSize: 36.0),
-                        )),
+    return SafeArea(
+      child: Scaffold(
+        appBar:
+            AppBar(title: WidgetAppBar("List<int> varDeclaration = [ , , , ]")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
+              height: MediaQuery.of(context).size.height * 0.35,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: numbers.length,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: MediaQuery.of(context).size.width * 0.6,
+                      child: Card(
+                        color: Colors.blue,
+                        child: Container(
+                          child: Center(
+                              child: Text(
+                            numbers[index].toString(),
+                            style:
+                                TextStyle(color: Colors.white, fontSize: 36.0),
+                          )),
+                        ),
                       ),
-                    ),
-                  );
-                }),
-          ),
-          SizedBox(height: 30),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/ListView/Que38.png'),
+                    );
+                  }),
             ),
-          ),
-          Center(child: Text("ListView/Que38HorizontalScroll.dart"))
-        ],
+            SizedBox(height: 30),
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/ListView/Que38.png'),
+              ),
+            ),
+            Center(child: Text("ListView/Que38HorizontalScroll.dart"))
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

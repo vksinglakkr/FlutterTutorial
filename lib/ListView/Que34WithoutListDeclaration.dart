@@ -9,32 +9,34 @@ class Que3411 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: WidgetAppBar("ListView.builder without List declaration")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(
-            height: 300,
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return FlutterLogo(size: 120.0);
-              },
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+            title: WidgetAppBar("ListView.builder without List declaration")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(
+              height: 300,
+              child: ListView.builder(
+                itemCount: 10,
+                itemBuilder: (context, index) {
+                  return FlutterLogo(size: 120.0);
+                },
+              ),
             ),
-          ),
-          SizedBox(height: 15),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/ListView/Que34.png'),
+            SizedBox(height: 15),
+            Center(
+              child: Image(
+                image: AssetImage('assets/images/ListView/Que34.png'),
+              ),
             ),
-          ),
-          Center(child: Text("ListView/Que34WithoutListDeclaration.dart"))
-        ],
+            Center(child: Text("ListView/Que34WithoutListDeclaration.dart"))
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

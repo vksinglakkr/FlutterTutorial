@@ -9,73 +9,75 @@ class Que01Fraction11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("FractionallySizedBox Demo")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(
-            height: 130,
-            width: double.infinity,
-            color: Colors.green,
-            child: FractionallySizedBox(
-              heightFactor: 0.32,
-              child: ElevatedButton(
-                  onPressed: () {},
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("FractionallySizedBox Demo")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(
+              height: 130,
+              width: double.infinity,
+              color: Colors.green,
+              child: FractionallySizedBox(
+                heightFactor: 0.32,
+                child: ElevatedButton(
+                    onPressed: () {},
 //                    color: Colors.black,
 //                    textColor: Colors.white,
-                  child: Text('heightFactor')),
+                    child: Text('heightFactor')),
+              ),
             ),
-          ),
-          SizedBox(height: 10.0),
-          Container(
-            width: double.infinity,
-            height: 100,
-            color: Colors.green,
-            child: FractionallySizedBox(
-              widthFactor: 0.50,
-              child: ElevatedButton(
-                  onPressed: () {},
+            SizedBox(height: 10.0),
+            Container(
+              width: double.infinity,
+              height: 100,
+              color: Colors.green,
+              child: FractionallySizedBox(
+                widthFactor: 0.50,
+                child: ElevatedButton(
+                    onPressed: () {},
 //                    color: Colors.black,
 //                    textColor: Colors.white,
-                  child: Text('widthFactor')),
+                    child: Text('widthFactor')),
+              ),
             ),
-          ),
-          SizedBox(height: 10.0),
-          Container(
-            width: double.infinity,
-            height: 100,
-            color: Colors.green,
-            child: FractionallySizedBox(
-              widthFactor: 0.50,
-              heightFactor: 0.32,
-              child: ElevatedButton(
-                  onPressed: () {},
+            SizedBox(height: 10.0),
+            Container(
+              width: double.infinity,
+              height: 100,
+              color: Colors.green,
+              child: FractionallySizedBox(
+                widthFactor: 0.50,
+                heightFactor: 0.32,
+                child: ElevatedButton(
+                    onPressed: () {},
 //                    color: Colors.black,
 //                    textColor: Colors.white,
-                  child: Text('Both')),
+                    child: Text('Both')),
+              ),
             ),
-          ),
-          SizedBox(height: 10.0),
-          Container(
-            width: double.infinity,
-            height: 100,
-            color: Colors.green,
-            child: FractionallySizedBox(
-              widthFactor: 0.50,
-              heightFactor: 0.32,
-              alignment: Alignment.bottomRight,
-              child: ElevatedButton(
-                  onPressed: () {},
+            SizedBox(height: 10.0),
+            Container(
+              width: double.infinity,
+              height: 100,
+              color: Colors.green,
+              child: FractionallySizedBox(
+                widthFactor: 0.50,
+                heightFactor: 0.32,
+                alignment: Alignment.bottomRight,
+                child: ElevatedButton(
+                    onPressed: () {},
 //                    color: Colors.black,
 //                    textColor: Colors.white,
-                  child: Text('Alignment')),
+                    child: Text('Alignment')),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

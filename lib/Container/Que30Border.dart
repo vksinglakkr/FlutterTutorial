@@ -14,31 +14,33 @@ class _Que3011State extends State<Que3011> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Border")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-              child: Column(children: <Widget>[
-            Container(
-              width: 200,
-              height: 200,
-              margin: EdgeInsets.all(10),
-              padding: EdgeInsets.all(5),
-              child: Text(''),
-              decoration: BoxDecoration(
-                  color: Colors.yellow[100],
-                  border: Border.all(
-                    color: Colors.red,
-                    width: 5,
-                  )),
-            ),
-          ])),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Border")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+                child: Column(children: <Widget>[
+              Container(
+                width: 200,
+                height: 200,
+                margin: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
+                child: Text(''),
+                decoration: BoxDecoration(
+                    color: Colors.yellow[100],
+                    border: Border.all(
+                      color: Colors.red,
+                      width: 5,
+                    )),
+              ),
+            ])),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

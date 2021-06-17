@@ -10,29 +10,31 @@ class Que03Image11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Image.network()")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Image.network(
-            'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
-          ),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Image.network()")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Image.network(
+              'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
+            ),
 
-          //Image.asset('assets/images/Kurukshetra.jpg'),
-          //Image(image:NetworkImage('https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg'),),
-          //Image(image: AssetImage('assets/images/Kurukshetra.jpg')),
-          SizedBox(height: 50.0),
-          Image(
-            image: AssetImage('assets/images/Que03Image.jpg'),
-            height: 100,
-            fit: BoxFit.fill,
-          ),
-          Text("Image/Que03Image.dart")
-        ],
+            //Image.asset('assets/images/Kurukshetra.jpg'),
+            //Image(image:NetworkImage('https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg'),),
+            //Image(image: AssetImage('assets/images/Kurukshetra.jpg')),
+            SizedBox(height: 50.0),
+            Image(
+              image: AssetImage('assets/images/Que03Image.jpg'),
+              height: 100,
+              fit: BoxFit.fill,
+            ),
+            Text("Image/Que03Image.dart")
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

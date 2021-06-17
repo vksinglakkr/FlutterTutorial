@@ -14,47 +14,49 @@ class _Que00Image11State extends State<Que00Image11> {
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:
-          AppBar(title: WidgetAppBar("Various ways \nfor obtaining an Image?")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          SizedBox(height: 5.0),
-          Image(
-            image: AssetImage('assets/images/ImageGenNotes.jpg'),
-          ),
-          SizedBox(height: 10),
-          Image(
-            image: AssetImage('assets/images/Que01Image.jpg'),
-          ),
-          Text(
-            "Several constructors are provided for the various ways that an image can be specified:",
-            style: TextStyle(
-              fontSize: 10,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+            title: WidgetAppBar("Various ways \nfor obtaining an Image?")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            SizedBox(height: 5.0),
+            Image(
+              image: AssetImage('assets/images/ImageGenNotes.jpg'),
             ),
-            textAlign: TextAlign.left,
-          ),
-          Text(
-            "new Image, for obtaining an image from an ImageProvider.",
-            style: TextStyle(fontSize: 10),
-            textAlign: TextAlign.left,
-          ),
-          Text(
-            "new Image.asset, for obtaining an image from an AssetBundle using a key.",
-            style: TextStyle(fontSize: 10),
-            textAlign: TextAlign.left,
-          ),
-          Text("new Image.network, for obtaining an image from a URL.",
-              style: TextStyle(fontSize: 10)),
-          Text("new Image.file, for obtaining an image from a File.",
-              style: TextStyle(fontSize: 10)),
-          Text("new Image.memory, for obtaining an image from a Uint8List.",
-              style: TextStyle(fontSize: 10)),
-        ],
+            SizedBox(height: 10),
+            Image(
+              image: AssetImage('assets/images/Que01Image.jpg'),
+            ),
+            Text(
+              "Several constructors are provided for the various ways that an image can be specified:",
+              style: TextStyle(
+                fontSize: 10,
+              ),
+              textAlign: TextAlign.left,
+            ),
+            Text(
+              "new Image, for obtaining an image from an ImageProvider.",
+              style: TextStyle(fontSize: 10),
+              textAlign: TextAlign.left,
+            ),
+            Text(
+              "new Image.asset, for obtaining an image from an AssetBundle using a key.",
+              style: TextStyle(fontSize: 10),
+              textAlign: TextAlign.left,
+            ),
+            Text("new Image.network, for obtaining an image from a URL.",
+                style: TextStyle(fontSize: 10)),
+            Text("new Image.file, for obtaining an image from a File.",
+                style: TextStyle(fontSize: 10)),
+            Text("new Image.memory, for obtaining an image from a Uint8List.",
+                style: TextStyle(fontSize: 10)),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

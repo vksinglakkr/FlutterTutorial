@@ -42,104 +42,108 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar(widget.title)),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            children: [
-              Text('Basic Example'),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ElevatedButton(onPressed: () {}, child: Text('Basic')),
-                  ElevatedButton.icon(
-                    onPressed: () {},
-                    label: Text('With Icon'),
-                    icon: Icon(Icons.access_alarm),
-                  ),
-                ],
-              ),
-              Divider(indent: 16, endIndent: 16, thickness: 3),
-              Text('Enabled/Disabled Button'),
-              // An enabled button
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ElevatedButton(
-                    child: Text('Enabled Button'),
-                    onPressed: () {},
-                  ),
-                  // A disabled button
-                  ElevatedButton(
-                      onPressed: null, child: Text('Disabled Button')),
-                ],
-              ),
-
-              Divider(indent: 16, endIndent: 16, thickness: 3),
-              Text('Styling: StyleFrom/ButtonStyle'),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ElevatedButton(
-                    child: Text('StyleFrom'),
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                        primary: Colors.purple,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-                        textStyle: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold)),
-                  ),
-                  ElevatedButton(
-                    child: Text('ButtonStyle'),
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(Colors.red),
-                        padding: MaterialStateProperty.all(EdgeInsets.all(10)),
-                        textStyle:
-                            MaterialStateProperty.all(TextStyle(fontSize: 20))),
-                  ),
-                ],
-              ),
-              Divider(indent: 16, endIndent: 16, thickness: 3),
-              Text('Border'),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                        side: BorderSide(
-                      width: 5,
-                      color: Colors.red,
-                    )),
-                    child: Text('Elevated Button with Border'),
-                  ),
-                ],
-              ),
-              Divider(indent: 16, endIndent: 16, thickness: 3),
-              Text('Width & height'),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ConstrainedBox(
-                    constraints:
-                        BoxConstraints.tightFor(width: 100, height: 40),
-                    child: ElevatedButton(
-                      child: Text('100 x 40'),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar(widget.title)),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: SingleChildScrollView(
+          child: Center(
+            child: Column(
+              children: [
+                Text('Basic Example'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(onPressed: () {}, child: Text('Basic')),
+                    ElevatedButton.icon(
+                      onPressed: () {},
+                      label: Text('With Icon'),
+                      icon: Icon(Icons.access_alarm),
+                    ),
+                  ],
+                ),
+                Divider(indent: 16, endIndent: 16, thickness: 3),
+                Text('Enabled/Disabled Button'),
+                // An enabled button
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      child: Text('Enabled Button'),
                       onPressed: () {},
                     ),
-                  ),
-                ],
-              ),
-            ],
+                    // A disabled button
+                    ElevatedButton(
+                        onPressed: null, child: Text('Disabled Button')),
+                  ],
+                ),
+
+                Divider(indent: 16, endIndent: 16, thickness: 3),
+                Text('Styling: StyleFrom/ButtonStyle'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      child: Text('StyleFrom'),
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.purple,
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 10),
+                          textStyle: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold)),
+                    ),
+                    ElevatedButton(
+                      child: Text('ButtonStyle'),
+                      onPressed: () {},
+                      style: ButtonStyle(
+                          backgroundColor:
+                              MaterialStateProperty.all(Colors.red),
+                          padding:
+                              MaterialStateProperty.all(EdgeInsets.all(10)),
+                          textStyle: MaterialStateProperty.all(
+                              TextStyle(fontSize: 20))),
+                    ),
+                  ],
+                ),
+                Divider(indent: 16, endIndent: 16, thickness: 3),
+                Text('Border'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                          side: BorderSide(
+                        width: 5,
+                        color: Colors.red,
+                      )),
+                      child: Text('Elevated Button with Border'),
+                    ),
+                  ],
+                ),
+                Divider(indent: 16, endIndent: 16, thickness: 3),
+                Text('Width & height'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ConstrainedBox(
+                      constraints:
+                          BoxConstraints.tightFor(width: 100, height: 40),
+                      child: ElevatedButton(
+                        child: Text('100 x 40'),
+                        onPressed: () {},
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

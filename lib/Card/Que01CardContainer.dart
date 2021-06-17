@@ -23,37 +23,39 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar(widget.title)),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Card(
-            child: Container(
-              height: 100,
-              width: 400,
-              child: Text(
-                "Sample 1",
-                style: TextStyle(color: Colors.white),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar(widget.title)),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Card(
+              child: Container(
+                height: 100,
+                width: 400,
+                child: Text(
+                  "Sample 1",
+                  style: TextStyle(color: Colors.white),
+                ),
+                decoration: BoxDecoration(color: Colors.red),
               ),
-              decoration: BoxDecoration(color: Colors.red),
             ),
-          ),
-          Card(
-            child: Container(
-              height: 100,
-              width: 400,
-              child: Text(
-                "Sample 1",
-                style: TextStyle(color: Colors.white),
+            Card(
+              child: Container(
+                height: 100,
+                width: 400,
+                child: Text(
+                  "Sample 1",
+                  style: TextStyle(color: Colors.white),
+                ),
+                decoration: BoxDecoration(color: Colors.blue),
               ),
-              decoration: BoxDecoration(color: Colors.blue),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -25,46 +25,48 @@ class _State extends State<Que14a11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ListView.separated")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: <Widget>[
-          Expanded(
-              child: ListView.separated(
-            padding: const EdgeInsets.all(8),
-            itemCount: names.length,
-            itemBuilder: (BuildContext context, int index) {
-              return Container(
-                height: 30,
-                margin: EdgeInsets.all(2),
-                color: Colors.blue[colorCodes[index]],
-                child: Center(
-                  child: Text(
-                    '${names[index]}',
-                    style: TextStyle(fontSize: 18),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("ListView.separated")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: <Widget>[
+            Expanded(
+                child: ListView.separated(
+              padding: const EdgeInsets.all(8),
+              itemCount: names.length,
+              itemBuilder: (BuildContext context, int index) {
+                return Container(
+                  height: 30,
+                  margin: EdgeInsets.all(2),
+                  color: Colors.blue[colorCodes[index]],
+                  child: Center(
+                    child: Text(
+                      '${names[index]}',
+                      style: TextStyle(fontSize: 18),
+                    ),
                   ),
-                ),
-              );
-            },
-            separatorBuilder: (BuildContext context, int index) => Divider(
-              thickness: 5,
-              color: Colors.red,
+                );
+              },
+              separatorBuilder: (BuildContext context, int index) => Divider(
+                thickness: 5,
+                color: Colors.red,
+              ),
+            )),
+            SizedBox(
+              height: 2.0,
             ),
-          )),
-          SizedBox(
-            height: 2.0,
-          ),
-          //  Center(
-          //    child: Image(
-          //      image: AssetImage('assets/images/ListView/Que07.png'),
-          //    ),
-          //  ),
-          Center(child: Text("ListView/Que14aListViewSeperated.dart"))
-        ],
+            //  Center(
+            //    child: Image(
+            //      image: AssetImage('assets/images/ListView/Que07.png'),
+            //    ),
+            //  ),
+            Center(child: Text("ListView/Que14aListViewSeperated.dart"))
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

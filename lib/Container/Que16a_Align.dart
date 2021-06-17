@@ -9,23 +9,26 @@ class Que16a11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Algnment")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Container(
-              //alignment: Alignment.center,
-              color: Colors.red,
-              child: Text('NIC Kurukshetra', style: TextStyle(fontSize: 20.0)),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Algnment")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Align(
+              alignment: Alignment.bottomLeft,
+              child: Container(
+                //alignment: Alignment.center,
+                color: Colors.red,
+                child:
+                    Text('NIC Kurukshetra', style: TextStyle(fontSize: 20.0)),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -2,20 +2,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que0111 extends StatefulWidget {
+class Que01b11 extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que0111> {
+class _State extends State<Que01b11> {
   final String url1 = "";
   final String image1 = "assets/help/TextField/Que01.png";
-  final String video1 = "DMkkF_lVnpo"; //final TextField Que01
+  final String video1 = "DMkkF_lVnpo"; //final TextField Que01b
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("TextField & Properties(1)")),
+        appBar: AppBar(title: WidgetAppBar("TextField & Properties(3)")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: SingleChildScrollView(
@@ -24,38 +24,25 @@ class _State extends State<Que0111> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Text('Basic Example'),
-                  TextField(),
-//                  Divider(indent: 16, endIndent: 16, thickness: 3),
-                  Text('hintText'),
+                  Text('prefix Icon'),
                   TextField(
                     decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.access_alarm),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(width: 3, color: Colors.red)),
                       hintText: "Enter user name",
                     ),
                   ),
-                  Text('labelText & hintText'),
+                  Text('IconButton'),
                   TextField(
                     decoration: InputDecoration(
-                      labelText: "User Name",
+                      prefixIcon: IconButton(
+                          onPressed: () {}, icon: Icon(Icons.search_off)),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(width: 3, color: Colors.red)),
                       hintText: "Enter user name",
-                    ),
-                  ),
-                  Text('labelText, labelStyle & hintText'),
-                  TextField(
-                    decoration: InputDecoration(
-                      labelText: "User Name",
-                      labelStyle: TextStyle(
-                        color: Colors.red,
-                        fontSize: 20,
-                      ),
-                      hintText: "Enter user name",
-                    ),
-                  ),
-                  Text('Password'),
-                  TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: "Password",
                     ),
                   ),
                 ],

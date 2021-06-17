@@ -16,16 +16,18 @@ class _Que03InkWell11State extends State<Que03InkWell11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("InkWell\nCall fn onTap")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Center(
-        child: InkWell(
-            onTap: () => launch("https://kurukshetra.gov.in"),
-            child: Text("District Kurukshetra<-Click here")),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("InkWell\nCall fn onTap")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Center(
+          child: InkWell(
+              onTap: () => launch("https://kurukshetra.gov.in"),
+              child: Text("District Kurukshetra<-Click here")),
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

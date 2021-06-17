@@ -8,20 +8,22 @@ class Que1411 extends StatelessWidget {
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Check width height with column")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(
-            alignment: Alignment.center,
-            color: Colors.red,
-            child: Text('NIC Kurukshetra', style: TextStyle(fontSize: 20.0)),
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Check width height with column")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(
+              alignment: Alignment.center,
+              color: Colors.red,
+              child: Text('NIC Kurukshetra', style: TextStyle(fontSize: 20.0)),
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

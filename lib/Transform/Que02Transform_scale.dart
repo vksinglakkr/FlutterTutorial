@@ -9,26 +9,28 @@ class Que0211 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Scale")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Transform.scale(
-            scale: 0.5,
-            origin: Offset(0.0, 0.0),
-            child: Center(
-              child: Container(
-                height: 10,
-                width: 300,
-                color: Colors.red,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Scale")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Transform.scale(
+              scale: 0.5,
+              origin: Offset(0.0, 0.0),
+              child: Center(
+                child: Container(
+                  height: 10,
+                  width: 300,
+                  color: Colors.red,
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

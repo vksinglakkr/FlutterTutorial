@@ -15,35 +15,37 @@ class _Que02State extends State<Que0211> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: WidgetAppBar(
-              "Switch \n  How to change the Color of Icon at run time")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              child: Icon(
-                Icons.lightbulb_outline,
-                color: _toggle ? Colors.orange : null,
-                size: 200,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+            title: WidgetAppBar(
+                "Switch \n  How to change the Color of Icon at run time")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                child: Icon(
+                  Icons.lightbulb_outline,
+                  color: _toggle ? Colors.orange : null,
+                  size: 200,
+                ),
               ),
             ),
-          ),
-          Center(
-            child: Container(
-              child: Switch(
-                  value: _toggle,
-                  onChanged: (bool value) {
-                    setState(() => _toggle = value);
-                  }),
+            Center(
+              child: Container(
+                child: Switch(
+                    value: _toggle,
+                    onChanged: (bool value) {
+                      setState(() => _toggle = value);
+                    }),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

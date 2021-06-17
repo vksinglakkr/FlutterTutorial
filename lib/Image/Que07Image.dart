@@ -9,19 +9,23 @@ class Que07Image11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("repeat: ImageRepeat.repeat")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Image.network("https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
-              repeat: ImageRepeat.repeat, height: 470),
-          SizedBox(height: 5),
-          Text("Image/Que07Image.dart")
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("repeat: ImageRepeat.repeat")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Image.network(
+                "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
+                repeat: ImageRepeat.repeat,
+                height: 470),
+            SizedBox(height: 5),
+            Text("Image/Que07Image.dart")
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

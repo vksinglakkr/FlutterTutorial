@@ -8,13 +8,15 @@ class Que03Sized11 extends StatelessWidget {
   final String video1 = "EHPu_DzRfqA"; //Flutter
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          title: WidgetAppBar(
-              "SizedBox, SizedBox.expand, SizedBox.shrink, SizedBox.fromSize")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+            title: WidgetAppBar(
+                "SizedBox, SizedBox.expand, SizedBox.shrink, SizedBox.fromSize")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

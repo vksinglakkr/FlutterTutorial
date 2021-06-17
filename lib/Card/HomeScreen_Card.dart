@@ -6,22 +6,24 @@ import 'Que01CardContainer.dart';
 class HomeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Card")),
-      body: SafeArea(
-        child: Container(
-          child: Builder(
-            builder: (context) => ListView(
-              padding: EdgeInsets.all(3.0),
-              children: [
-                ButtonsCode(Que01Card11(), "lib/Card/Que01CardContainer.dart",
-                    "Simple Card'"),
-              ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Card")),
+        body: SafeArea(
+          child: Container(
+            child: Builder(
+              builder: (context) => ListView(
+                padding: EdgeInsets.all(3.0),
+                children: [
+                  ButtonsCode(Que01Card11(), "lib/Card/Que01CardContainer.dart",
+                      "Simple Card'"),
+                ],
+              ),
             ),
           ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

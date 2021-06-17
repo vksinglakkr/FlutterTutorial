@@ -15,27 +15,29 @@ class _Que01Gester11State extends State<Que01Gester11> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("GesterDetector=>Click")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          GestureDetector(
-            child: Center(
-              child: Container(
-                child: Text("$name"),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("GesterDetector=>Click")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            GestureDetector(
+              child: Center(
+                child: Container(
+                  child: Text("$name"),
+                ),
               ),
+              onTap: () {
+                setState(() {
+                  name = "Clicked on Text using GestureDetector";
+                });
+              },
             ),
-            onTap: () {
-              setState(() {
-                name = "Clicked on Text using GestureDetector";
-              });
-            },
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

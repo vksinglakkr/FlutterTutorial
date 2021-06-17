@@ -15,32 +15,34 @@ class _State extends State<Que0711> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Switch")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: Transform.scale(
-                scale: 2,
-                child: SizedBox(
-                  width: 75,
-                  child: Switch(
-                    value: isSwitched,
-                    onChanged: (value) {
-                      setState(() => isSwitched = value);
-                    },
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Switch")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Center(
+                child: Transform.scale(
+                  scale: 2,
+                  child: SizedBox(
+                    width: 75,
+                    child: Switch(
+                      value: isSwitched,
+                      onChanged: (value) {
+                        setState(() => isSwitched = value);
+                      },
+                    ),
                   ),
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -9,7 +9,8 @@ class Que01bStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+        child: Scaffold(
       appBar: AppBar(title: WidgetAppBar("Text => Style")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
@@ -62,6 +63,6 @@ class Que01bStyle extends StatelessWidget {
         },
         child: Icon(Icons.first_page),
       ),
-    );
+    ));
   }
 }

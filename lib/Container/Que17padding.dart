@@ -12,30 +12,33 @@ class Que1711 extends StatelessWidget {
   final random = Random();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Padding")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              color: Colors.red,
-              //padding: EdgeInsets.all(20),
-              //padding: EdgeInsets.zero,
-              //padding: EdgeInsets.symmetric(horizontal: 30,),
-              //padding: double.infinity,
-              //padding: EdgeInsets.only(left: 20.0,bottom: 30.0,),
-              //padding: EdgeInsets.fromLTRB(40.0,50.0),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Padding")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                color: Colors.red,
+                //padding: EdgeInsets.all(20),
+                //padding: EdgeInsets.zero,
+                //padding: EdgeInsets.symmetric(horizontal: 30,),
+                //padding: double.infinity,
+                //padding: EdgeInsets.only(left: 20.0,bottom: 30.0,),
+                //padding: EdgeInsets.fromLTRB(40.0,50.0),
 
-              //Random Number
-              // padding: EdgeInsets.all(random.nextInt(5).toDouble()),
-              child: Text("NIC Kurukshetra", style: TextStyle(fontSize: 30.0)),
+                //Random Number
+                // padding: EdgeInsets.all(random.nextInt(5).toDouble()),
+                child:
+                    Text("NIC Kurukshetra", style: TextStyle(fontSize: 30.0)),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

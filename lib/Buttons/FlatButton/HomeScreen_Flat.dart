@@ -7,26 +7,30 @@ import 'Que02LinearGradient.dart';
 class HomeFlat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Flat Button ")),
-      body: SafeArea(
-        child: Container(
-          child: Builder(
-            builder: (context) => ListView(
-              padding: EdgeInsets.all(3.0),
-              children: [
-                ButtonsCode(Que01Flat11(),
-                    "lib/Buttons/FlatButton/Que08PaddingOnly.dart", "Gradient"),
-                ButtonsCode(
-                    Que02Flat11(),
-                    "lib/Buttons/FlatButton/Que02LinearGradient.dart",
-                    "Linear Gradient"),
-              ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Flat Button ")),
+        body: SafeArea(
+          child: Container(
+            child: Builder(
+              builder: (context) => ListView(
+                padding: EdgeInsets.all(3.0),
+                children: [
+                  ButtonsCode(
+                      Que01Flat11(),
+                      "lib/Buttons/FlatButton/Que08PaddingOnly.dart",
+                      "Gradient"),
+                  ButtonsCode(
+                      Que02Flat11(),
+                      "lib/Buttons/FlatButton/Que02LinearGradient.dart",
+                      "Linear Gradient"),
+                ],
+              ),
             ),
           ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

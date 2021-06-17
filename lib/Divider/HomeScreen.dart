@@ -7,21 +7,23 @@ import 'Que01DividerTheme2.dart';
 class HomeDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Divider")),
-      body: SafeArea(
-          child: Container(
-              child: Builder(
-        builder: (context) => ListView(
-          padding: EdgeInsets.all(3.0),
-          children: [
-            ButtonsCode(Que0211(), "lib/Divider/Que02.dart", "Divider"),
-            ButtonsCode(Que0111(), "lib/Divider/Que01DividerTheme2.dart",
-                "Divider using ThemeData"),
-          ],
-        ),
-      ))),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Divider")),
+        body: SafeArea(
+            child: Container(
+                child: Builder(
+          builder: (context) => ListView(
+            padding: EdgeInsets.all(3.0),
+            children: [
+              ButtonsCode(Que0211(), "lib/Divider/Que02.dart", "Divider"),
+              ButtonsCode(Que0111(), "lib/Divider/Que01DividerTheme2.dart",
+                  "Divider using ThemeData"),
+            ],
+          ),
+        ))),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

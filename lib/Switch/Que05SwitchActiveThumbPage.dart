@@ -15,26 +15,28 @@ class _Que0511State extends State<Que0511> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Active ThumbPage")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Center(
-            child: Container(
-              child: Switch(
-                  value: _toggle,
-                  activeThumbImage:
-                      _toggle ? AssetImage("assets/images/kkr.png") : null,
-                  onChanged: (bool value) {
-                    setState(() => _toggle = value);
-                  }),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Active ThumbPage")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Center(
+              child: Container(
+                child: Switch(
+                    value: _toggle,
+                    activeThumbImage:
+                        _toggle ? AssetImage("assets/images/kkr.png") : null,
+                    onChanged: (bool value) {
+                      setState(() => _toggle = value);
+                    }),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

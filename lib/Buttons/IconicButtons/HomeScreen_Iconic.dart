@@ -7,24 +7,26 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 class HomeIconic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Iconic \nButtons")),
-      body: SafeArea(
-        child: Container(
-          child: Builder(
-            builder: (context) => ListView(
-              padding: EdgeInsets.all(3.0),
-              children: [
-                ButtonsCode(
-                    Que01Actions11(),
-                    "lib/Buttons/FloatingActionButton/Que01IconicButtoninBody.dart",
-                    "Iconic Buttons in AppBar"),
-              ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Iconic \nButtons")),
+        body: SafeArea(
+          child: Container(
+            child: Builder(
+              builder: (context) => ListView(
+                padding: EdgeInsets.all(3.0),
+                children: [
+                  ButtonsCode(
+                      Que01Actions11(),
+                      "lib/Buttons/FloatingActionButton/Que01IconicButtoninBody.dart",
+                      "Iconic Buttons in AppBar"),
+                ],
+              ),
             ),
           ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

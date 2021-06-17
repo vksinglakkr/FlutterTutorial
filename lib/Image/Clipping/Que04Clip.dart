@@ -10,22 +10,24 @@ class Que04Clip11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ClipOval..ImageRepeat")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          ClipOval(
-            child: Image.network(
-              "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
-              repeat: ImageRepeat.repeat,
-              height: 500,
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("ClipOval..ImageRepeat")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            ClipOval(
+              child: Image.network(
+                "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
+                repeat: ImageRepeat.repeat,
+                height: 500,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

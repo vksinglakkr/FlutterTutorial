@@ -15,38 +15,40 @@ class Que01Actions11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: WidgetAppBar("Iconic Buttons \nin AppBar"),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.info),
-            color: Colors.black,
-            onPressed: launchURL,
-          ),
-          IconButton(
-              icon: const Icon(Icons.image),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          title: WidgetAppBar("Iconic Buttons \nin AppBar"),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.info),
               color: Colors.black,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyAppImage()),
-                );
-              }),
-          IconButton(
-              icon: const Icon(Icons.play_arrow),
-              color: Colors.black,
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => MyAppVideo()),
-                );
-              }),
-        ],
+              onPressed: launchURL,
+            ),
+            IconButton(
+                icon: const Icon(Icons.image),
+                color: Colors.black,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyAppImage()),
+                  );
+                }),
+            IconButton(
+                icon: const Icon(Icons.play_arrow),
+                color: Colors.black,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyAppVideo()),
+                  );
+                }),
+          ],
+        ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        floatingActionButton: WidgetFab(),
       ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      floatingActionButton: WidgetFab(),
     );
   }
 }
@@ -54,15 +56,17 @@ class Que01Actions11 extends StatelessWidget {
 class MyAppVideo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("")),
-      body: YoutubePlayer(
-        controller: YoutubePlayerController(
-          initialVideoId: 'IYDVcriKjsw',
-          flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("")),
+        body: YoutubePlayer(
+          controller: YoutubePlayerController(
+            initialVideoId: 'IYDVcriKjsw',
+            flags: YoutubePlayerFlags(autoPlay: true, mute: false),
+          ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

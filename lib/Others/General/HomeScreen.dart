@@ -21,67 +21,69 @@ import 'Que21.dart';
 class HomeGeneral extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("General")),
-      body: SafeArea(
-          child: Container(
-              child: Builder(
-        builder: (context) => ListView(
-          padding: EdgeInsets.all(3.0),
-          children: [
-            ButtonsCode(Que01General11(),
-                "lib/Others/General/Que01General_Base.dart", "General Base?"),
-            ButtonsCode(Que0111(), "lib/Others/General/Que01.dart",
-                "What the build method do?"),
-            ButtonsCode(
-                Que0211(), "lib/Others/General/Que02.dart", "BuildContext?"),
-            ButtonsCode(
-                Que0311(), "lib/Others/General/Que03.dart", "Builder Widget?"),
-            ButtonsCode(
-                ReturnMaterialApp11(),
-                "lib/Others/General/Que02runApp_MaterialApp.dart",
-                "Return Material App Container?"),
-            ButtonsCode(
-                MyAppreturn011(),
-                "lib/Others/General/Que06return_Container.dart",
-                "Return Container?"),
-            ButtonsCode(
-                Que07MyApp011(),
-                "lib/Others/General/Que07return_Scaffold_Container.dart",
-                "Return Scaffold Container?"),
-            ButtonsCode(
-                Que08MyAppRun011(),
-                "lib/Others/General/Que08runApp_MaterialApp_MyApp.dart",
-                "RunApp MaterialApp?"),
-            ButtonsCode(
-                Que09MyHomePage011(),
-                "lib/Others/General/Que09StateFullWidget.dart",
-                "StateFullWidget?"),
-            ButtonsCode(
-                Que10Stateless011(),
-                "lib/Others/General/Que10StateLessStateFul.dart",
-                "Stateless Statefull Widget?"),
-            ButtonsCode(
-                Que11Stateless011(),
-                "lib/Others/General/Que11StateLessStateLess.dart",
-                "Stateless Widget?"),
-            ButtonsCode(
-                Que12MaterialApp011(),
-                "lib/Others/General/Que12MaterialApp_Scaffold_MyAppAllinMain.dart",
-                "MaterialApp Scaffold?"),
-            ButtonsCode(
-                Que13ExtractMathod011(),
-                "lib/Others/General/Que13ExtractMethod.dart",
-                "MaterialApp Scaffold?"),
-            ButtonsCode(Que20NullSafety11(),
-                "lib/Others/General/Que20NullSafety.dart", "Null Safety?"),
-            ButtonsCode(Que20NullSafety11(),
-                "lib/Others/General/Que20NullSafety.dart", "Null Safety?"),
-            ButtonsCode(Que2111(), "lib/Others/General/Que21.dart", "TODO"),
-          ],
-        ),
-      ))),
-      floatingActionButton: WidgetFab(),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("General")),
+        body: SafeArea(
+            child: Container(
+                child: Builder(
+          builder: (context) => ListView(
+            padding: EdgeInsets.all(3.0),
+            children: [
+              ButtonsCode(Que01General11(),
+                  "lib/Others/General/Que01General_Base.dart", "General Base?"),
+              ButtonsCode(Que0111(), "lib/Others/General/Que01.dart",
+                  "What the build method do?"),
+              ButtonsCode(
+                  Que0211(), "lib/Others/General/Que02.dart", "BuildContext?"),
+              ButtonsCode(Que0311(), "lib/Others/General/Que03.dart",
+                  "Builder Widget?"),
+              ButtonsCode(
+                  ReturnMaterialApp11(),
+                  "lib/Others/General/Que02runApp_MaterialApp.dart",
+                  "Return Material App Container?"),
+              ButtonsCode(
+                  MyAppreturn011(),
+                  "lib/Others/General/Que06return_Container.dart",
+                  "Return Container?"),
+              ButtonsCode(
+                  Que07MyApp011(),
+                  "lib/Others/General/Que07return_Scaffold_Container.dart",
+                  "Return Scaffold Container?"),
+              ButtonsCode(
+                  Que08MyAppRun011(),
+                  "lib/Others/General/Que08runApp_MaterialApp_MyApp.dart",
+                  "RunApp MaterialApp?"),
+              ButtonsCode(
+                  Que09MyHomePage011(),
+                  "lib/Others/General/Que09StateFullWidget.dart",
+                  "StateFullWidget?"),
+              ButtonsCode(
+                  Que10Stateless011(),
+                  "lib/Others/General/Que10StateLessStateFul.dart",
+                  "Stateless Statefull Widget?"),
+              ButtonsCode(
+                  Que11Stateless011(),
+                  "lib/Others/General/Que11StateLessStateLess.dart",
+                  "Stateless Widget?"),
+              ButtonsCode(
+                  Que12MaterialApp011(),
+                  "lib/Others/General/Que12MaterialApp_Scaffold_MyAppAllinMain.dart",
+                  "MaterialApp Scaffold?"),
+              ButtonsCode(
+                  Que13ExtractMathod011(),
+                  "lib/Others/General/Que13ExtractMethod.dart",
+                  "MaterialApp Scaffold?"),
+              ButtonsCode(Que20NullSafety11(),
+                  "lib/Others/General/Que20NullSafety.dart", "Null Safety?"),
+              ButtonsCode(Que20NullSafety11(),
+                  "lib/Others/General/Que20NullSafety.dart", "Null Safety?"),
+              ButtonsCode(Que2111(), "lib/Others/General/Que21.dart", "TODO"),
+            ],
+          ),
+        ))),
+        floatingActionButton: WidgetFab(),
+      ),
     );
   }
 }

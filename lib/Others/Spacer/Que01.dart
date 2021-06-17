@@ -9,26 +9,28 @@ class Que0111 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Material App Bar")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Row(
-            children: [
-              Text('Begin'),
-              Spacer(), //Defaults to a flex of one.
-              Text('Middle'),
-              Spacer(
-                flex: 2,
-              ), //Gives twice the space between Middle and End than Begin and Middle.
-              Text('End'),
-            ],
-          ),
-        ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Material App Bar")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Row(
+              children: [
+                Text('Begin'),
+                Spacer(), //Defaults to a flex of one.
+                Text('Middle'),
+                Spacer(
+                  flex: 2,
+                ), //Gives twice the space between Middle and End than Begin and Middle.
+                Text('End'),
+              ],
+            ),
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

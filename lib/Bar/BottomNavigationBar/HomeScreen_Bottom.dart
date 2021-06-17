@@ -12,32 +12,34 @@ import 'Que03CustomShaped.dart';
 class HomeBottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Bottom \nNavigation Bar")),
-      body: SafeArea(
-        child: Container(
-          child: Builder(
-            builder: (context) => ListView(
-              padding: EdgeInsets.all(3.0),
-              children: [
-                ButtonsCode(
-                    Que01Bottom11(),
-                    "lib/Bar/BottomNavigationBar/Que01BottomNavigationbar.dart",
-                    "Bottom Navigation Bar"),
-                ButtonsCode(
-                    Que02Curved11(),
-                    "lib/Bar/BottomNavigationBar/Que02CurvedBottomNavigationbar.dart",
-                    "Curved Navigation Bar"),
-                ButtonsCode(
-                    Que03Custom(),
-                    "lib/Bar/BottomNavigationBar/Que03CustomShaped.dart",
-                    "Custom Shaped Navigation Bar"),
-              ],
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(title: WidgetAppBar("Bottom \nNavigation Bar")),
+        body: SafeArea(
+          child: Container(
+            child: Builder(
+              builder: (context) => ListView(
+                padding: EdgeInsets.all(3.0),
+                children: [
+                  ButtonsCode(
+                      Que01Bottom11(),
+                      "lib/Bar/BottomNavigationBar/Que01BottomNavigationbar.dart",
+                      "Bottom Navigation Bar"),
+                  ButtonsCode(
+                      Que02Curved11(),
+                      "lib/Bar/BottomNavigationBar/Que02CurvedBottomNavigationbar.dart",
+                      "Curved Navigation Bar"),
+                  ButtonsCode(
+                      Que03Custom(),
+                      "lib/Bar/BottomNavigationBar/Que03CustomShaped.dart",
+                      "Custom Shaped Navigation Bar"),
+                ],
+              ),
             ),
           ),
         ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

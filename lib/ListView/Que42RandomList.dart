@@ -24,29 +24,31 @@ class Que4211 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:
-          AppBar(title: WidgetAppBar("Random List Generation (Error Exist)")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: [
-          Container(
-            height: 300,
-            child: ListView.builder(
-              itemCount: element.length,
-              itemBuilder: (_, position) {
-                return Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(element[position]));
-              },
+    return SafeArea(
+      child: Scaffold(
+        appBar:
+            AppBar(title: WidgetAppBar("Random List Generation (Error Exist)")),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        body: Column(
+          children: [
+            Container(
+              height: 300,
+              child: ListView.builder(
+                itemCount: element.length,
+                itemBuilder: (_, position) {
+                  return Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text(element[position]));
+                },
+              ),
             ),
-          ),
-          SizedBox(height: 5),
-          Center(child: Text("ListView/Que42RandomList.dart"))
-        ],
+            SizedBox(height: 5),
+            Center(child: Text("ListView/Que42RandomList.dart"))
+          ],
+        ),
+        floatingActionButton: WidgetFab(),
       ),
-      floatingActionButton: WidgetFab(),
     );
   }
 }

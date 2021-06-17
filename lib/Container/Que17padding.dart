@@ -1,4 +1,4 @@
-// lib\Container\Que17padding.dart
+// lib/Container\Que17padding.dart
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -14,7 +14,6 @@ class Que1711 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Padding")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

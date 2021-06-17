@@ -1,4 +1,4 @@
-// lib\GridView\HomeScreen.dart
+// libGridViewHomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01gridView_Material_ClipRRect.dart';
@@ -16,7 +16,7 @@ class HomeGridView extends StatelessWidget {
           children: [
             ButtonsCode(
                 Que0111(),
-                "lib\GridView\Que01GridView_Material_ClipRRect.dart",
+                "lib/GridView/Que01GridView_Material_ClipRRect.dart",
                 "Padding"),
           ],
         ),

@@ -1,4 +1,4 @@
-// lib\Image\Clipping\Que04Clip.dart
+// libImageClippingQue04Clip.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

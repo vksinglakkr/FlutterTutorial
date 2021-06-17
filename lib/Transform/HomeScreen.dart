@@ -1,4 +1,4 @@
-// lib\Transform\HomeScreen.dart
+// lib/Transform\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Transform_translate.dart';

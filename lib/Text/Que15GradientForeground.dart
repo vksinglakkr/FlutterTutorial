@@ -1,4 +1,4 @@
-// lib\Text\Que15GradientForeground.dart
+// lib/Text\Que15GradientForeground.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

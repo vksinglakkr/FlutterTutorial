@@ -1,4 +1,4 @@
-// lib\Opacity\HomeScreen.dart
+// lib/Opacity\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -18,10 +18,10 @@ class HomeOpacity extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            ButtonsCode(Que0111(), "lib\OOPs\Que01.dart", "runApp?"),
-            ButtonsCode(Que0211(), "lib\OOPs\Que02.dart", "Inheritance?"),
-            ButtonsCode(Que0311(), "lib\OOPs\Que03.dart", "abstract?"),
-            ButtonsCode(Que0411(), "lib\OOPs\Que04.dart", "constructor?"),
+            ButtonsCode(Que0111(), "lib/OOPs/Que01.dart", "runApp?"),
+            ButtonsCode(Que0211(), "lib/OOPs/Que02.dart", "Inheritance?"),
+            ButtonsCode(Que0311(), "lib/OOPs/Que03.dart", "abstract?"),
+            ButtonsCode(Que0411(), "lib/OOPs/Que04.dart", "constructor?"),
           ],
         ),
       ))),

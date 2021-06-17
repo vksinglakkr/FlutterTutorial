@@ -1,4 +1,4 @@
-// lib\Container\Que98AnimatedContainer.dart
+// lib/Container\Que98AnimatedContainer.dart
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -21,7 +21,6 @@ class _Que9811State extends State<Que9811> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Animated Container")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

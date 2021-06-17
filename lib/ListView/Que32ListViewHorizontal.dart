@@ -1,4 +1,4 @@
-// lib\ListView\Que32ListViewHorizontal.dart
+// lib/ListView\Que32ListViewHorizontal.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

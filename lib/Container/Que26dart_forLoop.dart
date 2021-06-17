@@ -1,4 +1,4 @@
-// lib\Container\Que26dart_forLoop.dart
+// lib/Container\Que26dart_forLoop.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -11,7 +11,6 @@ class Que2611 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("for..loop")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: ListView(

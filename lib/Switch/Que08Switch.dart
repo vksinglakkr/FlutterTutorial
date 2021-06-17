@@ -1,4 +1,4 @@
-// lib\Switch\Que08Switch.dart
+// lib/Switch\Que08Switch.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

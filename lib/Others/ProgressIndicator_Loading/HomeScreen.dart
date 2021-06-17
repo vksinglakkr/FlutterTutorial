@@ -1,4 +1,4 @@
-// lib\ProgressIndicator_Loading\HomeScreen.dart
+// lib/ProgressIndicator_Loading\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
@@ -16,9 +16,9 @@ class HomeProgress extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            ButtonsCode(Que0111(), "lib\ProgressIndicator_Loading\Que01.dart",
+            ButtonsCode(Que0111(), "lib/ProgressIndicator_Loading/Que01.dart",
                 "Circular Progress Indicator"),
-            ButtonsCode(Que0211(), "lib\ProgressIndicator_Loading\Que02.dart",
+            ButtonsCode(Que0211(), "lib/ProgressIndicator_Loading/Que02.dart",
                 "FadeInImage_Loading bar"),
           ],
         ),
@@ -28,7 +28,7 @@ class HomeProgress extends StatelessWidget {
   }
 }
 
-//lib\Others\ProgressIndicator_Loading\Que01.dart
+//lib/Others\ProgressIndicator_Loading\Que01.dart
 class Que01 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

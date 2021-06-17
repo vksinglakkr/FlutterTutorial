@@ -1,4 +1,4 @@
-// lib\Text\Que07TextRich.dart
+// lib/Text\Que07TextRich.dart
 import 'dart:ui';
 
 import 'package:flutter/material.dart';

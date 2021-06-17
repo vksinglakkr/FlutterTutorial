@@ -1,4 +1,4 @@
-// lib\Box\HomeScreen_Decorated.dart
+// lib/Box\HomeScreen_Decorated.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Box_DecoratedBox.dart';
@@ -16,7 +16,7 @@ class HomeDecorated extends StatelessWidget {
               children: [
                 ButtonsCode(
                     Que01Decorated11(),
-                    "lib\Box\Box_DecoratedBox\Que01Box_DecoratedBox.dart",
+                    "lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart",
                     "Decorated Box"),
               ],
             ),

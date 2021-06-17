@@ -1,4 +1,4 @@
-// lib\Transform\Que02Transform_scale.dart
+// lib/Transform\Que02Transform_scale.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

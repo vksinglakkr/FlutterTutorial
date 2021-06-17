@@ -1,4 +1,4 @@
-// lib\Container\QueAssignment2.dart
+// lib/Container\QueAssignment2.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -10,7 +10,6 @@ class QueAssign211 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Assignment 2")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

@@ -1,4 +1,4 @@
-// lib\ListView\Que38HorizontalScroll.dart
+// lib/ListView\Que38HorizontalScroll.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

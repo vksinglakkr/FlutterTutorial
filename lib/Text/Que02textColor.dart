@@ -1,4 +1,4 @@
-// lib\Text\Que02textColor.dart
+// lib/Text\Que02textColor.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

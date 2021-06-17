@@ -1,4 +1,4 @@
-// lib\General\Que12MaterialApp_Scaffold_MyAppAllinMain.dart
+// lib/General\Que12MaterialApp_Scaffold_MyAppAllinMain.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

@@ -1,4 +1,4 @@
-// lib\Container\Que24Container_boxShadow.dart
+// lib/Container\Que24Container_boxShadow.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -11,7 +11,6 @@ class Que2411 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("boxShadow ")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

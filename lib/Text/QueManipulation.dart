@@ -1,4 +1,4 @@
-// lib\Text\QueManipulation.dart
+// lib/Text\QueManipulation.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

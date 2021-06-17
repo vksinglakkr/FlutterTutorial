@@ -1,4 +1,4 @@
-// lib\Text\Que08TextScalefactor.dart
+// lib/Text\Que08TextScalefactor.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

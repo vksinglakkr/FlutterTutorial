@@ -1,4 +1,4 @@
-// lib\CustomWidgets\HomeScreen.dart
+// lib/CustomWidgets\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01CustomContainer_Visibility.dart';
@@ -16,7 +16,7 @@ class HomeCustomWidget extends StatelessWidget {
           children: [
             ButtonsCode(
                 Que0111(),
-                "lib\CustomWidgets\Que01CustomContainer_Visibility.dart",
+                "lib/CustomWidgets/Que01CustomContainer_Visibility.dart",
                 "Custom Container"),
           ],
         ),

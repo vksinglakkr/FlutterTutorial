@@ -1,4 +1,4 @@
-// lib\Image\Que09Image.dart
+// lib/Image\Que09Image.dart
 //CircleAvtar
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

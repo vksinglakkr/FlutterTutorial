@@ -1,4 +1,4 @@
-// lib\DART\Que01ConditionOperator.dart
+// lib/DART\Que01ConditionOperator.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -28,7 +28,6 @@ class _State extends State<Que01> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("ListView Builder")),
-
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(children: <Widget>[

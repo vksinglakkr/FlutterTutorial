@@ -1,4 +1,4 @@
-// lib\Box\Box_DecoratedBox\Que01Box_DecoratedBox.dart
+// lib/Box\Box_DecoratedBox\Que01Box_DecoratedBox.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

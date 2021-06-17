@@ -1,4 +1,4 @@
-// lib\Box\HomeScreen_Rotated.dart
+// lib/Box\HomeScreen_Rotated.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
@@ -15,7 +15,7 @@ class HomeRotated extends StatelessWidget {
               padding: EdgeInsets.all(3.0),
               children: [
                 ButtonsCode(Que01Rotated11(),
-                    "lib\Box\Box_RotatedBox\Que01.dart", "Rotated Box"),
+                    "lib/Box/Box_RotatedBox/Que01.dart", "Rotated Box"),
               ],
             ),
           ),

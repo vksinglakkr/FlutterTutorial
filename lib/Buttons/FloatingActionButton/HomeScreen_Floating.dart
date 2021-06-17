@@ -1,4 +1,4 @@
-// lib\Buttons\RadioButton\HomeScreen_Floating.dart
+// lib/Buttons\RadioButton\HomeScreen_Floating.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01onPressed.dart';
@@ -26,47 +26,47 @@ class HomeFloating extends StatelessWidget {
               children: [
                 ButtonsCode(
                     Que01Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que00BasicFAB.dart",
+                    "lib/Buttons/FloatingActionButton/Que00BasicFAB.dart",
                     "Basic Code"),
                 ButtonsCode(
                     Que02Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que01onPressed.dart",
+                    "lib/Buttons/FloatingActionButton/Que01onPressed.dart",
                     "Location"),
                 ButtonsCode(
                     Que03Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que02CenterFloatLocation.dart",
+                    "lib/Buttons/FloatingActionButton/Que02CenterFloatLocation.dart",
                     "Color"),
                 ButtonsCode(
                     Que04Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que04CustomShape.dart",
+                    "lib/Buttons/FloatingActionButton/Que04CustomShape.dart",
                     "Custom Shape"),
                 ButtonsCode(
                     Que05Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que05ImageinText.dart",
+                    "lib/Buttons/FloatingActionButton/Que05ImageinText.dart",
                     "Display Image"),
                 ButtonsCode(
                     Que06Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que06RectangleShape.dart",
+                    "lib/Buttons/FloatingActionButton/Que06RectangleShape.dart",
                     "Rectangle Shape"),
                 ButtonsCode(
                     Que07Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que04CustomShape.dart",
+                    "lib/Buttons/FloatingActionButton/Que04CustomShape.dart",
                     "Mini Size"),
                 ButtonsCode(
                     Que08Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que08Iconwithlabel.dart",
+                    "lib/Buttons/FloatingActionButton/Que08Iconwithlabel.dart",
                     "Icon with Label"),
                 ButtonsCode(
                     Que09Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que09DiamondShape.dart",
+                    "lib/Buttons/FloatingActionButton/Que09DiamondShape.dart",
                     "Diamond Shapee"),
                 ButtonsCode(
                     Que10Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que10SwitchIcon.dart",
+                    "lib/Buttons/FloatingActionButton/Que10SwitchIcon.dart",
                     "Switch Icon"),
                 ButtonsCode(
                     Que11Floating11(),
-                    "lib\Buttons\FloatingActionButton\Que11RectangleShapeRoundedCorner.dart",
+                    "lib/Buttons/FloatingActionButton/Que11RectangleShapeRoundedCorner.dart",
                     "Rectangle Shape Rounded Corner"),
               ],
             ),

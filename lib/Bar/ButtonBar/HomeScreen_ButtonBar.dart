@@ -1,4 +1,4 @@
-// lib\Bar\HomeScreen_Snack.dart
+// lib/Bar\HomeScreen_Snack.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -16,7 +16,7 @@ class HomeButtonBar extends StatelessWidget {
               padding: EdgeInsets.all(3.0),
               children: [
                 ButtonsCode(Que01ButtonBar11(),
-                    "lib\Bar\BottomBar\Que01Basic.dart", "Button Bar"),
+                    "lib/Bar/BottomBar/Que01Basic.dart", "Button Bar"),
               ],
             ),
           ),

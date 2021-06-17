@@ -1,4 +1,4 @@
-// lib\Properties\onChanged\Que02SwitchActiveThumbPage.dart
+// lib/Properties\onChanged\Que02SwitchActiveThumbPage.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

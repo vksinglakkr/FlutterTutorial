@@ -1,4 +1,4 @@
-// lib\Text\Que01strutStyle.dart
+// lib/Text\Que01strutStyle.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

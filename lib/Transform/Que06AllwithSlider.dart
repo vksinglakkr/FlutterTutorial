@@ -1,4 +1,4 @@
-// lib\Transform\Que06AllwithSlider.dart
+// lib/Transform\Que06AllwithSlider.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

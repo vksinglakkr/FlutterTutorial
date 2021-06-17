@@ -1,4 +1,4 @@
-// lib\Image\Que10Image.dart
+// lib/Image\Que10Image.dart
 //Image using Container
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

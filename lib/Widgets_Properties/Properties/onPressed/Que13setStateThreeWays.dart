@@ -1,4 +1,4 @@
-// lib\Properties\onPressed\Que13setStateThreeWays.dart
+// lib/Properties\onPressed\Que13setStateThreeWays.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

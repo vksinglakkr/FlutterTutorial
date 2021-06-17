@@ -1,4 +1,4 @@
-// lib\Container\Que02ContainerWithinContainer.dart
+// lib/Container\Que02ContainerWithinContainer.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -16,7 +16,6 @@ class _Que02Container11State extends State<Que02Container11> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Container within Container")),
-     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

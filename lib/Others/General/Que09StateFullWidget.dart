@@ -1,4 +1,4 @@
-// lib\General\Que09StateFullWidget.dart
+// lib/General\Que09StateFullWidget.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

@@ -1,4 +1,4 @@
-//  \lib\Divider\HomeScreen.dart
+//  \lib/Divider\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Expanded/QueExpanded.dart';
 import 'package:flutter_tutorial/Expanded/QueSizedExpanded.dart';
@@ -16,10 +16,10 @@ class HomeExpanded extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: [
             ButtonsCode(
-                QueExpanded11(), "lib\Expanded\QueExpanded.dart", "Expanded"),
+                QueExpanded11(), "lib/Expanded/QueExpanded.dart", "Expanded"),
             ButtonsCode(
                 QueSizedExpanded11(),
-                "lib\Expanded\QueSizedExpanded.dart",
+                "lib/Expanded/QueSizedExpanded.dart",
                 "SizedBox and Expanded, How and where to use them?"),
           ],
         ),

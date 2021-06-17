@@ -1,27 +1,26 @@
-// libImageClippingQue06Clip.dart
+// lib/Image\Que03Image.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que06Clip11 extends StatelessWidget {
+class Que03aImage11 extends StatelessWidget {
   final String url1 =
       "https://www.developerlibs.com/2019/08/flutter-draw-custom-shaps-clip-path.html";
-  final String image1 = "assets/help/Image/Clipping/Que06.png";
-  final String video1 = "JDDoN2THwug";
+  final String image1 = "assets/help/Image/Que01.png";
+  final String video1 = "NH8IP1KVN84"; //final
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("ClipOval/Circle Demo")),
+      appBar: AppBar(title: WidgetAppBar("Image.network()")),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(
         children: [
-          ClipOval(
-            child: Image.network(
-              "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
-              height: 100,
-              width: 100,
-            ),
+          Image.network(
+            'https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg',
+            loadingBuilder: (context, child, progress) {
+              return progress == null ? child : LinearProgressIndicator();
+            },
           ),
         ],
       ),

@@ -1,4 +1,4 @@
-// lib\Padding\HomeScreen.dart
+// lib/Padding\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01EdgeInsetsDirectional.dart';

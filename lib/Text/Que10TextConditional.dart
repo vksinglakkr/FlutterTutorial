@@ -1,4 +1,4 @@
-// lib\Text\Que10TextConditional.dart
+// lib/Text\Que10TextConditional.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

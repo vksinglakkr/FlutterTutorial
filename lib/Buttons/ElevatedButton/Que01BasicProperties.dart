@@ -1,4 +1,4 @@
-// lib\Buttons\ElevatedButton\Que09BasicProperties.dart
+// lib/Buttons/ElevatedButton/Que09BasicProperties.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -100,9 +100,17 @@ class _Que09Elevated11State extends State<Que09Elevated11> {
                 children: [
                   ConstrainedBox(
                     constraints:
-                        BoxConstraints.tightFor(width: 100, height: 40),
+                        BoxConstraints.tightFor(width: 135, height: 40),
                     child: ElevatedButton(
-                      child: Text('100 x 40'),
+                      child: Text('ConstrainedBox'),
+                      onPressed: () {},
+                    ),
+                  ),
+                  SizedBox(
+                    height: 40,
+                    width: 135,
+                    child: ElevatedButton(
+                      child: Text('SizedBox'),
                       onPressed: () {},
                     ),
                   ),

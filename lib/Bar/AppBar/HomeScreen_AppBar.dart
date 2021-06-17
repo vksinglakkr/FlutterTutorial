@@ -1,4 +1,4 @@
-// lib\Bar\HomeScreen_Bar.dart
+// lib/Bar\HomeScreen_Bar.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -20,25 +20,25 @@ class HomeAppBar extends StatelessWidget {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                ButtonsCode(Que01AppBar11(), "lib\Bar\AppBar\Que01Actions.dart",
+                ButtonsCode(Que01AppBar11(), "lib/Bar/AppBar/Que01Actions.dart",
                     "AppBar - BackGroundColor"),
                 ButtonsCode(
                     Que02AppBar11(),
-                    "lib\Bar\AppBar\Que01BackGroundColor.dart",
+                    "lib/Bar/AppBar/Que01BackGroundColor.dart",
                     "AppBar - CenterText"),
                 ButtonsCode(
                     Que01Actions11(),
-                    "lib\Bar\AppBar\Que02CenterText.dart",
+                    "lib/Bar/AppBar/Que02CenterText.dart",
                     "AppBar - Iconic Buttons"),
                 ButtonsCode(
                     Que04Popup11(),
-                    "lib\Bar\AppBar\Que04PopupText.dart",
+                    "lib/Bar/AppBar/Que04PopupText.dart",
                     "AppBar - 3 Dot Popup Menu (Text)"),
                 ButtonsCode(
                     Que06Popup11(),
-                    "lib\Bar\AppBar\Que05PopupIconicButton.dart",
+                    "lib/Bar/AppBar/Que05PopupIconicButton.dart",
                     "AppBar - 3 Dot Popup Menu (IconicButton)"),
-                ButtonsCode(Que05Popup11(), "lib\Bar\AppBar\Que06Popup.dart",
+                ButtonsCode(Que05Popup11(), "lib/Bar/AppBar/Que06Popup.dart",
                     "AppBar - 3 Dot Popup Menu (List)"),
               ],
             ),

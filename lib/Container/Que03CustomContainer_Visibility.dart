@@ -1,4 +1,4 @@
-// lib\Container\Que03CustomContainer_Visibility.dart
+// lib/Container\Que03CustomContainer_Visibility.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -18,7 +18,6 @@ class _Que0311State extends State<Que0311> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Container Visibility ")),
-     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

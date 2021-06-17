@@ -1,4 +1,4 @@
-// lib\Container\Que01ContainerOpacityGesterDetector.dart
+// lib/Container\Que01ContainerOpacityGesterDetector.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -17,7 +17,6 @@ class _State extends State<Que01Container11> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("OpacityGesterDetector")),
-     
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: GestureDetector(

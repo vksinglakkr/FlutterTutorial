@@ -1,4 +1,4 @@
-// lib\Spacer\HomeScreen.dart
+// lib/Spacer\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
@@ -15,7 +15,7 @@ class HomeSpacer extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: [
             ButtonsCode(
-                Que0111(), "lib\Spacer\Que01.dart", "Basic Spacer with Flex"),
+                Que0111(), "lib/Spacer/Que01.dart", "Basic Spacer with Flex"),
           ],
         ),
       ))),

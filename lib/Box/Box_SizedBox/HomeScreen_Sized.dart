@@ -1,4 +1,4 @@
-// lib\Box\HomeScreen_Sized.dart
+// lib/Box\HomeScreen_Sized.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -19,13 +19,13 @@ class HomeSized extends StatelessWidget {
               children: [
                 ButtonsCode(
                     Que01Sized11(),
-                    "lib\Box\Box_SizedBox\Que01Simple.dart",
+                    "lib/Box/Box_SizedBox/Que01Simple.dart",
                     "Sized Box - Simple"),
                 ButtonsCode(
                     Que02Sized11(),
-                    "lib\Box\Box_SizedBox\Que02ListView.dart",
+                    "lib/Box/Box_SizedBox/Que02ListView.dart",
                     "Sized Box - ListView"),
-                ButtonsCode(Que03Sized11(), "lib\Box\Box_SizedBox\Que03.dart",
+                ButtonsCode(Que03Sized11(), "lib/Box/Box_SizedBox/Que03.dart",
                     "SizedBox, SizedBox.expand, SizedBox.shrink, SizedBox.fromSize"),
               ],
             ),

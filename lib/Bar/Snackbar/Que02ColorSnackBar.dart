@@ -1,4 +1,4 @@
-// lib\Bar\Snackbar\Que02ColorSnackBar.dart
+// lib/Bar\Snackbar\Que02ColorSnackBar.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

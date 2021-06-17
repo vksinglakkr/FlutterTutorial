@@ -1,4 +1,4 @@
-// lib\Text\Que21TransformSkewtext.dart
+// lib/Text\Que21TransformSkewtext.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

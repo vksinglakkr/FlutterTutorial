@@ -1,4 +1,4 @@
-// lib\Container\Que21ContainerStackPositioned.dart
+// lib/Container\Que21ContainerStackPositioned.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -10,7 +10,6 @@ class Que2111 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Container, Stack, Positioned")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

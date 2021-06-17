@@ -1,4 +1,4 @@
-// lib\QueURL_Launcher.dart
+// lib/QueURL_Launcher.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';

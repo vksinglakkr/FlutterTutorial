@@ -1,4 +1,4 @@
-// lib\Tab\Que06OnlyTabBarView.dart
+// lib/Tab\Que06OnlyTabBarView.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

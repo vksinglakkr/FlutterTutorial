@@ -31,8 +31,8 @@ class _QueBottomState extends State<QueBottom> {
           label: 'Info',
           backgroundColor: Colors.white,
         ),
-        //   if (widget.imageName.length > 0)
-        //     if (widget.videoUrlId.length > 0)
+//           if (widget.imageName.length > 0)
+//             if (widget.videoUrlId.length > 0)
         BottomNavigationBarItem(
           icon: const Icon(Icons.image),
           label: 'Image',

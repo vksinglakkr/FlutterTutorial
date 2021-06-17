@@ -1,4 +1,4 @@
-// lib\Placeholder\HomeScreen.dartlib\Placeholder\HomeScreen.dart
+// lib/Placeholder\HomeScreen.dartlib\Placeholder\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
@@ -16,7 +16,7 @@ class HomePlaceholder extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: [
             ButtonsCode(
-                Que0111(), "lib\Placeholder\Que01.dart", "Basic Placeholder"),
+                Que0111(), "lib/Placeholder/Que01.dart", "Basic Placeholder"),
             Container(
               margin: EdgeInsets.all(2),
               height: 32,
@@ -48,4 +48,4 @@ class Que01 extends StatelessWidget {
     );
   }
 }
-//lib\Others\Placeholder\HomeScreen.dart
+//lib/Others\Placeholder\HomeScreen.dart

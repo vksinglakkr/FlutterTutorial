@@ -1,4 +1,4 @@
-//  lib\Container\Que99AnimatedOpacity.dart
+//  lib/Container\Que99AnimatedOpacity.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -17,7 +17,6 @@ class _Que9911State extends State<Que9911> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Animated Opacity")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

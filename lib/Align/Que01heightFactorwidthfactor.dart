@@ -1,4 +1,4 @@
-//  \lib\Align\Que01heightFactorwidthfactor.dart
+//  \lib/Align\Que01heightFactorwidthfactor.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

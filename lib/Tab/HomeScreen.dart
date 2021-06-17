@@ -1,4 +1,4 @@
-// lib\Tab\HomeScreen.dart
+// lib/Tab\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Basic.dart';
@@ -26,24 +26,24 @@ class _HomeTabBarState extends State<HomeTabBar> {
             builder: (context) => ListView(
               padding: EdgeInsets.all(3.0),
               children: [
-                ButtonsCode(Que0111(), "lib\Tab\Que01Basic.dart", "Basic"),
-                ButtonsCode(Que0211(), "lib\Tab\Que02WithoutTabBar.dart",
+                ButtonsCode(Que0111(), "lib/Tab/Que01Basic.dart", "Basic"),
+                ButtonsCode(Que0211(), "lib/Tab/Que02WithoutTabBar.dart",
                     "Without TabBar"),
                 ButtonsCode(
                     Que0311(),
-                    "lib\Tab\Que03OnlyDefaultTabController.dart",
+                    "lib/Tab/Que03OnlyDefaultTabController.dart",
                     "With only Default tab Controller"),
-                ButtonsCode(Que0411(), "lib\Tab\Que04WithoutTabBarView.dart",
+                ButtonsCode(Que0411(), "lib/Tab/Que04WithoutTabBarView.dart",
                     "Without tabBar View"),
                 ButtonsCode(
                     Que0511(),
-                    "lib\Tab\Que05WithoutDefaultTabController.dart",
+                    "lib/Tab/Que05WithoutDefaultTabController.dart",
                     "Without Default Tab Controller"),
-                ButtonsCode(Que0611(), "lib\Tab\Que06OnlyTabBarView.dart",
+                ButtonsCode(Que0611(), "lib/Tab/Que06OnlyTabBarView.dart",
                     "Only TabBar View"),
                 ButtonsCode(
-                    Que0711(), "lib\Tab\Que07OnlyTabBar.dart", "Only TabBar"),
-                ButtonsCode(Que0811(), "lib\Tab\Que08List.dart", "List"),
+                    Que0711(), "lib/Tab/Que07OnlyTabBar.dart", "Only TabBar"),
+                ButtonsCode(Que0811(), "lib/Tab/Que08List.dart", "List"),
               ],
             ),
           ),

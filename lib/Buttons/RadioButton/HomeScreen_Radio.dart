@@ -1,4 +1,4 @@
-// lib\Buttons\RadioButton\HomeScreen_Radio.dart
+// libButtonsRadioButtonHomeScreen_Radio.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01RadioButton.dart';
@@ -16,7 +16,7 @@ class HomeRadio extends StatelessWidget {
               children: [
                 ButtonsCode(
                     Que01Radio11(),
-                    "lib\Buttons\RadioButton\Que01RadioButton.dart",
+                    "libButtonsRadioButtonQue01RadioButton.dart",
                     "Bulb On/Off"),
               ],
             ),

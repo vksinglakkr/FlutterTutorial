@@ -1,4 +1,4 @@
-// lib\Switch\Que02SwitchOn_OffLight_Bulb.dart
+// lib/Switch\Que02SwitchOn_OffLight_Bulb.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

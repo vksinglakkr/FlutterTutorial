@@ -1,4 +1,4 @@
-// lib\Bar\HomeScreen_Bar.dart
+// lib/Bar\HomeScreen_Bar.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que01Actions.dart';
 
@@ -17,7 +17,7 @@ class HomeIconic extends StatelessWidget {
               children: [
                 ButtonsCode(
                     Que01Actions11(),
-                    "lib\Buttons\FloatingActionButton\Que01IconicButtoninBody.dart",
+                    "lib/Buttons/FloatingActionButton/Que01IconicButtoninBody.dart",
                     "Iconic Buttons in AppBar"),
               ],
             ),

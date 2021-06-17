@@ -1,4 +1,4 @@
-// lib\Opacity\Que01ContainerOpacityGesterDetector.dart
+// lib/Opacity\Que01ContainerOpacityGesterDetector.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

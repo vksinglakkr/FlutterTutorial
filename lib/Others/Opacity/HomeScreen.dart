@@ -1,4 +1,4 @@
-// lib\Opacity\HomeScreen.dart
+// lib/Opacity\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01ContainerOpacityGesterDetector.dart';
@@ -16,7 +16,7 @@ class HomeOpacity extends StatelessWidget {
           children: [
             ButtonsCode(
                 Que0111(),
-                "lib\Opacity\Que01ContainerOpacityGesterDetector.dart",
+                "lib/Opacity/Que01ContainerOpacityGesterDetector.dart",
                 "Opacity of Container"),
           ],
         ),

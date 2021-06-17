@@ -1,4 +1,4 @@
-// lib\Bar\AppBar\Que06Popup.dart
+// lib/Bar\AppBar\Que06Popup.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

@@ -1,4 +1,4 @@
-// lib\Buttons\RadioButton\HomeScreen_Flat.dart
+// lib/Buttons\RadioButton\HomeScreen_Flat.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01withGradient.dart';
@@ -16,10 +16,10 @@ class HomeFlat extends StatelessWidget {
               padding: EdgeInsets.all(3.0),
               children: [
                 ButtonsCode(Que01Flat11(),
-                    "lib\Buttons\FlatButton\Que08PaddingOnly.dart", "Gradient"),
+                    "lib/Buttons/FlatButton/Que08PaddingOnly.dart", "Gradient"),
                 ButtonsCode(
                     Que02Flat11(),
-                    "lib\Buttons\FlatButton\Que02LinearGradient.dart",
+                    "lib/Buttons/FlatButton/Que02LinearGradient.dart",
                     "Linear Gradient"),
               ],
             ),

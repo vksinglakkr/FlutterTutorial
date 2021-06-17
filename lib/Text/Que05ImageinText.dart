@@ -1,4 +1,4 @@
-// lib\Text\Que05ImageinText.dart
+// lib/Text\Que05ImageinText.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

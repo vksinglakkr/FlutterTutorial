@@ -1,4 +1,4 @@
-// lib\YouTubePlayer.dart
+// lib/YouTubePlayer.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';

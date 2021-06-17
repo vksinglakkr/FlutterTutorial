@@ -1,4 +1,4 @@
-// lib\Row\HomeScreen.dart
+// libRowHomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Basic.dart';
@@ -16,9 +16,9 @@ class HomeRow extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            ButtonsCode(Que0111(), "lib\Row\Que01Basic.dart", "Basic"),
-            ButtonsCode(Que0211(), "lib\Row\Que02Expanded.dart", "Expanded"),
-            ButtonsCode(Que0311(), "lib\Row\Que03Simple.dart",
+            ButtonsCode(Que0111(), "lib/Row/Que01Basic.dart", "Basic"),
+            ButtonsCode(Que0211(), "lib/Row/Que02Expanded.dart", "Expanded"),
+            ButtonsCode(Que0311(), "lib/Row/Que03Simple.dart",
                 "Icons adjustment in Row"),
           ],
         ),

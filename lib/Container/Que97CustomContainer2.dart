@@ -1,4 +1,4 @@
-// lib\Container\Que97CustomContainer2.dart
+// lib/Container\Que97CustomContainer2.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -16,7 +16,6 @@ class _Que9711State extends State<Que9711> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Custom Container 2")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: SingleChildScrollView(

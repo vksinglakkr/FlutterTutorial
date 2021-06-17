@@ -1,4 +1,4 @@
-// lib\Properties\onPressed\Que01SelectableText.dart
+// lib/Properties\onPressed\Que01SelectableText.dart
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:async';

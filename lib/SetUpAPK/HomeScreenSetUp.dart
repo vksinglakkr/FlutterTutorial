@@ -1,4 +1,4 @@
-// lib\pages\HomeScreenSetUp.dart
+// lib/pages\HomeScreenSetUp.dart
 // HomeScreen.dart
 
 import 'package:flutter/material.dart';
@@ -22,16 +22,16 @@ class HomeSetUp extends StatelessWidget {
           childAspectRatio: 1.92,
           children: [
             ButtonsCode(
-                Que0111(), " lib\SetUpAPK\Que01.dart", "How to build APK?"),
-            ButtonsCode(Que0211(), " lib\SetUpAPK\Que02.dart",
+                Que0111(), "lib/SetUpAPK/Que01.dart", "How to build APK?"),
+            ButtonsCode(Que0211(), "lib/SetUpAPK/Que02.dart",
                 "Upload APK on Play Store?"),
-            ButtonsCode(Que0311(), " lib\SetUpAPK\Que03.dart",
+            ButtonsCode(Que0311(), "lib/SetUpAPK/Que03.dart",
                 "How to generate API Pin?"),
-            ButtonsCode(Que0411(), " lib\SetUpAPK\Que04.dart",
+            ButtonsCode(Que0411(), "lib/SetUpAPK/Que04.dart",
                 "add plugin in build.gradle?"),
-            ButtonsCode(Que0111(), " ", "fix minSDKVersion?"),
-            ButtonsCode(Que0111(), " ", "How to change the project name.??"),
-            ButtonsCode(Que0111(), " ", "Best Channels"),
+            ButtonsCode(Que0111(), "", "fix minSDKVersion?"),
+            ButtonsCode(Que0111(), "", "How to change the project name.??"),
+            ButtonsCode(Que0111(), "", "Best Channels"),
           ],
         ),
       ),

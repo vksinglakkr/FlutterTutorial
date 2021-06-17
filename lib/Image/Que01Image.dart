@@ -1,4 +1,4 @@
-// lib\Image\Que01Image.dart
+// lib/Image\Que01Image.dart
 import 'package:flutter/material.dart';
 
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

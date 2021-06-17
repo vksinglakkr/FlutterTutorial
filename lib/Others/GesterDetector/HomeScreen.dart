@@ -1,4 +1,4 @@
-// lib\GesterDetector\HomeScreen.dart
+// lib/GesterDetector\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01ClickonText.dart';
@@ -17,14 +17,14 @@ class HomeGesterDetector extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: [
             ButtonsCode(Que01Gester11(),
-                "lib\GesterDetector\Que01ClickonText.dart", "Clickable Text"),
+                "lib/GesterDetector/Que01ClickonText.dart", "Clickable Text"),
             ButtonsCode(
                 Que02Gester11(),
-                "lib\GesterDetector\Que02ClickonTextToggle.dart",
+                "lib/GesterDetector/Que02ClickonTextToggle.dart",
                 "Toggle action on Text"),
             ButtonsCode(
                 Que03Gester11(),
-                "lib\GesterDetector\Que03ContainerOpacityGesterDetector.dart",
+                "lib/GesterDetector/Que03ContainerOpacityGesterDetector.dart",
                 "on Click Change Opacity of Container"),
           ],
         ),

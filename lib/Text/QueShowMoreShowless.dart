@@ -1,4 +1,4 @@
-// lib\Text\QueShowMoreShowless.dart
+// lib/Text\QueShowMoreShowless.dart
 import 'package:expandable_text/expandable_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

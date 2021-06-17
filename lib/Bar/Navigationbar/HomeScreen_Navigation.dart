@@ -1,4 +1,4 @@
-// lib\Bar\HomeScreen_Navigation.dart
+// lib/Bar\HomeScreen_Navigation.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 //import 'package:widget_with_codeview/widget_with_codeview.dart';

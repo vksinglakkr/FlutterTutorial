@@ -1,4 +1,4 @@
-// lib\Container\Que32ContainerBorder.dart
+// lib/Container\Que32ContainerBorder.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -16,7 +16,6 @@ class _Que3211State extends State<Que3211> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Container Border")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

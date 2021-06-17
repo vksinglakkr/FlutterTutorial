@@ -1,4 +1,4 @@
-// lib\Text\Que19Marquee.dart
+// lib/Text\Que19Marquee.dart
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

@@ -1,4 +1,4 @@
-// lib\GesterDetector\Que01ClickonText.dart
+// lib/GesterDetector\Que01ClickonText.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

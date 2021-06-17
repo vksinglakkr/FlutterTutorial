@@ -1,4 +1,4 @@
-// lib\Box\HomeScreen_Fitted.dart
+// lib/Box\HomeScreen_Fitted.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -21,15 +21,15 @@ class HomeFitted extends StatelessWidget {
               children: [
                 ButtonsCode(
                     Que01Fitted11(),
-                    "lib\Box\Box_FittedBox\Que01Fitted.dart",
+                    "lib/Box/Box_FittedBox/Que01Fitted.dart",
                     "Image Stretching"),
                 ButtonsCode(
                     Que02ImageOverflow11(),
-                    "lib\Box\Box_FittedBox\Que02ImageOverflow.dart",
+                    "lib/Box/Box_FittedBox/Que02ImageOverflow.dart",
                     "Tackle Image Overflow"),
                 ButtonsCode(
                     Que03TextOverflow11(),
-                    "lib\Box\Box_FittedBox\Que03textOverFlow.dart",
+                    "lib/Box/Box_FittedBox/Que03textOverFlow.dart",
                     "Tackle Text Overflow"),
               ],
             ),

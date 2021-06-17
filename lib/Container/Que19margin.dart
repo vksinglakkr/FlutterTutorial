@@ -1,4 +1,4 @@
-// lib\Container\Que19margin.dart
+// lib/Container\Que19margin.dart
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -13,7 +13,6 @@ class Que1911 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: WidgetAppBar("Margin")),
-  
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(

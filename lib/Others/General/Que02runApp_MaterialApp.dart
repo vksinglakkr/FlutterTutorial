@@ -1,4 +1,4 @@
-// lib\General\Que02runApp_MaterialApp.dart
+// lib/General\Que02runApp_MaterialApp.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

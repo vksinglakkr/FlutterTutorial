@@ -1,4 +1,4 @@
-// lib\Properties\onChanged\Que03SwitchActiveTrackColor.dart
+// lib/Properties\onChanged\Que03SwitchActiveTrackColor.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

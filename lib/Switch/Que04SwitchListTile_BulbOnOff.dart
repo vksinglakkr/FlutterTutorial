@@ -1,4 +1,4 @@
-// lib\Switch\Que04SwitchListTile_BulbOnOff.dart
+// lib/Switch\Que04SwitchListTile_BulbOnOff.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

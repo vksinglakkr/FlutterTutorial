@@ -1,4 +1,4 @@
-// lib\Text\Que15DefaulttextStyle.dart
+// lib/Text\Que15DefaulttextStyle.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

@@ -1,4 +1,4 @@
-// lib\Text\Que12TextShape.dart
+// lib/Text\Que12TextShape.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

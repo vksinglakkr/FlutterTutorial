@@ -1,4 +1,4 @@
-// lib\InkWell\HomeScreen.dart
+// lib/InkWell\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Others/InkWell/Que03CallFunction.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -17,13 +17,13 @@ class HomeInkWell extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            ButtonsCode(Que01InkWell11(), "lib\InkWell\Que01ClickonText.dart",
+            ButtonsCode(Que01InkWell11(), "lib/InkWell/Que01ClickonText.dart",
                 "InkWell (on Click Change text)"),
             ButtonsCode(
                 Que02InkWell11(),
-                "lib\InkWell\Que02ClickonTextToggle.dart",
+                "lib/InkWell/Que02ClickonTextToggle.dart",
                 "InkWell (on click Toggle text)"),
-            ButtonsCode(Que03InkWell11(), "lib\InkWell\Que03CallFunction.dart",
+            ButtonsCode(Que03InkWell11(), "lib/InkWell/Que03CallFunction.dart",
                 "How to pass Function onTap"),
           ],
         ),

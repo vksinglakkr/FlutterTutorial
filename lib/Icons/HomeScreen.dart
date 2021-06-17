@@ -1,4 +1,4 @@
-// lib\Icons\HomeScreen.dart
+// lib/Icons\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01ChangeIcon.dart';
@@ -15,9 +15,9 @@ class HomeIcons extends StatelessWidget {
         builder: (context) => ListView(
           padding: EdgeInsets.all(3.0),
           children: [
-            ButtonsCode(Que0111(), "lib\Icons\Que01ChangeIcon.dart", "Padding"),
+            ButtonsCode(Que0111(), "lib/Icons/Que01ChangeIcon.dart", "Padding"),
             ButtonsCode(
-                Que0211(), "lib\Icons\Que02ChangeColor.dart", "PaddingLRTB"),
+                Que0211(), "lib/Icons/Que02ChangeColor.dart", "PaddingLRTB"),
           ],
         ),
       ))),

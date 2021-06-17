@@ -1,4 +1,4 @@
-// lib\InkWell\Que01ClickonText.dart
+// lib/InkWell\Que01ClickonText.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

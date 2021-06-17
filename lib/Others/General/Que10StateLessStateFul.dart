@@ -1,4 +1,4 @@
-// lib\General\Que10StateLessStateFul.dart
+// lib/General\Que10StateLessStateFul.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

@@ -1,4 +1,4 @@
-// lib\Drawer\HomeScreen.dart
+// lib/Drawer\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Drawer/Que02AppbarWithDrawerActionButton.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -16,10 +16,10 @@ class HomeDrawer extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: [
             ButtonsCode(
-                Que0111(), "lib\Drawer\Que01Drawer1.dart", "Basic Drawer"),
+                Que0111(), "lib/Drawer/Que01Drawer1.dart", "Basic Drawer"),
             ButtonsCode(
                 Que0211(),
-                "lib\Drawer\Que02AppbarWithDrawerActionButton.dart",
+                "lib/Drawer/Que02AppbarWithDrawerActionButton.dart",
                 "Drawer in ActionBar & AppBar"),
           ],
         ),

@@ -1,4 +1,4 @@
-// lib\Material\HomeScreen.dart
+// lib/Material\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Others/InkWell/Que02ClickonTextToggle.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -17,7 +17,7 @@ class HomeMaterial extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: [
             ButtonsCode(Que02InkWell11(),
-                "lib\InkWell\Que02ClickonTextToggle.dart", "InkWell"),
+                "lib/InkWell/Que02ClickonTextToggle.dart", "InkWell"),
             Container(
               margin: EdgeInsets.all(2),
               height: 32,

@@ -1,4 +1,4 @@
-// lib\Properties\onChanged\Que01Switch.dart
+// lib/Properties\onChanged\Que01Switch.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

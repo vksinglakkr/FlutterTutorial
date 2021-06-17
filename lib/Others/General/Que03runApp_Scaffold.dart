@@ -1,4 +1,4 @@
-// lib\General\Que03runApp_Scaffold.dart
+// lib/General\Que03runApp_Scaffold.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

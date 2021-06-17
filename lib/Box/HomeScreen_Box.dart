@@ -1,4 +1,4 @@
-// lib\Box\HomeScreen_Sized.dart
+// lib/Box\HomeScreen_Sized.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

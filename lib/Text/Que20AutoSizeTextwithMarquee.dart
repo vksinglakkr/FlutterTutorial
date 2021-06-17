@@ -1,4 +1,4 @@
-// lib\Text\Que20AutoSizeTextwithMarquee.dart
+// lib/Text\Que20AutoSizeTextwithMarquee.dart
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';

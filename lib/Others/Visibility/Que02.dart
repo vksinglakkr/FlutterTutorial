@@ -1,4 +1,4 @@
-// lib\Visibility\Que01CustomContainer_Visibility.dart
+// libVisibilityQue01CustomContainer_Visibility.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -51,7 +51,7 @@ class _Que0211State extends State<Que0211> {
                     onPressed: () => setState(() => _visible1 = !_visible1),
                   ),
                   ElevatedButton(
-                      child: Text('Show/Hide Blue\n(Maintainsize)'),
+                      child: Text('Show/Hide Bluen(Maintainsize)'),
                       //onPressed: () => setState(()=>_visible2=!_visible2),
                       onPressed: () {
                         setState(() {

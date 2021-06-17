@@ -1,4 +1,4 @@
-// lib\Divider\Que01DividerTheme2.dart
+// lib/Divider\Que01DividerTheme2.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

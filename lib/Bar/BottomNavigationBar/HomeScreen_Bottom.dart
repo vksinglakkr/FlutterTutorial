@@ -1,4 +1,4 @@
-// lib\Bar\HomeScreen_Bottom.dart
+// lib/Bar\HomeScreen_Bottom.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -22,15 +22,15 @@ class HomeBottom extends StatelessWidget {
               children: [
                 ButtonsCode(
                     Que01Bottom11(),
-                    "lib\Bar\BottomNavigationBar\Que01BottomNavigationbar.dart",
+                    "lib/Bar/BottomNavigationBar/Que01BottomNavigationbar.dart",
                     "Bottom Navigation Bar"),
                 ButtonsCode(
                     Que02Curved11(),
-                    "lib\Bar\BottomNavigationBar\Que02CurvedBottomNavigationbar.dart",
+                    "lib/Bar/BottomNavigationBar/Que02CurvedBottomNavigationbar.dart",
                     "Curved Navigation Bar"),
                 ButtonsCode(
                     Que03Custom(),
-                    "lib\Bar\BottomNavigationBar\Que03CustomShaped.dart",
+                    "lib/Bar/BottomNavigationBar/Que03CustomShaped.dart",
                     "Custom Shaped Navigation Bar"),
               ],
             ),

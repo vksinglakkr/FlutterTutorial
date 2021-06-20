@@ -1,5 +1,6 @@
 //     ..\lib/AlertDialog\HomeScreen_Alert.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/TextField/Assignment3.dart';
 import 'Que01Basic.dart';
 import 'Que02RoundedCorner.dart';
 import 'Que03DontCloseonTapoutside.dart';
@@ -37,6 +38,10 @@ class HomeAlert extends StatelessWidget {
                       Que05Alert11(),
                       "lib/AlertDialog/Que05BackGroundColor.dart",
                       "Changed Back Ground Color"),
+                  ButtonsCode(
+                      Que03Assignment(),
+                      "lib/TextField/Assignment3.dart",
+                      "Show value-TextField/Controller/toast/AlertDialog"),
                 ],
               ),
             ),

@@ -1,4 +1,4 @@
-// libVisibilityHomeScreen.dart
+// lib/Visibility/HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

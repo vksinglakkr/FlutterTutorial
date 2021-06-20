@@ -33,6 +33,7 @@ dependencies:
   curved_navigation_bar: ^0.3.7
   animated_splash_screen: ^1.1.0
   animated_text_kit: ^4.2.1
+  fluttertoast: ^8.0.7
 
  
 #  cupertino_icons: ^1.0.0choco
@@ -100,6 +101,7 @@ flutter:
     - lib/Others/Opacity/
     - lib/Padding/
     - lib/Others/Placeholder/
+    - lib/Others/Positioned/
     - lib/Others/ProgressIndicator_Loading/
     - lib/Row/
     - lib/Slider/

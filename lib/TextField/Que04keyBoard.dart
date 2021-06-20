@@ -2,20 +2,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que01a11 extends StatefulWidget {
+class Que04Keyboard extends StatefulWidget {
   @override
   _State createState() => _State();
 }
 
-class _State extends State<Que01a11> {
-  final String url1 = "";
-  final String image1 = "assets/help/TextField/Que01.png";
-  final String video1 = "DMkkF_lVnpo"; //final TextField Que01a
+class _State extends State<Que04Keyboard> {
+  final String url1 =
+      "https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a"; //final keyBoard
+  final String image1 = "";
+  final String video1 = "";
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("TextField & Properties(2)")),
+        appBar: AppBar(title: WidgetAppBar("keyBoard")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: SingleChildScrollView(
@@ -24,35 +25,22 @@ class _State extends State<Que01a11> {
               padding: EdgeInsets.all(10),
               child: Column(
                 children: [
-                  Text('Input border (none)'),
-                  TextField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: "Enter user name",
-                    ),
-                  ),
-                  Text('OutlineBorder & set Width of Border'),
-                  TextField(
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(width: 3, color: Colors.red)),
-                      hintText: "Enter user name",
-                    ),
-                  ),
-                  Text('change KeyBoard'),
+                  Text('change KeyBoard type'),
+                  Text(
+                      'text, number, emailAddress, datetime, numberWithOptions, multiline'),
                   TextField(
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
-                      hintText: "Enter user name",
+                      hintText: "Hint text",
                     ),
                   ),
-                  Text('max. length (5)'),
+                  Text(
+                      'change new line button to next, search, newLine, send, continue, done, emergencyCall, go, join, none, previous, route  etc.'),
                   TextField(
-                    maxLength: 5,
-                    keyboardType: TextInputType.text,
+                    keyboardType: TextInputType.number,
+                    textInputAction: TextInputAction.search,
                     decoration: InputDecoration(
-                      hintText: "Enter user name",
+                      hintText: "textInputAction: TextInputAction.search",
                     ),
                   ),
                   Text('max. Lines (2) with keyboardType multiline'),
@@ -61,7 +49,14 @@ class _State extends State<Que01a11> {
                     maxLength: 20,
                     keyboardType: TextInputType.multiline,
                     decoration: InputDecoration(
-                      hintText: "Enter user name",
+                      hintText: "Hint text",
+                    ),
+                  ),
+                  Text('disable AutoCorrect'),
+                  TextField(
+                    autocorrect: false,
+                    decoration: InputDecoration(
+                      hintText: "autocorrect: false",
                     ),
                   ),
                 ],

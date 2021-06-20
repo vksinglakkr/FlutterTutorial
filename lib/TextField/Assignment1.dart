@@ -1,22 +1,27 @@
+// lib/TextField/Assignment1.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que01Test extends StatefulWidget {
+class Que01Assignment extends StatefulWidget {
   @override
   _State createState() => new _State();
 }
 
 //State is information of the application that can change over time or when some actions are taken.
-class _State extends State<Que01Test> {
+class _State extends State<Que01Assignment> {
+  final String url1 =
+      "https://kodestat.gitbook.io/flutter/36-flutter-rows-and-columns"; //final Assignment 1
+  final String image1 = "";
+  final String video1 = "";
   TextEditingController _user = new TextEditingController();
   TextEditingController _pass = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Name here'),
-        backgroundColor: Colors.red,
-      ),
+      appBar: AppBar(title: WidgetAppBar("Assignment - Login form")),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       //hit Ctrl+space in intellij to know what are the options you can use in flutter widgets
       body: new Container(
         padding: new EdgeInsets.all(32.0),
@@ -62,6 +67,7 @@ class _State extends State<Que01Test> {
           ),
         ),
       ),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

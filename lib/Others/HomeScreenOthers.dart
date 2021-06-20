@@ -3,6 +3,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/Positioned/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/Toast/HomeScreen.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 //import '../Stack_IndexStack_Positioned/HomeScreen.dart';import 'Assignments/HomeScreen_Assignments.dart';
 import 'Assignments/HomeScreen_Assignments.dart';
@@ -161,6 +163,24 @@ class HomeScreenOthers extends StatelessWidget {
                     builder: (BuildContext context) => Que01Test(),
                   )),
             ),
+            ElevatedButton(
+              child: Text('Positioned',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HomePositioned(),
+                  )),
+            ),
+            ElevatedButton(
+                child: Text('Toast',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeToast(),
+                    ))),
             ElevatedButton(
                 child: Text('Assignments',
                     style:

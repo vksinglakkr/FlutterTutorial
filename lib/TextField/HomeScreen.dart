@@ -1,16 +1,24 @@
 // lib/TextField\HomeScreen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/TextField/Que01aSingleTextField.dart';
-import 'package:flutter_tutorial/TextField/Que01bSingleTextField.dart';
-import 'package:flutter_tutorial/TextField/Que04Disable.dart';
-import 'package:flutter_tutorial/TextField/Que05AutoFocus.dart';
+import 'package:flutter_tutorial/TextField/Assignment1.dart';
+import 'package:flutter_tutorial/TextField/Assignment2.dart';
+import 'package:flutter_tutorial/TextField/Assignment3.dart';
+import 'package:flutter_tutorial/TextField/Assignment4.dart';
+import 'package:flutter_tutorial/TextField/Que01atextAlign.dart';
+import 'package:flutter_tutorial/TextField/Que01bMaxlengthmaxLines.dart';
+import 'package:flutter_tutorial/TextField/Que01cSingleTextField.dart';
+import 'package:flutter_tutorial/TextField/Que01dBorder.dart';
+import 'package:flutter_tutorial/TextField/Que01ePrefix.dart';
+import 'package:flutter_tutorial/TextField/Que01fCursor.dart';
+import 'package:flutter_tutorial/TextField/Que01gTextCapitalisation.dart';
+import 'package:flutter_tutorial/TextField/Que03TextFieldTheme.dart';
+import 'package:flutter_tutorial/TextField/Que04keyBoard.dart';
 import 'package:flutter_tutorial/TextField/Que06FocusNode.dart';
 import 'package:flutter_tutorial/TextField/Que07onChanged.dart';
 import 'package:flutter_tutorial/TextField/Que08Controller.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
-import 'Que01SingleTextField.dart';
+import 'Que01SimpleTextField.dart';
 import 'Que02UsernamePassword.dart';
-import 'Que03CursorColor.dart';
 
 class HomeTextField extends StatelessWidget {
   @override
@@ -26,28 +34,38 @@ class HomeTextField extends StatelessWidget {
                 children: [
                   ButtonsCode(
                       Que0111(),
-                      "lib/TextField/Que01SingleTextField.dart",
-                      "Text Field & Properties(1)"),
-                  ButtonsCode(
-                      Que01a11(),
-                      "lib/TextField/Que01aSingleTextField.dart",
-                      "Text Field & Properties(2)"),
+                      "lib/TextField/Que01SimpleTextField.dart",
+                      "textField, hintText, labelText, helperText"),
+                  ButtonsCode(Que01a11(), "lib/TextField/Que01atextAlign.dart",
+                      "AutoFocus, textAlign"),
                   ButtonsCode(
                       Que01b11(),
-                      "lib/TextField/Que01aSingleTextField.dart",
-                      "Text Field & Properties(3)"),
+                      "lib/TextField/Que01bMaxlengthmaxLines.dart",
+                      "Max. Length/Lines"),
+                  ButtonsCode(Que01f11(), "lib/TextField/Que01fCursor.dart",
+                      "cursorColor, cursorWidth, height of Cursor"),
+                  ButtonsCode(
+                      Que01g11(),
+                      "lib/TextField/Que01gTextCapitalisation.dart",
+                      "Capitalisation of Sentence, Characters, Words"),
+                  ButtonsCode(
+                      Que01c11(),
+                      "lib/TextField/Que01cSingleTextField.dart",
+                      "disabled, readonly, padding"),
+                  ButtonsCode(Que01d11(), "lib/TextField/Que01dBorder.dart",
+                      "Borders: Focused/error/disabled.."),
+                  ButtonsCode(
+                      Que03Text11(),
+                      "lib/TextField/Que03TextFieldTheme.dart",
+                      "set Border properties using Theme"),
+                  ButtonsCode(Que01e11(), "lib/TextField/Que01ePrefix.dart",
+                      "prefixIcon, prefixText, prefix"),
+                  ButtonsCode(Que04Keyboard(),
+                      "lib/TextField/Que04keyBoard.dart", "keyBoard"),
                   ButtonsCode(
                       Que0211(),
                       "lib/TextField/Que02UsernamePassword.dart",
                       "Login Page - Username & Password"),
-                  ButtonsCode(Que0311(), "lib/TextField/Que03CursorColor.dart",
-                      "Cursor Color"),
-                  ButtonsCode(Que0411(), "lib/TextField/Que04Disable.dart",
-                      "How to disable textField?"),
-                  ButtonsCode(
-                      Que05Auto11(),
-                      "lib/TextField/Que05AutoFocus.dart",
-                      "How to set Focus using autofocus?"),
                   ButtonsCode(
                       Que06FocusNode11(),
                       "lib/TextField/Que06FocusNode.dart",
@@ -60,6 +78,22 @@ class HomeTextField extends StatelessWidget {
                       Que08Controller11(),
                       "lib/TextField/Que08Controller.dart",
                       "Handle changes using Controller?"),
+                  ButtonsCode(
+                      Que01Assignment(),
+                      "lib/TextField/Assignment1.dart",
+                      "Assignment - Login form?"),
+                  ButtonsCode(
+                      Que02Assignment(),
+                      "lib/TextField/Assignment2.dart",
+                      "Assignment - Send values to Next Screen?"),
+                  ButtonsCode(
+                      Que03Assignment(),
+                      "lib/TextField/Assignment3.dart",
+                      "Show value-TextField/Controller/toast/AlertDialog"),
+                  ButtonsCode(
+                      Que04Assignment(),
+                      "lib/TextField/Assignment4.dart",
+                      "onSubmitted,onTap,OnEditingComplete"),
                 ],
               ),
             ),

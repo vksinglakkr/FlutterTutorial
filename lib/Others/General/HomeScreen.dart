@@ -76,8 +76,6 @@ class HomeGeneral extends StatelessWidget {
                   "MaterialApp Scaffold?"),
               ButtonsCode(Que20NullSafety11(),
                   "lib/Others/General/Que20NullSafety.dart", "Null Safety?"),
-              ButtonsCode(Que20NullSafety11(),
-                  "lib/Others/General/Que20NullSafety.dart", "Null Safety?"),
               ButtonsCode(Que2111(), "lib/Others/General/Que21.dart", "TODO"),
             ],
           ),

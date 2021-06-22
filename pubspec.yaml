@@ -34,8 +34,10 @@ dependencies:
   animated_splash_screen: ^1.1.0
   animated_text_kit: ^4.2.1
   fluttertoast: ^8.0.7
+  like_button: ^2.0.2
+  flutter_colorpicker: ^0.3.5
+  easy_dynamic_theme: ^2.2.0
 
- 
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0
 

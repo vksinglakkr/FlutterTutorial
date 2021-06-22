@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class Que01Test extends StatelessWidget {
+class Que06Random extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(home: Scaffold(body: View()));

@@ -7,6 +7,9 @@ import 'package:flutter_tutorial/Buttons/ElevatedButton/Que07CustomButton.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que08RoundedButton.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que10makeCircularButton.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que13setStateThreeWays.dart';
+import 'package:flutter_tutorial/TextField/Assignment4.dart';
+import 'package:flutter_tutorial/TextField/Assignment5.dart';
+import 'package:flutter_tutorial/TextField/Assignment6.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que03onPressed.dart';
 import 'Que04LongPress.dart';
@@ -59,6 +62,18 @@ class HomeElevated extends StatelessWidget {
                       Que08Rounded11(),
                       "lib/Buttons/ElevatedButton/Que08RoundedButton.dart",
                       "Different approaches to make rounded buttons"),
+                  ButtonsCode(
+                      Que04Assignment(),
+                      "lib/TextField/Assignment4.dart",
+                      "onSubmitted,onTap,OnEditingComplete"),
+                  ButtonsCode(
+                      Que05Assignment(),
+                      "lib/TextField/Assignment5.dart",
+                      "retrival of value using onChanged"),
+                  ButtonsCode(
+                      Que06Assignment(),
+                      "lib/TextField/Assignment6.dart",
+                      "retrival of value using Controller/ElevatedButton(onPress..)"),
                 ],
               ),
             ),

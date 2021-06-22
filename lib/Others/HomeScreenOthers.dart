@@ -199,15 +199,6 @@ class HomeScreenOthers extends StatelessWidget {
                     MaterialPageRoute(
                       builder: (BuildContext context) => HomeTheme(),
                     ))),
-            ElevatedButton(
-                child: Text('General',
-                    style:
-                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => HomeGeneral(),
-                    ))),
           ],
         ),
       ),

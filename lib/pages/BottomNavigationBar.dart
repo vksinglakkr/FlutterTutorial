@@ -3,6 +3,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
+import 'package:flutter/cupertino.dart';
 
 class QueBottom extends StatefulWidget {
   final String urlName, imageName, videoUrlId;

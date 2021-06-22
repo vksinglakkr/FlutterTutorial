@@ -4,6 +4,10 @@ import 'package:flutter_tutorial/TextField/Assignment1.dart';
 import 'package:flutter_tutorial/TextField/Assignment2.dart';
 import 'package:flutter_tutorial/TextField/Assignment3.dart';
 import 'package:flutter_tutorial/TextField/Assignment4.dart';
+import 'package:flutter_tutorial/TextField/Assignment6.dart';
+import 'package:flutter_tutorial/TextField/Assignment5.dart';
+import 'package:flutter_tutorial/TextField/Assignment7.dart';
+import 'package:flutter_tutorial/TextField/BasicNotes.dart';
 import 'package:flutter_tutorial/TextField/Que01atextAlign.dart';
 import 'package:flutter_tutorial/TextField/Que01bMaxlengthmaxLines.dart';
 import 'package:flutter_tutorial/TextField/Que01cSingleTextField.dart';
@@ -78,6 +82,8 @@ class HomeTextField extends StatelessWidget {
                       Que08Controller11(),
                       "lib/TextField/Que08Controller.dart",
                       "Handle changes using Controller?"),
+                  ButtonsCode(Que01BasicNotes(),
+                      "lib/TextField/BasicNotes.dart", "Basic Notes"),
                   ButtonsCode(
                       Que01Assignment(),
                       "lib/TextField/Assignment1.dart",
@@ -94,6 +100,16 @@ class HomeTextField extends StatelessWidget {
                       Que04Assignment(),
                       "lib/TextField/Assignment4.dart",
                       "onSubmitted,onTap,OnEditingComplete"),
+                  ButtonsCode(
+                      Que05Assignment(),
+                      "lib/TextField/Assignment5.dart",
+                      "retrival of value using onChanged"),
+                  ButtonsCode(
+                      Que06Assignment(),
+                      "lib/TextField/Assignment6.dart",
+                      "retrival of value using Controller/ElevatedButton(onPress..)"),
+                  ButtonsCode(Que07Assignment(),
+                      "lib/TextField/Assignment7.dart", "Hide/Show Password"),
                 ],
               ),
             ),

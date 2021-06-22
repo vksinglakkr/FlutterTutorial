@@ -1,8 +1,9 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/mainTheme.dart';
 import 'package:page_transition/page_transition.dart';
 
-import 'pages/HomeScreen.dart';
+//import 'pages/HomeScreen.dart';
 
 class Splash extends StatelessWidget {
   @override
@@ -26,6 +27,7 @@ class Splash extends StatelessWidget {
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return HomeScreen();
+//    return HomeScreen();
+    return MainTheme();
   }
 }

@@ -1,6 +1,7 @@
 //     ..\lib/AlertDialog\HomeScreen_Alert.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/TextField/Assignment3.dart';
+import 'package:flutter_tutorial/mainTheme.dart';
 import 'Que01Basic.dart';
 import 'Que02RoundedCorner.dart';
 import 'Que03DontCloseonTapoutside.dart';
@@ -13,7 +14,24 @@ class HomeAlert extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Alert Dialog Box")),
+        appBar: AppBar(
+          title: WidgetAppBar("Alert Dialog Box"),
+          actions: [
+            PopupMenuButton(
+                itemBuilder: (BuildContext varPrefer) => [
+                      PopupMenuItem(
+                          child: IconButton(
+                              icon: const Icon(Icons.settings),
+                              color: Colors.black,
+                              onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        MainTheme(),
+                                  ))))
+                    ])
+          ],
+        ),
         body: SafeArea(
           child: Container(
             child: Builder(

@@ -1,6 +1,7 @@
 // lib/Theme\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Divider/Que01DividerTheme2.dart';
+import 'package:flutter_tutorial/Others/Theme/QueSystemTheme.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
 import 'Que02.dart';
@@ -21,6 +22,8 @@ class HomeTheme extends StatelessWidget {
                   "Difference between Theme & ThemeWidget"),
               ButtonsCode(Que0111(), "lib/Divider/Que01DividerTheme2.dart",
                   "Divider using ThemeData"),
+              ButtonsCode(QueSystemTheme(), "lib/Other/Theme/QueHomePage.dart",
+                  "theme as per system"),
               ButtonsCode(
                   Que02(), "lib/Other/Theme/Que02.dart", "Custom Theme"),
             ],

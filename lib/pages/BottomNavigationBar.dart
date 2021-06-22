@@ -18,12 +18,13 @@ class _QueBottomState extends State<QueBottom> {
   Widget build(BuildContext context) {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
+
       //type: BottomNavigationBarType.shifting,
       iconSize: 20,
       selectedFontSize: 14,
       unselectedFontSize: 14,
 
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Theme.of(context).primaryColor,
       items: [
         //  if (widget.urlName.length > 0)
         //    if (widget.imageName.length > 0)
@@ -35,7 +36,7 @@ class _QueBottomState extends State<QueBottom> {
           //     ? Icon(Icons.info)
           //     : Icon(Icons.unpublished_rounded),
           // label: widget.urlName.length > 0 ? 'Info' : "",
-          backgroundColor: Colors.white,
+          //       backgroundColor: Colors.white,
         ),
 //           if (widget.imageName.length > 0)
 //             if (widget.videoUrlId.length > 0)
@@ -122,7 +123,6 @@ class WidgetFab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: Colors.deepOrange,
       tooltip: "Go Back",
       onPressed: () {
         Navigator.pop(context);

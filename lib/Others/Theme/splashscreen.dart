@@ -6,9 +6,10 @@ import 'package:page_transition/page_transition.dart';
 //import 'pages/HomeScreen.dart';
 
 class Splash extends StatelessWidget {
-  final Color primaryColor, btnColor;
+  final Color primaryColor, btnColor, btnFGColor;
   final int darkMode;
-  const Splash({key, this.primaryColor, this.darkMode, this.btnColor});
+  const Splash(
+      {key, this.primaryColor, this.darkMode, this.btnColor, this.btnFGColor});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,6 +17,13 @@ class Splash extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: this.primaryColor,
           brightness: (darkMode == 0) ? Brightness.light : Brightness.dark,
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(this.btnColor),
+              foregroundColor:
+                  MaterialStateProperty.all<Color>(this.btnFGColor),
+            ),
+          ),
           buttonTheme: ButtonThemeData(buttonColor: Colors.blueAccent),
           textTheme: TextTheme(
             headline1: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
@@ -29,7 +37,7 @@ class Splash extends StatelessWidget {
           child: AnimatedSplashScreen(
             duration: 2000,
             splash: FlutterLogo(
-              size: 300,
+              size: 600,
             ),
             nextScreen: HomeScreen(),
             splashTransition: SplashTransition.scaleTransition,

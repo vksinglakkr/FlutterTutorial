@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Others/Theme/splashscreen.dart';
 import 'package:flutter_tutorial/pages/HomeScreen.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:flutter_tutorial/splashscreen.dart';
 
 class MainTheme extends StatefulWidget {
   @override
@@ -32,11 +32,16 @@ class _MainThemeState extends State<MainTheme> {
   // ignore: non_constant_identifier_names
   Color CircleBtnColor = Colors.deepPurple;
   // ignore: non_constant_identifier_names
+  Color CircleFGBtnColor = Colors.black;
+  // ignore: non_constant_identifier_names
   void changeStartColor(Color SelectedClr) =>
       setState(() => CircleStartColor = SelectedClr);
   // ignore: non_constant_identifier_names
   void changeBtnColor(Color SelectedClr) =>
       setState(() => CircleBtnColor = SelectedClr);
+  // ignore: non_constant_identifier_names
+  void changeFGBtnColor(Color SelectedClr) =>
+      setState(() => CircleFGBtnColor = SelectedClr);
 
   // ignore: non_constant_identifier_names
   IconButton ColorBtn(Color Clr, int index) {
@@ -59,6 +64,8 @@ class _MainThemeState extends State<MainTheme> {
                               changeStartColor(SlectedColor);
                             } else if (index == 2) {
                               changeBtnColor(SlectedColor);
+                            } else if (index == 3) {
+                              changeFGBtnColor(SlectedColor);
                             }
                           }),
                     ),
@@ -112,7 +119,7 @@ class _MainThemeState extends State<MainTheme> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
-                          Text("Color of Buttons:   ",
+                          Text("Buttons BackGround Color:",
                               style: TextStyle(fontSize: 18)),
                           ClipOval(
                             child: Container(
@@ -122,6 +129,22 @@ class _MainThemeState extends State<MainTheme> {
                             ),
                           ),
                           ColorBtn(CircleBtnColor, 2),
+                        ],
+                      ),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          Text("Buttons ForeGround Color:",
+                              style: TextStyle(fontSize: 18)),
+                          ClipOval(
+                            child: Container(
+                              width: 30,
+                              height: 30,
+                              color: CircleFGBtnColor,
+                            ),
+                          ),
+                          ColorBtn(CircleFGBtnColor, 3),
                         ],
                       ),
                       Row(
@@ -162,6 +185,7 @@ class _MainThemeState extends State<MainTheme> {
                                 primaryColor: CircleStartColor,
                                 darkMode: _radioShowNumberValue,
                                 btnColor: CircleBtnColor,
+                                btnFGColor: CircleFGBtnColor,
                               ),
                             ))),
                     ElevatedButton(

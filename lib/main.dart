@@ -1,6 +1,6 @@
 // lib/main.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/SplashScreenTheme.dart';
+import 'package:flutter_tutorial/Others/Theme/splashscreen.dart';
 
 //import 'splashscreen.dart';
 
@@ -15,7 +15,11 @@ void main() async {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-//    return Splash( primaryColor: Colors.deepPurple,darkMode: 0,btnColor: Colors.deepPurple,);
-    return SplashPersistent();
+    return Splash(
+      primaryColor: Colors.deepPurple,
+      darkMode: 0,
+      btnColor: Colors.deepPurple,
+      btnFGColor: Colors.white,
+    );
   }
 }

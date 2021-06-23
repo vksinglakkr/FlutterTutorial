@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Divider/Que01DividerTheme2.dart';
 import 'package:flutter_tutorial/Others/Theme/QueSystemTheme.dart';
+import 'package:flutter_tutorial/Others/Theme/SplashScreenTheme.dart';
+import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
 import 'Que02.dart';
@@ -26,6 +28,12 @@ class HomeTheme extends StatelessWidget {
                   "theme as per system"),
               ButtonsCode(
                   Que02(), "lib/Other/Theme/Que02.dart", "Custom Theme"),
+              ButtonsCode(MainTheme(), "lib/Other/Theme/mainTheme.dart",
+                  "Dynamic NonPersistent Theme Changer"),
+              ButtonsCode(
+                  SplashPersistent(),
+                  "lib/Other/Theme/SplashScreenTheme.dart",
+                  "Dynamic Persistent Theme Switcher using theme Provider"),
             ],
           ),
         ))),

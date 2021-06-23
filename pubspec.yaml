@@ -114,6 +114,7 @@ flutter:
     - lib/SetUpAPK/
     - lib/Tab/
     - lib/TextField/
+    - lib/TextFormField/
     - lib/Transform/
     - lib/Others/Visibility/
     - assets/help/AlertDialog/ 

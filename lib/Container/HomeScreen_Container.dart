@@ -1,5 +1,7 @@
 // lib/Container\HomeScreen_Container.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Container/Que31ContainerButton.dart';
+import 'package:flutter_tutorial/Container/Que33ContainerButton.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01ContainerOpacityGesterDetector.dart';
 import 'Que02ContainerWithinContainer.dart';
@@ -99,6 +101,14 @@ class HomeContainer extends StatelessWidget {
             ButtonsCode(Que3011(), "lib/Container/Que30Border.dart", "Border"),
             ButtonsCode(Que3211(), "lib/Container/Que32ContainerBorder.dart",
                 "Container border"),
+            ButtonsCode(
+                Que31Container(),
+                "lib/Container/Que31ContainerButton.dart",
+                "Clickable Button-Container,Gesterdetector,snackbar"),
+            ButtonsCode(
+                Que33Container(),
+                "lib/Container/Que33ContainerButton.dart",
+                "Clickable Button-Container,InkWell,snackbar"),
             ButtonsCode(Que9711(), "lib/Container/Que97CustomContainer2.dart",
                 "Custom Container 2"),
             ButtonsCode(Que9811(), "lib/Container\Que98AnimatedContainer.dart",

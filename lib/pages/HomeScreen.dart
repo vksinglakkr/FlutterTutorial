@@ -6,6 +6,7 @@ import 'package:flutter_tutorial/Buttons/HomeScreen_Buttons.dart';
 import 'package:flutter_tutorial/Expanded/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/HomeScreenOthers.dart';
 import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
+import 'package:flutter_tutorial/TextFormField/HomeScreen.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
 import '../Align/HomeScreen_Align.dart';
 import '../Bar/HomeScreen_Bar.dart';
@@ -254,6 +255,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => HomeTextField(),
+                  )),
+            ),
+            ElevatedButton(
+              child: Text('TextFormField',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HomeTextFormField(),
                   )),
             ),
             ElevatedButton(

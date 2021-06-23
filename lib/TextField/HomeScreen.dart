@@ -20,6 +20,9 @@ import 'package:flutter_tutorial/TextField/Que04keyBoard.dart';
 import 'package:flutter_tutorial/TextField/Que06FocusNode.dart';
 import 'package:flutter_tutorial/TextField/Que07onChanged.dart';
 import 'package:flutter_tutorial/TextField/Que08Controller.dart';
+import 'package:flutter_tutorial/TextField/Que09.dart';
+import 'package:flutter_tutorial/TextField/Que10.dart';
+import 'package:flutter_tutorial/TextField/Que11.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01SimpleTextField.dart';
 import 'Que02UsernamePassword.dart';
@@ -84,6 +87,12 @@ class HomeTextField extends StatelessWidget {
                       "Handle changes using Controller?"),
                   ButtonsCode(Que01BasicNotes(),
                       "lib/TextField/BasicNotes.dart", "Basic Notes"),
+                  ButtonsCode(Que09(), "lib/TextField/Que09.dart",
+                      "Retrieve Text Input"),
+                  ButtonsCode(Que10(), "lib/TextField/Que10.dart",
+                      "Retrieve Text Input"),
+                  ButtonsCode(Que11(), "lib/TextField/Que11.dart",
+                      "Focus text fields-FocusNode,FAB"),
                   ButtonsCode(
                       Que01Assignment(),
                       "lib/TextField/Assignment1.dart",

@@ -46,6 +46,16 @@ class _State extends State<Que01e11> {
                       hintText: "prefixIcon: Icon(Icons.access_alarm)",
                     ),
                   ),
+                  Text('prefixIcon (Image)'),
+                  TextField(
+                    decoration: InputDecoration(
+                      prefixIcon: Image.asset('assets/VKSINGLA.jpg'),
+                      border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20),
+                          borderSide: BorderSide(width: 3, color: Colors.red)),
+                      hintText: "prefixIcon: Image.assets('..')",
+                    ),
+                  ),
                   Text('use of IconButton with prefixIcon'),
                   TextField(
                     decoration: InputDecoration(

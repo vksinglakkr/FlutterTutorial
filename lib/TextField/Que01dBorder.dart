@@ -40,6 +40,14 @@ class _State extends State<Que01d11> {
                           hintText: "border: InputBorder.none",
                         ),
                       ),
+                      Text('borderSide: BorderSide.none'),
+                      TextField(
+                        decoration: InputDecoration(
+                          border:
+                              OutlineInputBorder(borderSide: BorderSide.none),
+                          hintText: "borderSide: BorderSide.none",
+                        ),
+                      ),
                       Text('decoration:null (all space vanish)'),
                       TextField(
                         decoration: null,

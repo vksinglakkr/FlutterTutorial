@@ -17,6 +17,7 @@ import 'package:flutter_tutorial/TextField/Que01fCursor.dart';
 import 'package:flutter_tutorial/TextField/Que01gTextCapitalisation.dart';
 import 'package:flutter_tutorial/TextField/Que03TextFieldTheme.dart';
 import 'package:flutter_tutorial/TextField/Que04keyBoard.dart';
+import 'package:flutter_tutorial/TextField/Que05InputFormatter.dart';
 import 'package:flutter_tutorial/TextField/Que06FocusNode.dart';
 import 'package:flutter_tutorial/TextField/Que07onChanged.dart';
 import 'package:flutter_tutorial/TextField/Que08Controller.dart';
@@ -44,7 +45,7 @@ class HomeTextField extends StatelessWidget {
                       "lib/TextField/Que01SimpleTextField.dart",
                       "textField, hintText, labelText, helperText"),
                   ButtonsCode(Que01a11(), "lib/TextField/Que01atextAlign.dart",
-                      "AutoFocus, textAlign"),
+                      "AutoFocus, textAlign, Password"),
                   ButtonsCode(
                       Que01b11(),
                       "lib/TextField/Que01bMaxlengthmaxLines.dart",
@@ -61,6 +62,10 @@ class HomeTextField extends StatelessWidget {
                       "disabled, readonly, padding"),
                   ButtonsCode(Que01d11(), "lib/TextField/Que01dBorder.dart",
                       "Borders: Focused/error/disabled.."),
+                  ButtonsCode(
+                      Que05Input(),
+                      "lib/TextField/Que05InputFormatter.dart",
+                      "Input Formatter"),
                   ButtonsCode(
                       Que03Text11(),
                       "lib/TextField/Que03TextFieldTheme.dart",

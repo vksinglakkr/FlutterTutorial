@@ -35,10 +35,9 @@ dependencies:
   animated_text_kit: ^4.2.1
   fluttertoast: ^8.0.7
   like_button: ^2.0.2  
-  flutter_colorpicker: ^0.3.5
+  flutter_colorpicker: ^0.4.0
   provider: ^5.0.0
   shared_preferences: ^2.0.6
-
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0
 

@@ -11,7 +11,7 @@ class _State extends State<Que01a11> {
   final String url1 =
       "https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a"; //final for textAlign
   final String image1 = "";
-  final String video1 = ""; //final TextField Que01a
+  final String video1 = "NL92YO9yTB0"; //final CodeX TextField complete
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -39,20 +39,35 @@ class _State extends State<Que01a11> {
                   ),
                   Text('auto focused'),
                   TextField(
-                    autofocus: true,
+                    autofocus: false,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(20),
                           borderSide: BorderSide(width: 3, color: Colors.red)),
-                      hintText: " autofocus: true",
+                      hintText: " autofocus: false",
                     ),
                   ),
-                  Text('Password'),
-                  TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: "obscureText: true",
-                    ),
+                  Text('Password - obscureText,obscuringCharacter'),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          obscureText: true,
+                          decoration: InputDecoration(
+                            labelText: "obscureText: true",
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: TextField(
+                          obscureText: true,
+                          obscuringCharacter: '#',
+                          decoration: InputDecoration(
+                            labelText: "obscuringCharacter: '#'",
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                   Text('textAlign'),
                   TextField(

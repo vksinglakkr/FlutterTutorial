@@ -171,7 +171,7 @@ packages:
     source: hosted
     version: "1.1.2"
   http:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: http
       url: "https://pub.dartlang.org"
@@ -184,6 +184,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.4"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.17.0"
   js:
     dependency: transitive
     description:
@@ -282,6 +289,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+  pattern_formatter:
+    dependency: "direct main"
+    description:
+      name: pattern_formatter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   pedantic:
     dependency: transitive
     description:

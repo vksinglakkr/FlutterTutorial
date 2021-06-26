@@ -38,6 +38,8 @@ dependencies:
   flutter_colorpicker: ^0.4.0
   provider: ^5.0.0
   shared_preferences: ^2.0.6
+  pattern_formatter: ^2.0.0
+  http: ^0.12.0+2
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0
 
@@ -112,6 +114,10 @@ flutter:
     - lib/Switch/
     - lib/SetUpAPK/
     - lib/Tab/
+    - lib/API/
+    - lib/API/SimpleMethod/Step1_MakeHttpRequest/
+    - lib/API/SimpleMethod/Step2_DecodeResponse_in_JSON/
+    - lib/API/SimpleMethod/Step3_MapJSON/
     - lib/TextField/
     - lib/TextFormField/
     - lib/Transform/

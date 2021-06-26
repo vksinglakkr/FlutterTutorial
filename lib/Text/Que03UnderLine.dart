@@ -82,6 +82,15 @@ class _State extends State<Que03Text11> {
                 ),
                 SizedBox(height: 10),
                 Text(
+                  'decoration: TextDecoration.combine',
+                  style: TextStyle(
+                    decoration: TextDecoration.combine(
+                        [TextDecoration.underline, TextDecoration.overline]),
+                    fontSize: 16,
+                  ),
+                ),
+                SizedBox(height: 10),
+                Text(
                   'decoration: TextDecoration.lineThrough',
                   style: TextStyle(
                     decoration: TextDecoration.lineThrough,

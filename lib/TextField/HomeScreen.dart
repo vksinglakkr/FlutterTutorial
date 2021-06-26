@@ -18,6 +18,7 @@ import 'package:flutter_tutorial/TextField/Que01gTextCapitalisation.dart';
 import 'package:flutter_tutorial/TextField/Que03TextFieldTheme.dart';
 import 'package:flutter_tutorial/TextField/Que04keyBoard.dart';
 import 'package:flutter_tutorial/TextField/Que05InputFormatter.dart';
+import 'package:flutter_tutorial/TextField/Que05InputFormatter2.dart';
 import 'package:flutter_tutorial/TextField/Que06FocusNode.dart';
 import 'package:flutter_tutorial/TextField/Que07onChanged.dart';
 import 'package:flutter_tutorial/TextField/Que08Controller.dart';
@@ -66,6 +67,10 @@ class HomeTextField extends StatelessWidget {
                       Que05Input(),
                       "lib/TextField/Que05InputFormatter.dart",
                       "Input Formatter"),
+                  ButtonsCode(
+                      Que05Input2(),
+                      "lib/TextField/Que05InputFormatter2.dart",
+                      "Pattern Input Formatter"),
                   ButtonsCode(
                       Que03Text11(),
                       "lib/TextField/Que03TextFieldTheme.dart",

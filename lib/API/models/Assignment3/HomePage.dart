@@ -27,7 +27,9 @@ Future<Album> fetchData() async {
   // as far as fetching is concerned, it is same for all methods.
   http.Response response =
       await http.get('https://jsonplaceholder.typicode.com/albums/1');
+//      await http.get('https://jsonplaceholder.typicode.com/albums/2');
   // we can check by writting debugPrint(response.body);
+  debugPrint(response.body);
   // it will simply return the string in Debug Console.
   if (response.statusCode == 200) {
 // Step 4
@@ -37,12 +39,16 @@ Future<Album> fetchData() async {
     // as we are using models we have two options
     // either return albumFromJson(response.body);
     // or return Album.fromJson(jsonDecode(response.body)); // Alternate
+    // we can see the convert data using debugPrint(albumFromJson(response.body).toString());
+    debugPrint(albumFromJson(response.body).toString());
     return albumFromJson(response.body);
   } else {
     return Album();
   }
 }
 
+// Step 5
+// Display data in UI
 class HomePage3 extends StatefulWidget {
   @override
   _HomePage3State createState() => _HomePage3State();
@@ -52,48 +58,29 @@ class _HomePage3State extends State<HomePage3> {
   final String url1 = "";
   final String image1 = "";
   final String video1 = "uqkTZ0POP10"; //final for Assignment3 FutureBuilder
-  Future getData() async {
-    http.Response response =
-        await http.get("https://jsonplaceholder.typicode.com/albums/1");
-    // debugPrint(response.body); Step 1
-    data = json.decode(response.body);
-    setState(() {
-//      userData = data["data"];
-      userData = data as List;
-    });
-    //debugPrint(userData.toString()); //Step 2
-    //See the output in DEBUG CONSOLE we get in STEP 1 & STEP 2
-    //in STEP 2 we only get the data
-  }
-
+  Future<Album> futureData;
   @override
   void initState() {
     super.initState();
-    getData();
+    futureData = fetchData();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: WidgetAppBar("Store/Display data(Error)"),
+        title: WidgetAppBar("Store/Display"),
       ),
-      body: ListView.builder(
-        itemCount: userData == null ? 0 : userData.length,
-        itemBuilder: (BuildContext context, int index) {
-          return Card(
-              child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(" ${userData[index]["title"]}"),
-                )
-              ],
-            ),
-          ));
-        },
+      body: Center(
+        child: FutureBuilder<Album>(
+            future: futureData,
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                return Text(snapshot.data.title);
+              } else {
+                return Text('Still Loading');
+              }
+            }),
       ),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),

@@ -1,5 +1,6 @@
 //  \lib/Align\HomeScreen_Align.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Assignments/Que01.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Step2_DecodeResponse_in_JSON/HomeScreen_Step2.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Step3_MapJSON/HomeScreen_Step3.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Step1_MakeHttpRequest/HomeScreen_Step1.dart';
@@ -29,6 +30,10 @@ class HomeAPI extends StatelessWidget {
                       HomeAPIStep3(),
                       "lib/API/Step3_MakeHttpRequest/HomeScreen_Step3.dart",
                       "Step 3 - Store/display data"),
+                  ButtonsCode(
+                      Que01Assign(),
+                      "lib/API/Step3_MakeHttpRequest/HomeScreen_Step3.dart",
+                      "Assignment1"),
                 ],
               ),
             ),

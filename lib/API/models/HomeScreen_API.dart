@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/models/Assignment1/Homepage.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPIModel extends StatelessWidget {
@@ -16,6 +18,10 @@ class HomeAPIModel extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
+                  ButtonsCode(
+                      HomePage3(),
+                      "lib/API/models/Assignment3/HomePage.dart",
+                      "Project 3 - Using FutureBuilder”"),
                   ButtonsCode(
                       HomePage1(),
                       "lib/API/Assignment1/JsonParseDemo.dart",

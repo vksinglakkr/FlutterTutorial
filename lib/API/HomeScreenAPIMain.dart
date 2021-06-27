@@ -20,7 +20,7 @@ class HomeMainAPI extends StatelessWidget {
                   ButtonsCode(
                       HomeAPI(),
                       "lib/API/SimpleMethod/HomeScreen_API.dart",
-                      "Simple method"),
+                      "Method - Http.Response"),
                   ButtonsCode(HomeAPIModel(),
                       "lib/API/models/HomeScreen_API.dart", "Models"),
                   ButtonsCode(HomeAPIgetX(), "lib/API/getX/HomeScreen_API.dart",

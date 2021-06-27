@@ -77,7 +77,6 @@ class _HomePage4State extends State<HomePage4> {
               if (snapshot.hasData) {
                 var iconUrl =
                     'http://openweathermap.org/img/wn/${snapshot.data.weather[0].icon}@2x.png';
-                debugPrint(iconUrl);
                 return SingleChildScrollView(
                   child: Column(
                     children: [
@@ -100,8 +99,6 @@ class _HomePage4State extends State<HomePage4> {
                                 child: Text(
                                     (snapshot.data.weather[0].description)),
                               ),
-                              // + snapshot.data.weather[0].icon + "@2x.png"',
-//                              var iconUrl = '"http://openweathermap.org/img/wn/" + snapshot.data.weather[0].icon + "@2x.png"',
                               Image(image: NetworkImage(iconUrl)),
                             ],
                           ),

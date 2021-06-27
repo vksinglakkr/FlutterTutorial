@@ -5,7 +5,6 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/API/models/Assignment3/album.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
-import 'dart:convert'; //Step 2
 //import 'dart:convert'; // to convert the http response in JSON format
 
 // Step 1

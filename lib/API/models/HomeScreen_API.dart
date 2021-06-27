@@ -4,6 +4,7 @@ import 'package:flutter_tutorial/API/models/Assignment1/Homepage.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment4/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment5/HomePage.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPIModel extends StatelessWidget {
@@ -24,12 +25,20 @@ class HomeAPIModel extends StatelessWidget {
                       "Project 3 - Using FutureBuilder”"),
                   ButtonsCode(
                       HomePage1(),
-                      "lib/API/Assignment1/JsonParseDemo.dart",
+                      "lib/API/models/Assignment1/JsonParseDemo.dart",
                       "Project - JsonParse Demo"),
-                  ButtonsCode(HomePage2(), "lib/API/Assignment2/HomePage.dart",
+                  ButtonsCode(
+                      HomePage2(),
+                      "lib/API/models/Assignment2/HomePage.dart",
                       "Project - brand “maybelline”"),
-                  ButtonsCode(HomePage4(), "lib/API/Assignment4/HomePage.dart",
-                      "Project - OpenWeather using FutureBuilder"),
+                  ButtonsCode(
+                      HomePage4(),
+                      "lib/API/models/Assignment4/HomePage.dart",
+                      "OpenWeather using FutureBuilder and SnapShot"),
+                  ButtonsCode(
+                      HomePage5(),
+                      "lib/API/models/Assignment5/HomePage.dart",
+                      "OpenWeather using setState"),
                 ],
               ),
             ),

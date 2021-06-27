@@ -83,7 +83,6 @@ class _HomePage4State extends State<HomePage4> {
                       Container(
                         height: MediaQuery.of(context).size.height / 3,
                         width: MediaQuery.of(context).size.width,
-//                        color: Colors.red,
                         child: Expanded(
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,

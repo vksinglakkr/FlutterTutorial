@@ -1,4 +1,4 @@
-//  \lib/API/Step1_MakeHttpRequest\Que01Step1.dart
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -6,12 +6,12 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 
 //import 'dart:convert'; // to convert the http response in JSON format
-class Que03Step1 extends StatefulWidget {
+class Que03 extends StatefulWidget {
   @override
-  _Que03Step1State createState() => _Que03Step1State();
+  _Que03State createState() => _Que03State();
 }
 
-class _Que03Step1State extends State<Que03Step1> {
+class _Que03State extends State<Que03> {
   final String url1 =
       "https://medium.com/flutter-community/how-to-parse-json-in-flutter-for-beginners-8074a68d7a79";
   final String image1 = "";

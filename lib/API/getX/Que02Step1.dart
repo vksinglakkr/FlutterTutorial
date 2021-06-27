@@ -1,5 +1,3 @@
-//  \lib/API/Step1_MakeHttpRequest\Que01Step1.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:http/http.dart' as http;

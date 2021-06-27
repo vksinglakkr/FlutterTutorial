@@ -1,4 +1,4 @@
-//  \lib/API/Step1_MakeHttpRequest\Que01Step1.dart
+//  \lib/API/SimpleMethod/Assignments/Que01.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -7,12 +7,12 @@ import 'dart:async';
 import 'dart:convert'; //Step 2
 
 //import 'dart:convert'; // to convert the http response in JSON format
-class Que01Step3 extends StatefulWidget {
+class Que04 extends StatefulWidget {
   @override
-  _Que01Step3State createState() => _Que01Step3State();
+  _Que04State createState() => _Que04State();
 }
 
-class _Que01Step3State extends State<Que01Step3> {
+class _Que04State extends State<Que04> {
   final String url1 = "";
   final String image1 = "";
   final String video1 = "o0-kHH5-7zE";
@@ -20,11 +20,12 @@ class _Que01Step3State extends State<Que01Step3> {
   List userData; //Step 2
   Future getData() async {
     http.Response response =
-        await http.get("https://reqres.in/api/users?page2");
+        await http.get("https://jsonplaceholder.typicode.com/albums/1");
     // debugPrint(response.body); Step 1
     data = json.decode(response.body);
     setState(() {
-      userData = data["data"];
+//      userData = data["data"];
+      userData = data as List;
     });
     //debugPrint(userData.toString()); //Step 2
     //See the output in DEBUG CONSOLE we get in STEP 1 & STEP 2
@@ -41,7 +42,7 @@ class _Que01Step3State extends State<Que01Step3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: WidgetAppBar("Store/Display data"),
+        title: WidgetAppBar("Store/Display data(Error)"),
       ),
       body: ListView.builder(
         itemCount: userData == null ? 0 : userData.length,
@@ -51,13 +52,9 @@ class _Que01Step3State extends State<Que01Step3> {
             padding: const EdgeInsets.all(8.0),
             child: Row(
               children: [
-                CircleAvatar(
-                  backgroundImage: NetworkImage(userData[index]["avatar"]),
-                ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                      " ${userData[index]["first_name"]} ${userData[index]["last_name"]}"),
+                  child: Text(" ${userData[index]["title"]}"),
                 )
               ],
             ),

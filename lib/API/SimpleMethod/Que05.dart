@@ -42,7 +42,8 @@ class _HomePage5State extends State<HomePage5> {
   Future fetchData() async {
     http.Response response = await http.get(openWeatherUrl);
     if (response.statusCode == 200) {
-      var results = jsonDecode(response.body);
+      var results = json.decode(response.body);
+//      var results = jsonDecode(response.body);
       setState(() {
         // see the difference
         // how to write

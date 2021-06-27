@@ -1,4 +1,3 @@
-//  \lib/Align\HomeScreen_Align.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

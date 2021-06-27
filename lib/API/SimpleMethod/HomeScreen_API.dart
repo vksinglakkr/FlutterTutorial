@@ -1,9 +1,10 @@
 //  \lib/Align\HomeScreen_Align.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/API/SimpleMethod/Assignments/Que01.dart';
-import 'package:flutter_tutorial/API/SimpleMethod/Step2_DecodeResponse_in_JSON/HomeScreen_Step2.dart';
-import 'package:flutter_tutorial/API/SimpleMethod/Step3_MapJSON/HomeScreen_Step3.dart';
-import 'package:flutter_tutorial/API/SimpleMethod/Step1_MakeHttpRequest/HomeScreen_Step1.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/BasicNotes.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que01.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que02.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que03.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que04.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPI extends StatelessWidget {
@@ -11,29 +12,23 @@ class HomeAPI extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Step 1 to 3")),
+        appBar: AppBar(title: WidgetAppBar("Json.decode")),
         body: SafeArea(
           child: Container(
             child: Builder(
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
+                  ButtonsCode(Step1Basic(),
+                      "lib/API/SimpleMethod/BasicNotes.dart", "Basic Notes"),
+                  ButtonsCode(Que01(), "lib/API/SimpleMethod/Que01.dart",
+                      "json.decode, setState, ListView.Builder\nhttps://reqres.in/api/users?page2"),
+                  ButtonsCode(Que02(), "lib/API/SimpleMethod/Que02.dart",
+                      "https://newsapi.org/"),
                   ButtonsCode(
-                      HomeAPIStep1(),
-                      "lib/API/Step1_MakeHttpRequest/HomeScreen_Step1.dart",
-                      "Step 1 - Make an HTTP Request"),
-                  ButtonsCode(
-                      HomeAPIStep2(),
-                      "lib/API/Step2_MakeHttpRequest/HomeScreen_Step2.dart",
-                      "Step 2 - Convert/Save the response in JSON and JSON format in MAP"),
-                  ButtonsCode(
-                      HomeAPIStep3(),
-                      "lib/API/Step3_MakeHttpRequest/HomeScreen_Step3.dart",
-                      "Step 3 - Store/display data"),
-                  ButtonsCode(
-                      Que01Assign(),
-                      "lib/API/Step3_MakeHttpRequest/HomeScreen_Step3.dart",
-                      "Assignment1"),
+                      Que03(), "lib/API/SimpleMethod/Que03.dart", "Pending"),
+                  ButtonsCode(Que04(), "lib/API/SimpleMethod/Que04.dart",
+                      "https://jsonplaceholder.typicode.com/albums/1"),
                 ],
               ),
             ),

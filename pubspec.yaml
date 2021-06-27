@@ -115,14 +115,11 @@ flutter:
     - lib/SetUpAPK/
     - lib/Tab/
     - lib/API/
-    - lib/API/SimpleMethod/Step1_MakeHttpRequest/
-    - lib/API/SimpleMethod/Step2_DecodeResponse_in_JSON/
-    - lib/API/SimpleMethod/Step3_MapJSON/
+    - lib/API/SimpleMethod/
     - lib/API/models/Assignment1/
     - lib/API/models/Assignment2/
     - lib/API/models/Assignment3/
     - lib/API/models/Assignment4/
-    - lib/API/models/Assignment5/
     - lib/TextField/
     - lib/TextFormField/
     - lib/Transform/

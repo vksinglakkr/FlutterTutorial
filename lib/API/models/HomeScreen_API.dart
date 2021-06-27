@@ -4,7 +4,6 @@ import 'package:flutter_tutorial/API/models/Assignment1/Homepage.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment4/HomePage.dart';
-import 'package:flutter_tutorial/API/models/Assignment5/HomePage.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPIModel extends StatelessWidget {
@@ -20,25 +19,21 @@ class HomeAPIModel extends StatelessWidget {
                 padding: EdgeInsets.all(3.0),
                 children: [
                   ButtonsCode(
-                      HomePage3(),
-                      "lib/API/models/Assignment3/HomePage.dart",
-                      "Project 3 - Using FutureBuilder”"),
-                  ButtonsCode(
                       HomePage1(),
                       "lib/API/models/Assignment1/JsonParseDemo.dart",
-                      "Project - JsonParse Demo"),
+                      "models, ...FromJson, setState, ListView.builder\nJsonParse Demo"),
                   ButtonsCode(
                       HomePage2(),
                       "lib/API/models/Assignment2/HomePage.dart",
-                      "Project - brand “maybelline”"),
+                      "models, ...FromJson, setState, ListView.builder\nbrand “maybelline”"),
+                  ButtonsCode(
+                      HomePage3(),
+                      "lib/API/models/Assignment3/HomePage.dart",
+                      "models, ...FromJson, FutureBuilder, SnapShot \njsonplaceholder"),
                   ButtonsCode(
                       HomePage4(),
                       "lib/API/models/Assignment4/HomePage.dart",
-                      "OpenWeather using FutureBuilder and SnapShot"),
-                  ButtonsCode(
-                      HomePage5(),
-                      "lib/API/models/Assignment5/HomePage.dart",
-                      "OpenWeather using setState"),
+                      "models, ...FromJson, FutureBuilder, SnapShot\nOpenWeather"),
                 ],
               ),
             ),

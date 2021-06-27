@@ -1,4 +1,4 @@
-//  \lib/API/Step1_MakeHttpRequest\Que01Step1.dart
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/urlFiles.dart';
@@ -8,12 +8,12 @@ import 'dart:async';
 import 'dart:convert'; //Step 2
 
 //import 'dart:convert'; // to convert the http response in JSON format
-class Que02Step3 extends StatefulWidget {
+class Que02 extends StatefulWidget {
   @override
-  _Que02Step3State createState() => _Que02Step3State();
+  _Que02State createState() => _Que02State();
 }
 
-class _Que02Step3State extends State<Que02Step3> {
+class _Que02State extends State<Que02> {
   final String url1 = "https://newsapi.org/";
   final String image1 = "";
   final String video1 = ""; // final for Que02 Step1,2,3,4

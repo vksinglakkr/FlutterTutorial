@@ -1,6 +1,7 @@
 //  \lib/Align\HomeScreen_Align.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/HomeScreen_API.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que05.dart';
 import 'package:flutter_tutorial/API/getX/HomeScreen_API.dart';
 import 'package:flutter_tutorial/API/models/HomeScreen_API.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -25,6 +26,10 @@ class HomeMainAPI extends StatelessWidget {
                       "lib/API/models/HomeScreen_API.dart", "Models"),
                   ButtonsCode(HomeAPIgetX(), "lib/API/getX/HomeScreen_API.dart",
                       "getX"),
+                  ButtonsCode(
+                      HomePage5(),
+                      "lib/API/models/Assignment5/HomePage.dart",
+                      "json.decode, setState, column \nOpenWeather"),
                 ],
               ),
             ),

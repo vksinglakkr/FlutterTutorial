@@ -43,11 +43,10 @@ class _HomePage2State extends State<HomePage2> {
 }
 
 class Services {
-  static const String url =
-      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
   static Future<List<Product>> getProducts() async {
     try {
-      final response = await http.get(url);
+      final response = await http.get(
+          'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
       if (response.statusCode == 200) {
         final List<Product> var2 = productFromJson(response.body);
         return var2;

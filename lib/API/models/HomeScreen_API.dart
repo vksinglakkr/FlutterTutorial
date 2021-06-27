@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/models/Assignment1/Homepage.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
-import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment4/HomePage.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -30,7 +29,7 @@ class HomeAPIModel extends StatelessWidget {
                   ButtonsCode(HomePage2(), "lib/API/Assignment2/HomePage.dart",
                       "Project - brand “maybelline”"),
                   ButtonsCode(HomePage4(), "lib/API/Assignment4/HomePage.dart",
-                      "Project - OpenWeather"),
+                      "Project - OpenWeather using FutureBuilder"),
                 ],
               ),
             ),

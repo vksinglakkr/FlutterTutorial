@@ -6,7 +6,6 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/API/models/Assignment4/weather.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
-import 'dart:convert'; //Step 2
 //import 'dart:convert'; // to convert the http response in JSON format
 
 // Step 1
@@ -26,7 +25,7 @@ import 'dart:convert'; //Step 2
 // in case of without models we not mention anything i.e. simply Future fetchdata()
 Future<Weather> fetchData() async {
   // as far as fetching is concerned, it is same for all methods.
-  http.Response response = await http.get(OpenWeatherUrl);
+  http.Response response = await http.get(openWeatherUrl);
 //      await http.get('https://jsonplaceholder.typicode.com/albums/2');
   // we can check by writting debugPrint(response.body);
   debugPrint(response.body);

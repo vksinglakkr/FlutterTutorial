@@ -91,6 +91,7 @@ flutter:
     - lib/Drawer/
     - lib/Others/General/
     - lib/Others/Theme/
+    - lib/Others/Future/
     - lib/Others/GesterDetector/
     - lib/GridView/
     - lib/GridView/StaggeredGridView/

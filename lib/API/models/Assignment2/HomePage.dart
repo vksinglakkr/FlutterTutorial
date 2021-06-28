@@ -51,11 +51,11 @@ class Services {
         final List<Product> var2 = productFromJson(response.body);
         return var2;
       } else {
-        return List<Product>();
+        return throw Exception('Failed to load ...');
 //        return null;
       }
     } catch (e) {
-      return List<Product>();
+      return throw Exception('Failed to load ...');
 //      return null;
     }
   }

@@ -51,10 +51,10 @@ class Services {
         final List<User> user = userFromJson(response.body);
         return user;
       } else {
-        return List<User>();
+        return throw Exception('Failed to load ...');
       }
     } catch (e) {
-      return List<User>();
+      return throw Exception('Failed to load ...');
     }
   }
 }

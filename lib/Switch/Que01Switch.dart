@@ -16,9 +16,8 @@ class _State extends State<Que0111> {
   bool isSwitched6 = false;
   bool isSwitched7 = false;
   bool isSwitched8 = false;
-  final String url1 = "";
+
   final String image1 = "assets/help/Switch/Que01.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

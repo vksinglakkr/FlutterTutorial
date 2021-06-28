@@ -8,10 +8,6 @@ class Que09MyHomePage011 extends StatefulWidget {
 }
 
 class _Que09MyHomePage011State extends State<Que09MyHomePage011> {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(

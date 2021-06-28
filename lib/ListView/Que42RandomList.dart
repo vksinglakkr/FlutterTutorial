@@ -18,9 +18,7 @@ final List<String> course2 = [
 var element = (course2..shuffle());
 
 class Que4211 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/ListView/Que42.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

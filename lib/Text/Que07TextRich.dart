@@ -10,9 +10,7 @@ class Que07TextSpan extends StatefulWidget {
 }
 
 class _Que07TextSpanState extends State<Que07TextSpan> {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que07.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

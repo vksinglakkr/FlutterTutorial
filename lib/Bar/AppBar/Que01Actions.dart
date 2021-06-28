@@ -5,9 +5,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Que01Actions11 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/Box/Box_RotatedBox/Que01.png";
-  final String video1 = "";
+
   launchURL() {
     launch(
         'https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html');

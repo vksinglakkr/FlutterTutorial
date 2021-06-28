@@ -9,9 +9,8 @@ class Que02InkWell11 extends StatefulWidget {
 
 class _Que02InkWell11State extends State<Que02InkWell11> {
   String name1 = "NIC Kurukshetra";
-  final String url1 = "";
+
   final String image1 = "assets/help/InkWell/Que02.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

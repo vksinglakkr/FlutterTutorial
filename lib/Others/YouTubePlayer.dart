@@ -9,9 +9,7 @@ class QueYouTube extends StatefulWidget {
 }
 
 class _QueYouTubeState extends State<QueYouTube> {
-  final String url1 = "";
   final String image1 = "assets/help/YouTube.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

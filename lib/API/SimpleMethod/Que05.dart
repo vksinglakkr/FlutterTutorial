@@ -28,8 +28,6 @@ class HomePage5 extends StatefulWidget {
 }
 
 class _HomePage5State extends State<HomePage5> {
-  final String url1 = "";
-  final String image1 = "";
   final String video1 = "ToPdSd42UKA"; //final for Assignment5 OpenWeather
   var temp;
   var description;

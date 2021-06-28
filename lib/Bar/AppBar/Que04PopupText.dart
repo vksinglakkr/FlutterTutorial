@@ -8,9 +8,7 @@ class Que04Popup11 extends StatefulWidget {
 }
 
 class _Que04Popup11State extends State<Que04Popup11> {
-  final String url1 = "";
   final String image1 = "assets/help/";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

@@ -8,9 +8,7 @@ class Que13TextFormatting extends StatefulWidget {
 }
 
 class _Que13TextFormattingState extends State<Que13TextFormatting> {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que13.png";
-  final String video1 = "";
 
   var _counter = 0;
   @override

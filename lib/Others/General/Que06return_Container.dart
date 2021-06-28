@@ -4,10 +4,6 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyAppreturn011());
 
 class MyAppreturn011 extends StatelessWidget {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
-
   @override
   Widget build(BuildContext context) {
     return Column(

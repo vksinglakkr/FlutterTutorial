@@ -9,9 +9,8 @@ class Que1011 extends StatefulWidget {
 
 class _Que1011State extends State<Que1011> {
   var groupValue;
-  final String url1 = "";
+
   final String image1 = "assets/help/ListView/Que10.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

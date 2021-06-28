@@ -11,9 +11,8 @@ class Que01Text extends StatefulWidget {
 
 class _Que01TextState extends State<Que01Text> {
   var data;
-  final String url1 = "";
+
   final String image1 = "assets/help/Properties/onPressed/Que01.png";
-  final String video1 = "";
 
   // This function is triggered when the user presses the floating button
   Future<void> _loadData() async {

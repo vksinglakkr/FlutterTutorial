@@ -9,9 +9,8 @@ class Que0311 extends StatefulWidget {
 
 class _Que0311State extends State<Que0311> {
   bool _toggle = false;
-  final String url1 = "";
+
   final String image1 = "assets/help/Switch/Que03.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

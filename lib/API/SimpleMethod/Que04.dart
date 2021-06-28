@@ -13,8 +13,6 @@ class Que04 extends StatefulWidget {
 }
 
 class _Que04State extends State<Que04> {
-  final String url1 = "";
-  final String image1 = "";
   final String video1 = "o0-kHH5-7zE";
   Map data; //Step 2
   List userData; //Step 2

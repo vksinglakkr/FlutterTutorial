@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/urlFiles.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -15,19 +13,22 @@ class Que02 extends StatefulWidget {
 
 class _Que02State extends State<Que02> {
   final String url1 = "https://newsapi.org/";
-  final String image1 = "";
-  final String video1 = ""; // final for Que02 Step1,2,3,4
-  Map data; //Step 2
-  List userData; //Step 2
-  Future getData() async {
+
+  // final for Que02 Step1,2,3,4
+  Map mapData; //Step 2
+  List convertedJsonData; //Step 2
+  Future fetchData() async {
     //Step 1
     http.Response response = await http.get(newsUrl);
     if (response.statusCode == 200) {
       // debugPrint(response.body); Step 1
-      data = json.decode(response.body);
+      mapData = json.decode(response.body);
       setState(() {
-        userData = data["articles"];
-        debugPrint(userData.toString());
+        convertedJsonData = mapData["articles"];
+        // instead of storing it through mapdat we can directly store it,
+        //convertedJsonData = json.decode(response.body)["articles"];
+
+        debugPrint(convertedJsonData.toString());
         //See the output in DEBUG CONSOLE we get in STEP 1 & STEP 2
         //in STEP 2 we only get the data } else {
       });
@@ -39,7 +40,7 @@ class _Que02State extends State<Que02> {
   @override
   void initState() {
     super.initState();
-    getData();
+    fetchData();
   }
 
   @override
@@ -49,7 +50,7 @@ class _Que02State extends State<Que02> {
         title: WidgetAppBar("Store/Display data"),
       ),
       body: ListView.builder(
-        itemCount: userData == null ? 0 : userData.length,
+        itemCount: convertedJsonData == null ? 0 : convertedJsonData.length,
         itemBuilder: (BuildContext context, int index) {
           return Card(
               child: Padding(
@@ -59,13 +60,13 @@ class _Que02State extends State<Que02> {
                 children: [
                   CircleAvatar(
                     backgroundImage:
-                        NetworkImage(userData[index]["urlToImage"]),
+                        NetworkImage(convertedJsonData[index]["urlToImage"]),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Expanded(
-                      child: Text(" ${userData[index]["author"]}"),
-//                          " ${userData[index]["author"]} ${userData[index]["title"]}"),
+                      child: Text(" ${convertedJsonData[index]["author"]}"),
+//                          " ${convertedJsonData[index]["author"]} ${convertedJsonData[index]["title"]}"),
                     ),
                   )
                 ],

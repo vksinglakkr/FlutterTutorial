@@ -8,9 +8,7 @@ class Que12TextShape extends StatefulWidget {
 }
 
 class _Que12TextShapeState extends State<Que12TextShape> {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que12.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

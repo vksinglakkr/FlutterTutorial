@@ -16,9 +16,7 @@ final List<String> course2 = [
 ];
 
 class Que4111 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/ListView/Que41.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

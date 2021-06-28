@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:http/http.dart' as http;
@@ -14,8 +12,7 @@ class Que03 extends StatefulWidget {
 class _Que03State extends State<Que03> {
   final String url1 =
       "https://medium.com/flutter-community/how-to-parse-json-in-flutter-for-beginners-8074a68d7a79";
-  final String image1 = "";
-  final String video1 = "";
+
   var jsonData = '{name: "Dane", alias: "FilledStacks"}';
   Future getData() async {
     http.Response response = await http.get(jsonData);

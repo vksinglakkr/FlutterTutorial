@@ -10,8 +10,8 @@ class _Que05AssignmentState extends State<Que05Assignment> {
 // onChanged callback
   final String url1 =
       "https://www.geeksforgeeks.org/retrieve-data-from-textfields-in-flutter/"; //final Assignment 5
-  final String image1 = "";
-  final String video1 = ""; //final controller & toast assignment 3
+
+  //final controller & toast assignment 3
   String title;
   String text = "No Value Entered";
 

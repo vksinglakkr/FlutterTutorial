@@ -14,9 +14,8 @@ class _State extends State<Que30b11> {
     Icons.directions_boat,
     Icons.directions_bus
   ];
-  final String url1 = "";
+
   final String image1 = "assets/help/ListView/Que30b.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

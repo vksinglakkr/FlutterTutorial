@@ -19,8 +19,7 @@ class Que01Future extends StatelessWidget {
 class HomePage extends StatelessWidget {
   final String url1 =
       "https://www.geeksforgeeks.org/flutter-futurebuilder-widget/";
-  final String image1 = "";
-  final String video1 = "";
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

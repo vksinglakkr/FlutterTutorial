@@ -4,9 +4,8 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que3811 extends StatelessWidget {
   final List<int> numbers = [1, 2, 3, 5, 8, 13, 21, 34, 55];
-  final String url1 = "";
+
   final String image1 = "assets/help/ListView/Que38.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

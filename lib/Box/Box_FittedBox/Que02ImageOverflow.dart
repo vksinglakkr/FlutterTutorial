@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que02ImageOverflow11 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/Box/Box_RotatedBox/Que01.png";
   final String video1 = "IYDVcriKjsw";
 

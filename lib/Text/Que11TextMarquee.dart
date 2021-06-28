@@ -8,9 +8,7 @@ class Que11Marquee extends StatefulWidget {
 }
 
 class _Que11MarqueeState extends State<Que11Marquee> {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que11.png";
-  final String video1 = "";
 
   int _counter = 0;
   @override

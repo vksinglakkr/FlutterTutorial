@@ -8,9 +8,7 @@ class Que04Text11 extends StatefulWidget {
 }
 
 class _State extends State<Que04Text11> {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que04.png";
-  final String video1 = "";
 
   double custFontSize = 12;
 

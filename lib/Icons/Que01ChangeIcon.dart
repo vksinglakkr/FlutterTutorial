@@ -13,9 +13,8 @@ class _Que0111State extends State<Que0111> {
   );
 
   int fabIconNumber = 0;
-  final String url1 = "";
+
   final String image1 = "assets/help/Icons/Que01.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

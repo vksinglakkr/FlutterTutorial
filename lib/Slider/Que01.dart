@@ -24,9 +24,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final String url1 = "";
   final String image1 = "assets/help/Slider/Que01.png";
-  final String video1 = "";
+
   double sliderVal = 0;
   Slider slider() {
     return Slider(

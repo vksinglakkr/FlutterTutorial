@@ -19,9 +19,8 @@ class _State extends State<Que14a11> {
     'Ram'
   ];
   final List<int> colorCodes = [100, 200, 300, 400, 500, 600, 700, 800];
-  final String url1 = "";
+
   final String image1 = "assets/help/ListView/Que14a.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

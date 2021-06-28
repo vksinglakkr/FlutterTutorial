@@ -8,9 +8,6 @@ class Que07onChanged11 extends StatefulWidget {
 }
 
 class _State extends State<Que07onChanged11> {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
   FocusNode nodeFirst = FocusNode();
   FocusNode nodeSecond = FocusNode();
 

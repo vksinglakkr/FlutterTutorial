@@ -8,9 +8,7 @@ class Que08TextScale extends StatefulWidget {
 }
 
 class _Que08TextScaleState extends State<Que08TextScale> {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que08.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

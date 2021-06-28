@@ -4,7 +4,7 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 class Que03Sized11 extends StatelessWidget {
   final String url1 =
       "https://www.woolha.com/tutorials/flutter-using-sizedbox-widget-examples";
-  final String image1 = "";
+
   final String video1 = "EHPu_DzRfqA"; //Flutter
   @override
   Widget build(BuildContext context) {

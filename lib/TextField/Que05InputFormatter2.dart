@@ -12,7 +12,7 @@ class Que05Input2 extends StatefulWidget {
 class _State extends State<Que05Input2> {
   final String url1 =
       "https://pub.dev/packages/pattern_formatter"; //final pattern formatter
-  final String image1 = "";
+
   final String video1 = "6U1U8BNo1OQ"; //final for Pattern input formatter
   @override
   Widget build(BuildContext context) {

@@ -8,9 +8,6 @@ class Que08Controller11 extends StatefulWidget {
 }
 
 class _State extends State<Que08Controller11> {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
   final TextEditingController myControllerName = TextEditingController();
   final TextEditingController myControllerFName = TextEditingController();
 

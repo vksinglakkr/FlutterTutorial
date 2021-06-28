@@ -32,9 +32,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   var animal = ['Cow', 'Dog', 'Cat', 'Lion'];
-  final String url1 = "";
+
   final String image1 = "assets/help/ListView/Que14.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

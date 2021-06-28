@@ -8,9 +8,7 @@ class Que02Gester11 extends StatefulWidget {
 }
 
 class _Que02Gester11State extends State<Que02Gester11> {
-  final String url1 = "";
   final String image1 = "assets/help/GesterDetector/Que02.png";
-  final String video1 = "";
 
   String name1 = "NIC Kurukshetra";
   @override

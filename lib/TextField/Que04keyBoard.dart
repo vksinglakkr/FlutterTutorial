@@ -10,8 +10,7 @@ class Que04Keyboard extends StatefulWidget {
 class _State extends State<Que04Keyboard> {
   final String url1 =
       "https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a"; //final keyBoard
-  final String image1 = "";
-  final String video1 = "";
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -9,8 +9,7 @@ class Que03Assignment extends StatefulWidget {
 
 class _State extends State<Que03Assignment> {
   TextEditingController myController = TextEditingController();
-  final String url1 = "";
-  final String image1 = "";
+
   final String video1 = "LO4dgcTBr_w"; //final controller & toast assignment 3
   @override
   Widget build(BuildContext context) {

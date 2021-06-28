@@ -12,9 +12,8 @@ class _Que0411State extends State<Que0411> {
   bool _toggle1 = false;
   bool _toggle2 = false;
   bool _toggle3 = false;
-  final String url1 = "";
+
   final String image1 = "assets/help/Switch/Que04.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

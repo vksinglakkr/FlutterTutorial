@@ -15,9 +15,8 @@ class _State extends State<Que01SnackBar11> {
     //    content: Text(message),
     //   ));
   }
-  final String url1 = "";
+
   final String image1 = "assets/help/Bar/Snackbar/Que01.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

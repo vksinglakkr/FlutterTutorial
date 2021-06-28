@@ -32,9 +32,8 @@ class Que16Theme11 extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que16TextTheme.png";
-  final String video1 = "";
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

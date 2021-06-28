@@ -21,9 +21,7 @@ class _Que25ShowState extends State<Que25Show> {
     });
   }
 
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que25.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

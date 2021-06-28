@@ -5,9 +5,8 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 // ignore: must_be_immutable
 class QueManipulation11 extends StatelessWidget {
   String str1 = "national informatics center, kurukshetra";
-  final String url1 = "";
+
   final String image1 = "assets/help/Text/QueManipulation.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

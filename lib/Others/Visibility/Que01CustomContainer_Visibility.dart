@@ -10,9 +10,8 @@ class Que0111 extends StatefulWidget {
 class _Que0111State extends State<Que0111> {
   var _visible1 = true;
   var _visible2 = true;
-  final String url1 = "";
+
   final String image1 = "assets/help/Visibility/Que01.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

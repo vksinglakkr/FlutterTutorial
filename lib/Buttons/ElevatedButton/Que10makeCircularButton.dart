@@ -10,8 +10,6 @@ class Que10Elevated11 extends StatefulWidget {
 class _Que10Elevated11State extends State<Que10Elevated11> {
   final String url1 =
       "https://www.kindacode.com/article/how-to-make-circular-buttons-in-flutter/"; //final
-  final String image1 = "";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

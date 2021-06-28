@@ -2,10 +2,6 @@
 import 'package:flutter/material.dart';
 
 class ReturnMaterialApp11 extends StatelessWidget {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
-
   @override
   Widget build(BuildContext context) {
     return Column(

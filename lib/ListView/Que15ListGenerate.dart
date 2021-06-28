@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que1511 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/ListView/Que15.png";
-  final String video1 = "";
 
   final items = List<String>.generate(100, (index) => "Item $index");
   //final must be written here

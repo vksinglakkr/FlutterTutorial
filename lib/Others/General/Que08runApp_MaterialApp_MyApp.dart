@@ -3,10 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que08MyAppRun011 extends StatelessWidget {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(

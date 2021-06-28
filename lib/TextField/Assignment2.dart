@@ -4,8 +4,7 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 class Que02Assignment extends StatelessWidget {
   final String url1 =
       "https://flutter-examples.com/send-multiple-textfield-value/"; //final assignment 2
-  final String image1 = "";
-  final String video1 = "";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

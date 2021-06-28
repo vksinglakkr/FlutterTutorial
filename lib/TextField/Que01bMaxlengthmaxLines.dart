@@ -10,7 +10,7 @@ class Que01b11 extends StatefulWidget {
 class _State extends State<Que01b11> {
   final String url1 =
       "https://medium.com/flutter-community/a-deep-dive-into-flutter-textfields-f0e676aaab7a"; //final Maxlength
-  final String image1 = "";
+
   final String video1 = "DMkkF_lVnpo"; //final TextField Que01b
   @override
   Widget build(BuildContext context) {

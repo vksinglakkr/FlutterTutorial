@@ -29,8 +29,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Color bulbColor = Colors.black;
   final String url1 =
       "https://stackoverflow.com/questions/53531675/how-to-apply-theme-on-materialbutton-or-raisedbutton"; //final
-  final String image1 = "";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

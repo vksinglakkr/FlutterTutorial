@@ -13,10 +13,6 @@ void main() => runApp(
     );
 
 class Que12MaterialApp011 extends StatelessWidget {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
-
   @override
   Widget build(BuildContext context) {
     return Column(

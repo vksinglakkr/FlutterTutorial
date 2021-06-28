@@ -9,8 +9,6 @@ class QueExpanded11 extends StatefulWidget {
 }
 
 class _State extends State<QueExpanded11> {
-  final String url1 = "";
-  final String image1 = "";
   final String video1 = "rgIcf9YfSOs"; //final
 
   Widget build(BuildContext context) {

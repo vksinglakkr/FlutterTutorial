@@ -8,9 +8,7 @@ class Que0211 extends StatefulWidget {
 }
 
 class _Que0211State extends State<Que0211> {
-  final String url1 = "";
   final String image1 = "assets/help/Icons/Que02.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

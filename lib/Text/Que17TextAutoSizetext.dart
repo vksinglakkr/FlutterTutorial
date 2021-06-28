@@ -4,9 +4,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que17AutoSizeText extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que17.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

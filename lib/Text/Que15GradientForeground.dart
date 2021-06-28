@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que15Gradient11 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que15Gradient.png";
-  final String video1 = "";
 
   final Shader linearGradient = LinearGradient(
     colors: <Color>[Colors.red, Colors.green, Colors.blue, Colors.yellow],

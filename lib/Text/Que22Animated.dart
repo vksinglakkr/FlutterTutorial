@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Que2211 extends StatelessWidget {
-  final String url1 = "";
-  final String image1 = "";
   final String video1 = "z0tSnmPXs9c";
 
   @override

@@ -10,8 +10,6 @@ class Que02Step1 extends StatefulWidget {
 }
 
 class _Que02Step1State extends State<Que02Step1> {
-  final String url1 = "";
-  final String image1 = "";
   final String video1 = "apPH1CCOtKQ"; // final for Que02 Step1,2,3,4
   Future getData() async {
     http.Response response = await http.get(

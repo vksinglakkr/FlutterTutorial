@@ -5,10 +5,6 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 void main() => runApp(Que13ExtractMathod011());
 
 class Que13ExtractMathod011 extends StatelessWidget {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -9,8 +9,8 @@ class Que05Input extends StatefulWidget {
 }
 
 class _State extends State<Que05Input> {
-  final String url1 = ""; //final keyBoard
-  final String image1 = "";
+  //final keyBoard
+
   final String video1 = "NL92YO9yTB0"; //final for input formatter timing 4:10
   @override
   Widget build(BuildContext context) {

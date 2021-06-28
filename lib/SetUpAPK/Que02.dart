@@ -5,7 +5,6 @@ import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 class Que0211 extends StatelessWidget {
   final String url1 = "https://morioh.com/p/5615675eecdd";
   final String image1 = "assets/help/SetUpAPK/minSDKVersion.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

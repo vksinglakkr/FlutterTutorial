@@ -25,9 +25,8 @@ class VideoPlayerScreen extends StatefulWidget {
 class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
   VideoPlayerController _controller;
   Future<void> _initializeVideoPlayerFuture;
-  final String url1 = "";
+
   final String image1 = "assets/help/VideoPlayer.png";
-  final String video1 = "";
 
   @override
   void initState() {

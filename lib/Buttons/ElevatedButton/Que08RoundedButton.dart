@@ -10,8 +10,7 @@ class Que08Rounded11 extends StatefulWidget {
 class _State extends State<Que08Rounded11> {
   final String url1 =
       "https://www.kindacode.com/article/flutter-rounded-button/"; //final
-  final String image1 = "";
-  final String video1 = "";
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

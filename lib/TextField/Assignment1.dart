@@ -11,8 +11,7 @@ class Que01Assignment extends StatefulWidget {
 class _State extends State<Que01Assignment> {
   final String url1 =
       "https://kodestat.gitbook.io/flutter/36-flutter-rows-and-columns"; //final Assignment 1
-  final String image1 = "";
-  final String video1 = "";
+
   TextEditingController _user = new TextEditingController();
   TextEditingController _pass = new TextEditingController();
 

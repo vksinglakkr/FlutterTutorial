@@ -8,7 +8,6 @@ class Que01d11 extends StatefulWidget {
 }
 
 class _State extends State<Que01d11> {
-  final String url1 = "";
   final String image1 = "assets/help/TextField/Que01.png";
   final String video1 = "3zddqfn0dfc"; //final TextField border
   @override

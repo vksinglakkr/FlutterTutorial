@@ -8,9 +8,8 @@ class Que06Popup11 extends StatefulWidget {
 }
 
 class _Que06Popup11State extends State<Que06Popup11> {
-  final String url1 = "";
   final String image1 = "assets/help/";
-  final String video1 = "";
+
   String _selectedItem = 'Sun';
   List _options = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 

@@ -11,8 +11,6 @@ class Que01BasicNotes extends StatefulWidget {
 class _State extends State<Que01BasicNotes> {
   final String url1 =
       "https://www.geeksforgeeks.org/retrieve-data-from-textfields-in-flutter/"; //final Basic Notes
-  final String image1 = "";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

@@ -11,9 +11,7 @@ class _Que13TextFormattingState extends State<Que13TextFormatting> {
   int _counter1 = 0;
   int _counter2 = 0;
   int _counter3 = 0;
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = "";
+
   void incrementCounter() {
     setState(() {
       _counter3++;

@@ -19,9 +19,8 @@ class _State extends State<Que3711> {
     'Ram'
   ];
   final List<int> msgCount = [2, 0, 10, 6, 52, 4, 0, 2, 67];
-  final String url1 = "";
+
   final String image1 = "assets/help/ListView/Que37.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

@@ -8,9 +8,7 @@ class Que01 extends StatefulWidget {
 }
 
 class _State extends State<Que01> {
-  final String url1 = "";
   final String image1 = "assets/help/Dart/Que01.png";
-  final String video1 = "";
 
   List names = [
     'Bharti',

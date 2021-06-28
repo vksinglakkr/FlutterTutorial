@@ -8,9 +8,8 @@ class Que07Assignment extends StatefulWidget {
 class _Que07AssignmentState extends State<Que07Assignment> {
 // var to store
 // onChanged callback
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = ""; //final controller & toast assignment 3
+
+  //final controller & toast assignment 3
   final titleController = TextEditingController();
   String text = "No Value Entered";
   bool passwordVisible = true;

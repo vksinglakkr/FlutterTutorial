@@ -9,7 +9,6 @@ class Que05Popup11 extends StatefulWidget {
 }
 
 class _Que05Popup11State extends State<Que05Popup11> {
-  final String url1 = "";
   final String image1 = "assets/help/Box/Box_RotatedBox/Que01.png";
   final String video1 = "IYDVcriKjsw";
   launchURL() {

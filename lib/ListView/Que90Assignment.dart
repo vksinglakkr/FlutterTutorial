@@ -11,9 +11,8 @@ class MyDemo11 extends StatelessWidget {
     Tab(text: 'LEFT'),
     Tab(text: 'RIGHT'),
   ];
-  final String url1 = "";
+
   final String image1 = "assets/help/ListView/Que90.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

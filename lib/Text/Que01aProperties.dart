@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01aText11 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que01a.png";
-  final String video1 = "";
+
 //final String '$$'; semanticsLabel;
   @override
   Widget build(BuildContext context) {

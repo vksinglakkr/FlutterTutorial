@@ -8,9 +8,8 @@ class Que09TextSemantics extends StatefulWidget {
 }
 
 class _Que09TextSemanticsState extends State<Que09TextSemantics> {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que09.png";
-  final String video1 = "";
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

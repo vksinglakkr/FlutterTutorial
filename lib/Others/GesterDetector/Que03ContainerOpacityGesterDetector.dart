@@ -9,9 +9,8 @@ class Que03Gester11 extends StatefulWidget {
 
 class _State extends State<Que03Gester11> {
   double _opacity = 1.0;
-  final String url1 = "";
+
   final String image1 = "assets/help/GesterDetector/Que03.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

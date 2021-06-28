@@ -32,9 +32,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   Color bulbColor = Colors.black;
-  final String url1 = "";
+
   final String image1 = "assets/help/Divider/Que01.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

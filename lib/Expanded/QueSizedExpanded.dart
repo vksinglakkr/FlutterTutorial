@@ -9,8 +9,7 @@ class QueSizedExpanded11 extends StatefulWidget {
 
 class _State extends State<QueSizedExpanded11> {
   final String url1 = "https://morioh.com/p/bc54dc16a5ab"; //final
-  final String image1 = "";
-  final String video1 = "";
+
   final TextEditingController myControllerName = TextEditingController();
   final TextEditingController myControllerFName = TextEditingController();
 

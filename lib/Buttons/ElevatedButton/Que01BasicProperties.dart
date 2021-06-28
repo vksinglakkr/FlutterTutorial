@@ -10,8 +10,6 @@ class Que09Elevated11 extends StatefulWidget {
 class _Que09Elevated11State extends State<Que09Elevated11> {
   final String url1 =
       "https://www.kindacode.com/article/working-with-elevatedbutton-in-flutter/#google_vignette"; //final
-  final String image1 = "";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

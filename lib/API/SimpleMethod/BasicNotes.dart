@@ -1,13 +1,9 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Step1Basic extends StatelessWidget {
-  final String url1 = "";
-  final String image1 = "";
-  final String video1 = ""; //final for Que01 4 Steps clearly expalined
+  //final for Que01 4 Steps clearly expalined
   launchURL() {
     launch('https://reqres.in/');
   }

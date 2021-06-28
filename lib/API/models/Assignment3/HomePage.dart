@@ -54,8 +54,6 @@ class HomePage3 extends StatefulWidget {
 }
 
 class _HomePage3State extends State<HomePage3> {
-  final String url1 = "";
-  final String image1 = "";
   final String video1 = "uqkTZ0POP10"; //final for Assignment3 FutureBuilder
   Future<Album> futureData;
   @override

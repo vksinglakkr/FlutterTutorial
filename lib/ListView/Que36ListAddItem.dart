@@ -29,9 +29,7 @@ class _State extends State<Que3611> {
     });
   }
 
-  final String url1 = "";
   final String image1 = "assets/help/ListView/Que36.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

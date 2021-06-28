@@ -24,9 +24,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final String url1 = "";
   final String image1 = "assets/help/ListView/Que20.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

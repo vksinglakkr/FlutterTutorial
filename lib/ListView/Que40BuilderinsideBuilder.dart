@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que4011 extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/ListView/Que40.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

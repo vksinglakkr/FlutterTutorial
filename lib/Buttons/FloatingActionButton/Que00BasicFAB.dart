@@ -61,9 +61,7 @@ class _MyHomePage11State extends State<MyHomePage11> {
     });
   }
 
-  final String url1 = "";
   final String image1 = "assets/help/Buttons/FloatingActionButton/Que00.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

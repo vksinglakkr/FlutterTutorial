@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 class MyAppURL extends StatelessWidget {
   final String url1 = "https://www.youtube.com/watch?v=ktTajqbhIcY";
   final String image1 = "assets/help/UrlLauncher.png";
-  final String video1 = "";
+
   launchURL() {
     launch('https://www.youtube.com/watch?v=ktTajqbhIcY');
   }

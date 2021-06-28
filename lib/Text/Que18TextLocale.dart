@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que18Locale extends StatelessWidget {
-  final String url1 = "";
   final String image1 = "assets/help/Text/Que18.png";
-  final String video1 = "";
 
   @override
   Widget build(BuildContext context) {

@@ -9,9 +9,8 @@ class Que02Elevated11 extends StatefulWidget {
 }
 
 class _State extends State<Que02Elevated11> {
-  final String url1 = "";
   final String image1 = "assets/help/Buttons/ElevatedButton/Que03.png";
-  final String video1 = "";
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(

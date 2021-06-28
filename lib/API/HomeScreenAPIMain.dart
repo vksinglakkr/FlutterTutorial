@@ -26,11 +26,6 @@ class HomeMainAPI extends StatelessWidget {
                       "lib/API/models/HomeScreen_API.dart", "Models"),
                   ButtonsCode(HomeAPIgetX(), "lib/API/getX/HomeScreen_API.dart",
                       "getX"),
-                  ButtonsCode(
-                      HomePage5(),
-                      "lib/API/models/Assignment5/HomePage.dart",
-                      "json.decode, setState, column \nOpenWeather"),
-                  // TODO
                   ButtonsCode(HomePage5(), "", "Local Repository (Pending)"),
                 ],
               ),

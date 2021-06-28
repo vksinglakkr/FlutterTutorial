@@ -21,18 +21,20 @@ import 'dart:convert';
 
 // Step 5
 // Display data in UI
-class HomePage4 extends StatefulWidget {
+class HomePage7 extends StatefulWidget {
   @override
-  _HomePage4State createState() => _HomePage4State();
+  _HomePage7State createState() => _HomePage7State();
 }
 
-class _HomePage4State extends State<HomePage4> {
+class _HomePage7State extends State<HomePage7> {
   final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
-  var title;
+  var name;
+  var model;
+  var manufacturer;
 
   Future fetchData() async {
     http.Response response =
-        await http.get("https://jsonplaceholder.typicode.com/albums/1");
+        await http.get("https://swapi.dev/api/starships/9");
     if (response.statusCode == 200) {
       var convertedJsondata = json.decode(response.body);
 //      var results = jsonDecode(response.body);
@@ -42,7 +44,9 @@ class _HomePage4State extends State<HomePage4> {
         // having no bracket i.e. [{
         // having only {}
         // having both [] and {}
-        this.title = convertedJsondata['title'];
+        this.name = convertedJsondata['name'];
+        this.model = convertedJsondata['model'];
+        this.manufacturer = convertedJsondata['manufacturer'];
       });
     }
   }
@@ -57,8 +61,7 @@ class _HomePage4State extends State<HomePage4> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:
-            WidgetAppBar("API - https://jsonplaceholder.typicode.com/albums/1"),
+        title: WidgetAppBar("API - https://Swapi.dev/api/starships/9"),
       ),
       body: Container(
         height: MediaQuery.of(context).size.height,
@@ -69,8 +72,17 @@ class _HomePage4State extends State<HomePage4> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(this.title != null ? this.title : 'Loading..'),
+              child: Text(this.name != null ? this.name : 'Loading..'),
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(this.model != null ? this.model : 'Loading..'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                  this.manufacturer != null ? this.manufacturer : 'Loading..'),
+            ), //"name":"Kurukshetra"
           ],
         ),
       ),

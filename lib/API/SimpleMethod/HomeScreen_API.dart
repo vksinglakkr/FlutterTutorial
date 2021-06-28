@@ -5,6 +5,9 @@ import 'package:flutter_tutorial/API/SimpleMethod/Que01.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que02.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que03.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que04.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que05.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que06.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que07.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPI extends StatelessWidget {
@@ -21,14 +24,22 @@ class HomeAPI extends StatelessWidget {
                 children: [
                   ButtonsCode(Step1Basic(),
                       "lib/API/SimpleMethod/BasicNotes.dart", "Basic Notes"),
-                  ButtonsCode(Que01(), "lib/API/SimpleMethod/Que01.dart",
-                      "json.decode, setState, ListView.Builder\nhttps://reqres.in/api/users?page2"),
+                  ButtonsCode(HomePage6(), "lib/API/SimpleMethod/Que06.dart",
+                      "json.decode, Single Record \nhttps://Swapi.dev.api/people/1"),
+                  ButtonsCode(HomePage7(), "lib/API/SimpleMethod/Que07.dart",
+                      "json.decode, Single Record \nhttps://Swapi.dev.api/starships/9"),
+                  ButtonsCode(HomePage3(), "lib/API/SimpleMethod/Que03.dart",
+                      "json.decode, Single Record \nhttps://Swapi.dev.api/planets/3"),
+                  ButtonsCode(
+                      HomePage5(),
+                      "lib/API/models/Assignment5/HomePage.dart",
+                      "json.decode, Single Record \nOpenWeather"),
                   ButtonsCode(Que02(), "lib/API/SimpleMethod/Que02.dart",
                       "https://newsapi.org/"),
-                  ButtonsCode(
-                      Que03(), "lib/API/SimpleMethod/Que03.dart", "Pending"),
-                  ButtonsCode(Que04(), "lib/API/SimpleMethod/Que04.dart",
+                  ButtonsCode(HomePage4(), "lib/API/SimpleMethod/Que04.dart",
                       "https://jsonplaceholder.typicode.com/albums/1"),
+                  ButtonsCode(Que01(), "lib/API/SimpleMethod/Que01.dart",
+                      "json.decode, ListView.Builder\nhttps://reqres.in/api/users?page2"),
                 ],
               ),
             ),

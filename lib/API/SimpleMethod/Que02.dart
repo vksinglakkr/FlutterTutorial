@@ -23,15 +23,14 @@ class _Que02State extends State<Que02> {
     if (response.statusCode == 200) {
       // debugPrint(response.body); Step 1
       mapData = json.decode(response.body);
+      // instead of storing it through mapdat we can directly store it,
+      //convertedJsonData = json.decode(response.body)["articles"];
       setState(() {
         convertedJsonData = mapData["articles"];
-        // instead of storing it through mapdat we can directly store it,
-        //convertedJsonData = json.decode(response.body)["articles"];
-
-        debugPrint(convertedJsonData.toString());
-        //See the output in DEBUG CONSOLE we get in STEP 1 & STEP 2
-        //in STEP 2 we only get the data } else {
       });
+      debugPrint(convertedJsonData.toString());
+      //See the output in DEBUG CONSOLE we get in STEP 1 & STEP 2
+      //in STEP 2 we only get the data } else {
     } else {
       return null;
     }
@@ -47,7 +46,7 @@ class _Que02State extends State<Que02> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: WidgetAppBar("Store/Display data"),
+        title: WidgetAppBar("if no data showing change the date"),
       ),
       body: ListView.builder(
         itemCount: convertedJsonData == null ? 0 : convertedJsonData.length,

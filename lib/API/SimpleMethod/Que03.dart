@@ -1,35 +1,89 @@
+//  \lib/API/models/Assignment5/HomePage.dart
+
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
-
+import 'dart:convert';
 //import 'dart:convert'; // to convert the http response in JSON format
-class Que03 extends StatefulWidget {
+
+// Step 1
+// import 3 basic package a) http b) convert  c) async
+
+// Step 2
+// Create a class for the API
+// we have created album.dart using https://app.quicktype.io/
+// import the dart file, in our case it is album.dart
+
+// Step 3
+// Write a function to fetch the API data from url
+// we have written fetchData
+
+// Step 5
+// Display data in UI
+class HomePage3 extends StatefulWidget {
   @override
-  _Que03State createState() => _Que03State();
+  _HomePage3State createState() => _HomePage3State();
 }
 
-class _Que03State extends State<Que03> {
-  final String url1 =
-      "https://medium.com/flutter-community/how-to-parse-json-in-flutter-for-beginners-8074a68d7a79";
+class _HomePage3State extends State<HomePage3> {
+  final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
+  var name;
+  var population;
+  var diameter;
 
-  var jsonData = '{name: "Dane", alias: "FilledStacks"}';
-  Future getData() async {
-    http.Response response = await http.get(jsonData);
-    debugPrint(response.body);
+  Future fetchData() async {
+    http.Response response = await http.get("https://swapi.dev/api/planets/3");
+    if (response.statusCode == 200) {
+      var convertedJsondata = json.decode(response.body);
+//      var results = jsonDecode(response.body);
+      setState(() {
+        // see the difference
+        // how to write
+        // having no bracket i.e. [{
+        // having only {}
+        // having both [] and {}
+        this.name = convertedJsondata['name'];
+        this.population = convertedJsondata['population'];
+        this.diameter = convertedJsondata['diameter'];
+      });
+    }
   }
 
   @override
   void initState() {
     super.initState();
-    getData();
+    this.fetchData();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: WidgetAppBar("make an HTTP Request"),
+        title: WidgetAppBar("API - https://Swapi.dev/api/planets/3"),
+      ),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(this.name != null ? this.name : 'Loading..'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child:
+                  Text(this.population != null ? this.population : 'Loading..'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(this.diameter != null ? this.diameter : 'Loading..'),
+            ), //"name":"Kurukshetra"
+          ],
+        ),
       ),
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),

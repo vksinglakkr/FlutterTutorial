@@ -38,7 +38,7 @@ class _Que01State extends State<Que01> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: WidgetAppBar("Store/Display data"),
+        title: WidgetAppBar("https://reqres.in/api/users?page2"),
       ),
       body: ListView.builder(
         itemCount: userData == null ? 0 : userData.length,

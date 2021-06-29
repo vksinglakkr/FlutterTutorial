@@ -8,6 +8,8 @@ import 'package:flutter_tutorial/API/SimpleMethod/Que04.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que05.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que06.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que07.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que08_LoadLocalJson.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que09_LoadLocalVariableJson.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPI extends StatelessWidget {
@@ -40,6 +42,14 @@ class HomeAPI extends StatelessWidget {
                       "https://jsonplaceholder.typicode.com/albums/1"),
                   ButtonsCode(Que01(), "lib/API/SimpleMethod/Que01.dart",
                       "json.decode, ListView.Builder\nhttps://reqres.in/api/users?page2"),
+                  ButtonsCode(
+                      Que08Local(),
+                      "lib/API/SimpleMethod/Que08_LoadLocalJson.dart",
+                      "json.decode, Multiple Record, ListViewBuilder\nstarwars_data.json"),
+                  ButtonsCode(
+                      Que09Local(),
+                      "lib/API/SimpleMethod/Que09_LoadLocalVariableJson.dart",
+                      "json.decode, Multiple Record, ListViewBuilder\nlocal variable"),
                 ],
               ),
             ),

@@ -23,26 +23,28 @@ import 'dart:async';
 // type of function depends of the API,
 // in our case it is String type so we write simply <Album> otherwise <List<Album>>
 // in case of without models we not mention anything i.e. simply Future fetchdata()
-Future<Weather> fetchData() async {
-  // as far as fetching is concerned, it is same for all methods.
-  http.Response response = await http.get(openWeatherUrl);
+class Services {
+  static Future<Weather> fetchData() async {
+    // as far as fetching is concerned, it is same for all methods.
+    http.Response response = await http.get(openWeatherUrl);
 //      await http.get('https://jsonplaceholder.typicode.com/albums/2');
-  // we can check by writting debugPrint(response.body);
-  debugPrint(response.body);
-  // it will simply return the string in Debug Console.
-  if (response.statusCode == 200) {
+    // we can check by writting debugPrint(response.body);
+    debugPrint(response.body);
+    // it will simply return the string in Debug Console.
+    if (response.statusCode == 200) {
 // Step 4
 // Now Write code to convert the data into json format
-    // For decode/convert
-    // without models we use this return json.decode(response.body);
-    // as we are using models we have two options
-    // either return weatherFromJson(response.body);
-    // or return Weather.fromJson(jsonDecode(response.body)); // Alternate
-    // we can see the convert data using debugPrint(weatherFromJson(response.body).toString());
-    debugPrint(weatherFromJson(response.body).toString());
-    return weatherFromJson(response.body);
-  } else {
-    return Weather();
+      // For decode/convert
+      // without models we use this return json.decode(response.body);
+      // as we are using models we have two options
+      // either return weatherFromJson(response.body);
+      // or return Weather.fromJson(jsonDecode(response.body)); // Alternate
+      // we can see the convert data using debugPrint(weatherFromJson(response.body).toString());
+      debugPrint(weatherFromJson(response.body).toString());
+      return weatherFromJson(response.body);
+    } else {
+      return Weather();
+    }
   }
 }
 
@@ -57,10 +59,10 @@ class _HomePage4State extends State<HomePage4> {
   final String video1 = "ToPdSd42UKA"; //final for Assignment4 OpenWeather
   Future<Weather> futureData;
   @override
-  void initState() {
-    super.initState();
-    futureData = fetchData();
-  }
+  // void initState() {
+  //   super.initState();
+  //   futureData = fetchData();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -70,7 +72,7 @@ class _HomePage4State extends State<HomePage4> {
       ),
       body: Center(
         child: FutureBuilder<Weather>(
-            future: futureData,
+            future: Services.fetchData(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 var iconUrl =

@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Future/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/PersistKey/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Positioned/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Toast/HomeScreen.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -208,6 +209,15 @@ class HomeScreenOthers extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) => HomeTheme(),
+                    ))),
+            ElevatedButton(
+                child: Text('PersistKey',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomePersist(),
                     ))),
           ],
         ),

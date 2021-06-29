@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/API/models/Assignment2/Services.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/product.dart';
-import 'package:http/http.dart' as http;
 
 class HomePage2 extends StatefulWidget {
   HomePage2() : super();
@@ -10,53 +10,32 @@ class HomePage2 extends StatefulWidget {
 }
 
 class _HomePage2State extends State<HomePage2> {
-  List<Product> _product;
-  bool _loading;
+  List<Product> _convertedJsonData;
   @override
   void initState() {
     super.initState();
-    _loading = true;
-    Services.getProducts().then((products) {
+    Services.fetchData().then((products) {
       setState(() {
-        _product = products;
-        _loading = false;
+        _convertedJsonData = products;
       });
     });
   }
 
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(_loading ? 'Loading...' : 'Product')),
+      appBar: AppBar(title: Text('Product')),
       body: Container(
           color: Colors.white,
           child: ListView.builder(
-              itemCount: _product == null ? 0 : _product.length,
+              itemCount:
+                  _convertedJsonData == null ? 0 : _convertedJsonData.length,
               itemBuilder: (context, index) {
-                Product product = _product[index];
+                Product product = _convertedJsonData[index];
                 return ListTile(
                   title: Text(product.name),
                   subtitle: Text(product.price),
                 );
               })),
     );
-  }
-}
-
-class Services {
-  static Future<List<Product>> getProducts() async {
-    try {
-      final response = await http.get(
-          'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
-      if (response.statusCode == 200) {
-        final List<Product> var2 = productFromJson(response.body);
-        return var2;
-      } else {
-        return throw Exception('Failed to load ...');
-//        return null;
-      }
-    } catch (e) {
-      return throw Exception('Failed to load ...');
-//      return null;
-    }
   }
 }

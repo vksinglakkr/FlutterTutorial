@@ -8,6 +8,7 @@ import 'package:flutter_tutorial/Expanded/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/HomeScreenOthers.dart';
 import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
 import 'package:flutter_tutorial/TextFormField/HomeScreen.dart';
+import 'package:flutter_tutorial/widgets/exit-popup.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
 import '../Align/HomeScreen_Align.dart';
 import '../Bar/HomeScreen_Bar.dart';
@@ -58,7 +59,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                   MaterialPageRoute(
                                     builder: (BuildContext context) =>
                                         MainTheme(),
-                                  ))))
+                                  )))),
+                      PopupMenuItem(
+                          child: IconButton(
+                        icon: const Icon(Icons.exit_to_app),
+                        color: Colors.black,
+                        onPressed: () => showExitPopup(context),
+                      )),
                     ])
           ],
         ),

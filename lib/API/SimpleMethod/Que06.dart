@@ -1,4 +1,4 @@
-//  \lib/API/models/Assignment5/HomePage.dart
+//  \lib/API/SimpleMethod/Que06.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -126,15 +126,6 @@ class _HomePage6State extends State<HomePage6> {
               padding: const EdgeInsets.all(8.0),
               child: Text((this.gender != null ? this.gender : 'Loading..')),
             ),
-            // Padding(
-            //   padding: const EdgeInsets.all(8.0),
-            //   child: Text(
-            //       (this.homeworld != null ? this.homeworld : 'Loading..')),
-            // ),
-            // Padding(
-            //   padding: const EdgeInsets.all(8.0),
-            //   child: Text((this.films != null ? this.films : 'Loading..')),
-            // ),
           ],
         ),
       ),

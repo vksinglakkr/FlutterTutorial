@@ -4,6 +4,7 @@ import 'package:flutter_tutorial/API/models/Assignment1/Homepage.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment4/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment5/HomePage.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPIModel extends StatelessWidget {
@@ -11,7 +12,7 @@ class HomeAPIModel extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Projects")),
+        appBar: AppBar(title: WidgetAppBar("models")),
         body: SafeArea(
           child: Container(
             child: Builder(
@@ -21,19 +22,23 @@ class HomeAPIModel extends StatelessWidget {
                   ButtonsCode(
                       HomePage1(),
                       "lib/API/models/Assignment1/JsonParseDemo.dart",
-                      "models, ...FromJson, setState, ListView.builder\nJsonParse Demo"),
+                      "ListView.builder\nJsonParse Demo"),
                   ButtonsCode(
                       HomePage2(),
                       "lib/API/models/Assignment2/HomePage.dart",
-                      "models, ...FromJson, setState, ListView.builder\nbrand “maybelline”"),
+                      "ListView.builder\nbrand “maybelline”"),
                   ButtonsCode(
                       HomePage3(),
                       "lib/API/models/Assignment3/HomePage.dart",
-                      "models, ...FromJson, FutureBuilder, SnapShot \njsonplaceholder"),
+                      "FutureBuilder, SnapShot \njsonplaceholder"),
                   ButtonsCode(
                       HomePage4(),
                       "lib/API/models/Assignment4/HomePage.dart",
-                      "models, ...FromJson, FutureBuilder, SnapShot\nOpenWeather"),
+                      "FutureBuilder, SnapShot\nOpenWeather"),
+                  ButtonsCode(
+                      HomePage5(),
+                      "lib/API/models/Assignment5/HomePage.dart",
+                      "swapi.dev/api/people"),
                 ],
               ),
             ),

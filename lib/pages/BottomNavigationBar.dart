@@ -5,9 +5,9 @@ import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:widget_with_codeview/widget_with_codeview.dart';
 import 'package:flutter/cupertino.dart';
 
-final String url1 = "ghf";
-final String image1 = "ghffgh";
-final String video1 = "ghgf";
+final String url1 = "";
+final String image1 = "";
+final String video1 = "";
 
 class QueBottom extends StatefulWidget {
   final String urlName, imageName, videoUrlId;

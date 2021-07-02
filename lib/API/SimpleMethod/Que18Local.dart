@@ -3,30 +3,27 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-class Que08Local extends StatefulWidget {
+class Que18Local extends StatefulWidget {
   @override
-  Que08LocalState createState() => Que08LocalState();
+  Que18LocalState createState() => Que18LocalState();
 }
 
-class Que08LocalState extends State<Que08Local> {
-  List data;
-
+class Que18LocalState extends State<Que18Local> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Load local JSON file"),
+          title: Text("Load local JSON file1"),
         ),
         body: Container(
           child: Center(
             // Use future builder and DefaultAssetBundle to load the local JSON file
             child: FutureBuilder(
                 future: DefaultAssetBundle.of(context)
-                    .loadString('assets/localJson/starwars_data.json'),
+                    .loadString('assets/localJson/User.json'),
                 builder: (context, snapshot) {
                   // Decode the JSON
                   var convertedJsonData = json.decode(snapshot.data.toString());
-
                   return ListView.builder(
                     // Build the ListView
                     itemBuilder: (BuildContext context, int index) {
@@ -35,19 +32,9 @@ class Que08LocalState extends State<Que08Local> {
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: <Widget>[
                             Text("Name: " + convertedJsonData[index]['name']),
-                            Text("Height: " +
-                                convertedJsonData[index]['height']),
-                            Text("Mass: " + convertedJsonData[index]['mass']),
-                            Text("Hair Color: " +
-                                convertedJsonData[index]['hair_color']),
-                            Text("Skin Color: " +
-                                convertedJsonData[index]['skin_color']),
-                            Text("Eye Color: " +
-                                convertedJsonData[index]['eye_color']),
-                            Text("Birth Year: " +
-                                convertedJsonData[index]['birth_year']),
-                            Text(
-                                "Gender: " + convertedJsonData[index]['gender'])
+                            Text("Number: " +
+                                convertedJsonData[index]['number']),
+                            Text("eMail: " + convertedJsonData[index]['email']),
                           ],
                         ),
                       );

@@ -26,24 +26,28 @@ import 'dart:async';
 class Services {
   static Future<Weather> fetchData() async {
     // as far as fetching is concerned, it is same for all methods.
-    http.Response response = await http.get(openWeatherUrl);
+    try {
+      http.Response response = await http.get(openWeatherUrl);
 //      await http.get('https://jsonplaceholder.typicode.com/albums/2');
-    // we can check by writting debugPrint(response.body);
-    debugPrint(response.body);
-    // it will simply return the string in Debug Console.
-    if (response.statusCode == 200) {
+      // we can check by writting debugPrint(response.body);
+      debugPrint(response.body);
+      // it will simply return the string in Debug Console.
+      if (response.statusCode == 200) {
 // Step 4
 // Now Write code to convert the data into json format
-      // For decode/convert
-      // without models we use this return json.decode(response.body);
-      // as we are using models we have two options
-      // either return weatherFromJson(response.body);
-      // or return Weather.fromJson(jsonDecode(response.body)); // Alternate
-      // we can see the convert data using debugPrint(weatherFromJson(response.body).toString());
-      debugPrint(weatherFromJson(response.body).toString());
-      return weatherFromJson(response.body);
-    } else {
-      return Weather();
+        // For decode/convert
+        // without models we use this return json.decode(response.body);
+        // as we are using models we have two options
+        // either return weatherFromJson(response.body);
+        // or return Weather.fromJson(jsonDecode(response.body)); // Alternate
+        // we can see the convert data using debugPrint(weatherFromJson(response.body).toString());
+        debugPrint(weatherFromJson(response.body).toString());
+        return weatherFromJson(response.body);
+      } else {
+        return throw Exception('Failed to load ...');
+      }
+    } catch (e) {
+      return throw Exception('Failed to load ...');
     }
   }
 }

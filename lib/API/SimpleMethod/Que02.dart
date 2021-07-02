@@ -1,3 +1,4 @@
+// ../lib/API/SimpleMethod/Que02.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/urlFiles.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -46,7 +47,7 @@ class _Que02State extends State<Que02> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: WidgetAppBar("if no data showing change the date"),
+        title: WidgetAppBar("Top Head Lines India"),
       ),
       body: ListView.builder(
         itemCount: convertedJsonData == null ? 0 : convertedJsonData.length,

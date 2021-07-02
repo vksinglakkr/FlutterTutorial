@@ -173,6 +173,7 @@ flutter:
     - assets/help/Text/
     - assets/help/TextField/
     - assets/help/Transform/
+    - assets/help/API/
 
    
 

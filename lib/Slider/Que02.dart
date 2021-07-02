@@ -1,3 +1,4 @@
+// lib/Slider/Que02.dart
 import 'package:flutter/material.dart';
 
 class Que02 extends StatefulWidget {

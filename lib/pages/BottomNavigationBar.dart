@@ -18,6 +18,7 @@ class QueBottom extends StatefulWidget {
 
 class _QueBottomState extends State<QueBottom> {
   int _selectedIndex = 0;
+  
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(

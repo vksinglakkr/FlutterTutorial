@@ -1,6 +1,7 @@
 //lib\API\SimpleMethod\Que11Map.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -82,6 +83,9 @@ class _Que11State extends State<Que11> {
                 ],
               ),
             ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

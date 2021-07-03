@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'dart:convert';
 
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+
 class Que10Search extends StatefulWidget {
   Que10SearchState createState() => Que10SearchState();
 }
@@ -93,6 +95,9 @@ class Que10SearchState extends State<Que10Search> {
             ),
             _listView(persons)
           ]),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

@@ -1,5 +1,6 @@
 //lib\API\SimpleMethod\Que12String.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:http/http.dart' as http;
 
 class Que12 extends StatefulWidget {
@@ -45,6 +46,9 @@ class _Que12State extends State<Que12> {
               strResponse.toString(),
               style: TextStyle(fontSize: 30),
             ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+      floatingActionButton: WidgetFab(),
     );
   }
 }

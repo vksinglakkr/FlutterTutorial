@@ -16,10 +16,6 @@ class Services {
     try {
       http.Response response =
           await http.get('https://jsonplaceholder.typicode.com/albums/1');
-      // await http.get('https://jsonplaceholder.typicode.com/albums/2');
-      // we can check by writting debugPrint(response.body);
-      // debugPrint(response.body);
-      // it will simply return the string in Debug Console.
       if (response.statusCode == 200) {
         // final List<User> user = userFromJson(response.body);
         // return user;

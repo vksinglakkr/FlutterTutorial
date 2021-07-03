@@ -2,6 +2,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que18Local extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class Que18LocalState extends State<Que18Local> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Load local JSON file1"),
+          title: Text("Load local JSON file"),
         ),
         body: Container(
           child: Center(
@@ -45,6 +46,9 @@ class Que18LocalState extends State<Que18Local> {
                   );
                 }),
           ),
-        ));
+        ),      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+      floatingActionButton: WidgetFab(),
+);
   }
 }

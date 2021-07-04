@@ -11,6 +11,7 @@ class Que15 extends StatefulWidget {
 }
 
 class _Que15State extends State<Que15> {
+  final String image1 = "assets/help/API/response.jpg";
   List listResponse;
 
   Future fetchData() async {

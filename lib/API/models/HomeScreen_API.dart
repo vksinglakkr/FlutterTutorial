@@ -1,4 +1,4 @@
-//  \lib/Align\HomeScreen_Align.dart
+//  \lib/API/models/HomeScreen_API.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/models/Assignment1/Homepage.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/HomePage.dart';
@@ -21,7 +21,7 @@ class HomeAPIModel extends StatelessWidget {
                 children: [
                   ButtonsCode(
                       HomePage1(),
-                      "lib/API/models/Assignment1/JsonParseDemo.dart",
+                      "lib/API/models/Assignment1/HomePage.dart",
                       "ListView.builder\nJsonParse Demo"),
                   ButtonsCode(
                       HomePage2(),
@@ -38,7 +38,7 @@ class HomeAPIModel extends StatelessWidget {
                   ButtonsCode(
                       HomePage5(),
                       "lib/API/models/Assignment5/HomePage.dart",
-                      "swapi.dev/api/people"),
+                      "Receipe Search"),
                 ],
               ),
             ),

@@ -1,5 +1,6 @@
 // lib/Image\HomeScreen_Image.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Container/Que42_AnimatedCurves.dart';
 import 'package:flutter_tutorial/Image/Que03aImage.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
@@ -84,6 +85,10 @@ class HomeImage extends StatelessWidget {
                     "ClipPath Assignment2"),
                 ButtonsCode(Que10Clip11(), "lib/Image/Clipping/Que10Clip.dart",
                     "ClipPath Assignment3"),
+                ButtonsCode(
+                    AnimatedCurves(),
+                    "lib/Container/Que42_AnimatedCurves.dart",
+                    "Animated Curves Demo"),
               ],
             ),
           ),

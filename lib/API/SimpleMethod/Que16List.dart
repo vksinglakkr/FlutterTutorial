@@ -11,7 +11,8 @@ class Que16 extends StatefulWidget {
 }
 
 class _Que16State extends State<Que16> {
-  final String url1 = "";
+  final String image1 = "assets/help/API/response.jpg";
+
   final String video1 = "1put849Lhqg"; // best video for Que16
 
   List listResponse;

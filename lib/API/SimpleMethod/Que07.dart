@@ -27,6 +27,7 @@ class HomePage7 extends StatefulWidget {
 }
 
 class _HomePage7State extends State<HomePage7> {
+  final String image1 = "assets/help/API/response.jpg";
   final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
   var name;
   var model;

@@ -2,6 +2,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Container/Que31ContainerButton.dart';
 import 'package:flutter_tutorial/Container/Que33ContainerButton.dart';
+import 'package:flutter_tutorial/Container/Que34AnimatedFlight.dart';
+import 'package:flutter_tutorial/Container/Que35AnimatedGraph.dart';
+import 'package:flutter_tutorial/Container/Que36Gradient.dart';
+import 'package:flutter_tutorial/Container/Que37AnimatedOpacity.dart';
+import 'package:flutter_tutorial/Container/Que38OpacityMessage.dart';
+import 'package:flutter_tutorial/Container/Que39AnimatedColor.dart';
+import 'package:flutter_tutorial/Container/Que40AnimatedBorderWidth.dart';
+import 'package:flutter_tutorial/Container/Que41AnimatedBorderRadius.dart';
+import 'package:flutter_tutorial/Container/Que42_AnimatedCurves.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01ContainerOpacityGesterDetector.dart';
 import 'Que02ContainerWithinContainer.dart';
@@ -125,6 +134,30 @@ class HomeContainer extends StatelessWidget {
                 QueAssign411(),
                 "lib/Container/QueAssignmentHowtofix2containersatcorners.dart",
                 "How to fix two Containers at Corner"),
+            ButtonsCode(FlightExample(),
+                "lib/Container/Que34AnimatedFlight.dart", "Animated Flight"),
+            ButtonsCode(GraphExample(), "lib/Container/Que35AnimatedGraph.dart",
+                "Animated Graph"),
+            ButtonsCode(Que36GradientTransform(),
+                "lib/Container/Que36Gradient.dart", "Animated Gradient"),
+            ButtonsCode(TextOpacitySimple(),
+                "lib/Container/Que37AnimatedOpacity.dart", "Animated Opacity"),
+            ButtonsCode(ButtonOpacity(),
+                "lib/Container/Que38OpacityMessage.dart", "Button Opacity"),
+            ButtonsCode(Que39Animated(),
+                "lib/Container/Que39AnimatedColor.dart", "Animated Color"),
+            ButtonsCode(
+                BorderExample(),
+                "lib/Container/Que40AnimatedBorderWidth.dart",
+                "Animated Width of Border"),
+            ButtonsCode(
+                BorderRadiusExample(),
+                "lib/Container/Que41AnimatedBorderRadius.dart",
+                "Animated Radius of Border"),
+            ButtonsCode(
+                AnimatedCurves(),
+                "lib/Container/Que42_AnimatedCurves.dart",
+                "Animated Curves Demo"),
           ],
         ),
         floatingActionButton: WidgetFab(),

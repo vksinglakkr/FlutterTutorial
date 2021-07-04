@@ -13,6 +13,7 @@ class Que02 extends StatefulWidget {
 }
 
 class _Que02State extends State<Que02> {
+  final String image1 = "assets/help/API/response.jpg";
   final String url1 = "https://newsapi.org/";
 
   // final for Que02 Step1,2,3,4

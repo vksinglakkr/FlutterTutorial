@@ -1,20 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class AnimatedContainerDemo extends StatefulWidget {
+class AnimatedCurves extends StatefulWidget {
   @override
-  _AnimatedContainerDemoState createState() => _AnimatedContainerDemoState();
+  _AnimatedCurvesState createState() => _AnimatedCurvesState();
 }
 
-class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
+class _AnimatedCurvesState extends State<AnimatedCurves> {
+  final String url1 =
+      "https://medium.com/codechai/animating-using-animatedcontainer-flutter-widget-8356b5c1914c";
+  final String video1 = "0NVLyjtWJqc";
   AnimationCurve dropDownValue;
   bool selected = false;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("AnimatedContainer Demo"),
-      ),
+      appBar: AppBar(title: WidgetAppBar("AnimatedContainer Demo")),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(
         children: <Widget>[
           Padding(
@@ -28,7 +32,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 8,
           ),
           Column(
             children: <Widget>[
@@ -38,7 +42,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
                     )
                   : Text(Curves.linear.toString()),
               SizedBox(
-                height: 10,
+                height: 8,
               ),
               dropDownValue != null
                   ? Text(
@@ -48,7 +52,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
             ],
           ),
           SizedBox(
-            height: 10,
+            height: 8,
           ),
           animatedContainer(context),
         ],
@@ -65,8 +69,8 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
           });
         },
         child: AnimatedContainer(
-          width: selected ? 320.0 : 200.0,
-          height: selected ? 200.0 : 320.0,
+          width: selected ? 260.0 : 200.0,
+          height: selected ? 200.0 : 260.0,
           alignment:
               selected ? Alignment.center : AlignmentDirectional.topCenter,
           duration: Duration(seconds: 2),

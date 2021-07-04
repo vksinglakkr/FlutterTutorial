@@ -11,6 +11,7 @@ class Que09 extends StatefulWidget {
 }
 
 class _Que09State extends State<Que09> {
+  final String image1 = "assets/help/API/response.jpg";
   final String url1 =
       "https://medium.com/flutter-community/how-to-parse-json-in-flutter-for-beginners-8074a68d7a79";
   var listResponse = json.decode(
@@ -20,7 +21,7 @@ class _Que09State extends State<Que09> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Data defined in \nlocal variable'),
+        title: Text('List (with key) \ndefined in Local variable'),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -11,7 +11,8 @@ class Que13 extends StatefulWidget {
 }
 
 class _Que13State extends State<Que13> {
-  final String url1 =
+   final String image1 = "assets/help/API/response.jpg";
+ final String url1 =
       "https://thegrowingdeveloper.org/coding-blog/flutter-api-integration-learn-to-fetch-data-from-internet";
   final String video1 =
       "MEqUx3_KrFo"; // best video for Que13 Timing 9:30 i.e. of the growing developers

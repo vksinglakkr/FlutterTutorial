@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/SetUpAPK/Que04.dart';
 import 'package:flutter_tutorial/SetUpAPK/Que04BestChannels.dart';
+import 'package:flutter_tutorial/SetUpAPK/Que05.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
 import 'Que02.dart';
@@ -33,8 +34,10 @@ class HomeSetUp extends StatelessWidget {
             ButtonsCode(Que0111(), "", "fix minSDKVersion?"),
             ButtonsCode(Que0111(), "", "How to change the project name.??"),
             ButtonsCode(Que0111(), "", "Best Channels"),
-            ButtonsCode(Que04(), "lib\SetUpAPK/Que04.dart",
+            ButtonsCode(Que04(), "lib/SetUpAPK/Que04.dart",
                 "flutter internet permission"),
+            ButtonsCode(
+                Que05(), "lib/SetUpAPK/Que05.dart", "Some usefull Extensions"),
           ],
         ),
       ),

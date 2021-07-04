@@ -1,3 +1,4 @@
+//lib/API/models/Assignment2/HomePage.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/Services.dart';
 import 'package:flutter_tutorial/API/models/Assignment2/product.dart';
@@ -24,7 +25,7 @@ class _HomePage2State extends State<HomePage2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Product')),
-      body: Container(
+      body: _convertedJsonData == null ? Center(child: CircularProgressIndicator()) : Container(
           color: Colors.white,
           child: ListView.builder(
               itemCount:

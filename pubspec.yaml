@@ -111,6 +111,7 @@ flutter:
     - lib/Others/ProgressIndicator_Loading/
     - lib/Row/
     - lib/Slider/
+    - lib/Dropdown/
     - lib/Others/Spacer/
     - lib/Others/Stack_IndexStack_Positioned/
     - lib/Switch/
@@ -122,6 +123,7 @@ flutter:
     - lib/API/models/Assignment2/
     - lib/API/models/Assignment3/
     - lib/API/models/Assignment4/
+    - lib/API/models/Assignment5/
     - lib/TextField/
     - lib/TextFormField/
     - lib/Transform/

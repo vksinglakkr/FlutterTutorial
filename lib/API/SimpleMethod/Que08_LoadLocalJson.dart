@@ -10,7 +10,8 @@ class Que08Local extends StatefulWidget {
 }
 
 class Que08LocalState extends State<Que08Local> {
-  List data;
+   final String image1 = "assets/help/API/response.jpg";
+ List data;
 
   @override
   Widget build(BuildContext context) {

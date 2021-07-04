@@ -10,6 +10,7 @@ import 'package:flutter_tutorial/API/SimpleMethod/Que07.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que08_LoadLocalJson.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que09_Localvariable.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que09a_mapLocalVariable.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que09b_Localvariable.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que10_SearchLocalJson.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que11Map.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que12String.dart';
@@ -20,6 +21,7 @@ import 'package:flutter_tutorial/API/SimpleMethod/Que16List.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que17map.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que18Local.dart';
 import 'package:flutter_tutorial/API/SimpleMethod/Que19Local.dart';
+import 'package:flutter_tutorial/API/SimpleMethod/Que20countries.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPI extends StatelessWidget {
@@ -47,12 +49,24 @@ class HomeAPI extends StatelessWidget {
                   ButtonsCode(Que16(), "lib/API/SimpleMethod/Que16List.dart",
                       "https://restcountries.eu/rest/v2/all"),
                   ButtonsCode(
+                      Que09b(),
+                      "lib/API/SimpleMethod/Que09b_Localvariable.dart",
+                      "List (without key) defined in Local variable"),
+                  ButtonsCode(
+                      Que09(),
+                      "lib/API/SimpleMethod/Que09_Localvariable.dart",
+                      "List (with key) defined in Local variable"),
+                  ButtonsCode(
                       Que19Local(),
                       "lib/API/SimpleMethod/Que19Local.dart",
                       "User.json (Local)"),
                   Center(child: Text("Map", style: TextStyle(fontSize: 16))),
                   ButtonsCode(Que11(), "lib/API/SimpleMethod/Que11Map.dart",
                       "http://thegrowingdeveloper.org/apiview?id=2\nListViewer"),
+                  ButtonsCode(
+                      Que20Countries(),
+                      "lib/API/SimpleMethod/Que20countries.dart",
+                      "Demo of self generation of key value"),
                   ButtonsCode(HomePage6(), "lib/API/SimpleMethod/Que06.dart",
                       "https://Swapi.dev/api/people/1"),
                   ButtonsCode(HomePage7(), "lib/API/SimpleMethod/Que07.dart",
@@ -81,10 +95,6 @@ class HomeAPI extends StatelessWidget {
                       Que10Search(),
                       "lib/API/SimpleMethod/Que10_SearchLocalJson.dart",
                       "rootBundle.loadString, json.decode, \nListViewBuilder Search local Json"),
-                  ButtonsCode(
-                      Que09(),
-                      "lib/API/SimpleMethod/Que09_Localvariable.dart",
-                      "List defined in Local variable"),
                   ButtonsCode(
                       Que09a(),
                       "lib/API/SimpleMethod/Que09a_mapLocalVariable.dart",

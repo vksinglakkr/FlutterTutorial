@@ -12,6 +12,7 @@ class Que01 extends StatefulWidget {
 }
 
 class _Que01State extends State<Que01> {
+  final String image1 = "assets/help/API/response.jpg";
   final String video1 = "o0-kHH5-7zE";
   Map data; //Step 2
   List userData; //Step 2

@@ -1,5 +1,8 @@
 // lib/Buttons\RadioButton\HomeScreen_Floating.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Container/Que34AnimatedFlight.dart';
+import 'package:flutter_tutorial/Container/Que35AnimatedGraph.dart';
+import 'package:flutter_tutorial/Container/Que36Gradient.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01onPressed.dart';
 import 'Que02CenterFloatLocation.dart';
@@ -69,6 +72,16 @@ class HomeFloating extends StatelessWidget {
                       Que11Floating11(),
                       "lib/Buttons/FloatingActionButton/Que11RectangleShapeRoundedCorner.dart",
                       "Rectangle Shape Rounded Corner"),
+                  ButtonsCode(
+                      FlightExample(),
+                      "lib/Container/Que34AnimatedFlight.dart",
+                      "Animated Flight"),
+                  ButtonsCode(
+                      GraphExample(),
+                      "lib/Container/Que35AnimatedGraph.dart",
+                      "Animated Graph"),
+                  ButtonsCode(Que36GradientTransform(),
+                      "lib/Container/Que36Gradient.dart", "Animated Gradient"),
                 ],
               ),
             ),

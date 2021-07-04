@@ -9,6 +9,7 @@ import 'package:flutter_tutorial/Others/General/Que09StateFullWidget.dart';
 import 'package:flutter_tutorial/Others/General/Que11StateLessStateLess.dart';
 import 'package:flutter_tutorial/Others/General/Que12MaterialApp_Scaffold_MyAppAllinMain.dart';
 import 'package:flutter_tutorial/Others/General/Que20NullSafety.dart';
+import 'package:flutter_tutorial/Others/General/Que22late.dart';
 
 import 'Que01.dart';
 import 'Que02.dart';
@@ -77,6 +78,7 @@ class HomeGeneral extends StatelessWidget {
               ButtonsCode(Que20NullSafety11(),
                   "lib/Others/General/Que20NullSafety.dart", "Null Safety?"),
               ButtonsCode(Que2111(), "lib/Others/General/Que21.dart", "TODO"),
+              ButtonsCode(Que22(), "lib/Others/General/Que22late.dart", "Explain two kinds of Late"),
             ],
           ),
         ))),

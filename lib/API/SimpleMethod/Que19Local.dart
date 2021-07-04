@@ -12,7 +12,8 @@ class Que19Local extends StatefulWidget {
 }
 
 class _Que19LocalState extends State<Que19Local> {
-  List listResponse = [];
+   final String image1 = "assets/help/API/response.jpg";
+ List listResponse = [];
   void fetchData() async {
     String response;
     response = await rootBundle.loadString('assets/localJson/User.json');

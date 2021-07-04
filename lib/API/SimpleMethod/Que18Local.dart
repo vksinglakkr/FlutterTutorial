@@ -10,6 +10,7 @@ class Que18Local extends StatefulWidget {
 }
 
 class Que18LocalState extends State<Que18Local> {
+  final String image1 = "assets/help/API/response.jpg";
   @override
   Widget build(BuildContext context) {
     return Scaffold(

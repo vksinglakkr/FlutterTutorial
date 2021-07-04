@@ -27,7 +27,8 @@ class HomePage4 extends StatefulWidget {
 }
 
 class _HomePage4State extends State<HomePage4> {
-  final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
+   final String image1 = "assets/help/API/response.jpg";
+ final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
   var title;
 
   Future fetchData() async {

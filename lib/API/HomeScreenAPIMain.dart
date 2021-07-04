@@ -18,18 +18,56 @@ class HomeMainAPI extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Step1Basic(),
-                      "lib/API/SimpleMethod/BasicNotes.dart", "Basic Notes"),
-                  ButtonsCode(
-                      HomeAPI(),
-                      "lib/API/SimpleMethod/HomeScreen_API.dart",
-                      "json.decode"),
-                  ButtonsCode(HomeAPIModel(),
-                      "lib/API/models/HomeScreen_API.dart", "models"),
-                  ButtonsCode(HomeAPIgetX(), "lib/API/getX/HomeScreen_API.dart",
-                      "getX"),
-                  ButtonsCode(HomeAPIgetX(), "lib/API/getX/HomeScreen_API.dart",
-                      "\$.Ajex"),
+                  ElevatedButton(
+                    child: Text('Basic Notes',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => Step1Basic(),
+                        )),
+                  ),
+                  ElevatedButton(
+                    child: Text('json.decode',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => HomeAPI(),
+                        )),
+                  ),
+                  ElevatedButton(
+                    child: Text('models',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => HomeAPIModel(),
+                        )),
+                  ),
+                  ElevatedButton(
+                    child: Text('getx',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => HomeAPIgetX(),
+                        )),
+                  ),
+                  ElevatedButton(
+                    child: Text('\$.Ajex',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => HomeAPIgetX(),
+                        )),
+                  ),
                 ],
               ),
             ),

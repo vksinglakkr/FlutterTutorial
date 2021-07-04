@@ -32,6 +32,7 @@ class Que09a extends StatefulWidget {
 }
 
 class _Que09aState extends State<Que09a> {
+  final String image1 = "assets/help/API/response.jpg";
   final String url1 =
       "https://medium.com/flutter-community/how-to-parse-json-in-flutter-for-beginners-8074a68d7a79";
   var user = User(json.decode(

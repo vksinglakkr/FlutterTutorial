@@ -1,4 +1,6 @@
+// lib/ListView/Que50Search.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que50Search extends StatelessWidget {
   @override
@@ -52,6 +54,9 @@ class ListSearchState extends State<ListSearch> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("List View \nSearch")),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(
         children: <Widget>[
           Padding(

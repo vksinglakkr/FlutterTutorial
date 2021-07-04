@@ -11,7 +11,8 @@ class Que11 extends StatefulWidget {
 }
 
 class _Que11State extends State<Que11> {
-  final String url1 =
+   final String image1 = "assets/help/API/response.jpg";
+ final String url1 =
       "https://www.geeksforgeeks.org/implementing-rest-api-in-flutter/";
   final String video1 =
       "MEqUx3_KrFo"; // best video for Que11 i.e. of the growing developers

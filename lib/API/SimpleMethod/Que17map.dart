@@ -11,7 +11,8 @@ class Que17 extends StatefulWidget {
 }
 
 class _Que17State extends State<Que17> {
-  Map mapResponse;
+   final String image1 = "assets/help/API/response.jpg";
+ Map mapResponse;
   List listOfFacts;
 
   Future fetchData() async {

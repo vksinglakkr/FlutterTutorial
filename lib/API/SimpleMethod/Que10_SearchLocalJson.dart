@@ -10,7 +10,8 @@ class Que10Search extends StatefulWidget {
 }
 
 class Que10SearchState extends State<Que10Search> {
-  List persons = [];
+   final String image1 = "assets/help/API/response.jpg";
+ List persons = [];
   List original = [];
   TextEditingController txtQuery = new TextEditingController();
 

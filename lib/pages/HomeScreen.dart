@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/API/HomeScreenAPIMain.dart';
 import 'package:flutter_tutorial/Buttons/HomeScreen_Buttons.dart';
+import 'package:flutter_tutorial/Dropdown/HomeScreen_Dropdown.dart';
 import 'package:flutter_tutorial/Expanded/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/HomeScreenOthers.dart';
 import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
@@ -111,6 +112,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) => HomeBox(),
+                    ))),
+            ElevatedButton(
+                child: Text('Dropdown',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeDropdown(),
                     ))),
             ElevatedButton(
                 child: Text('Buttons',

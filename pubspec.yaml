@@ -124,6 +124,11 @@ flutter:
     - lib/API/models/Assignment3/
     - lib/API/models/Assignment4/
     - lib/API/models/Assignment5/
+    - lib/API/models/Assignment6/
+    - lib/API/models/Assignment7/
+    - lib/API/models/Assignment8/
+    - lib/API/models/Assignment9/
+    - lib/API/models/Assignment10/
     - lib/TextField/
     - lib/TextFormField/
     - lib/Transform/

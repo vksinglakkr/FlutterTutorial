@@ -15,7 +15,8 @@ class _Que16State extends State<Que16> {
 
   final String video1 = "1put849Lhqg"; // best video for Que16
 
-  List listResponse;
+  Map listResponse;
+  List listBorder;
 
   Future fetchData() async {
     http.Response response;
@@ -23,6 +24,7 @@ class _Que16State extends State<Que16> {
     if (response.statusCode == 200) {
       setState(() {
         listResponse = json.decode(response.body);
+        listBorder = listResponse['borders'];
       });
     }
   }

@@ -1,6 +1,6 @@
 // ../lib/API/SimpleMethod/Que08_LoadLocalJson.dart
 import 'dart:convert';
-
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -10,8 +10,8 @@ class Que08Local extends StatefulWidget {
 }
 
 class Que08LocalState extends State<Que08Local> {
-   final String image1 = "assets/help/API/response.jpg";
- List data;
+  final String image1 = "assets/help/API/response.jpg";
+  List data;
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +23,9 @@ class Que08LocalState extends State<Que08Local> {
         child: Center(
           // Use future builder and DefaultAssetBundle to load the local JSON file
           child: FutureBuilder(
-              future: DefaultAssetBundle.of(context)
-                  .loadString('assets/localJson/starwars_data.json'),
+              // future: DefaultAssetBundle.of(context) //rootBundle
+              future:
+                  rootBundle.loadString('assets/localJson/starwars_data.json'),
               builder: (context, snapshot) {
                 // Decode the JSON
                 var convertedJsonData = json.decode(snapshot.data.toString());

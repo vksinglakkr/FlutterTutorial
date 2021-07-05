@@ -5,6 +5,11 @@ import 'package:flutter_tutorial/API/models/Assignment2/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment3/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment4/HomePage.dart';
 import 'package:flutter_tutorial/API/models/Assignment5/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment6/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment7/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment8/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment9/HomePage.dart';
+import 'package:flutter_tutorial/API/models/Assignment10/HomePage.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAPIModel extends StatelessWidget {
@@ -19,6 +24,26 @@ class HomeAPIModel extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
+                  ButtonsCode(
+                      HomePage6(),
+                      "lib/API/models/Assignment6/HomePage.dart",
+                      "Local File \n1.json"),
+                  ButtonsCode(
+                      HomePage7(),
+                      "lib/API/models/Assignment7/HomePage.dart",
+                      "Local File \n2.json"),
+                  ButtonsCode(
+                      HomePage8(),
+                      "lib/API/models/Assignment8/HomePage.dart",
+                      "Local File \n3.json"),
+                  ButtonsCode(
+                      HomePage9(),
+                      "lib/API/models/Assignment9/HomePage.dart",
+                      "Local File \n4.json"),
+                  ButtonsCode(
+                      HomePage10(),
+                      "lib/API/models/Assignment10/HomePage.dart",
+                      "Local File \n5.json"),
                   ButtonsCode(
                       HomePage1(),
                       "lib/API/models/Assignment1/HomePage.dart",

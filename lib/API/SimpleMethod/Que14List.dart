@@ -1,4 +1,4 @@
-//lib\API\SimpleMethod\Que14Map.dart
+//lib\API\SimpleMethod\Que14List.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -11,8 +11,8 @@ class Que14 extends StatefulWidget {
 }
 
 class _Que14State extends State<Que14> {
-   final String image1 = "assets/help/API/response.jpg";
- final String url1 = "https://www.javatpoint.com/flutter-rest-api";
+  final String image1 = "assets/help/API/response.jpg";
+  final String url1 = "https://www.javatpoint.com/flutter-rest-api";
   final String video1 =
       "MEqUx3_KrFo"; // best video for Que14 i.e. of the growing developers
 

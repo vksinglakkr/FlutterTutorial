@@ -1,4 +1,4 @@
-//lib\API\SimpleMethod\Que15List.dart
+//lib\API\SimpleMethod\Que15.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

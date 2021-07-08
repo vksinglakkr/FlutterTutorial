@@ -19,9 +19,8 @@ class Que06 extends StatelessWidget {
                 SizedBox(
                   child: ElevatedButton(
                       onPressed: () {},
-                      child: Text(
-                        "SizedBox \nwidth:, height:",
-                      )),
+                      child: Text("SizedBox \nwidth:, height:",
+                          style: TextStyle(fontSize: 10))),
                 ),
               ],
             ),
@@ -51,9 +50,14 @@ class Que06 extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {},
                 child: Text(
-                    "FractionallySizedBox \nwidthFactor:, heightFactor:",
+                    "LimitedBox\nmaxWidth:, maxHeight:, minHeight:, minWidth:",
                     style: TextStyle(fontSize: 12))),
             SizedBox(height: 10),
+            ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                    "OverflowBox \nmaxheight:, minHeight:, maxWidth:, minWidth:",
+                    style: TextStyle(fontSize: 12))),
           ],
         ),
         bottomNavigationBar:

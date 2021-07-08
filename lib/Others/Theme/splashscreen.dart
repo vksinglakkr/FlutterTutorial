@@ -30,7 +30,7 @@ class Splash extends StatelessWidget {
             headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
             bodyText1: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
             bodyText2: TextStyle(
-                fontSize: 16.0, fontWeight: FontWeight.bold, color: Colors.red),
+                fontSize: 16.0, fontWeight: FontWeight.bold, color:Colors.black,),
           ),
         ),
         home: SafeArea(

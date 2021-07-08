@@ -2,11 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-import 'Box_ConstrainedBox/HomeScreen_Constrained.dart';
 import 'Box_DecoratedBox/HomeScreen_Decorated.dart';
 import 'Box_RotatedBox/HomeScreen_Rotated.dart';
 import 'Box_FittedBox/HomeScreen_Fitted.dart';
-import 'Box_FractionallySizedBox/HomeScreen_FractionallySized.dart';
 import 'Box_SizedBox/HomeScreen_Sized.dart';
 
 class HomeBox extends StatelessWidget {
@@ -25,30 +23,16 @@ class HomeBox extends StatelessWidget {
                     margin: EdgeInsets.all(2),
                     height: 32,
                     child: ElevatedButton(
-                        child: Text('Sized Box',
+                        child: Text(
+                            'SizedBox,FractionallySizedBox,OverflowBox..',
                             style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
+                                fontSize: 15, fontWeight: FontWeight.bold)),
 //                      color: Colors.orangeAccent,
                         onPressed: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
                                   builder: (context) => HomeSized()));
-                        }),
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(2),
-                    height: 32,
-                    child: ElevatedButton(
-                        child: Text('Constrained Box',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => HomeConstrained()));
                         }),
                   ),
                   Container(
@@ -79,22 +63,6 @@ class HomeBox extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => HomeFitted()));
-                        }),
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(2),
-                    height: 32,
-                    child: ElevatedButton(
-                        child: Text('Fractionally Sized Box',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      HomeFractionallySized()));
                         }),
                   ),
                   Container(

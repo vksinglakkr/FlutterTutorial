@@ -32,7 +32,7 @@ class HomeSized extends StatelessWidget {
                   ButtonsCode(Que05(), "lib/Box/Box_SizedBox/Que05.dart",
                       "SizedBox.fromSize"),
                   ButtonsCode(Que07(), "lib/Box/Box_SizedBox/Que07.dart",
-                      "SizedBox.shrink"),
+                      "SizedBox.shrink / ConstrainedBox"),
                   ButtonsCode(Que06(), "lib/Box/Box_SizedBox/Que06.dart",
                       "Different Boxes"),
                   ButtonsCode(Que08(), "lib/Box/Box_SizedBox/Que08.dart",

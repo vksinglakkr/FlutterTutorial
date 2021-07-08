@@ -1,4 +1,4 @@
-//lib\API\SimpleMethod\Que06Map.dart
+//lib\API\SimpleMethod\Que06.dart
 // example of a) MAP  b) List within Map
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

@@ -1,23 +1,35 @@
-//import 'dart:convert';
+// To parse this JSON data, do
+//
+//     final five = fiveFromJson(jsonString);
 
-class Class {
-  int id;
-  String name;
-  int level;
-  Class({this.id, this.name, this.level});
+import 'dart:convert';
 
-  factory Class.fromJson(Map<String, dynamic> json) {
-    return Class(
-        id: json['id'], name: json['class_name'], level: json['level']);
-  }
-}
+List<Five> fiveFromJson(String str) =>
+    List<Five>.from(json.decode(str).map((x) => Five.fromJson(x)));
+
+String fiveToJson(List<Five> data) =>
+    json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class Five {
-  List<Class> classes;
-  Five({this.classes});
-  factory Five.fromJson(List<dynamic> json) {
-    List<Class> classes = new List<Class>();
-    classes = json.map((c) => Class.fromJson(c)).toList();
-    return Five(classes: classes);
-  }
+  Five({
+    this.id,
+    this.className,
+    this.level,
+  });
+
+  int id;
+  String className;
+  int level;
+
+  factory Five.fromJson(Map<String, dynamic> json) => Five(
+        id: json["id"],
+        className: json["class_name"],
+        level: json["level"],
+      );
+
+  Map<String, dynamic> toJson() => {
+        "id": id,
+        "class_name": className,
+        "level": level,
+      };
 }

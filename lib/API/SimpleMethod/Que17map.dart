@@ -1,4 +1,4 @@
-//lib\API\SimpleMethod\Que11Map.dart
+//lib\API\SimpleMethod\Que17Map.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -11,8 +11,8 @@ class Que17 extends StatefulWidget {
 }
 
 class _Que17State extends State<Que17> {
-   final String image1 = "assets/help/API/response.jpg";
- Map mapResponse;
+  final String image1 = "assets/help/API/response.jpg";
+  Map mapResponse;
   List listOfFacts;
 
   Future fetchData() async {

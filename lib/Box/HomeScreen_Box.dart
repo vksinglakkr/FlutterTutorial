@@ -7,7 +7,6 @@ import 'Box_DecoratedBox/HomeScreen_Decorated.dart';
 import 'Box_RotatedBox/HomeScreen_Rotated.dart';
 import 'Box_FittedBox/HomeScreen_Fitted.dart';
 import 'Box_FractionallySizedBox/HomeScreen_FractionallySized.dart';
-import 'Box_LimitedBox/HomeScreen_Limited.dart';
 import 'Box_SizedBox/HomeScreen_Sized.dart';
 
 class HomeBox extends StatelessWidget {
@@ -96,21 +95,6 @@ class HomeBox extends StatelessWidget {
                               MaterialPageRoute(
                                   builder: (context) =>
                                       HomeFractionallySized()));
-                        }),
-                  ),
-                  Container(
-                    margin: EdgeInsets.all(2),
-                    height: 32,
-                    child: ElevatedButton(
-                        child: Text('Limited Box',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
-//                      color: Colors.orangeAccent,
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => HomeLimited()));
                         }),
                   ),
                   Container(

@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/FlutterLogo/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Future/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/PersistKey/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Positioned/HomeScreen.dart';
@@ -171,7 +172,7 @@ class HomeScreenOthers extends StatelessWidget {
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => AnimatedContainerDemo(),
+                    builder: (BuildContext context) => MyApp(),
                   )),
             ),
             ElevatedButton(
@@ -183,6 +184,15 @@ class HomeScreenOthers extends StatelessWidget {
                     builder: (BuildContext context) => HomePositioned(),
                   )),
             ),
+            ElevatedButton(
+                child: Text('FlutterLogo',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeLogo(),
+                    ))),
             ElevatedButton(
                 child: Text('Toast',
                     style:

@@ -1,0 +1,58 @@
+[
+	{
+		"id" : 1,
+   		"name" : "Vinod Singla",
+   		"level" : "DIO",
+		"gender": "Male",
+		"address": "Sector 7, Kurukshetra"
+	},
+	{
+		"id" : 2,
+   		"name" : "Bharti Narwal",
+   		"level" : "ADIO",
+		"gender": "Female",
+		"address": "Sector 7, Kurukshetra"
+	},
+	{
+		"id" : 3,
+   		"name" : "Rajeev",
+   		"level" : "Programmer",
+		"gender": "Male",
+		"address": "Jind"
+	},
+	{
+		"id" : 4,
+   		"name" : "Ashish",
+   		"level" : "JP",
+		"gender": "Male",
+		"address": "Sector 7, Kurukshetra"
+	},
+	{
+		"id" : 5,
+   		"name" : "Vinod Singla",
+   		"level" : "DIO",
+		"gender": "Male",
+		"address": "Sector 7, Kurukshetra"
+	},
+	{
+		"id" : 6,
+   		"name" : "Vinod Singla",
+   		"level" : "DIO",
+		"gender": "Male",
+		"address": "Sector 7, Kurukshetra"
+	},
+	{
+		"id" : 7,
+   		"name" : "Vinod Singla",
+   		"level" : "DIO",
+		"gender": "Male",
+		"address": "Sector 7, Kurukshetra"
+	},
+	{
+		"id" : 8,
+   		"name" : "Vinod Singla",
+   		"level" : "DIO",
+		"gender": "Male",
+		"address": "Sector 7, Kurukshetra"
+	},
+]

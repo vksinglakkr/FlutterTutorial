@@ -60,6 +60,7 @@ class HomePage4 extends StatefulWidget {
 }
 
 class _HomePage4State extends State<HomePage4> {
+  final String image1 = "assets/help/API/API_weather_json.png";
   final String video1 = "ToPdSd42UKA"; //final for Assignment4 OpenWeather
   Future<Weather> futureData;
   @override

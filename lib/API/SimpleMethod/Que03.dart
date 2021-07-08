@@ -27,26 +27,17 @@ class HomePage3 extends StatefulWidget {
 }
 
 class _HomePage3State extends State<HomePage3> {
-    final String image1 = "assets/help/API/response.jpg";
-final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
-  var name;
-  var population;
-  var diameter;
+  final String image1 = "assets/help/API/response.jpg";
+  final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
+
+  Map convertedJsondata;
 
   Future fetchData() async {
     http.Response response = await http.get("https://swapi.dev/api/planets/3");
     if (response.statusCode == 200) {
-      var convertedJsondata = json.decode(response.body);
-//      var results = jsonDecode(response.body);
+      convertedJsondata = json.decode(response.body);
       setState(() {
-        // see the difference
-        // how to write
-        // having no bracket i.e. [{
-        // having only {}
-        // having both [] and {}
-        this.name = convertedJsondata['name'];
-        this.population = convertedJsondata['population'];
-        this.diameter = convertedJsondata['diameter'];
+        return convertedJsondata;
       });
     }
   }
@@ -54,7 +45,7 @@ final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
   @override
   void initState() {
     super.initState();
-    this.fetchData();
+    fetchData();
   }
 
   @override
@@ -72,16 +63,21 @@ final String video1 = "aIJU68Phi1w"; //final for Assignment6 OpenWeather
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(this.name != null ? this.name : 'Loading..'),
+              child: Text(convertedJsondata['name'] != null
+                  ? convertedJsondata['name']
+                  : 'Loading..'),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child:
-                  Text(this.population != null ? this.population : 'Loading..'),
+              child: Text(convertedJsondata['population'] != null
+                  ? convertedJsondata['population']
+                  : 'Loading..'),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text(this.diameter != null ? this.diameter : 'Loading..'),
+              child: Text(convertedJsondata['diameter'] != null
+                  ? convertedJsondata['diameter']
+                  : 'Loading..'),
             ), //"name":"Kurukshetra"
           ],
         ),

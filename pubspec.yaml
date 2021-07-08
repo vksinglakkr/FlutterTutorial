@@ -40,6 +40,8 @@ dependencies:
   shared_preferences: ^2.0.6
   pattern_formatter: ^2.0.0
   http: ^0.12.0+2
+  random_pk: ^0.0.3 
+#  Flutter package that gives a container with random color.
 #  cupertino_icons: ^1.0.0choco
 #  font_awesome_flutter: ^9.0.0
 
@@ -75,7 +77,6 @@ flutter:
     - lib/Box/Box_DecoratedBox/
     - lib/Box/Box_FittedBox/
     - lib/Box/Box_FractionallySizedBox/
-    - lib/Box/Box_LimitedBox/
     - lib/Box/Box_RotatedBox/
     - lib/Box/Box_SizedBox/
     - lib/Buttons/ElevatedButton/
@@ -129,6 +130,7 @@ flutter:
     - lib/API/models/Assignment8/
     - lib/API/models/Assignment9/
     - lib/API/models/Assignment10/
+    - lib/API/models/Assignment11/
     - lib/TextField/
     - lib/TextFormField/
     - lib/Transform/

@@ -49,7 +49,7 @@ class HomeMainAPI extends StatelessWidget {
                         )),
                   ),
                   ElevatedButton(
-                    child: Text('getx',
+                    child: Text('getx (pending)',
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () => Navigator.push(
@@ -59,7 +59,7 @@ class HomeMainAPI extends StatelessWidget {
                         )),
                   ),
                   ElevatedButton(
-                    child: Text('\$.Ajex',
+                    child: Text('\$.Ajex (pending)',
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold)),
                     onPressed: () => Navigator.push(

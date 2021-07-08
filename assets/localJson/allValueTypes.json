@@ -1,0 +1,17 @@
+{
+    "myString" : "Hello world",
+    "myNumber" : 42,
+    "myObject" : {
+        "name" : "Mary",
+        "age" : 30
+    },
+    "myArray" : [
+        "horse",
+        "cow",
+        "camel",
+        "sheep",
+        "goat"
+    ],
+    "myBoolean" : true,
+    "myValue" : null
+}

@@ -23,16 +23,10 @@ class _Que02State extends State<Que02> {
     //Step 1
     http.Response response = await http.get(newsUrl);
     if (response.statusCode == 200) {
-      // debugPrint(response.body); Step 1
       mapData = json.decode(response.body);
-      // instead of storing it through mapdat we can directly store it,
-      //convertedJsonData = json.decode(response.body)["articles"];
       setState(() {
         convertedJsonData = mapData["articles"];
       });
-      debugPrint(convertedJsonData.toString());
-      //See the output in DEBUG CONSOLE we get in STEP 1 & STEP 2
-      //in STEP 2 we only get the data } else {
     } else {
       return null;
     }

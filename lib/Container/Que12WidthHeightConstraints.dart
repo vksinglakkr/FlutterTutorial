@@ -23,7 +23,7 @@ class Que1211 extends StatelessWidget {
               child: Container(
                 color: Colors.red,
                 //   width: 200.0,
-                height: 200.0,
+                height: 50.0,
                 //media query
                 //width: double.infinity,
                 //width: MediaQuery.of(context).size, //error
@@ -40,9 +40,17 @@ class Que1211 extends StatelessWidget {
                 //     minWidth: 100.0),
                 //alignment: Alignment.topLeft,
                 child: Center(
-                    child: Text("NIC Kurukshetra",
-                        style: TextStyle(fontSize: 30.0))),
+                    child: Text("Height: 50.0",
+                        style: TextStyle(color: Colors.black, fontSize: 16.0))),
               ),
+            ),
+            Container(
+              color: Colors.blue,
+              constraints: BoxConstraints(maxHeight: 100.0, minHeight: 50.0),
+              child: Center(
+                  child: Text(
+                      "constraints: BoxConstraints(maxHeight: 100.0, minHeight: 50.0)",
+                      style: TextStyle(color: Colors.black, fontSize: 16.0))),
             ),
           ],
         ),

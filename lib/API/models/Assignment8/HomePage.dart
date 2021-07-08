@@ -15,6 +15,8 @@ class HomePage8 extends StatefulWidget {
 class _HomePage8State extends State<HomePage8> {
   final String url1 = "https://flutter25.com/#content";
   final String video1 = "RUCIt_Lske4";
+  final String image1 = "assets/help/API/API_3_json.png";
+
   Three threeData;
   Future getData() async {
     String jsonString = await rootBundle.loadString("assets/localJson/3.json");
@@ -35,7 +37,7 @@ class _HomePage8State extends State<HomePage8> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: WidgetAppBar("Local Json File \n3.json"),
+        title: WidgetAppBar("Local, Map->Map (3.json)"),
       ),
       body: Center(
         child: Container(

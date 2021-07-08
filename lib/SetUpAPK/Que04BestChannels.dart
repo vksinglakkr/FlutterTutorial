@@ -26,6 +26,7 @@ class Que0411 extends StatelessWidget {
             Text("https://github.com/nisrulz/flutter-examples"),
             Text("CodeX i checked Textfield"),
             Text("https://flutter-tutorial.com/"),
+            Text("Programming Addict"), //checked for Display data from a Josn
             Text("RetroPortal Studio"),
             Text("flutter25.com"),
             Text("Abubakar Shaikh i checked for Future builder"),

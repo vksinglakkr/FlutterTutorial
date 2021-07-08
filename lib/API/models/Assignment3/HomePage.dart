@@ -1,9 +1,9 @@
 //  \lib/API/models/Assignment3/HomePage.dart
 
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/API/models/Assignment3/album.dart';
-import 'package:flutter_tutorial/API/models/Assignment3/Services.dart';
 //import 'dart:async';
 //import 'dart:convert'; // to convert the http response in JSON format
 
@@ -31,8 +31,25 @@ class HomePage3 extends StatefulWidget {
 }
 
 class _HomePage3State extends State<HomePage3> {
+  final String image1 = "assets/help/API/API_album_json.png";
   final String video1 = "uqkTZ0POP10"; //final for Assignment3 FutureBuilder
   // Future<Album> _convertedJsonData;
+  Future<Album> fetchData() async {
+    try {
+      http.Response response =
+          await http.get('https://jsonplaceholder.typicode.com/albums/1');
+      if (response.statusCode == 200) {
+        // final List<User> user = userFromJson(response.body);
+        // return user;
+        return albumFromJson(response.body);
+      } else {
+        return throw Exception('Failed to load ...');
+      }
+    } catch (e) {
+      return throw Exception('Failed to load ...');
+    }
+  }
+
   @override
 //   void initState() {
 //     super.initState();
@@ -51,7 +68,7 @@ class _HomePage3State extends State<HomePage3> {
       ),
       body: Center(
         child: FutureBuilder<Album>(
-            future: Services.fetchData(),
+            future: fetchData(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 return Text(snapshot.data.title);

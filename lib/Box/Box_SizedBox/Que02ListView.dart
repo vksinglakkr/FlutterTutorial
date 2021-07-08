@@ -22,49 +22,47 @@ class _State extends State<Que02Sized11> {
         body: Column(
           children: [
             Center(
-              child: Container(
-                child: SizedBox(
-                  height: 160.0,
-                  child: ListView(
-                    scrollDirection: Axis.horizontal,
-                    children: <Widget>[
-                      Container(
-                        width: 160.0,
-                        color: Colors.red,
-                        child: Center(
-                          child: Text("Item 1"),
-                        ),
+              child: SizedBox(
+                height: 160.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      width: 160.0,
+                      color: Colors.red,
+                      child: Center(
+                        child: Text("Item 1"),
                       ),
-                      Container(
-                        width: 160.0,
-                        color: Colors.blue,
-                        child: Center(
-                          child: Text("Item 2"),
-                        ),
+                    ),
+                    Container(
+                      width: 160.0,
+                      color: Colors.blue,
+                      child: Center(
+                        child: Text("Item 2"),
                       ),
-                      Container(
-                        width: 160.0,
-                        color: Colors.green,
-                        child: Center(
-                          child: Text("Item 3"),
-                        ),
+                    ),
+                    Container(
+                      width: 160.0,
+                      color: Colors.green,
+                      child: Center(
+                        child: Text("Item 3"),
                       ),
-                      Container(
-                        width: 160.0,
-                        color: Colors.yellow,
-                        child: Center(
-                          child: Text("Item 4"),
-                        ),
+                    ),
+                    Container(
+                      width: 160.0,
+                      color: Colors.yellow,
+                      child: Center(
+                        child: Text("Item 4"),
                       ),
-                      Container(
-                        width: 160.0,
-                        color: Colors.orange,
-                        child: Center(
-                          child: Text("Item 5"),
-                        ),
+                    ),
+                    Container(
+                      width: 160.0,
+                      color: Colors.orange,
+                      child: Center(
+                        child: Text("Item 5"),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),

@@ -7,6 +7,8 @@ import 'package:flutter_tutorial/Row/Que07.dart';
 import 'package:flutter_tutorial/Row/Que08.dart';
 import 'package:flutter_tutorial/Row/Que09.dart';
 import 'package:flutter_tutorial/Row/Que10.dart';
+import 'package:flutter_tutorial/Row/Que11.dart';
+import 'package:flutter_tutorial/Row/Que12.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01Basic.dart';
 import 'Que02Expanded.dart';
@@ -37,8 +39,11 @@ class HomeRow extends StatelessWidget {
                   "Flexible with Loose Fit (Less space required)"),
               ButtonsCode(
                   Que09(), "lib/Row/Que09.dart", "Flexible with Tight Fit"),
-              ButtonsCode(Que10(), "lib/Row/Que09.dart",
+              ButtonsCode(Que10(), "lib/Row/Que10.dart",
                   "Expanded (Shorthand for Flexible with Tight Fit"),
+              ButtonsCode(Que11(), "lib/Row/Que11.dart",
+                  "SingleChildScrollView & Expanded don't come together"),
+              ButtonsCode(Que12(), "lib/Row/Que12.dart", "Text Overflow"),
             ],
           ),
         ))),

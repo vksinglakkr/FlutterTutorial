@@ -9,16 +9,19 @@ class Que07 extends StatelessWidget {
         "https://itnext.io/flutter-responsive-apps-flexible-vs-expanded-ff8cc92b468f";
 
     return Scaffold(
+      appBar: AppBar(
+          title:
+              WidgetAppBar("Flexible with Loose Fit\nRequired space lesser")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
               color: Colors.lightBlue,
-              height: 400,
+              height: 300,
               width: double.infinity,
               child: Center(
                   child: Text(
-                '400.0',
+                '300.0',
                 style: TextStyle(fontSize: 40.0),
               ))),
           Flexible(

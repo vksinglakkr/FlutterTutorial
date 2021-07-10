@@ -7,17 +7,20 @@ class Que10 extends StatelessWidget {
       "https://itnext.io/flutter-responsive-apps-flexible-vs-expanded-ff8cc92b468f";
   @override
   Widget build(BuildContext context) {
+//    Expanded (Shorthand for Flexible with Tight Fit
     return Scaffold(
+      appBar:
+          AppBar(title: WidgetAppBar("Expanded \n(Shorthand of Tight Fit)")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
               color: Colors.lightBlue,
-              height: 400,
+              height: 300,
               width: double.infinity,
               child: Center(
                   child: Text(
-                '400.0',
+                '300.0',
                 style: TextStyle(fontSize: 40.0),
               ))),
           Expanded(

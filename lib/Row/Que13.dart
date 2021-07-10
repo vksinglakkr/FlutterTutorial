@@ -1,27 +1,32 @@
-// /lib/Row/Que01Basic.dart
+// /lib/Row/Que13.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+import 'package:random_pk/random_pk.dart';
 
 // Inspired by bizz84's layout demo:
 // https://github.com/bizz84/layout-demo-flutter
-class Que01Basic extends StatefulWidget {
+class Que13 extends StatefulWidget {
   @override
-  _Que01BasicState createState() => _Que01BasicState();
+  _Que13State createState() => _Que13State();
 }
 
-class _Que01BasicState extends State<Que01Basic> {
-  static const kElements = <Widget>[
-    Icon(
-      Icons.access_alarm,
-      size: 80,
+class _Que13State extends State<Que13> {
+  final kElements = <Widget>[
+    RandomContainer(
+      width: 50,
+      height: 100,
     ),
-    Icon(
-      Icons.account_circle,
-      size: 100,
+    RandomContainer(
+      width: 60,
+      height: 80,
     ),
-    Icon(
-      Icons.save,
-      size: 120,
+    RandomContainer(
+      width: 70,
+      height: 60,
+    ),
+    RandomContainer(
+      width: 80,
+      height: 40,
     ),
   ];
 
@@ -34,29 +39,31 @@ class _Que01BasicState extends State<Que01Basic> {
   Widget build(BuildContext context) {
     final _appbarButtons = _getBottomBar();
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Properties Ex.1")),
+      appBar: AppBar(title: WidgetAppBar("Properties Ex2.")),
       body: _buildBody(),
       bottomNavigationBar: _appbarButtons,
       floatingActionButton: WidgetFab(),
     );
   }
 
-  Widget _buildBody() => Container(
-        margin: EdgeInsets.all(10),
-        color: Colors.grey.shade400,
-        child: _isRow
-            ? Row(
-                mainAxisAlignment: _mainAxisAlignment,
-                crossAxisAlignment: _crossAxisAlignment,
-                mainAxisSize: _mainAxisSize,
-                children: kElements,
-              )
-            : Column(
-                mainAxisAlignment: _mainAxisAlignment,
-                crossAxisAlignment: _crossAxisAlignment,
-                mainAxisSize: _mainAxisSize,
-                children: kElements,
-              ),
+  Widget _buildBody() => Center(
+        child: Container(
+          margin: EdgeInsets.all(10),
+          color: Colors.grey.shade300,
+          child: _isRow
+              ? Row(
+                  mainAxisAlignment: _mainAxisAlignment,
+                  crossAxisAlignment: _crossAxisAlignment,
+                  mainAxisSize: _mainAxisSize,
+                  children: kElements,
+                )
+              : Column(
+                  mainAxisAlignment: _mainAxisAlignment,
+                  crossAxisAlignment: _crossAxisAlignment,
+                  mainAxisSize: _mainAxisSize,
+                  children: kElements,
+                ),
+        ),
       );
 
   Widget _getBottomBar() {

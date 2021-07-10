@@ -18,7 +18,7 @@ class QueBottom extends StatefulWidget {
 
 class _QueBottomState extends State<QueBottom> {
   int _selectedIndex = 0;
-  
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -113,7 +113,7 @@ class MyAppImage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: WidgetAppBar("")),
-        body: Container(child: Image.asset(this.image1)),
+        body: Center(child: Container(child: Image.asset(this.image1))),
         floatingActionButton: WidgetFab(),
       ),
     );
@@ -129,7 +129,6 @@ class WidgetFab extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       tooltip: "Go Back",
-      
       onPressed: () {
         Navigator.pop(context);
       },

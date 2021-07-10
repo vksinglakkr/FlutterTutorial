@@ -1,28 +1,19 @@
-// /lib/Row/Que01Basic.dart
+// /lib/Row/Que14.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 // Inspired by bizz84's layout demo:
 // https://github.com/bizz84/layout-demo-flutter
-class Que01Basic extends StatefulWidget {
+class Que14 extends StatefulWidget {
   @override
-  _Que01BasicState createState() => _Que01BasicState();
+  _Que14State createState() => _Que14State();
 }
 
-class _Que01BasicState extends State<Que01Basic> {
+class _Que14State extends State<Que14> {
   static const kElements = <Widget>[
-    Icon(
-      Icons.access_alarm,
-      size: 80,
-    ),
-    Icon(
-      Icons.account_circle,
-      size: 100,
-    ),
-    Icon(
-      Icons.save,
-      size: 120,
-    ),
+    Icon(Icons.stars, size: 50.0),
+    Icon(Icons.stars, size: 100.0),
+    Icon(Icons.stars, size: 50.0),
   ];
 
   bool _isRow = true;
@@ -34,7 +25,7 @@ class _Que01BasicState extends State<Que01Basic> {
   Widget build(BuildContext context) {
     final _appbarButtons = _getBottomBar();
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("Properties Ex.1")),
+      appBar: AppBar(title: WidgetAppBar("Properties Ex.3")),
       body: _buildBody(),
       bottomNavigationBar: _appbarButtons,
       floatingActionButton: WidgetFab(),
@@ -42,7 +33,6 @@ class _Que01BasicState extends State<Que01Basic> {
   }
 
   Widget _buildBody() => Container(
-        margin: EdgeInsets.all(10),
         color: Colors.grey.shade400,
         child: _isRow
             ? Row(

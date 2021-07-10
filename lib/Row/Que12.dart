@@ -8,6 +8,9 @@ class Que12 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: WidgetAppBar("Overflow (Text) Ex.1")),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(
         children: [
           Spacer(flex: 1),
@@ -110,12 +113,12 @@ class Que12 extends StatelessWidget {
               children: [
                 Expanded(
                   child: Container(
-                    height: 30,
+                    height: 80,
                     child: SingleChildScrollView(
                       scrollDirection: Axis.vertical,
                       child: Text(
                           "Kurukshetra has been described in the first verse of Shrimadbhagvadgita, in the form of Dharmakshetra Kurukshetra. Kurukshetra is a place of great historical and religious significance which is seen with reverence in all the countries due to its association with Vedas and Vedic culture. This is the land on which the battle of Mahabharata was fought and Lord Krishna gave Arjuna a fair knowledge of the philosophy of karma in the Jyotisar. ",
-                          style: TextStyle(fontSize: 12.0)),
+                          style: TextStyle(fontSize: 16.0)),
                     ),
                   ),
                 ),
@@ -125,8 +128,6 @@ class Que12 extends StatelessWidget {
           Spacer(flex: 1),
         ],
       ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       floatingActionButton: WidgetFab(),
     );
   }

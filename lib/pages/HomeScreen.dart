@@ -222,7 +222,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   )),
             ),
             ElevatedButton(
-              child: Text('Row',
+              child: Text('Row /\nColumn',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,

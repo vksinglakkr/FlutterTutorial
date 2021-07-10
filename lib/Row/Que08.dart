@@ -8,16 +8,18 @@ class Que08 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          title: WidgetAppBar("Flexible with Loose Fit\nLess space required")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
               color: Colors.lightBlue,
-              height: 400,
+              height: 300,
               width: double.infinity,
               child: Center(
                   child: Text(
-                '400.0',
+                '300.0',
                 style: TextStyle(fontSize: 40.0),
               ))),
           Flexible(

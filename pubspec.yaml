@@ -106,6 +106,7 @@ flutter:
     - lib/Others/Material/
     - lib/models/
     - lib/Others/Opacity/
+    - lib/Others/Wrap/
     - lib/Padding/
     - lib/Others/Placeholder/
     - lib/Others/Positioned/

@@ -23,20 +23,16 @@ class Que0811 extends StatelessWidget {
         ),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            TabBarView(
-              children: myTabs.map((Tab tab) {
-                final String label = tab.text.toLowerCase();
-                return Center(
-                  child: Text(
-                    'This is the $label tab',
-                    style: const TextStyle(fontSize: 36),
-                  ),
-                );
-              }).toList(),
-            ),
-          ],
+        body: TabBarView(
+          children: myTabs.map((Tab tab) {
+            final String label = tab.text.toLowerCase();
+            return Center(
+              child: Text(
+                'This is the $label tab',
+                style: const TextStyle(fontSize: 36),
+              ),
+            );
+          }).toList(),
         ),
         floatingActionButton: WidgetFab(),
       ),

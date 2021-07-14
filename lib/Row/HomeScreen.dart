@@ -11,6 +11,7 @@ import 'package:flutter_tutorial/Row/Que10.dart';
 import 'package:flutter_tutorial/Row/Que11.dart';
 import 'package:flutter_tutorial/Row/Que12.dart';
 import 'package:flutter_tutorial/Row/Que13.dart';
+import 'package:flutter_tutorial/Row/Que15.dart';
 import 'package:flutter_tutorial/Row/Que14.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que02Expanded.dart';
@@ -43,7 +44,8 @@ class HomeRow extends StatelessWidget {
                 ButtonsCode(
                     Que06(), "lib/Row/Que06.dart", "Unbounded (TextField)"),
                 ButtonsCode(Que07(), "lib/Row/Que07.dart", "Loose Fit Ex.1"),
-                ButtonsCode(Que08(), "lib/Row/Que08.dart", "Loose Fit Ex.2"),
+                ButtonsCode(Que15(), "lib/Row/Que15.dart", "Loose Fit Ex.2"),
+                ButtonsCode(Que08(), "lib/Row/Que08.dart", "Loose Fit Ex.3"),
                 ButtonsCode(Que09(), "lib/Row/Que09.dart", "Tight Fit"),
                 ButtonsCode(Que10(), "lib/Row/Que10.dart", "Expanded Ex.1"),
                 ButtonsCode(Que11(), "lib/Row/Que11.dart", "Expanded Ex.2"),

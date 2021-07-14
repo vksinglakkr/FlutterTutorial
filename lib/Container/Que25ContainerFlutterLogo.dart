@@ -14,23 +14,19 @@ class Que2511 extends StatelessWidget {
         appBar: AppBar(title: WidgetAppBar("Flutter Logo")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
+        body: Stack(
           children: [
-            Stack(
-              children: [
-                Positioned(
-                  top: 100,
-                  right: 50,
-                  child: Container(
-                    color: Colors.red,
-                    width: 200.0,
-                    height: 200.0,
-                    child: FlutterLogo(
-                      size: 50,
-                    ),
-                  ),
+            Positioned(
+              top: 100,
+              right: 50,
+              child: Container(
+                color: Colors.red,
+                width: 200.0,
+                height: 200.0,
+                child: FlutterLogo(
+                  size: 50,
                 ),
-              ],
+              ),
             ),
           ],
         ),

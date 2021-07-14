@@ -19,6 +19,8 @@ class HomeProperties extends StatelessWidget {
                   Que15(),
                   "lib/Others/Properties/Que15ShowProperties.dart",
                   "Properties (Row/Column)"),
+              Text(
+                  "Best Video for all https://www.youtube.com/watch?v=Kq5ZsygfWAc")
             ],
           ),
         ))),

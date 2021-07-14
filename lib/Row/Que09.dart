@@ -14,7 +14,7 @@ class Que09 extends StatelessWidget {
         children: <Widget>[
           Container(
               color: Colors.lightBlue,
-              height: 300,
+              height: 200,
               width: double.infinity,
               child: Center(
                   child: Text(
@@ -25,7 +25,7 @@ class Que09 extends StatelessWidget {
             fit: FlexFit.tight,
             child: Container(
                 color: Colors.green,
-                height: 150, // HEIGHT IGNORED BY FLEXIBLE WITH TIGHT FIT
+                height: 100, // HEIGHT IGNORED BY FLEXIBLE WITH TIGHT FIT
                 width: double.infinity,
                 child: Center(
                     child: Text(

@@ -9,7 +9,7 @@ class Que05 extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
-            Spacer(flex: 2),
+//            Spacer(flex: 2),
             ListView(
               shrinkWrap: true,
               children: <Widget>[
@@ -28,18 +28,51 @@ class Que05 extends StatelessWidget {
                 ),
               ],
             ),
-            ListView(
-//            shrinkWrap: true,
-              children: <Widget>[
-                ListTile(
-                  leading: Icon(Icons.map),
-                  title: Text('Map'),
-                ),
-                ListTile(
-                  leading: Icon(Icons.subway),
-                  title: Text('Subway'),
-                ),
-              ],
+            Expanded(
+              child: ListView(
+                //            shrinkWrap: true,
+                children: <Widget>[
+                  ListTile(
+                    leading: Icon(Icons.map),
+                    title: Text('Map'),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.subway),
+                    title: Text('Subway'),
+                  ),
+                ],
+              ),
+            ),
+            Flexible(
+              child: ListView(
+                //            shrinkWrap: true,
+                children: <Widget>[
+                  ListTile(
+                    leading: Icon(Icons.map),
+                    title: Text('Map'),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.subway),
+                    title: Text('Subway'),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 100,
+              child: ListView(
+                //            shrinkWrap: true,
+                children: <Widget>[
+                  ListTile(
+                    leading: Icon(Icons.map),
+                    title: Text('Map'),
+                  ),
+                  ListTile(
+                    leading: Icon(Icons.subway),
+                    title: Text('Subway'),
+                  ),
+                ],
+              ),
             ),
           ],
         ),

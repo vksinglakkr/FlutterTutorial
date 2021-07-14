@@ -71,7 +71,7 @@ class HomeContainer extends StatelessWidget {
                 "lib/Container/Que12WidthHeightConstraints.dart",
                 "Width, Height Constraints"),
             ButtonsCode(
-                Que1311(), "lib/Container/MediaQuery.dart", "Media Query"),
+                Que1311(), "lib/Container/Que13MediaQuery.dart", "Media Query"),
             ButtonsCode(
                 Que1411(),
                 "lib/Container/Que14checkwidthheightwithcolumn.dart",
@@ -80,7 +80,7 @@ class HomeContainer extends StatelessWidget {
                 Que1511(), "lib/Container/Que15Transform.dart", "Transform"),
             ButtonsCode(Que16a11(), "lib/Container/Que16a_Align.dart", "Align"),
             ButtonsCode(
-                Que1611(), "lib/Container\Que16alignment.dart", "Alignment"),
+                Que1611(), "lib/Container/Que16alignment.dart", "Alignment"),
             ButtonsCode(
                 Que1711(), "lib/Container/Que17padding.dart", "Padding"),
             ButtonsCode(Que1811(), "lib/Container/Que18color.dart", "Color"),
@@ -121,7 +121,7 @@ class HomeContainer extends StatelessWidget {
                 "Clickable Button-Container,InkWell,snackbar"),
             ButtonsCode(Que9711(), "lib/Container/Que97CustomContainer2.dart",
                 "Custom Container 2"),
-            ButtonsCode(Que9811(), "lib/Container\Que98AnimatedContainer.dart",
+            ButtonsCode(Que9811(), "lib/Container/Que98AnimatedContainer.dart",
                 "Animated Container"),
             ButtonsCode(Que9911(), "lib/Container/Que99AnimatedOpacity.dart",
                 "Animated Opacity"),

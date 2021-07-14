@@ -175,7 +175,7 @@ class HomeScreenOthers extends StatelessWidget {
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => MyApp(),
+                    builder: (BuildContext context) => DropDownDemo(),
                   )),
             ),
             ElevatedButton(

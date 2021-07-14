@@ -8,6 +8,7 @@ import 'package:flutter_tutorial/Dropdown/HomeScreen_Dropdown.dart';
 import 'package:flutter_tutorial/Expanded/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/HomeScreenOthers.dart';
 import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
+import 'package:flutter_tutorial/Tab/HomeScreen1.dart';
 import 'package:flutter_tutorial/TextFormField/HomeScreen.dart';
 import 'package:flutter_tutorial/widgets/exit-popup.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
@@ -26,7 +27,6 @@ import '../Padding/HomeScreen.dart';
 import '../Row/HomeScreen.dart';
 import '../Slider/HomeScreen.dart';
 import '../Switch/HomeScreen.dart';
-import '../Tab/HomeScreen.dart';
 import '../Text/HomeScreen.dart';
 import '../TextField/HomeScreen.dart';
 import '../Transform/HomeScreen.dart';
@@ -254,7 +254,7 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => HomeTabBar(),
+                    builder: (BuildContext context) => HomeTabBar1(),
                   )),
             ),
             ElevatedButton(

@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Splash(
       primaryColor: Colors.deepPurple,
+//      primaryColor: Color(0xFF075E54), // Whatsapp
       darkMode: 0,
       btnColor: Colors.deepPurple,
       btnFGColor: Colors.white,

@@ -50,7 +50,7 @@ class DropdownScreenState extends State<DropdownScreen> {
       body: Center(
         child: DropdownButton<Item>(
           hint: Text("Select item"),
-          value: selectedUser,
+          value: selectedUser, // optional, just to show the value selected
           onChanged: (Item value) {
             setState(() {
               selectedUser = value;

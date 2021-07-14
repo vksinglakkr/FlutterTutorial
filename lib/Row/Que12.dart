@@ -21,7 +21,6 @@ class Que12 extends StatelessWidget {
               children: [
                 Text(
                     "Kurukshetra has been described in the first verse of Shrimadbhagvadgita, in the form of Dharmakshetra Kurukshetra.",
-                    maxLines: 1,
                     style: TextStyle(fontSize: 12.0)),
               ],
             ),

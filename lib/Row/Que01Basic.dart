@@ -13,15 +13,15 @@ class _Que01BasicState extends State<Que01Basic> {
   static const kElements = <Widget>[
     Icon(
       Icons.access_alarm,
-      size: 80,
+      size: 50,
     ),
     Icon(
       Icons.account_circle,
-      size: 100,
+      size: 70,
     ),
     Icon(
       Icons.save,
-      size: 120,
+      size: 90,
     ),
   ];
 

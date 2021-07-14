@@ -27,6 +27,8 @@ class Que1811 extends StatelessWidget {
                 //colors: Colors.red.withOpacity(0.1)
                 //using ARGB (Alpha Red Green Blue)
                 //color: Color.fromARGB(255, 255, 0, 0),
+                //primaryColor: Color(0xFF075E54), Whatsapp Color
+                //accentColor: Color(0xFF128C7E),
                 //using RGBO (Red Green Blue Opacity)
                 //color: Color.fromRGBO(0, 155, 0, 0.8),
                 //color: msgCount[index] >= 10 ? Colors.blue[400] : msgCount[index] > 3 ? Colors.blue[100] : Colors.grey,

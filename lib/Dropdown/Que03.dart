@@ -1,6 +1,7 @@
 // /lib/Dropdown/Que03.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que03 extends StatefulWidget {
   @override
@@ -15,6 +16,8 @@ class _Que03State extends State<Que03> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Center(
           child: DropdownButton(
             hint:

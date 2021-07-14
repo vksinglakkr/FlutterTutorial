@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que09 extends StatelessWidget {
   @override
@@ -24,6 +25,8 @@ class _DropDownListState extends State<DropDownList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(
         child: DropdownButton<String>(
           value: dropdownValue,

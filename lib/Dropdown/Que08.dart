@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que08 extends StatelessWidget {
   @override
@@ -28,6 +29,8 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text("DropDownList Example"),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Container(
         child: Center(
           child: Column(

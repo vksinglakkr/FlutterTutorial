@@ -11,7 +11,7 @@ class Que16a11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Algnment")),
+        appBar: AppBar(title: WidgetAppBar("Alignment")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(

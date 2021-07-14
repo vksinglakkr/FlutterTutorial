@@ -9,6 +9,14 @@ import 'package:flutter_tutorial/Dropdown/Que06.dart';
 import 'package:flutter_tutorial/Dropdown/Que07.dart';
 import 'package:flutter_tutorial/Dropdown/Que08.dart';
 import 'package:flutter_tutorial/Dropdown/Que09.dart';
+import 'package:flutter_tutorial/Dropdown/Que10.dart';
+import 'package:flutter_tutorial/Dropdown/Que11.dart';
+import 'package:flutter_tutorial/Dropdown/Que12.dart';
+import 'package:flutter_tutorial/Dropdown/Que13.dart';
+import 'package:flutter_tutorial/Dropdown/Que14.dart';
+import 'package:flutter_tutorial/Dropdown/Que15.dart';
+import 'package:flutter_tutorial/Dropdown/Que16.dart';
+import 'package:flutter_tutorial/Dropdown/Que17.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeDropdown extends StatelessWidget {
@@ -23,6 +31,14 @@ class HomeDropdown extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
+                  ButtonsCode(Que12(), "lib/Dropdown/Que12.dart",
+                      "Dropdown will have same text and value. We will add each dropdown item ourself"),
+                  ButtonsCode(Que13(), "lib/Dropdown/Que13.dart",
+                      "Dropdown will have different text and value. We will add each dropdown item ourself"),
+                  ButtonsCode(Que14(), "lib/Dropdown/Que14.dart",
+                      "We will add dropdown item list using iterator from list"),
+                  ButtonsCode(Que15(), "lib/Dropdown/Que15.dart",
+                      "We will load data from Server and make a dropdown"),
                   ButtonsCode(Que06(), "lib/Dropdown/Que06.dart",
                       "Items declared in DropdownMenuItem"),
                   ButtonsCode(
@@ -40,6 +56,13 @@ class HomeDropdown extends StatelessWidget {
                   ButtonsCode(DropdownScreen(), "lib/Dropdown/Que01basic.dart",
                       "models"),
                   ButtonsCode(Que07(), "lib/Dropdown/Que07.dart", "models"),
+                  ButtonsCode(
+                      Que10(), "lib/Dropdown/Que10.dart", "models male female"),
+                  ButtonsCode(
+                      Que11(), "lib/Dropdown/Que11.dart", "models multiLevel"),
+                  ButtonsCode(Que16(), "lib/Dropdown/Que16.dart", "multiLevel"),
+                  ButtonsCode(
+                      Que17(), "lib/Dropdown/Que17.dart", "models multiLevel"),
                 ],
               ),
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Item {
   const Item(this.name, this.icon);
@@ -47,6 +48,8 @@ class DropdownScreenState extends State<DropdownScreen> {
           style: TextStyle(color: Colors.white),
         ),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(
         child: DropdownButton<Item>(
           hint: Text("Select item"),

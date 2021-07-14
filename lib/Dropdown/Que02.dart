@@ -1,6 +1,7 @@
 // /lib/Dropdown/Que02.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class DropDownDemo extends StatefulWidget {
   @override
@@ -21,6 +22,8 @@ class _DropDownDemoState extends State<DropDownDemo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

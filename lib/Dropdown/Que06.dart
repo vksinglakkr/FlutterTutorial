@@ -1,6 +1,7 @@
 // /lib/Dropdown/Que06.dart
 
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que06 extends StatefulWidget {
   @override
@@ -16,6 +17,8 @@ class _Que06State extends State<Que06> {
         appBar: AppBar(
           title: Text("Dropdown Button"),
         ),
+        bottomNavigationBar:
+            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Container(
           padding: EdgeInsets.all(20.0),
           child: DropdownButton(

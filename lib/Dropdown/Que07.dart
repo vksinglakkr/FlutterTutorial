@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class ListItem {
   int value;
@@ -48,6 +49,8 @@ class _Que07State extends State<Que07> {
       appBar: AppBar(
         title: Text("Dropdown Button"),
       ),
+      bottomNavigationBar:
+          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Container(
         padding: EdgeInsets.all(20.0),
         child: DropdownButton<ListItem>(

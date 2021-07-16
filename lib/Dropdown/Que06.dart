@@ -25,8 +25,8 @@ class _Que06State extends State<Que06> {
               value: _value,
               items: [
                 DropdownMenuItem(
-                  child: Text("First Item"),
                   value: 1,
+                  child: Text("First Item"),
                 ),
                 DropdownMenuItem(
                   child: Text("Second Item"),

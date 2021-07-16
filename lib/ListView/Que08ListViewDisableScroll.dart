@@ -19,7 +19,7 @@ class Que0811 extends StatelessWidget {
               height: 100,
               child: ListView(
                 physics: NeverScrollableScrollPhysics(),
-                //  physics: ClampingScrollPhysics(),
+                //physics: ClampingScrollPhysics(),
 
                 scrollDirection: Axis.horizontal,
                 //scrollDirection: Axis.vertical,

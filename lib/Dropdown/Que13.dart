@@ -23,17 +23,17 @@ class _Que13State extends State<Que13> {
         child: DropdownButton<int>(
           hint: Text('Country'),
           value: selectedNumber,
-          items: <DropdownMenuItem<int>>[
-            DropdownMenuItem<int>(
+          items: [
+            DropdownMenuItem(
               value: 1,
               child: Text('One'),
             ),
-            DropdownMenuItem<int>(
+            DropdownMenuItem(
               value: 2,
               child: Text('Two'),
             ),
           ],
-          onChanged: (int value) {
+          onChanged: (value) {
             print('You selected "$value"');
             setState(() {
               selectedNumber = value;

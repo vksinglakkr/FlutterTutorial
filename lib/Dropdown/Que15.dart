@@ -15,6 +15,7 @@ class _Que15State extends State<Que15> {
 
   final String endpoint =
       "https://raw.githubusercontent.com/nitishk72/flutter_json_list/master/json_example.json";
+
   List<CustomUser> users = [];
   CustomUser selectedUsers;
 
@@ -28,7 +29,9 @@ class _Que15State extends State<Que15> {
     final http.Response response = await http.get(endpoint);
     final String body = response.body;
     final jsonResponse = json.decode(body);
-    users = jsonResponse.map((e) => CustomUser.fromJson(e)).toList();
+
+    users =
+        jsonResponse.map((element) => CustomUser.fromJson(element)).toList();
     setState(() {});
   }
 
@@ -49,7 +52,7 @@ class _Que15State extends State<Que15> {
             return DropdownMenuItem<CustomUser>(
               value: user,
 //              child: Text('${user.name}'),
-              child: Text('Vinod'),
+              child: Text(user.name),
             );
           }).toList(),
           onChanged: (CustomUser user) {

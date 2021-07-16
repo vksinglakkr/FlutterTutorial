@@ -31,7 +31,7 @@ class _State extends State<Que37b11> {
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(children: <Widget>[
           Container(
-              height: 300,
+              height: 250,
               child: ListView.builder(
                   padding: const EdgeInsets.all(5),
                   itemCount: names.length,

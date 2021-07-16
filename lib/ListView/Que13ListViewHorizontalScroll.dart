@@ -10,13 +10,15 @@ class Que1311 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Card - ListView")),
+        appBar: AppBar(title: WidgetAppBar("Scroll Horizontally")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(
           children: [
             Container(
-              margin: EdgeInsets.symmetric(vertical: 20.0),
+              margin: EdgeInsets.symmetric(
+                vertical: 20.0,
+              ),
               height: 100,
               child: ListView(
                 scrollDirection: Axis.horizontal,

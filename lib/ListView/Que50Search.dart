@@ -46,7 +46,7 @@ class ListSearchState extends State<ListSearch> {
   onItemChanged(String value) {
     setState(() {
       newDataList = mainDataList
-          .where((string) => string.toLowerCase().contains(value.toLowerCase()))
+          .where((string) => string.toUpperCase().contains(value.toUpperCase()))
           .toList();
     });
   }

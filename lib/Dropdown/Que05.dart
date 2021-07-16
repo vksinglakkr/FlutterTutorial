@@ -35,10 +35,10 @@ class _Que05State extends State<Que05> {
               'Java',
               'Python',
               'PHP',
-            ].map<DropdownMenuItem<String>>((String value) {
+            ].map<DropdownMenuItem<String>>((element) {
               return DropdownMenuItem<String>(
-                value: value,
-                child: Text(value),
+                value: element,
+                child: Text(element),
               );
             }).toList(),
             hint: Text(

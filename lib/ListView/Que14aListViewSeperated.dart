@@ -31,8 +31,8 @@ class _State extends State<Que14a11> {
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(
           children: <Widget>[
-            Expanded(
-                child: ListView.separated(
+            ListView.separated(
+              shrinkWrap: true,
               padding: const EdgeInsets.all(8),
               itemCount: names.length,
               itemBuilder: (BuildContext context, int index) {
@@ -52,16 +52,17 @@ class _State extends State<Que14a11> {
                 thickness: 5,
                 color: Colors.red,
               ),
-            )),
-            SizedBox(
-              height: 2.0,
-            ),
-            //  Center(
-            //    child: Image(
-            //      image: AssetImage('assets/images/ListView/Que07.png'),
-            //    ),
-            //  ),
-            Center(child: Text("ListView/Que14aListViewSeperated.dart"))
+              // ),
+              // SizedBox(
+              //   height: 2.0,
+              // ),
+              // //  Center(
+              // //    child: Image(
+              // //      image: AssetImage('assets/images/ListView/Que07.png'),
+              // //    ),
+              // //  ),
+              // Center(child: Text("ListView/Que14aListViewSeperated.dart"))
+            )
           ],
         ),
         floatingActionButton: WidgetFab(),

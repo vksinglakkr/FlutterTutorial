@@ -24,16 +24,18 @@ class _Que14State extends State<Que14> {
         child: DropdownButton<String>(
           value: selectedCountry,
           hint: Text('Country'),
-          items: country.map((String value) {
-            return DropdownMenuItem<String>(
-              value: value,
-              child: Text(value),
-            );
-          }).toList(),
-          onChanged: (String value) {
-            print('You selected "$value"');
+          items: country
+              .map(
+                (element) => DropdownMenuItem(
+                  value: element,
+                  child: Text(element),
+                ),
+              )
+              .toList(),
+          onChanged: (xyz) {
+            print('You selected "$xyz"');
             setState(() {
-              selectedCountry = value;
+              selectedCountry = xyz;
             });
           },
         ),

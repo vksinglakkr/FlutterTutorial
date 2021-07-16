@@ -18,14 +18,14 @@ class Que01Fitted11 extends StatelessWidget {
             Text(
                 "Flutter code sample for FittedBox\nIn this example, the image is stretched to fill the entire [Container], which would\nnot happen normally without using FittedBox."),
             Container(
-              height: 180,
+              height: 160,
               width: 250,
               color: Colors.red,
               child: Image.network(
                   'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg'),
             ),
             Container(
-              height: 180,
+              height: 160,
               width: 250,
               color: Colors.red,
               child: FittedBox(

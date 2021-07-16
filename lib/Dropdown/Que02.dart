@@ -31,12 +31,12 @@ class _DropDownDemoState extends State<DropDownDemo> {
             Text(_frequencyValue.toString()),
             DropdownButton<Duration>(
               items: frequencyOptions
-                  .map((description, value) {
+                  .map((key, value) {
                     return MapEntry(
-                        description,
+                        key,
                         DropdownMenuItem<Duration>(
                           value: value,
-                          child: Text(description),
+                          child: Text(key),
                         ));
                   })
                   .values

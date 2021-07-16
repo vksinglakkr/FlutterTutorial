@@ -34,18 +34,21 @@ class _MyHomePageState extends State<MyHomePage> {
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: ListView(
-          children: ListTile.divideTiles(tiles: [
-            ListTile(
-              title: Text("Cow"),
-            ),
-            ListTile(
-              title: Text("Dog"),
-            ),
-            ListTile(
-              title: Text("Goat"),
-            ),
-          ], context: context, color: Colors.red)
-              .toList(),
+          children: ListTile.divideTiles(
+            tiles: [
+              ListTile(
+                title: Text("Cow"),
+              ),
+              ListTile(
+                title: Text("Dog"),
+              ),
+              ListTile(
+                title: Text("Goat"),
+              ),
+            ],
+            context: context,
+            color: Colors.green,
+          ).toList(),
         ),
         floatingActionButton: WidgetFab(),
       ),

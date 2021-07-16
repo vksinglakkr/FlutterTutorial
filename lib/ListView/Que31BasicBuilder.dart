@@ -21,14 +21,10 @@ class Que3111 extends StatelessWidget {
         appBar: AppBar(title: WidgetAppBar("Custom ListView.builder")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            Container(
-                color: Colors.white10,
-                padding: EdgeInsets.all(16.0),
-                child: CustomListBuild(course)),
-          ],
-        ),
+        body: Container(
+            color: Colors.white10,
+            padding: EdgeInsets.all(16.0),
+            child: CustomListBuild(course)),
         floatingActionButton: WidgetFab(),
       ),
     );

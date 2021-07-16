@@ -14,20 +14,16 @@ class Que1511 extends StatelessWidget {
         appBar: AppBar(title: WidgetAppBar("Generate List")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            ListView.builder(
-                padding: EdgeInsets.all(10),
-                itemCount: items.length,
-                itemBuilder: (context, index) {
-                  // return Column(children: [Text(items[index])]
-                  return ListTile(title: Text(items[index])
-                      //return ListTile(title: Text('$items[index]')
-                      //return Text(items[index]);
-                      );
-                }),
-          ],
-        ),
+        body: ListView.builder(
+            padding: EdgeInsets.all(10),
+            itemCount: items.length,
+            itemBuilder: (context, index) {
+              // return Column(children: [Text(items[index])]
+              return ListTile(title: Text(items[index])
+                  //return ListTile(title: Text('$items[index]')
+                  //return Text(items[index]);
+                  );
+            }),
         floatingActionButton: WidgetFab(),
       ),
     );

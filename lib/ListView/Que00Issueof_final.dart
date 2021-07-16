@@ -44,49 +44,35 @@ class _Que0011State extends State<Que0011> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Issue of mentioning final or not")),
+        appBar: AppBar(title: WidgetAppBar("Generate with List<String>")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            Container(
-                color: Colors.white10,
-                padding: EdgeInsets.all(16.0),
-                child: HomePage(course)),
-          ],
-        ),
+        body: Container(
+            color: Colors.white10,
+            padding: EdgeInsets.all(16.0),
+            child: ListView.builder(
+              itemCount: course.length,
+              itemBuilder: (context, element) {
+                return Padding(
+                    padding: EdgeInsets.only(bottom: 16.0),
+                    child: Card(
+                      color: Colors.cyan[100],
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(
+                            vertical: 24.0, horizontal: 16.0),
+                        child: Text(
+                          course[element],
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            height: 1.6,
+                          ),
+                        ),
+                      ),
+                    ));
+              },
+            )),
         floatingActionButton: WidgetFab(),
       ),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  final List<String> course;
-
-  HomePage(this.course);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      itemCount: course.length,
-      itemBuilder: (context, pos) {
-        return Padding(
-            padding: EdgeInsets.only(bottom: 16.0),
-            child: Card(
-              color: Colors.white,
-              child: Padding(
-                padding: EdgeInsets.symmetric(vertical: 24.0, horizontal: 16.0),
-                child: Text(
-                  course[pos],
-                  style: TextStyle(
-                    fontSize: 18.0,
-                    height: 1.6,
-                  ),
-                ),
-              ),
-            ));
-      },
     );
   }
 }

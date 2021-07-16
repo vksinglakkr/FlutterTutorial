@@ -28,10 +28,10 @@ class _Que03State extends State<Que03> {
                 _selectedLocation = newValue;
               });
             },
-            items: _locations.map((location) {
+            items: _locations.map((element) {
               return DropdownMenuItem(
-                child: new Text(location),
-                value: location,
+                child: new Text(element),
+                value: element,
               );
             }).toList(),
           ),

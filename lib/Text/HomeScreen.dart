@@ -1,5 +1,6 @@
 // lib/Text\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Text/Que06.dart';
 import 'package:flutter_tutorial/Text/Que16TextTheme.dart';
 import 'package:flutter_tutorial/Text/Que22Animated.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -150,6 +151,7 @@ class HomeText extends StatelessWidget {
                       "Image over text"),
                   ButtonsCode(
                       Que19marquee(), "lib/Text/Que19Marquee.dart", "Marquee"),
+                  ButtonsCode(Que06soft(), "lib/Text/Que06.dart", "softWrap"),
                   ButtonsCode(
                       QueDynamic11(),
                       "lib/Text/QueShowMoreShowless.dart",

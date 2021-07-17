@@ -1,6 +1,16 @@
 // lib/Others/Properties/Que15ShowProperties.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Box/Box_FittedBox/Que05a.dart';
+import 'package:flutter_tutorial/Dropdown/Que04.dart';
+import 'package:flutter_tutorial/ListView/Que03properties.dart';
 import 'package:flutter_tutorial/Others/Properties/Que15ShowProperties.dart';
+import 'package:flutter_tutorial/Others/Wrap/Que02.dart';
+import 'package:flutter_tutorial/Row/Que01Basic.dart';
+import 'package:flutter_tutorial/Row/Que13.dart';
+import 'package:flutter_tutorial/Row/Que14.dart';
+import 'package:flutter_tutorial/Tab/Que05.dart';
+import 'package:flutter_tutorial/Text/Que06.dart';
+import 'package:flutter_tutorial/Tab/Que06.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeProperties extends StatelessWidget {
@@ -8,7 +18,7 @@ class HomeProperties extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Properties")),
+        appBar: AppBar(title: WidgetAppBar("Properties\nCollection")),
         body: SafeArea(
             child: Container(
                 child: Builder(
@@ -18,13 +28,26 @@ class HomeProperties extends StatelessWidget {
               ButtonsCode(
                   Que15(),
                   "lib/Others/Properties/Que15ShowProperties.dart",
-                  "Properties (Row/Column)"),
+                  "Properties Collection"),
+              ButtonsCode(
+                  Que05a(), "lib/Box/Box_FittedBox/Que05a.dart", "FittedBox"),
+              ButtonsCode(Que04(), "lib/Dropdown/Que04.dart", "DropDown"),
+              ButtonsCode(Que02(), "lib/Others/Wrap/Que02.dart", "Wrap"),
+              ButtonsCode(Que01Basic(), "lib/Row/Que01Basic.dart", "Row Ex.1"),
+              ButtonsCode(Que13(), "lib/Row/Que13.dart", "Row Ex.2"),
+              ButtonsCode(Que14(), "lib/Row/Que14.dart",
+                  "Row, enum(mainAxisAlignment)"),
+              ButtonsCode(Que04(), "lib/Tab/Que04.dart", "Tab Ex.1"),
+              ButtonsCode(Que05(), "lib/Tab/Que05.dart", "Tab Ex.2"),
+              ButtonsCode(Que06(), "lib/Tab/Que06.dart", "Tab Ex.3"),
+              ButtonsCode(Que03(), "lib/ListView/Que03properties.dart",
+                  "ListView, Boolean(reverse:), Slider(itemExtent:)"),
+              ButtonsCode(Que06soft(), "lib/Text/Que06.dart", "Text softWrap"),
               Text(
                   "Best Video for all https://www.youtube.com/watch?v=Kq5ZsygfWAc")
             ],
           ),
         ))),
-        floatingActionButton: WidgetFab(),
       ),
     );
   }

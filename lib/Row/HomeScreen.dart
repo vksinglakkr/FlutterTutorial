@@ -1,6 +1,7 @@
 // libRowHomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Row/Que01Basic.dart';
+import 'package:flutter_tutorial/Row/Que03.dart';
 import 'package:flutter_tutorial/Row/Que04.dart';
 import 'package:flutter_tutorial/Row/Que05.dart';
 import 'package:flutter_tutorial/Row/Que06.dart';
@@ -13,6 +14,7 @@ import 'package:flutter_tutorial/Row/Que12.dart';
 import 'package:flutter_tutorial/Row/Que13.dart';
 import 'package:flutter_tutorial/Row/Que15.dart';
 import 'package:flutter_tutorial/Row/Que14.dart';
+import 'package:flutter_tutorial/Row/Que16.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que02Expanded.dart';
 
@@ -33,6 +35,7 @@ class HomeRow extends StatelessWidget {
                     Que01Basic(), "lib/Row/Que01Basic.dart", "Properties Ex.1"),
                 ButtonsCode(Que13(), "lib/Row/Que13.dart", "Properties Ex.2"),
                 ButtonsCode(Que14(), "lib/Row/Que14.dart", "Properties Ex.3"),
+                ButtonsCode(Que03(), "lib/Row/Que03.dart", "TextDirection"),
                 ButtonsCode(
                     Que12(), "lib/Row/Que12.dart", "Overflow (Text) Ex.1"),
                 ButtonsCode(
@@ -49,6 +52,7 @@ class HomeRow extends StatelessWidget {
                 ButtonsCode(Que09(), "lib/Row/Que09.dart", "Tight Fit"),
                 ButtonsCode(Que10(), "lib/Row/Que10.dart", "Expanded Ex.1"),
                 ButtonsCode(Que11(), "lib/Row/Que11.dart", "Expanded Ex.2"),
+                ButtonsCode(SfDataGridDemo(), "lib/Row/Que16.dart", "DataGrid"),
               ],
             ),
           )),

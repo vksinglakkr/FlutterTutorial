@@ -1,4 +1,4 @@
-// /lib/Others/Wrap/Que02.dart
+// /lib/Box/Box_FittedBox/Que05a.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -39,6 +39,19 @@ class _Que05aState extends State<Que05a> {
     }
   }
 
+  final List<Alignment> _dropdownAlignment = [
+    Alignment.topCenter,
+    Alignment.topLeft,
+    Alignment.topRight,
+    Alignment.center,
+    Alignment.centerLeft,
+    Alignment.centerRight,
+    Alignment.bottomCenter,
+    Alignment.bottomLeft,
+    Alignment.bottomRight,
+  ];
+  Alignment _selectedAlignment = Alignment.center;
+  Clip _clipBehavior = Clip.antiAlias;
   @override
   Widget build(BuildContext context) {
     final _appbarButtons = _getBottomBar();
@@ -69,6 +82,8 @@ class _Que05aState extends State<Que05a> {
                   color: Colors.purple,
                   child: FittedBox(
                     fit: _boxFit,
+                    alignment: _selectedAlignment,
+                    clipBehavior: _clipBehavior,
                     child: Container(
                       width: 50,
                       height: 50,
@@ -92,6 +107,7 @@ class _Que05aState extends State<Que05a> {
                   color: Colors.purple,
                   child: FittedBox(
                     fit: _boxFit,
+                    alignment: _selectedAlignment,
                     child: Container(
                       width: 50,
                       height: 50,
@@ -115,6 +131,7 @@ class _Que05aState extends State<Que05a> {
                   color: Colors.purple,
                   child: FittedBox(
                     fit: _boxFit,
+                    alignment: _selectedAlignment,
                     child: Container(
                       width: 50,
                       height: 50,
@@ -144,6 +161,7 @@ class _Que05aState extends State<Que05a> {
                   color: Colors.purple,
                   child: FittedBox(
                     fit: _boxFit,
+                    alignment: _selectedAlignment,
                     child: Container(
                       width: 150,
                       height: 150,
@@ -167,6 +185,7 @@ class _Que05aState extends State<Que05a> {
                   color: Colors.purple,
                   child: FittedBox(
                     fit: _boxFit,
+                    alignment: _selectedAlignment,
                     child: Container(
                       width: 150,
                       height: 150,
@@ -190,6 +209,7 @@ class _Que05aState extends State<Que05a> {
                   color: Colors.purple,
                   child: FittedBox(
                     fit: _boxFit,
+                    alignment: _selectedAlignment,
                     child: Container(
                       width: 150,
                       height: 150,
@@ -225,13 +245,52 @@ class _Que05aState extends State<Que05a> {
               if (newVal != null) {
                 setState(() => _boxFit = newVal);
                 description();
-                debugPrint("$_boxFit");
               }
             },
             items: BoxFit.values
                 .map((BoxFit val) => DropdownMenuItem(
                       value: val,
-                      child: Text(val.toString().substring('BoxFit.'.length)),
+//                      child: Text(val.toString().substring('BoxFit.'.length)),
+                      child: Text(val.toString()),
+                    ))
+                .toList(),
+          ),
+        ),
+        ListTile(
+          title: const Text('alignment:'),
+          trailing: DropdownButton(
+            hint: Text('Select ...'),
+            items: _dropdownAlignment
+                .map((element) => DropdownMenuItem(
+                      child: Center(
+                        child: Text(element.toString()),
+                      ),
+                      value: element,
+                    ))
+                .toList(),
+            onChanged: (Alignment value) {
+              setState(() {
+                _selectedAlignment = value;
+              });
+            },
+            isExpanded: false,
+            value: _selectedAlignment,
+          ),
+        ),
+        ListTile(
+          title: const Text('clipBehavior:'),
+          trailing: DropdownButton<Clip>(
+            value: _clipBehavior,
+            onChanged: (Clip newVal) {
+              if (newVal != null) {
+                setState(() => _clipBehavior = newVal);
+              }
+            },
+            items: Clip.values
+                .map((Clip val) => DropdownMenuItem(
+                      value: val,
+//                      child: Text(val.toString().substring('BoxFit.'.length)),
+                      child: Text(val.toString()),
                     ))
                 .toList(),
           ),

@@ -1,5 +1,7 @@
 //  \lib/ListView\HomeScreen_ListView1.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/ListView/Que02.dart';
+import 'package:flutter_tutorial/ListView/Que03properties.dart';
 import 'package:flutter_tutorial/ListView/Que43DismisItem.dart';
 import 'package:flutter_tutorial/ListView/Que50Search.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -62,6 +64,8 @@ class HomeListView1 extends StatelessWidget {
                       "with  Container Ex.2"),
                   ButtonsCode(Que1111(), "lib/ListView/Que11MixListView.dart",
                       "with Text/Container/Card Ex.3"),
+                  ButtonsCode(Que03(), "lib/ListView/Que03properties.dart",
+                      "Dynamic Properties"),
                   ButtonsCode(
                       Que2711(),
                       "lib/ListView/Que27ListTileChangeLeadingColor.dart",
@@ -104,22 +108,24 @@ class HomeListView1 extends StatelessWidget {
                       "Generate with List<int>"),
                   ButtonsCode(Que0011(), "lib/ListView/Que00Issueof_final.dart",
                       "Generate with List<String>"),
+                  ButtonsCode(Que02(), "lib/ListView/Que02.dart",
+                      "generate infinite list with ListViewBuilder Ex.1"),
                   ButtonsCode(
                       Que2911(),
                       "lib/ListView/Que29SimpleListBuilder.dart",
-                      "with List<String>, ListViewBuilder Ex.1"),
+                      "with List<String>, ListViewBuilder Ex.2"),
                   ButtonsCode(
                       Que3011(),
                       "lib/ListView/Que30BuilderListView.dart",
-                      "with List<String> & List<int>, ListViewBuilder Ex.2"),
+                      "with List<String> & List<int>, ListViewBuilder Ex.3"),
                   ButtonsCode(
                       Que30a11(),
                       "lib/ListView/Que30aBuilderListView.dart",
-                      "with List<String> & colorCode List, ListViewBuilder Ex.3"),
+                      "with List<String> & colorCode List, ListViewBuilder Ex.4"),
                   ButtonsCode(
                       Que30b11(),
                       "lib/ListView/Que30bBuilderListView.dart",
-                      "with List<String> & icon List, ListViewBuilder Ex.4"),
+                      "with List<String> & icon List, ListViewBuilder Ex.5"),
                   ButtonsCode(Que1511(), "lib/ListView/Que15ListGenerate.dart",
                       "with List<String>.generate"),
                   ButtonsCode(

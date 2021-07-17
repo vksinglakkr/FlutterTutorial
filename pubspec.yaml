@@ -43,6 +43,7 @@ dependencies:
   random_pk: ^0.0.3
   flutter_lorem: ^2.0.0
   dropdown_search: ^0.6.3
+  syncfusion_flutter_datagrid: ^19.2.47-beta
  
 #  Flutter package that gives a container with random color.
 #  cupertino_icons: ^1.0.0choco
@@ -104,6 +105,7 @@ flutter:
     - lib/Others/InkWell/
     - lib/Others/Interface/
     - lib/ListView/
+    - lib/Others/Properties/
     - lib/Others/Material/
     - lib/models/
     - lib/Others/Opacity/

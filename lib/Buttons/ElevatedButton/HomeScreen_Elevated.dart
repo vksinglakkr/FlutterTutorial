@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que01BasicProperties.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que02onPressedlaunchURL.dart';
+import 'package:flutter_tutorial/Buttons/ElevatedButton/Que05DynamicButtons.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que06ElevatedButtonTheme.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que07CustomButton.dart';
 import 'package:flutter_tutorial/Buttons/ElevatedButton/Que08RoundedButton.dart';
@@ -62,6 +63,10 @@ class HomeElevated extends StatelessWidget {
                       Que08Rounded11(),
                       "lib/Buttons/ElevatedButton/Que08RoundedButton.dart",
                       "Different approaches to make rounded buttons"),
+                  ButtonsCode(
+                      Que05(),
+                      "lib/Buttons/ElevatedButton/Que05DynamicButtons.dart",
+                      "Generate Buttons using List<String>"),
                   ButtonsCode(
                       Que04Assignment(),
                       "lib/TextField/Assignment4.dart",

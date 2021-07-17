@@ -13,34 +13,81 @@ class Que03TextOverflow11 extends StatelessWidget {
         appBar: AppBar(title: WidgetAppBar("Tackle \nText Overflow")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: ListView(
-          padding: EdgeInsets.all(15),
+        body: Column(
           children: [
-            SizedBox(height: 10),
-            Text("Sample Widget to understand how the FittedBox works"),
-            // FittedBox(child:
-            SizedBox(height: 20),
-            Container(
-              color: Colors.black,
-              child: Row(
-                children: [
-                  Container(
-                    child: Text(
-                        "Flutter code sample for FittedBox\nIn this example, the text is overflowed. Which handled easily by using FittedBox.",
-                        style: TextStyle(color: Colors.white, fontSize: 20)),
-                  ),
-                ],
-              ),
+            Spacer(flex: 1),
+            Row(
+              children: [
+                Flexible(
+                  child: Text(
+                      "Flutter code sample for Flexible\nIn this example, the text is overflowed. Which handled easily by using Flexible.",
+                      style: TextStyle(fontSize: 16)),
+                ),
+              ],
             ),
-            // ), //Fitted Box
-            SizedBox(height: 20),
-            Container(
-              child: Text(
-                  "To solve this we can use Fitted Box, Expandable, SizedBox. To see the use of this, uncomment the lines."),
+            Spacer(flex: 1),
+            Row(
+              children: [
+                SizedBox(
+                  width: 350,
+                  child: Text(
+                      "Flutter code sample for SizedBox\nIn this example, the text is overflowed. Which handled easily by using SizedBox.",
+                      style: TextStyle(fontSize: 16)),
+                ),
+              ],
             ),
+            Spacer(flex: 1),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                      "Flutter code sample for Expanded\nIn this example, the text is overflowed. Which handled easily by using Expanded.",
+                      style: TextStyle(fontSize: 16)),
+                ),
+              ],
+            ),
+            Spacer(flex: 1),
+            Row(
+              children: [
+                Expanded(
+                  child: Text(
+                      "Flutter code sample for Expanded\nIn this example, the text is overflowed. Which handled easily by using Expanded.",
+                      style: TextStyle(fontSize: 16)),
+                ),
+              ],
+            ),
+            Spacer(flex: 1),
+//      ),
+            // //Fitted Box
+            // Expanded(
+            //   child: Container(
+            //     color: Colors.black,
+            //     child: Row(
+            //       children: [
+            //         Container(
+            //           child: Text(
+            //               "Flutter code sample for FittedBox\nIn this example, the text is overflowed. Which handled easily by using FittedBox.",
+            //               style: TextStyle(color: Colors.white, fontSize: 20)),
+            //         ),
+            //       ],
+            //     ),
+            //   ),
+            // ),
+            // Container(
+            //   color: Colors.black,
+            //   child: Row(
+            //     children: [
+            //       Container(
+            //         child: Text(
+            //             "Flutter code sample for FittedBox\nIn this example, the text is overflowed. Which handled easily by using FittedBox.",
+            //             style: TextStyle(color: Colors.white, fontSize: 20)),
+            //       ),
+            //     ],
+            //   ),
+            // ),
           ],
         ),
-        floatingActionButton: WidgetFab(),
+//        floatingActionButton: WidgetFab(),
       ),
     );
   }

@@ -15,24 +15,20 @@ class Que01Align11 extends StatelessWidget {
         appBar: AppBar(title: WidgetAppBar("ClipOval/Align")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            ClipOval(
-              child: Align(
-                heightFactor: 0.7,
-                widthFactor: 0.8,
-                //alignment: Alignment.topLeft,
-                //Difference between Start/End & Left/Right.
-                //In Right to left (e.g. Urdu Start==Right, end==Left)
-                //In Left to Right (e.g. English Start==Left, end==Right)
-                child: Image.network(
-                  "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
-                  height: 400,
-                  width: 400,
-                ),
-              ),
+        body: ClipOval(
+          child: Align(
+            heightFactor: 0.7,
+            widthFactor: 0.8,
+            //alignment: Alignment.topLeft,
+            //Difference between Start/End & Left/Right.
+            //In Right to left (e.g. Urdu Start==Right, end==Left)
+            //In Left to Right (e.g. English Start==Left, end==Right)
+            child: Image.network(
+              "https://i.ytimg.com/vi/YlqkDY0NqcQ/maxresdefault.jpg",
+              height: 400,
+              width: 400,
             ),
-          ],
+          ),
         ),
         floatingActionButton: WidgetFab(),
       ),

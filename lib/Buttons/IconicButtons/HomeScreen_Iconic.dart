@@ -1,6 +1,7 @@
 // lib/Bar\HomeScreen_Bar.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que01Actions.dart';
+import 'package:flutter_tutorial/Buttons/IconicButtons/Que02.dart';
 
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -18,8 +19,10 @@ class HomeIconic extends StatelessWidget {
                 children: [
                   ButtonsCode(
                       Que01Actions11(),
-                      "lib/Buttons/FloatingActionButton/Que01IconicButtoninBody.dart",
+                      "lib/Buttons/IconicButtons/Que01IconicButtoninBody.dart",
                       "Iconic Buttons in AppBar"),
+                  ButtonsCode(Que02(), "lib/Buttons/IconicButtons/Que02.dart",
+                      "Rounded icon button"),
                 ],
               ),
             ),

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Box/Box_FittedBox/Que05.dart';
 import 'package:flutter_tutorial/Box/Box_FittedBox/Que05a.dart';
 import 'package:flutter_tutorial/Box/Box_FittedBox/Que06.dart';
+import 'package:flutter_tutorial/Box/Box_FittedBox/Que07.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 import 'Que01Fitted.dart';
@@ -41,6 +42,8 @@ class HomeFitted extends StatelessWidget {
                       "Tackle Text Overflow"),
                   ButtonsCode(Que06(), "lib/Box/Box_FittedBox/Que06.dart",
                       "Text with or without FittedBox"),
+                  ButtonsCode(Que07(), "lib/Box/Box_FittedBox/Que07.dart",
+                      "Problem of Tiny logo"),
                 ],
               ),
             ),

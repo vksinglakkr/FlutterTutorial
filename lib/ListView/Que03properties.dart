@@ -34,7 +34,7 @@ class _Que03State extends State<Que03> {
         itemExtent: sliderVal,
         reverse: boolVal,
         // provides an infinite list
-        //itemCount: 10, // to get infinite list
+        // itemCount: 10, // to get infinite list
         itemBuilder: (BuildContext context, int index) {
           return Text('Row $index');
         },

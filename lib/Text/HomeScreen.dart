@@ -3,12 +3,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Text/Que06.dart';
 import 'package:flutter_tutorial/Text/Que16TextTheme.dart';
 import 'package:flutter_tutorial/Text/Que22Animated.dart';
+import 'package:flutter_tutorial/Text/Que23Alignment.dart';
+import 'package:flutter_tutorial/Text/Que23Color.dart';
+import 'package:flutter_tutorial/Text/Que23Font.dart';
+import 'package:flutter_tutorial/Text/Que23Spacing.dart';
+import 'package:flutter_tutorial/Text/Que23TextDirection.dart';
+import 'package:flutter_tutorial/Text/Que23strutStyle.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Others/GesterDetector/Que01ClickonText.dart';
 import 'package:flutter_tutorial/Others/GesterDetector/Que02ClickonTextToggle.dart';
 import 'Que01Overflow.dart';
 import 'Que01aProperties.dart';
-import 'Que01bStyle.dart';
 import 'Que01strutStyle.dart';
 import 'Que11TextMarquee.dart';
 import 'Que01SelectableText.dart';
@@ -49,20 +54,30 @@ class HomeText extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Que01aText11(), "lib/Text/Que01aProperties.dart",
-                      "Text=>Properties"),
+                  ButtonsCode(Que23Alignment(), "lib/Text/Que23Alignment.dart",
+                      "Alignment"),
+                  ButtonsCode(
+                      Que23TextDirection(),
+                      "lib/Text/Que23TextDirection.dart",
+                      "textDirection, textAlign"),
+                  ButtonsCode(Que23Color(), "lib/Text/Que23Color.dart",
+                      "color, backGroundColor"),
+                  ButtonsCode(Que02Text11(), "lib/Text/Que02textColor.dart",
+                      "How to change the Color of Text?"),
+                  ButtonsCode(Que23Font(), "lib/Text/Que23Font.dart",
+                      "fontWeight, fontSize, fontStyle"),
+                  ButtonsCode(
+                      Que23Strut(), "lib/Text/Que23Font.dart", "strutStyle: "),
+                  ButtonsCode(Que01strut(), "lib/Text/Que01strutStyle.dart",
+                      "strutStyle:, forceStrutHeight:"),
+                  ButtonsCode(Que23Spacing(), "lib/Text/Que23Spacing.dart",
+                      "lineSpacing, wordSpacing, height"),
                   ButtonsCode(Que01over(), "lib/Text/Que01Overflow.dart",
                       "Text=>Properties=>overflow"),
-                  ButtonsCode(Que01strut(), "lib/Text/Que01strutStyle.dart",
-                      "Text=>Properties=>strutStyle"),
-                  ButtonsCode(Que01bStyle(), "lib/Text/Que01bStyle.dart",
-                      "Text=>Style"),
                   ButtonsCode(
                       Que01Text11(),
                       "lib/Text/Que01SelectableText.dart",
                       "How to make text Selectable?"),
-                  ButtonsCode(Que02Text11(), "lib/Text/Que02textColor.dart",
-                      "How to change the Color of Text?"),
                   ButtonsCode(Que03Text11(), "lib/Text/Que03UnderLine.dart",
                       "How to Underline/Overline a text?"),
                   ButtonsCode(Que03aText11(), "lib/Text/Que03aUnderLine.dart",
@@ -167,6 +182,8 @@ class HomeText extends StatelessWidget {
                       "lib/Text/Que25ShowContent_of_TextFileWithoutWidget.dart",
                       "Show Content of text File without Widget"),
                   ButtonsCode(Que25Show(), "", "Animated_text_kit (Pending)"),
+                  ButtonsCode(Que01aText11(), "lib/Text/Que01aProperties.dart",
+                      "Text=>Properties"),
                 ],
               ),
             ),

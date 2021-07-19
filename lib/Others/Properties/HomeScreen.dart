@@ -9,8 +9,16 @@ import 'package:flutter_tutorial/Row/Que01Basic.dart';
 import 'package:flutter_tutorial/Row/Que13.dart';
 import 'package:flutter_tutorial/Row/Que14.dart';
 import 'package:flutter_tutorial/Tab/Que05.dart';
+import 'package:flutter_tutorial/Text/Que01strutStyle.dart';
+import 'package:flutter_tutorial/Text/Que02textColor.dart';
 import 'package:flutter_tutorial/Text/Que06.dart';
 import 'package:flutter_tutorial/Tab/Que06.dart';
+import 'package:flutter_tutorial/Text/Que23Alignment.dart';
+import 'package:flutter_tutorial/Text/Que23Color.dart';
+import 'package:flutter_tutorial/Text/Que23Font.dart';
+import 'package:flutter_tutorial/Text/Que23Spacing.dart';
+import 'package:flutter_tutorial/Text/Que23TextDirection.dart';
+import 'package:flutter_tutorial/Text/Que23strutStyle.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeProperties extends StatelessWidget {
@@ -29,6 +37,24 @@ class HomeProperties extends StatelessWidget {
                   Que15(),
                   "lib/Others/Properties/Que15ShowProperties.dart",
                   "Properties Collection"),
+              ButtonsCode(Que23Alignment(), "lib/Text/Que23Alignment.dart",
+                  "Alignment"),
+              ButtonsCode(
+                  Que23TextDirection(),
+                  "lib/Text/Que23TextDirection.dart",
+                  "textDirection, textAlign"),
+              ButtonsCode(Que23Color(), "lib/Text/Que23Color.dart",
+                  "color, backGroundColor"),
+              ButtonsCode(Que02Text11(), "lib/Text/Que02textColor.dart",
+                  "How to change the Color of Text?"),
+              ButtonsCode(Que23Font(), "lib/Text/Que23Font.dart",
+                  "fontWeight, fontSize, fontStyle"),
+              ButtonsCode(
+                  Que23Strut(), "lib/Text/Que23Font.dart", "strutStyle: "),
+              ButtonsCode(Que01strut(), "lib/Text/Que01strutStyle.dart",
+                  "strutStyle:, forceStrutHeight:"),
+              ButtonsCode(Que23Spacing(), "lib/Text/Que23Spacing.dart",
+                  "lineSpacing, wordSpacing, height"),
               ButtonsCode(
                   Que05a(), "lib/Box/Box_FittedBox/Que05a.dart", "FittedBox"),
               ButtonsCode(Que04(), "lib/Dropdown/Que04.dart", "DropDown"),

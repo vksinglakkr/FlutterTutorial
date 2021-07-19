@@ -38,10 +38,10 @@ class HomeAppBar extends StatelessWidget {
                       "lib/Bar/AppBar/Que04PopupText.dart",
                       "AppBar - 3 Dot Popup Menu (Text)"),
                   ButtonsCode(
-                      Que06Popup11(),
+                      Que05Popup11(),
                       "lib/Bar/AppBar/Que05PopupIconicButton.dart",
                       "AppBar - 3 Dot Popup Menu (IconicButton)"),
-                  ButtonsCode(Que05Popup11(), "lib/Bar/AppBar/Que06Popup.dart",
+                  ButtonsCode(Que06Popup11(), "lib/Bar/AppBar/Que06Popup.dart",
                       "AppBar - 3 Dot Popup Menu (List)"),
                 ],
               ),

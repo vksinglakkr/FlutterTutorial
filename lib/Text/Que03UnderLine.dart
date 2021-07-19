@@ -2,7 +2,6 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que03Text11 extends StatefulWidget {
   @override
@@ -10,134 +9,160 @@ class Que03Text11 extends StatefulWidget {
 }
 
 class _State extends State<Que03Text11> {
-  final String image1 = "assets/help/Text/Que03.png";
-
+  // List<TextDecoration> _dropdownDecoration = [
+  //   TextDecoration.none,
+  //   TextDecoration.lineThrough,
+  //   TextDecoration.overline,
+  //   TextDecoration.underline,
+  //   //  TextDecoration.combine([TextDecoration.underline, TextDecoration.overline]),
+  // ];
+  // var _selectDecoration = TextDecoration.underline;
+  final List<Color> _colors = <Color>[
+    Colors.red,
+    Colors.blue,
+    Colors.green,
+    Colors.yellow,
+    Colors.orange,
+    Colors.amber,
+    Colors.indigo,
+    Colors.cyan
+  ];
+  final List<String> _colorToShow = <String>[
+    "Colors.red",
+    "Colors.blue",
+    "Colors.green",
+    "Colors.yellow",
+    "Colors.orange",
+    "Colors.amber",
+    "Colors.indigo",
+    "Colors.cyan"
+  ];
+  int _currentColorIndex = 0;
+  double sliderVal1 = 6;
+  TextDecorationStyle _decorationStyle = TextDecorationStyle.dashed;
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text('Text => FontStyle Property'),
       ),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Container(
         margin: EdgeInsets.all(8),
-        child: ListView(
+        child: Text(
+          'NIC, Kurukshetra',
+          style: TextStyle(
+            fontSize: 40,
+            decorationColor: _colors[_currentColorIndex],
+            decoration: TextDecoration.underline,
+            decorationStyle: _decorationStyle,
+            decorationThickness: sliderVal1,
+          ),
+        ),
+      ),
+      bottomNavigationBar: _getBottomBar(),
+    );
+  }
+
+  Widget _getBottomBar() {
+    return Material(
+      color: Theme.of(context).primaryColorLight,
+      child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+        // ListTile(
+        //   title: const Text('decoration:'),
+        //   trailing: DropdownButton(
+        //     hint: Text('Select ...'),
+        //     items: _dropdownDecoration
+        //         .map((element) => DropdownMenuItem(
+        //               child: Center(
+        //                 child: Text(element.toString()),
+        //               ),
+        //               value: element,
+        //             ))
+        //         .toList(),
+        //     onChanged: (value) {
+        //       setState(() {
+        //         _dropdownDecoration = value;
+        //       });
+        //     },
+        //     isExpanded: false,
+        //     value: _dropdownDecoration,
+        //   ),
+        // ),
+        ListTile(
+          title: const Text('decorationStyle:'),
+          trailing: DropdownButton<TextDecorationStyle>(
+            value: _decorationStyle,
+            onChanged: (TextDecorationStyle newVal) {
+              if (newVal != null) {
+                setState(() => _decorationStyle = newVal);
+              }
+            },
+            items: TextDecorationStyle.values
+                .map((TextDecorationStyle val) => DropdownMenuItem(
+                      value: val,
+                      child: Text(val.toString()),
+                    ))
+                .toList(),
+          ),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Card(
-              elevation: 5,
-              color: Colors.deepPurple[300],
-              margin: EdgeInsets.all(10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  SizedBox(
-                    height: 60,
-                    child: Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        'Text("text data",\nstyle:TextStyle(decoration: TextDecoration.underline,)',
-                        style: TextStyle(
-                            fontSize: 13, fontWeight: FontWeight.bold),
-                      ),
-                    ),
+            Text('decorationThickness:'),
+            SizedBox(
+                width: 190,
+                child: Slider(
+                  value: sliderVal1,
+                  min: 6,
+                  max: 24,
+                  divisions: 10,
+                  label: sliderVal1.toStringAsFixed(0),
+                  onChanged: (val) {
+                    setState(() {
+                      sliderVal1 = val;
+                    });
+                  },
+                )),
+          ],
+        ),
+        Row(
+          children: [
+            Text("color:       "),
+            Container(
+              child: DropdownButton(
+                value: _currentColorIndex,
+                items: <DropdownMenuItem>[
+                  DropdownMenuItem(
+                    value: 0,
+                    child: Text(_colorToShow[0]),
+                  ),
+                  DropdownMenuItem(
+                    value: 1,
+                    child: Text(_colorToShow[1]),
+                  ),
+                  DropdownMenuItem(
+                    value: 2,
+                    child: Text(_colorToShow[2]),
+                  ),
+                  DropdownMenuItem(
+                    value: 3,
+                    child: Text(_colorToShow[3]),
+                  ),
+                  DropdownMenuItem(
+                    value: 4,
+                    child: Text(_colorToShow[4]),
                   ),
                 ],
+                onChanged: (value) {
+                  setState(() {
+                    _currentColorIndex = value;
+                  });
+                },
               ),
-            ),
-            new Column(
-              children: <Widget>[
-                //default color
-                SizedBox(height: 10),
-                new Text(
-                  'Normal Text.',
-                  style: TextStyle(
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'fontWeight: FontWeight.bold',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'fontStyle: FontStyle.italic',
-                  style: TextStyle(
-                    fontStyle: FontStyle.italic,
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'decoration: TextDecoration.underline',
-                  style: TextStyle(
-                    decoration: TextDecoration.underline,
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'decoration: TextDecoration.combine',
-                  style: TextStyle(
-                    decoration: TextDecoration.combine(
-                        [TextDecoration.underline, TextDecoration.overline]),
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'decoration: TextDecoration.lineThrough',
-                  style: TextStyle(
-                    decoration: TextDecoration.lineThrough,
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'decoration: TextDecoration.overline',
-                  style: TextStyle(
-                    decoration: TextDecoration.overline,
-                    fontSize: 16,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'decoration: TextDecoration.underline,decorationStyle: TextDecorationStyle.dashed,',
-                  style: TextStyle(
-                    decoration: TextDecoration.underline,
-                    decorationStyle: TextDecorationStyle.dashed,
-                    fontSize: 14,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'decoration: TextDecoration.underline,decorationStyle: TextDecorationStyle.double,',
-                  style: TextStyle(
-                    decoration: TextDecoration.underline,
-                    decorationStyle: TextDecorationStyle.double,
-                    fontSize: 14,
-                  ),
-                ),
-                SizedBox(height: 10),
-                Text(
-                  'decoration: TextDecoration.underline,decorationStyle: TextDecorationStyle.wavy,',
-                  style: TextStyle(
-                    decoration: TextDecoration.underline,
-                    decorationStyle: TextDecorationStyle.wavy,
-                    fontSize: 14,
-                  ),
-                ),
-                SizedBox(height: 10),
-              ],
             ),
           ],
         ),
-      ),
-      floatingActionButton: WidgetFab(),
+      ]),
     );
   }
 }

@@ -1,10 +1,9 @@
 // lib/Box\HomeScreen_Rotated.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Box/Box_RotatedBox/Que02Text.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
 
-class HomeRotated extends StatelessWidget {
+class HomeCheck extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -16,10 +15,8 @@ class HomeRotated extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Que01Rotated11(),
-                      "lib/Box/Box_RotatedBox/Que01.dart", "Rotated Box"),
-                  ButtonsCode(Que02(), "lib/Box/Box_RotatedBox/Que02Text.dart",
-                      "Rotated Text"),
+                  ButtonsCode(
+                      Que01(), "lib/Box/Box_CheckBox/Que01.dart", "CheckBox"),
                 ],
               ),
             ),

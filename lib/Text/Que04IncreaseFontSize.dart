@@ -26,6 +26,7 @@ class _State extends State<Que04Text11> {
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
                 child: Column(children: <Widget>[

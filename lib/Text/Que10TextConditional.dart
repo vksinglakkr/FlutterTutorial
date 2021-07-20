@@ -9,6 +9,11 @@ class Que10Text11 extends StatefulWidget {
 
 class _Que10Text11State extends State<Que10Text11> {
   final String image1 = "assets/help/Text/Que10.png";
+  // void _incrementCounter() {
+  //   setState(() {
+  //     _counter++;
+  //   });
+  // }
 
   int _counter = 0;
   @override
@@ -25,7 +30,7 @@ class _Que10Text11State extends State<Que10Text11> {
           children: [
             Card(
               elevation: 5,
-              color: Colors.deepPurple[300],
+//              color: Colors.deepPurple[300],
               margin: EdgeInsets.all(10),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -39,10 +44,11 @@ class _Que10Text11State extends State<Que10Text11> {
             SizedBox(height: 10),
             //  Text("Button tapped $_counter time${_counter <= 1 ? '' : 's'}."),
             ElevatedButton(
-              onPressed: () => {
-                setState: () {
-                  _counter = _counter + 1;
-                }
+              // onPressed: _incrementCounter,
+              onPressed: () {
+                setState(() {
+                  _counter++;
+                });
               },
               child: Text(
                   "Button tapped $_counter time${_counter <= 1 ? '' : 's'}."),

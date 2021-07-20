@@ -1,13 +1,13 @@
-// lib/Transform\Que04Transform_rotate.dart
+// lib/Transform\Que04aTransform_rotate.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que0411 extends StatefulWidget {
+class Que04a extends StatefulWidget {
   @override
-  _Que0411State createState() => _Que0411State();
+  _Que04aState createState() => _Que04aState();
 }
 
-class _Que0411State extends State<Que0411> {
+class _Que04aState extends State<Que04a> {
   final String url1 = "https://www.youtube.com/watch?v=4h5q5jfkdYg";
   final String image1 = "assets/help/Transform/Que04.png";
   final String video1 = "9z_YNlRlWfA";
@@ -26,6 +26,9 @@ class _Que0411State extends State<Que0411> {
     Alignment.bottomRight,
   ];
   Alignment _selectedAlignment = Alignment.center;
+  bool boolVal = true;
+  int _counter = 0;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,30 +38,44 @@ class _Que0411State extends State<Que0411> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Transform.rotate(
-                angle: sliderVal3,
-                origin: Offset(sliderVal1, sliderVal2),
-                alignment: _selectedAlignment,
-                child: Center(
-                  child: Container(
-                      height: 200,
-                      width: 200,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Colors.red, Colors.blue],
-                          begin: FractionalOffset.centerLeft,
-                          end: FractionalOffset.centerRight,
-                          tileMode: TileMode.repeated,
-                        ),
-                      )
-                      //transform: Matrix4.rotationY(0.5),
-                      //transform: Matrix4.identity(),
-                      //transform: Matrix4.identity()..rotateZ(pi / 2),
-                      //Random Number final random = Random();
-                      //transform: Matrix4.rotationZ(random.nextInt(100).toDouble()),
-                      ),
+              Center(
+                child: Container(
+                  width: 110,
+                  height: 110,
+                  color: Colors.yellow,
+                  child: Transform.rotate(
+                    angle: sliderVal3,
+                    origin: Offset(sliderVal1, sliderVal2),
+                    alignment: _selectedAlignment,
+                    transformHitTests: boolVal,
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _counter = _counter + 1;
+                        });
+                      },
+                      child: Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [Colors.red, Colors.blue],
+                              begin: FractionalOffset.centerLeft,
+                              end: FractionalOffset.centerRight,
+                              tileMode: TileMode.repeated,
+                            ),
+                          )
+                          //transform: Matrix4.rotationY(0.5),
+                          //transform: Matrix4.identity(),
+                          //transform: Matrix4.identity()..rotateZ(pi / 2),
+                          //Random Number final random = Random();
+                          //transform: Matrix4.rotationZ(random.nextInt(100).toDouble()),
+                          ),
+                    ),
+                  ),
                 ),
               ),
+              Text("No. of Times Clicked: $_counter"),
             ],
           ),
         ),
@@ -72,6 +89,31 @@ class _Que0411State extends State<Que0411> {
     return Material(
       color: Theme.of(context).primaryColorLight,
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text('transformHitTests:'),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: true,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('true'),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: false,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('false'),
+            ],
+          ),
+        ]),
         Row(children: [
           Text('angle:'),
           SizedBox(

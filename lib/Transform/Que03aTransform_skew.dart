@@ -2,12 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que0311 extends StatefulWidget {
+class Que03a extends StatefulWidget {
   @override
-  _Que0311State createState() => _Que0311State();
+  _Que03aState createState() => _Que03aState();
 }
 
-class _Que0311State extends State<Que0311> {
+class _Que03aState extends State<Que03a> {
   double sliderVal1 = 0.0;
   double sliderVal2 = 0.0;
   double sliderVal3 = 0.0;
@@ -24,6 +24,8 @@ class _Que0311State extends State<Que0311> {
     Alignment.bottomRight,
   ];
   Alignment _selectedAlignment = Alignment.center;
+  bool boolVal = true;
+  int _counter = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -34,18 +36,34 @@ class _Que0311State extends State<Que0311> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Transform(
+              Center(
+                child: Container(
+                  width: 110,
+                  height: 110,
+                  color: Colors.yellow,
+                  child: Transform(
 //            transform: Matrix4.skewY(10),
 //            transform: Matrix4.skewX(10),
-                transform: Matrix4.skew(sliderVal1, sliderVal2),
-                alignment: _selectedAlignment,
-                origin: Offset(sliderVal3, sliderVal4),
-                child: Container(
-                  height: 150.0,
-                  width: 150.0,
-                  color: Colors.red,
+                    transform: Matrix4.skew(sliderVal1, sliderVal2),
+                    alignment: _selectedAlignment,
+                    origin: Offset(sliderVal3, sliderVal4),
+                    transformHitTests: boolVal,
+                    child: GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          _counter = _counter + 1;
+                        });
+                      },
+                      child: Container(
+                        height: 110,
+                        width: 110,
+                        color: Colors.blue.withAlpha(125),
+                      ),
+                    ),
+                  ),
                 ),
               ),
+              Text("No. of Times Clicked: $_counter"),
             ],
           ),
         ),
@@ -59,6 +77,31 @@ class _Que0311State extends State<Que0311> {
     return Material(
       color: Theme.of(context).primaryColorLight,
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text('transformHitTests:'),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: true,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('true'),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: false,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('false'),
+            ],
+          ),
+        ]),
         Text("transform: Matrix4.skew('x,y')"),
         Row(children: [
           SizedBox(

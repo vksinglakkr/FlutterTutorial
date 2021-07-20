@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-class Que01 extends StatefulWidget {
+class Que01a extends StatefulWidget {
   @override
-  _Que01State createState() => _Que01State();
+  _Que01aState createState() => _Que01aState();
 }
 
-class _Que01State extends State<Que01> {
+class _Que01aState extends State<Que01a> {
   int _counter = 0;
-  double sliderVal1 = 0.0;
-  double sliderVal2 = 0.0;
+  double sliderVal1 = 50.0;
+  double sliderVal2 = 50.0;
+  bool boolVal = true;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,10 +25,18 @@ class _Que01State extends State<Que01> {
                 color: Colors.yellow,
                 child: Transform.translate(
                   offset: Offset(sliderVal1, sliderVal2),
-                  child: Container(
-                    height: 200,
-                    width: 200,
-                    color: Colors.blue.withAlpha(125),
+                  transformHitTests: boolVal,
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _counter = _counter + 1;
+                      });
+                    },
+                    child: Container(
+                      height: 200,
+                      width: 200,
+                      color: Colors.blue.withAlpha(125),
+                    ),
                   ),
                 ),
               ),
@@ -44,10 +53,35 @@ class _Que01State extends State<Que01> {
     return Material(
       color: Theme.of(context).primaryColorLight,
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text('transformHitTests:'),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: true,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('true'),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: false,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('false'),
+            ],
+          ),
+        ]),
         Row(children: [
-          Text("offset: Offset(x,y)"),
+          Text(' x, y'),
           SizedBox(
-              width: 120,
+              width: 160,
               child: Slider(
                 value: sliderVal1,
                 min: 0.0,
@@ -61,7 +95,7 @@ class _Que01State extends State<Que01> {
                 },
               )),
           SizedBox(
-              width: 120,
+              width: 160,
               child: Slider(
                 value: sliderVal2,
                 min: 0.0,

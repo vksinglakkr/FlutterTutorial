@@ -1,13 +1,13 @@
-// lib/Transform\Que02Transform_scale.dart
+// lib/Transform/Que02aTransform_scale.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que0211 extends StatefulWidget {
+class Que02a extends StatefulWidget {
   @override
-  _Que0211State createState() => _Que0211State();
+  _Que02aState createState() => _Que02aState();
 }
 
-class _Que0211State extends State<Que0211> {
+class _Que02aState extends State<Que02a> {
   final String url1 = "https://www.youtube.com/watch?v=4h5q5jfkdYg";
   final String image1 = "assets/help/Transform/Que02.png";
   final String video1 = "9z_YNlRlWfA";
@@ -26,29 +26,43 @@ class _Que0211State extends State<Que0211> {
     Alignment.bottomRight,
   ];
   Alignment _selectedAlignment = Alignment.center;
+  bool boolVal = true;
+  int _counter = 0;
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: WidgetAppBar("Scale")),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Transform.scale(
-              scale: sliderVal3,
-              alignment: _selectedAlignment,
-              origin: Offset(sliderVal1, sliderVal2),
-              child: Center(
-                child: Container(
-                  height: 200,
-                  width: 200,
-                  color: Colors.red,
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          ///
+          Center(
+            child: Container(
+              width: 200,
+              height: 200,
+              color: Colors.yellow,
+              child: Transform.scale(
+                scale: sliderVal3,
+                alignment: _selectedAlignment,
+                origin: Offset(sliderVal1, sliderVal2),
+                transformHitTests: boolVal,
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      _counter = _counter + 1;
+                    });
+                  },
+                  child: Container(
+                    height: 200,
+                    width: 200,
+                    color: Colors.blue.withAlpha(125),
+                  ),
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+          Text("No. of Times Clicked: $_counter"),
+        ]),
         floatingActionButton: WidgetFab(),
         bottomNavigationBar: _getBottomBar(),
       ),
@@ -59,6 +73,31 @@ class _Que0211State extends State<Que0211> {
     return Material(
       color: Theme.of(context).primaryColorLight,
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text('transformHitTests:'),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: true,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('true'),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Radio<bool>(
+                  value: false,
+                  groupValue: boolVal,
+                  onChanged: (bool value) {
+                    setState(() => boolVal = value);
+                  }),
+              const Text('false'),
+            ],
+          ),
+        ]),
         Row(children: [
           Text('scale:'),
           SizedBox(
@@ -77,9 +116,9 @@ class _Que0211State extends State<Que0211> {
               )),
         ]),
         Row(children: [
-          Text("origin: Offset(x,y)"),
+          Text(' x, y'),
           SizedBox(
-              width: 110,
+              width: 160,
               child: Slider(
                 value: sliderVal1,
                 min: 0.0,
@@ -93,7 +132,7 @@ class _Que0211State extends State<Que0211> {
                 },
               )),
           SizedBox(
-              width: 110,
+              width: 160,
               child: Slider(
                 value: sliderVal2,
                 min: 0.0,

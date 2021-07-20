@@ -1,4 +1,4 @@
-//  \lib/Align\Que03Properties.dart
+//  /lib/Text/Que23Alignment.dart
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';

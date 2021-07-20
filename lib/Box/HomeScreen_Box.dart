@@ -1,5 +1,6 @@
 // lib/Box\HomeScreen_Sized.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Box/CheckBox/HomeScreen_check.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 import 'Box_DecoratedBox/HomeScreen_Decorated.dart';
@@ -78,6 +79,21 @@ class HomeBox extends StatelessWidget {
                               context,
                               MaterialPageRoute(
                                   builder: (context) => HomeRotated()));
+                        }),
+                  ),
+                  Container(
+                    margin: EdgeInsets.all(2),
+                    height: 32,
+                    child: ElevatedButton(
+                        child: Text('Check Box',
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.bold)),
+//                      color: Colors.orangeAccent,
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomeCheck()));
                         }),
                   ),
                 ],

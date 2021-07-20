@@ -2,12 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que0511 extends StatefulWidget {
+class Que05a extends StatefulWidget {
   @override
-  _Que0511State createState() => _Que0511State();
+  _Que05aState createState() => _Que05aState();
 }
 
-class _Que0511State extends State<Que0511> {
+class _Que05aState extends State<Que05a> {
   final List<FractionalOffset> _dropdownAlignment = [
     FractionalOffset.topCenter,
     FractionalOffset.topLeft,
@@ -20,13 +20,12 @@ class _Que0511State extends State<Que0511> {
     FractionalOffset.bottomRight,
   ];
   FractionalOffset _selectedAlignment = FractionalOffset.center;
-
   double sliderVal1 = 3;
-
   double sliderVal2 = 2;
+  bool boolVal = true;
+  int _counter = 0;
 
   double sliderVal3 = 20;
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -35,24 +34,46 @@ class _Que0511State extends State<Que0511> {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
-              width: 300,
-              height: 300,
-              child: Center(
+            Center(
+              child: Container(
+                width: 110,
+                height: 110,
+                color: Colors.yellow,
                 child: Transform(
                   transform: Matrix4.identity()
                     ..setEntry(sliderVal1.toInt(), sliderVal2.toInt(),
                         sliderVal3 / 1000) //..setEntry(3, 2, 10 / 1000)
                     ..rotateX(3.14 / 20.0), //..rotateX(3.14 / 20.0),
                   alignment: _selectedAlignment,
-                  child: Container(
-                    height: 100.0,
-                    width: 100.0,
-                    color: Colors.red,
+                  transformHitTests: boolVal,
+                  child: GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _counter = _counter + 1;
+                      });
+                    },
+                    child: Container(
+                        height: 200,
+                        width: 200,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [Colors.red, Colors.blue],
+                            begin: FractionalOffset.centerLeft,
+                            end: FractionalOffset.centerRight,
+                            tileMode: TileMode.repeated,
+                          ),
+                        )
+                        //transform: Matrix4.rotationY(0.5),
+                        //transform: Matrix4.identity(),
+                        //transform: Matrix4.identity()..rotateZ(pi / 2),
+                        //Random Number final random = Random();
+                        //transform: Matrix4.rotationZ(random.nextInt(100).toDouble()),
+                        ),
                   ),
                 ),
               ),
             ),
+            Text("No. of Times Clicked: $_counter"),
           ],
         ),
         floatingActionButton: WidgetFab(),

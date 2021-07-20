@@ -6,6 +6,7 @@ import 'package:flutter_tutorial/Text/Que22Animated.dart';
 import 'package:flutter_tutorial/Text/Que23Alignment.dart';
 import 'package:flutter_tutorial/Text/Que23Color.dart';
 import 'package:flutter_tutorial/Text/Que23Font.dart';
+import 'package:flutter_tutorial/Text/Que23RotateText.dart';
 import 'package:flutter_tutorial/Text/Que23Spacing.dart';
 import 'package:flutter_tutorial/Text/Que23TextDirection.dart';
 import 'package:flutter_tutorial/Text/Que23strutStyle.dart';
@@ -96,17 +97,13 @@ class HomeText extends StatelessWidget {
                       "How to insert imojis in text?"),
                   ButtonsCode(
                       Que01Gester11(),
-                      "lib/GesterDetector/Que01ClickonText.dart",
+                      "lib/Others/GesterDetector/Que01ClickonText.dart",
                       "Clickable text using GesterDetector?"),
                   ButtonsCode(
                       Que02Gester11(),
-                      "lib/GesterDetector/Que01ClickonText.dart",
-                      "Clickable text using GesterDetector?"),
-                  ButtonsCode(
-                      Que02Gester11(),
-                      "lib/GesterDetector/Que01ClickonText.dart",
+                      "lib/Others/GesterDetector/Que01ClickonText.dart",
                       "How to make text as toggle using GesterDector?"),
-                  ButtonsCode(Que07TextSpan(), "lib/Text\Que07TextRich.dart",
+                  ButtonsCode(Que07TextSpan(), "lib/Text/Que07TextRich.dart",
                       "How to apply style on part of text?"),
                   ButtonsCode(
                       Que08TextScale(),
@@ -136,10 +133,8 @@ class HomeText extends StatelessWidget {
                       Que17AutoSizeText(),
                       "lib/Text/Que17TextAutoSizetext.dart",
                       "auto_size_text: ^2.1.0'"),
-                  ButtonsCode(
-                      QueManipulation11(),
-                      "lib/Text/Que17TextAutoSizetext.dart",
-                      "text manipulation"),
+                  ButtonsCode(QueManipulation11(),
+                      "lib/Text/QueManipulation.dart", "text manipulation"),
                   ButtonsCode(
                       Que17AutoSizeText(),
                       "lib/Text/Que17TextAutoSizetext.dart",
@@ -152,6 +147,8 @@ class HomeText extends StatelessWidget {
                       Que15Gradient11(),
                       "lib/Text/Que15GradientForeground.dart",
                       "Gradient foreground"),
+                  ButtonsCode(Que23Rotation(), "lib/Text/Que23RotateText.dart",
+                      "Rotation of Text"),
                   ButtonsCode(
                       Que15Default(),
                       "lib/Text/Que15DefaulttextStyle.dart",

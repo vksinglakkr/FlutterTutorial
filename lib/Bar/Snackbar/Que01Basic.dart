@@ -1,6 +1,7 @@
 // lib/Bar\Snackbar\Que01Basic.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+//import 'package:fluttertoast/fluttertoast.dart';
 
 class Que01SnackBar11 extends StatefulWidget {
   @override
@@ -9,12 +10,6 @@ class Que01SnackBar11 extends StatefulWidget {
 
 class _State extends State<Que01SnackBar11> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-
-  void _showMessageInScaffold(String message) {
-    //  _scaffoldKey.currentState.showSnackBar(SnackBar(
-    //    content: Text(message),
-    //   ));
-  }
 
   final String image1 = "assets/help/Bar/Snackbar/Que01.png";
 
@@ -34,7 +29,14 @@ class _State extends State<Que01SnackBar11> {
               //color: Colors.blue,
               child: Text('Show SnackBar'),
               onPressed: () {
-                _showMessageInScaffold("Hello dear! I'm SnackBar.");
+                // Fluttertoast.showToast(
+                //     msg: "The entered text is: NIC, Kurukshetra",
+                //     toastLength: Toast.LENGTH_SHORT,
+                //     gravity: ToastGravity.BOTTOM,
+                //     //   timeInSecForIosWeb: 1,
+                //     backgroundColor: Colors.black,
+                //     textColor: Colors.white,
+                //     fontSize: 16.0);
               },
             )),
           ],

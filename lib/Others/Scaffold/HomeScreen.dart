@@ -1,9 +1,10 @@
 // lib/Spacer\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Others/Scaffold/Que02.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
 
-class HomeSpacer extends StatelessWidget {
+class HomeScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -15,8 +16,10 @@ class HomeSpacer extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que0111(), "lib/Others/Spacer/Que01.dart",
-                  "Basic Spacer with Flex"),
+              ButtonsCode(
+                  Que01(), "lib/Others/Scaffold/Que01.dart", "Scaffold"),
+              ButtonsCode(ScaffoldPage(), "lib/Others/Scaffold/Que02.dart",
+                  "Scaffold 2"),
             ],
           ),
         ))),

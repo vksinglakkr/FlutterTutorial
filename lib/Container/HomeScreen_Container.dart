@@ -33,7 +33,7 @@ import 'Que24Container_boxShadow.dart';
 import 'Que25ContainerFlutterLogo.dart';
 import 'Que26dart_forLoop.dart';
 import 'Que27customContainer.dart';
-import 'Que28gradient.dart';
+import 'Que28LinearGradient.dart';
 import 'Que29Fontsfamily.dart';
 import 'Que30Border.dart';
 import 'Que32ContainerBorder.dart';

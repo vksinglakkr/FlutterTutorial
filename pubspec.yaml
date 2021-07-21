@@ -118,6 +118,7 @@ flutter:
     - lib/Slider/
     - lib/Dropdown/
     - lib/Others/Spacer/
+    - lib/Others/Scaffold/
     - lib/Others/Stack_IndexStack_Positioned/
     - lib/Switch/
     - lib/SetUpAPK/

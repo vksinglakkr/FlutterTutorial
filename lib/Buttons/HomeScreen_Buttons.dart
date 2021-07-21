@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Bar/AppBar/HomeScreen_AppBar.dart';
 import 'package:flutter_tutorial/Bar/ButtonBar/HomeScreen_ButtonBar.dart';
+import 'package:flutter_tutorial/Dropdown/HomeScreen_Dropdown.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'ElevatedButton/HomeScreen_Elevated.dart';
 import 'FlatButton/HomeScreen_Flat.dart';
@@ -25,7 +26,7 @@ class HomeButton extends StatelessWidget {
                     margin: EdgeInsets.all(2),
                     height: 32,
                     child: ElevatedButton(
-                        child: Text('Elevated Button',
+                        child: Text('Elevated Button (Raised)',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         onPressed: () {
@@ -81,7 +82,7 @@ class HomeButton extends StatelessWidget {
                     margin: EdgeInsets.all(2),
                     height: 32,
                     child: ElevatedButton(
-                        child: Text('Flat Button',
+                        child: Text('Text Button (Flat)',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         onPressed: () {
@@ -95,7 +96,7 @@ class HomeButton extends StatelessWidget {
                     margin: EdgeInsets.all(2),
                     height: 32,
                     child: ElevatedButton(
-                        child: Text('3 Dot Popup menu Button',
+                        child: Text('Popup Menu Button (3 Dot)',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         onPressed: () {
@@ -119,6 +120,25 @@ class HomeButton extends StatelessWidget {
                                   builder: (context) => HomeButtonBar()));
                         }),
                   ),
+                  ElevatedButton(
+                      child: Text('DropdownButton',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
+                      onPressed: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) => HomeDropdown(),
+                          ))),
+                  ElevatedButton(
+                      child: Text('Buttonbar',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold)),
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeButtonBar()));
+                      }),
                 ],
               ),
             ),

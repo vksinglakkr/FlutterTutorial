@@ -1,86 +1,187 @@
-// /lib/Container/Que42_AnimatedCurves.dart
-
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class AnimatedCurves extends StatefulWidget {
-  @override
-  _AnimatedCurvesState createState() => _AnimatedCurvesState();
+class Que22a extends StatefulWidget {
+  _Que22aState createState() => _Que22aState();
 }
 
-class _AnimatedCurvesState extends State<AnimatedCurves> {
-  final String url1 =
-      "https://medium.com/codechai/animating-using-animatedcontainer-flutter-widget-8356b5c1914c";
-  final String video1 = "0NVLyjtWJqc";
+class _Que22aState extends State<Que22a> {
+  bool isSelected = false;
+  double sliderVal1 = 180;
   AnimationCurve dropDownValue;
-  bool selected = false;
+  FontWeight _fontWeight = FontWeight.w900;
+  FontStyle _fontStyle = FontStyle.normal;
+  final List<String> _fontFamily = <String>["Roboto", "Qahiri", "Pacifico"];
+  int _currentFontIndex = 0;
+  int _count = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: WidgetAppBar("AnimatedContainer Demo")),
-      bottomNavigationBar:
-          QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-      body: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                dropDownMenu(context),
-                playAnimation(context),
-              ],
-            ),
-          ),
-          SizedBox(
-            height: 8,
-          ),
-          Column(
-            children: <Widget>[
-              dropDownValue != null
-                  ? Text(
-                      dropDownValue.curveCubic.toString(),
-                    )
-                  : Text(Curves.linear.toString()),
-              SizedBox(
-                height: 8,
-              ),
-              dropDownValue != null
-                  ? Text(
-                      dropDownValue.description,
-                    )
-                  : Text("linear"),
-            ],
-          ),
-          SizedBox(
-            height: 8,
-          ),
-          animatedContainer(context),
-        ],
+      appBar: AppBar(
+        title: Text("AnimatedDefaultTextStyle"),
       ),
+      body: Center(
+        child: Container(
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                AnimatedDefaultTextStyle(
+                  curve: dropDownValue != null
+                      ? dropDownValue.curveCubic
+                      : Curves.linear,
+                  style: isSelected
+                      ? TextStyle(
+//                          fontSize: 50,
+                          color: Colors.red,
+//                          fontWeight: FontWeight.bold
+                        )
+                      : TextStyle(
+//                          fontSize: 24.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w100),
+                  duration: const Duration(milliseconds: 1200),
+                  child: Text(
+                    "NIC",
+                    style: TextStyle(
+                      fontSize: sliderVal1,
+                      fontWeight: _fontWeight,
+                      fontStyle: _fontStyle,
+                      fontFamily: _fontFamily[_currentFontIndex],
+                    ),
+                  ),
+                ),
+                TextButton(
+                  child: Text("Click me!"),
+                  onPressed: () {
+                    setState(() {
+                      isSelected = !isSelected;
+                      _count = _count + 1;
+                      _count < 39 ? _count += 1 : _count = 0;
+                      dropDownValue = curveOptions[_count];
+                    });
+                  },
+                ),
+                Spacer(flex: 1),
+                Column(
+                  children: <Widget>[
+                    dropDownValue != null
+                        ? Text(
+                            dropDownValue.curveCubic.toString(),
+                          )
+                        : Text(Curves.linear.toString()),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    dropDownValue != null
+                        ? Text(dropDownValue.description,
+                            style: TextStyle(fontSize: 10))
+                        : Text("linear"),
+                  ],
+                ),
+              ]),
+        ),
+      ),
+      bottomNavigationBar: _getBottomBar(),
     );
   }
 
-  Widget animatedContainer(BuildContext context) {
-    return SingleChildScrollView(
-      child: GestureDetector(
-        onTap: () {
-          setState(() {
-            selected = !selected;
-          });
-        },
-        child: AnimatedContainer(
-          width: selected ? 260.0 : 200.0,
-          height: selected ? 200.0 : 260.0,
-          alignment:
-              selected ? Alignment.center : AlignmentDirectional.topCenter,
-          duration: Duration(seconds: 2),
-          curve:
-              dropDownValue != null ? dropDownValue.curveCubic : Curves.linear,
-          child: Image.asset('assets/images/sea.jpg'),
-        ),
-      ),
+  Widget _getBottomBar() {
+    return Material(
+      color: Theme.of(context).primaryColorLight,
+      child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            ListTile(
+              title: const Text('fontWeight:'),
+              trailing: DropdownButton<FontWeight>(
+                value: _fontWeight,
+                onChanged: (FontWeight newVal) {
+                  if (newVal != null) {
+                    setState(() => _fontWeight = newVal);
+                  }
+                },
+                items: FontWeight.values
+                    .map((FontWeight val) => DropdownMenuItem(
+                          value: val,
+                          child: Text(val.toString()
+//                              .substring('WrapAlignment.'.length)
+                              ),
+                        ))
+                    .toList(),
+              ),
+            ),
+//             ListTile(
+//               title: const Text('fontStyle:'),
+//               trailing: DropdownButton<FontStyle>(
+//                 value: _fontStyle,
+//                 onChanged: (FontStyle newVal) {
+//                   if (newVal != null) {
+//                     setState(() => _fontStyle = newVal);
+//                   }
+//                 },
+//                 items: FontStyle.values
+//                     .map((FontStyle val) => DropdownMenuItem(
+//                           value: val,
+//                           child: Text(val.toString()
+// //                              .substring('WrapAlignment.'.length)
+//                               ),
+//                         ))
+//                     .toList(),
+//               ),
+//             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('    fontSize:'),
+                SizedBox(
+                    width: 250,
+                    child: Slider(
+                      value: sliderVal1,
+                      min: 6,
+                      max: 200,
+                      divisions: 10,
+                      label: sliderVal1.toStringAsFixed(0),
+                      onChanged: (val) {
+                        setState(() {
+                          sliderVal1 = val;
+                        });
+                      },
+                    )),
+              ],
+            ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     Text("    fontFamily:"),
+            //     Container(
+            //       child: DropdownButton(
+            //         value: _currentFontIndex,
+            //         items: <DropdownMenuItem>[
+            //           DropdownMenuItem(
+            //             value: 0,
+            //             child: Text(_fontFamily[0]),
+            //           ),
+            //           DropdownMenuItem(
+            //             value: 1,
+            //             child: Text(_fontFamily[1]),
+            //           ),
+            //           DropdownMenuItem(
+            //             value: 2,
+            //             child: Text(_fontFamily[2]),
+            //           ),
+            //         ],
+            //         onChanged: (value) {
+            //           setState(() {
+            //             _currentFontIndex = value;
+            //           });
+            //         },
+            //       ),
+            //     ),
+            //   ],
+            // ),
+            dropDownMenu(context),
+          ]),
     );
   }
 
@@ -110,15 +211,6 @@ class _AnimatedCurvesState extends State<AnimatedCurves> {
           );
         }).toList(),
       ),
-    );
-  }
-
-  Widget playAnimation(BuildContext context) {
-    return ElevatedButton(
-      child: Text("Animate"),
-      onPressed: () => setState(() {
-        selected = !selected;
-      }),
     );
   }
 }

@@ -11,6 +11,7 @@ import 'package:flutter_tutorial/Others/HomeScreenOthers.dart';
 import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
 import 'package:flutter_tutorial/Tab/HomeScreen1.dart';
 import 'package:flutter_tutorial/TextFormField/HomeScreen.dart';
+import 'package:flutter_tutorial/pages/HomeScreenV2.dart';
 import 'package:flutter_tutorial/widgets/exit-popup.dart';
 import '../AlertDialog/HomeScreen_Alert.dart';
 import '../Align/HomeScreen_Align.dart';
@@ -328,6 +329,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => HomeSetUp(),
+                  )),
+            ),
+            ElevatedButton(
+              child: Text('New Layout',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HomeScreenV2(),
                   )),
             ),
           ],

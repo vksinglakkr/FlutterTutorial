@@ -29,6 +29,7 @@ class Que0411 extends StatelessWidget {
             Text("Programming Addict"), //checked for Display data from a Josn
             Text("RetroPortal Studio"),
             Text("flutter25.com"),
+            Text("Paul Halliday"),
             Text("Abubakar Shaikh i checked for Future builder"),
             Text(
                 "theItalianDev i checked HTTP Request. May also check for firebase"),

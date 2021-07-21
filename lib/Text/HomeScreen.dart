@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Text/Que06.dart';
 import 'package:flutter_tutorial/Text/Que16TextTheme.dart';
 import 'package:flutter_tutorial/Text/Que22Animated.dart';
+import 'package:flutter_tutorial/Text/Que22aAnimatedDefault.dart';
 import 'package:flutter_tutorial/Text/Que23Alignment.dart';
 import 'package:flutter_tutorial/Text/Que23Color.dart';
 import 'package:flutter_tutorial/Text/Que23Font.dart';
@@ -172,6 +173,8 @@ class HomeText extends StatelessWidget {
                       Que21Trans(),
                       "lib/Text/Que21TransformSkewtext.dart",
                       "Transform Skew text"),
+                  ButtonsCode(Que22a(), "lib/Text/Que22aAnimatedDefault.dart",
+                      "Animation using AnimatedDefaultTextStyle?"),
                   ButtonsCode(Que2211(), "lib/Text/Que22Animated.dart",
                       "Text Animation?"),
                   ButtonsCode(

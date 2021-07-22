@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/ListView/Que02.dart';
 import 'package:flutter_tutorial/ListView/Que03properties.dart';
+import 'package:flutter_tutorial/ListView/Que15aColorListGenerate.dart';
 import 'package:flutter_tutorial/ListView/Que43DismisItem.dart';
 import 'package:flutter_tutorial/ListView/Que50Search.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -128,6 +129,10 @@ class HomeListView1 extends StatelessWidget {
                       "with List<String> & icon List, ListViewBuilder Ex.5"),
                   ButtonsCode(Que1511(), "lib/ListView/Que15ListGenerate.dart",
                       "with List<String>.generate"),
+                  ButtonsCode(
+                      Que15a(),
+                      "lib/ListView/Que15aColorListGenerate.dart",
+                      "Generate List of Color"),
                   ButtonsCode(
                       Que37a11(),
                       "lib/ListView/Que37aListViewConditionOpe.dart",

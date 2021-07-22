@@ -74,10 +74,10 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: GridView.count(
           padding: EdgeInsets.all(6),
-          crossAxisCount: 3,
+          crossAxisCount: 2,
           mainAxisSpacing: 4,
           crossAxisSpacing: 4,
-          childAspectRatio: 1.92,
+          childAspectRatio: 4.1,
           children: [
             ElevatedButton(
                 child: Text('AlertDialog',

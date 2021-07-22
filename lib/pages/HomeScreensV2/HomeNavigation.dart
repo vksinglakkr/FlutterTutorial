@@ -4,12 +4,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Bar/AppBar/HomeScreen_AppBar.dart';
 import 'package:flutter_tutorial/Bar/BottomNavigationBar/HomeScreen_Bottom.dart';
-import 'package:flutter_tutorial/Buttons/ElevatedButton/HomeScreen_Elevated.dart';
 import 'package:flutter_tutorial/Drawer/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/Routes/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Scaffold/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
 import 'package:flutter_tutorial/Tab/HomeScreen1.dart';
-import 'package:flutter_tutorial/Text/HomeScreen.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/pages/HomePending.dart';
 import 'package:flutter_tutorial/widgets/exit-popup.dart';
@@ -117,6 +116,15 @@ class _HomeNavigationState extends State<HomeNavigation> {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => HomeDrawer(),
+                  )),
+            ),
+            ElevatedButton(
+              child: Text('Routes',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HomeRoutes(),
                   )),
             ),
           ],

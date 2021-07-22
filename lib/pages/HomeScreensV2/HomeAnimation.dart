@@ -61,7 +61,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       builder: (BuildContext context) => HomePending(),
                     ))),
             ElevatedButton(
-              child: Text('AnimatedContainer',
+              child: Text('Animated Container',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
               onPressed: () => Navigator.push(
                   context,
@@ -70,7 +70,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                   )),
             ),
             ElevatedButton(
-                child: Text('AnimatedCrossFade',
+                child: Text('Animated CrossFade',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () => Navigator.push(
@@ -96,7 +96,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('PositionedTransition',
+                child: Text('Positioned Transition',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -120,7 +120,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('AnimatedDefaultTextStyle',
+                child: Text('AnimatedDefault TextStyle',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -136,7 +136,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('AnimatedModalBarrier',
+                child: Text('AnimatedModal Barrier',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -160,7 +160,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('AnimatedWidgetBaseState',
+                child: Text('AnimatedWidget BaseState',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -168,7 +168,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('DecoratedTransition',
+                child: Text('Decorated Transition',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -176,7 +176,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('SlideTransition',
+                child: Text('Slide Transition',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -184,7 +184,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('AnimatedPhysicalModel',
+                child: Text('Animated Physical Model',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -192,7 +192,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('AnimatedPositioned',
+                child: Text('Animated Positioned',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -200,7 +200,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('AnimatedBuilder',
+                child: Text('Animated Builder',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -208,7 +208,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('SizeTransition',
+                child: Text('Size Transition',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {
@@ -216,7 +216,7 @@ class _HomeAnimationState extends State<HomeAnimation> {
                       MaterialPageRoute(builder: (context) => HomePending()));
                 }),
             ElevatedButton(
-                child: Text('AnimatedOpacity',
+                child: Text('Animated Opacity',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () {

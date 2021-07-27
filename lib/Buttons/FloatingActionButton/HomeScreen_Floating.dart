@@ -34,28 +34,32 @@ class HomeFloating extends StatelessWidget {
                       "Basic Code"),
                   ButtonsCode(
                       Que02Floating11(),
-                      "lib/Buttons/FloatingActionButton/Que01onPressed.dart",
+                      "lib/Buttons/FloatingActionButton/Que02CenterFloatLocation.dart",
                       "Location"),
                   ButtonsCode(
-                      Que03Floating11(),
-                      "lib/Buttons/FloatingActionButton/Que02CenterFloatLocation.dart",
-                      "Color"),
+                      Que07Floating11(),
+                      "lib/Buttons/FloatingActionButton/Que07MiniButton.dart",
+                      "Mini Size"),
                   ButtonsCode(
-                      Que04Floating11(),
-                      "lib/Buttons/FloatingActionButton/Que04CustomShape.dart",
-                      "Custom Shape"),
+                      Que03Floating11(),
+                      "lib/Buttons/FloatingActionButton/Que03Color.dart",
+                      "Color"),
                   ButtonsCode(
                       Que05Floating11(),
                       "lib/Buttons/FloatingActionButton/Que05ImageinText.dart",
                       "Display Image"),
                   ButtonsCode(
+                      Que10Floating11(),
+                      "lib/Buttons/FloatingActionButton/Que10SwitchIcon.dart",
+                      "Switch Icon"),
+                  ButtonsCode(
                       Que06Floating11(),
                       "lib/Buttons/FloatingActionButton/Que06RectangleShape.dart",
                       "Rectangle Shape"),
                   ButtonsCode(
-                      Que07Floating11(),
-                      "lib/Buttons/FloatingActionButton/Que04CustomShape.dart",
-                      "Mini Size"),
+                      Que11Floating11(),
+                      "lib/Buttons/FloatingActionButton/Que11RectangleShapeRoundedCorner.dart",
+                      "Rectangle Shape Rounded Corner"),
                   ButtonsCode(
                       Que08Floating11(),
                       "lib/Buttons/FloatingActionButton/Que08Iconwithlabel.dart",
@@ -63,15 +67,11 @@ class HomeFloating extends StatelessWidget {
                   ButtonsCode(
                       Que09Floating11(),
                       "lib/Buttons/FloatingActionButton/Que09DiamondShape.dart",
-                      "Diamond Shapee"),
+                      "Diamond Shape"),
                   ButtonsCode(
-                      Que10Floating11(),
-                      "lib/Buttons/FloatingActionButton/Que10SwitchIcon.dart",
-                      "Switch Icon"),
-                  ButtonsCode(
-                      Que11Floating11(),
-                      "lib/Buttons/FloatingActionButton/Que11RectangleShapeRoundedCorner.dart",
-                      "Rectangle Shape Rounded Corner"),
+                      Que04Floating11(),
+                      "lib/Buttons/FloatingActionButton/Que04CustomShape.dart",
+                      "Custom Shape"),
                   ButtonsCode(
                       FlightExample(),
                       "lib/Container/Que34AnimatedFlight.dart",

@@ -89,43 +89,65 @@ class _Que01BasicState extends State<Que01Basic> {
             ),
           ],
         ),
-        ListTile(
-          title: const Text('mainAxisSize:'),
-          trailing: DropdownButton<MainAxisSize>(
-            value: _mainAxisSize,
-            onChanged: (MainAxisSize newVal) {
-              if (newVal != null) {
-                setState(() => this._mainAxisSize = newVal);
-              }
-            },
-            items: MainAxisSize.values
-                .map((MainAxisSize val) => DropdownMenuItem(
-                      value: val,
-                      child: Text(
-                          val.toString().substring('MainAxisSize.'.length)),
-                    ))
-                .toList(),
-          ),
-        ),
-        ListTile(
-          title: const Text('mainAxisAlignment:'),
-          trailing: DropdownButton<MainAxisAlignment>(
-            value: _mainAxisAlignment,
-            onChanged: (MainAxisAlignment newVal) {
-              if (newVal != null) {
-                setState(() => this._mainAxisAlignment = newVal);
-              }
-            },
-            items: MainAxisAlignment.values
-                .map((MainAxisAlignment val) => DropdownMenuItem(
-                      value: val,
-                      child: Text(val
-                          .toString()
-                          .substring('MainAxisAlignment.'.length)),
-                    ))
-                .toList(),
-          ),
-        ),
+
+        CustMainSizeAxis(
+            changevalue: MainAxisSize.values,
+            defultvalue: _mainAxisSize,
+            textpro: "mainAxisSize",
+            onValueChanged: (value) {
+              setState(() {
+                _mainAxisSize = value;
+              });
+            }),
+        // ListTile(
+        //   title: const Text('mainAxisSize:'),
+        //   trailing: DropdownButton<MainAxisSize>(
+        //     value: _mainAxisSize,
+        //     onChanged: (MainAxisSize newVal) {
+        //       if (newVal != null) {
+        //         setState(() => this._mainAxisSize = newVal);
+        //       }
+        //     },
+        //     items: MainAxisSize.values
+        //         .map((MainAxisSize val) => DropdownMenuItem(
+        //               value: val,
+        //               child: Text(
+        //                   val.toString().substring('MainAxisSize.'.length)),
+        //             ))
+        //         .toList(),
+        //   ),
+        // ),
+
+        CustomValues(
+            datatype: MainAxisAlignment.values,
+            defaultVal: _mainAxisAlignment,
+            propText: "main:",
+            onValueChanged: (value) {
+              setState(() {
+                _mainAxisAlignment = value;
+              });
+            }),
+
+        // ListTile(
+        //   title: const Text('mainAxisAlignment:'),
+        //   trailing:
+        //  DropdownButton<MainAxisAlignment>(
+        //   value: _mainAxisAlignment,
+        //   onChanged: (MainAxisAlignment newVal) {
+        //     if (newVal != null) {
+        //       setState(() => this._mainAxisAlignment = newVal);
+        //     }
+        //   },
+        //   items: MainAxisAlignment.values
+        //       .map((MainAxisAlignment val) => DropdownMenuItem(
+        //             value: val,
+        //             child: Text(val
+        //                 .toString()
+        //                 .substring('MainAxisAlignment.'.length)),
+        //           ))
+        //       .toList(),
+        // ),
+
         ListTile(
           title: const Text('crossAxisAlignment:'),
           trailing: DropdownButton<CrossAxisAlignment>(

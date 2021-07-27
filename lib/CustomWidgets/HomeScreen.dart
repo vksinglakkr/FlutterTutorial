@@ -1,5 +1,6 @@
 // lib/CustomWidgets\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/CustomWidgets/Que02PassChild.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01CustomContainer_Visibility.dart';
 
@@ -19,6 +20,8 @@ class HomeCustomWidget extends StatelessWidget {
                   Que0111(),
                   "lib/CustomWidgets/Que01CustomContainer_Visibility.dart",
                   "Custom Container"),
+              ButtonsCode(Que02(), "lib/CustomWidgets/Que02PassChild.dart",
+                  "Passing .... Widget (as child) as Parameter"),
             ],
           ),
         ))),

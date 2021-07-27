@@ -20,17 +20,21 @@ class HomeInkWell extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que01InkWell11(), "lib/InkWell/Que01ClickonText.dart",
+              ButtonsCode(
+                  Que01InkWell11(),
+                  "lib/Others/InkWell/Que01ClickonText.dart",
                   "InkWell (on Click Change text)"),
               ButtonsCode(
                   Que02InkWell11(),
-                  "lib/InkWell/Que02ClickonTextToggle.dart",
+                  "lib/Others/InkWell/Que02ClickonTextToggle.dart",
                   "InkWell (on click Toggle text)"),
               ButtonsCode(
                   Que03InkWell11(),
-                  "lib/InkWell/Que03CallFunction.dart",
+                  "lib/Others/InkWell/Que03CallFunction.dart",
                   "How to pass Function onTap"),
-              ButtonsCode(Que04InkWell11(), "lib/InkWell/Que04Inkwell.dart",
+              ButtonsCode(
+                  Que04InkWell11(),
+                  "lib/Others/InkWell/Que04Inkwell.dart",
                   "Material Touch ripple-Text, Snackbar,Inkwell"),
               ButtonsCode(
                   Que33Container(),

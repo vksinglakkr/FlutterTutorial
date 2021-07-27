@@ -18,11 +18,11 @@ class HomeVisibility extends StatelessWidget {
                 children: [
                   ButtonsCode(
                       Que0111(),
-                      "libVisibilityQue01CustomContainer_Visibility.dart",
+                      "lib/Others/Visibility/Que01CustomContainer_Visibility.dart",
                       "How to set Visibility with Space Management."),
                   ButtonsCode(
                       Que0111(),
-                      "libVisibilityQue01CustomContainer_Visibility.dart",
+                      "lib/Others/Visibility/Que01CustomContainer_Visibility.dart",
                       "How to set Visibility of a Widget with Widget Visibility. But by this method we can not set visibility of Item of Bottom Navigationbar. for this we have to use if statement"),
                   ButtonsCode(
                       Que0111(),

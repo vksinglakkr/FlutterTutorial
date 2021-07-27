@@ -18,15 +18,17 @@ class HomeGesterDetector extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que01Gester11(),
-                  "lib/GesterDetector/Que01ClickonText.dart", "Clickable Text"),
+              ButtonsCode(
+                  Que01Gester11(),
+                  "lib/Others/GesterDetector/Que01ClickonText.dart",
+                  "Clickable Text"),
               ButtonsCode(
                   Que02Gester11(),
-                  "lib/GesterDetector/Que02ClickonTextToggle.dart",
+                  "lib/Others/GesterDetector/Que02ClickonTextToggle.dart",
                   "Toggle action on Text"),
               ButtonsCode(
                   Que03Gester11(),
-                  "lib/GesterDetector/Que03ContainerOpacityGesterDetector.dart",
+                  "lib/Others/GesterDetector/Que03ContainerOpacityGesterDetector.dart",
                   "on Click Change Opacity of Container"),
               ButtonsCode(
                   Que31Container(),

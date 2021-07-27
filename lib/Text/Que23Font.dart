@@ -98,26 +98,18 @@ class _Que23FontState extends State<Que23Font> {
                     .toList(),
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('    fontSize:'),
-                SizedBox(
-                    width: 250,
-                    child: Slider(
-                      value: sliderVal1,
-                      min: 6,
-                      max: 24,
-                      divisions: 10,
-                      label: sliderVal1.toStringAsFixed(0),
-                      onChanged: (val) {
-                        setState(() {
-                          sliderVal1 = val;
-                        });
-                      },
-                    )),
-              ],
-            ),
+            CustSlider(
+                widthVal: 250,
+                maxValue: 24,
+                minValue: 6,
+                divide: 10,
+                propText: "   fontSize:",
+                sliderVal: sliderVal1,
+                onValueChange: (value) {
+                  setState(() {
+                    sliderVal1 = value;
+                  });
+                }),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -148,26 +140,18 @@ class _Que23FontState extends State<Que23Font> {
                 ),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text('    textScaleFactor:'),
-                SizedBox(
-                    width: 215,
-                    child: Slider(
-                      value: sliderVal2,
-                      min: 1,
-                      max: 23,
-                      divisions: 10,
-                      label: sliderVal2.toStringAsFixed(0),
-                      onChanged: (val) {
-                        setState(() {
-                          sliderVal2 = val;
-                        });
-                      },
-                    )),
-              ],
-            ),
+            CustSlider(
+                widthVal: 150,
+                maxValue: 23,
+                minValue: 10,
+                divide: 10,
+                propText: "   textScaleFactor:",
+                sliderVal: sliderVal2,
+                onValueChange: (value) {
+                  setState(() {
+                    sliderVal2 = value;
+                  });
+                }),
           ]),
     );
   }

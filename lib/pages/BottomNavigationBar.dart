@@ -212,3 +212,164 @@ void showMessage(message) {
   //     textColor: Colors.white,
   //     fontSize: 16.0);
 }
+
+// ignore: must_be_immutable
+class CustSlider extends StatelessWidget {
+  double widthVal;
+  double minValue;
+  double maxValue;
+  double sliderVal;
+  String propText;
+  int divide;
+  Function(dynamic) onValueChange;
+  CustSlider(
+      {@required this.widthVal,
+      @required this.maxValue,
+      @required this.minValue,
+      @required this.divide,
+      @required this.propText,
+      @required this.sliderVal,
+      @required this.onValueChange});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Text(propText),
+        SizedBox(
+          width: widthVal,
+          child: Slider(
+              label: sliderVal.toStringAsFixed(1),
+              min: minValue,
+              max: maxValue,
+              divisions: divide,
+              value: sliderVal == null || sliderVal < minValue
+                  ? minValue
+                  : sliderVal,
+              onChanged: (value) {
+                sliderVal = value;
+                onValueChange(value);
+              }),
+        ),
+      ],
+    );
+  }
+}
+
+// ignore: must_be_immutable
+class CustomBool extends StatelessWidget {
+  String propText;
+  bool groupvalue;
+
+  String fstText;
+  String sndText;
+  Function(bool) onValueChanged;
+  CustomBool(
+      {@required this.propText,
+      @required this.groupvalue,
+      @required this.onValueChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Text(propText),
+        Row(
+          children: <Widget>[
+            Radio<bool>(
+                value: true,
+                groupValue: groupvalue,
+                onChanged: (value) {
+                  groupvalue = value;
+                  onValueChanged(value);
+                }),
+            Text(fstText),
+          ],
+        ),
+        Row(
+          children: <Widget>[
+            Radio<bool>(
+                value: false,
+                groupValue: groupvalue,
+                onChanged: (bool value) {
+                  groupvalue = value;
+                  onValueChanged(value);
+                }),
+            Text(sndText),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+// ignore: must_be_immutable
+class CustomValues extends StatelessWidget {
+  Function(dynamic) onValueChanged;
+  dynamic defaultVal;
+  List<dynamic> datatype;
+  String propText;
+
+  CustomValues({
+    @required this.datatype,
+    @required this.defaultVal,
+    @required this.propText,
+    @required this.onValueChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Text(propText),
+        DropdownButton(
+            value: defaultVal,
+            onChanged: (value) {
+              defaultVal = value;
+              onValueChanged(value);
+            },
+            items: datatype
+                .map((e) => DropdownMenuItem(
+                      child: Text(e.toString()),
+                      value: e,
+                    ))
+                .toList()),
+      ],
+    );
+  }
+}
+
+// ignore: must_be_immutable
+class CustMainSizeAxis extends StatelessWidget {
+  Function(dynamic) onValueChanged;
+
+  List<dynamic> changevalue;
+  dynamic defultvalue;
+  String textpro;
+
+  CustMainSizeAxis({
+    @required this.changevalue,
+    @required this.defultvalue,
+    @required this.textpro,
+    @required this.onValueChanged,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
+
+// Step 1
+//             bottomNavigationBar: _getBottomBar(),
+// Step 2
+//  Widget _getBottomBar() {
+//     return Material(
+//       color: Theme.of(context).primaryColorLight,
+//       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+//       ]),
+//     );
+//   }

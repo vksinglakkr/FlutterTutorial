@@ -83,34 +83,43 @@ class _Que01strutState extends State<Que01strut> {
     return Material(
       color: Theme.of(context).primaryColorLight,
       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('forceStrutHeight:'),
-            Row(
-              children: <Widget>[
-                Radio<bool>(
-                    value: true,
-                    groupValue: boolVal,
-                    onChanged: (bool value) {
-                      setState(() => boolVal = value);
-                    }),
-                const Text('true'),
-              ],
-            ),
-            Row(
-              children: <Widget>[
-                Radio<bool>(
-                    value: false,
-                    groupValue: boolVal,
-                    onChanged: (bool value) {
-                      setState(() => boolVal = value);
-                    }),
-                const Text('false'),
-              ],
-            ),
-          ],
-        ),
+        CustomBool(
+          propText: "forceStrutHeight:",
+          groupvalue: boolVal,
+          onValueChanged: (value) {
+            setState(() {
+              boolVal = value;
+            });
+          },
+        )
+        //   Row(
+        //     mainAxisAlignment: MainAxisAlignment.center,
+        //     children: <Widget>[
+        //       Text('forceStrutHeight:'),
+        //       Row(
+        //         children: <Widget>[
+        //           Radio<bool>(
+        //               value: true,
+        //               groupValue: boolVal,
+        //               onChanged: (bool value) {
+        //                 setState(() => boolVal = value);
+        //               }),
+        //           const Text('true'),
+        //         ],
+        //       ),
+        //       Row(
+        //         children: <Widget>[
+        //           Radio<bool>(
+        //               value: false,
+        //               groupValue: boolVal,
+        //               onChanged: (bool value) {
+        //                 setState(() => boolVal = value);
+        //               }),
+        //           const Text('false'),
+        //         ],
+        //       ),
+        //     ],
+        //   ),
       ]),
     );
   }

@@ -2,9 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class Que01Actions11 extends StatelessWidget {
+class Que11ActionEx3 extends StatelessWidget {
   final String image1 = "assets/help/Box/Box_RotatedBox/Que01.png";
 
   launchURL() {
@@ -46,24 +45,6 @@ class Que01Actions11 extends StatelessWidget {
         ),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        floatingActionButton: WidgetFab(),
-      ),
-    );
-  }
-}
-
-class MyAppVideo extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("")),
-        body: YoutubePlayer(
-          controller: YoutubePlayerController(
-            initialVideoId: 'IYDVcriKjsw',
-            flags: YoutubePlayerFlags(autoPlay: true, mute: false),
-          ),
-        ),
         floatingActionButton: WidgetFab(),
       ),
     );

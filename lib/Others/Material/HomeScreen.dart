@@ -18,7 +18,7 @@ class HomeMaterial extends StatelessWidget {
             padding: EdgeInsets.all(3.0),
             children: [
               ButtonsCode(Que02InkWell11(),
-                  "lib/InkWell/Que02ClickonTextToggle.dart", "InkWell"),
+                  "lib/Others/InkWell/Que02ClickonTextToggle.dart", "InkWell"),
               Container(
                 margin: EdgeInsets.all(2),
                 height: 32,

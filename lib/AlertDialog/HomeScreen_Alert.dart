@@ -16,6 +16,41 @@ class HomeAlert extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: WidgetAppBar("Alert Dialog Box"),
+          // bottom: TabBar(
+          //   onTap: (index) {
+          //     if (index == 0) {
+          //       Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //             builder: (BuildContext context) => HomeScreen(),
+          //           ));
+          //     }
+          //     if (index == 1) {
+          //       Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //             builder: (BuildContext context) => HomeScreenV2(),
+          //           ));
+          //     }
+          //   },
+          //   tabs: [
+          //     Tab(
+          //       text: 'Widgets',
+          //     ),
+          //     Tab(
+          //       text: 'Tasks',
+          //     ),
+          //     Tab(
+          //       text: 'Design',
+          //     ),
+          //     Tab(
+          //       text: 'Videos',
+          //     ),
+          //     Tab(
+          //       text: 'Code',
+          //     ),
+          //   ],
+          // ),
           actions: [
             PopupMenuButton(
                 itemBuilder: (BuildContext varPrefer) => [

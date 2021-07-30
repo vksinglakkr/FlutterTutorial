@@ -16,7 +16,7 @@ class _Que1011State extends State<Que1011> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Leading or Trailling Text")),
+        appBar: AppBar(title: WidgetAppBar("Trailling Radio Button")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(

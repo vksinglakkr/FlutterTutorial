@@ -32,20 +32,13 @@ class Que4111 extends StatelessWidget {
               height: 300,
               child: ListView.builder(
                 itemCount: course2.length,
-                itemBuilder: (_, position) {
+                itemBuilder: (context, position) {
                   String dataElement = course2[position];
                   return Padding(
                       padding: EdgeInsets.all(8.0), child: Text(dataElement));
                 },
               ),
             ),
-            SizedBox(height: 5),
-            Center(
-              child: Image(
-                image: AssetImage('assets/images/ListView/Que41.png'),
-              ),
-            ),
-            Center(child: Text("ListView/Que41spreadOperator.dart"))
           ],
         ),
         floatingActionButton: WidgetFab(),

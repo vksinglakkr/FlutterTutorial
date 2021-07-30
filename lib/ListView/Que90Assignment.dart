@@ -12,8 +12,6 @@ class MyDemo11 extends StatelessWidget {
     Tab(text: 'RIGHT'),
   ];
 
-  final String image1 = "assets/help/ListView/Que90.png";
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -25,22 +23,16 @@ class MyDemo11 extends StatelessWidget {
             tabs: myTabs,
           ),
         ),
-        bottomNavigationBar:
-            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            TabBarView(
-              children: myTabs.map((Tab tab) {
-                final String label = tab.text.toLowerCase();
-                return Center(
-                  child: Text(
-                    'This is the $label tab',
-                    style: const TextStyle(fontSize: 36),
-                  ),
-                );
-              }).toList(),
-            ),
-          ],
+        body: TabBarView(
+          children: myTabs.map((Tab tab) {
+            final String label = tab.text.toLowerCase();
+            return Center(
+              child: Text(
+                'This is the $label tab',
+                style: const TextStyle(fontSize: 36),
+              ),
+            );
+          }).toList(),
         ),
         floatingActionButton: WidgetFab(),
       ),

@@ -363,24 +363,10 @@ class CustomValues extends StatelessWidget {
 //   }
 // }
 
-// Map<String, MaterialColor> _dropdownColor = {
-//   "Yellow": Colors.yellow,
-//   "Red": Colors.red,
-//   "Blue": Colors.blue,
-//   "Grey": Colors.grey,
-//   "Pink": Colors.pink,
-//   "Green": Colors.green,
-//   "Orange": Colors.orange,
-//   "DeepOrange": Colors.deepOrange,
-//   "Purple": Colors.purple,
-//   "Brown": Colors.brown,
-//   "Cyan": Colors.cyan,
-// };
-
 // ignore: must_be_immutable
 class CustColor extends StatelessWidget {
   Function(dynamic) onValueChange;
-  final Color startColor;
+  Color startColor;
   final String propText;
   CustColor(
       {@required this.propText,
@@ -400,7 +386,53 @@ class CustColor extends StatelessWidget {
     "Cyan": Colors.cyan,
   };
 
-  Color _selectColor = Colors.green;
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(propText),
+        DropdownButton(
+            value: startColor,
+            onChanged: (dynamic value) {
+              startColor = value;
+              onValueChange(value);
+            },
+            items: dropdownColor
+                .map((key, value) => MapEntry(
+                    key,
+                    DropdownMenuItem(
+                      child: Text("Colors." + key),
+                      value: value,
+                    )))
+                .values
+                .toList()),
+      ],
+    );
+  }
+}
+
+// ignore: must_be_immutable
+class CustAlignment extends StatelessWidget {
+  Function(dynamic) onValueChange;
+  Alignment defaultAlignment;
+  final String propText;
+  CustAlignment(
+      {@required this.propText,
+      @required this.defaultAlignment,
+      @required this.onValueChange});
+
+  Map<String, Alignment> alignment = {
+    "Center": Alignment.center,
+    "BottomLeft": Alignment.bottomLeft,
+    "BottomCenter": Alignment.bottomCenter,
+    "BottomRight": Alignment.bottomRight,
+    "TopLeft": Alignment.topLeft,
+    "TopRight": Alignment.topRight,
+    "TopCenter": Alignment.topCenter,
+    "CenterLeft": Alignment.centerLeft,
+    "CenterRight": Alignment.centerRight,
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -409,16 +441,16 @@ class CustColor extends StatelessWidget {
       children: [
         Text(propText),
         DropdownButton(
-            value: _selectColor,
+            value: defaultAlignment,
             onChanged: (dynamic value) {
-              _selectColor = value;
+              defaultAlignment = value;
               onValueChange(value);
             },
-            items: dropdownColor
+            items: alignment
                 .map((key, value) => MapEntry(
                     key,
                     DropdownMenuItem(
-                      child: Text("Colors." + key),
+                      child: Text("Alignment." + key),
                       value: value,
                     )))
                 .values

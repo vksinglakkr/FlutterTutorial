@@ -2,21 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que50Search extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(title: Text('Flutter Apply Search on ListView')),
-            body: Center(child: ListSearch())));
-  }
+class Que50Search extends StatefulWidget {
+  Que50SearchState createState() => Que50SearchState();
 }
 
-class ListSearch extends StatefulWidget {
-  ListSearchState createState() => ListSearchState();
-}
-
-class ListSearchState extends State<ListSearch> {
+class Que50SearchState extends State<Que50Search> {
   TextEditingController _textController = TextEditingController();
 
   static List<String> mainDataList = [
@@ -58,7 +48,7 @@ class ListSearchState extends State<ListSearch> {
       bottomNavigationBar:
           QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
       body: Column(
-        children: <Widget>[
+        children: [
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: TextField(

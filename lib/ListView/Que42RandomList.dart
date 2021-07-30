@@ -12,22 +12,22 @@ final List<String> course2 = [
   "objective c",
   "swift",
   "php",
-  ...course1
+  ...course1 // Joining of Two List using Spread Operator
 ];
 
 var element = (course2..shuffle());
 
-class Que4211 extends StatelessWidget {
-  final String image1 = "assets/help/ListView/Que42.png";
+class Que4211 extends StatefulWidget {
+  @override
+  _Que4211State createState() => _Que4211State();
+}
 
+class _Que4211State extends State<Que4211> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar:
-            AppBar(title: WidgetAppBar("Random List Generation (Error Exist)")),
-        bottomNavigationBar:
-            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
+        appBar: AppBar(title: WidgetAppBar("Random List Generation")),
         body: Column(
           children: [
             Container(
@@ -41,8 +41,13 @@ class Que4211 extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(height: 5),
-            Center(child: Text("ListView/Que42RandomList.dart"))
+            ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    element = (course2..shuffle());
+                  });
+                },
+                child: Text("Click To Shuffle"))
           ],
         ),
         floatingActionButton: WidgetFab(),

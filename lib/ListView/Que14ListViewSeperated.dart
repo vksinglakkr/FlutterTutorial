@@ -42,18 +42,18 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(title: WidgetAppBar(widget.title)),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            ListView.separated(
-                itemBuilder: (context, index) {
-                  return Text(animal[index]);
-                },
-                separatorBuilder: (context, index) {
-                  return Divider();
-                },
-                itemCount: animal.length),
-          ],
-        ),
+        body: ListView.separated(
+            itemBuilder: (context, index) {
+              return Text(
+                animal[index],
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              );
+            },
+            separatorBuilder: (context, index) {
+              return Divider();
+            },
+            itemCount: animal.length),
         floatingActionButton: WidgetFab(),
       ),
     );

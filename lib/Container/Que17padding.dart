@@ -4,25 +4,33 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que1711 extends StatelessWidget {
+class Que1711 extends StatefulWidget {
+  @override
+  _Que1711State createState() => _Que1711State();
+}
+
+class _Que1711State extends State<Que1711> {
   final String url1 = "https://flutter.dev/";
+
   final String image1 = "assets/help/Container/Que17.png";
+
   final String video1 = "JDDoN2THwug";
 
   final random = Random();
+
+  double sliderVal1 = 5;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: WidgetAppBar("Padding")),
-        bottomNavigationBar:
-            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(
           children: [
             Center(
               child: Container(
                 color: Colors.red,
-                //padding: EdgeInsets.all(20),
+                padding: EdgeInsets.all(sliderVal1),
                 //padding: EdgeInsets.zero,
                 //padding: EdgeInsets.symmetric(horizontal: 30,),
                 //padding: double.infinity,
@@ -38,6 +46,30 @@ class Que1711 extends StatelessWidget {
           ],
         ),
         floatingActionButton: WidgetFab(),
+        bottomNavigationBar: _getBottomBar(),
+      ),
+    );
+  }
+
+  Widget _getBottomBar() {
+    return Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Material(
+        color: Theme.of(context).primaryColorLight,
+        child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+          CustSlider(
+              widthVal: 250,
+              maxValue: 40,
+              minValue: 2,
+              divide: 10,
+              propText: '   padding:',
+              sliderVal: sliderVal1,
+              onValueChange: (onChange) {
+                setState(() {
+                  sliderVal1 = onChange;
+                });
+              }),
+        ]),
       ),
     );
   }

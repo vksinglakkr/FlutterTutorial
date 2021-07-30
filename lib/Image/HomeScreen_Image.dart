@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Container/Que42_AnimatedCurves.dart';
 import 'package:flutter_tutorial/Image/Que03aImage.dart';
+import 'package:flutter_tutorial/Image/Que15.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
 
@@ -89,6 +90,8 @@ class HomeImage extends StatelessWidget {
                     AnimatedCurves(),
                     "lib/Container/Que42_AnimatedCurves.dart",
                     "Animated Curves Demo"),
+                ButtonsCode(
+                    Que15Swiper(), "lib/Container/Que15.dart", "Image Swiper"),
               ],
             ),
           ),

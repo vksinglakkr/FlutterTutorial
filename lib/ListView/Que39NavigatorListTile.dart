@@ -1,6 +1,7 @@
 // lib/ListView\Que39NavigatorListTile.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+import 'package:flutter_tutorial/pages/HomePending.dart';
 
 class Que3911 extends StatelessWidget {
   final String image1 = "assets/help/ListView/Que39.png";
@@ -26,10 +27,8 @@ class Que3911 extends StatelessWidget {
                   leading: Icon(Icons.thumb_up),
                   trailing: Icon(Icons.arrow_forward),
                   onTap: () {
-                    // Navigator.push(
-                    // context,
-                    // MaterialPageRoute(
-                    // builder: (context) => DetailsPage(index)));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomePending()));
                   },
                 );
               },

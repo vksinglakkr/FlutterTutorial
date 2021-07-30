@@ -10,7 +10,7 @@ class _Que01aState extends State<Que01a> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ListView with Text'),
+        title: Text('ListTile with Text'),
       ),
       body: ListView(
         children: [

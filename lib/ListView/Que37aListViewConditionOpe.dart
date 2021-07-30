@@ -52,13 +52,6 @@ class _State extends State<Que37a11> {
                       )),
                     );
                   })),
-          SizedBox(height: 5),
-          Center(
-            child: Image(
-              image: AssetImage('assets/images/ListView/Que37a.png'),
-            ),
-          ),
-          Center(child: Text("ListView/Que37aListViewConditionOpe.dart"))
         ]),
         floatingActionButton: WidgetFab(),
       ),

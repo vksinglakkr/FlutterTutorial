@@ -1,6 +1,8 @@
 // lib/Slider\HomeScreen.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Slider/Que02.dart';
+import 'package:flutter_tutorial/Slider/Que03.dart';
+import 'package:flutter_tutorial/Slider/Que04.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
 
@@ -20,6 +22,9 @@ class HomeSlider extends StatelessWidget {
                   Que02(), "lib/Slider/Que02.dart", "Slider Basic Code"),
               ButtonsCode(Que0111(), "lib/Slider/Que01.dart",
                   "Assignment: Slider to Transform Container"),
+              ButtonsCode(Que04Slider(), "lib/Slider/Que04.dart", "Slider Ex3"),
+              ButtonsCode(
+                  Que03Slider(), "lib/Slider/Que03.dart", "Range Slider"),
             ],
           ),
         ))),

@@ -2,23 +2,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que1811 extends StatelessWidget {
+class Que1811 extends StatefulWidget {
+  @override
+  _Que1811State createState() => _Que1811State();
+}
+
+class _Que1811State extends State<Que1811> {
   final String url1 = "https://flutter.dev/";
+
   final String image1 = "assets/help/Container/Que18.png";
+
   final String video1 = "JDDoN2THwug";
+  Color _selectColor = Colors.red;
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(title: WidgetAppBar("Color ")),
-        bottomNavigationBar:
-            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Center(
               child: Container(
-                color: Colors.red,
+                color: _selectColor,
                 //color: Colors.red.shade400,
                 //color: Colors.blue[300],
                 //color: Colors.red.withAlpha(80),
@@ -33,16 +40,42 @@ class Que1811 extends StatelessWidget {
                 //color: Color.fromRGBO(0, 155, 0, 0.8),
                 //color: msgCount[index] >= 10 ? Colors.blue[400] : msgCount[index] > 3 ? Colors.blue[100] : Colors.grey,
                 // color: Colors.transparent, //for example see text widget
-                child: Text('NIC Kurukshetra'),
+                child: Text(
+                  'NIC Kurukshetra',
+                  style: TextStyle(fontSize: 26),
+                ),
               ),
             ),
           ],
         ),
-        floatingActionButton: WidgetFab(),
+        bottomNavigationBar: _getBottomBar(),
+      ),
+    );
+  }
+
+  Widget _getBottomBar() {
+    return Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Material(
+        color: Theme.of(context).primaryColorLight,
+        child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+          CustColor(
+              propText: "   color:",
+              startColor: _selectColor,
+              onValueChange: (onValueChange) {
+                setState(() {
+                  _selectColor = onValueChange;
+                });
+              })
+        ]),
       ),
     );
   }
 }
+
+//Note: Also check Padding as Widgets
+
+
 
 //Note: Also see fillcolor in textField,
 //Note: Also see textColor in Buttons

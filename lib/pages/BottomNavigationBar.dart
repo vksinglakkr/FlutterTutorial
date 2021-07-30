@@ -234,6 +234,7 @@ class CustSlider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(propText),
         SizedBox(
@@ -272,7 +273,7 @@ class CustomBool extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Text(propText),
         Row(
@@ -321,7 +322,7 @@ class CustomValues extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(propText),
         DropdownButton(
@@ -342,34 +343,147 @@ class CustomValues extends StatelessWidget {
 }
 
 // ignore: must_be_immutable
-class CustMainSizeAxis extends StatelessWidget {
-  Function(dynamic) onValueChanged;
+// class CustMainSizeAxis extends StatelessWidget {
+//   Function(dynamic) onValueChanged;
 
-  List<dynamic> changevalue;
-  dynamic defultvalue;
-  String textpro;
+//   List<dynamic> changevalue;
+//   dynamic defultvalue;
+//   String textpro;
 
-  CustMainSizeAxis({
-    @required this.changevalue,
-    @required this.defultvalue,
-    @required this.textpro,
-    @required this.onValueChanged,
-  });
+//   CustMainSizeAxis({
+//     @required this.changevalue,
+//     @required this.defultvalue,
+//     @required this.textpro,
+//     @required this.onValueChanged,
+//   });
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container();
+//   }
+// }
+
+// Map<String, MaterialColor> _dropdownColor = {
+//   "Yellow": Colors.yellow,
+//   "Red": Colors.red,
+//   "Blue": Colors.blue,
+//   "Grey": Colors.grey,
+//   "Pink": Colors.pink,
+//   "Green": Colors.green,
+//   "Orange": Colors.orange,
+//   "DeepOrange": Colors.deepOrange,
+//   "Purple": Colors.purple,
+//   "Brown": Colors.brown,
+//   "Cyan": Colors.cyan,
+// };
+
+// ignore: must_be_immutable
+class CustColor extends StatelessWidget {
+  Function(dynamic) onValueChange;
+  final Color startColor;
+  final String propText;
+  CustColor(
+      {@required this.propText,
+      @required this.startColor,
+      @required this.onValueChange});
+
+  Map<String, MaterialColor> dropdownColor = {
+    "Yellow": Colors.yellow,
+    "Red": Colors.red,
+    "Blue": Colors.blue,
+    "Grey": Colors.grey,
+    "Pink": Colors.pink,
+    "Green": Colors.green,
+    "Orange": Colors.orange,
+    "Purple": Colors.purple,
+    "Brown": Colors.brown,
+    "Cyan": Colors.cyan,
+  };
+
+  Color _selectColor = Colors.green;
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(propText),
+        DropdownButton(
+            value: _selectColor,
+            onChanged: (dynamic value) {
+              _selectColor = value;
+              onValueChange(value);
+            },
+            items: dropdownColor
+                .map((key, value) => MapEntry(
+                    key,
+                    DropdownMenuItem(
+                      child: Text("Colors." + key),
+                      value: value,
+                    )))
+                .values
+                .toList()),
+      ],
+    );
   }
 }
 
-
 // Step 1
-//             bottomNavigationBar: _getBottomBar(),
+/*
+             bottomNavigationBar: _getBottomBar(),
+*/
 // Step 2
-//  Widget _getBottomBar() {
-//     return Material(
-//       color: Theme.of(context).primaryColorLight,
-//       child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
-//       ]),
-//     );
-//   }
+/*
+
+ Widget _getBottomBar() {
+    return Material(
+      color: Theme.of(context).primaryColorLight,
+      child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+      ]),
+    );
+  }
+Step 3
+      double sliderVal =0;
+
+      CustSlider(
+            widthVal: 250,
+            maxValue: 100,
+            minValue: 10,
+            divide: 10,
+            propText: 'fontsize:',
+            sliderVal: sliderVal1,
+            onValueChange: (onChange) {
+              setState(() {
+                sliderVal1 = onChange;
+              });
+            }),
+
+FontWeight _fontWeight = FontWeight.bold;
+ CustomValues(
+              datatype: FontWeight.values,
+              defaultVal: _fontWeight,
+              propText: 'fontWeight:',
+              onValueChanged: (onValueChanged1) {
+                setState(() {
+                  _fontWeight = onValueChanged1;
+                });
+              }),
+
+           Color selectColor = Colors.green;
+           CustColor(
+            protext: "color:",
+            startColor: selectColor,
+            onValueChange: (value) {
+              setState(() {
+                selectColor = value;
+              });
+            },
+          )
+*/
+void showAlert(BuildContext context, String var1) {
+  showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+            content: Text(var1),
+          ));
+}

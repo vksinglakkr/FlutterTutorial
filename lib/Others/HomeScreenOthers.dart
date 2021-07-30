@@ -8,7 +8,7 @@ import 'package:flutter_tutorial/Others/Future/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/PersistKey/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Positioned/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Properties/HomeScreen.dart';
-import 'package:flutter_tutorial/Others/Providers/main.dart';
+import 'package:flutter_tutorial/Others/Providers/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Routes/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Toast/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/WidgetCommunication/HomeScreen.dart';
@@ -187,7 +187,7 @@ class HomeScreenOthers extends StatelessWidget {
               onPressed: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (BuildContext context) => DropDownDemo(),
+                    builder: (BuildContext context) => QueTestMyApp(),
                   )),
             ),
             ElevatedButton(
@@ -278,7 +278,7 @@ class HomeScreenOthers extends StatelessWidget {
                 onPressed: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (BuildContext context) => QueProvider(),
+                      builder: (BuildContext context) => HomeProvider(),
                     ))),
           ],
         ),

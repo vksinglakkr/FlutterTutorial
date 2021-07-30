@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que11Popup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Title of Application',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(),
-    );
+    return MyHomePage();
   }
 }
 
@@ -23,11 +17,11 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(title: Text("AppBar Title"), actions: <Widget>[
         IconButton(
           icon: Icon(Icons.file_upload),
-          onPressed: () => {print("Click on upload button")},
+          onPressed: () => {showAlert(context, "File upload icon Pressed")},
         ),
         IconButton(
             icon: Icon(Icons.settings),
-            onPressed: () => {print("Click on settings button")}),
+            onPressed: () => {showAlert(context, "Setting icon Pressed")}),
         PopupMenuButton(
           icon: Icon(Icons.share),
           itemBuilder: (context) => [

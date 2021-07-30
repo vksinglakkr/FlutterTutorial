@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Others/Providers/about.dart';
-import 'package:flutter_tutorial/Others/Providers/home.dart';
-import 'package:flutter_tutorial/Others/Providers/models/ui.dart';
-import 'package:flutter_tutorial/Others/Providers/settings.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/about.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/home.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/models/ui.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/settings.dart';
 import 'package:provider/provider.dart';
 
 class QueProvider extends StatelessWidget {

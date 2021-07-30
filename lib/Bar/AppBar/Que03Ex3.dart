@@ -20,6 +20,22 @@ class Que03Ex3 extends StatelessWidget {
           ],
         ),
       ),
+      body: Center(
+        child: Card(
+            color: Colors.amber,
+            child: Padding(
+              padding: const EdgeInsets.all(28.0),
+              child: Text(
+                '''appBar: AppBar(title: 
+    Row(
+            children: [
+            Icon(Icons.train),
+            Icon(Icons.place),
+            Text("Place",)])) ''',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            )),
+      ),
     );
   }
 }

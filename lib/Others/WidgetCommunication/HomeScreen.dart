@@ -6,6 +6,8 @@ import 'package:flutter_tutorial/Others/WidgetCommunication/Que03CallingCallback
 import 'package:flutter_tutorial/Others/WidgetCommunication/Que04TextField.dart';
 import 'package:flutter_tutorial/Others/WidgetCommunication/Que06Color.dart';
 import 'package:flutter_tutorial/Others/WidgetCommunication/Que07Buttons.dart';
+import 'package:flutter_tutorial/Others/WidgetCommunication/Que08ChangeAppBarTit.dart';
+import 'package:flutter_tutorial/Others/WidgetCommunication/Que08b.dart';
 import 'package:flutter_tutorial/Others/WidgetCommunication/WidthChanger.dart';
 import 'package:flutter_tutorial/Others/WidgetCommunication/que05Slider.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -25,6 +27,14 @@ class HomeWidgetCommunication extends StatelessWidget {
             children: [
               ButtonsCode(Que02(), "lib/Others/WidgetCommunication/Que02.dart",
                   "Directly writing callback i.e. Normal way"),
+              ButtonsCode(
+                  Que08AppbarTitle(),
+                  "lib/Others/WidgetCommunication/Que08.dart",
+                  "Directly writing callback i.e. Appbar Title"),
+              ButtonsCode(
+                  Que08b(),
+                  "lib/Others/WidgetCommunication/Que08b.dart",
+                  "Calling callback fn i.e. Appbar Title"),
               ButtonsCode(Que03(), "lib/Others/WidgetCommunication/Que03.dart",
                   "Calling callback function"),
               ButtonsCode(Que01(), "lib/Others/WidgetCommunication/Que01.dart",

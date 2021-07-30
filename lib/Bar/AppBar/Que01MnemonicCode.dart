@@ -8,15 +8,15 @@ class Que01MnemonicCode extends StatelessWidget {
         title: Text('Mnemonic Code'),
       ),
       body: Center(
-        child: Container(
-          child: Column(
-            children: [
-              Spacer(flex: 1),
-              Image(image: AssetImage("assets/help/Bar/AppBar/Que01.png")),
-              Spacer(flex: 1),
-            ],
-          ),
-        ),
+        child: Card(
+            color: Colors.amber,
+            child: Padding(
+              padding: const EdgeInsets.all(28.0),
+              child: Text(
+                '''appBar: AppBar(title: Text(' .... '))''',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            )),
       ),
     );
   }

@@ -30,6 +30,8 @@ class Que0411 extends StatelessWidget {
             Text("RetroPortal Studio"),
             Text("flutter25.com"),
             Text("Paul Halliday"),
+            Text("flutterShapemaker.com"),
+            Text("LearnFlutterwithme"),
             Text("Abubakar Shaikh i checked for Future builder"),
             Text(
                 "theItalianDev i checked HTTP Request. May also check for firebase"),

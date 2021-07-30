@@ -3,8 +3,8 @@
 //  * https://github.com/mahmudahsan
 //  */
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/Others/Providers/drawer_menu.dart';
-import 'package:flutter_tutorial/Others/Providers/models/ui.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/drawer_menu.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/models/ui.dart';
 import 'package:provider/provider.dart';
 
 class Settings extends StatelessWidget {

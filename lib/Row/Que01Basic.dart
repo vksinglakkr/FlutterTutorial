@@ -90,15 +90,15 @@ class _Que01BasicState extends State<Que01Basic> {
           ],
         ),
 
-        CustMainSizeAxis(
-            changevalue: MainAxisSize.values,
-            defultvalue: _mainAxisSize,
-            textpro: "mainAxisSize",
-            onValueChanged: (value) {
-              setState(() {
-                _mainAxisSize = value;
-              });
-            }),
+        // CustMainSizeAxis(
+        //     changevalue: MainAxisSize.values,
+        //     defultvalue: _mainAxisSize,
+        //     textpro: "mainAxisSize",
+        //     onValueChanged: (value) {
+        //       setState(() {
+        //         _mainAxisSize = value;
+        //       });
+        //     }),
         // ListTile(
         //   title: const Text('mainAxisSize:'),
         //   trailing: DropdownButton<MainAxisSize>(

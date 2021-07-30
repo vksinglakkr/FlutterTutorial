@@ -21,8 +21,21 @@ class _Que06autoEx2State extends State<Que06autoEx2> {
       drawer: Drawer(),
       body: Padding(
         padding: EdgeInsets.all(20),
-        child: Text(
-            'automaticallyImplyLeading: false \n 1. It removes the default back arrow. (\n It also removes the icon of the drawer.'),
+        child: Column(
+          children: [
+            Text(
+                'automaticallyImplyLeading: false \n 1. It removes the default back arrow. (\n It also removes the icon of the drawer.'),
+            Card(
+              color: Colors.amber,
+              child: Center(
+                child: Padding(
+                    padding: const EdgeInsets.all(28.0),
+                    child: Text(
+                        '''Text('automaticallyImplyLeading: $boolVal \n 1. It removes the default back arrow. (\n It also removes the icon of the drawer.'),''')),
+              ),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: WidgetFab(),
       bottomNavigationBar: _getBottomBar(),

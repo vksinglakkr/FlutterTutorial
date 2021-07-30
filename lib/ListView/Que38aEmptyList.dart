@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que3811 extends StatelessWidget {
-  final List<int> numbers = [1, 2, 3, 5, 8, 13, 21, 34, 55];
+class Que38a extends StatelessWidget {
+  final List<int> numbers = [];
   @override
   Widget build(BuildContext context) {
     return SafeArea(

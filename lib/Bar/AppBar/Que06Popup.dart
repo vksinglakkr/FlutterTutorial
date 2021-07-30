@@ -40,8 +40,35 @@ class _Que06Popup11State extends State<Que06Popup11> {
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Center(
-          child: Text("Selected Day: $_selectedItem"),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text("Selected Day: $_selectedItem",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Card(
+                color: Colors.amber,
+                child: Padding(
+                  padding: const EdgeInsets.all(28.0),
+                  child: Text(''' PopupMenuButton(
+                  itemBuilder: (BuildContext bc) {
+                  return _options
+                  .map((day) => PopupMenuItem(
+                  child: Text(day),
+                  value: day,)).toList();
+                  },
+                  onSelected: (value) {
+                  setState(() {
+                  });}), ''',
+                      style:
+                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+                ),
+              ),
+            ],
+          ),
         ),
+        // body: Center(
+        //   child: Text("Selected Day: $_selectedItem"),
+        // ),
         floatingActionButton: WidgetFab(),
       ),
     );

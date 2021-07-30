@@ -5,11 +5,24 @@ class Que03Ex2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Text("Leading"),
+        leading: Text("Leading "),
         title: Text("Flutter AppBar Tutorial"),
-        actions: [Text("First action")],
+        actions: [Text("First action takes images, icon ")],
       ),
-      body: Center(),
+      body: Center(
+        child: Card(
+            color: Colors.amber,
+            child: Padding(
+              padding: const EdgeInsets.all(28.0),
+              child: Text(
+                ''' appBar: AppBar(
+        leading: Text(" ... "),
+        title: Text(" ... "),
+        actions: [Text(" ... ")])''',
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+              ),
+            )),
+      ),
     );
   }
 }

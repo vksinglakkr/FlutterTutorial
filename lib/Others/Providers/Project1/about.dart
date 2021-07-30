@@ -4,8 +4,8 @@
 //  */
 import 'package:flutter/material.dart';
 import 'package:flutter_lorem/flutter_lorem.dart';
-import 'package:flutter_tutorial/Others/Providers/drawer_menu.dart';
-import 'package:flutter_tutorial/Others/Providers/models/ui.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/drawer_menu.dart';
+import 'package:flutter_tutorial/Others/Providers/Project1/models/ui.dart';
 import 'package:provider/provider.dart';
 
 // ignore: must_be_immutable

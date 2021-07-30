@@ -34,10 +34,34 @@ class _Que04Popup11State extends State<Que04Popup11> {
         ),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            Container(),
-          ],
+        body: Padding(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Card(
+                color: Colors.amber,
+                child: Center(
+                  child: Padding(
+                      padding: const EdgeInsets.all(28.0),
+                      child: Wrap(
+                        children: [
+                          Text(
+                            '''actions: [ 
+     PopupMenuButton(
+     itemBuilder: (BuildContext bc) => [
+     PopupMenuItem(child: Text("New Chat"), value: "/newchat"),],
+     onSelected: (route) {
+     Navigator.pushNamed(context, route);})])''',
+                            style: TextStyle(
+                                fontSize: 15, fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      )),
+                ),
+              ),
+            ],
+          ),
         ),
         floatingActionButton: WidgetFab(),
       ),

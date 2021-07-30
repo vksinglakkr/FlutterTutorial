@@ -67,10 +67,30 @@ class _Que05Popup11State extends State<Que05Popup11> {
         ),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            Container(),
-          ],
+        body: Padding(
+          padding: EdgeInsets.all(20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Card(
+                color: Colors.amber,
+                child: Center(
+                  child: Padding(
+                      padding: const EdgeInsets.all(28.0),
+                      child: Text(
+                        '''actions: [ 
+          PopupMenuItem(
+          child: IconButton(
+          icon: const Icon(Icons.info),
+          color: Colors.black,
+          onPressed: launchURL))])''',
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.bold),
+                      )),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -38,7 +38,7 @@ class _BottomNavBarV2State extends State<BottomNavBarV2> {
     final Size size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Iconic Buttons \nin AppBar")),
+        appBar: AppBar(title: WidgetAppBar("IconButton\nin AppBar")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         backgroundColor: Colors.white.withAlpha(55),

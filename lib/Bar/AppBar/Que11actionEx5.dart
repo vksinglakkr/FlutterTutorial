@@ -8,7 +8,7 @@ class Que11ActionEx5 extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: WidgetAppBar("Iconic Buttons \nin AppBar"),
+          title: WidgetAppBar("IconButton\nin AppBar"),
           actions: [
             Container(
               width: 30,

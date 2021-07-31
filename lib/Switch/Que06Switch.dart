@@ -25,7 +25,7 @@ class _State extends State<Que0611> {
               padding: const EdgeInsets.all(8.0),
               child: Center(
                 child: SizedBox(
-                  width: 200,
+                  width: 80,
                   child: Switch(
                     value: isSwitched,
                     onChanged: (value) {

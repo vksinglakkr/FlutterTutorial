@@ -1,6 +1,7 @@
-// lib/Container\Que21ContainerStackPositioned.dart
+// lib/Container/Que21ContainerStackPositioned.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
+import 'package:random_pk/random_pk.dart';
 
 class Que2111 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
@@ -13,20 +14,15 @@ class Que2111 extends StatelessWidget {
         appBar: AppBar(title: WidgetAppBar("Container, Stack, Positioned")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
+        body: Stack(
           children: [
-            Stack(
-              children: [
-                Positioned(
-                  top: 100,
-                  right: 50,
-                  child: Container(
-                    color: Colors.red,
-                    width: 200.0,
-                    height: 200.0,
-                  ),
-                ),
-              ],
+            Positioned(
+              top: 100,
+              right: 30,
+              child: RandomContainer(
+                width: 200.0,
+                height: 200.0,
+              ),
             ),
           ],
         ),

@@ -1,46 +1,71 @@
 // lib/Bar\BottomBar\Que01Basic.dart
+//Arun Alignment,ButtonMinWidth,ButtonPadding, Buttonheight,verticalDirection
+
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que01ButtonBar11 extends StatefulWidget {
-  @override
-  _State createState() => _State();
-}
-
-class _State extends State<Que01ButtonBar11> {
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-
-  void _showMessageInScaffold(String message) {
-    //  _scaffoldKey.currentState.showSnackBar(SnackBar(
-    //    content: Text(message),
-    //   ));
-  }
-
-  final String image1 = "assets/help/Bar/Snackbar/Que01.png";
-
+class Que01ButtonBar11 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        key: _scaffoldKey,
-        appBar: AppBar(title: WidgetAppBar("")),
-        bottomNavigationBar:
-            QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            Center(
-                child: ElevatedButton(
-              //textColor: Colors.white,
-              //color: Colors.blue,
-              child: Text('Show SnackBar'),
-              onPressed: () {
-                _showMessageInScaffold("Hello dear! I'm SnackBar.");
-              },
-            )),
-          ],
+    return ListView(
+      padding: const EdgeInsets.all(8.0),
+      children: <Widget>[
+        Card(
+          color: Colors.white,
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 180.0,
+                child: Stack(
+                  children: <Widget>[
+                    Positioned.fill(
+                      child: Image.asset(
+                        'assets/images/Kurukshetra.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                    Positioned(
+                      bottom: 16.0,
+                      left: 16.0,
+                      right: 16.0,
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          'ButtonBar Demo',
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline5
+                              .copyWith(color: Colors.white),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 10),
+                color: Colors.orange[100],
+                child: ButtonBar(
+                  alignment: MainAxisAlignment.end,
+                  //buttonHeight: 250.0,
+
+                  buttonPadding: EdgeInsets.all(8),
+                  children: <Widget>[
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text('SHARE'),
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: const Text('EXPLORE'),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
-        floatingActionButton: WidgetFab(),
-      ),
+      ],
     );
   }
 }

@@ -4,6 +4,8 @@ import 'package:flutter_tutorial/ListView/Que01SlideableListView.dart';
 import 'package:flutter_tutorial/ListView/Que01SliderListViewEx2.dart';
 import 'package:flutter_tutorial/ListView/Que01SliderListViewEx3.dart';
 import 'package:flutter_tutorial/ListView/Que01SliderListViewEx4.dart';
+import 'package:flutter_tutorial/ListView/Que04ListTile.dart';
+import 'package:flutter_tutorial/ListView/Que05ListBuilder.dart';
 import 'package:flutter_tutorial/ListView/Que16.dart';
 import 'package:flutter_tutorial/ListView/Que01.dart';
 import 'package:flutter_tutorial/ListView/Que01a.dart';
@@ -12,8 +14,12 @@ import 'package:flutter_tutorial/ListView/Que02.dart';
 import 'package:flutter_tutorial/ListView/Que03properties.dart';
 import 'package:flutter_tutorial/ListView/Que07aListViewInkwell.dart';
 import 'package:flutter_tutorial/ListView/Que15aColorListGenerate.dart';
+import 'package:flutter_tutorial/ListView/Que17.dart';
+import 'package:flutter_tutorial/ListView/Que18WheelScrolling.dart';
 import 'package:flutter_tutorial/ListView/Que43DismisItem.dart';
+import 'package:flutter_tutorial/ListView/Que43a.dart';
 import 'package:flutter_tutorial/ListView/Que44Sort.dart';
+import 'package:flutter_tutorial/ListView/Que44a.dart';
 import 'package:flutter_tutorial/ListView/Que50Search.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/pages/HomePending.dart';
@@ -120,6 +126,10 @@ class HomeListView1 extends StatelessWidget {
                       Que0811(),
                       "lib/ListView/Que08ListViewDisableScroll.dart",
                       "Disable Horizontal/Vertical Scroll"),
+                  ButtonsCode(
+                      Que18ListWheelViewExample(),
+                      "lib/ListView/Que18WheelScrolling.dart",
+                      "List Wheel Scroll View"),
                   Text("Leading & Trailing",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -144,6 +154,10 @@ class HomeListView1 extends StatelessWidget {
                       Que2111(),
                       "lib/ListView/Que21ListTileGeneral.dart",
                       "ListTile - Properties"),
+                  ButtonsCode(
+                      Que04ListTileExample(),
+                      "lib/ListView/Que04ListTileExample.dart",
+                      "ListTile Demo"),
                   Text("Type Declartion",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -172,6 +186,12 @@ class HomeListView1 extends StatelessWidget {
                       Que4111(),
                       "lib/ListView/Que41spreadOperator.dart",
                       "(...) spread operator)"),
+                  Text("ExpansionTile",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic)),
+                  ButtonsCode(Que17ExpansionTileExample(),
+                      "lib/ListView/Que17.dart", "ExpansionTile"),
                   Text("ListViewBuilder",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -179,9 +199,13 @@ class HomeListView1 extends StatelessWidget {
                   ButtonsCode(Que02(), "lib/ListView/Que02.dart",
                       "generate infinite list with ListViewBuilder Ex.1"),
                   ButtonsCode(
+                      Que05ListViewBuilderExample(),
+                      "lib/ListView/Que05ListBuilder.dart",
+                      "generate list with ListViewBuilder Ex.2"),
+                  ButtonsCode(
                       Que2911(),
                       "lib/ListView/Que29SimpleListBuilder.dart",
-                      "with List<String>, ListViewBuilder Ex.2"),
+                      "with List<String>, ListViewBuilder Ex.3"),
                   ButtonsCode(
                       Que3011(),
                       "lib/ListView/Que30BuilderListView.dart",
@@ -212,14 +236,22 @@ class HomeListView1 extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic)),
-                  ButtonsCode(ReorderableViewPage(),
-                      "lib/ListView/Que44Sort.dart", "Reorderable ListView"),
+                  ButtonsCode(
+                      ReorderableViewPage(),
+                      "lib/ListView/Que44Sort.dart",
+                      "Reorderable ListView Ex1"),
+                  ButtonsCode(Que44aReorderableListExample(),
+                      "lib/ListView/Que44a.dart", "Reorderable ListView Ex2"),
                   ButtonsCode(Que4211(), "lib/ListView/Que42RandomList.dart",
                       "Generate Random List"),
                   ButtonsCode(
                       Que43Dismis(),
                       "lib/ListView/Que43DismisItem.dart",
-                      "Dismis Item from a List-List, Dismissible, SnackBar"),
+                      "Dismis Item from a List-List, Dismissible, SnackBar Ex.1"),
+                  ButtonsCode(
+                      Que43ListSwipeToDismissExample(),
+                      "lib/ListView/Que43a.dart",
+                      "Dismis Item from a List-List, Dismissible, SnackBar Ex.2"),
                   ButtonsCode(Que3611(), "lib/ListView/Que36ListAddItem.dart",
                       "Add Item in List"),
                   Text("ListView.generate",

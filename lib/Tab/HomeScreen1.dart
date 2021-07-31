@@ -1,5 +1,6 @@
 // lib/Tab\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Icons/Que05.dart';
 import 'package:flutter_tutorial/Tab/Que00.dart';
 import 'package:flutter_tutorial/Tab/Que01Basic.dart';
 import 'package:flutter_tutorial/Tab/Que01BasicController.dart';
@@ -38,6 +39,8 @@ class _HomeTabBar1State extends State<HomeTabBar1> {
                   ButtonsCode(
                       Que06(), "lib/Tab/Que06.dart", "Properties(Images)"),
                   ButtonsCode(Que0811(), "lib/Tab/Que08List.dart", "List"),
+                  ButtonsCode(
+                      TabBarDemo(), "lib/Icons/Que04.dart", "TabBar Demo"),
                 ],
               ),
             ),

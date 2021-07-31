@@ -1,5 +1,6 @@
 // lib/Spacer\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Others/Wrap/Que01WrapList.dart';
 import 'package:flutter_tutorial/Others/Wrap/Que02.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
@@ -16,6 +17,8 @@ class HomeWrap extends StatelessWidget {
             padding: EdgeInsets.all(3.0),
             children: [
               ButtonsCode(Que02(), "lib/Others/Wrap/Que02.dart", "Basic"),
+              ButtonsCode(Que01WrapExample(),
+                  "lib/Others/Wrap/Que01WrapList.dart", "Using List"),
             ],
           ),
         ))),

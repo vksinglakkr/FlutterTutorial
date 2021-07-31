@@ -68,7 +68,7 @@ class HomeButton extends StatelessWidget {
                     margin: EdgeInsets.all(2),
                     height: 32,
                     child: ElevatedButton(
-                        child: Text('Iconic Buttons',
+                        child: Text('IconButton',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         onPressed: () {
@@ -110,7 +110,7 @@ class HomeButton extends StatelessWidget {
                     margin: EdgeInsets.all(2),
                     height: 32,
                     child: ElevatedButton(
-                        child: Text('Button Bar',
+                        child: Text('ButtonBar',
                             style: TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold)),
                         onPressed: () {
@@ -129,16 +129,6 @@ class HomeButton extends StatelessWidget {
                           MaterialPageRoute(
                             builder: (BuildContext context) => HomeDropdown(),
                           ))),
-                  ElevatedButton(
-                      child: Text('Buttonbar',
-                          style: TextStyle(
-                              fontSize: 16, fontWeight: FontWeight.bold)),
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeButtonBar()));
-                      }),
                 ],
               ),
             ),

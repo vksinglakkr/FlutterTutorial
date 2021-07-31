@@ -36,6 +36,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  badges:
+    dependency: "direct main"
+    description:
+      name: badges
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -146,6 +153,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.4.0"
+  flutter_gradients:
+    dependency: "direct main"
+    description:
+      name: flutter_gradients
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0+3"
   flutter_inappwebview:
     dependency: transitive
     description:
@@ -268,6 +282,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  new_gradient_app_bar:
+    dependency: "direct main"
+    description:
+      name: new_gradient_app_bar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.0"
   page_transition:
     dependency: transitive
     description:

@@ -26,6 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("List.generate"),
       ),
       body: Wrap(
+        // List.generate(i,(index){return Widget}),
         children: List.generate(12, (i) {
           return Padding(
             padding: const EdgeInsets.all(8.0),

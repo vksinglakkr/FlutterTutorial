@@ -25,6 +25,9 @@ import 'package:flutter_tutorial/Bar/AppBar/Que12ShapeEx2.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que13IncrementDecrement.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que14.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que15BottomAppBar.dart';
+import 'package:flutter_tutorial/Bar/AppBar/Que16BottomAppbar.dart';
+import 'package:flutter_tutorial/Container/Que28Gradient.dart';
+import 'package:flutter_tutorial/Icons/Que05.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 import 'Que02CenterText.dart';
@@ -160,7 +163,19 @@ class HomeAppBar extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic)),
                   ButtonsCode(
-                      Que15(), "lib/Bar/AppBar/Que15.dart", "BottomAppBar"),
+                      Que15(), "lib/Bar/AppBar/Que15.dart", "BottomAppBar Ex1"),
+                  ButtonsCode(
+                      Que16BottomAppbarExample(),
+                      "lib/Bar/AppBar/Que16BottomAppbar.dart",
+                      "BottomAppBar Ex2"),
+                  Text("Gradient Appbar",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic)),
+                  ButtonsCode(
+                      TabBarDemo(), "lib/Icons/Que04.dart", "TabBar Demo"),
+                  ButtonsCode(Que28GradientExample(),
+                      "lib/Container/Que28Gradient.dart", "Gradient Allbar"),
                   Text("Projects",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,

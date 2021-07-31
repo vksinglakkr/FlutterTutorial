@@ -44,6 +44,7 @@ class _Que15aState extends State<Que15a> {
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 padding: EdgeInsets.symmetric(horizontal: 32),
+                // List.generate(i,(index){return Widget}),
                 children: List.generate(
                   _colorList.length,
                   (index) {

@@ -2,6 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Box/Box_SizedBox/Que11Limited.dart';
 import 'package:flutter_tutorial/Container/Que04changeColor.dart';
+import 'package:flutter_tutorial/Container/Que10.dart';
+import 'package:flutter_tutorial/Container/Que11.dart';
+import 'package:flutter_tutorial/Container/Que28Gradient.dart';
+import 'package:flutter_tutorial/Container/Que28RadialGradient.dart';
 import 'package:flutter_tutorial/Container/Que31ContainerButton.dart';
 import 'package:flutter_tutorial/Container/Que33ContainerButton.dart';
 import 'package:flutter_tutorial/Container/Que34AnimatedFlight.dart';
@@ -56,10 +60,6 @@ class HomeContainer extends StatelessWidget {
           padding: EdgeInsets.all(3.0),
           children: [
             ButtonsCode(
-                Que01Container11(),
-                "lib/Container/Que01ContainerOpacityGesterDetector.dart",
-                "OpacityGesterDetector"),
-            ButtonsCode(
                 Que02Container11(),
                 "lib/Container/Que02ContainerWithinContainer.dart",
                 "Container within Container"),
@@ -86,16 +86,10 @@ class HomeContainer extends StatelessWidget {
                 Que1711(), "lib/Container/Que17padding.dart", "Padding"),
             ButtonsCode(Que1811(), "lib/Container/Que18color.dart", "Color"),
             ButtonsCode(Que1911(), "lib/Container/Que119margin.dart", "margin"),
-            ButtonsCode(Que2011(), "lib/Container/Que20decoration_border.dart",
-                "Decoration Border"),
             ButtonsCode(
                 Que2111(),
                 "lib/Container/Que21ContainerStackPositioned.dart",
                 "Container Stack Positioned"),
-            ButtonsCode(
-                Que2211(),
-                "lib/Container/Que22decoration_borderradius.dart",
-                "decoration.. border radius"),
             ButtonsCode(Que2311(), "lib/Container/Que23shape.dart", "shape"),
             ButtonsCode(Que2411(),
                 "lib/Container/Que24Container_boxShadow.dart", "boxShadow"),
@@ -105,13 +99,49 @@ class HomeContainer extends StatelessWidget {
                 "dart..forLoop"),
             ButtonsCode(Que2711(), "lib/Container/Que27customContainer.dart",
                 "Custom Container"),
+            Text("border:",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
             ButtonsCode(
-                Que2811(), "lib/Container/Que28gradient.dart", "gradient"),
+                Que2211(),
+                "lib/Container/Que22decoration_borderradius.dart",
+                "decoration.. border radius"),
+            ButtonsCode(Que2011(), "lib/Container/Que20decoration_border.dart",
+                "Decoration Border"),
+            ButtonsCode(Que10(), "lib/Container/Que10.dart", "Decoration"),
             ButtonsCode(
-                Que2911(), "lib/Container/Que29Fontsfamily.dart", "fontFamily"),
+                Que11StackExample(), "lib/Container/Que10.dart", "Stack Demo"),
+            ButtonsCode(
+                BorderExample(),
+                "lib/Container/Que40AnimatedBorderWidth.dart",
+                "Animated Width of Border"),
+            ButtonsCode(
+                BorderRadiusExample(),
+                "lib/Container/Que41AnimatedBorderRadius.dart",
+                "Animated Radius of Border"),
             ButtonsCode(Que3011(), "lib/Container/Que30Border.dart", "Border"),
             ButtonsCode(Que3211(), "lib/Container/Que32ContainerBorder.dart",
                 "Container border"),
+            Text("gradient",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+            ButtonsCode(
+                Que2811(), "lib/Container/Que28gradient.dart", "gradient"),
+            ButtonsCode(Que36GradientTransform(),
+                "lib/Container/Que36Gradient.dart", "Animated Gradient"),
+            ButtonsCode(Que2811Ex1(), "lib/Container/Que28RadialGradient.dart",
+                "All type of Gradient Ex1"),
+            ButtonsCode(Que28GradientExample(),
+                "lib/Container/Que28Gradient.dart", "All type of Gradient Ex2"),
+            ButtonsCode(
+                Que2911(), "lib/Container/Que29Fontsfamily.dart", "fontFamily"),
+            Text("Gesterdetector & InkWell",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
+            ButtonsCode(
+                Que01Container11(),
+                "lib/Container/Que01ContainerOpacityGesterDetector.dart",
+                "OpacityGesterDetector"),
             ButtonsCode(
                 Que31Container(),
                 "lib/Container/Que31ContainerButton.dart",
@@ -140,24 +170,14 @@ class HomeContainer extends StatelessWidget {
                 "lib/Container/Que34AnimatedFlight.dart", "Animated Flight"),
             ButtonsCode(GraphExample(), "lib/Container/Que35AnimatedGraph.dart",
                 "Animated Graph"),
-            ButtonsCode(Que36GradientTransform(),
-                "lib/Container/Que36Gradient.dart", "Animated Gradient"),
             ButtonsCode(TextOpacitySimple(),
                 "lib/Container/Que37AnimatedOpacity.dart", "Animated Opacity"),
             ButtonsCode(ButtonOpacity(),
                 "lib/Container/Que38OpacityMessage.dart", "Button Opacity"),
             ButtonsCode(Que39Animated(),
                 "lib/Container/Que39AnimatedColor.dart", "Animated Color"),
-            ButtonsCode(
-                BorderExample(),
-                "lib/Container/Que40AnimatedBorderWidth.dart",
-                "Animated Width of Border"),
             ButtonsCode(Que04(), "lib/Container/Que04changeColor.dart",
                 "Change of color"),
-            ButtonsCode(
-                BorderRadiusExample(),
-                "lib/Container/Que41AnimatedBorderRadius.dart",
-                "Animated Radius of Border"),
             ButtonsCode(
                 AnimatedCurves(),
                 "lib/Container/Que42_AnimatedCurves.dart",

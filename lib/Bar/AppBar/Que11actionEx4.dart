@@ -14,7 +14,7 @@ class _Que11ActionEx4State extends State<Que11ActionEx4> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: WidgetAppBar("Iconic Buttons"),
+          title: WidgetAppBar("IconButton"),
           actions: [
             Icon(Icons.favorite),
             Padding(

@@ -5,7 +5,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que2811 extends StatelessWidget {
+class Que2811Ex1 extends StatelessWidget {
   final String url1 = "https://flutter.dev/";
   final String image1 = "assets/help/Container/Que28.png";
   final String video1 = "JDDoN2THwug";

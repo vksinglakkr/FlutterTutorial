@@ -35,6 +35,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   SlidableController slidableController;
+  // List.generate(i,(index){return Widget}),
   final List<Item> items = List.generate(
     10,
     (i) => Item(

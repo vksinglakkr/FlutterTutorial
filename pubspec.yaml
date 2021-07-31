@@ -46,6 +46,9 @@ dependencies:
   syncfusion_flutter_datagrid: ^19.2.47-beta
   flutter_slidable: ^0.6.0
   flutter_swiper: ^1.1.6
+  new_gradient_app_bar: ^0.2.0
+  flutter_gradients: ^1.0.0+3
+  badges: ^2.0.1
  
 #  Flutter package that gives a container with random color.
 #  cupertino_icons: ^1.0.0choco
@@ -191,6 +194,7 @@ flutter:
     - assets/help/TextField/
     - assets/help/Transform/
     - assets/help/API/
+    - assets/help/
 
    
 

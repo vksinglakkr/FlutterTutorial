@@ -23,7 +23,7 @@ class _Que11ActionEx3State extends State<Que11ActionEx3> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: WidgetAppBar("Iconic Buttons \nin AppBar"),
+          title: WidgetAppBar("IconButton\nin AppBar"),
           actions: [
             IconButton(
               icon: const Icon(Icons.info),

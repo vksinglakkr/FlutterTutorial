@@ -10,6 +10,7 @@ import 'package:flutter_tutorial/Others/Positioned/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Properties/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Providers/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Routes/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/Stack_IndexStack_Positioned/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Toast/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/WidgetCommunication/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Wrap/HomeScreen.dart';
@@ -188,6 +189,15 @@ class HomeScreenOthers extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => QueTestMyApp(),
+                  )),
+            ),
+            ElevatedButton(
+              child: Text('Stack',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HomeStack(),
                   )),
             ),
             ElevatedButton(

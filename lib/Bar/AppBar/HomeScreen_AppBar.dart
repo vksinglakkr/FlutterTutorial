@@ -26,6 +26,7 @@ import 'package:flutter_tutorial/Bar/AppBar/Que13IncrementDecrement.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que14.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que15BottomAppBar.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que16BottomAppbar.dart';
+import 'package:flutter_tutorial/Bar/AppBar/Que17Silver.dart';
 import 'package:flutter_tutorial/Container/Que28Gradient.dart';
 import 'package:flutter_tutorial/Icons/Que05.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -168,6 +169,12 @@ class HomeAppBar extends StatelessWidget {
                       Que16BottomAppbarExample(),
                       "lib/Bar/AppBar/Que16BottomAppbar.dart",
                       "BottomAppBar Ex2"),
+                  Text("Silver Appbar",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic)),
+                  ButtonsCode(Que17SliverAppBarExample(),
+                      "lib/Icons/Que04.dart", "SilverAppBar"),
                   Text("Gradient Appbar",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,

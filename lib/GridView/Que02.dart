@@ -8,6 +8,7 @@ class Que02GridListExample extends StatelessWidget {
       // Create a grid with n columns. If you change the scrollDirection to
       // horizontal, this would produce n rows.
       crossAxisCount: 3,
+
       mainAxisSpacing: 4,
       crossAxisSpacing: 4,
       childAspectRatio: 3.1,

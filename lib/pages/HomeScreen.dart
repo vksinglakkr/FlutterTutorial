@@ -80,7 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
           childAspectRatio: 4.1,
           children: [
             ElevatedButton(
-                child: Text('AlertDialog',
+                child: Text('Dialog Box',
                     style:
                         TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                 onPressed: () => Navigator.push(

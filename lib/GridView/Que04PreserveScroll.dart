@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class QueTestMyApp extends StatelessWidget {
+class Que04PreserveScroll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -9,8 +9,8 @@ class QueTestMyApp extends StatelessWidget {
         appBar: AppBar(
             title: Text('Preserve Scroll Position'),
             bottom: TabBar(tabs: [
-              const Tab(icon: Icon(Icons.cloud), text: 'Tab1'),
-              const Tab(icon: Icon(Icons.alarm), text: 'Tab2'),
+              const Tab(icon: Icon(Icons.list_alt), text: 'List'),
+              const Tab(icon: Icon(Icons.grid_view), text: 'Grid'),
             ])),
         body: TabBarView(
           children: [

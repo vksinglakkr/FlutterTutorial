@@ -17,13 +17,29 @@ class Que02Alert11 extends StatelessWidget {
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Column(
           children: [
-            Center(
-              child: ElevatedButton(
-                child: Text('Alert Dialog'),
-                onPressed: () {
-                  _showDialog(context);
-                },
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Center(
+                  child: ElevatedButton(
+                    child: Text('Alert Dialog'),
+                    onPressed: () {
+                      _showDialog(context);
+                    },
+                  ),
+                ),
+                Spacer(
+                  flex: 1,
+                ),
+                Center(
+                  child: ElevatedButton(
+                    child: Text('Alert Dialog'),
+                    onPressed: () {
+                      _showDialog(context);
+                    },
+                  ),
+                ),
+              ],
             ),
           ],
         ),

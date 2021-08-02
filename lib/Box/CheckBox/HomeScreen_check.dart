@@ -21,21 +21,21 @@ class HomeCheck extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Que03(), "lib/Box/Box_CheckBox/Que03.dart",
-                      "Basic CheckBox"),
-                  ButtonsCode(Que02(), "lib/Box/Box_CheckBox/Que02.dart",
+                  ButtonsCode(
+                      Que03(), "lib/Box/CheckBox/Que03.dart", "Basic CheckBox"),
+                  ButtonsCode(Que02(), "lib/Box/CheckBox/Que02.dart",
                       "disabled CheckBox"),
-                  ButtonsCode(Que04(), "lib/Box/Box_CheckBox/Que04.dart",
+                  ButtonsCode(Que04(), "lib/Box/CheckBox/Que04RoundShape.dart",
                       "Circular Shaped CheckBox"),
-                  ButtonsCode(Que06(), "lib/Box/Box_CheckBox/Que06.dart",
+                  ButtonsCode(Que06(), "lib/Box/CheckBox/Que06RoundCorner.dart",
                       "Round Corner CheckBox"),
-                  ButtonsCode(Que07(), "lib/Box/Box_CheckBox/Que07.dart",
-                      "Theme CheckBox"),
+                  ButtonsCode(
+                      Que07(), "lib/Box/CheckBox/Que07.dart", "Theme CheckBox"),
                   ButtonsCode(
                       Que05(),
-                      "lib/Box/Box_CheckBox/Que05DrawCheckBoxwithOther.dart",
+                      "lib/Box/CheckBox/Que05DrawCheckBoxwithOther.dart",
                       "Custom CheckBox"),
-                  ButtonsCode(Que01(), "lib/Box/Box_CheckBox/Que01.dart",
+                  ButtonsCode(Que01(), "lib/Box/CheckBox/Que01.dart",
                       "generate CheckBox from List"),
                 ],
               ),

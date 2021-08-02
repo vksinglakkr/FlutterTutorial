@@ -9,7 +9,7 @@ class HomeScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: WidgetAppBar("Spacer")),
+        appBar: AppBar(title: WidgetAppBar("Scaffold")),
         body: SafeArea(
             child: Container(
                 child: Builder(

@@ -1,6 +1,7 @@
 //lib/Box/CheckBox/Que03.dart
 //Arun
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que05 extends StatefulWidget {
   @override
@@ -9,6 +10,8 @@ class Que05 extends StatefulWidget {
 
 class _Que05State extends State<Que05> {
   bool selected = true;
+  double sliderVal1 = 0.2;
+  BoxShape shape = BoxShape.rectangle;
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +30,9 @@ class _Que05State extends State<Que05> {
             height: 48,
             width: 48,
             decoration: BoxDecoration(
-                shape: BoxShape.circle,
+                shape: shape,
                 color: selected ? Colors.green : Colors.white,
-                border: Border.all(width: 2, color: Colors.green)),
+                border: Border.all(width: sliderVal1, color: Colors.red)),
             child: Padding(
                 padding: const EdgeInsets.all(3.0),
                 child: selected
@@ -41,6 +44,39 @@ class _Que05State extends State<Que05> {
                     : Container()),
           ),
         ),
+      ),
+      bottomNavigationBar: _getBottomBar(),
+    );
+  }
+
+  Widget _getBottomBar() {
+    return Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Material(
+        color: Theme.of(context).primaryColorLight,
+        child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+          CustSlider(
+              widthVal: 220,
+              maxValue: 5,
+              minValue: 1,
+              divide: 10,
+              propText: '   border:(width:)',
+              sliderVal: sliderVal1,
+              onValueChange: (onChange) {
+                setState(() {
+                  sliderVal1 = onChange;
+                });
+              }),
+          CustomValues(
+              datatype: BoxShape.values,
+              defaultVal: shape,
+              propText: "   shape:",
+              onValueChanged: (onChange) {
+                setState(() {
+                  shape = onChange;
+                });
+              })
+        ]),
       ),
     );
   }

@@ -91,7 +91,7 @@ class HomeImage extends StatelessWidget {
                     "lib/Container/Que42_AnimatedCurves.dart",
                     "Animated Curves Demo"),
                 ButtonsCode(
-                    Que15Swiper(), "lib/Container/Que15.dart", "Image Swiper"),
+                    Que15Swiper(), "lib/Image/Que15.dart", "Image Swiper"),
               ],
             ),
           ),

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que01Alert11 extends StatelessWidget {
-//  final String image1 = "assets/help/AlertDialog/Que01.png";
+  final String image1 = "assets/help/AlertDialog/showDialog.jpg";
   final String video1 = "JDDoN2THwug";
   @override
   Widget build(BuildContext context) {

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/SetUpAPK/Que04.dart';
 import 'package:flutter_tutorial/SetUpAPK/Que04BestChannels.dart';
 import 'package:flutter_tutorial/SetUpAPK/Que05.dart';
+import 'package:flutter_tutorial/SetUpAPK/Que06.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01.dart';
 import 'Que02.dart';
@@ -38,6 +39,8 @@ class HomeSetUp extends StatelessWidget {
                 "flutter internet permission"),
             ButtonsCode(
                 Que05(), "lib/SetUpAPK/Que05.dart", "Some usefull Extensions"),
+            ButtonsCode(
+                Que06(), "lib/SetUpAPK/Que06.dart", "Some shortcut Keys"),
           ],
         ),
       ),

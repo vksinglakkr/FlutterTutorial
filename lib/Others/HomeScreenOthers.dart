@@ -3,12 +3,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
+import 'package:flutter_tutorial/Diagram/MnemonicCode.dart';
 import 'package:flutter_tutorial/Others/FlutterLogo/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Future/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/PersistKey/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Positioned/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Properties/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Providers/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/Refactoring/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Routes/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Stack_IndexStack_Positioned/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Toast/HomeScreen.dart';
@@ -289,6 +291,24 @@ class HomeScreenOthers extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) => HomeProvider(),
+                    ))),
+            ElevatedButton(
+                child: Text('Refactoring',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeRefactoring(),
+                    ))),
+            ElevatedButton(
+                child: Text('Anatomy/MnemonicCode',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeMnemonic(),
                     ))),
           ],
         ),

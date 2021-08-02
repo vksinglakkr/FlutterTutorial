@@ -80,9 +80,11 @@ flutter:
     - lib/Others/Assignments/
     - lib/Bar/AppBar/
     - lib/Bar/BottomNavigationBar/
+    - lib/Bar/ButtonBar/
     - lib/Bar/Navigationbar/
     - lib/Bar/Snackbar/
     - lib/Box/Box_DecoratedBox/
+    - lib/Box/CheckBox/
     - lib/Box/Box_FittedBox/
     - lib/Box/Box_RotatedBox/
     - lib/Box/Box_SizedBox/
@@ -91,6 +93,7 @@ flutter:
     - lib/Buttons/FloatingActionButton/
     - lib/Buttons/RadioButton/
     - lib/Buttons/IconicButtons/
+    - lib/Others/Refactoring/
     - lib/Card/
     - lib/Comments/
     - lib/Container/

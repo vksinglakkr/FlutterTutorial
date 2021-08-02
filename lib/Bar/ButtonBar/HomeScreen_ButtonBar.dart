@@ -17,7 +17,7 @@ class HomeButtonBar extends StatelessWidget {
                 padding: EdgeInsets.all(3.0),
                 children: [
                   ButtonsCode(Que01ButtonBar11(),
-                      "lib/Bar/BottomBar/Que01Basic.dart", "Button Bar"),
+                      "lib/Bar/ButtonBar/Que01Basic.dart", "Button Bar"),
                 ],
               ),
             ),

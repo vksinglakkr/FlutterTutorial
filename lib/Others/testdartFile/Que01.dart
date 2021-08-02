@@ -14,8 +14,8 @@ class QueTestMyApp extends StatelessWidget {
             ])),
         body: TabBarView(
           children: [
-            buildListPageOne(),
-            buildGridPageOne(),
+            buildListPageOne(), //Widget1
+            buildGridPageOne(), //Widget2
           ],
         ),
       ),

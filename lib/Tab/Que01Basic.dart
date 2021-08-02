@@ -16,18 +16,9 @@ class Que0111 extends StatelessWidget {
           title: WidgetAppBar("Tabs"),
           bottom: TabBar(
             tabs: [
-              Tab(
-                icon: Icon(Icons.directions_car),
-                text: 'Car',
-              ),
-              Tab(
-                icon: Icon(Icons.directions_transit),
-                text: 'Bus',
-              ),
-              Tab(
-                icon: Icon(Icons.directions_bike),
-                text: 'bike',
-              ),
+              Tab(icon: Icon(Icons.directions_car), text: 'Car'),
+              Tab(icon: Icon(Icons.directions_transit), text: 'Bus'),
+              Tab(icon: Icon(Icons.directions_bike), text: 'bike'),
             ],
           ),
         ),
@@ -35,14 +26,8 @@ class Que0111 extends StatelessWidget {
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: TabBarView(
           children: [
-            Icon(
-              Icons.directions_car,
-              size: 100.0,
-            ),
-            Icon(
-              Icons.directions_transit,
-              size: 100,
-            ),
+            Icon(Icons.directions_car, size: 100.0),
+            Icon(Icons.directions_transit, size: 100),
             Icon(Icons.directions_bike, size: 100),
           ],
         ),

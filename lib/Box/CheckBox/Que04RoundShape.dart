@@ -1,6 +1,7 @@
 //lib/Box/CheckBox/Que03.dart
 //Arun
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class Que04 extends StatefulWidget {
   @override
@@ -8,7 +9,8 @@ class Que04 extends StatefulWidget {
 }
 
 class _Que04State extends State<Que04> {
-  bool _checkBoxVal = true;
+  bool _checkBoxVal = false;
+  double sliderVal1 = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +33,8 @@ class _Que04State extends State<Que04> {
             //tristate: true,
             //tristate: false,
             shape: CircleBorder(),
+            // RoundedRectangleBorder(
+            //     borderRadius: BorderRadius.all(Radius.circular(sliderVal1))),
             onChanged: (bool value) {
               if (value != null) {
                 setState(() => this._checkBoxVal = value);
@@ -39,6 +43,30 @@ class _Que04State extends State<Que04> {
             value: this._checkBoxVal,
           ),
         ),
+      ),
+      bottomNavigationBar: _getBottomBar(),
+    );
+  }
+
+  Widget _getBottomBar() {
+    return Padding(
+      padding: const EdgeInsets.all(5.0),
+      child: Material(
+        color: Theme.of(context).primaryColorLight,
+        child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+          CustSlider(
+              widthVal: 220,
+              maxValue: 10,
+              minValue: 1,
+              divide: 10,
+              propText: '   shape:',
+              sliderVal: sliderVal1,
+              onValueChange: (onChange) {
+                setState(() {
+                  sliderVal1 = onChange;
+                });
+              }),
+        ]),
       ),
     );
   }

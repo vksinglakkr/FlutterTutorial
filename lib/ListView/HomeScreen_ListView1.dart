@@ -81,7 +81,7 @@ class HomeListView1 extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic)),
-                  Text("Basic Code Ex.1",
+                  Text("Static Lists",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontStyle: FontStyle.italic)),
@@ -101,6 +101,10 @@ class HomeListView1 extends StatelessWidget {
                       "with  Container Ex.2"),
                   ButtonsCode(Que1111(), "lib/ListView/Que11MixListView.dart",
                       "with Text/Container/Card Ex.3"),
+                  Text("Dynamic Lists",
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic)),
                   ButtonsCode(Que03(), "lib/ListView/Que03properties.dart",
                       "Dynamic Properties"),
                   ButtonsCode(

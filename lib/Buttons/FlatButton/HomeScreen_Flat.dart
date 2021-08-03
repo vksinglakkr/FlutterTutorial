@@ -19,11 +19,15 @@ class HomeFlat extends StatelessWidget {
                   ButtonsCode(
                       Que01Flat11(),
                       "lib/Buttons/FlatButton/Que08PaddingOnly.dart",
-                      "Gradient"),
+                      "Gradient",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                   ButtonsCode(
                       Que02Flat11(),
                       "lib/Buttons/FlatButton/Que02LinearGradient.dart",
-                      "Linear Gradient"),
+                      "Linear Gradient",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                 ],
               ),
             ),

@@ -6,6 +6,7 @@ import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
 import 'package:flutter_tutorial/Diagram/MnemonicCode.dart';
 import 'package:flutter_tutorial/Others/FlutterLogo/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Future/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/MapList/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/PersistKey/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Positioned/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Properties/HomeScreen.dart';
@@ -309,6 +310,15 @@ class HomeScreenOthers extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (BuildContext context) => HomeMnemonic(),
+                    ))),
+            ElevatedButton(
+                child: Text('.Map() ..toList()',
+                    style:
+                        TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => HomeMapList(),
                     ))),
           ],
         ),

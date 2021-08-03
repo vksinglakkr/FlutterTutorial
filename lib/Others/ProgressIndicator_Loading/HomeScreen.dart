@@ -17,10 +17,18 @@ class HomeProgress extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que0111(), "lib/ProgressIndicator_Loading/Que01.dart",
-                  "Circular Progress Indicator"),
-              ButtonsCode(Que0211(), "lib/ProgressIndicator_Loading/Que02.dart",
-                  "FadeInImage_Loading bar"),
+              ButtonsCode(
+                  Que0111(),
+                  "lib/ProgressIndicator_Loading/Que01.dart",
+                  "Circular Progress Indicator",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
+              ButtonsCode(
+                  Que0211(),
+                  "lib/ProgressIndicator_Loading/Que02.dart",
+                  "FadeInImage_Loading bar",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

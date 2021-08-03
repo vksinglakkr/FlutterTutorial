@@ -15,8 +15,12 @@ class HomeSpacer extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que0111(), "lib/Others/Spacer/Que01.dart",
-                  "Basic Spacer with Flex"),
+              ButtonsCode(
+                  Que0111(),
+                  "lib/Others/Spacer/Que01.dart",
+                  "Basic Spacer with Flex",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

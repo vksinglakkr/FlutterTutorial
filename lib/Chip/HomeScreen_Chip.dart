@@ -17,12 +17,24 @@ class HomeChip extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Que01(), "lib/Chip/Que01DynamicChip.dart",
-                      "Generate Chip using List<String>"),
-                  ButtonsCode(Que02(), "lib/Chip/Que02DynamicChip.dart",
-                      "Generate Chip using List.generate"),
                   ButtonsCode(
-                      Que03(), "lib/Chip/Que03.dart", "Generate Chip (Basic)"),
+                      Que01Chip(),
+                      "lib/Chip/Que01DynamicChip.dart",
+                      "Generate Chip using List<String>",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
+                  ButtonsCode(
+                      Que02(),
+                      "lib/Chip/Que02DynamicChip.dart",
+                      "Generate Chip using List.generate",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
+                  ButtonsCode(
+                      Que03(),
+                      "lib/Chip/Que03.dart",
+                      "Generate Chip (Basic)",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                 ],
               ),
             ),

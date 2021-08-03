@@ -39,8 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
               DropdownButton(
                 value: dropdownvalue,
                 icon: Icon(Icons.keyboard_arrow_down),
-                items: items.map((String items) {
-                  return DropdownMenuItem(value: items, child: Text(items));
+                items: items.map((String element) {
+                  return DropdownMenuItem(value: element, child: Text(element));
                 }).toList(),
                 onChanged: (String newValue) {
                   setState(() {

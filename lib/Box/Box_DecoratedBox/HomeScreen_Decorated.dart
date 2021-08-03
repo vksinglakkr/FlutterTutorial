@@ -19,11 +19,15 @@ class HomeDecorated extends StatelessWidget {
                   ButtonsCode(
                       Que01Decorated11(),
                       "lib/Box/Box_DecoratedBox/Que01Box_DecoratedBox.dart",
-                      "Decorated Box (Container)"),
+                      "Decorated Box (Container)",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                   ButtonsCode(
                       Que01Gradient(),
                       "lib/Box/Box_DecoratedBox/Que01Box_Gradient.dart",
-                      "Decorated Box (Gradient)"),
+                      "Decorated Box (Gradient)",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                 ],
               ),
             ),

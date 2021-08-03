@@ -16,9 +16,14 @@ class HomeDivider extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que0211(), "lib/Divider/Que02.dart", "Divider"),
-              ButtonsCode(Que0111(), "lib/Divider/Que01DividerTheme2.dart",
-                  "Divider using ThemeData"),
+              ButtonsCode(Que0211(), "lib/Divider/Que02.dart", "Divider",
+                  "assets/help/Que01.jpg", "SubTitle"),
+              ButtonsCode(
+                  Que0111(),
+                  "lib/Divider/Que01DividerTheme2.dart",
+                  "Divider using ThemeData",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

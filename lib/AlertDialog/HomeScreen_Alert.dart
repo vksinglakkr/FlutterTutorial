@@ -4,13 +4,10 @@ import 'package:flutter_tutorial/AlertDialog/Que10Simple.dart';
 import 'package:flutter_tutorial/AlertDialog/Que20DatePicker.dart';
 import 'package:flutter_tutorial/AlertDialog/Que30TimePicker.dart';
 import 'package:flutter_tutorial/AlertDialog/Que40DateRange.dart';
+import 'package:flutter_tutorial/Diagram/PageShowImage.dart';
 import 'package:flutter_tutorial/Others/Theme/mainTheme.dart';
 import 'package:flutter_tutorial/TextField/Assignment3.dart';
 import 'Que01Basic.dart';
-import 'Que02RoundedCorner.dart';
-import 'Que03DontCloseonTapoutside.dart';
-import 'Que04Elevation.dart';
-import 'Que05BackGroundColor.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 class HomeAlert extends StatelessWidget {
@@ -42,38 +39,70 @@ class HomeAlert extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  Text("Alert Dialog Box",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic)),
-                  ButtonsCode(Que01Alert11(), "lib/AlertDialog/Que01Basic.dart",
-                      "Basic Example"),
+                  Row(
+                    children: [
+                      Text("Alert Dialog Box",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic)),
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => PageShowImage(
+                                      text1: "Alert Dialog Box:",
+                                      image1:
+                                          "assets/help/AlertDialog/Alert.jpg"),
+                                ));
+                          },
+                          child: Icon(Icons.info)),
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      MyAppVideo(video1: "JDDoN2THwug"),
+                                ));
+                          },
+                          child: Icon(Icons.play_arrow)),
+                    ],
+                  ),
                   ButtonsCode(
-                      Que02Alert11(),
-                      "lib/AlertDialog/Que02RoundedCorner.dart",
-                      "Rounded Corner Alert Dialog Box"),
-                  ButtonsCode(
-                      Que03Alert11(),
-                      "lib/AlertDialog/Que03DontCloseonTapoutside.dart",
-                      "Don\'t Close on tap outside"),
-                  ButtonsCode(
-                      Que04Alert11(),
-                      "lib/AlertDialog/Que04Elevation.dart",
-                      "Elevated Alert Dialog Box"),
-                  ButtonsCode(
-                      Que05Alert11(),
-                      "lib/AlertDialog/Que05BackGroundColor.dart",
-                      "Changed Back Ground Color"),
+                      Que01Alert11(),
+                      "lib/AlertDialog/Que01Basic.dart",
+                      "Basic Example",
+                      "assets/help/AlertDialog/Que01.jpg",
+                      "SubTitle"),
                   ButtonsCode(
                       Que03Assignment(),
                       "lib/TextField/Assignment3.dart",
-                      "Show value-TextField/Controller/toast/AlertDialog"),
-                  Text("Simple Dialog Box",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic)),
+                      "Show value-TextField/Controller/toast/AlertDialog",
+                      "assets/help/AlertDialog/Que01.jpg",
+                      "SubTitle"),
+                  Row(
+                    children: [
+                      Text("Simple Dialog Box",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic)),
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => PageShowImage(
+                                      text1: "Simple Dialog Box:",
+                                      image1:
+                                          "assets/help/AlertDialog/Que20DatePicker.jpg"),
+                                ));
+                          },
+                          child: Icon(Icons.info)),
+                    ],
+                  ),
                   ButtonsCode(Que10Simple(), "lib/AlertDialog/Que10Simple.dart",
-                      "Simple Dialog Box"),
+                      "Simple Dialog Box", "assets/help/Que01.jpg", "SubTitle"),
                   Text("DatePicker Dialog Box",
                       style: TextStyle(
                           fontWeight: FontWeight.bold,
@@ -81,27 +110,69 @@ class HomeAlert extends StatelessWidget {
                   ButtonsCode(
                       Que20DatePicker(),
                       "lib/AlertDialog/Que20DatePicker.dart",
-                      "DatePicker Dialog Box"),
-                  Text("TimePicker Dialog Box",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic)),
+                      "DatePicker Dialog Box",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
+                  Row(
+                    children: [
+                      Text("TimePicker Dialog Box",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic)),
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => PageShowImage(
+                                      text1: "TimePicker Dialog Box:",
+                                      image1:
+                                          "assets/help/AlertDialog/Que30TimePicker.jpg"),
+                                ));
+                          },
+                          child: Icon(Icons.info)),
+                    ],
+                  ),
                   ButtonsCode(
                       Que30TimePicker(),
                       "lib/AlertDialog/Que30TimePicker.dart",
-                      "TimePicker Dialog Box"),
-                  Text("Date Range Picker Dialog Box",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic)),
+                      "TimePicker Dialog Box",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
+                  Row(
+                    children: [
+                      Text("Date Range Picker Dialog Box",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic)),
+                      InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => PageShowImage(
+                                      text1: "Date Range Picker Dialog Box:",
+                                      image1:
+                                          "assets/help/AlertDialog/Que40DateRange.jpg"),
+                                ));
+                          },
+                          child: Icon(Icons.info)),
+                    ],
+                  ),
                   ButtonsCode(
                       Que40DateRangePicker(),
                       "lib/AlertDialog/Que40DateRange.dart",
-                      "DateRangePicker Dialog Box"),
-                  Text("ColorPicker Dialog Box",
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontStyle: FontStyle.italic)),
+                      "DateRangePicker Dialog Box",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
+                  Row(
+                    children: [
+                      Text("ColorPicker Dialog Box",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontStyle: FontStyle.italic)),
+                    ],
+                  ),
                 ],
               ),
             ),

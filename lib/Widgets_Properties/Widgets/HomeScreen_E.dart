@@ -18,7 +18,9 @@ class HomeAlert extends StatelessWidget {
                   ButtonsCode(
                       QueExpanded11(),
                       "lib/Widgets_Properties/Widgets/QueExpanded.dart",
-                      "Expanded"),
+                      "Expanded",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                 ],
               ),
             ),

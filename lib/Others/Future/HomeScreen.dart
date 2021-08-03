@@ -15,8 +15,12 @@ class HomeFuture extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que01Future(), "lib/Others/Future/Que01.dart",
-                  "Demonstrate FutureBuilder"),
+              ButtonsCode(
+                  Que01Future(),
+                  "lib/Others/Future/Que01.dart",
+                  "Demonstrate FutureBuilder",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

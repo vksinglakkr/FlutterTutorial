@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que02 extends StatelessWidget {
+class Que02Card extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MyHomePage(title: 'Generate Card using \nList<String>');

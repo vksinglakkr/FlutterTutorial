@@ -16,7 +16,7 @@ class HomeLogo extends StatelessWidget {
             padding: EdgeInsets.all(3.0),
             children: [
               ButtonsCode(Que01(), "lib/Others/FlutterLogo/Que01.dart",
-                  "Demo FlutterLogo"),
+                  "Demo FlutterLogo", "assets/help/Que01.jpg", "SubTitle"),
             ],
           ),
         ))),

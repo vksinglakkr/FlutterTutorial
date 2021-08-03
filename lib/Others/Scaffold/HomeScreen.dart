@@ -16,10 +16,10 @@ class HomeScaffold extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(
-                  Que01(), "lib/Others/Scaffold/Que01.dart", "Scaffold"),
+              ButtonsCode(Que01(), "lib/Others/Scaffold/Que01.dart", "Scaffold",
+                  "assets/help/Que01.jpg", "SubTitle"),
               ButtonsCode(ScaffoldPage(), "lib/Others/Scaffold/Que02.dart",
-                  "Scaffold 2"),
+                  "Scaffold 2", "assets/help/Que01.jpg", "SubTitle"),
             ],
           ),
         ))),

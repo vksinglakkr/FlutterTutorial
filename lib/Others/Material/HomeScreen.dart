@@ -17,8 +17,12 @@ class HomeMaterial extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que02InkWell11(),
-                  "lib/Others/InkWell/Que02ClickonTextToggle.dart", "InkWell"),
+              ButtonsCode(
+                  Que02InkWell11(),
+                  "lib/Others/InkWell/Que02ClickonTextToggle.dart",
+                  "InkWell",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
               Container(
                 margin: EdgeInsets.all(2),
                 height: 32,

@@ -16,12 +16,14 @@ class HomeExpanded extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(
-                  QueExpanded11(), "lib/Expanded/QueExpanded.dart", "Expanded"),
+              ButtonsCode(QueExpanded11(), "lib/Expanded/QueExpanded.dart",
+                  "Expanded", "assets/help/Que01.jpg", "SubTitle"),
               ButtonsCode(
                   QueSizedExpanded11(),
                   "lib/Expanded/QueSizedExpanded.dart",
-                  "SizedBox and Expanded, How and where to use them?"),
+                  "SizedBox and Expanded, How and where to use them?",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

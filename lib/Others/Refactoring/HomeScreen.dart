@@ -26,7 +26,9 @@ class HomeRefactoring extends StatelessWidget {
               ButtonsCode(
                   Que00FullTree(),
                   "lib/Others/Refactoring/Que00FullTree.dart",
-                  "Full Widget Tree"),
+                  "Full Widget Tree",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
               Text("Refactoring with a Constant",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -34,7 +36,9 @@ class HomeRefactoring extends StatelessWidget {
               ButtonsCode(
                   Que01Constant(),
                   "lib/Others/Refactoring/Que01Constant.dart",
-                  "Refactoring with a Constant"),
+                  "Refactoring with a Constant",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
               Text("Refactoring with a Method",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -42,11 +46,15 @@ class HomeRefactoring extends StatelessWidget {
               ButtonsCode(
                   Que02Method1(),
                   "lib/Others/Refactoring/Que02Method1.dart",
-                  "Refactoring with a Method (Approch 1- Widget)"),
+                  "Refactoring with a Method (Approch 1- Widget)",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
               ButtonsCode(
                   Que02Method2(),
                   "lib/Others/Refactoring/Que02Method2.dart",
-                  "Refactoring with a Method (Approch 2- Container)"),
+                  "Refactoring with a Method (Approch 2- Container)",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
               Text("Refactoring with a Widget Class",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -54,7 +62,9 @@ class HomeRefactoring extends StatelessWidget {
               ButtonsCode(
                   Que03Class(),
                   "lib/Others/Refactoring/Que03Class.dart",
-                  "Refactoring with a Widget Class"),
+                  "Refactoring with a Widget Class",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

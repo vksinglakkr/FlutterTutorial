@@ -3,12 +3,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que05 extends StatefulWidget {
+class Que05DropDown extends StatefulWidget {
   @override
-  _Que05State createState() => _Que05State();
+  _Que05DropDownState createState() => _Que05DropDownState();
 }
 
-class _Que05State extends State<Que05> {
+class _Que05DropDownState extends State<Que05DropDown> {
   String _chosenValue;
 
   @override

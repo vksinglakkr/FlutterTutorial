@@ -18,9 +18,13 @@ class HomeIconic extends StatelessWidget {
                 padding: EdgeInsets.all(3.0),
                 children: [
                   ButtonsCode(Que01(), "lib/Buttons/IconicButtons/Que02.dart",
-                      "IconButton"),
-                  ButtonsCode(Que02(), "lib/Buttons/IconicButtons/Que02.dart",
-                      "Rounded icon button"),
+                      "IconButton", "assets/help/Que01.jpg", "SubTitle"),
+                  ButtonsCode(
+                      Que02(),
+                      "lib/Buttons/IconicButtons/Que02.dart",
+                      "Rounded icon button",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                 ],
               ),
             ),

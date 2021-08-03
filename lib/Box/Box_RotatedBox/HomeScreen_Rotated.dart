@@ -16,10 +16,14 @@ class HomeRotated extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Que01Rotated11(),
-                      "lib/Box/Box_RotatedBox/Que01.dart", "Rotated Box"),
+                  ButtonsCode(
+                      Que01Rotated11(),
+                      "lib/Box/Box_RotatedBox/Que01.dart",
+                      "Rotated Box",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                   ButtonsCode(Que02(), "lib/Box/Box_RotatedBox/Que02Text.dart",
-                      "Rotated Text"),
+                      "Rotated Text", "assets/help/Que01.jpg", "SubTitle"),
                 ],
               ),
             ),

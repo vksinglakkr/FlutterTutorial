@@ -134,15 +134,19 @@ class _Que01ButtonBar11State extends State<Que01ButtonBar11> {
                   alignment = value;
                 });
               }),
-          CustomValues(
-              datatype: MainAxisAlignment.values,
-              defaultVal: mainAxisAlignment,
-              propText: "   main:",
-              onValueChanged: (value) {
-                setState(() {
-                  mainAxisAlignment = value;
-                });
-              })
+
+          Align(
+            alignment: Alignment.center,
+            child: CustomValues(
+                datatype: MainAxisAlignment.values,
+                defaultVal: mainAxisAlignment,
+                propText: "       ",
+                onValueChanged: (value) {
+                  setState(() {
+                    mainAxisAlignment = value;
+                  });
+                }),
+          )
         ]),
       ),
     );

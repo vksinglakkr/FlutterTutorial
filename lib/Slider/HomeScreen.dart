@@ -18,13 +18,18 @@ class HomeSlider extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
+              ButtonsCode(Que02(), "lib/Slider/Que02.dart", "Slider Basic Code",
+                  "assets/help/Que01.jpg", "SubTitle"),
               ButtonsCode(
-                  Que02(), "lib/Slider/Que02.dart", "Slider Basic Code"),
-              ButtonsCode(Que0111(), "lib/Slider/Que01.dart",
-                  "Assignment: Slider to Transform Container"),
-              ButtonsCode(Que04Slider(), "lib/Slider/Que04.dart", "Slider Ex3"),
-              ButtonsCode(
-                  Que03Slider(), "lib/Slider/Que03.dart", "Range Slider"),
+                  Que0111(),
+                  "lib/Slider/Que01.dart",
+                  "Assignment: Slider to Transform Container",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
+              ButtonsCode(Que04Slider(), "lib/Slider/Que04.dart", "Slider Ex3",
+                  "assets/help/Que01.jpg", "SubTitle"),
+              ButtonsCode(Que03Slider(), "lib/Slider/Que03.dart",
+                  "Range Slider", "assets/help/Que01.jpg", "SubTitle"),
             ],
           ),
         ))),

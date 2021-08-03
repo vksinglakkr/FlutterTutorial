@@ -19,9 +19,15 @@ class HomeCustomWidget extends StatelessWidget {
               ButtonsCode(
                   Que0111(),
                   "lib/CustomWidgets/Que01CustomContainer_Visibility.dart",
-                  "Custom Container"),
-              ButtonsCode(Que02(), "lib/CustomWidgets/Que02PassChild.dart",
-                  "Passing .... Widget (as child) as Parameter"),
+                  "Custom Container",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
+              ButtonsCode(
+                  Que02(),
+                  "lib/CustomWidgets/Que02PassChild.dart",
+                  "Passing .... Widget (as child) as Parameter",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

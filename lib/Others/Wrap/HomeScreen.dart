@@ -16,9 +16,14 @@ class HomeWrap extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que02(), "lib/Others/Wrap/Que02.dart", "Basic"),
-              ButtonsCode(Que01WrapExample(),
-                  "lib/Others/Wrap/Que01WrapList.dart", "Using List"),
+              ButtonsCode(Que02(), "lib/Others/Wrap/Que02.dart", "Basic",
+                  "assets/help/Que01.jpg", "SubTitle"),
+              ButtonsCode(
+                  Que01WrapExample(),
+                  "lib/Others/Wrap/Que01WrapList.dart",
+                  "Using List",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

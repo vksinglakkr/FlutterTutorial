@@ -12,7 +12,8 @@ class PageShowImage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Image(image: AssetImage(image1)),
+          child: RotatedBox(
+              quarterTurns: 1, child: Image(image: AssetImage(image1))),
         ),
       ),
     );

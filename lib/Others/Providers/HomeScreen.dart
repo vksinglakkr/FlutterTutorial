@@ -17,10 +17,14 @@ class HomeProvider extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(QueProvider(),
-                  "lib/Others/Providers/Project1/main.dart", "Provider Ex.1"),
+              ButtonsCode(
+                  QueProvider(),
+                  "lib/Others/Providers/Project1/main.dart",
+                  "Provider Ex.1",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
               ButtonsCode(Que01MyApp(), "lib/Others/Providers/Que01.dart",
-                  "Provider Ex.2"),
+                  "Provider Ex.2", "assets/help/Que01.jpg", "SubTitle"),
             ],
           ),
         ))),

@@ -17,16 +17,24 @@ class HomeAlign extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Que02(), "lib/Align/Que02.dart",
-                      "Constructor & Properties"),
+                  ButtonsCode(
+                      Que02(),
+                      "lib/Align/Que02.dart",
+                      "Constructor & Properties",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                   ButtonsCode(
                       Que01Align11(),
                       "lib/Align/Que01heightFactorwidthfactor.dart",
-                      "ClipOval/ Align"),
+                      "ClipOval/ Align",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                   ButtonsCode(
                       Que03(),
                       "lib/Align/Que01heightFactorwidthfactor.dart",
-                      "Properties"),
+                      "Properties",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                 ],
               ),
             ),

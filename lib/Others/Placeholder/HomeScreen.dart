@@ -19,16 +19,24 @@ class HomePlaceholder extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(
-                  Que0111(), "lib/Placeholder/Que01.dart", "Basic Placeholder"),
+              ButtonsCode(Que0111(), "lib/Placeholder/Que01.dart",
+                  "Basic Placeholder", "assets/help/Que01.jpg", "SubTitle"),
               ButtonsCode(Que02(), "lib/Placeholder/Que02.dart",
-                  "color: & strokeWidth:"),
-              ButtonsCode(Que03(), "lib/Placeholder/Que03.dart",
-                  "fallbackHeight: \nNo effect without Parent"),
-              ButtonsCode(Que04(), "lib/Placeholder/Que04.dart",
-                  "fallbackHeight: \nWith Parent"),
+                  "color: & strokeWidth:", "assets/help/Que01.jpg", "SubTitle"),
+              ButtonsCode(
+                  Que03(),
+                  "lib/Placeholder/Que03.dart",
+                  "fallbackHeight: \nNo effect without Parent",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
+              ButtonsCode(
+                  Que04(),
+                  "lib/Placeholder/Que04.dart",
+                  "fallbackHeight: \nWith Parent",
+                  "assets/help/Que01.jpg",
+                  "SubTitle"),
               ButtonsCode(Que05(), "lib/Placeholder/Que05.dart",
-                  "Multiple Placeholder"),
+                  "Multiple Placeholder", "assets/help/Que01.jpg", "SubTitle"),
             ],
           ),
         ))),

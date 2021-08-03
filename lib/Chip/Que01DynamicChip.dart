@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
-class Que01 extends StatelessWidget {
+class Que01Chip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MyHomePage(title: 'Generate chip using \nList<String>');
@@ -37,10 +37,10 @@ class _MyHomePageState extends State<MyHomePage> {
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
         body: Center(
           child: Wrap(
-            children: tags.map((tag) {
+            children: tags.map((element) {
               return Container(
                 margin: EdgeInsets.only(left: 10),
-                child: Chip(label: Text(tag)),
+                child: Chip(label: Text(element)),
               );
             }).toList(),
           ),

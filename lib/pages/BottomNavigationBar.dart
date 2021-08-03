@@ -11,7 +11,7 @@ final String video1 = "";
 
 class QueBottom extends StatefulWidget {
   final String urlName, imageName, videoUrlId;
-  const QueBottom({key, this.urlName, this.imageName, this.videoUrlId});
+  const QueBottom({this.urlName, this.imageName, this.videoUrlId});
   @override
   _QueBottomState createState() => _QueBottomState();
 }
@@ -184,20 +184,57 @@ class WidgetCode extends StatelessWidget {
 //     );
 //   }
 // }
+// class ButtonsCode extends StatelessWidget {
+//   final Widget a1;
+//   final String s1;
+//   final String s2;
+//   ButtonsCode(this.a1, this.s1, this.s2);
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       child: ElevatedButton(
+//           child: Text(s2),
+//           onPressed: () {
+//             Navigator.push(context,
+//                 MaterialPageRoute(builder: (context) => WidgetCode(a1, s1)));
+//           }),
+//     );
+//   }
+// }
 class ButtonsCode extends StatelessWidget {
   final Widget a1;
   final String s1;
   final String s2;
-  ButtonsCode(this.a1, this.s1, this.s2);
+  final String i1;
+  final String s3;
+  ButtonsCode(this.a1, this.s1, this.s2, this.i1, this.s3);
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: ElevatedButton(
-          child: Text(s2),
-          onPressed: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => WidgetCode(a1, s1)));
-          }),
+      child: Card(
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => WidgetCode(a1, s1)));
+              },
+              child: ListTile(
+                leading: Image.asset(
+                  i1,
+                ),
+                title: Text(
+                  s2,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text('Loading ... '),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

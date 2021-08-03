@@ -16,8 +16,12 @@ class HomeButtonBar extends StatelessWidget {
               builder: (context) => ListView(
                 padding: EdgeInsets.all(3.0),
                 children: [
-                  ButtonsCode(Que01ButtonBar11(),
-                      "lib/Bar/ButtonBar/Que01Basic.dart", "Button Bar"),
+                  ButtonsCode(
+                      Que01ButtonBar11(),
+                      "lib/Bar/ButtonBar/Que01Basic.dart",
+                      "Button Bar",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
                 ],
               ),
             ),

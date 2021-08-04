@@ -17,12 +17,12 @@ class HomeExpanded extends StatelessWidget {
             padding: EdgeInsets.all(3.0),
             children: [
               ButtonsCode(QueExpanded11(), "lib/Expanded/QueExpanded.dart",
-                  "Expanded", "assets/help/Que01.jpg", "SubTitle"),
+                  "Expanded", "assets/help/Expanded/1 (1).jpg", "SubTitle"),
               ButtonsCode(
                   QueSizedExpanded11(),
                   "lib/Expanded/QueSizedExpanded.dart",
                   "SizedBox and Expanded, How and where to use them?",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Expanded/1 (2).jpg",
                   "SubTitle"),
             ],
           ),

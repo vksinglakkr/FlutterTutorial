@@ -1,4 +1,3 @@
-// lib/Assignments\HomeScreen_Assignments.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Others/Assignments/Que06GenerateRandomBackGround.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -20,19 +19,19 @@ class HomeAssignments extends StatelessWidget {
                 children: [
                   ButtonsCode(
                       Que0111(),
-                      "lib/Assignments/Que01Assignment1.dart",
+                      "lib/Others/Assignments/Que01Assignment1.dart",
                       "Assignment on Container",
                       "assets/help/Que01.jpg",
                       "SubTitle"),
                   ButtonsCode(
                       Que0211(),
-                      "lib/Assignments/Que02GridView_ClipRRect_Material.dart",
+                      "lib/Others/Assignments/Que02GridView_ClipRRect_Material.dart",
                       "GridView/ClipRRect/Material",
                       "assets/help/Que01.jpg",
                       "SubTitle"),
                   ButtonsCode(
                       Que0311(),
-                      "lib/Assignments/Que03IncreaseFontSize.dart",
+                      "lib/Others/Assignments/Que03IncreaseFontSize.dart",
                       " Increase FontSize",
                       "assets/help/Que01.jpg",
                       "SubTitle"),
@@ -40,7 +39,7 @@ class HomeAssignments extends StatelessWidget {
 //                      "lib/Assignments/Que04ChangeLocationofFloatingActionButtonwithRadioButton.dart", "Color Picker","assets/help/Que01.jpg","SubTitle"), ButtonsCode(Que05Color(),,"assets/help/Que01.jpg","SubTitle"), ButtonsCodesignments/Que05ColorPicker.dart", "Color Picker"),
                   ButtonsCode(
                       Que06Random(),
-                      "lib/Assignments/Que06Random.dart",
+                      "lib/Others/Assignments/Que06Random.dart",
                       "Generate Random Color Background",
                       "assets/help/Que01.jpg",
                       "SubTitle"),

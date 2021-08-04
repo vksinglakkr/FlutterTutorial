@@ -103,6 +103,7 @@ flutter:
     - lib/Drawer/
     - lib/Others/General/
     - lib/Others/Theme/
+    - lib/Others/Assignments/
     - lib/Others/Future/
     - lib/Others/GesterDetector/
     - lib/GridView/
@@ -156,21 +157,28 @@ flutter:
     - assets/help/Bar/Snackbar/ 
     - assets/help/Box/
     - assets/help/Box/Box_DecoratedBox/
+    - assets/help/Box/Box_CheckBox/
     - assets/help/Box/Box_FittedBox/
     - assets/help/Box/Box_FractionallySizedBox/
     - assets/help/Box/Box_SizedBox/
+    - assets/help/Box/Box_ RotatedBox/
     - assets/help/Buttons/ElevatedButton/
     - assets/help/Buttons/FlatButton/
+    - assets/help/Buttons/Popup(3Dot)/
     - assets/help/Buttons/FloatingActionButton/
     - assets/help/Buttons/RadioButton/
     - assets/help/Buttons/IconicButtons/
+    - assets/help/Buttons/DropDownButton/
     - assets/help/Card/
+    - assets/help/Chip/
     - assets/help/Comments/
     - assets/help/Container/
     - assets/help/Others/CustomWidgets/
     - assets/help/Dart/
     - assets/help/Divider/
     - assets/help/Drawer/
+    - assets/help/Expanded/
+    - assets/help/General/
     - assets/help/Box/Box_FractionallySizedBox/
     - assets/help/Others/GesterDetector/
     - assets/help/Others/GridView/
@@ -185,6 +193,11 @@ flutter:
     - assets/help/Others/Stack_IndexStack_Positioned/
     - assets/help/Others/Visibility/
     - assets/help/Others/General/
+    - assets/help/Others/Positioned/
+    - assets/help/Others/Properties/
+    - assets/help/Others/Wrap/
+    - assets/help/Others/Theme/
+    - assets/help/Others/WidgetsCommunication/
     - assets/help/Padding/
     - assets/help/ListView/
     - assets/help/Properties/

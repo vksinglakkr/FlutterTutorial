@@ -224,6 +224,8 @@ class ButtonsCode extends StatelessWidget {
               child: ListTile(
                 leading: Image.asset(
                   i1,
+                  width: 100,
+                  fit: BoxFit.fill,
                 ),
                 title: Text(
                   s2,

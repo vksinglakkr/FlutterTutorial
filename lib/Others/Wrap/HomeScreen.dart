@@ -17,12 +17,12 @@ class HomeWrap extends StatelessWidget {
             padding: EdgeInsets.all(3.0),
             children: [
               ButtonsCode(Que02(), "lib/Others/Wrap/Que02.dart", "Basic",
-                  "assets/help/Que01.jpg", "SubTitle"),
+                  "assets/help/Others/Wrap/1 (1).jpg", "SubTitle"),
               ButtonsCode(
                   Que01WrapExample(),
                   "lib/Others/Wrap/Que01WrapList.dart",
                   "Using List",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Wrap/1 (2).jpg",
                   "SubTitle"),
             ],
           ),

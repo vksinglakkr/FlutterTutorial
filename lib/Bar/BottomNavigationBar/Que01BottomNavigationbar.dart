@@ -22,6 +22,9 @@ class _Que01Bottom11State extends State<Que01Bottom11> {
         appBar: AppBar(title: WidgetAppBar("Bottom Navigation Bar")),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
+          //If your bottom navigation bar items are more than three,
+          //you have to manually set the type of the navigation bar to
+          //BottomNavigationBarType.fixed, otherwise the navigation bar items won’t be shown!
           //type: BottomNavigationBarType.shifting,
           iconSize: 50,
           selectedFontSize: 30,

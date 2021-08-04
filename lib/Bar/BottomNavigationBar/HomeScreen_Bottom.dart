@@ -1,5 +1,6 @@
 // lib/Bar\HomeScreen_Bottom.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Bar/BottomNavigationBar/Que04.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 
 import 'Que01BottomNavigationbar.dart';
@@ -37,6 +38,12 @@ class HomeBottom extends StatelessWidget {
                       Que03Custom(),
                       "lib/Bar/BottomNavigationBar/Que03CustomShaped.dart",
                       "Custom Shaped Navigation Bar",
+                      "assets/help/Que01.jpg",
+                      "SubTitle"),
+                  ButtonsCode(
+                      Que04(),
+                      "lib/Bar/BottomNavigationBar/Que04.dart",
+                      "type: BottomNavigationBarType.fixed,",
                       "assets/help/Que01.jpg",
                       "SubTitle"),
                 ],

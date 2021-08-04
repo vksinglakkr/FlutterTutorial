@@ -20,7 +20,7 @@ class HomeButtonBar extends StatelessWidget {
                       Que01ButtonBar11(),
                       "lib/Bar/ButtonBar/Que01Basic.dart",
                       "Button Bar",
-                      "assets/help/Que01.jpg",
+                      "assets/help/Buttons/IconicButtons/1.jpeg",
                       "SubTitle"),
                 ],
               ),

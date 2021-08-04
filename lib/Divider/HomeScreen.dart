@@ -17,12 +17,12 @@ class HomeDivider extends StatelessWidget {
             padding: EdgeInsets.all(3.0),
             children: [
               ButtonsCode(Que0211(), "lib/Divider/Que02.dart", "Divider",
-                  "assets/help/Que01.jpg", "SubTitle"),
+                  "assets/help/Divider/1 (1).jpg", "SubTitle"),
               ButtonsCode(
                   Que0111(),
                   "lib/Divider/Que01DividerTheme2.dart",
                   "Divider using ThemeData",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Divider/1 (2).jpg",
                   "SubTitle"),
             ],
           ),

@@ -15,8 +15,12 @@ class HomeLogo extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              ButtonsCode(Que01(), "lib/Others/FlutterLogo/Que01.dart",
-                  "Demo FlutterLogo", "assets/help/Que01.jpg", "SubTitle"),
+              ButtonsCode(
+                  Que01(),
+                  "lib/Others/FlutterLogo/Que01.dart",
+                  "Demo FlutterLogo",
+                  "assets/help/Others/Wrap/logo.jpg",
+                  "SubTitle"),
             ],
           ),
         ))),

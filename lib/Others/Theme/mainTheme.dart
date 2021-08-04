@@ -26,11 +26,11 @@ class _MainThemeState extends State<MainTheme> {
   }
 
   // ignore: non_constant_identifier_names
-  Color CircleStartColor = Colors.deepPurple;
+  Color CircleStartColor = Colors.teal;
   // ignore: non_constant_identifier_names
 
   // ignore: non_constant_identifier_names
-  Color CircleBtnColor = Colors.deepPurple;
+  Color CircleBtnColor = Colors.white;
   // ignore: non_constant_identifier_names
   Color CircleFGBtnColor = Colors.black;
   // ignore: non_constant_identifier_names
@@ -85,122 +85,119 @@ class _MainThemeState extends State<MainTheme> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
-            appBar: AppBar(
-              title: Text("Set Preferences"),
-            ),
-            body: Column(
-              children: <Widget>[
-                Container(
-                  margin: EdgeInsets.all(20),
-                  width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  child: Column(
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Set Preferences"),
+        ),
+        body: Column(
+          children: <Widget>[
+            Container(
+              margin: EdgeInsets.all(20),
+              width: MediaQuery.of(context).size.width,
+              height: 200,
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text("Color of App:     ",
-                              style: TextStyle(fontSize: 18)),
-                          ClipOval(
-                            child: Container(
-                              width: 30,
-                              height: 30,
-                              color: CircleStartColor,
-                            ),
-                          ),
-                          ColorBtn(CircleStartColor, 1),
-                        ],
+                      Text("Color of App:     ",
+                          style: TextStyle(fontSize: 18)),
+                      ClipOval(
+                        child: Container(
+                          width: 30,
+                          height: 30,
+                          color: CircleStartColor,
+                        ),
                       ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text("Buttons BackGround Color:",
-                              style: TextStyle(fontSize: 18)),
-                          ClipOval(
-                            child: Container(
-                              width: 30,
-                              height: 30,
-                              color: CircleBtnColor,
-                            ),
-                          ),
-                          ColorBtn(CircleBtnColor, 2),
-                        ],
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text("Buttons ForeGround Color:",
-                              style: TextStyle(fontSize: 18)),
-                          ClipOval(
-                            child: Container(
-                              width: 30,
-                              height: 30,
-                              color: CircleFGBtnColor,
-                            ),
-                          ),
-                          ColorBtn(CircleFGBtnColor, 3),
-                        ],
-                      ),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text("Dark/Light Mode",
-                              style: TextStyle(fontSize: 18)),
-                          new Radio(
-                            value: 0,
-                            groupValue: _radioShowNumberValue,
-                            onChanged: _radioNumberShowChange,
-                          ),
-                          new Text('Light'),
-                          new Radio(
-                            value: 1,
-                            groupValue: _radioShowNumberValue,
-                            onChanged: _radioNumberShowChange,
-                          ),
-                          new Text('Dark'),
-                        ],
-                      ),
+                      ColorBtn(CircleStartColor, 1),
                     ],
                   ),
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    ElevatedButton(
-                        child: Text('Change',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
-                        onPressed: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (BuildContext context) => Splash(
-                                primaryColor: CircleStartColor,
-                                darkMode: _radioShowNumberValue,
-                                btnColor: CircleBtnColor,
-                                btnFGColor: CircleFGBtnColor,
-                              ),
-                            ))),
-                    ElevatedButton(
-                        child: Text('Cancel',
-                            style: TextStyle(
-                                fontSize: 16, fontWeight: FontWeight.bold)),
-                        onPressed: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (BuildContext context) => HomeScreen(),
-                            ))),
-                  ],
-                ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("Buttons BackGround Color:",
+                          style: TextStyle(fontSize: 18)),
+                      ClipOval(
+                        child: Container(
+                          width: 30,
+                          height: 30,
+                          color: CircleBtnColor,
+                        ),
+                      ),
+                      ColorBtn(CircleBtnColor, 2),
+                    ],
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("Buttons ForeGround Color:",
+                          style: TextStyle(fontSize: 18)),
+                      ClipOval(
+                        child: Container(
+                          width: 30,
+                          height: 30,
+                          color: CircleFGBtnColor,
+                        ),
+                      ),
+                      ColorBtn(CircleFGBtnColor, 3),
+                    ],
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("Dark/Light Mode", style: TextStyle(fontSize: 18)),
+                      new Radio(
+                        value: 0,
+                        groupValue: _radioShowNumberValue,
+                        onChanged: _radioNumberShowChange,
+                      ),
+                      new Text('Light'),
+                      new Radio(
+                        value: 1,
+                        groupValue: _radioShowNumberValue,
+                        onChanged: _radioNumberShowChange,
+                      ),
+                      new Text('Dark'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                ElevatedButton(
+                    child: Text('Change',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => Splash(
+                            primaryColor: CircleStartColor,
+                            darkMode: _radioShowNumberValue,
+                            btnColor: CircleBtnColor,
+                            btnFGColor: CircleFGBtnColor,
+                          ),
+                        ))),
+                ElevatedButton(
+                    child: Text('Cancel',
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold)),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => HomeScreen(),
+                        ))),
               ],
-            )));
+            ),
+          ],
+        ));
   }
 
   Future<bool> onLikeButtonTapped(bool isLiked) async {

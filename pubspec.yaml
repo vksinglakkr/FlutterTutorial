@@ -185,6 +185,7 @@ flutter:
     - assets/help/Icon/
     - assets/help/Image/
     - assets/help/Others/InkWell/
+    - assets/help/Others/Assignments/
     - assets/help/Others/Material/
     - assets/help/Others/Opacity/
     - assets/help/Others/Placeholder/
@@ -195,8 +196,10 @@ flutter:
     - assets/help/Others/General/
     - assets/help/Others/Positioned/
     - assets/help/Others/Properties/
+    - assets/help/Others/Refactoring/
     - assets/help/Others/Wrap/
     - assets/help/Others/Theme/
+    - assets/help/GridView/
     - assets/help/Others/WidgetsCommunication/
     - assets/help/Padding/
     - assets/help/ListView/

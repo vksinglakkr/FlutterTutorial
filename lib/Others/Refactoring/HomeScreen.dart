@@ -27,7 +27,7 @@ class HomeRefactoring extends StatelessWidget {
                   Que00FullTree(),
                   "lib/Others/Refactoring/Que00FullTree.dart",
                   "Full Widget Tree",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Refactoring/1 (1).jpg",
                   "SubTitle"),
               Text("Refactoring with a Constant",
                   style: TextStyle(
@@ -37,7 +37,7 @@ class HomeRefactoring extends StatelessWidget {
                   Que01Constant(),
                   "lib/Others/Refactoring/Que01Constant.dart",
                   "Refactoring with a Constant",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Refactoring/1 (2).jpg",
                   "SubTitle"),
               Text("Refactoring with a Method",
                   style: TextStyle(
@@ -47,13 +47,13 @@ class HomeRefactoring extends StatelessWidget {
                   Que02Method1(),
                   "lib/Others/Refactoring/Que02Method1.dart",
                   "Refactoring with a Method (Approch 1- Widget)",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Refactoring/1 (3).jpg",
                   "SubTitle"),
               ButtonsCode(
                   Que02Method2(),
                   "lib/Others/Refactoring/Que02Method2.dart",
                   "Refactoring with a Method (Approch 2- Container)",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Refactoring/1 (4).jpg",
                   "SubTitle"),
               Text("Refactoring with a Widget Class",
                   style: TextStyle(
@@ -63,7 +63,7 @@ class HomeRefactoring extends StatelessWidget {
                   Que03Class(),
                   "lib/Others/Refactoring/Que03Class.dart",
                   "Refactoring with a Widget Class",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Refactoring/1 (5).jpg",
                   "SubTitle"),
             ],
           ),

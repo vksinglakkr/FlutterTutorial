@@ -19,7 +19,7 @@ class HomeSpacer extends StatelessWidget {
                   Que0111(),
                   "lib/Others/Spacer/Que01.dart",
                   "Basic Spacer with Flex",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Spacer/1.jpg",
                   "SubTitle"),
             ],
           ),

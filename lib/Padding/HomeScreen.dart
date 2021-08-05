@@ -1,5 +1,6 @@
 // lib/Padding\HomeScreen.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Divider/Que02.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'Que01EdgeInsetsDirectional.dart';
 import 'Que06usingPadding.dart';
@@ -19,36 +20,12 @@ class HomePadding extends StatelessWidget {
           builder: (context) => ListView(
             padding: EdgeInsets.all(3.0),
             children: [
-              Container(
-                margin: EdgeInsets.all(2),
-                height: 32,
-                child: ElevatedButton(
-                    child: Text('Padding'),
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Que06()));
-                    }),
-              ),
-              Container(
-                margin: EdgeInsets.all(2),
-                height: 32,
-                child: ElevatedButton(
-                    child: Text('PaddingLRTB'),
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Que07()));
-                    }),
-              ),
-              Container(
-                margin: EdgeInsets.all(2),
-                height: 32,
-                child: ElevatedButton(
-                    child: Text('PaddingOnly'),
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Que08()));
-                    }),
-              ),
+              ButtonsCode(Que06(), "lib/Padding/Que06usingPadding.dart",
+                  "Padding", "assets/help/Icon/1 (1).jpg", "SubTitle"),
+              ButtonsCode(Que07(), "lib/Padding/Que07usingPadding.dart",
+                  "PaddingLRTB", "assets/help/Icon/1 (2).jpg", "SubTitle"),
+              ButtonsCode(Que08(), "lib/Padding/Que08usingPadding.dart",
+                  "PaddingOnly", "assets/help/Icon/1 (3).jpg", "SubTitle"),
             ],
           ),
         ))),

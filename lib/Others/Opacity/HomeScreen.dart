@@ -19,7 +19,7 @@ class HomeOpacity extends StatelessWidget {
                   Que0111(),
                   "lib/Others/Opacity/Que01ContainerOpacityGesterDetector.dart",
                   "Opacity of Container",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Opacity/1.jpg",
                   "SubTitle"),
             ],
           ),

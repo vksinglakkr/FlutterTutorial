@@ -21,7 +21,7 @@ class HomeMaterial extends StatelessWidget {
                   Que02InkWell11(),
                   "lib/Others/InkWell/Que02ClickonTextToggle.dart",
                   "InkWell",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Material/1.jpg",
                   "SubTitle"),
               Container(
                 margin: EdgeInsets.all(2),

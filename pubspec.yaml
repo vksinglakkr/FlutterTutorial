@@ -113,6 +113,7 @@ flutter:
     - lib/Image/Clipping/
     - lib/Others/InkWell/
     - lib/Others/Interface/
+    - lib/Others/CircleAvatar/
     - lib/ListView/
     - lib/Others/Properties/
     - lib/Others/Material/
@@ -128,6 +129,7 @@ flutter:
     - lib/Dropdown/
     - lib/Others/Spacer/
     - lib/Others/Scaffold/
+    - lib/Others/Visibility/
     - lib/Others/WidgetCommunication/
     - lib/Others/Stack_IndexStack_Positioned/
     - lib/Switch/
@@ -155,6 +157,7 @@ flutter:
     - assets/help/Others/Assignments/ 
     - assets/help/Bar/AppBar/ 
     - assets/help/Bar/Snackbar/ 
+    - assets/help/Bar/BottomBar/ 
     - assets/help/Box/
     - assets/help/Box/Box_DecoratedBox/
     - assets/help/Box/Box_CheckBox/
@@ -188,7 +191,10 @@ flutter:
     - assets/help/Others/Assignments/
     - assets/help/Others/Material/
     - assets/help/Others/Opacity/
+    - assets/help/Others/Center/
+    - assets/help/Others/Loader/
     - assets/help/Others/Placeholder/
+    - assets/help/Others/CircleAvatar/
     - assets/help/Others/ProgressIndicator_Loading/
     - assets/help/Others/Spacer/
     - assets/help/Others/Stack_IndexStack_Positioned/

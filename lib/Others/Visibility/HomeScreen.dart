@@ -30,13 +30,13 @@ class HomeVisibility extends StatelessWidget {
                       "SubTitle"),
                   ButtonsCode(
                       Que0111(),
-                      "libVisibilityQue01CustomContainer_Visibility.dart",
+                      "lib/Others/Visibility/Que01CustomContainer_Visibility.dart",
                       "How to set Visibility of a Widget with if statement",
                       "assets/help/Others/Visibility/1 (3).jpg",
                       "SubTitle"),
                   ButtonsCode(
                       Que0111(),
-                      "libVisibilityQue01CustomContainer_Visibility.dart",
+                      "lib/Others/Visibility/Que01CustomContainer_Visibility.dart",
                       "How to toggle/visibility of properties of a widget e.g. Textdata, Buttons,Icon,Color etc.",
                       "assets/help/Others/Visibility/1 (4).jpg",
                       "SubTitle"),

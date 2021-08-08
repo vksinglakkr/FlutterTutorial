@@ -19,7 +19,7 @@ class HomeCenter extends StatelessWidget {
                   QueHeightWidth(),
                   "lib/Others/Center/Que01.dart",
                   "heightFactor:, widthFactor:",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/Center/1.png",
                   "SubTitle"),
             ],
           ),

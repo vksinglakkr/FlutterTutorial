@@ -19,7 +19,7 @@ class HomeFuture extends StatelessWidget {
                   Que01Future(),
                   "lib/Others/Future/Que01.dart",
                   "Demonstrate FutureBuilder",
-                  "assets/help/Que01.jpg",
+                  "assets/help/Others/General/f1.jpeg",
                   "SubTitle"),
             ],
           ),

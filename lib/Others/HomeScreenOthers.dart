@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/CustomWidgets/HomeScreen.dart';
 import 'package:flutter_tutorial/Diagram/MnemonicCode.dart';
 import 'package:flutter_tutorial/Others/Center/HomeScreen.dart';
+import 'package:flutter_tutorial/Others/CircleAvatar/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/FlutterLogo/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/Future/HomeScreen.dart';
 import 'package:flutter_tutorial/Others/MapList/HomeScreen.dart';
@@ -50,6 +51,15 @@ class HomeScreenOthers extends StatelessWidget {
           crossAxisSpacing: 4,
           childAspectRatio: 3.0,
           children: [
+            ElevatedButton(
+              child: Text('CircleAvatar',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => HomeCircleAvatar(),
+                  )),
+            ),
             ElevatedButton(
               child: Text('Center',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/Container/Que42_AnimatedCurves.dart';
 import 'package:flutter_tutorial/Image/Que03aImage.dart';
 import 'package:flutter_tutorial/Image/Que15.dart';
+import 'package:flutter_tutorial/Image/Que16.dart';
+import 'package:flutter_tutorial/Image/Que16acolorFilter.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 import 'package:flutter_tutorial/Text/Que19DecorationImageOvertext.dart';
 
@@ -176,6 +178,14 @@ class HomeImage extends StatelessWidget {
                     "SubTitle"),
                 ButtonsCode(Que15Swiper(), "lib/Image/Que15.dart",
                     "Image Swiper", "assets/help/Image/1 (22).jpg", "SubTitle"),
+                ButtonsCode(Que16(), "lib/Image/Que16.dart", "Image Swiper",
+                    "assets/help/Image/1 (23).png", "SubTitle"),
+                ButtonsCode(
+                    Que16a(),
+                    "lib/Image/Que16a.dart",
+                    "Image ColorFilter",
+                    "assets/help/Image/1 (24).png",
+                    "SubTitle"),
               ],
             ),
           ),

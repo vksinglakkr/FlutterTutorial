@@ -27,6 +27,8 @@ import 'package:flutter_tutorial/Bar/AppBar/Que14.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que15BottomAppBar.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que16BottomAppbar.dart';
 import 'package:flutter_tutorial/Bar/AppBar/Que17Silver.dart';
+import 'package:flutter_tutorial/Bar/AppBar/Que18PreferredSize.dart';
+import 'package:flutter_tutorial/Bar/AppBar/Que19Sliver.dart';
 import 'package:flutter_tutorial/Container/Que28Gradient.dart';
 import 'package:flutter_tutorial/Icons/Que05.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
@@ -299,6 +301,10 @@ class HomeAppBar extends StatelessWidget {
                       "Advance - showDialog",
                       "assets/help/Buttons/Popup(3Dot)/33.jpeg",
                       "SubTitle"),
+                  ButtonsCode(Que18Preferred(), "lib/Bar/AppBar/Que18.dart",
+                      "PreferredSize", "assets/help/Que01.jpeg", "SubTitle"),
+                  ButtonsCode(Que19Sliver(), "lib/Bar/AppBar/Que19Silver.dart",
+                      "Silver", "assets/help/Que01.jpeg", "SubTitle"),
                 ],
               ),
             ),

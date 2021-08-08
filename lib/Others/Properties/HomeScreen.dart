@@ -1,5 +1,6 @@
 // lib/Others/Properties/Que15ShowProperties.dart
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial/Align/Que01aheightFactorwidthfactor.dart';
 import 'package:flutter_tutorial/Box/Box_FittedBox/Que05a.dart';
 import 'package:flutter_tutorial/Dropdown/Que04.dart';
 import 'package:flutter_tutorial/ListView/Que03properties.dart';
@@ -128,6 +129,8 @@ class HomeProperties extends StatelessWidget {
                   "SubTitle"),
               ButtonsCode(Que06soft(), "lib/Text/Que06.dart", "Text softWrap",
                   "assets/help/Others/Properties/1 (20).jpg", "SubTitle"),
+              ButtonsCode(AlignmentWidget(), "lib/Text/AlignmentWidget.dart",
+                  " ", "assets/help/Others/Properties/1 (20).jpg", "SubTitle"),
               Text(
                   "Best Video for all https://www.youtube.com/watch?v=Kq5ZsygfWAc")
             ],

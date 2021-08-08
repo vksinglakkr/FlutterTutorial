@@ -63,12 +63,12 @@ class _Que0111State extends State<Que0111> {
                 SizedBox(
                   height: 10.0,
                 ),
-                Center(
-                  child: Image(
-                    image: AssetImage('assets/Visibility/Que01.png'),
-                  ),
-                ),
-                Text("Visibility/Que01CustomContainer_Visibility.dart")
+                // Center(
+                //   child: Image(
+                //       //image: AssetImage('assets/Visibility/Que01.png'),
+                //       ),
+                // ),
+                // Text("Visibility/Que01CustomContainer_Visibility.dart")
               ],
             )),
         floatingActionButton: WidgetFab(),

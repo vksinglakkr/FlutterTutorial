@@ -222,10 +222,19 @@ class ButtonsCode extends StatelessWidget {
                         builder: (context) => WidgetCode(a1, s1)));
               },
               child: ListTile(
-                leading: Image.asset(
-                  i1,
-                  width: 100,
-                  fit: BoxFit.fill,
+                leading: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      width: 3,
+                      color: Colors.black,
+                    ),
+                  ),
+                  child: Image.asset(
+                    i1,
+                    width: 50,
+                    fit: BoxFit.fill,
+                  ),
                 ),
                 title: Text(
                   s2,
@@ -240,6 +249,86 @@ class ButtonsCode extends StatelessWidget {
     );
   }
 }
+// class ButtonsCode extends StatelessWidget {
+//   final Widget a1;
+//   final String s1;
+//   final String s2;
+//   final String i1;
+//   final String s3;
+//   ButtonsCode(this.a1, this.s1, this.s2, this.i1, this.s3);
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       child: Card(
+//         child: Column(
+//           children: [
+//             ElevatedButton(
+//               onPressed: () {
+//                 Navigator.push(
+//                     context,
+//                     MaterialPageRoute(
+//                         builder: (context) => WidgetCode(a1, s1)));
+//               },
+//               child: Container(
+//                 child: Row(
+//                   children: [
+//                     Container(
+//                       child: Image.asset(
+//                         i1,
+//                         width: 50,
+//                         fit: BoxFit.fill,
+//                       ),
+//                     ),
+//                     SizedBox(
+//                       width: 50,
+//                     ),
+//                     Column(
+//                       children: [
+//                         Container(
+//                             child: Text(
+//                           s2,
+//                           style: TextStyle(fontWeight: FontWeight.bold),
+//                           overflow: TextOverflow.clip,
+//                           maxLines: 2,
+//                         )),
+//                         Container(
+//                             child: Text(
+//                           "Loading ...",
+//                           style: TextStyle(fontWeight: FontWeight.bold),
+//                         ))
+//                       ],
+//                     )
+//                   ],
+//                 ),
+//               ),
+//               // ListTile(
+//               //   leading: Container(
+//               //     decoration: BoxDecoration(
+//               //       borderRadius: BorderRadius.circular(10),
+//               //       border: Border.all(
+//               //         width: 3,
+//               //         color: Colors.black,
+//               //       ),
+//               //     ),
+//               //     child: Image.asset(
+//               //       i1,
+//               //       width: 50,
+//               //       fit: BoxFit.fill,
+//               //     ),
+//               //   ),
+//               //   title: Text(
+//               //     s2,
+//               //     style: TextStyle(fontWeight: FontWeight.bold),
+//               //   ),
+//               //   subtitle: Text('Loading ... '),
+//               // ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 void showMessage(message) {
   // Fluttertoast.showToast(

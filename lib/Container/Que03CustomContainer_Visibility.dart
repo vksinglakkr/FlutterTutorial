@@ -21,54 +21,50 @@ class _Que0311State extends State<Que0311> {
         appBar: AppBar(title: WidgetAppBar("Container Visibility ")),
         bottomNavigationBar:
             QueBottom(urlName: url1, imageName: image1, videoUrlId: video1),
-        body: Column(
-          children: [
-            Padding(
-                padding: EdgeInsets.all(15.0),
-                child: Column(
+        body: Padding(
+            padding: EdgeInsets.all(15.0),
+            child: Column(
+              children: [
+                CustomContainer(txtData: 'Red', colorName: Colors.red),
+                SizedBox(
+                  height: 8.0,
+                ),
+                Visibility(
+                    visible: _visible1,
+                    child: CustomContainer(
+                        txtData: 'Orange', colorName: Colors.orange)),
+                SizedBox(
+                  height: 8.0,
+                ),
+                Visibility(
+                    visible: _visible2,
+                    maintainAnimation: true,
+                    maintainState: true,
+                    maintainSize: true,
+                    child: CustomContainer(
+                        txtData: 'Blue', colorName: Colors.blue)),
+                SizedBox(height: 15.0),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    CustomContainer(txtData: 'Red', colorName: Colors.red),
-                    SizedBox(
-                      height: 8.0,
-                    ),
-                    Visibility(
-                        visible: _visible1,
-                        child: CustomContainer(
-                            txtData: 'Orange', colorName: Colors.orange)),
-                    SizedBox(
-                      height: 8.0,
-                    ),
-                    Visibility(
-                        visible: _visible2,
-                        maintainAnimation: true,
-                        maintainState: true,
-                        maintainSize: true,
-                        child: CustomContainer(
-                            txtData: 'Blue', colorName: Colors.blue)),
-                    SizedBox(height: 15.0),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        ElevatedButton(
-                            child: Text('Show/Hide Orange'),
-                            onPressed: () {
-                              setState(() {
-                                _visible1 = !_visible1;
-                              });
-                            }),
-                        ElevatedButton(
-                            child: Text('Show/Hide Blue\n(Maintainsize)'),
-                            onPressed: () {
-                              setState(() {
-                                _visible2 = !_visible2;
-                              });
-                            }),
-                      ],
-                    ),
+                    ElevatedButton(
+                        child: Text('Show/Hide Orange'),
+                        onPressed: () {
+                          setState(() {
+                            _visible1 = !_visible1;
+                          });
+                        }),
+                    ElevatedButton(
+                        child: Text('Show/Hide Blue\n(Maintainsize)'),
+                        onPressed: () {
+                          setState(() {
+                            _visible2 = !_visible2;
+                          });
+                        }),
                   ],
-                )),
-          ],
-        ),
+                ),
+              ],
+            )),
         floatingActionButton: WidgetFab(),
       ),
     );
@@ -76,13 +72,13 @@ class _Que0311State extends State<Que0311> {
 }
 
 class CustomContainer extends StatelessWidget {
+  final String txtData;
+  final Color colorName;
   const CustomContainer({
     Key key,
     this.txtData,
     this.colorName,
   }) : super(key: key);
-  final String txtData;
-  final Color colorName;
 
   @override
   Widget build(BuildContext context) {

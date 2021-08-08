@@ -17,6 +17,7 @@ import 'package:flutter_tutorial/ListView/Que07aListViewInkwell.dart';
 import 'package:flutter_tutorial/ListView/Que15aColorListGenerate.dart';
 import 'package:flutter_tutorial/ListView/Que17.dart';
 import 'package:flutter_tutorial/ListView/Que18WheelScrolling.dart';
+import 'package:flutter_tutorial/ListView/Que19OneItemAtTime.dart';
 import 'package:flutter_tutorial/ListView/Que43DismisItem.dart';
 import 'package:flutter_tutorial/ListView/Que43a.dart';
 import 'package:flutter_tutorial/ListView/Que44Sort.dart';
@@ -500,6 +501,12 @@ class HomeListView1 extends StatelessWidget {
                       "lib/ListView/Que37bSelectedRecordConditionalOpe.dart",
                       "Show Selected Records Conditional Operator",
                       "assets/help/ListView/1 (61).jpg",
+                      "SubTitle"),
+                  ButtonsCode(
+                      Que19(),
+                      "lib/ListView/Que19OneItemAtTime.dart",
+                      "One Item at a time on Screen",
+                      "assets/help/Que01.jpg",
                       "SubTitle"),
                 ],
               ),

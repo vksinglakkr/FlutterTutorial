@@ -190,7 +190,7 @@ class HomeText extends StatelessWidget {
                       "SubTitle"),
                   ButtonsCode(
                       Que13TextFormatting(),
-                      "",
+                      "lib/Text/Que13TextFormatting.dart",
                       "Highlight every occurance of particular text.",
                       "assets/help/Text/25.jpeg",
                       "SubTitle"),
@@ -286,8 +286,8 @@ class HomeText extends StatelessWidget {
                       "Show Content of text File without Widget",
                       "assets/help/Text/43.jpeg",
                       "SubTitle"),
-                  ButtonsCode(Que25Show(), "", "Animated_text_kit (Pending)",
-                      "assets/help/Text/44.jpeg", "SubTitle"),
+//                  ButtonsCode(Que25Show(), "lib/Text/Que25ShowContent_of_TextFileWithoutWidget.dart", "Animated_text_kit (Pending)",
+//                      "assets/help/Text/44.jpeg", "SubTitle"),
                   ButtonsCode(
                       Que01aText11(),
                       "lib/Text/Que01aProperties.dart",

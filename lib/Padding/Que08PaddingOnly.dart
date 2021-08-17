@@ -1,4 +1,4 @@
-// lib/Padding\Que07PaddingLRTB.dart
+// lib/Padding\Que08PaddingOnly.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial/pages/BottomNavigationBar.dart';
 

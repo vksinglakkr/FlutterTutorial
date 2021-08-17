@@ -95,7 +95,7 @@ class HomeContainer extends StatelessWidget {
                 "assets/help/Container/1 (8).jpg", "SubTitle"),
             ButtonsCode(Que1811(), "lib/Container/Que18color.dart", "Color",
                 "assets/help/Container/1 (9).jpg", "SubTitle"),
-            ButtonsCode(Que1911(), "lib/Container/Que119margin.dart", "margin",
+            ButtonsCode(Que1911(), "lib/Container/Que19margin.dart", "margin",
                 "assets/help/Container/1 (10).jpg", "SubTitle"),
             ButtonsCode(
                 Que2111(),
@@ -171,7 +171,7 @@ class HomeContainer extends StatelessWidget {
             Text("gradient",
                 style: TextStyle(
                     fontWeight: FontWeight.bold, fontStyle: FontStyle.italic)),
-            ButtonsCode(Que2811(), "lib/Container/Que28gradient.dart",
+            ButtonsCode(Que2811(), "lib/Container/Que28Gradient.dart",
                 "gradient", "assets/help/Container/1 (25).jpg", "SubTitle"),
             ButtonsCode(
                 Que36GradientTransform(),

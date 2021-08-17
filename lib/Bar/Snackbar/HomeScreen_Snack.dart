@@ -48,7 +48,7 @@ class HomeSnack extends StatelessWidget {
                       "SubTitle"),
                   ButtonsCode(
                       Que04InkWell11(),
-                      "lib/InkWell/Que04Inkwell.dart",
+                      "lib/Others/InkWell/Que04Inkwell.dart",
                       "Material Touch ripple-Text, Snackbar,Inkwell",
                       "assets/help/Bar/Snackbar/5.png",
                       "SubTitle"),

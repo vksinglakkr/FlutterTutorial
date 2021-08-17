@@ -122,7 +122,7 @@ class HomeGeneral extends StatelessWidget {
                   "SubTitle"),
               ButtonsCode(
                   Que23(),
-                  "lib/Others/General/Que23MaptoList.dart",
+                  "lib/Others/General/Que23.dart",
                   "Conversion of List to Map and vice versa",
                   "assets/help/General/1 (17).jpg",
                   "SubTitle"),

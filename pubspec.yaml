@@ -95,6 +95,8 @@ flutter:
     - lib/Buttons/IconicButtons/
     - lib/Others/Refactoring/
     - lib/Card/
+    - lib/Chip/
+    - lib/Expanded/
     - lib/Comments/
     - lib/Container/
     - lib/CustomWidgets/
